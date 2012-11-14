@@ -43,6 +43,15 @@ class Announcement
             @last-item.conversation.push [speaker, text]
         return @
 
+class Proposal
+    ->
+    push-rich: (node) ->
+        console.error \NOTYET
+    push-line: (speaker, text) ->
+        console.error \PROP: speaker, if text.length > 30 => text.slice(0, 30)+\... else text
+        return @
+
+
 class Questioning
     ->
         @ctx = ''
@@ -106,6 +115,7 @@ class Questioning
 ctx = meta = new Meta
 announcement = new Announcement
 questioning = new Questioning
+proposal = new Proposal
 log = []
 
 parse = ->
@@ -120,10 +130,13 @@ parse = ->
         [_, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
         if speaker
             text = content
+
         if text is /^報\s+告\s+事\s+項$/
             ctx := announcement
         else if text is /^質\s+詢\s+事\s+項$/
             ctx := questioning
+        else if !ctx && speaker is \主席 && text is /處理.*黨團.*提案/
+            ctx := proposal
         else
             if ctx
                 ctx .= push-line speaker, text
