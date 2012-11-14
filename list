@@ -1,0 +1,6 @@
+list=$@
+curl -X POST -d rangeCondition='$serial_number='$list \
+-d sortFieldListSource=file_seqno:0 \
+-d queryIndexeListSource=0:lciv_commfile \
+-d fieldNameListSource=year,volume,book_id,book_id_chn,serial_number,subtitle,communique_type,meeting_date,publish_date,pdf_filename2,file_seqno,check_vod_flag \
+'http://lci.ly.gov.tw/LyLCEW/lcivCommDetail.action'
