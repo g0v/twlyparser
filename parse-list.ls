@@ -34,7 +34,7 @@ getFileList = ({year, vol, book, seq}, id, type) ->
             scriptSessionId: 'G2QK8XSngQBcD1FnDRSQj3XmZHj/VlFd*Hj-A9LrEZ7og'
     [_, entry] = body.match /r.handleCallback\((.*)\);/
     [_, _, entry]? = try eval "[#{entry}]" # XXX: sandbox
-    for {filePath},i in entry when i is 0
+    for {filePath},i in entry
         uri = switch type
         | \html => 'http://lci.ly.gov.tw/LyLCEW/jsp/ldad000.jsp?irKey=&htmlType=communique&fileName='
         else 'http://lci.ly.gov.tw/LyLCEW/'
