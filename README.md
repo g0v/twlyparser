@@ -8,10 +8,10 @@ install unoconv
 ```
 npm i
 mkdir meta
-sh ./list 4004
+sh ./list 4004 > meta/4004.html
 ./node_modules/.bin/lsc ./parse-list.ls --id 4004 --file meta/4004.html
 /Applications/LibreOffice.app/Contents/MacOS/python ~/git/sysadmin/unoconv/unoconv  -f html output-4004-01-2-*.doc
-./node_modules/.bin/lsc ./parse-log.ls output-4004-01-2-*.doc > 4004.json
+./node_modules/.bin/lsc ./parse-log.ls output-4004-01-2-*.html > 4004.json
 ```
 
 # CC0 1.0 Universal
