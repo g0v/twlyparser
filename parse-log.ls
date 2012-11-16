@@ -44,14 +44,20 @@ class Announcement
         else
             @last-item.conversation.push [speaker, text]
         return @
+    serialize: ->
+        [\Announcement, @items]
 
 class Proposal
     ->
+        @lines = []
     push-rich: (node) ->
         console.error \NOTYET
+        @lines.push [null, node.html!]
     push-line: (speaker, text) ->
-        console.error \PROP: speaker, if text.length > 30 => text.slice(0, 30)+\... else text
+        @lines.push [speaker, text]
         return @
+    serialize: ->
+        [\Proposal, @lines]
 
 
 class Questioning
@@ -113,12 +119,22 @@ class Questioning
         | /本院委員質詢部分$/ => @ctx = \question
         | otherwise => @push speaker, text
         return @
+    serialize: ->
+        [\Interpellation, {answers: @reply, questions: @question, interpellation: @conversation}]
 
 ctx = meta = new Meta
 announcement = new Announcement
 questioning = new Questioning
 proposal = new Proposal
 log = []
+
+store = ->
+    if ctx
+        log.push ctx.serialize!
+
+newContext = (ctxType) ->
+    store!
+    ctx := new ctxType
 
 parse = ->
     switch @.0.name
@@ -134,11 +150,11 @@ parse = ->
             text = content
 
         if text is /^報\s+告\s+事\s+項$/
-            ctx := announcement
+            newContext Announcement
         else if text is /^質\s+詢\s+事\s+項$/
-            ctx := questioning
+            newContext Questioning
         else if !ctx && speaker is \主席 && text is /處理.*黨團.*提案/
-            ctx := proposal
+            newContext Proposal
         else
             if ctx
                 ctx .= push-line speaker, text
@@ -154,9 +170,6 @@ for file in _
     data = fixup data
     $ = cheerio.load data, { +lowerCaseTags }
     $('body').children!each parse
+store!
 
-console.log JSON.stringify { meta.meta, announcement: announcement.items, questioning: {
-    questioning.reply
-    questioning.question,
-    log: questioning.conversation
-}}, null, 4
+console.log JSON.stringify { meta.meta, log }, null, 4
