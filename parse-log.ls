@@ -70,6 +70,10 @@ class Proposal
     serialize: ->
         [\Proposal, @lines]
 
+class Reconsideration extends Proposal
+    serialize: ->
+        [\Reconsideration, @lines]
+
 
 class Questioning
     ->
@@ -103,7 +107,7 @@ class Questioning
             entry = [speaker, text]
             entry.push [+h, +m] if h?
             @current-conversation.push entry
-        if speaker is \主席 and text is /處理臨時提案/
+        if speaker is \主席 and text is /現在.*處理臨時提案/
             @exmotion = true
 
         @lastSpeaker = speaker if speaker
@@ -140,12 +144,13 @@ proposal = new Proposal
 log = []
 
 store = ->
-    if ctx
-        log.push ctx.serialize!
+    log.push ctx.serialize! if ctx
 
 newContext = (ctxType) ->
     store!
     ctx := new ctxType
+
+lastSpeaker = null
 
 parse = ->
     switch @.0.name
@@ -156,22 +161,33 @@ parse = ->
     | \p     =>
         text = $(@)text! - /^\s+|\s$/g
         return unless text.length
-        [_, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
+        [full, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
         if speaker
-            text = content
+            if speaker is /以下/
+                text = full
+                speaker = null
+            else
+                text = content
+
+        if text is /報告院會/ and text is /現在散會/
+            store!
+            ctx := null
 
         if text is /^報\s+告\s+事\s+項$/
             newContext Announcement
         else if text is /^質\s+詢\s+事\s+項$/
             newContext Questioning
-        else if !ctx && speaker is \主席 && text is /處理.*黨團.*提案/
+        else if (speaker ? lastSpeaker) is \主席 && text is /處理.*黨團.*提案/
             newContext Proposal
+        else if (speaker ? lastSpeaker) is \主席 && text is /處理.*復議案/
+            newContext Reconsideration
         else
             if ctx
                 ctx .= push-line speaker, text
             else
                 log.push [speaker, text]
-    else => console.log \unhandled: @.0.name , @.html!
+        lastSpeaker := speaker if speaker
+    else => console.error \unhandled: @.0.name , @.html!
 
 fixup = ->
     it.replace /\uE58E/g, '冲'
