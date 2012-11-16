@@ -13,8 +13,10 @@ parseZHNumber = ->
         l = it.length
         return 10 if l is 1
         return 10 + parseZHNumber it.slice 1
+    if it[*-1] is \十
+        return 10 * parseZHNumber it.slice 0, it.length-1
     res = 0
-    for c in it 
+    for c in it when c isnt \十
         res *= 10
         res += zhmap[c]
     res
