@@ -1,4 +1,4 @@
-require! {fs, request, q, mkdirp, optimist, index: \./data/index, gazettes: \./data/gazettes}
+require! {fs, request, Q: \q, mkdirp, optimist, index: \./data/index, gazettes: \./data/gazettes}
 
 
 getFileList = ({year, vol, book, seq}, id, type, cb) ->
@@ -37,33 +37,19 @@ getFileList = ({year, vol, book, seq}, id, type, cb) ->
 
 {gazette} = optimist.argv
 
-defers = []
-for id, g of gazettes when !gazette? || id ~= gazette => let id, g
-    x = q.defer!
-    defers.push x.promise
-    gdefers = []
-    err <- mkdirp "source/#{id}"
-    throw err if err
-    for i,_which in index when i.gazette ~= id and !i.files? => let i, d = q.defer!
-        console.log id, i.book, i.seq
-        gdefers.push d.promise
-        index[_which].files <- getFileList {g.year, g.vol, i.book, i.seq}, id, \doc
-        d.resolve!
-    <- q.allResolved gdefers
-    .then
-    x.resolve!
+cnt = 0;
+funcs = for id, g of gazettes when !gazette? || id ~= gazette => let id, g
+    -> 
+        gdefers = []
+        for i,_which in index when i.gazette ~= id and !i.files? => let i, d = Q.defer!
+            console.log id, i.book, i.seq
+            gdefers.push d.promise
+            index[_which].files <- getFileList {g.year, g.vol, i.book, i.seq}, id, \doc
+            console.log \got _which, id, i.book, i.seq
+            d.resolve!
+        Q.allResolved gdefers
 
-<- q.allResolved defers
-.then
+res = funcs.reduce ((soFar, f) -> soFar.then f), Q.resolve!
+
+<- res.then
 fs.writeFileSync \data/index-files.json JSON.stringify index, null, 4
-
-
-
-#    all = defers.map(-> it.valueOf!).reduce (+++)
-#    files = {[file, true] for file in all}
-#    for f of files
-#        console.log f
-#        console.log uri
-#        request {method: \GET, uri}
-#        .pipe fs.createWriteStream "source/#{id}/#id-#{i.book}-#{i.seq}-#i.#type"
-

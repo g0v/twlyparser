@@ -21,4 +21,5 @@ devDependencies:
   cheerio: \0.10.x
   request: \2.12.x
   q: \0.8.7
+  mkdirp: \0.3.x
 optionalDependencies: {}

@@ -1,8 +1,5 @@
 tmp
 node_modules
 *.swp
-tw*.json
-*.gif
-*.doc
-*.html
-meta/
+*.swo
+source/
