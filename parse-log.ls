@@ -64,7 +64,7 @@ class Questioning
         @subsection = false
         @document = false
     push-conversation: (speaker, text) ->
-        if (speaker ? @lastSpeaker) is \主席 and text is /報告院會|詢答時間為|已質詢完畢|處理完畢|提書面質詢/
+        if (speaker ? @lastSpeaker) is \主席 and text is /報告院會|詢答時間|已質詢完畢|處理完畢|提書面質詢/
             type = switch
             | @exmotion => 'exmotion'
             | @document => 'interpdoc'
