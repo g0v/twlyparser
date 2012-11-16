@@ -84,21 +84,24 @@ class Questioning
         @conversation = []
         @subsection = false
         @document = false
+    flush: ->
+        type = switch
+        | @exmotion => 'exmotion'
+        | @document => 'interpdoc'
+        else 'interp'
+        if @current-conversation.length
+            if @subsection
+                @conversation.push [ type, @current-conversation ]
+            else
+                @conversation = @conversation +++ @current-conversation
+        @current-conversation = []
+        @exmotion = false
+        @subsection = true
+
     push-conversation: (speaker, text) ->
         if (speaker ? @lastSpeaker) is \主席 and text is /報告院會|詢答時間|已質詢完畢|處理完畢|提書面質詢/
-            type = switch
-            | @exmotion => 'exmotion'
-            | @document => 'interpdoc'
-            else 'interp'
-            if @current-conversation.length
-                if @subsection
-                    @conversation.push [ type, @current-conversation ] 
-                else
-                    @conversation = @conversation +++ @current-conversation
-            @current-conversation = []
+            @flush!
             @conversation.push [speaker, text]
-            @exmotion = false
-            @subsection = true
             @document = text is /提書面質詢/
         else if !speaker? && @current-conversation.length is 0
             @conversation.push [speaker, text] # meeting actions
@@ -135,6 +138,7 @@ class Questioning
         | otherwise => @push speaker, text
         return @
     serialize: ->
+        @flush!
         [\Interpellation, {answers: @reply, questions: @question, interpellation: @conversation}]
 
 ctx = meta = new Meta
