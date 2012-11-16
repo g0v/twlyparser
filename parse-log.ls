@@ -6,7 +6,7 @@ require! {cheerio, optimist, fs, request}
 zhnumber = <[○ 一 二 三 四 五 六 七 八 九 十]>
 
 zhmap = {[c, i] for c, i in zhnumber}
-zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)、(.*)$"
+zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)、(.*)$", \m
 
 parseZHNumber = ->
     if it.0 is \十
