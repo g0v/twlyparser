@@ -21,15 +21,26 @@ parseZHNumber = ->
         res += zhmap[c]
     res
 
-
+# ad (appointed dates) (屆別)
+# session (會期)
+# sitting (會次)
 class Meta
     ->
-        @meta = []
+        @meta = {raw: []}
     push-line: (speaker, text) ->
         return if speaker 
+        if @ctx is \speaker
+            [_, position, name] = text.match /^(?:(.+)\s+)?(.*)$/
+            @meta.raw.push text
+            return @
+
         match text
-        | /立法院第(\d+)屆第(\d+)會期第(\d+)次會議紀錄/ => #console.log that
-        | otherwise => @meta.push text
+        | /立法院第(\d+)屆第(\d+)會期第(\d+)次會議紀錄/ =>
+            @meta<[ad session sitting]> = that[1 to 3]
+        | /主\s*席\s+(.*)$/ =>
+            @ctx = \speaker
+            @meta.speaker = that.1
+        @meta.raw.push text
         return @
 
 class Announcement
