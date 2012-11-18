@@ -116,7 +116,9 @@ class Questioning
         @lastSpeaker = speaker if speaker
 
     push-rich: (node) ->
-        @push-conversation null, node.html!
+        rich = $ '<div/>' .append node
+        node.find('img').each -> @.attr \SRC, ''
+        @push-conversation null, rich.html!
     push: (speaker, text) ->
         return @push-conversation speaker, text if @in-conversation
         if [_, item, content]? = text.match zhreg
