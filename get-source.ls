@@ -19,24 +19,3 @@ for id, g of gazettes when !gazette? || id ~= gazette => let id, g
             return if size?
             <- fetchit
             console.log \done id
-#    err <- mkdirp "source/#{id}"
-        
-#        gdefers.push d.promise
-#        index[_which].files <- getFileList {g.year, g.vol, i.book, i.seq}, id, \doc
-#        d.resolve!
-#    <- q.allResolved gdefers
-#    .then
-#    x.resolve!
-
-#<- q.allResolved defers
-#.then
-#fs.writeFileSync \data/index-files.json JSON.stringify index, null, 4
-
-
-
-#    all = defers.map(-> it.valueOf!).reduce (+++)
-#    files = {[file, true] for file in all}
-#    for f of files
-#        console.log f
-#        console.log uri
-
