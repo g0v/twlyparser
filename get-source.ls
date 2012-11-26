@@ -3,6 +3,7 @@ require! {index: \./data/index-files, request, q, mkdirp, optimist, path, fs, ga
 {gazette} = optimist.argv
 
 for id, g of gazettes when !gazette? || id ~= gazette => let id, g
+    err <- mkdirp "source/#{id}"
     entries = [i for i in index when i.gazette ~= id]
     bytype = {}
     for {type}:i in entries
