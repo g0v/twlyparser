@@ -189,7 +189,7 @@ class Parser
             else
                 @output "    ", rich.html!, "\n"
         | \p     =>
-            text = @$(node)text! - /^\s+|\s$|\n/g
+            text = @$(node)text! - /^\s+|\s+$|\n/g
             return unless text.length
             fulltext = text
             [full, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
