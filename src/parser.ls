@@ -23,14 +23,14 @@ parseZHNumber = ->
 # sitting (會次)
 class Meta
     ({@output} = {}) ->
-        @meta = {raw: []}
+        @output "# 院會紀錄\n\n"
+        @meta = {}
     push-line: (speaker, text) ->
         if speaker 
             @serialize!
             return 
         if @ctx is \speaker
             [_, position, name] = text.match /^(?:(.+)\s+)?(.*)$/
-            @meta.raw.push text
             return @
 
         match text
@@ -41,10 +41,9 @@ class Meta
         | /主\s*席\s+(.*)$/ =>
             @ctx = \speaker
             @meta.speaker = that.1
-        @meta.raw.push text
+        @output "#text\n"
         return @
     serialize: ->
-        @output "# 院會紀錄\n\n"
         @output "```json\n", JSON.stringify @meta, null, 4b
         @output "\n```\n\n"
 
