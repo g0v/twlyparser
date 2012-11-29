@@ -8,7 +8,7 @@ function forGazette (gazette, cb)
             (bytype[type] ||= []).push i
         for type, entries of bytype
             allfiles = [uri for uri of {[x,true] \
-                for x in entries.map (.files) .reduce (+++)}]
+                for x in entries.map(-> it.files ? []).reduce (+++)}]
             cb id, g, type, entries, allfiles
 
 module.exports = { forGazette }
