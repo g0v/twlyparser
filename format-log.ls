@@ -1,4 +1,4 @@
-require! {cheerio, optimist, fs, request}
+require! {optimist, fs}
 {Parser} = require \./lib/parser
 
 {id, _} = optimist.argv
@@ -7,7 +7,5 @@ fixup = ->
 
 parser = new Parser
 for file in _
-    data = fixup fs.readFileSync file, \utf8
-    $ = cheerio.load data, { +lowerCaseTags }
-    $('body').children!each -> parser.parse @
+    parser.parseHtml fixup fs.readFileSync file, \utf8
 parser.store!

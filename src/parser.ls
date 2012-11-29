@@ -164,6 +164,10 @@ class Parser
     ({@output = console.log, @metaOnly} = {}) ->
         @lastSpeaker = null
         @ctx = @newContext Meta
+    parseHtml: (data) ->
+        self = @
+        @$ = cheerio.load data, { +lowerCaseTags }
+        @$('body').children!each -> self.parse @
 
     store: ->
         @ctx.serialize! if @ctx
@@ -178,16 +182,14 @@ class Parser
         | \div   => node.children!each -> self.parse @
         | \center   => node.children!each -> self.parse @
         | \table => 
-            $ = cheerio.load!
-            rich = $ '<div/>' .append node
+            rich = @$ '<div/>' .append node
             rich.find('img').each -> @.attr \SRC, ''
             if @ctx?push-rich
                 @ctx.push-rich rich
             else
                 @output "    ", rich.html!, "\n"
         | \p     =>
-            $ = cheerio.load!
-            text = $(node)text! - /^\s+|\s$|\n/g
+            text = @$(node)text! - /^\s+|\s$|\n/g
             return unless text.length
             fulltext = text
             [full, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
