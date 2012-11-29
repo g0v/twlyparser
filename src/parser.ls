@@ -214,7 +214,7 @@ class Parser
             fulltext = text
             [full, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
             if speaker
-                if speaker is /以下/
+                if speaker is /以下|本案決議/
                     text = full
                     speaker = null
                 else
