@@ -24,7 +24,7 @@ parseZHNumber = ->
 # session (會期)
 # sitting (會次)
 class Meta
-    ->
+    ({@output} = {}) ->
         @meta = {raw: []}
     push-line: (speaker, text) ->
         if speaker 
@@ -44,13 +44,13 @@ class Meta
         @meta.raw.push text
         return @
     serialize: ->
-        console.log "# 院會紀錄\n\n"
-        console.log "```json\n", JSON.stringify @meta, null, 4b
-        console.log "\n```\n\n"
+        @output "# 院會紀錄\n\n"
+        @output "```json\n", JSON.stringify @meta, null, 4b
+        @output "\n```\n\n"
 
 class Announcement
-    ->
-        console.log "## 報告事項\n\n"
+    ({@output = console.log} = {}) ->
+        @output "## 報告事項\n\n"
         @items = {}
         @last-item = null
         @i = 0
@@ -59,27 +59,27 @@ class Announcement
             item = parseZHNumber item
             text = content
             @i++
-            console.log "#{@i}. #text\n"
+            @output "#{@i}. #text\n"
             @last-item = @items[item] = {subject: content, conversation: []}
         else
-            console.log "    #fulltext\n"
+            @output "    #fulltext\n"
             @last-item.conversation.push [speaker, text]
         return @
     serialize: ->
 
 class Proposal
-    ->
-        console.log "## 黨團提案\n\n"
+    ({@output} = {}) ->
+        @output "## 黨團提案\n\n"
         @lines = []
     push-line: (speaker, text, fulltext) ->
-        console.log "fulltext\n"
+        @output "fulltext\n"
         return @
     serialize: ->
 
 
 class Questioning
-    ->
-        console.log "## 質詢事項\n\n"
+    ({@output} = {}) ->
+        @output "## 質詢事項\n\n"
         @ctx = ''
         @reply = {}
         @question = {}
@@ -97,17 +97,17 @@ class Questioning
             if @subsection
                 people = if type is 'interp' => @current-participants else null
                 meta = {type, people}
-                console.log "    ```json\n    #{ JSON.stringify meta }\n    ```"
+                @output "    ```json\n    #{ JSON.stringify meta }\n    ```"
                 itemprefix 
                 for [speaker, fulltext] in @current-conversation
                     itemprefix = if type is 'interp'
                         if speaker => '* ' else '    '
                     else
                         ''
-                    console.log "    #itemprefix#fulltext\n"
+                    @output "    #itemprefix#fulltext\n"
                 @conversation.push [ type, @current-conversation ]
             else
-                for [speaker, fulltext] in @current-conversation => console.log "* #fulltext\n"
+                for [speaker, fulltext] in @current-conversation => @output "* #fulltext\n"
                 @conversation = @conversation +++ @current-conversation
         @current-conversation = []
         @current-participants = []
@@ -119,16 +119,16 @@ class Questioning
     push-conversation: (speaker, text, fulltext) ->
         if (speaker ? @lastSpeaker) is \主席 and text is /報告院會|詢答時間|已質詢完畢|處理完畢|提書面質詢/
             @flush!
-            console.log "* #fulltext\n"
+            @output "* #fulltext\n"
             @conversation.push [speaker, text]
             @document = text is /提書面質詢/
         else if !speaker? && @current-conversation.length is 0
             @conversation.push [speaker, text] # meeting actions
-            console.log "* #fulltext\n"
+            @output "* #fulltext\n"
         else
             [_, h, m, text]? = text.match /^(?:\(|（)(\d+)時(\d+)分(?:\)|）)(.*)$/, ''
             entry = [speaker, text]
-            #console.log "* [#h, #m]\n" if h?
+            #@output "* [#h, #m]\n" if h?
             @current-conversation.push [speaker, fulltext]
             if speaker => @current-participants.push speaker unless speaker in @current-participants
         if speaker is \主席 and text is /現在.*處理臨時提案/
@@ -143,87 +143,89 @@ class Questioning
 
         if item
             @[@ctx][item] = [speaker, text]
-            console.log "#item. #content"
+            @output "#item. #content"
         else
             @in-conversation = true
-            console.log "\n"
+            @output "\n"
             @push-conversation speaker, text, fulltext
 
     push-line: (speaker, text, fulltext) ->
         match text
         | /行政院答復部分$/ =>
-            console.log "\n" + '### 行政院答復部分' + "\n"
+            @output "\n" + '### 行政院答復部分' + "\n"
             @ctx = \reply
         | /本院委員質詢部分$/ =>
-            console.log "\n" + '### 本院委員質詢部分' + "\n"
+            @output "\n" + '### 本院委員質詢部分' + "\n"
             @ctx = \question
         | otherwise => @push speaker, text, fulltext
         return @
     serialize: ->
         @flush!
 
-ctx = meta = new Meta
-log = []
+class Parser
+    ({@output = console.log, @metaOnly} = {}) ->
+        @lastSpeaker = null
+        @ctx = @newContext Meta
 
-store = ->
-    log.push ctx.serialize! if ctx
+    store: ->
+        @ctx.serialize! if @ctx
 
-newContext = (ctxType) ->
-    store!
-    ctx := if ctxType? => new ctxType else null
+    newContext: (ctxType) ->
+        @store!
+        @ctx := if ctxType? => new ctxType {@output} else null
 
-lastSpeaker = null
-
-parse = ->
-    switch @.0.name
-    | \div   => @.children!each parse
-    | \center   => @.children!each parse
-    | \table => 
-        rich = $ '<div/>' .append @
-        rich.find('img').each -> @.attr \SRC, ''
-        if ctx?push-rich
-            ctx.push-rich rich
-        else
-            console.log "    ", rich.html!, "\n"
-    | \p     =>
-        text = $(@)text! - /^\s+|\s$|\n/g
-        return unless text.length
-        fulltext = text
-        [full, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
-        if speaker
-            if speaker is /以下/
-                text = full
-                speaker = null
+    parse: (node) ->
+        self = @
+        switch node.0.name
+        | \div   => node.children!each -> self.parse @
+        | \center   => node.children!each -> self.parse @
+        | \table => 
+            rich = $ '<div/>' .append node
+            rich.find('img').each -> @.attr \SRC, ''
+            if @ctx?push-rich
+                @ctx.push-rich rich
             else
-                text = content
+                @output "    ", rich.html!, "\n"
+        | \p     =>
+            text = $(node)text! - /^\s+|\s$|\n/g
+            return unless text.length
+            fulltext = text
+            [full, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
+            if speaker
+                if speaker is /以下/
+                    text = full
+                    speaker = null
+                else
+                    text = content
 
-        if text is /報告院會/ and text is /現在散會/
-            store!
-            ctx := null
+            if text is /報告院會/ and text is /現在散會/
+                @store!
+                @ctx := null
 
-        if text is /^報\s+告\s+事\s+項$/
-            newContext Announcement
-        else if text is /^質\s+詢\s+事\s+項$/
-            newContext Questioning
-        else if (speaker ? lastSpeaker) is \主席 && text is /處理.*黨團.*提案/
-            newContext Proposal
-        else if (speaker ? lastSpeaker) is \主席 && text is /處理.*復議案/
-            console.log "## 復議案\n\n"
-            newContext null
-        else
-            if ctx
-                ctx .:= push-line speaker, text, fulltext
+            if text is /^報\s+告\s+事\s+項$/
+                @newContext Announcement
+            else if text is /^質\s+詢\s+事\s+項$/
+                @newContext Questioning
+            else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*黨團.*提案/
+                @newContext Proposal
+            else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*復議案/
+                @output "## 復議案\n\n"
+                @newContext null
             else
-                console.log "#fulltext\n\n"
-        lastSpeaker := speaker if speaker
-    else => console.error \unhandled: @.0.name , @.html!
+                if @ctx
+                    @ctx .=push-line speaker, text, fulltext
+                else
+                    @output "#fulltext\n\n"
+            @lastSpeaker = speaker if speaker
+        else => console.error \unhandled: node.0.name, node.html!
 
 fixup = ->
     it.replace /\uE58E/g, '冲'
 
+parser = new Parser
 for file in _
     data = fs.readFileSync file, \utf8
     data = fixup data
     $ = cheerio.load data, { +lowerCaseTags }
-    $('body').children!each parse
-store!
+    $('body').children!each -> parser.parse @
+parser.store!
