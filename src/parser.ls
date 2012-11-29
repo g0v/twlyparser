@@ -228,12 +228,12 @@ class Parser
                 @store!
                 @ctx := null
 
-            if text is /^報\s+告\s+事\s+項$/
+            if text is /^報\s*告\s*事\s*項$/
                 @newContext Announcement
             else if text is /^質\s*詢\s*事\s*項$/
                 @newContext Questioning
                 @lastSpeaker = null
-            else if text is /^討\s+論\s+事\s+項$/
+            else if text is /^討\s*論\s*事\s*項$/
                 @newContext Discussion
             else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*黨團.*提案/
                 @newContext Proposal
