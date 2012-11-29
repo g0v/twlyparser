@@ -34,8 +34,10 @@ class Meta
             return @
 
         match text
-        | /立法院第(\d+)屆第(\d+)會期第(\d+)次會議紀錄/ =>
-            @meta<[ad session sitting]> = that[1 to 3]
+        | /立法院第(\S+)屆第(\S+)會期第(\S+)次會議紀錄/ =>
+            @meta<[ad session sitting]> = that[1 to 3].map ->
+                | it in zhnumber => parseZHNumber it
+                else => it
         | /主\s*席\s+(.*)$/ =>
             @ctx = \speaker
             @meta.speaker = that.1
@@ -153,7 +155,7 @@ class Interpellation
 class Questioning
     ({@output} = {}) ->
         @output "## 質詢事項\n\n"
-        @ctx = ''
+        @ctx = null
         @reply = {}
         @question = {}
     push: (speaker, text, fulltext) ->
@@ -161,6 +163,7 @@ class Questioning
             item = parseZHNumber item
 
         if item
+            @ctx ?= \question if content is /^本院/
             @[@ctx][item] = [speaker, text]
             @output "#item. #content"
         else
@@ -197,6 +200,7 @@ class Parser
     parse: (node) ->
         self = @
         switch node.0.name
+        | \multicol   => node.children!each -> self.parse @
         | \div   => node.children!each -> self.parse @
         | \center   => node.children!each -> self.parse @
         | \table => 
