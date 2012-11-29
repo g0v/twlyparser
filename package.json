@@ -13,8 +13,9 @@
     "url": "git://github.com/g0v/twlyparser.git"
   },
   "scripts": {
-    "prepublish": "./node_modules/.bin/lsc -cj package.ls"
+    "prepublish": "./node_modules/.bin/lsc -cj package.ls\n./node_modules/.bin/lsc -cbo lib src"
   },
+  "main": "lib/ly.js",
   "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
@@ -26,7 +27,7 @@
     "cheerio": "0.10.x",
     "request": "2.12.x",
     "q": "0.8.7",
-    "mkdirp": "0"
+    "mkdirp": "0.3.x"
   },
   "optionalDependencies": {}
 }

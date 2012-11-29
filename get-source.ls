@@ -1,21 +1,20 @@
-require! {index: \./data/index-files, request, q, mkdirp, optimist, path, fs, gazettes: \./data/gazettes}
+require! \./lib/ly
+require! <[request q mkdirp optimist path fs]>
 
 {gazette} = optimist.argv
 
-for id, g of gazettes when !gazette? || id ~= gazette => let id, g
-    err <- mkdirp "source/#{id}"
-    entries = [i for i in index when i.gazette ~= id]
-    bytype = {}
-    for {type}:i in entries
-        (bytype[type] ||= []).push i
-    for type, entries of bytype when type is /院會紀錄/
-        console.log type
-        allfiles = entries.map (.files) .reduce (+++)
-        for uri of {[x,true] for x in allfiles} => let fname = path.basename uri
-            file = "source/#{id}/#{fname}"
-            fetchit = (cb) ->
-                request {method: \GET, uri} .pipe fs.createWriteStream file
-            _, {size}? <- fs.stat file
-            return if size?
-            <- fetchit
-            console.log \done id
+id, g, type, entries, allfiles <- ly.forGazette gazette
+err <- mkdirp "source/#{id}"
+throw err if err
+for uri in allfiles => let uri, fname = path.basename uri
+    file = "source/#{id}/#{fname}"
+    fetchit = (cb) ->
+        writer = with fs.createWriteStream file
+            ..on \error -> throw it
+            ..on \close cb
+            ..
+        request {method: \GET, uri} .pipe writer
+    _, {size}? <- fs.stat file
+    return if size?
+    <- fetchit
+    console.log \done id, uri

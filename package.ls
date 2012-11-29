@@ -10,7 +10,9 @@ repository:
 scripts:
   prepublish: """
     ./node_modules/.bin/lsc -cj package.ls
+    ./node_modules/.bin/lsc -cbo lib src
   """
+main: 'lib/ly.js'
 engines:
   node: '0.8.x'
   npm: '1.1.x'
