@@ -209,6 +209,7 @@ class Parser
         | \p     =>
             text = @$(node)text! - /^\s+|\s+$|\n/g
             return unless text.length
+            return unless text is /\D/
             fulltext = text
             [full, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
             if speaker
