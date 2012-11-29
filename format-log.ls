@@ -115,7 +115,7 @@ class Questioning
         @subsection = true
 
     push-rich: (node) ->
-        @current-conversation.push node.html!
+        @current-conversation.push [ null, node.html! ]
     push-conversation: (speaker, text, fulltext) ->
         if (speaker ? @lastSpeaker) is \主席 and text is /報告院會|詢答時間|已質詢完畢|處理完畢|提書面質詢/
             @flush!
