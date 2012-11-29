@@ -2,8 +2,8 @@ require! {cheerio, optimist, fs}
 
 {_:files} = optimist.argv
 
-gazettes = {}
-entries = []
+gazettes = try require \./data/gazettes
+entries = try require \./data/index
 
 parseTWDate = ->
     [_, y, m, d] = it.match /(\d+)\/(\d+)\/(\d+)/
