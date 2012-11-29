@@ -65,22 +65,36 @@ class Announcement
         return @
     serialize: ->
 
+class Discussion
+    ({@output} = {}) ->
+        @output "## 討論事項\n\n"
+        @lines = []
+    push-line: (speaker, text, fulltext) ->
+        @output "#fulltext\n"
+        return @
+    serialize: ->
+
+class Consultation
+    ({@output} = {}) ->
+        @output "## 黨團協商結論\n\n"
+        @lines = []
+    push-line: (speaker, text, fulltext) ->
+        @output "#fulltext\n"
+        return @
+    serialize: ->
+
 class Proposal
     ({@output} = {}) ->
         @output "## 黨團提案\n\n"
         @lines = []
     push-line: (speaker, text, fulltext) ->
-        @output "fulltext\n"
+        @output "#fulltext\n"
         return @
     serialize: ->
 
 
-class Questioning
+class Interpellation
     ({@output} = {}) ->
-        @output "## 質詢事項\n\n"
-        @ctx = ''
-        @reply = {}
-        @question = {}
         @current-conversation = []
         @current-participants = []
         @conversation = []
@@ -114,7 +128,7 @@ class Questioning
 
     push-rich: (node) ->
         @current-conversation.push [ null, node.html! ]
-    push-conversation: (speaker, text, fulltext) ->
+    push-line: (speaker, text, fulltext) ->
         if (speaker ? @lastSpeaker) is \主席 and text is /報告院會|詢答時間|已質詢完畢|處理完畢|提書面質詢/
             @flush!
             @output "* #fulltext\n"
@@ -133,9 +147,16 @@ class Questioning
             @exmotion = true
 
         @lastSpeaker = speaker if speaker
+        @
+    serialize: -> @flush!
 
+class Questioning
+    ({@output} = {}) ->
+        @output "## 質詢事項\n\n"
+        @ctx = ''
+        @reply = {}
+        @question = {}
     push: (speaker, text, fulltext) ->
-        return @push-conversation speaker, text, fulltext if @in-conversation
         if [_, item, content]? = text.match zhreg
             item = parseZHNumber item
 
@@ -143,9 +164,7 @@ class Questioning
             @[@ctx][item] = [speaker, text]
             @output "#item. #content"
         else
-            @in-conversation = true
-            @output "\n"
-            @push-conversation speaker, text, fulltext
+            @output "#fulltext\n"
 
     push-line: (speaker, text, fulltext) ->
         match text
@@ -158,7 +177,6 @@ class Questioning
         | otherwise => @push speaker, text, fulltext
         return @
     serialize: ->
-        @flush!
 
 class Parser
     ({@output = console.log, @metaOnly} = {}) ->
@@ -208,8 +226,17 @@ class Parser
                 @newContext Announcement
             else if text is /^質\s+詢\s+事\s+項$/
                 @newContext Questioning
+            else if text is /^討\s+論\s+事\s+項$/
+                @newContext Discussion
             else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*黨團.*提案/
                 @newContext Proposal
+                @output "#fulltext\n\n"
+            else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*黨團.*協商結論/
+                @newContext Consultation
+                @output "#fulltext\n\n"
+            else if (speaker ? @lastSpeaker) is \主席 && text is /對行政院.*質詢/
+                @newContext Interpellation
+                @ctx .=push-line speaker, text, fulltext
             else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*復議案/
                 @output "## 復議案\n\n"
                 @newContext null
