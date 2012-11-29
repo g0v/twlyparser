@@ -207,7 +207,8 @@ class Parser
             else
                 @output "    ", rich.html!, "\n"
         | \p     =>
-            text = @$(node)text! - /^\s+|\s+$|\n/g
+            text = @$(node)text! - /^\s+|\s+$/g
+            text.=replace /\s*\n+\s*/g, ' '
             return unless text.length
             return unless text is /\D/
             fulltext = text
