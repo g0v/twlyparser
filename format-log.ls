@@ -5,6 +5,8 @@ require! \./lib/ly
 {gazette} = optimist.argv
 fixup = ->
     it.replace /\uE58E/g, '冲'
+        .replace /\uE8E2/g, '堃'
+        .replace /\uE1BD/g, '%'
 
 parser = new Parser
 ly.forGazette gazette, (id, g, type, entries, files) ->
