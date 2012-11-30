@@ -36,7 +36,7 @@ class Meta
         match text
         | /立法院第(\S+)屆第(\S+)會期第(\S+)次會議紀錄/ =>
             @meta<[ad session sitting]> = that[1 to 3].map ->
-                | it in zhnumber => parseZHNumber it
+                | it.0 in zhnumber => parseZHNumber it
                 else => +it
         | /主\s*席\s+(.*)$/ =>
             @ctx = \speaker
