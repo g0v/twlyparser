@@ -43,6 +43,16 @@ class Meta
         | /主\s*席\s+(.*)$/ =>
             @ctx = \speaker
             @meta.speaker = that.1
+        | /時\s*間\s+中華民國(\S+)年(\S+)月(\S+)日（(\S+)）(\S+?)(\d+)時/ =>
+            @meta.datetime = {}
+            @meta.datetime<[year month date]> = that[1 to 3].map ->
+                | it.0 in zhnumber => parseZHnumber it
+                else => +it
+            [am_or_pm, hour] = that[5 to 6].map -> parseInt it
+            @meta.datetime.hour = if am_or_pm == "上午"
+                                  => hour
+                                  else hour + 12
+            @meta.datetime<[day_of_week]> = that.4
         @output "#text\n"
         return @
     serialize: ->
