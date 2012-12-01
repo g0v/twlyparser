@@ -5,6 +5,17 @@ zhnumber = <[○ 一 二 三 四 五 六 七 八 九 十]>
 zhmap = {[c, i] for c, i in zhnumber}
 zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)、(.*)$", \m
 
+intOfZHNumber = -> 
+    if it in zhnumber 
+    then parseZHNumber it
+    else +it
+
+parseZHHour = -> 
+    [am_or_pm, hour] = it
+    if am_or_pm == '上午'
+    then parseInt hour
+    else parseInt hour + 12
+
 parseZHNumber = ->
     if it.0 is \十
         l = it.length
@@ -45,13 +56,8 @@ class Meta
             @meta.speaker = that.1
         | /時\s*間\s+中華民國(\S+)年(\S+)月(\S+)日（(\S+)）(\S+?)(\d+)時/ =>
             @meta.datetime = {}
-            @meta.datetime<[year month date]> = that[1 to 3].map ->
-                | it.0 in zhnumber => parseZHnumber it
-                else => +it
-            [am_or_pm, hour] = that[5 to 6].map -> parseInt it
-            @meta.datetime.hour = if am_or_pm == "上午"
-                                  => hour
-                                  else hour + 12
+            @meta.datetime<[year month date]> =  that[1 to 3].map -> intOfZHNumber it
+            @meta.datetime.hour = parseZHHour that[5 to 6]
             @meta.datetime<[day_of_week]> = that.4
         @output "#text\n"
         return @
