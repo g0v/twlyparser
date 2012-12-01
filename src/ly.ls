@@ -11,4 +11,4 @@ function forGazette (gazette, cb)
                 for x in entries.map(-> it.files ? []).reduce (+++)}]
             cb id, g, type, entries, allfiles
 
-module.exports = { forGazette }
+module.exports = { forGazette, index, gazettes }

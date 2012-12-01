@@ -22,7 +22,7 @@ parseZHNumber = ->
 # session (會期)
 # sitting (會次)
 class Meta
-    ({@output} = {}) ->
+    ({@output, @output-json} = {}) ->
         @output "# 院會紀錄\n\n"
         @meta = {}
     push-line: (speaker, text) ->
@@ -44,6 +44,7 @@ class Meta
         @output "#text\n"
         return @
     serialize: ->
+        @output-json @meta if @output-json
         @output "```json\n", JSON.stringify @meta, null, 4b
         @output "\n```\n\n"
 
@@ -181,7 +182,7 @@ class Questioning
     serialize: ->
 
 class Parser
-    ({@output = console.log, @metaOnly} = {}) ->
+    ({@output = console.log, @output-json, @metaOnly} = {}) ->
         @lastSpeaker = null
         @ctx = @newContext Meta
     parseHtml: (data) ->
@@ -194,7 +195,7 @@ class Parser
 
     newContext: (ctxType) ->
         @store!
-        @ctx := if ctxType? => new ctxType {@output} else null
+        @ctx := if ctxType? => new ctxType {@output, @output-json} else null
 
     parse: (node) ->
         self = @
