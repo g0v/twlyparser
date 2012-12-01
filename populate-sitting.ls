@@ -3,7 +3,7 @@ require! <[request optimist path fs sh async]>
 
 {Parser} = require \./lib/parser
 
-{gazette, dometa} = optimist.argv
+{gazette, dometa, ad} = optimist.argv
 
 
 metaOnly = dometa
@@ -11,6 +11,7 @@ skip = false
 funcs = []
 ly.forGazette gazette, (id, g, type, entries, files) ->
     return if g.sitting if dometa
+    return if ad and g.ad !~= ad
     return if type isnt /院會紀錄/
     files = [files.0] if metaOnly
     files.forEach (uri) -> funcs.push (done) ->
