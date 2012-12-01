@@ -209,6 +209,46 @@ class Parser
         @store!
         @ctx := if ctxType? => new ctxType {@output, @output-json} else null
 
+    parseLine: (fulltext) ->
+        text = fulltext
+        [full, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
+        if speaker
+            if speaker is /以下|本案決議/
+                text = full
+                speaker = null
+            else
+                text = content
+
+        if text is /報告院會/ and text is /現在散會/
+            @store!
+            @ctx := null
+
+        if text is /^報\s*告\s*事\s*項$/
+            @newContext Announcement
+        else if text is /^質\s*詢\s*事\s*項$/
+            @newContext Questioning
+            @lastSpeaker = null
+        else if text is /^討\s*論\s*事\s*項$/
+            @newContext Discussion
+        else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*黨團.*提案/
+            @newContext Proposal
+            @output "#fulltext\n\n"
+        else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*黨團.*協商結論/
+            @newContext Consultation
+            @output "#fulltext\n\n"
+        else if (speaker ? @lastSpeaker) is \主席 && text is /對行政院.*質詢/
+            @newContext Interpellation
+            @ctx .=push-line speaker, text, fulltext
+        else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*復議案/
+            @output "## 復議案\n\n"
+            @newContext null
+        else
+            if @ctx
+                @ctx .=push-line speaker, text, fulltext
+            else
+                @output "#fulltext\n\n"
+        @lastSpeaker = speaker if speaker
+
     parse: (node) ->
         self = @
         pass-through = -> it.children!each -> self.parse @
@@ -220,7 +260,7 @@ class Parser
         | \dl         => pass-through node
         | \ol         => pass-through node
         | \li         => pass-through node
-        | \table => 
+        | \table =>
             rich = @$ '<div/>' .append node
             rich.find('img').each -> @.attr \SRC, ''
             if @ctx?push-rich
@@ -232,44 +272,7 @@ class Parser
             text.=replace /\s*\n+\s*/g, ' '
             return unless text.length
             return unless text is /\D/
-            fulltext = text
-            [full, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
-            if speaker
-                if speaker is /以下|本案決議/
-                    text = full
-                    speaker = null
-                else
-                    text = content
-
-            if text is /報告院會/ and text is /現在散會/
-                @store!
-                @ctx := null
-
-            if text is /^報\s*告\s*事\s*項$/
-                @newContext Announcement
-            else if text is /^質\s*詢\s*事\s*項$/
-                @newContext Questioning
-                @lastSpeaker = null
-            else if text is /^討\s*論\s*事\s*項$/
-                @newContext Discussion
-            else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*黨團.*提案/
-                @newContext Proposal
-                @output "#fulltext\n\n"
-            else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*黨團.*協商結論/
-                @newContext Consultation
-                @output "#fulltext\n\n"
-            else if (speaker ? @lastSpeaker) is \主席 && text is /對行政院.*質詢/
-                @newContext Interpellation
-                @ctx .=push-line speaker, text, fulltext
-            else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*復議案/
-                @output "## 復議案\n\n"
-                @newContext null
-            else
-                if @ctx
-                    @ctx .=push-line speaker, text, fulltext
-                else
-                    @output "#fulltext\n\n"
-            @lastSpeaker = speaker if speaker
+            @parseLine text
         else => console.error \unhandled: node.0.name, node.html!
 
 
