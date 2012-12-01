@@ -27,8 +27,10 @@ ly.forGazette null (id, g, type, entries, files) ->
             catch err
                 console.log \err err
             if meta?ad
-                g <<< meta{ad,session,sitting}
+                g <<< meta{ad,session,sitting,extra}
                 console.log id, g
+            else
+                console.log \noemta, id
             done!
 
         _, {size}? <- fs.stat html

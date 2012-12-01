@@ -10,7 +10,6 @@ fixup = ->
 
 parser = new Parser
 ly.forGazette gazette, (id, g, type, entries, files) ->
-    return if g.sitting
     return if type isnt /院會紀錄/
     for uri in files => let fname = path.basename uri
         file = "source/#{id}/#{fname}".replace /\.doc$/, '.html'

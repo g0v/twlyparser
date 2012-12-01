@@ -468,7 +468,8 @@
         "date": "2001-07-17T16:00:00.000Z",
         "ad": 4,
         "session": 5,
-        "sitting": null
+        "sitting": 1,
+        "extra": 1
     },
     "3178": {
         "year": "90",
@@ -937,7 +938,8 @@
         "date": "2002-08-06T16:00:00.000Z",
         "ad": 5,
         "session": 1,
-        "sitting": null
+        "sitting": 1,
+        "extra": 1
     },
     "3252": {
         "year": "91",
@@ -1330,7 +1332,8 @@
         "date": "2003-07-18T16:00:00.000Z",
         "ad": 5,
         "session": 3,
-        "sitting": null
+        "sitting": 1,
+        "extra": 1
     },
     "3312": {
         "year": "92",
@@ -1748,7 +1751,8 @@
         "date": "2004-08-22T16:00:00.000Z",
         "ad": 5,
         "session": 5,
-        "sitting": null
+        "sitting": 1,
+        "extra": 1
     },
     "3371": {
         "year": "93",
@@ -1756,7 +1760,8 @@
         "date": "2004-09-12T16:00:00.000Z",
         "ad": 5,
         "session": 5,
-        "sitting": null
+        "sitting": 1,
+        "extra": 2
     },
     "3372": {
         "year": "93",
@@ -2549,7 +2554,8 @@
         "date": "2006-07-02T16:00:00.000Z",
         "ad": 6,
         "session": 3,
-        "sitting": null
+        "sitting": 1,
+        "extra": 1
     },
     "3497": {
         "year": "95",
@@ -2557,7 +2563,8 @@
         "date": "2006-07-09T16:00:00.000Z",
         "ad": 6,
         "session": 3,
-        "sitting": null
+        "sitting": 1,
+        "extra": 3
     },
     "3498": {
         "year": "95",
@@ -3080,7 +3087,8 @@
         "date": "2007-07-16T16:00:00.000Z",
         "ad": 6,
         "session": 5,
-        "sitting": null
+        "sitting": 1,
+        "extra": 1
     },
     "3581": {
         "year": "96",
@@ -3093,7 +3101,8 @@
         "date": "2007-07-26T16:00:00.000Z",
         "ad": 6,
         "session": 5,
-        "sitting": null
+        "sitting": 1,
+        "extra": 2
     },
     "3583": {
         "year": "96",
@@ -4022,7 +4031,8 @@
         "date": "2009-09-03T16:00:00.000Z",
         "ad": 7,
         "session": 3,
-        "sitting": null
+        "sitting": 1,
+        "extra": 1
     },
     "3732": {
         "year": "98",
@@ -4286,7 +4296,8 @@
         "date": "2010-01-26T16:00:00.000Z",
         "ad": 7,
         "session": 4,
-        "sitting": null
+        "sitting": 1,
+        "extra": 1
     },
     "3774": {
         "year": "99",
@@ -4542,7 +4553,8 @@
         "date": "2010-07-15T16:00:00.000Z",
         "ad": 7,
         "session": 5,
-        "sitting": null
+        "sitting": 1,
+        "extra": 1
     },
     "3815": {
         "year": "99",
@@ -4550,7 +4562,8 @@
         "date": "2010-08-29T16:00:00.000Z",
         "ad": 7,
         "session": 5,
-        "sitting": null
+        "sitting": 2,
+        "extra": 1
     },
     "3816": {
         "year": "99",
@@ -5326,7 +5339,8 @@
         "date": "2012-01-30T16:00:00.000Z",
         "ad": 7,
         "session": 8,
-        "sitting": null
+        "sitting": 1,
+        "extra": 1
     },
     "3943": {
         "year": "101",
@@ -5616,7 +5630,8 @@
         "date": "2012-07-31T16:00:00.000Z",
         "ad": 8,
         "session": 1,
-        "sitting": null
+        "sitting": 1,
+        "extra": 1
     },
     "3992": {
         "year": "101",
