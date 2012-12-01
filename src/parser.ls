@@ -1,33 +1,5 @@
 require! {cheerio}
-
-zhnumber = <[○ 一 二 三 四 五 六 七 八 九 十]>
-
-zhmap = {[c, i] for c, i in zhnumber}
-zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)、(.*)$", \m
-
-intOfZHNumber = -> 
-    if it in zhnumber 
-    then parseZHNumber it
-    else +it
-
-parseZHHour = -> 
-    [am_or_pm, hour] = it
-    if am_or_pm == '上午'
-    then parseInt hour
-    else parseInt hour + 12
-
-parseZHNumber = ->
-    if it.0 is \十
-        l = it.length
-        return 10 if l is 1
-        return 10 + parseZHNumber it.slice 1
-    if it[*-1] is \十
-        return 10 * parseZHNumber it.slice 0, it.length-1
-    res = 0
-    for c in it when c isnt \十
-        res *= 10
-        res += zhmap[c]
-    res
+require! "../lib/util"
 
 # ad (appointed dates) (屆別)
 # session (會期)
@@ -46,19 +18,14 @@ class Meta
 
         match text
         | /立法院第(\S+)屆第(\S+)會期第(\S+?)次(?:臨時會第(\S+)次)?會議紀錄/ =>
-            @meta<[ad session sitting]> = that[1 to 3].map ->
-                | it.0 in zhnumber => parseZHNumber it
-                else => +it
+            @meta<[ad session sitting]> = that[1 to 3].map -> util.intOfZHNumber it
             if it = that[4]
-                @meta.extra = if it in zhnumber => parseZHNumber it else => +it
+                @meta.extra = util.intOfZHNumber it
         | /主\s*席\s+(.*)$/ =>
             @ctx = \speaker
             @meta.speaker = that.1
         | /時\s*間\s+中華民國(\S+)年(\S+)月(\S+)日（(\S+)）(\S+?)(\d+)時/ =>
-            @meta.datetime = {}
-            @meta.datetime<[year month date]> =  that[1 to 3].map -> intOfZHNumber it
-            @meta.datetime.hour = parseZHHour that[5 to 6]
-            @meta.datetime<[day_of_week]> = that.4
+            @meta.datetime = util.datetimeOfLyDateTime that[1 to 3] [5 to 6]
         @output "#text\n"
         return @
     serialize: ->
@@ -73,8 +40,8 @@ class Announcement
         @last-item = null
         @i = 0
     push-line: (speaker, text, fulltext) ->
-        if [_, item, content]? = text.match zhreg
-            item = parseZHNumber item
+        if [_, item, content]? = text.match util.zhreg
+            item = util.parseZHNumber item
             text = content
             @i++
             @output "#{@i}. #text\n"
@@ -177,8 +144,8 @@ class Questioning
         @reply = {}
         @question = {}
     push: (speaker, text, fulltext) ->
-        if [_, item, content]? = text.match zhreg
-            item = parseZHNumber item
+        if [_, item, content]? = text.match util.zhreg
+            item = util.parseZHNumber item
 
         if item
             @ctx ?= \question if content is /^本院/
