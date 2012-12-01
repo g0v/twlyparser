@@ -54,13 +54,8 @@ twlyrawdata.tgz : download from http://dl.dropbox.com/u/30657009/ly/4004.tgz
 ```
 twlyparser $ mkdir source/
 twlyparser $ tar xzvf twlyrawdata.tgz -C source/ 
-twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --gazette 4004 ../twly_rawdata/*.html > data/4004.json
+twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --gazette 4004 --dir ./data
 ```
-
-```
-./node_modules/.bin/lsc ./parse-log.ls source/4004/*.html > data/4004.json
-```
-
 
 To bootstrap or maintain the index file cache in data/:
 
