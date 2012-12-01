@@ -3,11 +3,14 @@ require! <[request optimist path fs sh async]>
 
 {Parser} = require \./lib/parser
 
-metaOnly = true
-skip = true
+{gazette, dometa} = optimist.argv
+
+
+metaOnly = dometa
+skip = false
 funcs = []
-ly.forGazette null (id, g, type, entries, files) ->
-    return if g.sitting
+ly.forGazette gazette, (id, g, type, entries, files) ->
+    return if g.sitting if dometa
     return if type isnt /院會紀錄/
     files = [files.0] if metaOnly
     files.forEach (uri) -> funcs.push (done) ->
@@ -18,6 +21,7 @@ ly.forGazette null (id, g, type, entries, files) ->
         html = file.replace /\.doc$/, '.html'
 
         extractMeta = ->
+            return done! unless dometa
             meta = null
             parser = new Parser do
                 output: ->
