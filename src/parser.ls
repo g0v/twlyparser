@@ -198,10 +198,15 @@ class Parser
 
     parse: (node) ->
         self = @
+        pass-through = -> it.children!each -> self.parse @
         switch node.0.name
-        | \multicol   => node.children!each -> self.parse @
-        | \div   => node.children!each -> self.parse @
-        | \center   => node.children!each -> self.parse @
+        | \multicol   => pass-through node
+        | \div        => pass-through node
+        | \center     => pass-through node
+        | \dd         => pass-through node
+        | \dl         => pass-through node
+        | \ol         => pass-through node
+        | \li         => pass-through node
         | \table => 
             rich = @$ '<div/>' .append node
             rich.find('img').each -> @.attr \SRC, ''
