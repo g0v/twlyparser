@@ -16,9 +16,12 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
 
     console.log id
     output = fs.createWriteStream "#dir/#id.md"
-    parser = new Parser output: (...args) -> output.write (args +++ "\n")join ''
-    for uri in files => let fname = path.basename uri
-        file = "source/#{id}/#{fname}".replace /\.doc$/, '.html'
-        parser.parseHtml fixup fs.readFileSync file, \utf8
-    parser.store!
-    output.end!
+    try
+        parser = new Parser output: (...args) -> output.write (args +++ "\n")join ''
+        for uri in files => let fname = path.basename uri
+            file = "source/#{id}/#{fname}".replace /\.doc$/, '.html'
+            parser.parseHtml fixup fs.readFileSync file, \utf8
+        parser.store!
+        output.end!
+    catch err
+        console.log \err err
