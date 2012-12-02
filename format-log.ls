@@ -16,7 +16,7 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
         parser = new Parser output: (...args) -> fs.writeSync output, (args +++ "\n")join ''
         for uri in files => let fname = path.basename uri
             file = "source/#{id}/#{fname}".replace /\.doc$/, '.html'
-            parser.parseHtml fixup fs.readFileSync file, \utf8
+            parser.parseHtml util.readFileSync file
         parser.store!
         fs.closeSync output
     catch err
