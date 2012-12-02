@@ -5,6 +5,18 @@ require! \./lib/util
 
 {dir = '.' } = optimist.argv
 
+
+relations_map_fname = "#dir/index_people_interp.json"
+
+if not fs.exists relations_map_fname
+    console.log "create"
+    relations_map = {}
+else
+    relations_map = JSON.parse util.readFileSync relations_map_fname
+
+save_map = (relations_map) ->
+    fs.writeFileSync relations_map_fname, JSON.stringify relations_map, null , 4b
+
 gen_interp_json = (err, files) -> 
                     if err
                         console.log err
@@ -24,5 +36,8 @@ gen_interp_json = (err, files) ->
                             parser.parseMarkdown util.readFileSync "#dir/#fname"
                             parser.store!
                             fs.closeSync output
-
+                            util.build_people_interp_map id, parser.results, relations_map
+                            save_map relations_map
+        
 fs.readdir dir, gen_interp_json
+
