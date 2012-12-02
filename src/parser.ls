@@ -224,18 +224,26 @@ class Parser
 
     parse: (node) ->
         self = @
+        cleanup = (node) ~>
+            text = @$(node)text! - /^\s+|\s+$/g
+            text.=replace /\s*\n+\s*/g, ' '
+            text
+
         match node.0.name
         | /multicol|div|center|dd|dl|ol|ul|li/ => node.children!each -> self.parse @
+        | \h1 =>
+            @parseLine cleanup node
+        | \h2 =>
+            @parseLine cleanup node
         | \table =>
             rich = @$ '<div/>' .append node
             rich.find('img').each -> @.attr \SRC, ''
             if @ctx?push-rich
                 @ctx.push-rich rich
             else
-                @output "    ", rich.html!, "\n"
+                @output "     ", rich.html!, "\n"
         | \p     =>
-            text = @$(node)text! - /^\s+|\s+$/g
-            text.=replace /\s*\n+\s*/g, ' '
+            text = cleanup node
             return unless text.length
             return unless text is /\D/
             @parseLine text

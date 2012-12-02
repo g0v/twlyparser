@@ -10,10 +10,14 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
     return if ad and g.ad !~= ad
 
     console.log id
-    output = fs.createWriteStream "#dir/#id.md"
-    parser = new Parser output: (...args) -> output.write (args +++ "\n")join ''
-    for uri in files => let fname = path.basename uri
-        file = "source/#{id}/#{fname}".replace /\.doc$/, '.html'
-        parser.parseHtml util.readFileSync file
-    parser.store!
-    output.end!
+
+    output = fs.openSync "#dir/#id.md" \w
+    try
+        parser = new Parser output: (...args) -> fs.writeSync output, (args +++ "\n")join ''
+        for uri in files => let fname = path.basename uri
+            file = "source/#{id}/#{fname}".replace /\.doc$/, '.html'
+            parser.parseHtml fixup fs.readFileSync file, \utf8
+        parser.store!
+        fs.closeSync output
+    catch err
+        console.log \err err
