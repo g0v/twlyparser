@@ -20,4 +20,4 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
         parser.store!
         fs.closeSync output
     catch err
-        console.log \err err
+        console.log \err err.stack
