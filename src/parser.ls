@@ -43,6 +43,10 @@ class Announcement
         if [_, item, content]? = text.match util.zhreg
             item = util.parseZHNumber item
             text = content
+
+            match text
+            | /(\S+委員會)/
+                console.log 
             @i++
             @output "#{@i}. #text\n"
             @last-item = @items[item] = {subject: content, conversation: []}
@@ -297,12 +301,24 @@ class ItemList
             return
 
         if @ctx = \item and token.type is \text
-            @results.push token.text
+                @results.push @parseConversation token.text
 
         if token.type is \list_item_end
             @ctx = null
             return
 
+    parseConversation: (text) ->
+        match text 
+        | /^(\S+?)：\s*(.*)/ => 
+            [speaker, content] = that[1 to 2]
+            @lastSpeaker = speaker
+        else
+            speaker = if @lastSpeaker
+                    then @lastSpeaker
+                    else \主席
+            content = text
+        {speaker:speaker, content:content}
+        
 class Text
 
     ({}) ->
