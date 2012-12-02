@@ -11,4 +11,4 @@ ly.forGazette null, (id, g, type, entries, files) ->
     name += "(臨時會)" if extra
     results.unshift {name,id}
 
-results.forEach ({name,id}) -> console.log "[#{name}](#{id}.md)\n"
+results.forEach ({name,id}) -> console.log "[#{name}](#{id}.md) [txt](#{id}.txt)\n"
