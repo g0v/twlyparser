@@ -1,4 +1,4 @@
-require! {cheerio}
+require! {cheerio, marked}
 require! "../lib/util"
 
 # ad (appointed dates) (屆別)
@@ -242,4 +242,60 @@ class Parser
         else => console.error \unhandled: node.0.name, node.html!
 
 
-module.exports = { Parser }
+class ItemList
+
+    (meta) ->
+        @meta = meta
+        @type = meta.type
+        @ctx = null
+        @results = []
+        @output = console.log
+
+    parseToken: (token) ->
+        if token.type is \list_item_start
+            @ctx = \item
+            return
+
+        if @ctx = \item and token.type is \text
+            @results.push token.text
+
+        if token.type is \list_item_end
+            @ctx = null
+            return
+
+class ResourceParser
+
+    ({@output = console.log} = {}) ->
+        @ctx = null
+
+    parseMarkdown: (data) ->
+        marked.setOptions \ 
+            {gfm: true, pedantic: false, sanitize: true}
+        @tokens = marked.lexer data
+        @parse @tokens
+   
+    parse: (tokens) -> 
+        @results = []
+        for token in tokens
+            meta = @parseMeta token
+            if meta
+                if meta.type is \interp
+                    @newContext meta
+                /* ignored meta */
+                continue
+     
+            if @ctx
+                @ctx.parseToken token
+
+    newContext: (meta) ->
+        @results.push [@ctx.meta, @ctx.results] if @ctx
+        @ctx = new ItemList meta
+           
+    parseMeta: (token) ->
+            if token.type is \code and token.lang is \json
+                JSON.parse token.text
+
+    store: ->
+        @output JSON.stringify @results, null, 4b
+
+module.exports = { Parser, ResourceParser }

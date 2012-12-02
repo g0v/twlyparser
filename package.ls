@@ -24,4 +24,5 @@ devDependencies:
   request: \2.12.x
   q: \0.8.7
   mkdirp: \0.3.x
+  marked: \0.2.6
 optionalDependencies: {}
