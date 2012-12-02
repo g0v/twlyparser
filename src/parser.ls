@@ -241,7 +241,7 @@ class Parser
             if @ctx?push-rich
                 @ctx.push-rich rich
             else
-                @output "     ", rich.html!, "\n"
+                @output "    ", rich.html!, "\n"
         | \p     =>
             text = cleanup node
             return unless text.length
