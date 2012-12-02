@@ -55,4 +55,19 @@ fixup = ->
 
 readFileSync = (path) -> fixup fs.readFileSync path, \utf8
 
-module.exports = {datetimeOfLyDateTime, intOfZHNumber, parseZHNumber, zhreg, zhnumber, readFileSync}
+update_one_to_many_map = (dct, k, v) ->
+    if dct[k] is undefined
+        dct[k] = [v]
+    else unless v in dct[k]
+        dct[k].push v
+    dct
+
+build_people_interp_map = (ref_id, data, base_dct) ->
+    data.map ->
+        meta = it.0
+        if meta.type is \interp
+            meta.people.map ->
+                update_one_to_many_map base_dct, it, ref_id
+    base_dct
+
+module.exports = {datetimeOfLyDateTime, intOfZHNumber, parseZHNumber, zhreg, zhnumber, readFileSync, build_people_interp_map}
