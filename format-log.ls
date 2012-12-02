@@ -1,14 +1,9 @@
 require! {optimist, fs, path}
+require! \./lib/util
 require! \./lib/ly
 {Parser} = require \./lib/parser
 
 {gazette, ad, dir = '.'} = optimist.argv
-
-fixup = ->
-    it  .replace /\uE58E/g, '冲'
-        .replace /\uE8E2/g, '堃'
-        .replace /\uE8E4/g, '崐'
-        .replace /\uE1BD/g, '%'
 
 ly.forGazette gazette, (id, g, type, entries, files) ->
     return if type isnt /院會紀錄/
@@ -19,6 +14,6 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
     parser = new Parser output: (...args) -> output.write (args +++ "\n")join ''
     for uri in files => let fname = path.basename uri
         file = "source/#{id}/#{fname}".replace /\.doc$/, '.html'
-        parser.parseHtml fixup fs.readFileSync file, \utf8
+        parser.parseHtml util.readFileSync file
     parser.store!
     output.end!

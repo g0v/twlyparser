@@ -1,3 +1,4 @@
+require! {fs}
 /* helper of zh numbers, datetime */
 
 zhnumber = <[○ 一 二 三 四 五 六 七 八 九 十]>
@@ -46,4 +47,12 @@ datetimeOfLyDateTime = (lydate, lyhour, lysec) ->
     [y, m, d] = lydate.map -> intOfZHNumber it
     new Date +y + 1911, +m-1, d, h, s
 
-module.exports = {datetimeOfLyDateTime, intOfZHNumber, parseZHNumber, zhreg, zhnumber}
+fixup = ->
+    it  .replace /\uE58E/g, '冲'
+        .replace /\uE8E2/g, '堃'
+        .replace /\uE8E4/g, '崐'
+        .replace /\uE1BD/g, '%'
+
+readFileSync = (path) -> fixup fs.readFileSync path, \utf8
+
+module.exports = {datetimeOfLyDateTime, intOfZHNumber, parseZHNumber, zhreg, zhnumber, readFileSync}
