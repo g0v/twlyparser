@@ -42,7 +42,8 @@ To retrieve source word files of a specific gazette that is already listed in
 Convert to html with 'unoconv':
 
 ```
-/Applications/LibreOffice.app/Contents/MacOS/python ~/git/sysadmin/unoconv/unoconv  -f html source/4004/*.doc
+# make sure you do `git submodule init` and `git submodule update`
+/Applications/LibreOffice.app/Contents/MacOS/python unoconv/unoconv  -f html source/4004/*.doc
 ```
 
 # To parse:
@@ -64,8 +65,7 @@ twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --gazette 4004 --dir ./outp
 twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --ad 8 --dir ./output
 ```
 
-# To generate json files of gazettes (only support
-  Interpellation now)
+# To generate json files of gazettes (only supports interpellation for now)
 
 ```
 ./node_modules/.bin/lsc format-log-resource-json.ls --dir ../data
