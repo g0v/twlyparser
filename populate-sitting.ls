@@ -1,5 +1,5 @@
 require! \./lib/ly
-require! <[request optimist path fs sh async]>
+require! <[request optimist path fs shelljs async]>
 
 {Parser} = require \./lib/parser
 
@@ -41,10 +41,23 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
         _, {size}? <- fs.stat html
         return extractMeta! if size
         console.log \doing file
-        output <- sh "/Applications/LibreOffice.app/Contents/MacOS/python unoconv/unoconv  -f html #file" .result
-        console.log \converted output
-        extractMeta!
+        # XXX: correct this for different OS
+        cmd = if lodev
+            "/Applications/LOdev.app/Contents/MacOS/python unoconv/unoconv.p3 -f html #file" (code, output) ->
+        else
+            "/Applications/LibreOffice.app/Contents/MacOS/python unoconv/unoconv  -f html #file"
+        p = shelljs.exec cmd
+            console.log \converted output, code, p?
+            clear-timeout rv
+            extractMeta! if p?
+        rv = do
+            <- setTimeout _, 120sec * 1000ms
+            console.log \timeout
+            p.kill \SIGTERM
+            p := null
+            done!
 
 err, res <- async.waterfall funcs
 console.log \ok, res
-fs.writeFileSync \data/gazettes.json JSON.stringify ly.gazettes, null, 4
+if metaOnly
+    fs.writeFileSync \data/gazettes.json JSON.stringify ly.gazettes, null, 4

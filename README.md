@@ -47,6 +47,8 @@ Convert to html with 'unoconv':
 
 # To parse:
 
+you may use the sample data to skip `get-source` and unoconv conversion
+
 twlyrawdata.tgz : download from http://dl.dropbox.com/u/30657009/ly/4004.tgz
 
 *current*
@@ -54,7 +56,12 @@ twlyrawdata.tgz : download from http://dl.dropbox.com/u/30657009/ly/4004.tgz
 ```
 twlyparser $ mkdir source/
 twlyparser $ tar xzvf twlyrawdata.tgz -C source/ 
-twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --gazette 4004 --dir ./data
+twlyparser $ mkdir output
+
+twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --gazette 4004 --dir ./output
+
+# generate all gazettes for 8th AD
+twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --ad 8 --dir ./output
 ```
 
 To bootstrap or maintain the index file cache in data/:
