@@ -166,15 +166,36 @@ class Questioning
         return @
     serialize: ->
 
-class Parser
-    ({@output = console.log, @output-json, @metaOnly} = {}) ->
-        @lastSpeaker = null
-        @ctx = @newContext Meta
+HTMLParser = do
+    parse: (node) ->
+        self = @
+        cleanup = (node) ~>
+            text = @$(node)text! - /^\s+|\s+$/g
+            text.=replace /\s*\n+\s*/g, ' '
+            text
+
+        match node.0.name
+        | /multicol|div|center|dd|dl|ol|ul|li/ => node.children!each -> self.parse @
+        | \h1 =>
+            @parseLine cleanup node
+        | \h2 =>
+            @parseLine cleanup node
+        | \table => @parseRich node
+        | \p     =>
+            text = cleanup node
+            return unless text.length
+            return unless text is /\D/
+            @parseLine text
+        else => console.error \unhandled: node.0.name, node.html!
     parseHtml: (data) ->
         self = @
         @$ = cheerio.load data, { +lowerCaseTags }
         @$('body').children!each -> self.parse @
 
+class Parser implements HTMLParser
+    ({@output = console.log, @output-json, @metaOnly} = {}) ->
+        @lastSpeaker = null
+        @ctx = @newContext Meta
     store: ->
         @ctx.serialize! if @ctx
 
@@ -222,32 +243,23 @@ class Parser
                 @output "#fulltext\n\n"
         @lastSpeaker = speaker if speaker
 
-    parse: (node) ->
-        self = @
-        cleanup = (node) ~>
-            text = @$(node)text! - /^\s+|\s+$/g
-            text.=replace /\s*\n+\s*/g, ' '
-            text
+    parseRich: (node) ->
+        rich = @$ '<div/>' .append node
+        rich.find('img').each -> @.attr \SRC, ''
+        if @ctx?push-rich
+            @ctx.push-rich rich
+        else
+            @output "    ", rich.html!, "\n"
 
-        match node.0.name
-        | /multicol|div|center|dd|dl|ol|ul|li/ => node.children!each -> self.parse @
-        | \h1 =>
-            @parseLine cleanup node
-        | \h2 =>
-            @parseLine cleanup node
-        | \table =>
-            rich = @$ '<div/>' .append node
-            rich.find('img').each -> @.attr \SRC, ''
-            if @ctx?push-rich
-                @ctx.push-rich rich
-            else
-                @output "    ", rich.html!, "\n"
-        | \p     =>
-            text = cleanup node
-            return unless text.length
-            return unless text is /\D/
-            @parseLine text
-        else => console.error \unhandled: node.0.name, node.html!
+class TextFormatter implements HTMLParser
+    ({@output = console.log} = {}) ->
+
+    parseLine: -> @output it
+
+    parseRich: (node) ->
+        rich = @$ '<div/>' .append node
+        rich.find('img').each -> @.attr \SRC, ''
+        @parseLine rich.html! - /^\s+/mg - /\n/g
 
 metaOfToken = (token) ->
     if token.type is \code and token.lang is \json
@@ -329,4 +341,4 @@ class ResourceParser
     store: ->
         @output JSON.stringify @results, null, 4b
 
-module.exports = { Parser, ResourceParser }
+module.exports = { Parser, TextFormatter, ResourceParser }
