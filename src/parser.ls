@@ -113,8 +113,8 @@ class Interpellation
         @exmotion = false
         @subsection = true
 
-    push-rich: (node) ->
-        @current-conversation.push [ null, node.html! ]
+    push-rich: (html) ->
+        @current-conversation.push [ null, html ]
     push-line: (speaker, text, fulltext) ->
         if (speaker ? @lastSpeaker) is \主席 and text is /報告院會|詢答時間|已質詢完畢|處理完畢|提書面質詢/
             @flush!
@@ -247,19 +247,33 @@ class Parser implements HTMLParser
         rich = @$ '<div/>' .append node
         rich.find('img').each -> @.attr \SRC, ''
         if @ctx?push-rich
-            @ctx.push-rich rich
+            @ctx.push-rich rich.html!
         else
             @output "    ", rich.html!, "\n"
+
+class TextParser extends Parser
+    parseText: (data) ->
+        for line in data / "\n"
+            if line.0 is \<
+                if @ctx?push-rich
+                    @ctx.push-rich line
+                else
+                    @output "    ", line, "\n"
+            else
+                @parseLine line
 
 class TextFormatter implements HTMLParser
     ({@output = console.log} = {}) ->
 
-    parseLine: -> @output it
+    parseLine: ->
+        if it.0 is \<
+            it-= /^<|>/g
+        @output it
 
     parseRich: (node) ->
         rich = @$ '<div/>' .append node
         rich.find('img').each -> @.attr \SRC, ''
-        @parseLine rich.html! - /^\s+/mg - /\n/g
+        @output rich.html! - /^\s+/mg - /\n/g
 
 metaOfToken = (token) ->
     if token.type is \code and token.lang is \json
@@ -341,4 +355,4 @@ class ResourceParser
     store: ->
         @output JSON.stringify @results, null, 4b
 
-module.exports = { Parser, TextFormatter, ResourceParser }
+module.exports = { Parser, TextParser, TextFormatter, ResourceParser }
