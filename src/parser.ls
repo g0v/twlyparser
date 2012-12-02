@@ -252,9 +252,8 @@ class Parser
 
 class ItemList
 
-    (meta) ->
-        @meta = meta
-        @type = meta.type
+    ({}) ->
+        @meta = null
         @ctx = null
         @results = []
         @output = console.log
@@ -285,24 +284,19 @@ class ResourceParser
     parse: (tokens) -> 
         @results = []
         for token in tokens
-            meta = @parseMeta token
-            if meta
-                if meta.type is \interp
-                    @newContext meta
-                /* ignored meta */
-                continue
-     
+            if token.text is /.*詢答時間為.*/
+                @newContext!
+
+            if token.type is \code and token.lang is \json
+                @ctx.meta = JSON.parse token.text if @ctx
+
             if @ctx
                 @ctx.parseToken token
 
-    newContext: (meta) ->
+    newContext: ->
         @results.push [@ctx.meta, @ctx.results] if @ctx
-        @ctx = new ItemList meta
+        @ctx = new ItemList
            
-    parseMeta: (token) ->
-            if token.type is \code and token.lang is \json
-                JSON.parse token.text
-
     store: ->
         @output JSON.stringify @results, null, 4b
 
