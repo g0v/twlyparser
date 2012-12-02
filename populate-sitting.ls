@@ -51,7 +51,7 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
             clear-timeout rv
             extractMeta! if p?
         rv = do
-            <- setTimeout _, 120sec * 1000ms
+            <- setTimeout _, 320sec * 1000ms
             console.log \timeout
             p.kill \SIGTERM
             p := null

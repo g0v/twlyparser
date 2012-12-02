@@ -25,11 +25,25 @@ $ suod apt-get install node.js npm
 ## install required node.js packages
 
 ```
-~/twlyparser $ npm i
+$ npm i
 
 ## compile 
-~/twlyparser $  npm run prepublish
+$ npm run prepublish
 ```
+
+# Parsing from prepared text version of gazettes:
+
+```
+$ git clone git://github.com/g0v/ly-gazette.git
+
+# output/raw/4004.text -> output/raw/4004.md
+$ ./node_modules/.bin/lsc ./format-log.ls --fromtext --gazette 4004 --dir ./output/raw
+
+# generate all gazettes for 8th AD
+$ ./node_modules/.bin/lsc ./format-log.ls --fromtext --ad 8 --dir ./output/raw
+```
+
+# Parsing from official source
 
 To retrieve source word files of a specific gazette that is already listed in
 'data/index.json':
@@ -52,17 +66,20 @@ you may use the sample data to skip `get-source` and unoconv conversion
 
 twlyrawdata.tgz : download from http://dl.dropbox.com/u/30657009/ly/4004.tgz
 
-*current*
-
 ```
 twlyparser $ mkdir source/
 twlyparser $ tar xzvf twlyrawdata.tgz -C source/ 
 twlyparser $ mkdir output
 
-twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --gazette 4004 --dir ./output
+# generate text file from source/
+twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --text --gazette 4004 --dir ./output
+
+# generate markdown file from text generated above
+twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --fromtext --gazette 4004 --dir ./output
 
 # generate all gazettes for 8th AD
-twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --ad 8 --dir ./output
+twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --text --ad 8 --dir ./output
+twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --fromtext --ad 8 --dir ./output
 ```
 
 # To generate json files of gazettes (only supports interpellation for now)
