@@ -3,7 +3,7 @@ require! <[request optimist path fs shelljs async]>
 
 {Parser} = require \./lib/parser
 
-{gazette, dometa, ad} = optimist.argv
+{gazette, dometa, ad, lodev} = optimist.argv
 
 
 metaOnly = dometa
@@ -43,10 +43,10 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
         console.log \doing file
         # XXX: correct this for different OS
         cmd = if lodev
-            "/Applications/LOdev.app/Contents/MacOS/python unoconv/unoconv.p3 -f html #file" (code, output) ->
+            "/Applications/LOdev.app/Contents/MacOS/python unoconv/unoconv.p3 -f html #file"
         else
             "/Applications/LibreOffice.app/Contents/MacOS/python unoconv/unoconv  -f html #file"
-        p = shelljs.exec cmd
+        p = shelljs.exec cmd, (code, output) ->
             console.log \converted output, code, p?
             clear-timeout rv
             extractMeta! if p?
