@@ -249,6 +249,9 @@ class Parser
             @parseLine text
         else => console.error \unhandled: node.0.name, node.html!
 
+metaOfToken = (token) ->
+    if token.type is \code and token.lang is \json
+        JSON.parse token.text
 
 class ItemList
 
@@ -259,6 +262,10 @@ class ItemList
         @output = console.log
 
     parseToken: (token) ->
+        meta = metaOfToken token
+        if meta and meta.type is \interp
+            @meta = meta
+
         if token.type is \list_item_start
             @ctx = \item
             return
@@ -269,6 +276,24 @@ class ItemList
         if token.type is \list_item_end
             @ctx = null
             return
+
+class Text
+
+    ({}) ->
+        @meta = null
+        @ctx = null
+        @results = []
+
+    parseToken: (token) ->
+        meta = metaOfToken token
+        if meta and meta.type is \interpdoc
+            @meta = meta
+
+        if token.type is \space
+            @results.push "\n"
+        
+        if token.type is \text
+            @results.push token.text
 
 class ResourceParser
 
@@ -284,18 +309,22 @@ class ResourceParser
     parse: (tokens) -> 
         @results = []
         for token in tokens
-            if token.text is /.*詢答時間為.*/
-                @newContext!
 
-            if token.type is \code and token.lang is \json
-                @ctx.meta = JSON.parse token.text if @ctx
+            if token.text is /.*詢答時間為.*/
+                @newContext ItemList
+
+            if token.text is /.*以書面答復.*?並列入紀錄.*?刊登公報.*/
+                @newContext Text
+
 
             if @ctx
                 @ctx.parseToken token
 
-    newContext: ->
+    newContext: (ctxType) ->
         @results.push [@ctx.meta, @ctx.results] if @ctx
-        @ctx = new ItemList
+        @ctx = if ctxType
+            then new ctxType
+            else null
            
     store: ->
         @output JSON.stringify @results, null, 4b

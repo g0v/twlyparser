@@ -64,7 +64,14 @@ twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --gazette 4004 --dir ./outp
 twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --ad 8 --dir ./output
 ```
 
-To bootstrap or maintain the index file cache in data/:
+# To generate json files of gazettes (only support
+  Interpellation now)
+
+```
+./node_modules/.bin/lsc format-log-resource-json.ls --dir ../data
+```
+
+# To bootstrap or maintain the index file cache in data/:
 
 ```
 mkdir -p source/meta
