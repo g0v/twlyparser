@@ -20,6 +20,7 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
             file = "#dir/#id.txt"
             parser.parseText util.readFileSync file
         else
+            parser.base = "source/#{id}"
             for uri in files => let fname = path.basename uri
                 file = "source/#{id}/#{fname}".replace /\.doc$/, '.html'
                 parser.parseHtml util.readFileSync file

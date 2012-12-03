@@ -26,4 +26,5 @@ devDependencies:
   mkdirp: \0.3.x
   marked: \0.2.6
   shelljs: \0.0.9
+  'exec-sync': \0.1.x
 optionalDependencies: {}

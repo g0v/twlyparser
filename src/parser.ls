@@ -262,7 +262,7 @@ class TextParser extends Parser
                 if @ctx?push-rich
                     @ctx.push-rich line
                 else
-                    @output "    ", line, "\n"
+                    @output line, "\n"
             else
                 @parseLine line
 
@@ -275,9 +275,22 @@ class TextFormatter implements HTMLParser
         @output it
 
     parseRich: (node) ->
+        require! {exec-sync: \exec-sync, fs}
         rich = @$ '<div/>' .append node
-        rich.find('img').each -> @.attr \SRC, ''
-        @output rich.html! - /^\s+/mg - /\n/g
+        self = @
+        convert = []
+        rich.find('img').each ->
+            src = @attr \SRC
+            file = self.base + '/' + src
+            [_, ext] = src.match /\.(\w+)$/
+            output = exec-sync "imgsize #file"
+            [_, width, height] = output.match /width="(\d+)" height="(\d+)"/
+            if width / height > 100
+                @replaceWith('<hr /')
+            else
+                @attr \SRC "data:image/#ext;base64,"+(fs.readFileSync file)toString \base64
+
+        @output rich.html! - /^\s+/mg - /\n/g - /position: absolute;/g
 
 metaOfToken = (token) ->
     if token.type is \code and token.lang is \json
