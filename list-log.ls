@@ -1,14 +1,28 @@
 require! {optimist, fs, path, printf}
 require! \./lib/ly
 
-results = []
+grouped = {}
 
 ly.forGazette null, (id, g, type, entries, files) ->
     return if type isnt /院會紀錄/
     {ad, session, sitting, extra} = g
     return unless ad
     name = printf "立法院第 %d 屆第 %d 會期第 %2d 次會議紀錄", ad, session, sitting
-    name += "(臨時會)" if extra
-    results.unshift {name,id}
+    grouped.{}[ad].[][session].push {id} <<< g
 
-results.forEach ({name,id}) -> console.log "[#{name}](#{id}.md) [txt](#{id}.txt)\n"
+ads = [k for k of grouped].sort (a, b) -> b - a
+for ad in ads => let sessions = grouped[ad]
+    console.log "# 第 #ad 屆"
+    s = [k for k of sessions].sort (a, b) -> b - a
+    for session in s => let sittings = sessions[session]
+        console.log "## 第 #session 會期"
+
+        links = sittings.map ({extra,id,sitting}) ->
+            name = "#sitting"
+            name += '(臨時會)' if extra
+            "[#{name}](#{id}.md)"
+        .join ' '
+        console.log "### 院會 #links"
+        console.log "純文字" + links.replace /\.md/g, '.txt'
+        console.log "\n"
+    console.log "\n***\n"
