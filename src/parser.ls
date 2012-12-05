@@ -223,8 +223,9 @@ class Parser implements HTMLParser
 
         if text is /^報\s*告\s*事\s*項$/
             @newContext Announcement
-        else if text is /^質\s*詢\s*事\s*項$/
+        else if text is /^質\s*詢\s*事\s*項(（本院委員質詢部分）)?$/
             @newContext Questioning
+            @ctx .=push-line speaker, text, fulltext if that.2?
             @lastSpeaker = null
         else if text is /^討\s*論\s*事\s*項$/
             @newContext Discussion
