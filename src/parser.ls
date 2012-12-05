@@ -44,6 +44,12 @@ class Announcement
             item = util.parseZHNumber item
             text = content
 
+            # XXX might not work if nested item number goes beyond number of
+            # current level
+            if item > @i + 1
+                do
+                    @output "#{++@i}. 未宣讀\n"
+                while @i + 1 < item
             if @i + 1 == item
                 @output "#{++@i}. #text\n"
                 @last-item = @items[item] = {subject: content, conversation: []}
