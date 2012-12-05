@@ -52,6 +52,7 @@ fixup = ->
         .replace /\uE8E2/g, '堃'
         .replace /\uE8E4/g, '崐'
         .replace /\uE457/g, '堦'
+        .replace /\uE5CF/g, '峯'
         .replace /\uE1BD/g, '%'
 
 readFileSync = (path) -> fixup fs.readFileSync path, \utf8
