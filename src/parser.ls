@@ -44,15 +44,12 @@ class Announcement
             item = util.parseZHNumber item
             text = content
 
-            match text
-            | /(\S+委員會)/
-                console.log 
-            @i++
-            @output "#{@i}. #text\n"
-            @last-item = @items[item] = {subject: content, conversation: []}
-        else
-            @output "    #fulltext\n"
-            @last-item.conversation.push [speaker, text]
+            if @i + 1 == item
+                @output "#{++@i}. #text\n"
+                @last-item = @items[item] = {subject: content, conversation: []}
+                return @
+        @output "    #fulltext\n"
+        @last-item.conversation.push [speaker, text]
         return @
     serialize: ->
 
