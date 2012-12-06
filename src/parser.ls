@@ -44,15 +44,18 @@ class Announcement
             item = util.parseZHNumber item
             text = content
 
-            match text
-            | /(\S+委員會)/
-                console.log 
-            @i++
-            @output "#{@i}. #text\n"
-            @last-item = @items[item] = {subject: content, conversation: []}
-        else
-            @output "    #fulltext\n"
-            @last-item.conversation.push [speaker, text]
+            # XXX might not work if nested item number goes beyond number of
+            # current level
+            if item > @i + 1
+                do
+                    @output "#{++@i}. 未宣讀\n"
+                while @i + 1 < item
+            if @i + 1 == item
+                @output "#{++@i}. #text\n"
+                @last-item = @items[item] = {subject: content, conversation: []}
+                return @
+        @output "    #fulltext\n"
+        @last-item.conversation.push [speaker, text]
         return @
     serialize: ->
 
@@ -223,8 +226,9 @@ class Parser implements HTMLParser
 
         if text is /^報\s*告\s*事\s*項$/
             @newContext Announcement
-        else if text is /^質\s*詢\s*事\s*項$/
+        else if text is /^質\s*詢\s*事\s*項(（本院委員質詢部分）)?$/
             @newContext Questioning
+            @ctx .=push-line speaker, text, fulltext if that.2?
             @lastSpeaker = null
         else if text is /^討\s*論\s*事\s*項$/
             @newContext Discussion
