@@ -27,4 +27,6 @@ devDependencies:
   marked: \0.2.6
   shelljs: \0.0.9
   'exec-sync': \0.1.x
+  xregexp: \2.0.0
+  js-yaml: \1.0.3
 optionalDependencies: {}
