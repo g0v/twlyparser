@@ -203,7 +203,7 @@ HTMLParser = do
             return unless text.length
             return unless text is /\D/
             @parseLine text
-            after! if after
+            after?!
         else => console.error \unhandled: node.0.name, node.html!
     parseHtml: (data) ->
         self = @
