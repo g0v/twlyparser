@@ -85,7 +85,7 @@ class Exmotion
 
         @output fulltext
         @out-orig ''
-        if (speaker ? @lastSpeaker) is \主席 and fulltext is /臨時提案.*處理完畢/
+        if (speaker ? @lastSpeaker) is \主席 and (text is /臨時提案.*處理完畢/ or text is /休息.*進行.*質詢/)
             @out-orig ''
             return @origCtx
         @lastSpeaker = speaker if speaker
@@ -98,7 +98,7 @@ class Discussion
         @lines = []
     push-line: (speaker, text, fulltext) ->
         @output "#fulltext\n"
-        if (speaker ? @lastSpeaker) is \主席 and fulltext is /討論事項.*到此為止/ and fulltext isnt /繼續進行討論事項/
+        if (speaker ? @lastSpeaker) is \主席 and text is /討論事項.*到此為止.*(!繼續)/
             return
         @lastSpeaker = speaker if speaker
         return @
@@ -255,7 +255,7 @@ class Parser implements HTMLParser
         text = fulltext
         [full, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
         if speaker
-            if speaker is /以下|本案/
+            if speaker is /以下|本案|現作如下決議/
                 text = full
                 speaker = null
             else
@@ -279,13 +279,13 @@ class Parser implements HTMLParser
         else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*黨團.*協商結論/
             @newContext Consultation
             @output "#fulltext\n\n"
-        else if (speaker ? @lastSpeaker) is \主席 && text is /對行政院.*質詢/
+        else if (speaker ? @lastSpeaker) is \主席 && (text is /對行政院.*質詢/ or text is /進行施政報告之質詢|進行施政總質詢|追加預算報告之質詢/) and text isnt /以下決定|現在休息|宣告|討論事項結束後|質詢完畢/
             @newContext Interpellation
             @ctx .=push-line speaker, text, fulltext
         else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*復議案/
             @output "## 復議案\n\n"
             @newContext null
-        else if (speaker ? @lastSpeaker) is \主席 and text is /現在.*(?!下次).*處理臨時提案/ and @ctx !instanceof Exmotion
+        else if (speaker ? @lastSpeaker) is \主席 and text is /現在.*(?!下次).*處理臨時提案/ and text isnt /不處理臨時提案/ and @ctx !instanceof Exmotion
             @newContext Exmotion, {origCtx: @ctx, indent: (if @ctx? => 4 else 0) + (@ctx?indent ? 0)}
             @ctx .=push-line speaker, text, fulltext
         else
