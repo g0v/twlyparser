@@ -339,7 +339,10 @@ class BaseParser
 
     parseText: (data) ->
         for line in data / "\n"
-            @parseLine line
+            if line.0 is \<
+                @output line, "\n"
+            else
+                @parseLine line
 
     pushLine: (text, lastContext, triggers) ->
         @output "#text \n"
