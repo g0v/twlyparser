@@ -191,12 +191,19 @@ HTMLParser = do
             @parseLine cleanup node
         | \table => @parseRich node
         | \p     =>
-            if node.children.length is 1 and node.find('img').length is 1
-                return @parseRich node.find \img
+            after = null
+            if imgs = node.find('img')
+                if imgs.length
+                    imgs.remove!
+                    after = ~> @parseRich imgs
+            tags = {}
+            node.children!each -> tags[@.0.name] = true
+            for name of tags => console.log \unhandled: name if name not in <[font br span u b a sup sub strong]>
             text = cleanup node
             return unless text.length
             return unless text is /\D/
             @parseLine text
+            after! if after
         else => console.error \unhandled: node.0.name, node.html!
     parseHtml: (data) ->
         self = @
@@ -295,7 +302,7 @@ class TextFormatter implements HTMLParser
             output = exec-sync "imgsize #file"
             [_, width, height] = output.match /width="(\d+)" height="(\d+)"/
             if width / height > 100
-                @replaceWith('<hr /')
+                @replaceWith('<hr />')
             else
                 @attr \SRC "data:image/#ext;base64,"+(fs.readFileSync file)toString \base64
 
