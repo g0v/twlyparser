@@ -198,6 +198,7 @@ HTMLParser = do
         else => console.error \unhandled: node.0.name, node.html!
     parseHtml: (data) ->
         self = @
+        require! cheerio
         @$ = cheerio.load data, { +lowerCaseTags }
         @$('body').children!each -> self.parse @
 
@@ -483,6 +484,7 @@ class ResourceParser
         @ctx = null
 
     parseMarkdown: (data) ->
+        require! marked
         marked.setOptions \ 
             {gfm: true, pedantic: false, sanitize: true}
         @tokens = marked.lexer data
