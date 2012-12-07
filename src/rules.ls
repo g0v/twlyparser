@@ -5,6 +5,7 @@ class Rules
 
     (fname) -> 
         @patterns = require path.resolve fname
+        throw "yaml is empty" unless @patterns
 
     rule: (query) ->
         [groupname, rulename] = query.split \.
@@ -14,7 +15,7 @@ class Rules
         try
             @patterns[groupname][rulename]
         catch e
-            throw "rule not found #query"
+            throw "rule not found #query #e"
 
     regex: (query) ->
         regexstr = @rule query .regex
@@ -27,6 +28,8 @@ class Rules
     match: (query, text) ->
         regex = @regex query
         regex.xexec text
+
+module.exports = {Rules}
 
 # test code
 #rules = new Rules \patterns.yml

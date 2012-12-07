@@ -1,0 +1,69 @@
+# * 結構說明
+# 
+# 群組
+#    規則名稱
+#       Regex 字串
+---
+ending:
+  start:
+    regex: | 
+        報告院會.*現在散會
+common:
+  conversationline: # 主席: 發言內容
+    regex: |
+      ^(?<speaker>[^：]{2,10})：(?<content>.*)
+header:
+  title: # 公報標題
+    regex: | 
+      立法院第(?<ad>\S+)屆第(?<session>\S+)會期第(?<sitting>\S+?)次(?<extra>?:臨時會第(\S+)次)?會議紀錄
+  chairman: # 主席名稱
+    regex: |
+      主\s*席\s+(?<chairman>.*)$
+  datetime: # 開會時間
+    regex: |
+      /時\s*間\s+中華民國(?<year>\S+)年(?<month>\S+)月(?<day>\S+)日（(?<day_of_week>\S+)）(?<am_or_pm>\S+?)(?<hour>\d+)時
+announcement:
+  start:
+    regex: | 
+      現在開會.*進行報告事項.*
+questioning:
+  start:
+    regex: |
+      .*現在進行質詢事項.*
+  reply_trigger:
+    regex: |
+      行政院答復部分$
+  question_trigger:
+    regex: |
+      本院委員質詢部分$
+discussion:
+  start:
+    regex: |
+      .*繼續開會.*進行討論事項.*
+proposal:
+  start:
+    regex: |
+      處理.*黨團.*提案
+consulation:
+  start:
+    regex: |
+      處理.*黨團.*協商結論  
+interpellation: 
+  start:
+    regex: |
+      .*進行對行政院院長提出施政報告(繼續)?質詢.*$|繼續開會.*進行.*?質詢.*
+  doc_trigger:
+    regex: |
+      報告院會|詢答時間|已質詢完畢|處理完畢|提書面質詢
+exmotion:
+  start:
+    regex: |
+      .*現在.*處理臨時提案.*
+breaktime:
+  start: 
+    regex: |
+      .*現在休息.*
+  end:
+    regex: |
+      現在開會
+       

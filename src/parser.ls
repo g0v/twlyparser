@@ -1,5 +1,7 @@
-require! {cheerio, marked}
+require! {cheerio, marked, path}
+require! \js-yaml
 require! "../lib/util"
+require! "../lib/rules"
 
 # ad (appointed dates) (屆別)
 # session (會期)
@@ -296,6 +298,127 @@ class TextFormatter implements HTMLParser
 
         @output rich.html! - /^\s+/mg - /\n/g - /position: absolute;/g
 
+class BaseParser
+
+    ({@output} = {}) ->
+        @ctx = null
+        @lastContext = null
+        @rules= {}
+        @meta = {}
+
+    loadRules: (rulepath) ->
+        @rules = new rules.Rules rulepath
+
+    detectContext: (text) ->
+        for trigger in @triggers
+            if @rules.match trigger, text
+                ctxname = @trigger2ctxname trigger
+                return ctxname
+
+    newContext: (ctxname) ->
+        @lastContext = @ctx
+        ctxType = eval ctxname
+        @ctx := if ctxType? => new ctxType {@output} else null
+        if @ctx
+            @ctx.rules = @rules
+            @ctx
+
+    trigger2ctxname: (trigger) ->
+        groupname = trigger.replace \.start ''
+        groupname + "Context"
+
+    parseText: (data) ->
+        for line in data / "\n"
+            @parseLine line
+
+    pushLine: (text, lastContext, triggers) ->
+        @output "#text \n"
+        @
+
+# @FIXME: captialize class name
+class headerContext extends BaseParser
+
+class announcementContext extends BaseParser
+    
+class questioningContext extends BaseParser
+    
+class discussionContext extends BaseParser
+     
+class proposalContext extends BaseParser
+    
+class consulationContext extends BaseParser
+    
+class interpellationContext extends BaseParser
+    
+class breaktimeContext extends BaseParser
+
+    pushLine: (text, last-context, triggers) ->
+        @output "#text \n"
+
+        # restore last context or start new context
+        if @rules.match \breaktime.end text =>
+            newctxname = @detectContext triggers
+            lastctxname = last-context.constructor.name
+
+            if newctxname != lastctxname
+                last-context = @newContext newctxname
+                lastctxname = newctxname
+
+            @output "\n# #lastctxname \n\n"
+            last-context
+        else
+            @
+     
+class endingContext extends BaseParser
+
+class StructureFormater extends BaseParser
+
+    ({@output = console.log, @output-json, @metaOnly} = {}) ->
+        @ctx = null
+        @rules = null
+        @lastContext = null
+        @result = {type:\processing_status}
+
+        @triggers = <[announcement.start
+                      questioning.start
+                      discussion.start
+                      proposal.start
+                      consulation.start
+                      interpellation.start
+                      breaktime.start
+                      ending.start]>
+
+        # setup start ctx
+        self = @
+        @triggers.map ->
+            ctxname = self.trigger2ctxname it
+            self.result[ctxname] = false
+
+        @newContext \headerContext
+        @output "# headerContext \n\n"
+
+    parseLine: (fulltext) ->
+        throw "Excepted rules but it's empty." unless @rules
+        text = fulltext
+
+        @decideContext fulltext
+        throw "parsed error! #fulltext is not belong to any context" unless @ctx
+
+        @ctx .=pushLine fulltext, @lastContext, @triggers
+
+    decideContext: (text) ->
+        ctxname = @detectContext text
+
+        if ctxname
+            @result[ctxname] = true
+            @output "# #ctxname \n\n"
+            @newContext ctxname
+
+    store: ->
+        @output "# Processing status \n\n"
+        @output "```json\n", JSON.stringify @result, null, 4b
+        @output "\n```\n\n"
+
 metaOfToken = (token) ->
     if token.type is \code and token.lang is \json
         JSON.parse token.text
@@ -388,4 +511,4 @@ class ResourceParser
     store: ->
         @output JSON.stringify @results, null, 4b
 
-module.exports = { Parser, TextParser, TextFormatter, ResourceParser }
+module.exports = { Parser, TextParser, TextFormatter, StructureFormater, ResourceParser }
