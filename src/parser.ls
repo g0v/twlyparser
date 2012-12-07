@@ -98,7 +98,7 @@ class Discussion
         @lines = []
     push-line: (speaker, text, fulltext) ->
         @output "#fulltext\n"
-        if (speaker ? @lastSpeaker) is \主席 and fulltext is /討論事項.*到此為止/
+        if (speaker ? @lastSpeaker) is \主席 and fulltext is /討論事項.*到此為止/ and fulltext isnt /繼續進行討論事項/
             return
         @lastSpeaker = speaker if speaker
         return @
