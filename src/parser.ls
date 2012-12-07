@@ -61,12 +61,46 @@ class Announcement
         return @
     serialize: ->
 
+class Exmotion
+    ({@output = console.log, @indent = 0, @origCtx} = {}) ->
+        @items = {}
+        @out-orig = @output
+        @output = (...args) ~>
+            @out-orig ...args.map ~> it.replace /^/mg ' ' * @indent + '> '
+        @output "## 臨時提案"
+    push-rich: (html) ->
+        @out-orig ''
+        @output html
+        @out-orig ''
+    push-line: (speaker, text, fulltext) ->
+        if fulltext is /^第(\S+)案/
+            zhitem = that.1
+            zhreg = new RegExp "^((?:#{ util.zhnumber * '|' })+)$"
+            if zhitem.match zhreg
+                item = util.parseZHNumber zhitem
+                @output "### #fulltext"
+                @output ("```json\n" + JSON.stringify( { type: \exmotion, item }, null, 4) + "\n```").replace /^/mg, '    '
+                @out-orig ''
+                return @
+
+        @output fulltext
+        @out-orig ''
+        if (speaker ? @lastSpeaker) is \主席 and fulltext is /臨時提案.*處理完畢/
+            @out-orig ''
+            return @origCtx
+        @lastSpeaker = speaker if speaker
+        return @
+    serialize: ->
+
 class Discussion
     ({@output} = {}) ->
         @output "## 討論事項\n\n"
         @lines = []
     push-line: (speaker, text, fulltext) ->
         @output "#fulltext\n"
+        if (speaker ? @lastSpeaker) is \主席 and fulltext is /討論事項.*到此為止/
+            return
+        @lastSpeaker = speaker if speaker
         return @
     serialize: ->
 
@@ -98,7 +132,6 @@ class Interpellation
         @document = false
     flush: ->
         type = switch
-        | @exmotion => 'exmotion'
         | @document => 'interpdoc'
         else 'interp'
         if @current-conversation.length
@@ -119,7 +152,6 @@ class Interpellation
                 @conversation = @conversation +++ @current-conversation
         @current-conversation = []
         @current-participants = []
-        @exmotion = false
         @subsection = true
 
     push-rich: (html) ->
@@ -139,9 +171,6 @@ class Interpellation
             #@output "* [#h, #m]\n" if h?
             @current-conversation.push [speaker, fulltext]
             if speaker => @current-participants.push speaker unless speaker in @current-participants
-        if speaker is \主席 and text is /現在.*處理臨時提案/
-            @exmotion = true
-
         @lastSpeaker = speaker if speaker
         @
     serialize: -> @flush!
@@ -218,15 +247,15 @@ class Parser implements HTMLParser
     store: ->
         @ctx.serialize! if @ctx
 
-    newContext: (ctxType) ->
+    newContext: (ctxType, args = {}) ->
         @store!
-        @ctx := if ctxType? => new ctxType {@output, @output-json} else null
+        @ctx := if ctxType? => new ctxType args <<< {@output, @output-json} else null
 
     parseLine: (fulltext) ->
         text = fulltext
         [full, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
         if speaker
-            if speaker is /以下|本案決議/
+            if speaker is /以下|本案/
                 text = full
                 speaker = null
             else
@@ -256,6 +285,9 @@ class Parser implements HTMLParser
         else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*復議案/
             @output "## 復議案\n\n"
             @newContext null
+        else if (speaker ? @lastSpeaker) is \主席 and text is /現在.*(?!下次).*處理臨時提案/ and @ctx !instanceof Exmotion
+            @newContext Exmotion, {origCtx: @ctx, indent: (if @ctx? => 4 else 0) + (@ctx?indent ? 0)}
+            @ctx .=push-line speaker, text, fulltext
         else
             if @ctx
                 @ctx .=push-line speaker, text, fulltext
