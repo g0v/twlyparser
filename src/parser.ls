@@ -188,6 +188,8 @@ HTMLParser = do
             @parseLine cleanup node
         | \table => @parseRich node
         | \p     =>
+            if node.children.length is 1 and node.find('img').length is 1
+                return @parseRich node.find \img
             text = cleanup node
             return unless text.length
             return unless text is /\D/
