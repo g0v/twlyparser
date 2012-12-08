@@ -8,7 +8,7 @@ zhreghead = new RegExp "^((?:#{ zhnumber * '|' })+)、(.*)$", \m
 zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)$"
 
 intOfZHNumber = ->
-    if it.match zhreg
+    if it?match? zhreg
     then parseZHNumber it
     else +it
 
