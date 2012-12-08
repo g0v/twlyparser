@@ -316,7 +316,7 @@ class Parser implements HTMLParser
         text = fulltext
         [full, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
         if speaker
-            if speaker is /以下|本案|現作如下決(議|定)/
+            if speaker is /以下|本案|本席|現作如下決(議|定)/ or speaker is /^(日期|傳真|地址|剛才|再來)/
                 text = full
                 speaker = null
             else if speaker is /^主席（(.*?)）/
