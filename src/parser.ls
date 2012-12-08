@@ -98,7 +98,7 @@ class Discussion
         @lines = []
     push-line: (speaker, text, fulltext) ->
         @output "#fulltext\n"
-        if (speaker ? @lastSpeaker) is \主席 and text is /討論事項.*到此為止.*(!繼續)/
+        if (speaker ? @lastSpeaker) is \主席 and text is /討論事項.*到此為止(?!.*繼續)/
             return
         @lastSpeaker = speaker if speaker
         return @
@@ -131,9 +131,7 @@ class Interpellation
         @subsection = false
         @document = false
     flush: ->
-        type = switch
-        | @document => 'interpdoc'
-        else 'interp'
+        type = if @document => 'interpdoc' else 'interp'
         if @current-conversation.length
             if @subsection
                 people = if type is 'interp' => @current-participants else null
@@ -282,7 +280,7 @@ class Parser implements HTMLParser
         else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*黨團.*協商結論/
             @newContext Consultation
             @output "#fulltext\n\n"
-        else if (speaker ? @lastSpeaker) is \主席 && (text is /對行政院.*質詢/ or text is /進行施政報告之質詢|進行施政總質詢|追加預算報告之質詢/) and text isnt /以下決定|現在休息|宣告|討論事項結束後|質詢完畢/
+        else if (speaker ? @lastSpeaker) is \主席 && (text is /對行政院.*質詢/ or text is /進行施政報告之質詢|進行施政總質詢|追加預算報告之質詢|進行委員質詢/) and text isnt /以下決定|現在休息|宣告|討論事項結束後|質詢完畢/ and @ctx !instanceof Interpellation
             @newContext Interpellation
             @ctx .=push-line speaker, text, fulltext
         else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*復議案/
