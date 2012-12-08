@@ -120,7 +120,7 @@ class Exmotion
             if @state == \petitioner
                 @json[@state]= @json[@state] +++ split_names line
                 current_state = @state
-        | /.*有無異議？（(.*?)）.*/ =>
+        | /.*有無異議？[（)](.*?)[）)].*/ =>
             switch that.1
             | \有 => @json.decision = 'tbd'
             | \無 => @json.decision = 'pass'
