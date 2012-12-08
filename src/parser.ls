@@ -19,10 +19,13 @@ class Meta
             return @
 
         match text
-        | /立法院第(\S+)屆第(\S+)會期第(\S+?)次(?:臨時會第(\S+)次)?會議紀錄/ =>
+        | /立法院第(\S+)屆第(\S+)會期第(\S+?)次會議紀錄/ =>
             @meta<[ad session sitting]> = that[1 to 3].map -> util.intOfZHNumber it
-            if it = that[4]
-                @meta.extra = util.intOfZHNumber it
+        | /立法院第(\S+)屆第(\S+)會期第(\S+?)次臨時會(?:第(\S+)次)?會議紀錄/ =>
+            that.4 ?= 1
+            @meta<[ad session extra sitting]> = that[1 to 4].map -> util.intOfZHNumber it
+        | /立法院第(\S+)屆第(\S+)會期第(\S+?)次秘密會議紀錄/ =>
+            @meta<[ad session secret]> = that[1 to 3].map -> util.intOfZHNumber it
         | /主\s*席\s+(.*)$/ =>
             @ctx = \speaker
             @meta.speaker = that.1
