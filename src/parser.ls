@@ -19,13 +19,13 @@ class Meta
             return @
 
         match text
-        | /立法院第(\S+)屆第(\S+)會期第(\S+?)次臨時會(?:第(\S+?)次)?會議紀錄/ =>
+        | /立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次臨時會(?:第\s*(\S+?)\s*次)?會議紀錄/ =>
             that.4 ?= 1
             @meta<[ad session extra sitting]> = that[1 to 4].map -> util.intOfZHNumber it
-        | /立法院第(\S+)屆第(\S+)會期第(\S+?)次會議(紀錄|議事錄)/ =>
+        | /立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次會議(紀錄|議事錄)/ =>
             @meta<[ad session sitting]> = that[1 to 3].map -> util.intOfZHNumber it
             @meta.memo = true if that.4 is \議事錄
-        | /立法院第(\S+)屆第(\S+)會期第(\S+?)次秘密會議紀錄/ =>
+        | /立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次秘密會議紀錄/ =>
             @meta<[ad session secret]> = that[1 to 3].map -> util.intOfZHNumber it
         | /主\s*席\s+(.*)$/ =>
             @ctx = \speaker
@@ -404,6 +404,34 @@ class TextFormatter implements HTMLParser
 
         @output rich.html! - /^\s+/mg - /\n/g - /position: absolute;/g
 
+class MemoParser implements HTMLParser
+    ({@output = console.log, @output-json, @metaOnly} = {}) ->
+        @lastSpeaker = null
+        @ctx = @newContext Meta
+    store: ->
+        @ctx.serialize! if @ctx
+
+    newContext: (ctxType, args = {}) ->
+        @store!
+        @ctx := if ctxType? => new ctxType args <<< {@output, @output-json} else null
+
+    parseLine: (fulltext) ->
+        if fulltext is \報告事項
+            @newContext null
+        if @ctx
+            @ctx .=push-line null, fulltext, fulltext
+        else
+            @output "#fulltext\n\n"
+
+    parseRich: (node) ->
+        rich = @$ '<div/>' .append node
+        rich.find('img').each -> @.attr \SRC, ''
+        if @ctx?push-rich
+            @ctx.push-rich rich.html!
+        else
+            @output "    ", rich.html!, "\n"
+
+
 class BaseParser
 
     ({@output} = {}) ->
@@ -626,4 +654,4 @@ class ResourceParser
     store: ->
         @output JSON.stringify @results, null, 4b
 
-module.exports = { Parser, TextParser, TextFormatter, StructureFormater, ResourceParser }
+module.exports = { Parser, TextParser, TextFormatter, MemoParser, StructureFormater, ResourceParser }

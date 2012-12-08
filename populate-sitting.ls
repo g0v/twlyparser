@@ -1,18 +1,28 @@
 require! \./lib/ly
 require! <[request optimist path fs shelljs async]>
 
-{Parser} = require \./lib/parser
+{Parser, MemoParser} = require \./lib/parser
 
-{gazette, dometa, ad, lodev} = optimist.argv
+{gazette, dometa, ad, lodev, type, force} = optimist.argv
 
 
 metaOnly = dometa
 skip = false
 funcs = []
+memo = true if type is \memo
+
+index-type = switch type
+| \memo => \議事錄
+else \院會紀錄
+
 ly.forGazette gazette, (id, g, type, entries, files) ->
-    return if g.sitting if dometa
+    unless force
+        if memo
+            return if entries.0.sitting
+        else
+            return if g.sitting
     return if ad and g.ad !~= ad
-    return if type isnt /院會紀錄/
+    return if type isnt index-type
     files = [files.0] if metaOnly
     files.forEach (uri) -> funcs.push (done) ->
         fname = path.basename uri
@@ -24,18 +34,22 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
         extractMeta = ->
             return done! unless dometa
             meta = null
-            parser = new Parser do
+            klass = if memo => MemoParser else Parser
+            parser = new klass do
                 output: ->
                 output-json: -> meta := it
             try
                 parser.parseHtml fs.readFileSync html, \utf8
             catch err
-                console.log \err err
+                console.log \err err.stack
             if meta?ad
-                g <<< meta{ad,session,sitting,extra,secret}
+                if memo
+                    entries.0 <<< meta{ad,session,sitting,extra,secret}
+                else
+                    g <<< meta{ad,session,sitting,extra,secret}
                 console.log id, g
             else
-                console.log \noemta, id
+                console.log \noemta, id, html
             done!
 
         _, {size}? <- fs.stat html
@@ -61,3 +75,4 @@ err, res <- async.waterfall funcs
 console.log \ok, res
 if metaOnly
     fs.writeFileSync \data/gazettes.json JSON.stringify ly.gazettes, null, 4
+    fs.writeFileSync \data/index.json JSON.stringify ly.index, null, 4
