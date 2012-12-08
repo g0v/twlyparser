@@ -78,8 +78,8 @@ class Exmotion
         [header, ...rest] = @buffer
         @out-orig header
         if @json.type  # if not empty
-            @json.proposer? = @name-fixup @json.proposer
-            @json.petitioner? = @name-fixup @json.petitioner
+            @json.proposer &&= @name-fixup @json.proposer
+            @json.petitioner &&= @name-fixup @json.petitioner
             @out-orig @indent ("```json\n" + JSON.stringify(@json, null, false) + "\n```").replace /^/mg, '    '
         for line in rest
             @out-orig line
