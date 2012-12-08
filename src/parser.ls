@@ -11,19 +11,20 @@ class Meta
         @output "# 院會紀錄\n\n"
         @meta = {}
     push-line: (speaker, text) ->
-        if speaker 
+        if speaker
             @serialize!
-            return 
+            return
         if @ctx is \speaker
             [_, position, name] = text.match /^(?:(.+)\s+)?(.*)$/
             return @
 
         match text
-        | /立法院第(\S+)屆第(\S+)會期第(\S+?)次會議紀錄/ =>
-            @meta<[ad session sitting]> = that[1 to 3].map -> util.intOfZHNumber it
-        | /立法院第(\S+)屆第(\S+)會期第(\S+?)次臨時會(?:第(\S+)次)?會議紀錄/ =>
+        | /立法院第(\S+)屆第(\S+)會期第(\S+?)次臨時會(?:第(\S+?)次)?會議紀錄/ =>
             that.4 ?= 1
             @meta<[ad session extra sitting]> = that[1 to 4].map -> util.intOfZHNumber it
+        | /立法院第(\S+)屆第(\S+)會期第(\S+?)次會議(紀錄|議事錄)/ =>
+            @meta<[ad session sitting]> = that[1 to 3].map -> util.intOfZHNumber it
+            @meta.memo = true if that.4 is \議事錄
         | /立法院第(\S+)屆第(\S+)會期第(\S+?)次秘密會議紀錄/ =>
             @meta<[ad session secret]> = that[1 to 3].map -> util.intOfZHNumber it
         | /主\s*席\s+(.*)$/ =>
