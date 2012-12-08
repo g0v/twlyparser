@@ -13,6 +13,7 @@ memo = true if type is \memo
 
 index-type = switch type
 | \memo => \議事錄
+| \committee => \委員會紀錄
 else \院會紀錄
 
 ly.forGazette gazette, (id, g, type, entries, files) ->
