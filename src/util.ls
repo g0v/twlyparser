@@ -4,14 +4,15 @@ require! {fs}
 zhnumber = <[○ 一 二 三 四 五 六 七 八 九 十]>
 
 zhmap = {[c, i] for c, i in zhnumber}
-zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)、(.*)$", \m
+zhreghead = new RegExp "^((?:#{ zhnumber * '|' })+)、(.*)$", \m
+zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)$"
 
-intOfZHNumber = -> 
-    if it in zhnumber 
+intOfZHNumber = ->
+    if it.match zhreg
     then parseZHNumber it
     else +it
 
-parseZHHour = -> 
+parseZHHour = ->
     [am_or_pm, hour] = it
     hour = parseInt hour
     if am_or_pm == '上午'
@@ -72,4 +73,4 @@ build_people_interp_map = (ref_id, data, base_dct) ->
                 update_one_to_many_map base_dct, it, ref_id
     base_dct
 
-module.exports = {datetimeOfLyDateTime, intOfZHNumber, parseZHNumber, zhreg, zhnumber, readFileSync, build_people_interp_map}
+module.exports = {datetimeOfLyDateTime, intOfZHNumber, parseZHNumber, zhreg, zhreghead, zhnumber, readFileSync, build_people_interp_map}

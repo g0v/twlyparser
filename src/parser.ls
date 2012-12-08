@@ -45,7 +45,7 @@ class Announcement
         @last-item = null
         @i = 0
     push-line: (speaker, text, fulltext) ->
-        if [_, item, content]? = text.match util.zhreg
+        if [_, item, content]? = text.match util.zhreghead
             item = util.parseZHNumber item
             text = content
 
@@ -96,11 +96,10 @@ class Exmotion
     push-line: (speaker, text, fulltext) ->
         if fulltext is /^第(\S+)案/
             zhitem = that.1
-            zhreg = new RegExp "^((?:#{ util.zhnumber * '|' })+)$"
             if zhitem isnt /\D/
                 @output-header fulltext, zhitem
                 return @
-            if zhitem.match zhreg
+            if zhitem.match util.zhreg
                 @flush!
                 item = util.parseZHNumber zhitem
                 @output-header fulltext, item
@@ -243,7 +242,7 @@ class Questioning
         @reply = {}
         @question = {}
     push: (speaker, text, fulltext) ->
-        if [_, item, content]? = text.match util.zhreg
+        if [_, item, content]? = text.match util.zhreghead
             item = util.parseZHNumber item
 
         if item
