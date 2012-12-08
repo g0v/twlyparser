@@ -65,20 +65,34 @@ class Announcement
     serialize: ->
 
 class Exmotion
-    ({@output = console.log, @indent = 0, @origCtx} = {}) ->
-        @items = {}
+    ({@output = console.log, @indent_level = 0, @origCtx} = {}) ->
+        @buffer = []
+        @json = {}
+        @state = ''
         @out-orig = @output
-        @output = (...args) ~>
-            @out-orig ...args.map ~> it.replace /^/mg ' ' * @indent + '> '
+        @output = -> @buffer.push @indent it
         @output "## 臨時提案"
+    newline: -> @buffer.push ''
+    indent: -> it.replace /^/mg ' ' * @indent_level + '> '
+    flush: ->
+        [header, ...rest] = @buffer
+        @out-orig header
+        if @json.type  # if not empty
+            @json.proposer? = @name-fixup @json.proposer
+            @json.petitioner? = @name-fixup @json.petitioner
+            @out-orig @indent ("```json\n" + JSON.stringify(@json, null, false) + "\n```").replace /^/mg, '    '
+        for line in rest
+            @out-orig line
+        @json = {}
+        @buffer = []
     push-rich: (html) ->
-        @out-orig ''
+        @newline!
         @output html
-        @out-orig ''
+        @newline!
     output-header: (fulltext, item) ->
         @output "### #fulltext"
-        @output ("```json\n" + JSON.stringify( { type: \exmotion, item }, null, 4) + "\n```").replace /^/mg, '    '
-        @out-orig ''
+        @json = { type: \exmotion, item }
+        @newline!
     push-line: (speaker, text, fulltext) ->
         if fulltext is /^第(\S+)案/
             zhitem = that.1
@@ -87,17 +101,58 @@ class Exmotion
                 @output-header fulltext, zhitem
                 return @
             if zhitem.match zhreg
+                @flush!
                 item = util.parseZHNumber zhitem
                 @output-header fulltext, item
                 return @
 
+        current_state = ''
+        split_names = -> it.split(/[　\s]+/)
+        match fulltext
+        | /^提案人：(.*)/ =>
+            @json.proposer = split_names that.1
+            current_state = \proposer
+        | /^連署人：(.*)/ =>
+            @json.petitioner = split_names that.1
+            current_state = \petitioner
+        | /^([^：]*)$/ =>
+            line = that.0
+            if @state == \petitioner
+                @json[@state]= @json[@state] +++ split_names line
+                current_state = @state
+        | /.*有無異議？（(.*?)）.*/ =>
+            switch that.1
+            | \有 => @json.decision = 'tbd'
+            | \無 => @json.decision = 'pass'
+            | otherwise => console.error "unhandled case: #{that.1}"
+        @state = current_state
+
         @output fulltext
-        @out-orig ''
+        @newline!
         if (speaker ? @lastSpeaker) is \主席 and (text is /臨時提案.*處理完畢/ or text is /休息.*進行.*質詢/)
-            @out-orig ''
+            @newline!
+            @flush!
             return @origCtx
         @lastSpeaker = speaker if speaker
         return @
+    name-fixup: (names) ->
+        # Heuristic: merge two names if both are single words
+        for i to names.length - 1
+            if names[i]?.length == 1 and names[i+1]?.length == 1
+                names[i] += names[i+1]
+                names[i+1] = ''
+
+        # Heuristic: split a long name into two with luck.  The data is wrong
+        # back to doc->html phase. Here is a heuristic to make most cases work,
+        # with exceptions like "李正宗靳曾珍麗" that require efforts to do
+        # right (e.g. with a name dictionary).
+        ret_names = []
+        for name in names when name != ''
+            if name.length == 6 and /‧/ != name
+                ret_names.push name.substr(0, 3), name.substr(3, 3)
+            else
+                ret_names.push name
+        ret_names
     serialize: ->
 
 class Discussion
@@ -295,7 +350,7 @@ class Parser implements HTMLParser
             @output "## 復議案\n\n"
             @newContext null
         else if (speaker ? @lastSpeaker) is \主席 and text is /現在.*(?!下次).*處理臨時提案/ and text isnt /不處理臨時提案/ and @ctx !instanceof Exmotion
-            @newContext Exmotion, {origCtx: @ctx, indent: (if @ctx? => 4 else 0) + (@ctx?indent ? 0)}
+            @newContext Exmotion, {origCtx: @ctx, indent_level: (if @ctx? => 4 else 0) + (@ctx?indent ? 0)}
             @ctx .=push-line speaker, text, fulltext
         else
             if @ctx
