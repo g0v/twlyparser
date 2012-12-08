@@ -510,9 +510,14 @@ class ItemList
             speaker = if @lastSpeaker
                     then @lastSpeaker
                     else \主席
-            content = text
-        {speaker:speaker, content:content}
-        
+            content = text - /^\s*/ - /\s*$/
+
+        match content
+        | /[\s*（(](\d+時\d+分)[）)]\s*/ =>
+            content = content.replace that.0, ''
+            time = that.1
+        {speaker, content, time}
+
 class Text
 
     ({}) ->
