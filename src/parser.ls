@@ -72,15 +72,20 @@ class Exmotion
         @out-orig ''
         @output html
         @out-orig ''
+    output-header: (fulltext, item) ->
+        @output "### #fulltext"
+        @output ("```json\n" + JSON.stringify( { type: \exmotion, item }, null, 4) + "\n```").replace /^/mg, '    '
+        @out-orig ''
     push-line: (speaker, text, fulltext) ->
         if fulltext is /^第(\S+)案/
             zhitem = that.1
             zhreg = new RegExp "^((?:#{ util.zhnumber * '|' })+)$"
+            if zhitem isnt /\D/
+                @output-header fulltext, zhitem
+                return @
             if zhitem.match zhreg
                 item = util.parseZHNumber zhitem
-                @output "### #fulltext"
-                @output ("```json\n" + JSON.stringify( { type: \exmotion, item }, null, 4) + "\n```").replace /^/mg, '    '
-                @out-orig ''
+                @output-header fulltext, item
                 return @
 
         @output fulltext
