@@ -87,7 +87,6 @@ class Exmotion
         @json = {}
         @buffer = []
     push-rich: (html) ->
-        @newline!
         @output html
         @newline!
     output-header: (fulltext, item) ->
