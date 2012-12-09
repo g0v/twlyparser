@@ -222,9 +222,15 @@ class Interpellation
             @output "* #fulltext\n"
             @conversation.push [speaker, text]
             @document = text is /提書面質詢/
+        else if fulltext is /^(.*委員.*)書面質詢.?：$/
+            @flush!
+            @document = true
+            @current-conversation.push [that.1, fulltext]
         else if !speaker? && @current-conversation.length is 0
             @conversation.push [speaker, text] # meeting actions
             @output "* #fulltext\n"
+        else if @document
+            @current-conversation.push [null, fulltext]
         else
             [_, h, m, text]? = text.match /^(?:\(|（)(\d+)時(\d+)分(?:\)|）)(.*)$/, ''
             entry = [speaker, text]
@@ -335,7 +341,10 @@ class Parser implements HTMLParser
             @ctx .=push-line speaker, text, fulltext if that.2?
             @lastSpeaker = null
         else if text is /^討\s*論\s*事\s*項$/
+            @newContext Discussion unless @ctx !instanceof Discussion
+        else if (speaker ? @lastSpeaker) is \主席 && text is /進行討論事項第\S+案/ and @ctx !instanceof Discussion
             @newContext Discussion
+            @ctx .=push-line speaker, text, fulltext
         else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*黨團.*提案/
             @newContext Proposal
             @output "#fulltext\n\n"
