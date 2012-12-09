@@ -156,7 +156,7 @@ class Exmotion
 
 class Discussion
     ({@output} = {}) ->
-        @output "## 討論事項\n\n"
+        @output "\n## 討論事項\n\n"
         @lines = []
     push-line: (speaker, text, fulltext) ->
         @output "#fulltext\n"
