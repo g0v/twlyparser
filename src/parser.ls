@@ -222,7 +222,7 @@ class Interpellation
             @output "* #fulltext\n"
             @conversation.push [speaker, text]
             @document = text is /提書面質詢/
-        else if fulltext is /^(.*委員.*)書面質詢.?：$/
+        else if fulltext is /^(.*委員.*)書面(補充)?質詢?.?：$/
             @flush!
             @document = true
             @current-conversation.push [that.1, fulltext]
