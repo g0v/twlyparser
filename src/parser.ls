@@ -153,7 +153,7 @@ class Exmotion
             else
                 ret_names.push name
         ret_names
-    serialize: ->
+    serialize: -> @flush!
 
 class Discussion
     ({@output} = {}) ->
