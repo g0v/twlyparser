@@ -18,10 +18,14 @@ class Meta
             [_, position, name] = text.match /^(?:(.+)\s+)?(.*)$/
             return @
 
+        text .=replace /立 法院/, \立法院
         match text
         | /立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次臨時會(?:第\s*(\S+?)\s*次)?會議紀錄/ =>
             that.4 ?= 1
             @meta<[ad session extra sitting]> = that[1 to 4].map -> util.intOfZHNumber it
+        | /立法院第\s*(\S+)\s*屆(?:第\s*(\S+)\s*會期)?(選舉院長、副院長|院長副院長選舉)會議(紀錄|議事錄)/ =>
+            @meta<[ad session]> = that[1 to 2].map -> util.intOfZHNumber it
+            @meta.sitting = 0
         | /立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次會議(紀錄|議事錄)/ =>
             @meta<[ad session sitting]> = that[1 to 3].map -> util.intOfZHNumber it
             @meta.memo = true if that.4 is \議事錄

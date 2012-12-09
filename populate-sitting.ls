@@ -41,13 +41,14 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
                 output-json: -> meta := it
             try
                 parser.parseHtml fs.readFileSync html, \utf8
+                parser.store!
             catch err
                 console.log \err err.stack
-            if meta?ad
+            if meta?ad?
                 if memo
-                    entries.0 <<< meta{ad,session,sitting,extra,secret}
+                    entries.0 <<< meta{ad,session,sitting,extra,secret,preparatory}
                 else
-                    g <<< meta{ad,session,sitting,extra,secret}
+                    g <<< meta{ad,session,sitting,extra,secret,preparatory}
                 console.log id, g
             else
                 console.log \noemta, id, html
