@@ -256,6 +256,13 @@ class Questioning
         return @
     serialize: ->
 
+class DummyContext
+    ({@output = console.log}) ->
+    push-line: (speaker, text, fulltext) ->
+        @output "#fulltext\n\n"
+        @
+    serialize: ->
+
 # It works more like a filter, that collect data pass to origCtx for output.
 # With that, we don't need to worry about the output style of origCtx.
 class Vote
@@ -373,6 +380,8 @@ class Parser implements HTMLParser
             @newContext Exmotion, {origCtx: @ctx, indent_level: (if @ctx? => 4 else 0) + (@ctx?indent ? 0)}
             @ctx .=push-line speaker, text, fulltext
         else if full is /.*表決結果名單.*/
+            if !@ctx
+               @newContext DummyContext
             @ctx .=push-line speaker, text, fulltext
             @newContext Vote, {origCtx: @ctx}
         else
