@@ -40,7 +40,6 @@ for token in marked.lexer md
             parent.push current_node
     | \space =>
         # {"type":"space"}
-        current_node.push '__space__'
     | \code =>
         # {"type":"code","lang":"json","text":"{[null]}"}
         current_node.push token
@@ -49,10 +48,23 @@ for token in marked.lexer md
         current_node.push token.text - /\n/g
     | \text =>
         # {"type":"text","text":" 主席：報告院會，議事錄已經宣讀完畢，沒有任何書面資料表示異議，因此議事錄確定。"}
-        current_node.push token.text - /\n/g
-    | \loose_item_start =>
+        text = token.text - /\n/g
+        switch context
+        | \loose_item =>
+            #current_node[*-1] = text + '\n'
+            current_node.push text
+        | _ =>
+            current_node.push text
+    | \loose_item_start, \list_item_start =>
         # {"type":"loose_item_start"}
-        current_node.push token
+        context = token.type - /_start/
+        current_node.push []
+        stack.push current_node
+        current_node = current_node[*-1]
+    | \list_item_end =>
+        # {"type":"list_item_end"}
+        current_node = stack.pop!
+        context = null
     | \list_start =>
         # {"type":"list_start","ordered":true}
         current_node.push [ { token.ordered } ]
@@ -61,12 +73,6 @@ for token in marked.lexer md
     | \list_end =>
         # {"type":"list_end"}
         current_node = stack.pop!
-    | \list_item_start =>
-        # {"type":"list_item_start"}
-        current_node.push token
-    | \list_item_end =>
-        # {"type":"list_item_end"}
-        current_node.push token
     | _ =>
         console.log JSON.stringify token
 
