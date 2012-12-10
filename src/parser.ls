@@ -83,8 +83,8 @@ class Exmotion
         [header, ...rest] = @buffer
         @out-orig header
         if @json.type  # if not empty
-            @json.proposer &&= @name-fixup @json.proposer
-            @json.petitioner &&= @name-fixup @json.petitioner
+            @json.proposer &&= util.nameListFixup @json.proposer
+            @json.petitioner &&= util.nameListFixup @json.petitioner
             @out-orig @indent ("```json\n" + JSON.stringify(@json, null, false) + "\n```").replace /^/mg, '    '
         for line in rest
             @out-orig line
@@ -138,24 +138,6 @@ class Exmotion
             return @origCtx
         @lastSpeaker = speaker if speaker
         return @
-    name-fixup: (names) ->
-        # Heuristic: merge two names if both are single words
-        for i to names.length - 1
-            if names[i]?.length == 1 and names[i+1]?.length == 1
-                names[i] += names[i+1]
-                names[i+1] = ''
-
-        # Heuristic: split a long name into two with luck.  The data is wrong
-        # back to doc->html phase. Here is a heuristic to make most cases work,
-        # with exceptions like "李正宗靳曾珍麗" that require efforts to do
-        # right (e.g. with a name dictionary).
-        ret_names = []
-        for name in names when name != ''
-            if name.length == 6 and /‧/ != name
-                ret_names.push name.substr(0, 3), name.substr(3, 3)
-            else
-                ret_names.push name
-        ret_names
     serialize: -> @flush!
 
 class Discussion
@@ -274,6 +256,32 @@ class Questioning
         return @
     serialize: ->
 
+# It works more like a filter, that collect data pass to origCtx for output.
+# With that, we don't need to worry about the output style of origCtx.
+class Vote
+    ({@output = console.log, @origCtx} = {}) ->
+        @vote = {}
+        @current_vote = null
+    push-line: (speaker, text, fulltext) ->
+        match fulltext
+        | /.*贊成者[：:].*/ =>
+            @current_vote = @vote[\approval] = []
+        | /.*反對者[：:].*/ =>
+            @current_vote = @vote[\veto] = []
+        | /.*棄權者[：:].*/ =>
+            @current_vote = @vote[\abstention] = []
+        | /.*[：、，。].*/ =>
+            if @current_vote
+                @output "```json\n#{ JSON.stringify @vote }\n```\n"
+            @origCtx.push-line speaker, text, fulltext
+            return @origCtx
+        | _ =>
+            if @current_vote
+                @current_vote.push util.nameListFixup fulltext.split(/[　\s]+/)
+        @origCtx.push-line speaker, text, fulltext
+        return @
+    serialize: -> @origCtx.serialize!
+
 HTMLParser = do
     parse: (node) ->
         self = @
@@ -364,6 +372,9 @@ class Parser implements HTMLParser
         else if (speaker ? @lastSpeaker) is \主席 and text is /現在.*(?!下次).*處理臨時提案/ and text isnt /不處理臨時提案/ and @ctx !instanceof Exmotion
             @newContext Exmotion, {origCtx: @ctx, indent_level: (if @ctx? => 4 else 0) + (@ctx?indent ? 0)}
             @ctx .=push-line speaker, text, fulltext
+        else if full is /.*表決結果名單.*/
+            @ctx .=push-line speaker, text, fulltext
+            @newContext Vote, {origCtx: @ctx}
         else
             if @ctx
                 @ctx .=push-line speaker, text, fulltext

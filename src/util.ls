@@ -73,4 +73,23 @@ build_people_interp_map = (ref_id, data, base_dct) ->
                 update_one_to_many_map base_dct, it, ref_id
     base_dct
 
-module.exports = {datetimeOfLyDateTime, intOfZHNumber, parseZHNumber, zhreg, zhreghead, zhnumber, readFileSync, build_people_interp_map}
+nameListFixup = (names) ->
+    # Heuristic: merge two names if both are single words
+    for i to names.length - 1
+        if names[i]?.length == 1 and names[i+1]?.length == 1
+            names[i] += names[i+1]
+            names[i+1] = ''
+
+    # Heuristic: split a long name into two with luck.  The data is wrong
+    # back to doc->html phase. Here is a heuristic to make most cases work,
+    # with exceptions like "李正宗靳曾珍麗" that require efforts to do
+    # right (e.g. with a name dictionary).
+    ret_names = []
+    for name in names when name != ''
+        if name.length == 6 and /‧/ != name
+            ret_names.push name.substr(0, 3), name.substr(3, 3)
+        else
+            ret_names.push name
+    ret_names
+
+module.exports = {datetimeOfLyDateTime, intOfZHNumber, parseZHNumber, zhreg, zhreghead, zhnumber, readFileSync, build_people_interp_map, nameListFixup}
