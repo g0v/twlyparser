@@ -7,7 +7,7 @@
 ending:
   start:
     regex: | 
-        報告院會.*現在散會
+      主席.*散會.*|報告院會.*散會.*|.*現在散會.*|謝謝.*散會.*|^散會
 common:
   conversationline: # 主席: 發言內容
     regex: |
@@ -51,7 +51,7 @@ consulation:
 interpellation: 
   start:
     regex: |
-      .*進行對行政院院長提出施政報告(繼續)?質詢.*$|繼續開會.*進行.*?質詢.*
+      .*進行對行政院院長提出施政報告(繼續)?質詢.*$|繼續開會.*(進行|並備).*?質詢.*
   doc_trigger:
     regex: |
       報告院會|詢答時間|已質詢完畢|處理完畢|提書面質詢
@@ -66,4 +66,3 @@ breaktime:
   end:
     regex: |
       .*現在開會.*
-       

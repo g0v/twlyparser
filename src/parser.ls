@@ -451,12 +451,16 @@ class BaseParser
         @lastContext = null
         @rules= {}
         @meta = {}
+        @triggers = []
 
     loadRules: (rulepath) ->
         @rules = new rules.Rules rulepath
 
-    detectContext: (text) ->
-        for trigger in @triggers
+    detectContext: (text, triggers) ->
+        _triggers = if triggers
+                    then triggers
+                    else @triggers
+        for trigger in _triggers
             if @rules.match trigger, text
                 ctxname = @trigger2ctxname trigger
                 return ctxname
@@ -502,19 +506,19 @@ class interpellationContext extends BaseParser
 class breaktimeContext extends BaseParser
 
     pushLine: (text, last-context, triggers) ->
+
         @output "#text \n"
 
         # restore last context or start new context
         if @rules.match \breaktime.end text =>
-            newctxname = @detectContext triggers
             lastctxname = last-context.constructor.name
-
-            if newctxname != lastctxname
-                last-context = @newContext newctxname
-                lastctxname = newctxname
-
-            @output "\n# #lastctxname \n\n"
-            last-context
+            newctxname = @detectContext text, triggers
+            if not newctxname or newctxname == lastctxname
+                @output "\n# #lastctxname \n\n"
+                last-context
+            else
+                @output "\n# #newctxname \n\n"
+                @newContext newctxname
         else
             @
      
@@ -565,7 +569,7 @@ class StructureFormater extends BaseParser
 
     store: ->
         @output "# Processing status \n\n"
-        @output "```json\n", JSON.stringify @result, null, 4b
+        @output "```json\n" + JSON.stringify @result, null, 4b
         @output "\n```\n\n"
 
 metaOfToken = (token) ->
