@@ -381,6 +381,7 @@ class Parser implements HTMLParser
 class TextParser extends Parser
     parseText: (data) ->
         for line in data / "\n"
+            line = '* * *' if line is '<hr>'
             if line.0 is \<
                 if @ctx?push-rich
                     @ctx.push-rich line
