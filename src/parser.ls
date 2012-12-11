@@ -297,11 +297,10 @@ HTMLParser = do
                     after = ~> @parseRich imgs
             tags = {}
             node.children!each -> tags[@.0.name] = true
-            for name of tags => console.log \unhandled: name if name not in <[font br span u b a sup sub strong]>
-            text = cleanup node
-            return unless text.length
-            return unless text is /\D/
-            @parseLine text
+            for name of tags => console.log "\nunhandled:" name if name not in <[font br span u b a sup sub strong]>
+            cleanup node
+                if ..length and .. is /\D/
+                    @parseLine ..
             after?!
         else => console.error \unhandled: node.0.name, node.html!
     parseHtml: (data) ->
@@ -412,7 +411,8 @@ class TextFormatter implements HTMLParser
             if width / height > 100
                 @replaceWith('<hr />')
             else
-                @attr \SRC "data:image/#ext;base64,"+(fs.readFileSync file)toString \base64
+                uri = exec-sync "lsc ./img-filter.ls #file"
+                @attr \SRC uri
 
         @output rich.html! - /^\s+/mg - /\n/g - /position: absolute;/g
 
