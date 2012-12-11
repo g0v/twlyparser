@@ -65,7 +65,7 @@ class Announcement
                 @last-item = @items[item] = {subject: content, conversation: []}
                 return @
         @output "    #fulltext\n"
-        @last-item.conversation.push [speaker, text]
+        @last-item?.conversation.push [speaker, text]
         return @
     serialize: ->
 
