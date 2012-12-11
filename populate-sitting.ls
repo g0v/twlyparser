@@ -22,7 +22,10 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
             return if entries.0.sitting
         else
             return if g.sitting
-    return if ad and g.ad !~= ad
+    if ad is \empty
+        return unless g.sitting?
+    else
+        return if ad and g.ad !~= ad
     return if type isnt index-type
     files = [files.0] if metaOnly
     files.forEach (uri) -> funcs.push (done) ->

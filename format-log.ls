@@ -7,7 +7,10 @@ require! \./lib/ly
 
 ly.forGazette gazette, (id, g, type, entries, files) ->
     return if type isnt /院會紀錄/
-    return if ad and g.ad !~= ad
+    if ad is \empty
+        return if g.sitting?
+    else
+        return if ad and g.ad !~= ad
 
     klass = if text => TextFormatter else if fromtext => TextParser else Parser
     ext   = if text => \txt else \md
