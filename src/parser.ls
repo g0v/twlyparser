@@ -393,7 +393,7 @@ class Parser implements HTMLParser
         else if (speaker ? @lastSpeaker) is \主席 && text is /(處理.*黨團.*協商結論|現有一朝野黨團協商結論|宣讀朝野協商結論)/
             @newContext Consultation
             @output "#fulltext\n\n"
-        else if (speaker ? @lastSpeaker) is \主席 && (text is /對行政院.*質詢/ or text is /進行施政報告之質詢|進行施政總質詢|追加預算報告之質詢|進行委員質詢|現在進行質詢。|請.*質詢[，。]詢答時間共?為/) and text isnt /以下決定|現在休息|宣告|討論事項結束後|質詢完畢/ and @ctx !instanceof Interpellation
+        else if (speaker ? @lastSpeaker) is \主席 && (((text is /對行政院.*質詢/ or text is /進行施政報告之質詢|進行施政總質詢|追加預算報告之質詢|進行委員質詢|現在進行質詢。|請.*質詢[，。]詢答時間共?為/) and text isnt /以下決定|現在休息|宣告|討論事項結束後|質詢完畢/) or text is /請.{3,6}報告並備詢/) and @ctx !instanceof Interpellation
             @newContext Interpellation, {lastSpeaker: @lastSpeaker}
             @ctx .=push-line speaker, text, fulltext
         else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*復議案/
