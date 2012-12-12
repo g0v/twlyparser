@@ -49,6 +49,7 @@ class Announcement
         @items = {}
         @last-item = null
         @i = 0
+    indent-level: -> 4
     push-line: (speaker, text, fulltext) ->
         if [_, item, content]? = text.match util.zhreghead
             item = util.parseZHNumber item
@@ -178,6 +179,7 @@ class Interpellation
         @conversation = []
         @subsection = false
         @document = false
+    indent-level: -> 4
     flush: ->
         type = if @document => 'interpdoc' else 'interp'
         if @current-conversation.length
@@ -279,7 +281,10 @@ class Vote
             @current_vote = \abstention
         | /.*[：、，。].*/ =>
             if @current_vote
-                @output "```json\n#{ JSON.stringify @vote }\n```\n"
+                indent = ''
+                if @origCtx.indent-level
+                    indent = ' ' * @origCtx.indent-level!
+                @output "#indent```json\n#indent#{ JSON.stringify @vote }\n#indent```\n"
             @origCtx.push-line speaker, text, fulltext
             return @origCtx
         | _ =>
