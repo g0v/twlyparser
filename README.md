@@ -82,6 +82,17 @@ twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --text --ad 8 --dir ./outpu
 twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --fromtext --ad 8 --dir ./output
 ```
 
+# To generate json files from md
+
+```
+# generate specific gazette or AD
+twlyparser $ ./node_modules/.bin/lsc ./md2json.ls --gazette 4004 --dir ./output
+twlyparser $ ./node_modules/.bin/lsc ./md2json.ls --ad 8 --dir ./output
+
+# generate all gazettes
+twlyparser $ ./node_modules/.bin/lsc ./md2json.ls --dir ../data
+```
+
 # To generate json files of gazettes (only supports interpellation for now)
 
 ```
