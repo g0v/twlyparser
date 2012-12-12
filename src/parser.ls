@@ -316,6 +316,7 @@ HTMLParser = do
         | \p     =>
             after = null
             node.find \strike .remove!
+            node.find \sdfield .remove!
             if tables = node.find('table')
                 if tables.length
                     tables.remove!
