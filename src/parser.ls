@@ -392,6 +392,8 @@ class TextParser extends Parser
 
 class TextFormatter implements HTMLParser
     ({@output = console.log} = {}) ->
+        @chute-map = try require \../data/chute-map
+        @chute-map ?= {}
 
     parseLine: ->
         if it.0 is \<
@@ -412,7 +414,9 @@ class TextFormatter implements HTMLParser
             if width / height > 100
                 @replaceWith('<hr />')
             else
-                uri = exec-sync "lsc ./img-filter.ls #file"
+                if [id, shortcut]? = self.chute-map[file]
+                    uri = "//media.getchute.com/media/#shortcut"
+                uri ?= exec-sync "lsc ./img-filter.ls #file"
                 @attr \SRC uri
 
         @output rich.html! - /^\s+/mg - /\n/g - /position: absolute;/g
