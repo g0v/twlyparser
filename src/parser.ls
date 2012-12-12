@@ -328,7 +328,7 @@ HTMLParser = do
                     after = ~> @parseRich imgs
             tags = {}
             node.children!each -> tags[@.0.name] = true
-            for name of tags => console.log "\nunhandled:" name if name not in <[font br span u b a sup sub strong]>
+            for name of tags => console.log "\nunhandled:" name if name not in <[font br span u b a sup sub strong center ]>
             cleanup node
                 if ..length and .. is /\D/
                     @parseLine ..
