@@ -9,9 +9,9 @@ class MarkdownToJsonParser
         @reset!
 
     reset: ->
-        @ast = [{}]  # node := [ params, ...nodes ]
-        @current_node = @ast
-        @stack = []
+        @ast = {data: []}
+        @current = @ast
+        @stack = [@current]
 
     to-json: (filename) ->
         @reset!
@@ -19,59 +19,53 @@ class MarkdownToJsonParser
             @consume-token token
         @ast
 
+    pop-from-stack: ->
+        @stack.pop!
+        @current = @stack[*-1]
+
+    push-to-stack: (node) ->
+        @stack[*-1].data.push node
+        @current = node
+        @stack.push @current
+
+    append: (node) ->
+        @current.data.push node
+
     consume-token: (token) ->
         switch token.type
         | \heading =>
             # {"type":"heading","depth":1,"text":"院會紀錄"}
-            if token.depth > @stack.length
-                if token.depth != @stack.length + 1
-                    @err_token "(>) #{token.depth} != #{@stack.length} + 1", token
-                @current_node.push [ { section: token.text } ]
-                @stack.push @current_node
-                @current_node = @current_node[*-1]
-            else if token.depth < @stack.length
-                @stack.length = token.depth - 1
-                parent = @stack[*-1]
-                @current_node = [ { section: token.text } ]
-                @stack.push @current_node
-                parent.push @current_node
+            if token.depth > @stack.length - 1
+                @push-to-stack { session: token.text, data: [] }
+            else if token.depth < @stack.length - 1
+                @stack.length = token.depth
+                @push-to-stack { session: token.text, data: [] }
             else
-                if @stack.length == 0
-                    @err_token "(=) #{@stack.length}", token
-                @current_node = [ { section: token.text } ]
-                parent = @stack[*-1]
-                parent.push @current_node
+                @pop-from-stack!
+                @push-to-stack { session: token.text, data: [] }
         | \space =>
-            # {"type":"space"}
         | \code =>
             # {"type":"code","lang":"json","text":"{[null]}"}
-            @current_node[0] <<< JSON.parse token.text
+            try
+                json = token.text - /^```json/ - /```$/
+                @append JSON.parse json
+            catch
+                @append { content: token.text, error: 'not-json' }
         | \paragraph, \text =>
             # {"type":"paragraph","text":"主席：現在開會，進行報告事項。\n\n\n"}
             text = token.text - /\n/g
-            @current_node.push text
+            @append text
         | \loose_item_start, \list_item_start =>
-            # {"type":"loose_item_start"}
-            @current_node.push [{}]
-            @stack.push @current_node
-            @current_node = @current_node[*-1]
-        | \list_item_end =>
-            # {"type":"list_item_end"}
-            @current_node = @stack.pop!
+            @push-to-stack { data: [] }
         | \list_start =>
             # {"type":"list_start","ordered":true}
-            @current_node.push [ { token.ordered } ]
-            @stack.push @current_node
-            @current_node = @current_node[*-1]
-        | \list_end =>
-            # {"type":"list_end"}
-            @current_node = @stack.pop!
-        | \blockquote_start =>
-            @current_node.push token  # TODO
-        | \blockquote_end =>
-            @current_node.push token  # TODO
+            @push-to-stack { ordered: token.ordered, data: [] }
+        | \list_item_end, \list_end =>
+            @pop-from-stack!
+        | \blockquote_start, \blockquote_end =>
+            # not used for now
         | _ =>
-            @current_node.push token
+            @append token
 
     err_token: (msg, token) ->
         console.error "Unexpected token: #msg =>" + JSON.stringify token
@@ -79,13 +73,14 @@ class MarkdownToJsonParser
 
 class LyMarkdownToJsonParser extends MarkdownToJsonParser
     ->
+        super!
         @lastSpeaker = null
 
     consume-token: (token) ->
         switch token.type
         | \paragraph, \text =>
             match token.text
-            | /^(\S+?)：\s*(.*)/ =>
+            | /^\s*([^：]{2,10})\s*：\s*(.*)\s*$/
                 [speaker, content] = that[1 to 2]
                 @lastSpeaker = speaker
             | _ =>
@@ -96,9 +91,33 @@ class LyMarkdownToJsonParser extends MarkdownToJsonParser
             | /[\s*（(](\d+時\d+分)[）)]\s*/ =>
                 content = content.replace that.0, ''
                 time = that.1
-            @current_node.push {speaker, content, time}
+            @append {speaker, content, time}
+        | \loose_item_start, \list_item_start, \list_item_end  =>
+        | \list_end =>
+            # promote to upper level to simplty the structure
+            if @current.data.length == 1
+                promote_node = @current.data[0]
+                @pop-from-stack!
+                @replace-last-node promote_node
         | _ => super ...
 
+    replace-last-node: (node) ->
+        @current.data[*-1] = node
+
+    traverse: !(ast, visitor) ->
+        visitor ast
+        if ast.data
+            for node in ast.data
+                @traverse node, visitor
+        # else
+
+    to-json: ->
+        ast = super ...
+        # simplify item list structure when possible
+        @traverse ast, (node) ->
+            if node.session and node.data?.length == 1
+                node <<<< node.data[0]
+        ast
 
 {gazette, ad, dir = '.', text, fromtext} = optimist.argv
 
@@ -106,7 +125,9 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
     return if type isnt /院會紀錄/
     return if ad and g.ad !~= ad
 
-    console.log ">>> #id"
+    process.stdout.write id
+    process.stdout.write '\r'
+
     parser = new LyMarkdownToJsonParser
     ast = parser.to-json "#dir/#id.md"
     fs.writeFileSync "#dir/#id.json", JSON.stringify(ast, '', 4)
