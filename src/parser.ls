@@ -49,6 +49,7 @@ class Announcement
         @items = {}
         @last-item = null
         @i = 0
+    indent-level: -> 4
     push-line: (speaker, text, fulltext) ->
         if [_, item, content]? = text.match util.zhreghead
             item = util.parseZHNumber item
@@ -65,7 +66,7 @@ class Announcement
                 @last-item = @items[item] = {subject: content, conversation: []}
                 return @
         @output "    #fulltext\n"
-        @last-item.conversation.push [speaker, text]
+        @last-item?.conversation.push [speaker, text]
         return @
     serialize: ->
 
@@ -83,8 +84,8 @@ class Exmotion
         [header, ...rest] = @buffer
         @out-orig header
         if @json.type  # if not empty
-            @json.proposer &&= @name-fixup @json.proposer
-            @json.petitioner &&= @name-fixup @json.petitioner
+            @json.proposer &&= util.nameListFixup @json.proposer
+            @json.petitioner &&= util.nameListFixup @json.petitioner
             @out-orig @indent ("```json\n" + JSON.stringify(@json, null, false) + "\n```").replace /^/mg, '    '
         for line in rest
             @out-orig line
@@ -138,24 +139,6 @@ class Exmotion
             return @origCtx
         @lastSpeaker = speaker if speaker
         return @
-    name-fixup: (names) ->
-        # Heuristic: merge two names if both are single words
-        for i to names.length - 1
-            if names[i]?.length == 1 and names[i+1]?.length == 1
-                names[i] += names[i+1]
-                names[i+1] = ''
-
-        # Heuristic: split a long name into two with luck.  The data is wrong
-        # back to doc->html phase. Here is a heuristic to make most cases work,
-        # with exceptions like "李正宗靳曾珍麗" that require efforts to do
-        # right (e.g. with a name dictionary).
-        ret_names = []
-        for name in names when name != ''
-            if name.length == 6 and /‧/ != name
-                ret_names.push name.substr(0, 3), name.substr(3, 3)
-            else
-                ret_names.push name
-        ret_names
     serialize: -> @flush!
 
 class Discussion
@@ -190,12 +173,13 @@ class Proposal
 
 
 class Interpellation
-    ({@output} = {}) ->
+    ({@output, @lastSpeaker} = {}) ->
         @current-conversation = []
         @current-participants = []
         @conversation = []
         @subsection = false
         @document = false
+    indent-level: -> 4
     flush: ->
         type = if @document => 'interpdoc' else 'interp'
         if @current-conversation.length
@@ -274,6 +258,43 @@ class Questioning
         return @
     serialize: ->
 
+class DummyContext
+    ({@output = console.log}) ->
+    push-line: (speaker, text, fulltext) ->
+        @output "#fulltext\n\n"
+        @
+    serialize: ->
+
+# It works more like a filter, that collect data pass to origCtx for output.
+# With that, we don't need to worry about the output style of origCtx.
+class Vote
+    ({@output = console.log, @origCtx} = {}) ->
+        @vote = {}
+        @current_vote = null
+    push-line: (speaker, text, fulltext) ->
+        match fulltext
+        | /.*贊成者[：:].*/ =>
+            @current_vote = \approval
+        | /.*反對者[：:].*/ =>
+            @current_vote = \veto
+        | /.*棄權者[：:].*/ =>
+            @current_vote = \abstention
+        | /.*[：、，。].*/ =>
+            if @current_vote
+                indent = ''
+                if @origCtx.indent-level
+                    indent = ' ' * @origCtx.indent-level!
+                @output "#indent```json\n#indent#{ JSON.stringify @vote }\n#indent```\n"
+            @origCtx.push-line speaker, text, fulltext
+            return @origCtx
+        | _ =>
+            if @current_vote
+                @vote[@current_vote] ||= []
+                @vote[@current_vote] = @vote[@current_vote] +++ util.nameListFixup fulltext.split(/[　\s]+/)
+        @origCtx.push-line speaker, text, fulltext
+        return @
+    serialize: -> @origCtx.serialize!
+
 HTMLParser = do
     parse: (node) ->
         self = @
@@ -327,7 +348,7 @@ class Parser implements HTMLParser
             if speaker is /以下|本案|本席|現作如下決(議|定)/ or speaker is /^(日期|傳真|電話|地址|剛才|再來|這樣|有句話說)/
                 text = full
                 speaker = null
-            else if speaker is /^主席（(.*?)）/
+            else if speaker is /^主\s*席（(.*?)）?/
                 speaker = '主席'
                 # XXX emit speaker meta
             else
@@ -354,8 +375,8 @@ class Parser implements HTMLParser
         else if (speaker ? @lastSpeaker) is \主席 && text is /(處理.*黨團.*協商結論|現有一朝野黨團協商結論|宣讀朝野協商結論)/
             @newContext Consultation
             @output "#fulltext\n\n"
-        else if (speaker ? @lastSpeaker) is \主席 && (text is /對行政院.*質詢/ or text is /進行施政報告之質詢|進行施政總質詢|追加預算報告之質詢|進行委員質詢|現在進行質詢。/) and text isnt /以下決定|現在休息|宣告|討論事項結束後|質詢完畢/ and @ctx !instanceof Interpellation
-            @newContext Interpellation
+        else if (speaker ? @lastSpeaker) is \主席 && (text is /對行政院.*質詢/ or text is /進行施政報告之質詢|進行施政總質詢|追加預算報告之質詢|進行委員質詢|現在進行質詢。|請.*質詢[，。]詢答時間共?為/) and text isnt /以下決定|現在休息|宣告|討論事項結束後|質詢完畢/ and @ctx !instanceof Interpellation
+            @newContext Interpellation, {lastSpeaker: @lastSpeaker}
             @ctx .=push-line speaker, text, fulltext
         else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*復議案/
             @output "## 復議案\n\n"
@@ -363,6 +384,11 @@ class Parser implements HTMLParser
         else if (speaker ? @lastSpeaker) is \主席 and text is /現在.*(?!下次).*處理臨時提案/ and text isnt /不處理臨時提案/ and @ctx !instanceof Exmotion
             @newContext Exmotion, {origCtx: @ctx, indent_level: (if @ctx? => 4 else 0) + (@ctx?indent ? 0)}
             @ctx .=push-line speaker, text, fulltext
+        else if full is /.*表決結果名單.*/
+            if !@ctx
+               @newContext DummyContext
+            @ctx .=push-line speaker, text, fulltext
+            @newContext Vote, {origCtx: @ctx}
         else
             if @ctx
                 @ctx .=push-line speaker, text, fulltext
@@ -456,12 +482,16 @@ class BaseParser
         @lastContext = null
         @rules= {}
         @meta = {}
+        @triggers = []
 
     loadRules: (rulepath) ->
         @rules = new rules.Rules rulepath
 
-    detectContext: (text) ->
-        for trigger in @triggers
+    detectContext: (text, triggers) ->
+        _triggers = if triggers
+                    then triggers
+                    else @triggers
+        for trigger in _triggers
             if @rules.match trigger, text
                 ctxname = @trigger2ctxname trigger
                 return ctxname
@@ -507,19 +537,19 @@ class interpellationContext extends BaseParser
 class breaktimeContext extends BaseParser
 
     pushLine: (text, last-context, triggers) ->
+
         @output "#text \n"
 
         # restore last context or start new context
         if @rules.match \breaktime.end text =>
-            newctxname = @detectContext triggers
             lastctxname = last-context.constructor.name
-
-            if newctxname != lastctxname
-                last-context = @newContext newctxname
-                lastctxname = newctxname
-
-            @output "\n# #lastctxname \n\n"
-            last-context
+            newctxname = @detectContext text, triggers
+            if not newctxname or newctxname == lastctxname
+                @output "\n# #lastctxname \n\n"
+                last-context
+            else
+                @output "\n# #newctxname \n\n"
+                @newContext newctxname
         else
             @
      
@@ -570,7 +600,7 @@ class StructureFormater extends BaseParser
 
     store: ->
         @output "# Processing status \n\n"
-        @output "```json\n", JSON.stringify @result, null, 4b
+        @output "```json\n" + JSON.stringify @result, null, 4b
         @output "\n```\n\n"
 
 metaOfToken = (token) ->
