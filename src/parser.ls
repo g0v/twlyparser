@@ -315,6 +315,11 @@ HTMLParser = do
         | \table => @parseRich node
         | \p     =>
             after = null
+            if tables = node.find('table')
+                if tables.length
+                    tables.remove!
+                    a = after
+                    after = ~> a?!; @parseRich tables
             if imgs = node.find('img')
                 if imgs.length
                     imgs.remove!
