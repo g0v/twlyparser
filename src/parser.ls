@@ -315,6 +315,7 @@ HTMLParser = do
         | \table => @parseRich node
         | \p     =>
             after = null
+            node.find \strike .remove!
             if tables = node.find('table')
                 if tables.length
                     tables.remove!
