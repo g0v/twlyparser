@@ -71,10 +71,13 @@ class Announcement
     serialize: ->
 
 class Exmotion
-    ({@output = console.log, @indent_level = 0, @origCtx} = {}) ->
+    ({@output = console.log, @origCtx} = {}) ->
         @buffer = []
         @json = {}
         @state = ''
+        @indent_level = 0
+        if @origCtx?.indent-level
+            @indent_level = @origCtx?.indent-level!
         @out-orig = @output
         @output = -> @buffer.push @indent it
         @output "## 臨時提案"
@@ -145,6 +148,7 @@ class Discussion
     ({@output} = {}) ->
         @output "\n## 討論事項\n\n"
         @lines = []
+    indent-level: -> 0
     push-line: (speaker, text, fulltext) ->
         @output "#fulltext\n"
         if (speaker ? @lastSpeaker) is \主席 and text is /討論事項.*到此為止(?!.*繼續)/
@@ -157,6 +161,7 @@ class Consultation
     ({@output} = {}) ->
         @output "\n## 黨團協商結論\n\n"
         @lines = []
+    indent-level: -> 0
     push-line: (speaker, text, fulltext) ->
         @output "#fulltext\n"
         return @
@@ -166,6 +171,7 @@ class Proposal
     ({@output} = {}) ->
         @output "## 黨團提案\n\n"
         @lines = []
+    indent-level: -> 0
     push-line: (speaker, text, fulltext) ->
         @output "#fulltext\n"
         return @
@@ -235,6 +241,7 @@ class Questioning
         @ctx = null
         @reply = {}
         @question = {}
+    indent-level: -> 0
     push: (speaker, text, fulltext) ->
         if [_, item, content]? = text.match util.zhreghead
             item = util.parseZHNumber item
@@ -260,6 +267,7 @@ class Questioning
 
 class DummyContext
     ({@output = console.log}) ->
+    indent-level: -> 0
     push-line: (speaker, text, fulltext) ->
         @output "#fulltext\n\n"
         @
@@ -382,7 +390,7 @@ class Parser implements HTMLParser
             @output "## 復議案\n\n"
             @newContext null
         else if (speaker ? @lastSpeaker) is \主席 and text is /現在.*(?!下次).*處理臨時提案/ and text isnt /不處理臨時提案/ and @ctx !instanceof Exmotion
-            @newContext Exmotion, {origCtx: @ctx, indent_level: (if @ctx? => 4 else 0) + (@ctx?indent ? 0)}
+            @newContext Exmotion, {origCtx: @ctx}
             @ctx .=push-line speaker, text, fulltext
         else if full is /.*表決結果名單.*/
             if !@ctx
