@@ -304,6 +304,9 @@ HTMLParser = do
             text
 
         match node.0.name
+        | \div =>
+            return if node.attr(\TYPE) is /header|footer/i
+            node.children!each -> self.parse @
         | /multicol|div|center|dd|dl|ol|ul|li/ => node.children!each -> self.parse @
         | \h1 =>
             @parseLine cleanup node
