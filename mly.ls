@@ -62,10 +62,12 @@ else => console.error it
 
 console.error members.length
 
-console.log members.map (m) ->
+
+res = members.map (m) ->
     do
         name: m.姓名
         party: party m.黨籍
         caucus: party m.黨團
         constuiency: constuiency m.選區
 
+console.log JSON.stringify res, null, 4
