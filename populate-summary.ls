@@ -1,4 +1,11 @@
-require! <[printf cheerio request fs ./lib/util]>
+require! \./lib/ly
+require! <[optimist mkdirp fs async cheerio ./lib/util]>
+
+{gazette, ad, lodev, type, force} = optimist.argv
+
+err <- mkdirp "source/summary"
+funcs = []
+
 processItems = (body, entry) ->
     $ = cheerio.load body
     $('#queryListForm table tr').each ->
@@ -11,27 +18,31 @@ processItems = (body, entry) ->
         return unless cols.length
         entry id, cols
 
+
 parseAgenda = (body, doctype, type, cb) ->
     prevHead = null
     processItems body, (id, entry) ->
         # XXX: extract resolution.  the other info can be found using
         # getDetails with id
         if type is \Announcement
-            console.log entry
+            console.log \nn entry
             [heading, proposer, summary, result] = entry.0 / "\n"
             [_, zhitem]? = heading.match util.zhreghead
             console.log util.parseZHNumber zhitem
             console.log proposer, summary
-            console.log \===> result
+            console.log \===> id, result
         if type is \Discussion
             [heading, content] = entry
+            console.log \DIS heading,
+            console.log ccontent
+            return unless content
             heading -= /\s*/g
             heading = prevHead unless heading.length
             [sub, proposer, summary] = content / "\n"
             console.log heading
             [_, zhitem]? = heading.match util.zhreghead
             console.log util.parseZHNumber zhitem
-            console.log \==== sub, proposer
+            console.log \==== id, sub, proposer
             console.log summary
 
         prevHead := heading if heading
@@ -39,22 +50,27 @@ parseAgenda = (body, doctype, type, cb) ->
     cb \notyet
 
 
-getDetails = (id, cb) ->
-    err, res, body <- request do
-        method: \POST
-        uri: 'http://misq.ly.gov.tw/MISQ/IQuery/misq5000QueryBillDetail.action'
-        headers: do
-            Origin: 'http://misq.ly.gov.tw'
-            Referer: 'http://misq.ly.gov.tw/MISQ/IQuery/queryMoreBillData.action'
-            User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
-        form: { billNo: id }
+ly.forGazette gazette, (id, g, type, entries, files) ->
+    return if ad and g.ad !~= ad
+    return if type isnt \院會紀錄
+    return if g.sitting != 9
+    for type in <[Announcement Discussion]> => let type
+        file = "source/summary/#{g.ad}-#{g.session}-#{g.sitting}-#{type}.html"
+        funcs.push (done) ->
+            extract = (body) ->
+                console.log g, type
+                <- parseAgenda body, \proceeding, type
+                console.log it
+                done!
 
-    cb \notyet
 
-#<- getAgenda {ad: 8, session: 2, sitting: 13}
+            _, {size}? <- fs.stat file
+            if size
+                extract fs.readFileSync file
+            else
+                body <- ly.getSummary g, \proceeding, type
 
-require! optimist
-
-data = fs.readFileSync optimist.argv._.0
-
-<- parseAgenda data, \proceeding, \Discussion
+                fs.writeFileSync file, body
+                extract body
+err, res <- async.waterfall funcs
+console.log \ok, res

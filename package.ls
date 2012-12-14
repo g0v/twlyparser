@@ -28,5 +28,6 @@ devDependencies:
   shelljs: \0.0.9
   'exec-sync': \0.1.x
   xregexp: \2.0.0
+  printf: \0.0.7
   'js-yaml': \1.0.3
 optionalDependencies: {}
