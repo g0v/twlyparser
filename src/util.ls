@@ -4,7 +4,7 @@ require! {fs}
 zhnumber = <[○ 一 二 三 四 五 六 七 八 九 十]>
 
 zhmap = {[c, i] for c, i in zhnumber}
-zhreghead = new RegExp "^((?:#{ zhnumber * '|' })+)、(.*)$", \m
+zhreghead = new RegExp "^((?:#{ (<[百 零]> +++ zhnumber) * '|' })+)、(.*)$", \m
 zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)$"
 
 intOfZHNumber = ->
@@ -20,6 +20,9 @@ parseZHHour = ->
     else hour + 12
 
 parseZHNumber = ->
+    it .= replace /零/g, '○'
+    it .= replace /百$/g, '○○'
+    it .= replace /百/, ''
     if it.0 is \十
         l = it.length
         return 10 if l is 1
