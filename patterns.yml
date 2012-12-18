@@ -77,6 +77,9 @@ discussion:
   title:
     regex: |
       ^討\s*論\s*事\s*項$
+  end:
+    regex: |
+      討論事項.*到此為止(?!.*繼續)
 proposal:
   start:
     regex: |

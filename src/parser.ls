@@ -149,13 +149,13 @@ class Exmotion
     serialize: -> @flush!
 
 class Discussion
-    ({@output} = {}) ->
+    ({@output, @rules} = {}) ->
         @output "\n## 討論事項\n\n"
         @lines = []
     indent-level: -> 0
     push-line: (speaker, text, fulltext) ->
         @output "#fulltext\n"
-        if (speaker ? @lastSpeaker) is \主席 and text is /討論事項.*到此為止(?!.*繼續)/
+        if (speaker ? @lastSpeaker) is \主席 and @rules.match \discussion.end text
             return
         @lastSpeaker = speaker if speaker
         return @
@@ -389,9 +389,9 @@ class Parser implements HTMLParser
             @ctx .=push-line speaker, text, fulltext if that.2?
             @lastSpeaker = null
         else if @rules.match \discussion.title text
-            @newContext Discussion unless @ctx instanceof Discussion
+            @newContext Discussion, {rules: @rules} unless @ctx instanceof Discussion
         else if (speaker ? @lastSpeaker) is \主席 && @rules.match \discussion.start text and @ctx !instanceof Discussion
-            @newContext Discussion
+            @newContext Discussion, {rules: @rules}
             @ctx .=push-line speaker, text, fulltext
         else if (speaker ? @lastSpeaker) is \主席 && @rules.match \proposal.start text
             @newContext Proposal
