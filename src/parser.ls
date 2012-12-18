@@ -280,18 +280,19 @@ class DummyContext
 # It works more like a filter, that collect data pass to origCtx for output.
 # With that, we don't need to worry about the output style of origCtx.
 class Vote
-    ({@output = console.log, @origCtx} = {}) ->
+    ({@output = console.log, @origCtx, @rules} = {}) ->
         @vote = {}
         @current_vote = null
     push-line: (speaker, text, fulltext) ->
+        myrules = @rules
         match fulltext
-        | /.*贊成者[：:].*/ =>
+        | myrules.regex \vote.vote_approval .exec =>
             @current_vote = \approval
-        | /.*反對者[：:].*/ =>
+        | myrules.regex \vote.vote_veto .exec =>
             @current_vote = \veto
-        | /.*棄權者[：:].*/ =>
+        | myrules.regex \vote.vote_abstention .exec =>
             @current_vote = \abstention
-        | /.*[：、，。].*/ =>
+        | myrules.regex \vote.vote_other .exec  =>
             if @current_vote
                 indent = ''
                 if @origCtx.indent-level
@@ -410,7 +411,7 @@ class Parser implements HTMLParser
             if !@ctx
                @newContext DummyContext
             @ctx .=push-line speaker, text, fulltext
-            @newContext Vote, {origCtx: @ctx}
+            @newContext Vote, {origCtx: @ctx, rules: @rules}
         else
             if @ctx
                 @ctx .=push-line speaker, text, fulltext

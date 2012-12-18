@@ -126,3 +126,16 @@ amend:
   start: 
     regex: |
       方才宣告.*現在訂正
+vote:
+  vote_approval:
+    regex: |
+      .*贊成者[：:].*
+  vote_veto:
+    regex: |
+      .*反對者[：:].*
+  vote_abstention:
+    regex: |
+      .*棄權者[：:].*
+  vote_other:
+    regex: |
+      .*[：、，。].*
