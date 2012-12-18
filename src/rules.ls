@@ -22,7 +22,8 @@ class Rules
         if not @_cache[query]
             regexstr = @rule query .regex
             throw "query does not have regex string" if regexstr is undefined
-            @_cache[query] = new xregexp.XRegExp.cache regexstr.replace "\n", ''
+#            @_cache[query] = new xregexp.XRegExp.cache regexstr.replace "\n", ''
+            @_cache[query] = new RegExp regexstr.replace "\n", ''
         @_cache[query]
 
     replace: (query, _from, to_) ->

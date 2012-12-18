@@ -7,7 +7,7 @@ require! "../lib/rules"
 # session (會期)
 # sitting (會次)
 class Meta
-    ({@output, @output-json} = {}) ->
+    ({@output, @rules, @output-json} = {}) ->
         @output "# 院會紀錄\n\n"
         @meta = {}
     push-line: (speaker, text) ->
@@ -15,26 +15,29 @@ class Meta
             @serialize!
             return
         if @ctx is \speaker
-            [_, position, name] = text.match /^(?:(.+)\s+)?(.*)$/
+            [_, position, name] = @rules.match \common.name_with_title text
             return @
 
         text .=replace /立 法院/, \立法院
+        #@FIXME: must use RegExp .exec function in match syntax, ideally, we just need to give a RegExp object.
+        #@FIXME: @rules.regexp in match syntax can not be compiled to correct JavaScript.
+        myrules = @rules
         match text
-        | /立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次臨時會(?:第\s*(\S+?)\s*次)?會議紀錄/ =>
+        | myrules.regex \header.title_temporarily .exec =>
             that.4 ?= 1
             @meta<[ad session extra sitting]> = that[1 to 4].map -> util.intOfZHNumber it
-        | /立法院第\s*(\S+)\s*屆(?:第\s*(\S+)\s*會期)?(選舉院長、副院長|院長副院長選舉)會議(紀錄|議事錄)/ =>
+        | myrules.regex \header.title_election .exec =>
             @meta<[ad session]> = that[1 to 2].map -> util.intOfZHNumber it
             @meta.sitting = 0
-        | /立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次會議(紀錄|議事錄)/ =>
+        | myrules.regex \header.title_general .exec =>
             @meta<[ad session sitting]> = that[1 to 3].map -> util.intOfZHNumber it
             @meta.memo = true if that.4 is \議事錄
-        | /立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次秘密會議紀錄/ =>
+        | myrules.regex \header.title_secret .exec =>
             @meta<[ad session secret]> = that[1 to 3].map -> util.intOfZHNumber it
-        | /主\s*席\s+(.*)$/ =>
+        | myrules.regex \header.title_other .exec =>
             @ctx = \speaker
             @meta.speaker = that.1
-        | /時\s*間\s+中華民國(\S+)年(\S+)月(\S+)日（(\S+)）(\S+?)(\d+)時/ =>
+        | myrules.regex \header.datetime .exec =>
             @meta.datetime = util.datetimeOfLyDateTime that[1 to 3] [5 to 6]
         @output "#text\n"
         return @
@@ -351,7 +354,7 @@ HTMLParser = do
 class Parser implements HTMLParser
     ({@output = console.log, @rules, @output-json, @metaOnly} = {}) ->
         @lastSpeaker = null
-        @ctx = @newContext Meta
+        @ctx = @newContext Meta, {rules: @rules}
     store: ->
         @ctx.serialize! if @ctx
 

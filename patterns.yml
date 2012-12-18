@@ -4,6 +4,10 @@
 #    規則名稱
 #       Regex 字串
 ---
+common:
+  name_with_title:
+    regex: |
+      ^(?:(.+)\s+)?(.*)$
 ending:
   start:
     regex: | 
@@ -19,15 +23,27 @@ speach:
     regex: |
       ^主\s*席（(.*?)）?
 header:
-  title: # 公報標題
+  title_temporarily: # 公報標題
     regex: | 
-      立法院第(?<ad>\S+)屆第(?<session>\S+)會期第(?<sitting>\S+?)次(?<extra>?:臨時會第(\S+)次)?會議紀錄
+      立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次臨時會(?:第\s*(\S+?)\s*次)?會議紀錄
+  title_election:
+    regex: |
+      立法院第\s*(\S+)\s*屆(?:第\s*(\S+)\s*會期)?(選舉院長、副院長|院長副院長選舉)會議(紀錄|議事錄)
+  title_general:
+    regex: |
+      立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次會議(紀錄|議事錄)
+  title_secret:
+    regex: |
+      立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次秘密會議紀錄
+  title_other:
+    regex: |
+      主\s*席\s+(.*)$
   chairman: # 主席名稱
     regex: |
       主\s*席\s+(?<chairman>.*)$
   datetime: # 開會時間
     regex: |
-      /時\s*間\s+中華民國(?<year>\S+)年(?<month>\S+)月(?<day>\S+)日（(?<day_of_week>\S+)）(?<am_or_pm>\S+?)(?<hour>\d+)時
+      時\s*間\s+中華民國(\S+)年(\S+)月(\S+)日（(\S+)）(\S+?)(\d+)時
 announcement:
   start:
     regex: | 
