@@ -182,7 +182,7 @@ class Proposal
 
 
 class Interpellation
-    ({@output, @lastSpeaker} = {}) ->
+    ({@output, @lastSpeaker, @rules} = {}) ->
         @current-conversation = []
         @current-participants = []
         @conversation = []
@@ -214,12 +214,12 @@ class Interpellation
     push-rich: (html) ->
         @current-conversation.push [ null, html ]
     push-line: (speaker, text, fulltext) ->
-        if (speaker ? @lastSpeaker) is \主席 and text is /報告院會|詢答時間|已質詢完畢|處理完畢|提書面質詢/
+        if (speaker ? @lastSpeaker) is \主席 and @rules.match \interpellation.end text
             @flush!
             @output "* #fulltext\n"
             @conversation.push [speaker, text]
-            @document = text is /提書面質詢/
-        else if fulltext is /^(.*委員.*)書面(補充)?質詢?.?：$/
+            @document = @rules.match \interpellation.interpdoc_start text
+        else if @rules.match \interpellation.interpdoc_body fulltext
             @flush!
             @document = true
             @current-conversation.push [that.1, fulltext]
@@ -229,7 +229,7 @@ class Interpellation
         else if @document
             @current-conversation.push [null, fulltext]
         else
-            [_, h, m, text]? = text.match /^(?:\(|（)(\d+)時(\d+)分(?:\)|）)(.*)$/, ''
+            [_, h, m, text]? = text.match @rules.regex \speach.content, ''
             entry = [speaker, text]
             #@output "* [#h, #m]\n" if h?
             @current-conversation.push [speaker, fulltext]
@@ -397,7 +397,7 @@ class Parser implements HTMLParser
             @newContext Consultation
             @output "#fulltext\n\n"
         else if (speaker ? @lastSpeaker) is \主席 && (((@rules.match \interpellation.start text) and not @rules.match \interpellation.ignore_start text) or @rules.match \interpellation.ask_someone_report text) and @ctx !instanceof Interpellation
-            @newContext Interpellation, {lastSpeaker: @lastSpeaker}
+            @newContext Interpellation, {lastSpeaker: @lastSpeaker, rules: @rules}
             @ctx .=push-line speaker, text, fulltext
         else if (speaker ? @lastSpeaker) is \主席 && @rules.match \reconsideration.start text
             @output "## 復議案\n\n"

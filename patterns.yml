@@ -16,6 +16,9 @@ speach:
   paragraph: # 主席: 發言內容
     regex: |
       ^([^：]{2,10})：(.*)$
+  content:
+    regex: |
+      ^(?:\(|（)(\d+)時(\d+)分(?:\)|）)(.*)$
   ignore_speakers:
     regex: |
       以下|本案|本席|現作如下決(議|定)|^(日期|傳真|電話|地址|剛才|再來|這樣|有句話說)
@@ -92,7 +95,13 @@ interpellation:
   ask_someone_report: 
     regex: |
       請.{3,6}報告並備詢
-  doc_trigger:
+  interpdoc_start:
+    regex: |
+      提書面質詢
+  interpdoc_body:
+    regex: |
+      ^(.*委員.*)書面(補充)?質詢?.?：$
+  end:
     regex: |
       報告院會|詢答時間|已質詢完畢|處理完畢|提書面質詢
 exmotion:
