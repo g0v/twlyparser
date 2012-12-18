@@ -8,10 +8,16 @@ ending:
   start:
     regex: | 
       主席.*散會.*|報告院會.*散會.*|.*現在散會.*|謝謝.*散會.*|^散會
-common:
-  conversationline: # 主席: 發言內容
+speach:
+  paragraph: # 主席: 發言內容
     regex: |
-      ^(?<speaker>[^：]{2,10})：(?<content>.*)
+      ^([^：]{2,10})：(.*)$
+  ignore_speakers:
+    regex: |
+      以下|本案|本席|現作如下決(議|定)|^(日期|傳真|電話|地址|剛才|再來|這樣|有句話說)
+  chairman:
+    regex: |
+      ^主\s*席（(.*?)）?
 header:
   title: # 公報標題
     regex: | 
@@ -26,43 +32,72 @@ announcement:
   start:
     regex: | 
       現在開會.*進行報告事項.*
+  title:
+    regex: |
+      ^報\s*告\s*事\s*項$
 questioning:
   start:
     regex: |
-      .*現在進行質詢事項.*
+      ^質\s*詢\s*事\s*項(（本院委員質詢部分）)?$
+  title:
+    regex: |
+      ^質\s*詢\s*事\s*項$
   reply_trigger:
     regex: |
       行政院答復部分$
   question_trigger:
     regex: |
       本院委員質詢部分$
+  end:
+    regex: |
+      （以上質詢事項全文，均見本期質詢事項
 discussion:
   start:
     regex: |
-      .*繼續開會.*進行討論事項.*
+      (現在進行討論事項|進行討論事項第\S+案)
+  title:
+    regex: |
+      ^討\s*論\s*事\s*項$
 proposal:
   start:
     regex: |
       處理.*黨團.*提案
-consulation:
+consultation:
   start:
     regex: |
-      處理.*黨團.*協商結論  
+      處理.*黨團.*協商結論|現有一朝野黨團協商結論|宣讀朝野協商結論
 interpellation: 
   start:
     regex: |
-      .*進行對行政院院長提出施政報告(繼續)?質詢.*$|繼續開會.*(進行|並備).*?質詢.*
+      對行政院.*質詢|進行施政報告之質詢|進行施政總質詢|追加預算報告之質詢|進行委員質詢|現在進行質詢。|請.*質詢[，。]詢答時間共?為
+  ignore_start:
+    regex: |
+      以下決定|現在休息|宣告|討論事項結束後|質詢完畢
+  ask_someone_report: 
+    regex: |
+      請.{3,6}報告並備詢
   doc_trigger:
     regex: |
       報告院會|詢答時間|已質詢完畢|處理完畢|提書面質詢
 exmotion:
   start:
     regex: |
-      .*現在.*處理臨時提案.*
+      現在.*(?!下次).*處理臨時提案
+  ignore_start:
+    regex: |
+      不處理臨時提案
+reconsideration:
+  start:
+    regex: |
+      處理.*復議案
 breaktime:
   start: 
     regex: |
       .*現在休息.*
   end:
     regex: |
-      .*現在開會.*
+      .*現在(繼續)?開會.*
+amend:
+  start: 
+    regex: |
+      方才宣告.*現在訂正
