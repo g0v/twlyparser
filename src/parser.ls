@@ -239,7 +239,7 @@ class Interpellation
     serialize: -> @flush!
 
 class Questioning
-    ({@output} = {}) ->
+    ({@output, @rules} = {}) ->
         @output "## 質詢事項\n\n"
         @ctx = null
         @reply = {}
@@ -257,11 +257,12 @@ class Questioning
             @output "#fulltext\n"
 
     push-line: (speaker, text, fulltext) ->
+        myrules = @rules
         match text
-        | /行政院答復部分$/ =>
+        | myrules.regex \questioning.reply_start .exec  =>
             @output "\n" + '### 行政院答復部分' + "\n"
             @ctx = \reply
-        | /本院委員質詢部分$/ =>
+        | myrules.regex \questioning.question_start .exec  =>
             @output "\n" + '### 本院委員質詢部分' + "\n"
             @ctx = \question
         | otherwise => @push speaker, text, fulltext
@@ -382,7 +383,7 @@ class Parser implements HTMLParser
         if @rules.match \announcement.title text
             @newContext Announcement
         else if @rules.match \questioning.start text
-            @newContext Questioning
+            @newContext Questioning, {rules: @rules}
             @ctx .=push-line speaker, text, fulltext if that.2?
             @lastSpeaker = null
         else if @rules.match \discussion.title text

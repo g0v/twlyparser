@@ -61,10 +61,10 @@ questioning:
   title:
     regex: |
       ^質\s*詢\s*事\s*項$
-  reply_trigger:
+  reply_start:
     regex: |
       行政院答復部分$
-  question_trigger:
+  question_start:
     regex: |
       本院委員質詢部分$
   end:
