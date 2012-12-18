@@ -111,6 +111,21 @@ exmotion:
   ignore_start:
     regex: |
       不處理臨時提案
+  proposer:
+    regex: |
+      ^提案人：(.*)
+  petitioner:
+    regex: |
+      ^連署人：(.*)
+  other:
+    regex: |
+      ^([^：]*)$
+  disputed:
+    regex: |
+      .*有無異議？[（)](.*?)[）)].*
+  end:
+    regex: |
+      臨時提案.*處理完畢|休息.*進行.*質詢
 reconsideration:
   start:
     regex: |

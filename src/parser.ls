@@ -74,7 +74,7 @@ class Announcement
     serialize: ->
 
 class Exmotion
-    ({@output = console.log, @origCtx} = {}) ->
+    ({@output = console.log, @origCtx, @rules} = {}) ->
         @buffer = []
         @json = {}
         @state = ''
@@ -118,19 +118,20 @@ class Exmotion
 
         current_state = ''
         split_names = -> it.split(/[　\s]+/)
+        myrules = @rules
         match fulltext
-        | /^提案人：(.*)/ =>
+        | myrules.regex \exmotion.proposer .exec =>
             @json.proposer = split_names that.1
             current_state = \proposer
-        | /^連署人：(.*)/ =>
+        | myrules.regex \exmotion.petitioner .exec  =>
             @json.petitioner = split_names that.1
             current_state = \petitioner
-        | /^([^：]*)$/ =>
+        | myrules.regex \exmotion.other .exec =>
             line = that.0
             if @state == \petitioner
                 @json[@state]= @json[@state] +++ split_names line
                 current_state = @state
-        | /.*有無異議？[（)](.*?)[）)].*/ =>
+        | myrules.regex \exmotion.disputed .exec =>
             switch that.1
             | \有 => @json.decision = 'tbd'
             | \無 => @json.decision = 'pass'
@@ -139,7 +140,7 @@ class Exmotion
 
         @output fulltext
         @newline!
-        if (speaker ? @lastSpeaker) is \主席 and (text is /臨時提案.*處理完畢/ or text is /休息.*進行.*質詢/)
+        if (speaker ? @lastSpeaker) is \主席 and @rules.match \exmotion.end text
             @newline!
             @flush!
             return @origCtx
@@ -405,7 +406,7 @@ class Parser implements HTMLParser
             @output "## 復議案\n\n"
             @newContext null
         else if (speaker ? @lastSpeaker) is \主席 and @rules.match \exmotion.start text and not @rules.match \exmotion.ignore_start text and @ctx !instanceof Exmotion
-            @newContext Exmotion, {origCtx: @ctx}
+            @newContext Exmotion, {origCtx: @ctx, rules: @rules}
             @ctx .=push-line speaker, text, fulltext
         else if full is /.*表決結果名單.*/
             if !@ctx
