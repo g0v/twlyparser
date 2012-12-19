@@ -17,7 +17,40 @@ getAgenda = (meta, type, cb) ->
 getProceeding = (meta, type, cb) ->
     getSummary meta, \proceeding, type, cb
 
-getSummary = ({ad, session, sitting}, doctype, type, cb) ->
+
+getMeetingAgenda = (meetingNo, cb) ->
+    uri = "http://misq.ly.gov.tw/MISQ/IQuery/misq5000QueryMeetingDetail.action"
+
+    err, res, body <- request do
+        method: \POST
+        uri: uri
+        headers: do
+            Origin: 'http://misq.ly.gov.tw'
+            Referer: uri
+            User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
+        form: { meetingNo, meetingTime: \101/12/18 departmentCode: \0703 }
+
+    cb body
+
+getMeetings = (queryCondition, cb) ->
+    uri = 'http://misq.ly.gov.tw/MISQ/IQuery/misq5000QueryMeeting.action'
+    # term = ad
+    err, res, body <- request do
+        method: \POST
+        uri: uri
+        headers: do
+            Origin: 'http://misq.ly.gov.tw'
+            Referer: uri
+            User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
+        form: do
+            queryCondition: <[ 0703 2100 2300 2400 4000 4100 4200 4300 4500 ]>
+            term: \07
+            sessionPeriod: ''
+            meetingDateS: ''
+            meetingDateE: ''
+    cb body
+
+getSummary = ({ad, session, sitting, extra}, doctype, type, cb) ->
     uri = match doctype
     | \agenda     => 'http://misq.ly.gov.tw/MISQ/IQuery/queryMore5003vData.action'
     | \proceeding => 'http://misq.ly.gov.tw/MISQ/IQuery/queryMoreBillData.action'
@@ -27,9 +60,10 @@ getSummary = ({ad, session, sitting}, doctype, type, cb) ->
     | \Discussion => 2
     | \Exmotion => 3
 
-    throw \invliad if type is \Exmotion and doctype is \proceeding
+    throw "invliad #type #doctype" if type is \Exmotion and doctype is \proceeding
 
     [term, sessionPeriod, sessionTimes] = [ad, session, sitting].map -> printf \%02d it
+    meetingTimes = printf \%02d extra if extra
     err, res, body <- request do
         method: \POST
         uri: uri
@@ -37,8 +71,8 @@ getSummary = ({ad, session, sitting}, doctype, type, cb) ->
             Origin: 'http://misq.ly.gov.tw'
             Referer: 'http://misq.ly.gov.tw/MISQ/IQuery/queryMore5003vData.action'
             User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
-        form: {term, sessionPeriod, sessionTimes, catalogType, specialTimesRadio: \on}
+        form: {term, sessionPeriod, sessionTimes, meetingTimes, catalogType, specialTimesRadio: \on, fromQuery: \Y}
 
     cb body
 
-module.exports = { forGazette, index, gazettes, getSummary, getAgenda, getProceeding }
+module.exports = { forGazette, index, gazettes, getSummary, getAgenda, getProceeding, getMeetings, getMeetingAgenda }
