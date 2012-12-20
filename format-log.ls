@@ -1,9 +1,12 @@
 require! {optimist, fs, path}
 require! \./lib/util
 require! \./lib/ly
+require! \./lib/rules
 {Parser, TextParser, TextFormatter} = require \./lib/parser
 
 {gazette, ad, dir = '.', text, fromtext} = optimist.argv
+
+rules = new rules.Rules \patterns.yml
 
 ly.forGazette gazette, (id, g, type, entries, files) ->
     return if type isnt /院會紀錄/
@@ -17,8 +20,10 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
     output = fs.openSync "#dir/#id.#ext" \w
     process.stdout.write id
     process.stdout.write '\r'
+    
     try
-        parser = new klass output: (...args) -> fs.writeSync output, (args +++ "\n")join ''
+        parser = new klass {rules: rules, output: (...args) -> fs.writeSync output, (args +++ "\n")join ''}
+
         if fromtext
             file = "#dir/#id.txt"
             parser.parseText util.readFileSync file

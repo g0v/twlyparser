@@ -4,65 +4,156 @@
 #    規則名稱
 #       Regex 字串
 ---
+common:
+  name_with_title:
+    regex: |
+      ^(?:(.+)\s+)?(.*)$
 ending:
   start:
     regex: | 
       主席.*散會.*|報告院會.*散會.*|.*現在散會.*|謝謝.*散會.*|^散會
-common:
-  conversationline: # 主席: 發言內容
+speach:
+  paragraph: # 主席: 發言內容
     regex: |
-      ^(?<speaker>[^：]{2,10})：(?<content>.*)
+      ^([^：]{2,10})：(.*)$
+  content:
+    regex: |
+      ^(?:\(|（)(\d+)時(\d+)分(?:\)|）)(.*)$
+  ignore_speakers:
+    regex: |
+      以下|本案|本席|現作如下決(議|定)|^(日期|傳真|電話|地址|剛才|再來|這樣|有句話說)
+  chairman:
+    regex: |
+      ^主\s*席（(.*?)）?
 header:
-  title: # 公報標題
+  title_temporarily: # 公報標題
     regex: | 
-      立法院第(?<ad>\S+)屆第(?<session>\S+)會期第(?<sitting>\S+?)次(?<extra>?:臨時會第(\S+)次)?會議紀錄
+      立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次臨時會(?:第\s*(\S+?)\s*次)?會議紀錄
+  title_election:
+    regex: |
+      立法院第\s*(\S+)\s*屆(?:第\s*(\S+)\s*會期)?(選舉院長、副院長|院長副院長選舉)會議(紀錄|議事錄)
+  title_general:
+    regex: |
+      立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次會議(紀錄|議事錄)
+  title_secret:
+    regex: |
+      立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次秘密會議紀錄
+  title_other:
+    regex: |
+      主\s*席\s+(.*)$
   chairman: # 主席名稱
     regex: |
       主\s*席\s+(?<chairman>.*)$
   datetime: # 開會時間
     regex: |
-      /時\s*間\s+中華民國(?<year>\S+)年(?<month>\S+)月(?<day>\S+)日（(?<day_of_week>\S+)）(?<am_or_pm>\S+?)(?<hour>\d+)時
+      時\s*間\s+中華民國(\S+)年(\S+)月(\S+)日（(\S+)）(\S+?)(\d+)時
 announcement:
   start:
     regex: | 
       現在開會.*進行報告事項.*
+  title:
+    regex: |
+      ^報\s*告\s*事\s*項$
 questioning:
   start:
     regex: |
-      .*現在進行質詢事項.*
-  reply_trigger:
+      ^質\s*詢\s*事\s*項(（本院委員質詢部分）)?$
+  title:
+    regex: |
+      ^質\s*詢\s*事\s*項$
+  reply_start:
     regex: |
       行政院答復部分$
-  question_trigger:
+  question_start:
     regex: |
       本院委員質詢部分$
+  end:
+    regex: |
+      （以上質詢事項全文，均見本期質詢事項
 discussion:
   start:
     regex: |
-      .*繼續開會.*進行討論事項.*
+      (現在進行討論事項|進行討論事項第\S+案)
+  title:
+    regex: |
+      ^討\s*論\s*事\s*項$
+  end:
+    regex: |
+      討論事項.*到此為止(?!.*繼續)
 proposal:
   start:
     regex: |
       處理.*黨團.*提案
-consulation:
+consultation:
   start:
     regex: |
-      處理.*黨團.*協商結論  
+      處理.*黨團.*協商結論|現有一朝野黨團協商結論|宣讀朝野協商結論
 interpellation: 
   start:
     regex: |
-      .*進行對行政院院長提出施政報告(繼續)?質詢.*$|繼續開會.*(進行|並備).*?質詢.*
-  doc_trigger:
+      對行政院.*質詢|進行施政報告之質詢|進行施政總質詢|追加預算報告之質詢|進行委員質詢|現在進行質詢。|請.*質詢[，。]詢答時間共?為
+  ignore_start:
+    regex: |
+      以下決定|現在休息|宣告|討論事項結束後|質詢完畢
+  ask_someone_report: 
+    regex: |
+      請.{3,6}報告並備詢
+  interpdoc_start:
+    regex: |
+      提書面質詢
+  interpdoc_body:
+    regex: |
+      ^(.*委員.*)書面(補充)?質詢?.?：$
+  end:
     regex: |
       報告院會|詢答時間|已質詢完畢|處理完畢|提書面質詢
 exmotion:
   start:
     regex: |
-      .*現在.*處理臨時提案.*
+      現在.*(?!下次).*處理臨時提案
+  ignore_start:
+    regex: |
+      不處理臨時提案
+  proposer:
+    regex: |
+      ^提案人：(.*)
+  petitioner:
+    regex: |
+      ^連署人：(.*)
+  other:
+    regex: |
+      ^([^：]*)$
+  disputed:
+    regex: |
+      .*有無異議？[（)](.*?)[）)].*
+  end:
+    regex: |
+      臨時提案.*處理完畢|休息.*進行.*質詢
+reconsideration:
+  start:
+    regex: |
+      處理.*復議案
 breaktime:
   start: 
     regex: |
       .*現在休息.*
   end:
     regex: |
-      .*現在開會.*
+      .*現在(繼續)?開會.*
+amend:
+  start: 
+    regex: |
+      方才宣告.*現在訂正
+vote:
+  vote_approval:
+    regex: |
+      .*贊成者[：:].*
+  vote_veto:
+    regex: |
+      .*反對者[：:].*
+  vote_abstention:
+    regex: |
+      .*棄權者[：:].*
+  vote_other:
+    regex: |
+      .*[：、，。].*

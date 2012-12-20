@@ -7,7 +7,7 @@ require! "../lib/rules"
 # session (會期)
 # sitting (會次)
 class Meta
-    ({@output, @output-json} = {}) ->
+    ({@output, @rules, @output-json} = {}) ->
         @output "# 院會紀錄\n\n"
         @meta = {}
     push-line: (speaker, text) ->
@@ -15,26 +15,27 @@ class Meta
             @serialize!
             return
         if @ctx is \speaker
-            [_, position, name] = text.match /^(?:(.+)\s+)?(.*)$/
+            [_, position, name] = @rules.match \common.name_with_title text
             return @
 
         text .=replace /立 法院/, \立法院
+        #@FIXME: @rules.regexp in match syntax can not be compiled to right JavaScript, but we can use        #        (@)rules to workround it.
         match text
-        | /立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次臨時會(?:第\s*(\S+?)\s*次)?會議紀錄/ =>
+        | (@)rules.regex \header.title_temporarily .exec =>
             that.4 ?= 1
             @meta<[ad session extra sitting]> = that[1 to 4].map -> util.intOfZHNumber it
-        | /立法院第\s*(\S+)\s*屆(?:第\s*(\S+)\s*會期)?(選舉院長、副院長|院長副院長選舉)會議(紀錄|議事錄)/ =>
+        | (@)rules.regex \header.title_election .exec =>
             @meta<[ad session]> = that[1 to 2].map -> util.intOfZHNumber it
             @meta.sitting = 0
-        | /立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次會議(紀錄|議事錄)/ =>
+        | (@)rules.regex \header.title_general .exec =>
             @meta<[ad session sitting]> = that[1 to 3].map -> util.intOfZHNumber it
             @meta.memo = true if that.4 is \議事錄
-        | /立法院第\s*(\S+)\s*屆第\s*(\S+)\s*會期第\s*(\S+?)\s*次秘密會議紀錄/ =>
+        | (@)rules.regex \header.title_secret .exec =>
             @meta<[ad session secret]> = that[1 to 3].map -> util.intOfZHNumber it
-        | /主\s*席\s+(.*)$/ =>
+        | (@)rules.regex \header.title_other .exec =>
             @ctx = \speaker
             @meta.speaker = that.1
-        | /時\s*間\s+中華民國(\S+)年(\S+)月(\S+)日（(\S+)）(\S+?)(\d+)時/ =>
+        | (@)rules.regex \header.datetime .exec =>
             @meta.datetime = util.datetimeOfLyDateTime that[1 to 3] [5 to 6]
         @output "#text\n"
         return @
@@ -71,7 +72,7 @@ class Announcement
     serialize: ->
 
 class Exmotion
-    ({@output = console.log, @origCtx} = {}) ->
+    ({@output = console.log, @origCtx, @rules} = {}) ->
         @buffer = []
         @json = {}
         @state = ''
@@ -116,18 +117,18 @@ class Exmotion
         current_state = ''
         split_names = -> it.split(/[　\s]+/)
         match fulltext
-        | /^提案人：(.*)/ =>
+        | (@)rules.regex \exmotion.proposer .exec =>
             @json.proposer = split_names that.1
             current_state = \proposer
-        | /^連署人：(.*)/ =>
+        | (@)rules.regex \exmotion.petitioner .exec  =>
             @json.petitioner = split_names that.1
             current_state = \petitioner
-        | /^([^：]*)$/ =>
+        | (@)rules.regex \exmotion.other .exec =>
             line = that.0
             if @state == \petitioner
                 @json[@state]= @json[@state] +++ split_names line
                 current_state = @state
-        | /.*有無異議？[（)](.*?)[）)].*/ =>
+        | (@)rules.regex \exmotion.disputed .exec =>
             switch that.1
             | \有 => @json.decision = 'tbd'
             | \無 => @json.decision = 'pass'
@@ -136,7 +137,7 @@ class Exmotion
 
         @output fulltext
         @newline!
-        if (speaker ? @lastSpeaker) is \主席 and (text is /臨時提案.*處理完畢/ or text is /休息.*進行.*質詢/)
+        if (speaker ? @lastSpeaker) is \主席 and @rules.match \exmotion.end text
             @newline!
             @flush!
             return @origCtx
@@ -145,13 +146,13 @@ class Exmotion
     serialize: -> @flush!
 
 class Discussion
-    ({@output} = {}) ->
+    ({@output, @rules} = {}) ->
         @output "\n## 討論事項\n\n"
         @lines = []
     indent-level: -> 0
     push-line: (speaker, text, fulltext) ->
         @output "#fulltext\n"
-        if (speaker ? @lastSpeaker) is \主席 and text is /討論事項.*到此為止(?!.*繼續)/
+        if (speaker ? @lastSpeaker) is \主席 and @rules.match \discussion.end text
             return
         @lastSpeaker = speaker if speaker
         return @
@@ -179,7 +180,7 @@ class Proposal
 
 
 class Interpellation
-    ({@output, @lastSpeaker} = {}) ->
+    ({@output, @lastSpeaker, @rules} = {}) ->
         @current-conversation = []
         @current-participants = []
         @conversation = []
@@ -211,12 +212,12 @@ class Interpellation
     push-rich: (html) ->
         @current-conversation.push [ null, html ]
     push-line: (speaker, text, fulltext) ->
-        if (speaker ? @lastSpeaker) is \主席 and text is /報告院會|詢答時間|已質詢完畢|處理完畢|提書面質詢/
+        if (speaker ? @lastSpeaker) is \主席 and @rules.match \interpellation.end text
             @flush!
             @output "* #fulltext\n"
             @conversation.push [speaker, text]
-            @document = text is /提書面質詢/
-        else if fulltext is /^(.*委員.*)書面(補充)?質詢?.?：$/
+            @document = @rules.match \interpellation.interpdoc_start text
+        else if @rules.match \interpellation.interpdoc_body fulltext
             @flush!
             @document = true
             @current-conversation.push [that.1, fulltext]
@@ -226,7 +227,7 @@ class Interpellation
         else if @document
             @current-conversation.push [null, fulltext]
         else
-            [_, h, m, text]? = text.match /^(?:\(|（)(\d+)時(\d+)分(?:\)|）)(.*)$/, ''
+            [_, h, m, text]? = text.match @rules.regex \speach.content, ''
             entry = [speaker, text]
             #@output "* [#h, #m]\n" if h?
             @current-conversation.push [speaker, fulltext]
@@ -236,7 +237,7 @@ class Interpellation
     serialize: -> @flush!
 
 class Questioning
-    ({@output} = {}) ->
+    ({@output, @rules} = {}) ->
         @output "## 質詢事項\n\n"
         @ctx = null
         @reply = {}
@@ -255,10 +256,10 @@ class Questioning
 
     push-line: (speaker, text, fulltext) ->
         match text
-        | /行政院答復部分$/ =>
+        | (@)rules.regex \questioning.reply_start .exec  =>
             @output "\n" + '### 行政院答復部分' + "\n"
             @ctx = \reply
-        | /本院委員質詢部分$/ =>
+        | (@)rules.regex \questioning.question_start .exec  =>
             @output "\n" + '### 本院委員質詢部分' + "\n"
             @ctx = \question
         | otherwise => @push speaker, text, fulltext
@@ -276,18 +277,19 @@ class DummyContext
 # It works more like a filter, that collect data pass to origCtx for output.
 # With that, we don't need to worry about the output style of origCtx.
 class Vote
-    ({@output = console.log, @origCtx} = {}) ->
+    ({@output = console.log, @origCtx, @rules} = {}) ->
         @vote = {}
         @current_vote = null
     push-line: (speaker, text, fulltext) ->
+       
         match fulltext
-        | /.*贊成者[：:].*/ =>
+        | (@)rules.regex \vote.vote_approval .exec =>
             @current_vote = \approval
-        | /.*反對者[：:].*/ =>
+        | (@)rules.regex \vote.vote_veto .exec =>
             @current_vote = \veto
-        | /.*棄權者[：:].*/ =>
+        | (@)rules.regex \vote.vote_abstention .exec =>
             @current_vote = \abstention
-        | /.*[：、，。].*/ =>
+        | (@)rules.regex \vote.vote_other .exec  =>
             if @current_vote
                 indent = ''
                 if @origCtx.indent-level
@@ -349,9 +351,9 @@ HTMLParser = do
         @$('body').children!each -> self.parse @
 
 class Parser implements HTMLParser
-    ({@output = console.log, @output-json, @metaOnly} = {}) ->
+    ({@output = console.log, @rules, @output-json, @metaOnly} = {}) ->
         @lastSpeaker = null
-        @ctx = @newContext Meta
+        @ctx = @newContext Meta, {rules: @rules}
     store: ->
         @ctx.serialize! if @ctx
 
@@ -361,12 +363,12 @@ class Parser implements HTMLParser
 
     parseLine: (fulltext) ->
         text = fulltext
-        [full, speaker, content]? = text.match /^([^：]{2,10})：(.*)$/
+        [full, speaker, content]? = @rules.match \speach.paragraph text
         if speaker
-            if speaker is /以下|本案|本席|現作如下決(議|定)/ or speaker is /^(日期|傳真|電話|地址|剛才|再來|這樣|有句話說)/
+            if @rules.match \speach.ignore_speakers speaker
                 text = full
                 speaker = null
-            else if speaker is /^主\s*席（(.*?)）?/
+            else if @rules.match \speach.chairman speaker
                 speaker = '主席'
                 # XXX emit speaker meta
             else
@@ -376,37 +378,37 @@ class Parser implements HTMLParser
             @store!
             @ctx := null
 
-        if text is /^報\s*告\s*事\s*項$/
+        if @rules.match \announcement.title text
             @newContext Announcement
-        else if text is /^質\s*詢\s*事\s*項(（本院委員質詢部分）)?$/
-            @newContext Questioning
+        else if @rules.match \questioning.start text
+            @newContext Questioning, {rules: @rules}
             @ctx .=push-line speaker, text, fulltext if that.2?
             @lastSpeaker = null
-        else if text is /^討\s*論\s*事\s*項$/
-            @newContext Discussion unless @ctx instanceof Discussion
-        else if (speaker ? @lastSpeaker) is \主席 && text is /(現在進行討論事項|進行討論事項第\S+案)/ and @ctx !instanceof Discussion
-            @newContext Discussion
+        else if @rules.match \discussion.title text
+            @newContext Discussion, {rules: @rules} unless @ctx instanceof Discussion
+        else if (speaker ? @lastSpeaker) is \主席 && @rules.match \discussion.start text and @ctx !instanceof Discussion
+            @newContext Discussion, {rules: @rules}
             @ctx .=push-line speaker, text, fulltext
-        else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*黨團.*提案/
+        else if (speaker ? @lastSpeaker) is \主席 && @rules.match \proposal.start text
             @newContext Proposal
             @output "#fulltext\n\n"
-        else if (speaker ? @lastSpeaker) is \主席 && text is /(處理.*黨團.*協商結論|現有一朝野黨團協商結論|宣讀朝野協商結論)/
+        else if (speaker ? @lastSpeaker) is \主席 && @rules.match \consultation.start text
             @newContext Consultation
             @output "#fulltext\n\n"
-        else if (speaker ? @lastSpeaker) is \主席 && (((text is /對行政院.*質詢/ or text is /進行施政報告之質詢|進行施政總質詢|追加預算報告之質詢|進行委員質詢|現在進行質詢。|請.*質詢[，。]詢答時間共?為/) and text isnt /以下決定|現在休息|宣告|討論事項結束後|質詢完畢/) or text is /請.{3,6}報告並備詢/) and @ctx !instanceof Interpellation
-            @newContext Interpellation, {lastSpeaker: @lastSpeaker}
+        else if (speaker ? @lastSpeaker) is \主席 && (((@rules.match \interpellation.start text) and not @rules.match \interpellation.ignore_start text) or @rules.match \interpellation.ask_someone_report text) and @ctx !instanceof Interpellation
+            @newContext Interpellation, {lastSpeaker: @lastSpeaker, rules: @rules}
             @ctx .=push-line speaker, text, fulltext
-        else if (speaker ? @lastSpeaker) is \主席 && text is /處理.*復議案/
+        else if (speaker ? @lastSpeaker) is \主席 && @rules.match \reconsideration.start text
             @output "## 復議案\n\n"
             @newContext null
-        else if (speaker ? @lastSpeaker) is \主席 and text is /現在.*(?!下次).*處理臨時提案/ and text isnt /不處理臨時提案/ and @ctx !instanceof Exmotion
-            @newContext Exmotion, {origCtx: @ctx}
+        else if (speaker ? @lastSpeaker) is \主席 and @rules.match \exmotion.start text and not @rules.match \exmotion.ignore_start text and @ctx !instanceof Exmotion
+            @newContext Exmotion, {origCtx: @ctx, rules: @rules}
             @ctx .=push-line speaker, text, fulltext
         else if full is /.*表決結果名單.*/
             if !@ctx
                @newContext DummyContext
             @ctx .=push-line speaker, text, fulltext
-            @newContext Vote, {origCtx: @ctx}
+            @newContext Vote, {origCtx: @ctx, rules: @rules}
         else
             if @ctx
                 @ctx .=push-line speaker, text, fulltext
