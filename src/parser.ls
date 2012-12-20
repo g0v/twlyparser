@@ -3,12 +3,17 @@ require! \js-yaml
 require! "../lib/util"
 require! "../lib/rules"
 
+# create markdown head
+md_header = (text, depth) ->
+    depth ?= 1
+    \# * depth + " #text"
+
 # ad (appointed dates) (屆別)
 # session (會期)
 # sitting (會次)
 class Meta
     ({@output, @rules, @output-json} = {}) ->
-        @output "# 院會紀錄\n\n"
+        @output md_header \院會紀錄 + "\n\n"
         @meta = {}
     push-line: (speaker, text) ->
         if speaker
@@ -46,7 +51,8 @@ class Meta
 
 class Announcement
     ({@output = console.log} = {}) ->
-        @output "## 報告事項\n\n"
+        @output md_header \報告事項, 2
+        @output "\n"
         @items = {}
         @last-item = null
         @i = 0
@@ -81,7 +87,7 @@ class Exmotion
             @indent_level = @origCtx?.indent-level!
         @out-orig = @output
         @output = -> @buffer.push @indent it
-        @output "## 臨時提案"
+        @output md_header \臨時提案, 2
     newline: -> @buffer.push ''
     indent: -> it.replace /^/mg ' ' * @indent_level + '> '
     flush: ->
@@ -147,7 +153,8 @@ class Exmotion
 
 class Discussion
     ({@output, @rules} = {}) ->
-        @output "\n## 討論事項\n\n"
+        @output "\n" + md_header \討論事項, 2
+        @output "\n"
         @lines = []
     indent-level: -> 0
     push-line: (speaker, text, fulltext) ->
@@ -160,7 +167,8 @@ class Discussion
 
 class Consultation
     ({@output} = {}) ->
-        @output "\n## 黨團協商結論\n\n"
+        @output "\n" + md_header \黨團協商結論, 2
+        @output "\n"
         @lines = []
     indent-level: -> 0
     push-line: (speaker, text, fulltext) ->
@@ -170,7 +178,8 @@ class Consultation
 
 class Proposal
     ({@output} = {}) ->
-        @output "## 黨團提案\n\n"
+        @output md_header \黨團提案, 2
+        @output "\n"
         @lines = []
     indent-level: -> 0
     push-line: (speaker, text, fulltext) ->
@@ -238,7 +247,8 @@ class Interpellation
 
 class Questioning
     ({@output, @rules} = {}) ->
-        @output "## 質詢事項\n\n"
+        @output md_header \質詢事項, 2
+        @output "\n"
         @ctx = null
         @reply = {}
         @question = {}
@@ -257,10 +267,12 @@ class Questioning
     push-line: (speaker, text, fulltext) ->
         match text
         | (@)rules.regex \questioning.reply_start .exec  =>
-            @output "\n" + '### 行政院答復部分' + "\n"
+            @output "\n" + md_header \行政院答復部分, 3
+            @output!
             @ctx = \reply
         | (@)rules.regex \questioning.question_start .exec  =>
-            @output "\n" + '### 本院委員質詢部分' + "\n"
+            @output "\n" + md_header \本院委員質詢部分, 3
+            @output!
             @ctx = \question
         | otherwise => @push speaker, text, fulltext
         return @
@@ -399,7 +411,8 @@ class Parser implements HTMLParser
             @newContext Interpellation, {lastSpeaker: @lastSpeaker, rules: @rules}
             @ctx .=push-line speaker, text, fulltext
         else if (speaker ? @lastSpeaker) is \主席 && @rules.match \reconsideration.start text
-            @output "## 復議案\n\n"
+            @output md_header \復議案, 2
+            @output "\n"
             @newContext null
         else if (speaker ? @lastSpeaker) is \主席 and @rules.match \exmotion.start text and not @rules.match \exmotion.ignore_start text and @ctx !instanceof Exmotion
             @newContext Exmotion, {origCtx: @ctx, rules: @rules}
