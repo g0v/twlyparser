@@ -126,13 +126,30 @@ for sitting in [1 to 13] => let sitting
         resolution = {}
         by_id = {[id, a] for {id}:a in agenda}
         for res, i in proceeding => let res, i
-            resolution[res.result ? ''] ?= 0
-            ++resolution[res.result ? '']
             res.origItem = by_id[res.id].item
-            if res.origItem isnt res.item
-                console.log "#{res.origItem} -> #{res.item}"
-        console.log [p for p in proceeding when p.summary is /請查照案/ and p.proposer isnt /^本院/ and p.result is '']
+            res.status = match res.result ? ''
+            | ''              => \accepted
+            | /照案通過/      => \accepted
+            | /提報院會/      => \accepted
+            | /列席報告/      => \accepted
+            | /同意撤回/      => \revoked
+            | /逕付(院會)?二讀/ => \prioritized
+            | /黨團協商/      => \consultation
+            | /交(.*)委員會/  => \committee
+            | /中央政府總預算案/  => \committee
+            | /展延審查期限/  => \extended
+            | /退回程序委員會/ => \rejected
+            | otherwise => res.result
+            #if res.origItem isnt res.item
+                #console.log "#{res.origItem} -> #{res.item}"
+            resolution[res.status] ?= 0
+            ++resolution[res.status]
+        console.log \rej [p for p in proceeding when p.status is /決定/]
         console.log resolution
+
+
+        return done!
+
         agenda <- getItems g, \agenda \Discussion
         exmotion <- getItems g, \agenda \Exmotion
         proceeding <- getItems g, \proceeding \Discussion
