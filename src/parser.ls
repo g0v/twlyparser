@@ -19,25 +19,23 @@ class Meta
             return @
 
         text .=replace /立 法院/, \立法院
-        #@FIXME: must use RegExp .exec function in match syntax, ideally, we just need to give a RegExp object.
-        #@FIXME: @rules.regexp in match syntax can not be compiled to correct JavaScript.
-        myrules = @rules
+        #@FIXME: @rules.regexp in match syntax can not be compiled to right JavaScript, but we can use        #        (@)rules to workround it.
         match text
-        | myrules.regex \header.title_temporarily .exec =>
+        | (@)rules.regex \header.title_temporarily .exec =>
             that.4 ?= 1
             @meta<[ad session extra sitting]> = that[1 to 4].map -> util.intOfZHNumber it
-        | myrules.regex \header.title_election .exec =>
+        | (@)rules.regex \header.title_election .exec =>
             @meta<[ad session]> = that[1 to 2].map -> util.intOfZHNumber it
             @meta.sitting = 0
-        | myrules.regex \header.title_general .exec =>
+        | (@)rules.regex \header.title_general .exec =>
             @meta<[ad session sitting]> = that[1 to 3].map -> util.intOfZHNumber it
             @meta.memo = true if that.4 is \議事錄
-        | myrules.regex \header.title_secret .exec =>
+        | (@)rules.regex \header.title_secret .exec =>
             @meta<[ad session secret]> = that[1 to 3].map -> util.intOfZHNumber it
-        | myrules.regex \header.title_other .exec =>
+        | (@)rules.regex \header.title_other .exec =>
             @ctx = \speaker
             @meta.speaker = that.1
-        | myrules.regex \header.datetime .exec =>
+        | (@)rules.regex \header.datetime .exec =>
             @meta.datetime = util.datetimeOfLyDateTime that[1 to 3] [5 to 6]
         @output "#text\n"
         return @
@@ -118,20 +116,19 @@ class Exmotion
 
         current_state = ''
         split_names = -> it.split(/[　\s]+/)
-        myrules = @rules
         match fulltext
-        | myrules.regex \exmotion.proposer .exec =>
+        | (@)rules.regex \exmotion.proposer .exec =>
             @json.proposer = split_names that.1
             current_state = \proposer
-        | myrules.regex \exmotion.petitioner .exec  =>
+        | (@)rules.regex \exmotion.petitioner .exec  =>
             @json.petitioner = split_names that.1
             current_state = \petitioner
-        | myrules.regex \exmotion.other .exec =>
+        | (@)rules.regex \exmotion.other .exec =>
             line = that.0
             if @state == \petitioner
                 @json[@state]= @json[@state] +++ split_names line
                 current_state = @state
-        | myrules.regex \exmotion.disputed .exec =>
+        | (@)rules.regex \exmotion.disputed .exec =>
             switch that.1
             | \有 => @json.decision = 'tbd'
             | \無 => @json.decision = 'pass'
@@ -258,12 +255,11 @@ class Questioning
             @output "#fulltext\n"
 
     push-line: (speaker, text, fulltext) ->
-        myrules = @rules
         match text
-        | myrules.regex \questioning.reply_start .exec  =>
+        | (@)rules.regex \questioning.reply_start .exec  =>
             @output "\n" + '### 行政院答復部分' + "\n"
             @ctx = \reply
-        | myrules.regex \questioning.question_start .exec  =>
+        | (@)rules.regex \questioning.question_start .exec  =>
             @output "\n" + '### 本院委員質詢部分' + "\n"
             @ctx = \question
         | otherwise => @push speaker, text, fulltext
@@ -285,15 +281,15 @@ class Vote
         @vote = {}
         @current_vote = null
     push-line: (speaker, text, fulltext) ->
-        myrules = @rules
+       
         match fulltext
-        | myrules.regex \vote.vote_approval .exec =>
+        | (@)rules.regex \vote.vote_approval .exec =>
             @current_vote = \approval
-        | myrules.regex \vote.vote_veto .exec =>
+        | (@)rules.regex \vote.vote_veto .exec =>
             @current_vote = \veto
-        | myrules.regex \vote.vote_abstention .exec =>
+        | (@)rules.regex \vote.vote_abstention .exec =>
             @current_vote = \abstention
-        | myrules.regex \vote.vote_other .exec  =>
+        | (@)rules.regex \vote.vote_other .exec  =>
             if @current_vote
                 indent = ''
                 if @origCtx.indent-level
