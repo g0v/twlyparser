@@ -51,6 +51,7 @@ parseAgenda = (g, body, doctype, type, cb) ->
                     eod = yes
                 [_, remark]? = summary?match /（([^（）]+)）$/
                 dtype = match summary
+                | undefined => 'other'
                 | /^[^，]+臨時提案/ => 'exmotion'
                 | /(.*?)提議增列([^，]*)事項/ =>
                     console.log \changes that.1, that.2
@@ -100,7 +101,6 @@ getItems = (g, doctype, type, cb) ->
     file = "source/summary/#{g.ad}-#{g.session}-#{sitting}-#{doctype}-#{type}.html"
 
     extract = (body) ->
-        console.log g, type
         parseAgenda g, body, doctype, type, cb
 
     _, {size}? <- fs.stat file
@@ -112,57 +112,74 @@ getItems = (g, doctype, type, cb) ->
         fs.writeFileSync file, body
         extract body
 
+prepare_motions = (g, cb) ->
+    agenda <- getItems g, \agenda \Discussion
+    exmotion <- getItems g, \agenda \Exmotion
+    proceeding <- getItems g, \proceeding \Discussion
+    eod = no
+    items = if agenda.length => Math.max ...agenda.map (.item) else 0
+    [eod] = [p.origItem ? p.item for p in proceeding when p.eod]
+    inAgenda = [p for p in proceeding when p.origItem]
+    if eod and !inAgenda.length # unaltered but unfinished
+        inAgenda = for p in proceeding when p.item <= eod
+            p.origItem = p.item
+            p
+    for p in proceeding
+        [a] = [a for a in agenda when a.item is p.origItem]
+        p.id = a.id if a
+    unhandled = if eod => items - inAgenda.length else 0
+    console.log {eod, items, unhandled}
+    console.log \missing/extra items - unhandled + exmotion.length - proceeding.length
+    console.log [p for p in proceeding when p.dtype is \agenda]
+
+    cb proceeding
+
 #ly.forGazette gazette, (id, g, type, entries, files) ->
 #    return if ad and g.ad !~= ad
 #    return if type isnt \院會紀錄
 #    return if g.sitting != 9
 #    populate g
 #
+
+prepare_announcement = (g, cb) ->
+    agenda <- getItems g, \agenda \Announcement
+    proceeding <- getItems g, \proceeding \Announcement
+    by_id = {[id, a] for {id}:a in agenda}
+    for res, i in proceeding => let res, i
+        res.origItem = by_id[res.id].item
+        res.status = match res.result ? ''
+        | ''              => \accepted
+        | /照案通過/      => \accepted
+        | /提報院會/      => \accepted
+        | /列席報告/      => \accepted
+        | /同意撤回/      => \revoked
+        | /逕付(院會)?二讀/ => \prioritized
+        | /黨團協商/      => \consultation
+        | /交(.*)委員會/  => \committee
+        | /中央政府總預算案/  => \committee
+        | /展延審查期限/  => \extended
+        | /退回程序委員會/ => \rejected
+        | otherwise => res.result
+        # XXX: misq has altered agenda in agenda query result.  we need to
+        # extract this info from gazette
+        #if res.origItem isnt res.item
+            #console.log "#{res.origItem} -> #{res.item}"
+    cb proceeding
+
 for sitting in [1 to 13] => let sitting
     g = {ad: 8, session: 1, sitting}
     funcs.push (done) ->
-        agenda <- getItems g, \agenda \Announcement
-        proceeding <- getItems g, \proceeding \Announcement
+        ann <- prepare_announcement g
         resolution = {}
-        by_id = {[id, a] for {id}:a in agenda}
-        for res, i in proceeding => let res, i
-            res.origItem = by_id[res.id].item
-            res.status = match res.result ? ''
-            | ''              => \accepted
-            | /照案通過/      => \accepted
-            | /提報院會/      => \accepted
-            | /列席報告/      => \accepted
-            | /同意撤回/      => \revoked
-            | /逕付(院會)?二讀/ => \prioritized
-            | /黨團協商/      => \consultation
-            | /交(.*)委員會/  => \committee
-            | /中央政府總預算案/  => \committee
-            | /展延審查期限/  => \extended
-            | /退回程序委員會/ => \rejected
-            | otherwise => res.result
-            #if res.origItem isnt res.item
-                #console.log "#{res.origItem} -> #{res.item}"
+        for res in ann
             resolution[res.status] ?= 0
             ++resolution[res.status]
-        console.log \rej [p for p in proceeding when p.status is /決定/]
-        console.log resolution
+        misc = [p for p in ann when p.status is /決定/]
+        console.log \misc misc if misc.length
 
+        motions <- prepare_motions g
 
-        return done!
-
-        agenda <- getItems g, \agenda \Discussion
-        exmotion <- getItems g, \agenda \Exmotion
-        proceeding <- getItems g, \proceeding \Discussion
-        eod = no
-        items = Math.max ...agenda.map (.item)
-        [eod] = [p.origItem ? p.item for p in proceeding when p.eod]
-        inAgenda = [p for p in proceeding when p.origItem]
-        if eod and !inAgenda.length # unaltered but unfinished
-            inAgenda = [p for p in proceeding when p.item <= eod]
-        unhandled = if eod => items - inAgenda.length else 0
-        console.log {eod, items, unhandled}
-        console.log \missing/extra items - unhandled + exmotion.length - proceeding.length
-        console.log [p for p in proceeding when p.dtype is \agenda]
+        console.log {ys: g, ann_res: resolution, motions}
 
         done!
 
