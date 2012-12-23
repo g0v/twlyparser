@@ -1,5 +1,6 @@
 require! \./lib/ly
 require! <[optimist mkdirp fs async cheerio ./lib/util]>
+{Bill, Announcement} = require \./lib/model
 
 {gazette, ad, lodev, type, force} = optimist.argv
 
@@ -53,6 +54,7 @@ parseAgenda = (g, body, doctype, type, cb) ->
                 dtype = match summary
                 | undefined => 'other'
                 | /^[^，]+臨時提案/ => 'exmotion'
+                | /提請復議/        => 'reconsideration'
                 | /(.*?)提議增列([^，]*)事項/ =>
                     console.log \changes that.1, that.2
                     'agenda'
@@ -124,13 +126,30 @@ prepare_motions = (g, cb) ->
         inAgenda = for p in proceeding when p.item <= eod
             p.origItem = p.item
             p
+    unless eod
+        0
     for p in proceeding
-        [a] = [a for a in agenda when a.item is p.origItem]
-        p.id = a.id if a
-    unhandled = if eod => items - inAgenda.length else 0
+        if p.dtype is \exmotion
+            [ex] = [e for e in exmotion when p.summary - /^.*?，/ -  /((，|。)是否有當)?，請公決案。/ is e.summary - /((，|。)是否有當)?，請公決案。/]
+            unless ex
+                [ex] = [e for e in exmotion when p.summary.indexOf(e.proposer - /，/) is 0]
+            p.ref = ex
+            console.log \unmatched p unless ex
+        if p.dtype is \default
+            unless p.origItem
+                [a] = [a for a in agenda when p.summary.indexOf(a.summary) isnt -1]
+                p.origItem = a.item if a
+
+            if p.origItem
+                p.ref = [a for a in agenda when a.item is p.origItem]
+                inAgenda.push p unless p in inAgenda
+
+    for a in agenda when a.item not in proceeding.map (.origItem)
+        console.log a
+    unhandled = items - inAgenda.length
     console.log {eod, items, unhandled}
     console.log \missing/extra items - unhandled + exmotion.length - proceeding.length
-    console.log [p for p in proceeding when p.dtype is \agenda]
+    console.log [p for p in proceeding when !p.ref]
 
     cb proceeding
 
@@ -166,7 +185,11 @@ prepare_announcement = (g, cb) ->
             #console.log "#{res.origItem} -> #{res.item}"
     cb proceeding
 
-for sitting in [1 to 13] => let sitting
+require! mongoose
+mongoose.connect('mongodb://localhost/ly');
+console.log \cn
+
+for sitting in [1 to 13] when sitting is 9 => let sitting
     g = {ad: 8, session: 1, sitting}
     funcs.push (done) ->
         ann <- prepare_announcement g
@@ -177,6 +200,30 @@ for sitting in [1 to 13] => let sitting
         misc = [p for p in ann when p.status is /決定/]
         console.log \misc misc if misc.length
 
+        console.log ann
+
+        motions = []
+        funcs = ann.map (a) -> (next) ->
+            err, bill, created <- Bill.findOrCreate do
+                billNo: a.id
+                proposer: {government: a.proposer}
+                summary: a.summary
+            motions.push do
+                bill: [bill]
+                resolution: a.result
+                item: a.item
+                agendaItem: a.origItem
+            next!
+
+        err, res <- async.waterfall funcs
+        console.log \ok, motions.length
+        A = new Announcement do
+            sitting: g
+            items: motions
+        err <- A.save
+        console.log \save err
+
+        return done!
         motions <- prepare_motions g
 
         console.log {ys: g, ann_res: resolution, motions}
@@ -185,3 +232,5 @@ for sitting in [1 to 13] => let sitting
 
 err, res <- async.waterfall funcs
 console.log \ok, res
+mongoose.connection.close!
+
