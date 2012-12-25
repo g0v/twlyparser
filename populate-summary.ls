@@ -1,6 +1,5 @@
 require! \./lib/ly
 require! <[optimist mkdirp fs async cheerio ./lib/util]>
-{Bill, Announcement} = require \./lib/model
 
 {gazette, ad, lodev, type, force} = optimist.argv
 
@@ -81,8 +80,7 @@ parseAgenda = (g, body, doctype, type, cb) ->
     processItems body, (id, entry) ->
         # XXX: extract resolution.  the other info can be found using
         # getDetails with id
-        res = mapItem id, entry
-        entries.push res if res
+        entries.push that if mapItem id, entry
 
     cb entries
 
@@ -101,9 +99,16 @@ getItems = (g, doctype, type, cb) ->
     else
         g.sitting
     file = "source/summary/#{g.ad}-#{g.session}-#{sitting}-#{doctype}-#{type}.html"
+    json = file.replace /\.html$/, '.json'
 
     extract = (body) ->
-        parseAgenda g, body, doctype, type, cb
+        parseAgenda g, body, doctype, type, (res) ->
+            fs.writeFileSync json, JSON.stringify res, null 4
+            cb res
+
+    _, {size}? <- fs.stat json
+    if size
+        return cb require "./#json"
 
     _, {size}? <- fs.stat file
     if size
@@ -114,6 +119,14 @@ getItems = (g, doctype, type, cb) ->
         fs.writeFileSync file, body
         extract body
 
+entryStatus = (res, def) -> match res
+| /協商/    => \consultation
+| /不予?通過/  => \rejected
+| /通過/    => \passed
+| /函請行政院研處/ => \ey
+| /暫不予處理/ => \unhandled
+| otherwise => def
+
 prepare_motions = (g, cb) ->
     agenda <- getItems g, \agenda \Discussion
     exmotion <- getItems g, \agenda \Exmotion
@@ -123,18 +136,23 @@ prepare_motions = (g, cb) ->
     [eod] = [p.origItem ? p.item for p in proceeding when p.eod]
     inAgenda = [p for p in proceeding when p.origItem]
     if eod and !inAgenda.length # unaltered but unfinished
-        inAgenda = for p in proceeding when p.item <= eod
-            p.origItem = p.item
-            p
-    unless eod
-        0
+        inAgenda = []
+        for {summary}:p in proceeding when p.item <= eod
+            [key] = summary.match /「(.*?)」/
+            [a] = [a for a in agenda when -1 isnt a.summary.indexOf key]
+            continue unless a
+            #console.log "for (#key) found: ",a.summary.indexOf key
+            p.origItem = a.item
+            inAgenda.push p
     for p in proceeding
         if p.dtype is \exmotion
-            [ex] = [e for e in exmotion when p.summary - /^.*?，/ -  /((，|。)是否有當)?，請公決案。/ is e.summary - /((，|。)是否有當)?，請公決案。/]
+            summary = p.summary - /^.*?，/ -  /((，|。)是否有當)?，請公決案。/ 
+            summary .=replace /5噸以下/, '五噸以下'
+            [ex] = [e for e in exmotion when summary is e.summary - /((，|。)是否有當)?，請公決案。/]
             unless ex
                 [ex] = [e for e in exmotion when p.summary.indexOf(e.proposer - /，/) is 0]
             p.ref = ex
-            console.log \unmatched p unless ex
+            console.error \unmatched p unless ex
         if p.dtype is \default
             unless p.origItem
                 [a] = [a for a in agenda when p.summary.indexOf(a.summary) isnt -1]
@@ -144,14 +162,35 @@ prepare_motions = (g, cb) ->
                 p.ref = [a for a in agenda when a.item is p.origItem]
                 inAgenda.push p unless p in inAgenda
 
-    for a in agenda when a.item not in proceeding.map (.origItem)
-        console.log a
-    unhandled = items - inAgenda.length
-    console.log {eod, items, unhandled}
-    console.log \missing/extra items - unhandled + exmotion.length - proceeding.length
-    console.log [p for p in proceeding when !p.ref]
+#    for a in agenda when a.item not in proceeding.map (.origItem)
+#        console.log a
+    by_item = {[origItem, p] for {origItem}:p in proceeding when origItem}
+    agendaResults = for a in agenda
+        entry = {} <<< a
+        entry.agendaItem = delete entry.item
+        if proceeding.length
+            if by_item[entry.agendaItem]
+                entry <<< that{item, resolution: result, dtype}
+            entry.status = entryStatus entry.resolution, \unhandled
+        entry
+    exmotionResults = exmotion.map (e) ->
+        entry = {type: \exmotion, exItem: e.item} <<< e
+        [res] = [ p for p in proceeding when p.ref is e ]
+        entry <<< res{resolution: result, dtype, item} if res
+        delete entry.result
+        entry.status = entryStatus entry.resolution, \unhandled
+        entry
 
-    cb proceeding
+    extraResults = for p in proceeding when !p.ref
+        entry = {extra: true} <<< p
+        entry.resolution = delete entry.result
+        entry.status = entryStatus entry.resolution, \other
+        entry
+
+    all = agendaResults +++ exmotionResults +++ extraResults
+    #console.log \==ERROR all.length, proceeding.length
+
+    cb all
 
 #ly.forGazette gazette, (id, g, type, entries, files) ->
 #    return if ad and g.ad !~= ad
@@ -163,19 +202,25 @@ prepare_motions = (g, cb) ->
 prepare_announcement = (g, cb) ->
     agenda <- getItems g, \agenda \Announcement
     proceeding <- getItems g, \proceeding \Announcement
-    by_id = {[id, a] for {id}:a in agenda}
-    for res, i in proceeding => let res, i
-        res.origItem = by_id[res.id].item
-        res.status = match res.result ? ''
+    results = for a in agenda
+        entry = {} <<< a
+        entry.agendaItem = delete entry.item
+        entry
+    by_id = {[id, a] for {id}:a in results}
+
+    for {id,result} in proceeding
+        entry = by_id[id]
+        entry <<< {resolution: result}
+        entry.status = match result ? ''
         | ''              => \accepted
         | /照案通過/      => \accepted
         | /提報院會/      => \accepted
         | /列席報告/      => \accepted
-        | /同意撤回/      => \revoked
+        | /同意撤回/      => \retrected
         | /逕付(院會)?二讀/ => \prioritized
         | /黨團協商/      => \consultation
         | /交(.*)委員會/  => \committee
-        | /中央政府總預算案/  => \committee
+        | /中央政府總預算案/ => \committee
         | /展延審查期限/  => \extended
         | /退回程序委員會/ => \rejected
         | otherwise => res.result
@@ -183,36 +228,41 @@ prepare_announcement = (g, cb) ->
         # extract this info from gazette
         #if res.origItem isnt res.item
             #console.log "#{res.origItem} -> #{res.item}"
-    cb proceeding
+    cb results
+
+
+parseProposer = (text) -> {text} <<< match text
+| /本院(.*)黨團/ => caucus: [that.1] # XXX split
+| /本院(.*)委員會/ => committee: [that.1] # XXX split
+| otherwise => { government: text }
+#| /本院委員(.*)等/ => { mly_primary: [that.1] } # XXX split
+
+results = []
+for sitting in [1 to 14] when sitting >0 => let sitting
+    g = {ad: 8, session: 2, sitting}
+    funcs.push (done) ->
+        ann <- prepare_announcement g
+        motions <- prepare_motions g
+        results.push {meeting: g, announcement: ann, discussion: motions}
+        done!
+err, res <- async.waterfall funcs
+console.error \ok, res
+
+console.log JSON.stringify results, null 4
+/* mongo stuff later
+
+{Bill, Announcement} = require \./lib/model
 
 require! mongoose
 mongoose.connect('mongodb://localhost/ly');
-console.log \cn
-
-for sitting in [1 to 13] when sitting is 9 => let sitting
-    g = {ad: 8, session: 1, sitting}
-    funcs.push (done) ->
-        ann <- prepare_announcement g
-        resolution = {}
-        for res in ann
-            resolution[res.status] ?= 0
-            ++resolution[res.status]
-        misc = [p for p in ann when p.status is /決定/]
-        console.log \misc misc if misc.length
-
-        console.log ann
 
         motions = []
         funcs = ann.map (a) -> (next) ->
             err, bill, created <- Bill.findOrCreate do
                 billNo: a.id
-                proposer: {government: a.proposer}
+                proposer: parseProposer a.proposer
                 summary: a.summary
-            motions.push do
-                bill: [bill]
-                resolution: a.result
-                item: a.item
-                agendaItem: a.origItem
+            motions.push a{item, agenaItem, resolution} <<< bill: [bill]
             next!
 
         err, res <- async.waterfall funcs
@@ -223,14 +273,7 @@ for sitting in [1 to 13] when sitting is 9 => let sitting
         err <- A.save
         console.log \save err
 
-        return done!
-        motions <- prepare_motions g
-
-        console.log {ys: g, ann_res: resolution, motions}
-
         done!
 
-err, res <- async.waterfall funcs
-console.log \ok, res
 mongoose.connection.close!
-
+*/

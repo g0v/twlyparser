@@ -10,6 +10,7 @@ Proposer = do
     mly_primary: [type: ObjectId, ref: 'MLY']
     mly_seconder: [type: ObjectId, ref: 'MLY']
     government: String
+    text: String
 
 Bill = new Schema do
     billNo: String
