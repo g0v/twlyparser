@@ -163,7 +163,8 @@ class Discussion
             return
         @lastSpeaker = speaker if speaker
 
-        if text is /到此為止/
+        # breaktime
+        if text is /討論事項.*到此為止/
             @flush!
 
         if fulltext is /進行討論事項(第\S+案)/
