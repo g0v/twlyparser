@@ -155,15 +155,47 @@ class Discussion
     ({@output, @rules} = {}) ->
         @output "\n" + md_header \討論事項, 2
         @output "\n"
-        @lines = []
+        @current-state = {type: \discussion}
     indent-level: -> 0
     push-line: (speaker, text, fulltext) ->
-        @output "#fulltext\n"
         if (speaker ? @lastSpeaker) is \主席 and @rules.match \discussion.end text
+            @flush!
             return
         @lastSpeaker = speaker if speaker
+
+        if text is /到此為止/
+            @flush!
+
+        if fulltext is /進行討論事項(第\S+案)/
+            @flush!
+            @current-state.item = that.1
+            @output md_header that.1, 3
+            return @
+
+        # 決議
+        match fulltext
+        | /(主席|本案|以下).*決議：?「(\S+?)。?」/ =>
+            @current-state.resolution = that.2
+        # 附帶決議
+        | /^附帶決議：$/
+            @ctx = \附帶決議
+            #@TODO: 附帶決議
+
+        # 通過?
+        match text 
+        | (@)rules.regex \exmotion.disputed .exec =>
+            switch that.1
+                | \有 => @current-state.decision = 'tbd'
+                | \無 => @current-state.decision = 'pass'
+                | otherwise => console.error "unhandled case: #{that.1}"
+        @output "#fulltext\n"
         return @
-    serialize: ->
+    flush: ->
+        if @current-state.item?
+            @output "```json\n" + JSON.stringify @current-state, null, 4b
+            console.log @current-state
+            @current-state = {type: \discussion}
+    serialize: -> @flush!
 
 class Consultation
     ({@output} = {}) ->
