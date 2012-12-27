@@ -155,7 +155,7 @@ class Discussion
     ({@output, @rules} = {}) ->
         @output "\n" + md_header \討論事項, 2
         @output "\n"
-        @current-state = {type: \discussion}
+        @_reset_state!
     indent-level: -> 0
     push-line: (speaker, text, fulltext) ->
         if (speaker ? @lastSpeaker) is \主席 and @rules.match \discussion.end text
@@ -166,6 +166,7 @@ class Discussion
         # breaktime
         if text is /討論事項.*到此為止/
             @flush!
+            return @
 
         if fulltext is /進行討論事項(第\S+案)/
             @flush!
@@ -176,26 +177,42 @@ class Discussion
         # 決議
         match fulltext
         | /(主席|本案|以下).*決議：?「(\S+?)。?」/ =>
-            @current-state.resolution = that.2
+            @current-state.resolution.text = that.2
         # 附帶決議
         | /^附帶決議：$/
             @ctx = \附帶決議
-            #@TODO: 附帶決議
 
         # 通過?
-        match text 
+        match fulltext 
         | (@)rules.regex \exmotion.disputed .exec =>
+            _type = if @ctx is \決議
+                    then \resolution
+                    else \other_resolution
             switch that.1
-                | \有 => @current-state.decision = 'tbd'
-                | \無 => @current-state.decision = 'pass'
+                | \有 => @current-state[_type].decision = 'tbd'
+                | \無 => @current-state[_type].decision = 'pass'
                 | otherwise => console.error "unhandled case: #{that.1}"
+            @ctx = \決議
+
+
+        switch @ctx
+        | \決議 =>
+            if @current-state.resolution.text is /協商/
+                @current-state.resolution.decision = \tbd
+            else
+                @current-state.resolution.decision ?= \pass
+        | \附帶決議 =>
+            @current-state.other_resolution.text = fulltext
+      
         @output "#fulltext\n"
         return @
     flush: ->
-        if @current-state.item?
+        if @current-state.item
             @output "```json\n" + JSON.stringify @current-state, null, 4b
-            console.log @current-state
-            @current-state = {type: \discussion}
+            @_reset_state!
+    _reset_state: ->
+            @ctx = \決議
+            @current-state = {type: \discussion, resolution:{}, other_resolution:{}}
     serialize: -> @flush!
 
 class Consultation
