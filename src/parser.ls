@@ -164,11 +164,11 @@ class Discussion
         @lastSpeaker = speaker if speaker
 
         # breaktime
-        if text is /討論事項.*到此為止/
+        if @rules.match \discussion.end text
             @flush!
             return @
 
-        if fulltext is /進行討論事項(第\S+案)/
+        if @rules.match \discussion.item_start fulltext
             @flush!
             @current-state.item = that.1
             @output md_header that.1, 3
@@ -176,10 +176,10 @@ class Discussion
 
         # 決議
         match fulltext
-        | /(主席|本案|以下).*決議：?「(\S+?)。?」/ =>
+        | (@)rules.regex \discussion.resolution .exec =>
             @current-state.resolution.text = that.2
         # 附帶決議
-        | /^附帶決議：$/
+        | (@)rules.regex \discussion.other_resolution_start .exec =>
             @ctx = \附帶決議
 
         # 通過?

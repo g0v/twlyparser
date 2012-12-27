@@ -80,6 +80,15 @@ discussion:
   end:
     regex: |
       討論事項.*到此為止(?!.*繼續)
+  item_start:
+    regex: |
+      進行討論事項(第\S+案)
+  other_resolution_start:
+    regex: |
+      ^附帶決議：$
+  resolution:
+    regex: |
+      (主席|本案|以下).*決議：?「(\S+?)。?」
 proposal:
   start:
     regex: |
