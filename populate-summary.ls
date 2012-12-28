@@ -216,6 +216,8 @@ prepare_announcement = (g, cb) ->
         | /照案通過/      => \accepted
         | /提報院會/      => \accepted
         | /列席報告/      => \accepted
+        | /多數通過/      => \accepted
+        | /少數不通過/      => \rejected
         | /同意撤回/      => \retrected
         | /逕付(院會)?二讀/ => \prioritized
         | /黨團協商/      => \consultation
@@ -223,7 +225,7 @@ prepare_announcement = (g, cb) ->
         | /中央政府總預算案/ => \committee
         | /展延審查期限/  => \extended
         | /退回程序委員會/ => \rejected
-        | otherwise => res.result
+        | otherwise => console.error result; result
         # XXX: misq has altered agenda in agenda query result.  we need to
         # extract this info from gazette
         #if res.origItem isnt res.item
@@ -238,7 +240,7 @@ parseProposer = (text) -> {text} <<< match text
 #| /本院委員(.*)等/ => { mly_primary: [that.1] } # XXX split
 
 results = []
-for sitting in [1 to 14] when sitting >0 => let sitting
+for sitting in [1 to 15] when sitting >0 => let sitting
     g = {ad: 8, session: 2, sitting}
     funcs.push (done) ->
         ann <- prepare_announcement g
