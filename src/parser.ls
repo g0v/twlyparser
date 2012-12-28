@@ -156,6 +156,7 @@ class Discussion
         @output "\n" + md_header \討論事項, 2
         @output "\n"
         @_reset_state!
+        @json = {}
     indent-level: -> 0
     push-line: (speaker, text, fulltext) ->
         if (speaker ? @lastSpeaker) is \主席 and @rules.match \discussion.end text
@@ -174,26 +175,88 @@ class Discussion
             @output md_header that.1, 3
             return @
 
-        # 決議
         match fulltext
+        | (@)rules.regex \discussion.letter_start .exec =>
+            @ctx = \letter
+            @output md_header that.1, 4
+            @outputjson {type:\discussion_letter_start, comment: \函開始}
+            @output!
+            return @
         | (@)rules.regex \discussion.resolution .exec =>
             @current-state.resolution.text = that.2
+            @ctx = \決議
         # 附帶決議
         | (@)rules.regex \discussion.other_resolution_start .exec =>
             @ctx = \附帶決議
+        | (@)rules.regex \discussion.letter_end .exec =>
+            meta = {type:\discussion_letter_end, comment:\函結束或審查報告內文結束}
+            @outputjson meta
+            @ctx = null
+        | (@)rules.regex \discussion.discusswords_start .exec =>
+            @outputjson {type:\discussion_discusswords_start, staget: that.2, comment: \逐條討論開始}
 
+            @ctx = \逐條討論
+        | (@)rules.regex \discussion.discusswords_end .exec =>
+            @outputjson {type:\discussion_discusswords_end, comment: \逐項討論結束}
+
+            @ctx = \決議
+
+        need_output_orig = true
         # 通過?
+        if @ctx is \決議 or @ctx is \附帶決議
+            need_output_orig = @handle_resolution fulltext
+        # 處理附件
+        else if @ctx is \letter
+            need_output_orig = @handle_letter fulltext
+        # @TODO:處理逐條討論
+        if need_output_orig
+            @output "#fulltext\n"
+        return @
+
+    handle_letter: (fulltext) ->
+        match fulltext
+        # output meta
+        | /附件/ =>
+            @json.type = \discussion_letter_meta
+            @outputjson @json
+        | (@)rules.regex \discussion.report_start .exec =>
+            throw "previous ctx is not letter" unless @ctx is \letter
+            @ctx = \report
+            @output "#fulltext\n"
+            @outputjson {type: \discussion_report_start, comment: \審查報告內文開始}
+            return false
+        | (@)rules.regex \discussion.letter_to .exec =>
+            @json.to = that.1
+        | (@)rules.regex \discussion.letter_date .exec =>
+            @json.publish_date = util.datetimeOfLyDateTime that[1 to 3]
+        | (@)rules.regex \discussion.letter_id .exec =>
+            @json.id = that.1
+        | (@)rules.regex \discussion.letter_title .exec =>
+            @json.title = that.1
+        | (@)rules.regex \discussion.letter_priority .exec =>
+            @json.priority = that.1
+        | (@)rules.regex \discussion.letter_secure .exec =>
+            @json.secure = that.1
+        | (@)rules.regex \discussion.letter_report_to_start .exec  =>
+            @json.report_to = []
+            res = @rules.match \discussion.letter_report_to_id, that.1, \g
+
+            for e in res
+                matched = @rules.match \discussion.letter_report_to_id e
+                throw "report_to field of letter pasred failed" unless matched
+                @json.report_to.push {id: matched.4, publish_date: util.datetimeOfLyDateTime matched[1 to 3]}
+
+    handle_resolution: (fulltext) ->
         match fulltext 
         | (@)rules.regex \exmotion.disputed .exec =>
             _type = if @ctx is \決議
                     then \resolution
                     else \other_resolution
             switch that.1
-                | \有 => @current-state[_type].decision = 'tbd'
-                | \無 => @current-state[_type].decision = 'pass'
-                | otherwise => console.error "unhandled case: #{that.1}"
+            | \有 => @current-state[_type].decision = 'tbd'
+            | \無 => @current-state[_type].decision = 'pass'
+            | otherwise => console.error "unhandled case: #{that.1}"
             @ctx = \決議
-
 
         switch @ctx
         | \決議 =>
@@ -203,17 +266,17 @@ class Discussion
                 @current-state.resolution.decision ?= \pass
         | \附帶決議 =>
             @current-state.other_resolution.text = fulltext
-      
-        @output "#fulltext\n"
-        return @
     flush: ->
-        if @current-state.item
-            @output "```json\n" + JSON.stringify @current-state, null, 4b
-            @_reset_state!
+            if @current-state.item
+                @outputjson @current-state
+                @_reset_state!
     _reset_state: ->
             @ctx = \決議
             @current-state = {type: \discussion, resolution:{}, other_resolution:{}}
     serialize: -> @flush!
+    outputjson: (json)->
+            @output "```json\n" + JSON.stringify json, null, 4b
+            @json = {}
 
 class Consultation
     ({@output} = {}) ->

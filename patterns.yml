@@ -83,6 +83,45 @@ discussion:
   item_start:
     regex: |
       進行討論事項(第\S+案)
+  letter_start: # 函開始
+    regex: |
+      (立法院\S+會函)
+  letter_end:
+    regex: |
+      審查報告已宣讀完畢
+  letter_to: 
+    regex: |
+      受文者：(\S+)
+  letter_date:
+    regex: |
+      發文日期：中華民國(\S+)年(\S+)月(\S+?)日
+  letter_id:
+    regex: |
+      發文字號：(\S+)
+  letter_priority:
+    regex: |
+      速別：(\S+)
+  letter_secure:
+    regex: |
+      密等及解密條件或保密期限：(\S+)
+  letter_title:
+    regex: |
+      主旨：(.*)。
+  letter_report_to_start:
+    regex: |
+      復.*貴處(.*)
+  letter_report_to_id:
+    regex: |
+      (\d+?)年(\d+?)月(\d+?)日(\S+?\d+)號
+  report_start: # 報告開始
+    regex: | 
+       審查報告.*份。
+  discusswords_start:
+    regex: |
+      (\S+?)（(二讀|三讀)）
+  discusswords_end:
+    regex: |
+      三讀條文已宣讀通過|繼續進行三讀
   other_resolution_start:
     regex: |
       ^附帶決議：$

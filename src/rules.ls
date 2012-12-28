@@ -18,19 +18,25 @@ class Rules
         catch e
             throw "rule not found #query #e"
 
-    regex: (query) ->
-        if not @_cache[query]
+    regex: (query, flag) ->
+        if flag
+            regexname = "#query~#flag"
+        else
+            regexname = query
+        flag ?= ''
+        if not @_cache[regexname]
             regexstr = @rule query .regex
             throw "query does not have regex string" if regexstr is undefined
 #            @_cache[query] = new xregexp.XRegExp.cache regexstr.replace "\n", ''
-            @_cache[query] = new RegExp regexstr.replace "\n", ''
-        @_cache[query]
+            @_cache[regexname] = new RegExp (regexstr.replace "\n", ''), flag
+        @_cache[regexname]
 
     replace: (query, _from, to_) ->
         @regex query .replace _from _to
 
-    match: (query, text) ->
-        @regex query .exec text
+    match: (query, text, flag) ->
+        regex = @regex query, flag
+        text.match regex
 
 module.exports = {Rules}
 
