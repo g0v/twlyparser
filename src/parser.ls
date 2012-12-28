@@ -193,7 +193,7 @@ class Discussion
             @outputjson meta
             @ctx = null
         | (@)rules.regex \discussion.discusswords_start .exec =>
-            @outputjson {type:\discussion_discusswords_start, staget: that.2, comment: \逐條討論開始}
+            @outputjson {type:\discussion_discusswords_start, stage: that.2, comment: \逐條討論開始}
 
             @ctx = \逐條討論
         | (@)rules.regex \discussion.discusswords_end .exec =>
