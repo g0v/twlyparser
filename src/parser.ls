@@ -593,6 +593,26 @@ class TextFormatter implements HTMLParser
 
         @output rich.html! - /^\s+/mg - /\n/g - /position: absolute;/g
 
+class BillParser extends TextFormatter
+    parseRich: (node) ->
+        if node.0.name is \table
+            [first, ...rest] = node.find \tr .map -> @
+            match first.text! - /\s/g
+            | /^院總第(\d+)號(.*)提案第(\d+)號$/ =>
+                @output that.0
+                return
+            | /^(.*草案)(對照表)?$/ =>
+                name = that.1
+                type = if that.2 => \lawdiff else \lawproposal
+                [h, ...content] = rest
+                header = h.find \td .map -> @text! - /^\s*|\s*$/g
+                content = for e in content
+                    e.find \td .map -> @text! - /^\s*|\s*$/gm
+                @output-json { type, name, header, content }
+                return
+
+        super ...
+
 class MemoParser implements HTMLParser
     ({@output = console.log, @output-json, @metaOnly} = {}) ->
         @lastSpeaker = null
@@ -847,4 +867,4 @@ class ResourceParser
     store: ->
         @output JSON.stringify @results, null, 4b
 
-module.exports = { Parser, TextParser, TextFormatter, MemoParser, StructureFormater, ResourceParser }
+module.exports = { Parser, TextParser, TextFormatter, MemoParser, StructureFormater, ResourceParser, BillParser }

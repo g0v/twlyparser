@@ -17,6 +17,20 @@ getAgenda = (meta, type, cb) ->
 getProceeding = (meta, type, cb) ->
     getSummary meta, \proceeding, type, cb
 
+getBillDetails = (id, cb) ->
+    uri = "http://misq.ly.gov.tw/MISQ/IQuery/misq5000QueryBillDetail.action"
+
+    err, res, body <- request do
+        method: \POST
+        uri: uri
+        headers: do
+            Origin: 'http://misq.ly.gov.tw'
+            Referer: uri
+            User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
+        form: { billNo: id }
+
+    cb body
+
 
 getMeetingAgenda = (meetingNo, cb) ->
     uri = "http://misq.ly.gov.tw/MISQ/IQuery/misq5000QueryMeetingDetail.action"
@@ -75,4 +89,4 @@ getSummary = ({ad, session, sitting, extra}, doctype, type, cb) ->
 
     cb body
 
-module.exports = { forGazette, index, gazettes, getSummary, getAgenda, getProceeding, getMeetings, getMeetingAgenda }
+module.exports = { forGazette, index, gazettes, getSummary, getAgenda, getProceeding, getMeetings, getMeetingAgenda, getBillDetails }
