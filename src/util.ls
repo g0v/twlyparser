@@ -95,4 +95,21 @@ nameListFixup = (names) ->
             ret_names.push name
     ret_names
 
-module.exports = {datetimeOfLyDateTime, intOfZHNumber, parseZHNumber, zhreg, zhreghead, zhnumber, readFileSync, build_people_interp_map, nameListFixup}
+
+committees = do
+    IAD: \內政
+    FND: \外交及國防
+    ECO: \經濟
+    FIN: \財政
+    EDU: \教育及文化
+    TRA: \交通
+    JUD: \司法及法制
+    SWE: \社會福利及衛生環境
+
+parseCommittee = (name) ->
+    name.split /、/ .map ->
+        [code]? = [code for code, name of committees when name is it]
+        throw it+JSON.stringify(committees) unless code
+        code
+
+module.exports = {datetimeOfLyDateTime, intOfZHNumber, parseZHNumber, zhreg, zhreghead, zhnumber, readFileSync, build_people_interp_map, nameListFixup, committees, parseCommittee}

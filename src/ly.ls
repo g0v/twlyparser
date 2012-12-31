@@ -32,7 +32,7 @@ getBillDetails = (id, cb) ->
     cb body
 
 
-getMeetingAgenda = (meetingNo, cb) ->
+getMeetingAgenda = ({meetingNo, meetingTime, departmentCode}, cb) ->
     uri = "http://misq.ly.gov.tw/MISQ/IQuery/misq5000QueryMeetingDetail.action"
 
     err, res, body <- request do
@@ -42,7 +42,7 @@ getMeetingAgenda = (meetingNo, cb) ->
             Origin: 'http://misq.ly.gov.tw'
             Referer: uri
             User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
-        form: { meetingNo, meetingTime: \101/12/18 departmentCode: \0703 }
+        form: { meetingNo, meetingTime, departmentCode }
 
     cb body
 
@@ -58,7 +58,7 @@ getMeetings = (queryCondition, cb) ->
             User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
         form: do
             queryCondition: <[ 0703 2100 2300 2400 4000 4100 4200 4300 4500 ]>
-            term: \07
+            term: ''
             sessionPeriod: ''
             meetingDateS: ''
             meetingDateE: ''

@@ -601,13 +601,40 @@ class BillParser extends TextFormatter
             | /^院總第(\d+)號(.*)提案第(\d+)號$/ =>
                 @output that.0
                 return
-            | /^(.*草案)(對照表)?$/ =>
+            | /^(?:「?(.*草案)」?)?(條文)?(對照表)?$/ =>
                 name = that.1
                 type = if that.2 => \lawdiff else \lawproposal
                 [h, ...content] = rest
-                header = h.find \td .map -> @text! - /^\s*|\s*$/g
-                content = for e in content
-                    e.find \td .map -> @text! - /^\s*|\s*$/gm
+                header = h.find \td .map -> @text! - /^\s*|\s*$/gm
+                tosplit = [i for h, i in header when h is \說明 or h.match /\n/]
+                content .= map ->
+                    it.find \td .map -> @text! - /^\s*|\s*$/gm
+                # a column can contain multiple proposals.  splice them into individual diff
+                for i in tosplit.reverse!
+                    names = header[i].split /\n/
+                    header[i to i] = names
+                    for e,j in content
+                        x = e[i]split /(委員.*提案|審查會)：\n/
+                        first = x.shift!
+                        [which] = [h for h in header when h is /增訂條文|修正條文/]
+                        splitted = {}
+                        splitted[which] = first if which?
+                        while who = x.shift!
+                            if header[i] isnt \說明
+                                throw "#who not in #names" unless who in names
+                            splitted[who] = x.shift! - /\s*$/
+                        e[i to i] = if header[i] is \說明
+                            [splitted]
+                        else
+                            [splitted[who] for who in names]
+                [i] = [j for h, j in header when h is \審查會通過條文]
+                [comment] = [j for h, j in header when h is \說明]
+                if i?
+                    for e in content 
+                        e[i] -= /^(（.*?）\n)/
+                        e[comment].審查會 .= replace /^/, RegExp.$1
+
+
                 @output-json { type, name, header, content }
                 return
 

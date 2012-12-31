@@ -41,13 +41,15 @@ parseBill = (id, body, cb) ->
         if key.length is 1 and key isnt /國會圖書館/
             key = key.0 - /：/
             content = @find \td
+            text = -> content.map(-> @text!).0
             [prop, value] = match key
-            | /提案單位/ => [\propser_text, content.map(-> @text!).0]
-            | \議案名稱 => [\summary, content.map(-> @text!).0]
-            | \議案名稱 => [\summary, content.map(-> @text!).0]
+            | /提案單位/ => [\propser_text text!]
+            | \審查委員會 =>
+                [\committee util.parseCommittee text! - /^本院/ - /委員會$/]
+            | \議案名稱 => [\summary text!]
             | \提案人 => extractNames content.html!
             | \連署人 => extractNames content.html!
-            | \議案狀態 => [\status, content.map(-> @text!).0 - /^\s*|\s*$/g]
+            | \議案狀態 => [\status text! - /^\s*|\s*$/g]
             | \關連議案 =>
                 related = content.find \a .map -> [
                     * (@attr \onclick .match /queryBillDetail\('(\d+)',/).1
@@ -55,12 +57,11 @@ parseBill = (id, body, cb) ->
                 ]
                 [\related, related]
             | \相關附件 =>
-                doc = content.find \a .map -> [
-                    * (@text!match /(pdf|word)/i).1.toLowerCase!
-                    * @attr \href
-                ]
+                doc = content.find \a .map ->
+                    href = @attr \href
+                    [ href.match(/(pdf|word)/i).1.toLowerCase!, href ]
                 [\doc, {[type, uri] for [type, uri] in doc}]
-            | otherwise => [key, content.map(-> @text!).0]
+            | otherwise => [key, text!]
             info[prop] = value
     cb info
 
