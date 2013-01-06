@@ -16,6 +16,7 @@ parseContent = (id, g, klass, ext, e) ->
     parser = new klass do
         rules: rules
         context-cb: ->
+            e <<< it
             current-file = "#dir/#{fname it}.txt"
             mkdirp.sync path.dirname current-file
             console.error \=== current-file
@@ -59,5 +60,10 @@ ly.forGazette {gazette, ad, type: \委員會紀錄} (id, g, type, entries, files
         ext   = if text => \txt else \md
 
         console.log \=== e.files
-        parseContent id, g, klass, ext, e
+        try
+            parseContent id, g, klass, ext, e
+        catch err
+            console.error \ERROR err
 console.log '\n'
+
+fs.writeFileSync \data/index.json JSON.stringify ly.index, null, 4
