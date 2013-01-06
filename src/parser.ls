@@ -275,7 +275,11 @@ class Discussion
             @current-state = {type: \discussion, resolution:{}, other_resolution:{}}
     serialize: -> @flush!
     outputjson: (json)->
-            @output "```json\n" + JSON.stringify json, null, 4b
+            @output [
+                * \```json
+                * JSON.stringify json, null, 4b
+                * \```
+            ].join "\n"
             @json = {}
 
 class Consultation
