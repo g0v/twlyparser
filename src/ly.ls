@@ -1,8 +1,12 @@
 require!  {index: \../data/index,gazettes: \../data/gazettes, printf, request}
 
-function forGazette (gazette, cb)
-    for id, g of gazettes when !gazette? || id ~= gazette => let id, g
+function forGazette (opts, cb)
+    unless typeof opts is \object
+        opts = { gazette: opts }
+    for id, g of gazettes when !opts.gazette? || id ~= opts.gazette => let id, g
         entries = [i for i in index when i.gazette ~= id]
+        if opts.type
+            entries .= filter -> it.type is opts.type
         bytype = {}
         for {type}:i in entries
             (bytype[type] ||= []).push i
