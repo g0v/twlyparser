@@ -600,7 +600,7 @@ class TextFormatter implements HTMLParser
             [_, ext] = src.match /\.(\w+)$/
             output = exec-sync "imgsize #file"
             [_, width, height] = output.match /width="(\d+)" height="(\d+)"/
-            if width / height > 100
+            if width / height > 60
                 @replaceWith('<hr />')
             else
                 if [id, shortcut]? = self.chute-map[file]
