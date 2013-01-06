@@ -32,6 +32,12 @@ class Meta
         | (@)rules.regex \header.title_election .exec =>
             @meta<[ad session]> = that[1 to 2].map -> util.intOfZHNumber it
             @meta.sitting = 0
+        | (@)rules.regex \header.title_committee .exec =>
+            @meta <<< do
+                ad: that.1
+                session: that.2
+                sitting: that.4
+                committee: util.parseCommittee that.3
         | (@)rules.regex \header.title_general .exec =>
             @meta<[ad session sitting]> = that[1 to 3].map -> util.intOfZHNumber it
             @meta.memo = true if that.4 is \議事錄
@@ -567,13 +573,20 @@ class TextParser extends Parser
                 @parseLine line
 
 class TextFormatter implements HTMLParser
-    ({@output = console.log} = {}) ->
+    ({@output = console.log, @context-cb, @rules} = {}) ->
         @chute-map = try require \../data/chute-map
         @chute-map ?= {}
 
     parseLine: ->
         if it.0 is \<
             it-= /^<|>/g
+        if @context-cb
+            if it isnt /議事錄/ and @rules.regex \header.title_committee .exec it
+                @context-cb do
+                    ad: that.1
+                    session: that.2
+                    sitting: that.4
+                    committee: util.parseCommittee that.3
         @output it
 
     parseRich: (node) ->

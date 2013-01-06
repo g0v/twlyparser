@@ -105,6 +105,7 @@ committees = do
     TRA: \交通
     JUD: \司法及法制
     SWE: \社會福利及衛生環境
+    WHL: \全院
 
 parseCommittee = (name) ->
     name.split /、/ .map ->
