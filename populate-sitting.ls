@@ -11,6 +11,10 @@ skip = false
 funcs = []
 memo = true if type is \memo
 
+if dometa
+    {Rules} = require \./lib/rules
+    rules = new Rules \patterns.yml
+
 index-type = switch type
 | \memo => \議事錄
 | \committee => \委員會紀錄
@@ -40,6 +44,7 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
             meta = null
             klass = if memo => MemoParser else Parser
             parser = new klass do
+                rules: rules
                 output: ->
                 output-json: -> meta := it
             try
