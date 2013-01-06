@@ -581,7 +581,7 @@ class TextFormatter implements HTMLParser
         if it.0 is \<
             it-= /^<|>/g
         if @context-cb
-            if it isnt /議事錄/ and @rules.regex \header.title_committee .exec it
+            if it is /紀錄$/ and @rules.regex \header.title_committee .exec it
                 @context-cb do
                     ad: that.1
                     session: that.2
