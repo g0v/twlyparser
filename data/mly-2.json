@@ -18,7 +18,7 @@
         ]
     },
     {
-        "name": "巴燕．達魯",
+        "name": "方來進",
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
@@ -28,11 +28,7 @@
     {
         "name": "瓦歷斯．貝林",
         "party": null,
-        "caucus": "DU",
-        "constuiency": [
-            "aborigine",
-            "highland"
-        ]
+        "caucus": null
     },
     {
         "name": "王天競",
@@ -44,19 +40,21 @@
         ]
     },
     {
-        "name": "王令麟",
+        "name": "王世雄",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "proportional"
+            "KHQ",
+            0
         ]
     },
     {
-        "name": "王拓",
-        "party": "DPP",
-        "caucus": "DPP",
+        "name": "王建煊",
+        "party": "KMT",
+        "caucus": "KMT",
         "constuiency": [
-            "proportional"
+            "TPE",
+            1
         ]
     },
     {
@@ -69,30 +67,21 @@
         ]
     },
     {
-        "name": "王素筠",
+        "name": "王國清",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "MIA",
+            "TNN",
             0
         ]
     },
     {
-        "name": "王雪峰",
-        "party": "DPP",
-        "caucus": "DPP",
-        "constuiency": [
-            "TPE",
-            2
-        ]
-    },
-    {
-        "name": "全文盛",
+        "name": "王顯明",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "aborigine",
-            "highland"
+            "CHA",
+            0
         ]
     },
     {
@@ -101,25 +90,24 @@
         "caucus": "DPP",
         "constuiency": [
             "KHH",
-            2
+            1
         ]
     },
     {
         "name": "朱高正",
-        "party": null,
-        "caucus": null,
-        "constuiency": [
-            "KHH",
-            2
-        ]
-    },
-    {
-        "name": "朱惠良",
         "party": "NP",
         "caucus": "NP",
         "constuiency": [
-            "TPE",
-            1
+            "YUN",
+            0
+        ]
+    },
+    {
+        "name": "朱勝號",
+        "party": "DPP",
+        "caucus": "DPP",
+        "constuiency": [
+            "proportional"
         ]
     },
     {
@@ -132,41 +120,40 @@
         ]
     },
     {
+        "name": "江偉平",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "foreign"
+        ]
+    },
+    {
+        "name": "江鵬堅",
+        "party": "DPP",
+        "caucus": "DPP",
+        "constuiency": [
+            "proportional"
+        ]
+    },
+    {
         "name": "余玲雅",
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
-            "KHQ",
+            "proportional"
+        ]
+    },
+    {
+        "name": "吳東昇",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "HSQ",
             0
         ]
     },
     {
-        "name": "吳克清",
-        "party": "KMT",
-        "caucus": "KMT",
-        "constuiency": [
-            "TAO",
-            0
-        ]
-    },
-    {
-        "name": "吳惠祖",
-        "party": "KMT",
-        "caucus": "KMT",
-        "constuiency": [
-            "foreign"
-        ]
-    },
-    {
-        "name": "李文郎",
-        "party": "KMT",
-        "caucus": "KMT",
-        "constuiency": [
-            "foreign"
-        ]
-    },
-    {
-        "name": "李必賢",
+        "name": "吳德美",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
@@ -175,12 +162,63 @@
         ]
     },
     {
-        "name": "李俊毅",
+        "name": "呂秀蓮",
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
-            "TNQ",
+            "TAO",
             0
+        ]
+    },
+    {
+        "name": "呂新民",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "TAO",
+            0
+        ]
+    },
+    {
+        "name": "李友吉",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "proportional"
+        ]
+    },
+    {
+        "name": "李必賢",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "KHH",
+            1
+        ]
+    },
+    {
+        "name": "李宗正",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "proportional"
+        ]
+    },
+    {
+        "name": "李進勇",
+        "party": "DPP",
+        "caucus": "DPP",
+        "constuiency": [
+            "KEE",
+            0
+        ]
+    },
+    {
+        "name": "李源泉",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "proportional"
         ]
     },
     {
@@ -197,16 +235,16 @@
         "caucus": "NP",
         "constuiency": [
             "TPE",
-            1
+            2
         ]
     },
     {
-        "name": "李應元",
+        "name": "李慶雄",
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
-            "TPQ",
-            2
+            "KHH",
+            1
         ]
     },
     {
@@ -215,15 +253,6 @@
         "caucus": "KMT",
         "constuiency": [
             "TPQ",
-            2
-        ]
-    },
-    {
-        "name": "杜振榮",
-        "party": "KMT",
-        "caucus": "KMT",
-        "constuiency": [
-            "TNN",
             0
         ]
     },
@@ -233,7 +262,7 @@
         "caucus": "DPP",
         "constuiency": [
             "TPE",
-            1
+            2
         ]
     },
     {
@@ -255,25 +284,25 @@
         ]
     },
     {
+        "name": "邱連輝",
+        "party": "DPP",
+        "caucus": "DPP",
+        "constuiency": [
+            "PIF",
+            0
+        ]
+    },
+    {
         "name": "周伯倫",
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
             "TPQ",
-            1
+            0
         ]
     },
     {
         "name": "周荃",
-        "party": null,
-        "caucus": null,
-        "constuiency": [
-            "TPQ",
-            1
-        ]
-    },
-    {
-        "name": "周陽山",
         "party": "NP",
         "caucus": "NP",
         "constuiency": [
@@ -282,37 +311,38 @@
         ]
     },
     {
-        "name": "林文郎",
-        "party": "DPP",
-        "caucus": "DPP",
+        "name": "周書府",
+        "party": "KMT",
+        "caucus": "KMT",
         "constuiency": [
             "proportional"
         ]
     },
     {
-        "name": "林宏宗",
-        "party": "KMT",
-        "caucus": "KMT",
+        "name": "林正杰",
+        "party": null,
+        "caucus": null,
         "constuiency": [
-            "KHH",
-            1
+            "TPE",
+            2
         ]
     },
     {
-        "name": "林建榮",
-        "party": "KMT",
-        "caucus": "KMT",
+        "name": "林光華",
+        "party": "DPP",
+        "caucus": "DPP",
         "constuiency": [
-            "ILA",
+            "HSQ",
             0
         ]
     },
     {
-        "name": "林忠正",
-        "party": "DPP",
-        "caucus": "DPP",
+        "name": "林志嘉",
+        "party": "KMT",
+        "caucus": "KMT",
         "constuiency": [
-            "proportional"
+            "TPQ",
+            0
         ]
     },
     {
@@ -322,40 +352,6 @@
         "constuiency": [
             "YUN",
             0
-        ]
-    },
-    {
-        "name": "林郁方",
-        "party": "NP",
-        "caucus": "NP",
-        "constuiency": [
-            "proportional"
-        ]
-    },
-    {
-        "name": "林政則",
-        "party": "KMT",
-        "caucus": "KMT",
-        "constuiency": [
-            "HSZ",
-            0
-        ]
-    },
-    {
-        "name": "林炳坤",
-        "party": "KMT",
-        "caucus": "KMT",
-        "constuiency": [
-            "PEN",
-            0
-        ]
-    },
-    {
-        "name": "林哲夫",
-        "party": "DPP",
-        "caucus": "DPP",
-        "constuiency": [
-            "foreign"
         ]
     },
     {
@@ -390,7 +386,7 @@
         "caucus": "DPP",
         "constuiency": [
             "TPE",
-            2
+            1
         ]
     },
     {
@@ -403,54 +399,29 @@
         ]
     },
     {
-        "name": "林豐喜",
-        "party": "DPP",
-        "caucus": "DPP",
-        "constuiency": [
-            "proportional"
-        ]
-    },
-    {
-        "name": "林耀興",
+        "name": "林聰明",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "TXQ",
+            "ILA",
             0
-        ]
-    },
-    {
-        "name": "范振宗",
-        "party": "DPP",
-        "caucus": "DPP",
-        "constuiency": [
-            "HSQ",
-            0
-        ]
-    },
-    {
-        "name": "范巽綠",
-        "party": "DPP",
-        "caucus": "DPP",
-        "constuiency": [
-            "proportional"
         ]
     },
     {
         "name": "郁慕明",
-        "party": "NP",
-        "caucus": "NP",
+        "party": "KMT",
+        "caucus": "KMT",
         "constuiency": [
-            "TAO",
-            0
+            "TPE",
+            2
         ]
     },
     {
-        "name": "姚立明",
-        "party": null,
-        "caucus": null,
+        "name": "姚嘉文",
+        "party": "DPP",
+        "caucus": "DPP",
         "constuiency": [
-            "KHQ",
+            "CHA",
             0
         ]
     },
@@ -477,8 +448,16 @@
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
-            "HSZ",
+            "HSQ",
             0
+        ]
+    },
+    {
+        "name": "洪冬桂",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "proportional"
         ]
     },
     {
@@ -496,7 +475,7 @@
         "caucus": "KMT",
         "constuiency": [
             "TPQ",
-            3
+            0
         ]
     },
     {
@@ -504,7 +483,8 @@
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
-            "proportional"
+            "TXG",
+            0
         ]
     },
     {
@@ -526,23 +506,6 @@
         ]
     },
     {
-        "name": "洪濬哲",
-        "party": "KMT",
-        "caucus": "KMT",
-        "constuiency": [
-            "proportional"
-        ]
-    },
-    {
-        "name": "郝龍斌",
-        "party": "NP",
-        "caucus": "NP",
-        "constuiency": [
-            "TPE",
-            2
-        ]
-    },
-    {
         "name": "徐中雄",
         "party": "KMT",
         "caucus": "KMT",
@@ -552,21 +515,21 @@
         ]
     },
     {
-        "name": "徐少萍",
+        "name": "徐成焜",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "KEE",
+            "MIA",
             0
         ]
     },
     {
-        "name": "徐成焜",
+        "name": "翁大銘",
         "party": null,
-        "caucus": "DU",
+        "caucus": null,
         "constuiency": [
-            "MIA",
-            0
+            "TPE",
+            2
         ]
     },
     {
@@ -590,10 +553,19 @@
     {
         "name": "莊金生",
         "party": "KMT",
+        "caucus": "KMT"
+    },
+    {
+        "name": "華加志",
+        "party": "KMT",
+        "caucus": "KMT"
+    },
+    {
+        "name": "郭石城",
+        "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "aborigine",
-            "lowland"
+            "foreign"
         ]
     },
     {
@@ -615,7 +587,7 @@
         ]
     },
     {
-        "name": "郭振權",
+        "name": "郭政權",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
@@ -624,38 +596,12 @@
         ]
     },
     {
-        "name": "陳一新",
-        "party": "NP",
-        "caucus": "NP",
-        "constuiency": [
-            "proportional"
-        ]
-    },
-    {
-        "name": "陳文輝",
-        "party": "TIP",
-        "caucus": "TIP",
-        "constuiency": [
-            "MIA",
-            0
-        ]
-    },
-    {
-        "name": "陳永興",
-        "party": null,
-        "caucus": null,
-        "constuiency": [
-            "HUA",
-            0
-        ]
-    },
-    {
         "name": "陳光復",
-        "party": "TIP",
-        "caucus": "TIP",
+        "party": "DPP",
+        "caucus": "DPP",
         "constuiency": [
             "KHH",
-            1
+            2
         ]
     },
     {
@@ -664,16 +610,16 @@
         "caucus": "KMT",
         "constuiency": [
             "TPQ",
-            2
+            0
         ]
     },
     {
-        "name": "陳其邁",
-        "party": "DPP",
-        "caucus": "DPP",
+        "name": "陳志彬",
+        "party": "KMT",
+        "caucus": "KMT",
         "constuiency": [
-            "KHH",
-            2
+            "NAN",
+            0
         ]
     },
     {
@@ -686,11 +632,46 @@
         ]
     },
     {
+        "name": "陳建平",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "KHH",
+            2
+        ]
+    },
+    {
+        "name": "陳昭南",
+        "party": "DPP",
+        "caucus": "DPP",
+        "constuiency": [
+            "proportional"
+        ]
+    },
+    {
         "name": "陳癸淼",
         "party": "NP",
         "caucus": "NP",
         "constuiency": [
+            "PEN",
+            0
+        ]
+    },
+    {
+        "name": "陳健民",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
             "proportional"
+        ]
+    },
+    {
+        "name": "陳婉真",
+        "party": "DPP",
+        "caucus": "DPP",
+        "constuiency": [
+            "TPQ",
+            0
         ]
     },
     {
@@ -721,25 +702,7 @@
         ]
     },
     {
-        "name": "陳漢強",
-        "party": "NP",
-        "caucus": "NP",
-        "constuiency": [
-            "TPE",
-            2
-        ]
-    },
-    {
-        "name": "陳鴻基",
-        "party": "KMT",
-        "caucus": "KMT",
-        "constuiency": [
-            "TPE",
-            1
-        ]
-    },
-    {
-        "name": "陳瓊讚",
+        "name": "陳錫章",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
@@ -747,31 +710,31 @@
         ]
     },
     {
+        "name": "陳璽安",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "proportional"
+        ]
+    },
+    {
+        "name": "高天來",
+        "party": "KMT",
+        "caucus": "KMT"
+    },
+    {
         "name": "高育仁",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "TNQ",
+            "KHQ",
             0
         ]
     },
     {
-        "name": "高惠宇",
-        "party": "NP",
-        "caucus": "NP",
-        "constuiency": [
-            "TPE",
-            2
-        ]
-    },
-    {
-        "name": "高揚昇",
+        "name": "高巍和",
         "party": "KMT",
-        "caucus": "KMT",
-        "constuiency": [
-            "aborigine",
-            "highland"
-        ]
+        "caucus": "KMT"
     },
     {
         "name": "張文儀",
@@ -783,17 +746,17 @@
         ]
     },
     {
-        "name": "張光錦",
-        "party": "KMT",
-        "caucus": "KMT",
-        "constuiency": [
-            "proportional"
-        ]
-    },
-    {
         "name": "張旭成",
         "party": "DPP",
         "caucus": "DPP",
+        "constuiency": [
+            "foreign"
+        ]
+    },
+    {
+        "name": "張建國",
+        "party": "KMT",
+        "caucus": "KMT",
         "constuiency": [
             "foreign"
         ]
@@ -803,7 +766,8 @@
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
-            "proportional"
+            "TPE",
+            2
         ]
     },
     {
@@ -811,17 +775,25 @@
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
-            "KHH",
-            1
+            "proportional"
         ]
     },
     {
-        "name": "張晉城",
+        "name": "張偉",
         "party": null,
         "caucus": null,
         "constuiency": [
-            "TPE",
-            1
+            "HUA",
+            0
+        ]
+    },
+    {
+        "name": "張堅華",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "KEE",
+            0
         ]
     },
     {
@@ -834,47 +806,29 @@
         ]
     },
     {
-        "name": "章仁香",
-        "party": "KMT",
-        "caucus": "KMT",
+        "name": "許國泰",
+        "party": "DPP",
+        "caucus": "DPP",
         "constuiency": [
-            "aborigine",
-            "lowland"
+            "TAO",
+            0
         ]
     },
     {
         "name": "許添財",
         "party": "DPP",
-        "caucus": "NNA",
+        "caucus": "DPP",
         "constuiency": [
             "TNN",
             0
         ]
     },
     {
-        "name": "許舒博",
-        "party": "KMT",
-        "caucus": "KMT",
-        "constuiency": [
-            "YUN",
-            0
-        ]
-    },
-    {
-        "name": "傅崑成",
-        "party": "NP",
-        "caucus": "NP",
-        "constuiency": [
-            "TPQ",
-            1
-        ]
-    },
-    {
-        "name": "彭紹瑾",
+        "name": "彭百顯",
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
-            "TAO",
+            "NAN",
             0
         ]
     },
@@ -897,6 +851,15 @@
         ]
     },
     {
+        "name": "游日正",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "TAO",
+            0
+        ]
+    },
+    {
         "name": "游淮銀",
         "party": "KMT",
         "caucus": "KMT",
@@ -906,12 +869,28 @@
         ]
     },
     {
+        "name": "程建人",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "proportional"
+        ]
+    },
+    {
         "name": "葉菊蘭",
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
-            "TPE",
-            1
+            "proportional"
+        ]
+    },
+    {
+        "name": "葉憲修",
+        "party": null,
+        "caucus": null,
+        "constuiency": [
+            "TPQ",
+            0
         ]
     },
     {
@@ -923,29 +902,28 @@
         ]
     },
     {
-        "name": "馮定國",
-        "party": "NP",
-        "caucus": "NP",
+        "name": "黃主文",
+        "party": "KMT",
+        "caucus": "KMT",
         "constuiency": [
-            "TXQ",
+            "TAO",
             0
         ]
     },
     {
-        "name": "黃天福",
-        "party": "DPP",
-        "caucus": "DPP",
-        "constuiency": [
-            "TPE",
-            1
-        ]
-    },
-    {
-        "name": "黃秀孟",
+        "name": "黃正一",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "TNQ",
+            "proportional"
+        ]
+    },
+    {
+        "name": "黃信介",
+        "party": "DPP",
+        "caucus": "DPP",
+        "constuiency": [
+            "HUA",
             0
         ]
     },
@@ -955,24 +933,25 @@
         "caucus": "KMT",
         "constuiency": [
             "KHH",
-            2
+            1
         ]
     },
     {
-        "name": "黃國鐘",
-        "party": "KMT",
-        "caucus": "KMT",
+        "name": "黃昭輝",
+        "party": "DPP",
+        "caucus": "DPP",
         "constuiency": [
             "KHH",
             2
         ]
     },
     {
-        "name": "黃清林",
-        "party": "KMT",
-        "caucus": "KMT",
+        "name": "黃煌雄",
+        "party": "DPP",
+        "caucus": "DPP",
         "constuiency": [
-            "foreign"
+            "TPQ",
+            0
         ]
     },
     {
@@ -992,11 +971,12 @@
         ]
     },
     {
-        "name": "靳曾珍麗",
+        "name": "詹裕仁",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "proportional"
+            "TPQ",
+            0
         ]
     },
     {
@@ -1009,6 +989,23 @@
         ]
     },
     {
+        "name": "廖永來",
+        "party": "DPP",
+        "caucus": "DPP",
+        "constuiency": [
+            "TXQ",
+            0
+        ]
+    },
+    {
+        "name": "廖光生",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "foreign"
+        ]
+    },
+    {
         "name": "廖福本",
         "party": "KMT",
         "caucus": "KMT",
@@ -1018,30 +1015,16 @@
         ]
     },
     {
-        "name": "廖學廣",
-        "party": null,
-        "caucus": null,
-        "constuiency": [
-            "TPQ",
-            3
-        ]
+        "name": "蔡中涵",
+        "party": "KMT",
+        "caucus": "KMT"
     },
     {
-        "name": "蔡中涵",
+        "name": "蔡友土",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "aborigine",
-            "lowland"
-        ]
-    },
-    {
-        "name": "蔡正揚",
-        "party": "NP",
-        "caucus": "NP",
-        "constuiency": [
-            "TPQ",
-            3
+            "proportional"
         ]
     },
     {
@@ -1063,35 +1046,18 @@
         ]
     },
     {
-        "name": "蔡明憲",
-        "party": "DPP",
-        "caucus": "DPP",
-        "constuiency": [
-            "TXG",
-            0
-        ]
-    },
-    {
         "name": "蔡勝邦",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "proportional"
-        ]
-    },
-    {
-        "name": "蔡煌瑯",
-        "party": "DPP",
-        "caucus": "DPP",
-        "constuiency": [
-            "NAN",
+            "TPQ",
             0
         ]
     },
     {
-        "name": "蔡璧煌",
-        "party": "KMT",
-        "caucus": "KMT",
+        "name": "趙綉娃",
+        "party": "DPP",
+        "caucus": "DPP",
         "constuiency": [
             "proportional"
         ]
@@ -1102,16 +1068,16 @@
         "caucus": "KMT",
         "constuiency": [
             "TPQ",
-            3
+            0
         ]
     },
     {
-        "name": "鄭永金",
+        "name": "趙振鵬",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "HSQ",
-            0
+            "TPE",
+            1
         ]
     },
     {
@@ -1120,32 +1086,15 @@
         "caucus": "KMT",
         "constuiency": [
             "TPQ",
-            1
-        ]
-    },
-    {
-        "name": "鄭朝明",
-        "party": "DPP",
-        "caucus": "DPP",
-        "constuiency": [
-            "PIF",
             0
         ]
     },
     {
-        "name": "鄭龍水",
-        "party": "NP",
-        "caucus": "NP",
-        "constuiency": [
-            "proportional"
-        ]
-    },
-    {
-        "name": "鄭寶清",
+        "name": "劉文慶",
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
-            "TAO",
+            "TXG",
             0
         ]
     },
@@ -1162,7 +1111,26 @@
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "proportional"
+            "TXQ",
+            0
+        ]
+    },
+    {
+        "name": "劉政鴻",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "MIA",
+            0
+        ]
+    },
+    {
+        "name": "劉炳華",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "TPQ",
+            0
         ]
     },
     {
@@ -1174,18 +1142,9 @@
         ]
     },
     {
-        "name": "劉盛良",
+        "name": "劉瑞生",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
-            "TPQ",
-            3
-        ]
-    },
-    {
-        "name": "劉進興",
-        "party": "DPP",
-        "caucus": "DPP",
         "constuiency": [
             "proportional"
         ]
@@ -1196,7 +1155,16 @@
         "caucus": "KMT",
         "constuiency": [
             "TPE",
-            1
+            2
+        ]
+    },
+    {
+        "name": "盧修一",
+        "party": "DPP",
+        "caucus": "DPP",
+        "constuiency": [
+            "TPQ",
+            0
         ]
     },
     {
@@ -1209,29 +1177,29 @@
         ]
     },
     {
-        "name": "蕭裕珍",
-        "party": "DPP",
-        "caucus": "NNA",
+        "name": "賴英芳",
+        "party": null,
+        "caucus": null,
         "constuiency": [
-            "TPE",
-            2
-        ]
-    },
-    {
-        "name": "賴來焜",
-        "party": "NP",
-        "caucus": "NP",
-        "constuiency": [
-            "TAO",
+            "NAN",
             0
         ]
     },
     {
-        "name": "錢達",
-        "party": "NP",
-        "caucus": "NP",
+        "name": "戴振耀",
+        "party": "DPP",
+        "caucus": "DPP",
         "constuiency": [
-            "foreign"
+            "proportional"
+        ]
+    },
+    {
+        "name": "謝長廷",
+        "party": "DPP",
+        "caucus": "DPP",
+        "constuiency": [
+            "TPE",
+            1
         ]
     },
     {
@@ -1239,25 +1207,7 @@
         "party": "NP",
         "caucus": "NP",
         "constuiency": [
-            "TXG",
-            0
-        ]
-    },
-    {
-        "name": "謝欽宗",
-        "party": "KMT",
-        "caucus": "KMT",
-        "constuiency": [
-            "TPE",
-            2
-        ]
-    },
-    {
-        "name": "謝錦川",
-        "party": "DPP",
-        "caucus": "DPP",
-        "constuiency": [
-            "TNQ",
+            "HSZ",
             0
         ]
     },
@@ -1266,17 +1216,7 @@
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
-            "CHA",
-            0
-        ]
-    },
-    {
-        "name": "鍾利德",
-        "party": "KMT",
-        "caucus": "KMT",
-        "constuiency": [
-            "HUA",
-            0
+            "proportional"
         ]
     },
     {
@@ -1285,23 +1225,25 @@
         "caucus": "KMT",
         "constuiency": [
             "TPQ",
-            3
+            0
         ]
     },
     {
-        "name": "簡金卿",
+        "name": "魏鏞",
         "party": "KMT",
         "caucus": "KMT",
         "constuiency": [
-            "proportional"
+            "TPE",
+            2
         ]
     },
     {
-        "name": "簡錫楷",
+        "name": "魏耀乾",
         "party": "DPP",
         "caucus": "DPP",
         "constuiency": [
-            "proportional"
+            "TNQ",
+            0
         ]
     },
     {
@@ -1310,7 +1252,15 @@
         "caucus": "DPP",
         "constuiency": [
             "TPE",
-            1
+            2
+        ]
+    },
+    {
+        "name": "嚴啟昌",
+        "party": "KMT",
+        "caucus": "KMT",
+        "constuiency": [
+            "proportional"
         ]
     },
     {
@@ -1322,12 +1272,12 @@
         ]
     },
     {
-        "name": "羅福助",
+        "name": "蘇火燈",
         "party": null,
         "caucus": null,
         "constuiency": [
-            "TPQ",
-            2
+            "TNQ",
+            0
         ]
     },
     {
@@ -1336,6 +1286,15 @@
         "caucus": "DPP",
         "constuiency": [
             "TNQ",
+            0
+        ]
+    },
+    {
+        "name": "蘇嘉全",
+        "party": "DPP",
+        "caucus": "DPP",
+        "constuiency": [
+            "PIF",
             0
         ]
     },
