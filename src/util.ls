@@ -76,23 +76,41 @@ build_people_interp_map = (ref_id, data, base_dct) ->
                 update_one_to_many_map base_dct, it, ref_id
     base_dct
 
-nameListFixup = (names) ->
-    # Heuristic: merge two names if both are single words
-    for i to names.length - 1
-        if names[i]?.length == 1 and names[i+1]?.length == 1
-            names[i] += names[i+1]
-            names[i+1] = ''
+_global_name_cache = null
 
-    # Heuristic: split a long name into two with luck.  The data is wrong
-    # back to doc->html phase. Here is a heuristic to make most cases work,
-    # with exceptions like "李正宗靳曾珍麗" that require efforts to do
-    # right (e.g. with a name dictionary).
+initNameCache =  ->
+    # Not everyone is in mly-*.json. Until we have them, let's put some of them here directly.
+    _global_name_cache := {[x, 1] for x in
+        <[ 蔡英文 盧天麟 徐慶元 羅文嘉 瓦歷斯‧貝林
+           何嘉榮 林宗男 楊秋興 朱立倫 李炷烽 ]>}
+    for i from 2 to 8
+        json = try require "../data/mly-#i.json"
+        _global_name_cache <<< {[fixup(person.name), 1] for person in json}
+
+nameListFixup = (names) ->
+    initNameCache! if _global_name_cache == null
     ret_names = []
-    for name in names when name != ''
-        if name.length == 6 and /‧/ != name
-            ret_names.push name.substr(0, 3), name.substr(3, 3)
+    unknown = ''
+    word_stream = names * ''
+    i = 0
+    while i < word_stream.length
+        for len from 2 to 10
+            maybe_name = word_stream.substr(i, len)
+            if maybe_name of _global_name_cache
+                break
+        if len == 10
+            # try from the next charactor if not found
+            unknown += word_stream[i]
+            i++
         else
-            ret_names.push name
+            # Our dictionary doesn't cover everybody, thus the tricky to pick up those missing.
+            if unknown.length > 0
+                ret_names.push unknown
+                unknown = ''
+            ret_names.push maybe_name
+            i += len
+    if unknown.length > 0
+        ret_names.push unknown
     ret_names
 
 
