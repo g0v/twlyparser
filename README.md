@@ -99,6 +99,13 @@ twlyparser $ ./node_modules/.bin/lsc ./md2json.ls --dir ../data
 ./node_modules/.bin/lsc format-log-resource-json.ls --dir ../data
 ```
 
+# generate CK csv from json
+```
+lsc ck_json2csv_mly.ls > mly.csv                 # ./data/mly-8.json
+lsc ck_json2csv_gazette.ls > gazettes.csv        # ./data/gazettes.json
+lsc ck_json2csv_vote.ls --dir ../ly-gazette/raw  # 3110.json 3111.json ...
+```
+
 # To bootstrap or maintain the index file cache in data/:
 
 ```
