@@ -1,4 +1,4 @@
-require! {cheerio, marked, path}
+require! {cheerio, marked, path, crypto}
 require! \js-yaml
 require! "../lib/util"
 require! "../lib/rules"
@@ -324,9 +324,12 @@ class Interpellation
         if @current-conversation.length
             if @subsection
                 people = if type is 'interp' => @current-participants else null
-                meta = {type, people}
+                shasum = crypto.createHash('sha1')
+                shasum.update("#{ @current-conversation }")
+                digest = shasum.digest('hex')
+                meta = {type, people, digest}
                 @output "    ```json\n    #{ JSON.stringify meta }\n    ```"
-                itemprefix 
+                itemprefix
                 for [speaker, fulltext] in @current-conversation
                     itemprefix = if type is 'interp'
                         if speaker => '* ' else '    '
