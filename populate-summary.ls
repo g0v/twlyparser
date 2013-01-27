@@ -51,7 +51,7 @@ parseAgenda = (g, body, doctype, type, cb) ->
                     eod = yes
                 [_, remark]? = summary?match /（([^（）]+)）$/
                 dtype = match summary
-                | undefined => 'other'
+                | void => 'other'
                 | /^[^，]+臨時提案/ => 'exmotion'
                 | /提請復議/        => 'reconsideration'
                 | /(.*?)提議增列([^，]*)事項/ =>
@@ -187,7 +187,7 @@ prepare_motions = (g, cb) ->
         entry.status = entryStatus entry.resolution, \other
         entry
 
-    all = agendaResults +++ exmotionResults +++ extraResults
+    all = agendaResults ++ exmotionResults ++ extraResults
     #console.log \==ERROR all.length, proceeding.length
 
     cb all

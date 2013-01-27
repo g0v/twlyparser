@@ -10,7 +10,7 @@ class Rules
 
     rule: (query) ->
         [groupname, rulename] = query.split \.
-        if groupname is undefined or rulename is undefined 
+        if groupname is void or rulename is void
             throw "invalide rule: #query"
 
         try
@@ -26,7 +26,7 @@ class Rules
         flag ?= ''
         if not @_cache[regexname]
             regexstr = @rule query .regex
-            throw "query does not have regex string" if regexstr is undefined
+            throw "query does not have regex string" if regexstr is void
 #            @_cache[query] = new xregexp.XRegExp.cache regexstr.replace "\n", ''
             @_cache[regexname] = new RegExp (regexstr.replace "\n", ''), flag
         @_cache[regexname]

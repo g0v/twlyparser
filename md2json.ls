@@ -84,7 +84,7 @@ class LyMarkdownToJsonParser extends MarkdownToJsonParser
                 [speaker, content] = that[1 to 2]
                 @lastSpeaker = speaker
             | _ =>
-                speaker = @lastSpeaker || undefined
+                speaker = @lastSpeaker || void
                 content = token.text - /^\s*/ - /\s*$/
 
             match content
