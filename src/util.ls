@@ -131,4 +131,22 @@ parseCommittee = (name) ->
         throw it+JSON.stringify(committees) unless code
         code
 
-module.exports = {datetimeOfLyDateTime, intOfZHNumber, parseZHNumber, zhreg, zhreghead, zhnumber, readFileSync, build_people_interp_map, nameListFixup, committees, parseCommittee}
+convertDoc = (file, {lodev, success, error}) ->
+    # XXX: correct this for different OS
+    cmd = if lodev
+        "/Applications/LOdev.app/Contents/MacOS/python ../twlyparser/unoconv/unoconv.p3 -f html #file"
+    else
+        "/Applications/LibreOffice.app/Contents/MacOS/python ../twlyparser/unoconv/unoconv  -f html #file"
+    require! shelljs
+    p = shelljs.exec cmd, (code, output) ->
+        console.log \converted output, code, p?
+        clear-timeout rv
+        success!
+    rv = do
+        <- setTimeout _, 320sec * 1000ms
+        console.log \timeout
+        p.kill \SIGTERM
+        p := null
+        error!
+
+module.exports = {datetimeOfLyDateTime, intOfZHNumber, parseZHNumber, zhreg, zhreghead, zhnumber, readFileSync, build_people_interp_map, nameListFixup, committees, parseCommittee, convertDoc}

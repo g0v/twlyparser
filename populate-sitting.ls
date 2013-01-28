@@ -2,6 +2,7 @@ require! \./lib/ly
 require! <[request optimist path fs shelljs async]>
 
 {Parser, MemoParser} = require \./lib/parser
+{convertDoc} = require \./lib/util
 
 {gazette, dometa, ad, lodev, type, force} = optimist.argv
 
@@ -65,21 +66,7 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
         _, {size}? <- fs.stat html
         return extractMeta! if size
         console.log \doing file
-        # XXX: correct this for different OS
-        cmd = if lodev
-            "/Applications/LOdev.app/Contents/MacOS/python unoconv/unoconv.p3 -f html #file"
-        else
-            "/Applications/LibreOffice.app/Contents/MacOS/python unoconv/unoconv  -f html #file"
-        p = shelljs.exec cmd, (code, output) ->
-            console.log \converted output, code, p?
-            clear-timeout rv
-            extractMeta! if p?
-        rv = do
-            <- setTimeout _, 320sec * 1000ms
-            console.log \timeout
-            p.kill \SIGTERM
-            p := null
-            done!
+        convertDoc file, {lodev, error: done, success: -> extractMeta!}
 
 err, res <- async.waterfall funcs
 console.log \ok, res

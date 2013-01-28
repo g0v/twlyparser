@@ -576,7 +576,7 @@ class TextParser extends Parser
                 @parseLine line
 
 class TextFormatter implements HTMLParser
-    ({@output = console.log, @context-cb, @rules} = {}) ->
+    ({@output = console.log, @context-cb, @rules, @chute = true} = {}) ->
         @chute-map = try require \../data/chute-map
         @chute-map ?= {}
 
@@ -605,7 +605,7 @@ class TextFormatter implements HTMLParser
             [_, width, height] = output.match /width="(\d+)" height="(\d+)"/
             if width / height > 60
                 @replaceWith('<hr />')
-            else
+            else if @chute
                 if [id, shortcut]? = self.chute-map[file]
                     uri = "//media.getchute.com/media/#shortcut"
                 uri ?= exec-sync "lsc ./img-filter.ls #file"
@@ -621,17 +621,18 @@ class BillParser extends TextFormatter
             | /^院總第(\d+)號(.*)提案第(\d+)號$/ =>
                 @output that.0
                 return
-            | /^(?:「?(.*草案)」?)?(條文)?(對照表)?$/ =>
+            | /^(?:「?(.*草案?)」?)?(?:條文)?(對照表)?$/ =>
                 name = that.1
                 type = if that.2 => \lawdiff else \lawproposal
                 [h, ...content] = rest
                 header = h.find \td .map -> @text! - /^\s*|\s*$/gm
-                tosplit = [i for h, i in header when h is \說明 or h.match /\n/]
+                tosplit = [i for h, i in header when h is \說明 or h.match /\n/ or h.match /NOTYET委員等提案/]
                 content .= map ->
                     it.find \td .map -> @text! - /^\s*|\s*$/gm
                 # a column can contain multiple proposals.  splice them into individual diff
+                derived-names = []
                 for i in tosplit.reverse!
-                    names = header[i].split /\n/
+                    names = derived-names +++ header[i].split /\n/
                     header[i to i] = names
                     for e,j in content
                         x = e[i]split /(委員.*提案|審查會)：\n/
@@ -642,11 +643,13 @@ class BillParser extends TextFormatter
                         while who = x.shift!
                             if header[i] isnt \說明
                                 throw "#who not in #names" unless who in names
+                            #else
+                            #    derived-names.push who unless who in names
                             splitted[who] = x.shift! - /\s*$/
                         e[i to i] = if header[i] is \說明
                             [splitted]
                         else
-                            [splitted[who] for who in names]
+                            [splitted[who] for who in names when splitted[who]]
                 [i] = [j for h, j in header when h is \審查會通過條文]
                 [comment] = [j for h, j in header when h is \說明]
                 if i?
