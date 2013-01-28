@@ -325,7 +325,7 @@ class Interpellation
             if @subsection
                 people = if type is 'interp' => @current-participants else null
                 shasum = crypto.createHash('sha1')
-                shasum.update("#{ @current-conversation }")
+                shasum.update("#{ JSON.stringify @current-conversation }")
                 digest = shasum.digest('hex')
                 meta = {type, people, digest}
                 @output "    ```json\n    #{ JSON.stringify meta }\n    ```"
