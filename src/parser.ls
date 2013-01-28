@@ -1,4 +1,4 @@
-require! {cheerio, marked, path}
+require! {cheerio, marked, path, crypto}
 require! \js-yaml
 require! "../lib/util"
 require! "../lib/rules"
@@ -138,7 +138,7 @@ class Exmotion
         | (@)rules.regex \exmotion.other .exec =>
             line = that.0
             if @state == \petitioner
-                @json[@state]= @json[@state] +++ split_names line
+                @json[@state]= @json[@state] ++ split_names line
                 current_state = @state
         | (@)rules.regex \exmotion.disputed .exec =>
             switch that.1
@@ -324,9 +324,12 @@ class Interpellation
         if @current-conversation.length
             if @subsection
                 people = if type is 'interp' => @current-participants else null
-                meta = {type, people}
+                shasum = crypto.createHash('sha1')
+                shasum.update("#{ JSON.stringify @current-conversation }")
+                digest = shasum.digest('hex')
+                meta = {type, people, digest}
                 @output "    ```json\n    #{ JSON.stringify meta }\n    ```"
-                itemprefix 
+                itemprefix
                 for [speaker, fulltext] in @current-conversation
                     itemprefix = if type is 'interp'
                         if speaker => '* ' else '    '
@@ -336,7 +339,7 @@ class Interpellation
                 @conversation.push [ type, @current-conversation ]
             else
                 for [speaker, fulltext] in @current-conversation => @output "* #fulltext\n"
-                @conversation = @conversation +++ @current-conversation
+                @conversation = @conversation ++ @current-conversation
         @current-conversation = []
         @current-participants = []
         @subsection = true
@@ -435,7 +438,7 @@ class Vote
         | _ =>
             if @current_vote
                 @vote[@current_vote] ||= []
-                @vote[@current_vote] = @vote[@current_vote] +++ util.nameListFixup fulltext.split(/[　\s]+/)
+                @vote[@current_vote] = @vote[@current_vote] ++ util.nameListFixup fulltext.split(/[　\s]+/)
         @origCtx.push-line speaker, text, fulltext
         return @
     serialize: -> @origCtx.serialize!

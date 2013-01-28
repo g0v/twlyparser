@@ -93,7 +93,7 @@ class Questioning
             if @subsection
                 @conversation.push [ type, @current-conversation ]
             else
-                @conversation = @conversation +++ @current-conversation
+                @conversation = @conversation ++ @current-conversation
         @current-conversation = []
         @exmotion = false
         @subsection = true
