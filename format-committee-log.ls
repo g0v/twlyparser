@@ -27,7 +27,7 @@ parseContent = (id, g, klass, ext, e) ->
             unless output
                 console.error args
                 return
-            fs.writeSync output, (args +++ "\n")join ''
+            fs.writeSync output, (args ++ "\n")join ''
 
     if fromtext
         file = "#dir/#id.txt"

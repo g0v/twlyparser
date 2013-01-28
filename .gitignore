@@ -1,5 +1,6 @@
-tmp
-node_modules
-*.swp
 *.swo
-source/
+*.swp
+lib
+node_modules
+source
+tmp

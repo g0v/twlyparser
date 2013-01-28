@@ -20,9 +20,9 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
     output = fs.openSync "#dir/#id.#ext" \w
     process.stdout.write id
     process.stdout.write '\r'
-    
+
     try
-        parser = new klass {rules: rules, output: (...args) -> fs.writeSync output, (args +++ "\n")join ''}
+        parser = new klass {rules: rules, output: (...args) -> fs.writeSync output, (args ++ "\n")join ''}
 
         if fromtext
             file = "#dir/#id.txt"

@@ -4,7 +4,7 @@ require! {fs}
 zhnumber = <[○ 一 二 三 四 五 六 七 八 九 十]>
 
 zhmap = {[c, i] for c, i in zhnumber}
-zhreghead = new RegExp "^((?:#{ (<[百 零]> +++ zhnumber) * '|' })+)、(.*)$", \m
+zhreghead = new RegExp "^((?:#{ (<[百 零]> ++ zhnumber) * '|' })+)、(.*)$", \m
 zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)$"
 
 intOfZHNumber = ->
@@ -62,7 +62,7 @@ fixup = ->
 readFileSync = (path) -> fixup fs.readFileSync path, \utf8
 
 update_one_to_many_map = (dct, k, v) ->
-    if dct[k] is undefined
+    if dct[k] is void
         dct[k] = [v]
     else unless v in dct[k]
         dct[k].push v
