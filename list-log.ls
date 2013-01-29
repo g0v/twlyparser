@@ -3,8 +3,9 @@ require! \./lib/ly
 
 grouped = {}
 
-ly.forGazette null, (id, g, type, entries, files) ->
+ly.forGazette {}, (id, g, type, entries, files) ->
     return if type isnt /院會紀錄/
+    return if g.secret
     {ad, session, sitting, extra} = g
     return unless ad
     name = printf "立法院第 %d 屆第 %d 會期第 %2d 次會議紀錄", ad, session, sitting
@@ -18,8 +19,8 @@ for ad in ads => let sessions = grouped[ad]
         console.log "## 第 #session 會期"
 
         links = sittings.map ({extra,id,sitting}) ->
-            name = "#sitting"
-            name += '(臨時會)' if extra
+            name = if extra => "(第#{extra}次臨時會)" else ''
+            name += "#sitting"
             "[#{name}](#{id}.md)"
         .join ' '
         console.log "### 院會 #links"
