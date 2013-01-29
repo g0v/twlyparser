@@ -71,6 +71,9 @@ twlyparser $ mkdir source/
 twlyparser $ tar xzvf twlyrawdata.tgz -C source/ 
 twlyparser $ mkdir output
 
+# convert doc files to html and update data/gazettes.json with metadata
+twlyparser $ ./node_modules/.bin/lsc populate-sitting.ls --dometa --lode
+
 # generate text file from source/
 twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --text --gazette 4004 --dir ./output
 
