@@ -1,4 +1,5 @@
-author:
+#!/usr/bin/env lsc -cj
+autho:
   name: ['Chia-liang Kao']
   email: 'clkao@clkao.org'
 name: 'twlyparser'
@@ -18,7 +19,7 @@ engines:
   npm: '1.1.x'
 dependencies: {}
 devDependencies:
-  LiveScript: \1.1.x
+  LiveScript: ">= 1.1.1"
   optimist: \0.3.x
   cheerio: \0.10.x
   request: \2.12.x
