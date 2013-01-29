@@ -1,10 +1,11 @@
 require! \./lib/ly
 require! <[optimist mkdirp fs async cheerio request ./lib/util]>
 
-id = optimist.argv._
-
 extractNames = (content) ->
-    [_, role, names] = content.match /getLawMakerName\('(\w+)', '(.*)'\)/
+    unless [_, role, names]? = content.match /getLawMakerName\('(\w+)', '(.*)'\)/
+        return []
+    names .= replace /\s(\S)\s(\S)(\s|$)/g (...args) -> " #{args.1}#{args.2} "
+    names .= replace /黨團/ '黨團 '
     mly = names.split /\s+/ .filter (.length)
     [role, mly]
 
@@ -45,7 +46,11 @@ parseBill = (id, body, cb) ->
             [prop, value] = match key
             | /提案單位/ => [\propser_text text!]
             | \審查委員會 =>
-                [\committee util.parseCommittee text! - /^本院/ - /委員會$/]
+                text!match /^本院/
+                if text!match /^本院(.*?)(?:兩|三|四|五|六|七|八)?委員會$/
+                    [\committee util.parseCommittee that.1]
+                else
+                    [\propser_text text!]
             | \議案名稱 => [\summary text!]
             | \提案人 => extractNames content.html!
             | \連署人 => extractNames content.html!
@@ -59,20 +64,33 @@ parseBill = (id, body, cb) ->
             | \相關附件 =>
                 doc = content.find \a .map ->
                     href = @attr \href
-                    [ href.match(/(pdf|word)/i).1.toLowerCase!, href ]
+                    href .= replace /^http:\/\/10.12.8.14:28080\//, 'http://misq.ly.gov.tw/'
+                    [ href.match(/(pdf|doc)/i).1.toLowerCase!, href ]
                 [\doc, {[type, uri] for [type, uri] in doc}]
             | otherwise => [key, text!]
-            info[prop] = value
+            info[prop] = value if prop
     cb info
 
-info <- getBill id
-if uri = info.doc.word
-    console.log \has uri
-    file = "source/bill/#{id}/file.doc"
-    _, {size}? <- fs.stat file
-    unless size?
+
+id = optimist.argv._
+funcs = []
+optimist.argv._.forEach (id) ->
+    funcs.push (done) ->
+        console.log id
+        info <- getBill id
+        return done! unless uri = info.doc.doc
+        console.log \has uri
+        if uri is /http:\/\/10\./
+            console.error id, uri
+            return done!
+        file = "source/bill/#{id}/file.doc"
+        _, {size}? <- fs.stat file
+        return done! if size?
         writer = with fs.createWriteStream file
             ..on \error -> throw it
-            ..on \close -> console.log \done uri
+            ..on \close -> console.log \done uri; done!
             ..
         request {method: \GET, uri} .pipe writer
+
+<- async.waterfall funcs
+console.log \done
