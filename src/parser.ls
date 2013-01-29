@@ -605,7 +605,7 @@ class TextFormatter implements HTMLParser
             [_, width, height] = output.match /width="(\d+)" height="(\d+)"/
             if width / height > 60
                 @replaceWith('<hr />')
-            else if @chute
+            else if self.chute
                 if [id, shortcut]? = self.chute-map[file]
                     uri = "//media.getchute.com/media/#shortcut"
                 uri ?= exec-sync "lsc ./img-filter.ls #file"
