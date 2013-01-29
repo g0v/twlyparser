@@ -632,7 +632,7 @@ class BillParser extends TextFormatter
                 # a column can contain multiple proposals.  splice them into individual diff
                 derived-names = []
                 for i in tosplit.reverse!
-                    names = derived-names +++ header[i].split /\n/
+                    names = derived-names ++ header[i].split /\n/
                     header[i to i] = names
                     for e,j in content
                         x = e[i]split /(委員.*提案|審查會)：\n/
