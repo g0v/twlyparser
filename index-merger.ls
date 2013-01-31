@@ -1,11 +1,8 @@
-require! {optimist, fs, path}
+require! {optimist, fs, path, printf}
 require! \./lib/util
 
 HashToList = (the_hash) -> 
-  result = []
-  for key, val of the_hash
-    result.push val
-  result
+  result = [val for key, val of the_hash]
 
 FoldFiles = (json_st_from, json_st_to) -> 
   put_files = {}
@@ -18,22 +15,10 @@ FoldFiles = (json_st_from, json_st_to) ->
     put_files[each_file] = true
     json_st_to.files.push each_file
 
-Repeat = (str, length) ->
-  new Array length .join str
-
-PadZeroLeft = (num, length) ->
-  zeros = Repeat('0', length);
-  num_with_zero = zeros + '' + num
-  strlen = num_with_zero.length
-  result = num_with_zero .substr strlen - length
-
 JsonListToHash = (json_list) ->
   hash_st = {}
   for json_st in json_list
-    gazette = json_st.gazette
-    book = json_st.book
-    seq = PadZeroLeft(json_st.seq, 2)
-    key = gazette + '-' + book + '-' + seq
+    key = printf "%05d%02d%02d", json_st.gazette, json_st.book, json_st.seq
     
     if hash_st[key]? 
       FoldFiles json_st, hash_st[key]
@@ -52,7 +37,7 @@ GetJsonList = (filename_list) ->
 
 SortObjectByKey = (the_object) ->
   keys = Object.keys the_object
-  keys.sort
+  keys.sort!
   result = {}
   for i in keys
     result[i] = the_object[i]
@@ -61,5 +46,6 @@ SortObjectByKey = (the_object) ->
 json_st_list = GetJsonList optimist.argv._
 json_st_hash = JsonListToHash json_st_list
 sort_json_st_hash = SortObjectByKey json_st_hash
-result = HashToList json_st_hash
-console.log JSON.stringify result, null, 4
+result = HashToList sort_json_st_hash
+result_json = JSON.stringify result, null, 4
+console.log result_json
