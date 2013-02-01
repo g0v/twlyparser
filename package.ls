@@ -31,4 +31,5 @@ devDependencies:
   xregexp: \2.0.0
   printf: \0.0.7
   'js-yaml': \1.0.3
+  'prelude-ls': \0.6.0
 optionalDependencies: {}
