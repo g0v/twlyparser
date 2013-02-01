@@ -6,11 +6,13 @@ hash-to-list = (the_hash) ->
 
 fold-files-to-put-files = (json_st_from, json_st_to) ->
   put_files = [{each_file: true} for each_file in json_st_to.files]
+
   result = []
   for each_file in json_st_from.files
     if put_files[each_file]? then continue
     put_files[each_file] = true
     result.push each_file
+  result
   
 fold-files = (json_st_from, json_st_to) -> 
   to_put_files = fold-files-to-put-files json_st_from, json_st_to
