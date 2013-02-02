@@ -3,7 +3,7 @@ require! \./lib/util
 require! \./lib/util_hsiao
 
 foldFilesToPutFiles = (json_st_from, json_st_to) ->
-  put_files = [{each_file: true} for each_file in json_st_to.files]
+  put_files = {[each_file, true] for each_file in json_st_to.files}
 
   result = []
   for each_file in json_st_from.files
@@ -14,12 +14,12 @@ foldFilesToPutFiles = (json_st_from, json_st_to) ->
   
 foldFiles = (json_st_from, json_st_to) -> 
   to_put_files = foldFilesToPutFiles json_st_from, json_st_to
-  json_st_to.files ++ to_put_files
+  json_st_to.files ++= to_put_files
 
 convertListToHash = (json_list) ->
   hash_st = {}
   for json_st in json_list
-    key = printf "%05d%02d%02d", json_st.gazette, json_st.book, json_st.seq
+    key = printf "%05d%s%02d%s", json_st.gazette, json_st.book, json_st.seq, json_st.type
     if hash_st[key]? then foldFiles json_st, hash_st[key] else hash_st[key] = json_st
   hash_st
 

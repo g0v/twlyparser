@@ -65,6 +65,13 @@ function Seq($filename_infix) {
   $result = (int)$result;
   $result = (string)$result;
 
+  $special_ary = array('999701_00002' => '1',
+                       '999901_00002' => '1', 
+                       '999901_00003' => '1');
+
+  if(isset($special_ary[$filename_infix])) $result = $special_ary[$filename_infix];
+                       
+
   return $result;
 }
 
@@ -176,9 +183,26 @@ function ProcessFile($filename) {
   return $result;
 }
 
+function ContentFixSpecialChar($content) {
+  $special_char = array('\uE58E' => '冲',
+                        '\uE8E2' => '堃',
+                        '\uE8E4' => '崐',
+                        '\uE457' => '堦',
+                        '\uE5CF' => '峯',
+                        '\uE1BD' => '%');
+  foreach($special_char as $from => $to) {
+    $from_char = json_decode("\"" . $from . "\"");
+    //echo "from: $from from_char: $from_char\n";
+    $content = preg_replace("/" . $from_char . "/smu", $to, $content); 
+  }
+  return $content;
+}
+
 function Main($argv) {
   $filename_list = $argv[1];
   $content = file_get_contents($filename_list);
+  $content = ContentFixSpecialChar($content);
+
   $lines = preg_split("/\n/u", $content);
 
   $result_ary = array();
