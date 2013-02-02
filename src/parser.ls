@@ -243,9 +243,16 @@ class Discussion
             @json.priority = that.1
         | (@)rules.regex \discussion.letter_secure .exec =>
             @json.secure = that.1
-        | (@)rules.regex \discussion.letter_report_to_start .exec  =>
+        | (@)rules.regex \discussion.letter_report_to_start .exec  =>        
             @json.report_to = []
+            # XXX: The parser does not handle report id in old gazettes
+            unless that.1
+                console.log "warn: can not parse report id in discussion ctx because it is old format"
+                return 
             res = @rules.match \discussion.letter_report_to_id, that.1, \g
+            unless res
+                console.log "warn: can not parse report id in discussion ctx because it is old format"
+                return
 
             for e in res
                 matched = @rules.match \discussion.letter_report_to_id e
