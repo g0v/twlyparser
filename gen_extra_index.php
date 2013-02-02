@@ -167,11 +167,11 @@ function ProcessFile($filename) {
   
   $files = array($url);
   
-  $result = array('gazette' => $gazette,
-                  'book' => $book,
-                  'seq' => $seq,
-                  'type' => $the_type,
-                  'summary' => $summary,
+  $result = array('gazette' => (string)$gazette,
+                  'book' => (string)$book,
+                  'seq' => (string)$seq,
+                  'type' => (string)$the_type,
+                  'summary' => (string)$summary,
                   'files' => $files);
   return $result;
 }

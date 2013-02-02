@@ -32,4 +32,5 @@ devDependencies:
   printf: \0.0.7
   'js-yaml': \1.0.3
   'prelude-ls': \0.6.0
+  async: \0.1.22
 optionalDependencies: {}
