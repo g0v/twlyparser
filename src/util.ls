@@ -134,7 +134,7 @@ parseCommittee = (name) ->
 convertDoc = (file, {lodev, success, error}) ->
     # XXX: correct this for different OS
     cmd = if lodev
-        "/Applications/LOdev.app/Contents/MacOS/python ../twlyparser/unoconv/unoconv.p3 -f html #file"
+        "/Applications/LOdev.app/Contents/MacOS/python ../twlyparser/unoconv/unoconv -f html #file"
     else
         "/Applications/LibreOffice.app/Contents/MacOS/python ../twlyparser/unoconv/unoconv  -f html #file"
     require! shelljs
