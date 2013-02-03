@@ -1,12 +1,6 @@
-__FILE__ = 'util_hsiao'
 require! {fs, async, path, mkdirp, request}
 
 getUriList = (uri_list, id, prefix) -> 
-  __FUNC__ = \getUriList
-  debug \INFO, __FILE__, __FUNC__, \uri_list, uri_list
-  debug \INFO, __FILE__, __FUNC__, \id, id
-  debug \INFO, __FILE__, __FUNC__, \prefix, prefix
-
   funcs = []
   funcs.push (cb) -> 
     err <- mkdirp "#{prefix}/#{id}"
@@ -15,7 +9,6 @@ getUriList = (uri_list, id, prefix) ->
 
   for uri in uri_list => let uri, fname = path.basename uri
     file = "#{prefix}/#{id}/#{fname}"
-    debug \INFO, __FILE__, __FUNC__, \file, file
     funcs.push (cb) ->
       _, {size}? <- fs.stat file
       return cb! if size?
@@ -31,7 +24,7 @@ getUriList = (uri_list, id, prefix) ->
       request {method: \GET, uri} .pipe writer
 
   err, res <- async.waterfall funcs
-  console.log \done, res
+  console.log \done, 'err:' err, 'res:', res
 
 hashKeyToList = (the_hash) -> 
   result = [key for key, val of the_hash]
@@ -40,7 +33,7 @@ hashToList = (the_hash) ->
   result = [val for key, val of the_hash]
 
 listToHash = (the_list) -> 
-  result = {[item, true] for item in the_list}
+  result = {[.., true] for the_list}
 
 nonRepeatedList = (the_list) ->
   the_list_to_hash = listToHash the_list
