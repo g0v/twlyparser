@@ -15,4 +15,4 @@ g.entries = [each_index for each_index in ly.index when each_index.gazette == ga
 
 uri_list = [entryToUri g.year, g.vol, each_entry for each_entry in g.entries]
 uri_list_non_repeated = util_hsiao.nonRepeatedList uri_list
-util_hsiao.getUriList uri_list_non_repeated, gazette, 'source-pdf'
+util_hsiao.getUriList uri_list_non_repeated, gazette, 'source/pdf'

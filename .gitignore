@@ -4,4 +4,7 @@ lib
 node_modules
 source
 source-pdf
+source-html
+source-xml
 tmp
+*.js

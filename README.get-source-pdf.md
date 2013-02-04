@@ -6,9 +6,10 @@ The purpose of getting pdf files is to pdftohtml and obtain page info.
 
 ### Quick start: 
 
-- ./get-source-pdf-all.sh
+- ./script/get-source-pdf-all.sh
 (You need data/index.json and data/gazettes.json for gazette no. reference.)
 
-- ./gen-source-html-xml-all.sh
+- ./script/gen-source-html-xml-all.sh
+(You need pdftohtml (poppler http://poppler.freedesktop.org/ or xpdf http://www.foolabs.com/xpdf/) to convert pdf to html)
 
 
