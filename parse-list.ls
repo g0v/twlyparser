@@ -37,13 +37,13 @@ files.forEach (file) ->
             gazettes[the_gazette] ?= { year, vol, date: parseTWDate date }
             entry = {gazette: the_gazette, book, seq, type, summary }
             entry_key = entryKey(entry)
-            if not entries_hash[entry_key]? then entries_hash[entry_key] = entry else console.log '[WARNING] repeated:', entry_key
+            if entries_hash[entry_key]? then console.log '[WARNING] repeated:', entry_key else entries_hash[entry_key] = entry
             #return
             # the html is converted with word.  use unoconv instead
             #getFileList ref, id, \html
             #<- getFileList ref, gazette, \doc
             #console.log it
 
-entries = util_hsiao.hashToList entries_hash
+entries = [val for key, val of entries_hash]
 fs.writeFileSync \data/gazettes.json JSON.stringify gazettes, null, 4
 fs.writeFileSync \data/index.json JSON.stringify entries, null, 4
