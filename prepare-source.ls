@@ -25,7 +25,7 @@ getFileList = ({year, vol, book, seq}, id, type, cb) ->
             batchId: 3
             instanceId: 0
             page: '/LyLCEW/lcivCommMore.action'
-            scriptSessionId: '3fvwg*EhOjTZ7qK6A$zecem0wOj/N1gSyOj-0ZcOOZyrt'
+            scriptSessionId: 'G2QK8XSngQBcD1FnDRSQj3XmZHj/VlFd*Hj-A9LrEZ7og'
     [_, entry] = body.match /r.handleCallback\((.*)\);/
     [_, _, entry]? = try eval "[#{entry}]" # XXX: sandbox
     cb (for {filePath},i in entry
