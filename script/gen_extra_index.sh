@@ -9,3 +9,5 @@ fi
 
 echo "php script/gen_extra_index.php data/extra/extra_files.txt > data/extra/index.extra.json"
 php script/gen_extra_index.php data/extra/extra_files.txt > data/extra/index.extra.json
+
+cd "${current_dir}"

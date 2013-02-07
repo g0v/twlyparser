@@ -32,11 +32,11 @@ getJsonStList = (filename_list) ->
 
 sortObjectByKey = (the_object) ->
   keys = Object.keys the_object ..sort!
-  result = [the_object[i] for i in keys]
+  result = {[i, the_object[i]] for i in keys}
 
 json_st_list = getJsonStList optimist.argv._
 json_st_hash = convertListToHash json_st_list
 sort_json_st_hash = sortObjectByKey json_st_hash
-result = util_hsiao.hashToList sort_json_st_hash
+result = util_hsiao.hashToList(sort_json_st_hash)
 result_json = JSON.stringify result, null, 4
 console.log result_json
