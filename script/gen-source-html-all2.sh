@@ -1,5 +1,8 @@
 #!/bin/bash
 
+##########
+#for the source/{gazette} dirs which can not produce all htmls. specifically generate html from each doc.
+
 current_dir=`pwd`
 base_current_dir=`echo "${current_dir}"|sed '/s.*\//g'`
 if [ "${base_current_dir}" == "script" ]

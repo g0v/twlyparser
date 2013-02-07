@@ -1,5 +1,9 @@
 #!/bin/bash
 
+##########
+# generate htmls from docs. based on each source/{gazette} dir.
+
+
 current_dir=`pwd`
 base_current_dir=`echo "${current_dir}"|sed '/s.*\//g'`
 if [ "${base_current_dir}" == "script" ]
