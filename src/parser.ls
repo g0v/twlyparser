@@ -671,7 +671,7 @@ class BillParser extends TextFormatter
         super ...
 
 class MemoParser implements HTMLParser
-    ({@output = console.log, @output-json, @metaOnly} = {}) ->
+    ({@output = console.log, @output-json, @metaOnly, @rules} = {}) ->
         @lastSpeaker = null
         @ctx = @newContext Meta
     store: ->
@@ -679,7 +679,7 @@ class MemoParser implements HTMLParser
 
     newContext: (ctxType, args = {}) ->
         @store!
-        @ctx := if ctxType? => new ctxType args <<< {@output, @output-json} else null
+        @ctx := if ctxType? => new ctxType args <<< {@output, @rules, @output-json} else null
 
     parseLine: (fulltext) ->
         if fulltext is \報告事項

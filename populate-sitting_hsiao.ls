@@ -2,10 +2,11 @@ require! \./lib/ly
 require! <[request optimist path fs shelljs async]>
 
 {Parser} = require \./lib/parser
-{MemoParser} = require \./lib/parser_hsiao
+{MemoParser} = require \./lib/parser
 {convertDoc} = require \./lib/util_hsiao
 
 {gazette, dometa, ad, lodev, type, force} = optimist.argv
+
 
 metaOnly = dometa
 skip = false
@@ -31,14 +32,12 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
         return unless g.sitting?
     else
         return if ad and g.ad !~= ad
-    console.log 'id:', id, 'g:', g, 'type:', type
     return if type isnt index-type
     files = [files.0] if metaOnly
     files.forEach (uri) -> funcs.push (done) ->
         fname = path.basename uri
         file = "source/#{id}/#{fname}"
         _, {size}? <- fs.stat file
-        console.log 'file:', file, 'size:', size
         return done! unless size
         html = file.replace /\.doc$/, '.html'
 
@@ -57,10 +56,8 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
                 console.log \err err.stack
             if meta?ad?
                 if memo
-                    console.log 'is memo:', id, type
                     entries.0 <<< meta{ad,session,sitting,extra,secret,preparatory}
                 else
-                    console.log 'is normal:', id, type, meta{ad,session,sitting,extra,secret,preparatory}
                     g <<< meta{ad,session,sitting,extra,secret,preparatory}
                 console.log id, g
             else
@@ -68,7 +65,6 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
             done!
 
         _, {size}? <- fs.stat html
-        console.log "html:", html, "size:", size
         return extractMeta! if size
         console.log \doing file
         convertDoc file, {lodev, error: done, success: -> extractMeta!}
