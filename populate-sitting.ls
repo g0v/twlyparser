@@ -1,11 +1,11 @@
 require! \./lib/ly
 require! <[request optimist path fs shelljs async]>
 
-{Parser, MemoParser} = require \./lib/parser
-{convertDoc} = require \./lib/util
+{Parser} = require \./lib/parser
+{MemoParser} = require \./lib/parser_hsiao
+{convertDoc} = require \./lib/util_hsiao
 
 {gazette, dometa, ad, lodev, type, force} = optimist.argv
-
 
 metaOnly = dometa
 skip = false
