@@ -22,7 +22,7 @@ done
 for ((j = ${end}; j >= ${start}; j--))
 do
   echo "memo: ${j}"
-  #./node_modules/.bin/lsc populate-sitting_hsiao.ls --dometa --gazette ${j} --type memo --force
+#  ./node_modules/.bin/lsc populate-sitting_hsiao.ls --dometa --gazette ${j} --type memo --force
 done
 
 cd ${current_dir}

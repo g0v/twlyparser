@@ -6,5 +6,6 @@ source
 source-pdf
 source-html
 source-xml
+output
 tmp
 *.js

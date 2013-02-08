@@ -33,4 +33,5 @@ devDependencies:
   'js-yaml': \1.0.3
   'prelude-ls': \0.6.0
   async: \0.1.22
+  chute: \0.1.5
 optionalDependencies: {}
