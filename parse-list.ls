@@ -2,16 +2,6 @@ require! {cheerio, optimist, fs, printf}
 require! \./lib/util
 require! \./lib/util_hsiao
 
-entryKey = (entry) ->
-    printf "%05d%s%02d%s", entry.gazette, entry.book, entry.seq, entry.type
-
-entryListToHash = (entries) ->
-    {[entryKey(val), val] for val in entries}
-
-parseTWDate = ->
-    [_, y, m, d] = it.match /(\d+)\/(\d+)\/(\d+)/
-    new Date +y + 1911, +m-1, +d
-
 {_:files} = optimist.argv
 
 gazettes = try require \./data/gazettes
@@ -19,9 +9,17 @@ if gazettes == void then gazettes = {}
 entries = try require \./data/index
 if entries == void then entries = []
 
+entryListToHash = (entries) ->
+    {[entryKey(val), val] for val in entries}
+
 entries_hash = entryListToHash entries
-console.log 'entries_hash:'
-console.log entries_hash
+
+entryKey = (entry) ->
+    printf "%05d%s%02d%s", entry.gazette, entry.book, entry.seq, entry.type
+
+parseTWDate = ->
+    [_, y, m, d] = it.match /(\d+)\/(\d+)\/(\d+)/
+    new Date +y + 1911, +m-1, +d
 
 files.forEach (file) ->
     [_, gazette] = file.match /(\d+)/
