@@ -9,7 +9,7 @@ class MarkdownToJsonParser
         @reset!
 
     reset: ->
-        @ast = {data: []}
+        @ast = {data: [], _lv: 0}
         @current = @ast
         @stack = [@current]
 
@@ -35,14 +35,17 @@ class MarkdownToJsonParser
         switch token.type
         | \heading =>
             # {"type":"heading","depth":1,"text":"院會紀錄"}
-            if token.depth > @stack.length - 1
-                @push-to-stack { session: token.text, data: [] }
-            else if token.depth < @stack.length - 1
-                @stack.length = token.depth
-                @push-to-stack { session: token.text, data: [] }
+            while @current && @current._lv === undefined
+                @pop-from-stack!
+            if token.depth > @current._lv
+                @push-to-stack { session: token.text, data: [], _lv: token.depth }
+            else if token.depth < @current._lv
+                while token.depth <= @current._lv
+                    @pop-from-stack!
+                @push-to-stack { session: token.text, data: [], _lv: token.depth }
             else
                 @pop-from-stack!
-                @push-to-stack { session: token.text, data: [] }
+                @push-to-stack { session: token.text, data: [], _lv: token.depth }
         | \space =>
         | \code =>
             # {"type":"code","lang":"json","text":"{[null]}"}
@@ -88,17 +91,11 @@ class LyMarkdownToJsonParser extends MarkdownToJsonParser
                 content = token.text - /^\s*/ - /\s*$/
 
             match content
+            # TODO 九時四十八分
             | /[\s*（(](\d+時\d+分)[）)]\s*/ =>
                 content = content.replace that.0, ''
                 time = that.1
             @append {speaker, content, time}
-        | \loose_item_start, \list_item_start, \list_item_end  =>
-        | \list_end =>
-            # promote to upper level to simplty the structure
-            if @current.data.length == 1
-                promote_node = @current.data[0]
-                @pop-from-stack!
-                @replace-last-node promote_node
         | _ => super ...
 
     replace-last-node: (node) ->
@@ -115,8 +112,12 @@ class LyMarkdownToJsonParser extends MarkdownToJsonParser
         ast = super ...
         # simplify item list structure when possible
         @traverse ast, (node) ->
-            if node.session and node.data?.length == 1
+            if node.data?.length == 1
                 node <<<< node.data[0]
+                delete node.data unless node._lv?
+            if node.data?[0].speaker?
+                for d in node.data
+                    node.data.append
         ast
 
 {gazette, ad, dir = '.', text, fromtext} = optimist.argv
