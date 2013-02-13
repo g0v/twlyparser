@@ -2,7 +2,7 @@ require! \./lib/ly
 require! <[request optimist path fs shelljs async]>
 
 {Parser, MemoParser} = require \./lib/parser
-{convertDoc} = require \./lib/util_hsiao
+{convertDoc} = require \./lib/util
 
 {gazette, dometa, ad, lodev, type, force} = optimist.argv
 
