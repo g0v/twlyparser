@@ -16,8 +16,7 @@ fi
 
 source script/set_range.sh
 
-#for ((j = ${end}; j >= ${start}; j--))
-for ((j = 4027; j >= ${start}; j--))
+for ((j = ${end}; j >= ${start}; j--))
 do
   echo "committee: ${j}"
   ./node_modules/.bin/lsc format-committee-log.ls --gazette ${j} --dir ${data_dir} --text

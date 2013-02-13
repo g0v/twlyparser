@@ -16,13 +16,13 @@ do
     then
     continue
   fi
-  ./node_modules/.bin/lsc populate-sitting_hsiao.ls --dometa --gazette ${j}
+  ./node_modules/.bin/lsc populate-sitting.ls --dometa --gazette ${j}
 done
 
 for ((j = ${end}; j >= ${start}; j--))
 do
   echo "memo: ${j}"
-  ./node_modules/.bin/lsc populate-sitting_hsiao.ls --dometa --gazette ${j} --type memo
+  ./node_modules/.bin/lsc populate-sitting.ls --dometa --gazette ${j} --type memo
 done
 
 cd ${current_dir}
