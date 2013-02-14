@@ -1,5 +1,5 @@
 require! {cheerio, optimist, fs, printf}
-require! \./lib/util_hsiao
+require! \./lib/util
 
 {_:files} = optimist.argv
 
@@ -8,13 +8,13 @@ if gazettes == void then gazettes = {}
 entries = try require \./data/index
 if entries == void then entries = []
 
+entryKey = (entry) ->
+    printf "%05d%s%02d%s", entry.gazette, entry.book, entry.seq, entry.type
+
 entryListToHash = (entries) ->
     {[entryKey(val), val] for val in entries}
 
 entries_hash = entryListToHash entries
-
-entryKey = (entry) ->
-    printf "%05d%s%02d%s", entry.gazette, entry.book, entry.seq, entry.type
 
 parseTWDate = ->
     [_, y, m, d] = it.match /(\d+)\/(\d+)\/(\d+)/
@@ -22,7 +22,7 @@ parseTWDate = ->
 
 files.forEach (file) ->
     [_, gazette] = file.match /(\d+)/
-    data = util_hsiao.readHtmlFileSync file, \utf8
+    data = util.readHtmlFileSync file, \utf8
     $ = cheerio.load data
     $ \table .find 'tr[id^=searchResult]' .each ->
         [_, type, summary, _, _, _, date?] = @.find \td .map -> @.text! - /^\s+|[\.\s]+$/g
@@ -32,6 +32,7 @@ files.forEach (file) ->
             correct_gazette = if year == '98' && vol == '24' then '3710' else gazette
             correct_type = if summary == '甲、行政院答復部分' then '質詢事項' else type
             console.log 'correct_gazette:', correct_gazette, 'year:', year, 'vol:', vol, 'seq:', seq, 'correct_type:', correct_type, 'summary:', summary
+
             gazettes[correct_gazette] ?= { year, vol, date: parseTWDate date }
             entry = {gazette: correct_gazette, book, seq, type: correct_type, summary }
             entry_key = entryKey(entry)
