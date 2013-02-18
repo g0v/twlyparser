@@ -135,7 +135,7 @@ convertDoc = (file, {success, error}) ->
     require! shelljs
     # XXX: correct this for different OS
     python = process.env.UNOCONV_PYTHON ? match process.platform
-    | \darwin => "/Applications/'LibreOffice.app/Contents/MacOS/python"
+    | \darwin => "/Applications/LibreOffice.app/Contents/MacOS/python"
     | otherwise => "/opt/libreoffice4.0/program/python"
     unless shelljs.which python
         throw "python for unoconv not found: #python. specify UNOCONV_PYTHON to override"
