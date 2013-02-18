@@ -11,6 +11,9 @@ parseTWDate = ->
 
 files.forEach (file) ->
     [_, gazette] = file.match /(\d+)/
+    if gazettes[gazette]?
+        console.error "#gazette already exists.  skipping"
+        return
     data = fs.readFileSync file, \utf8
     date = null
     $ = cheerio.load data
