@@ -232,15 +232,18 @@ parseCommittee = (name) ->
         throw it+JSON.stringify(committees) unless code
         code
 
-convertDoc = (file, {lodev, success, error}) ->
-    # XXX: correct this for different OS
-    cmd = if lodev
-        "/Applications/LOdev.app/Contents/MacOS/python ../twlyparser/unoconv/unoconv -f html #file"
-    else
-        "/Applications/LibreOffice.app/Contents/MacOS/python ../twlyparser/unoconv/unoconv  -f html #file"
+convertDoc = (file, {success, error}) ->
     require! shelljs
-    p = shelljs.exec cmd, (code, output) ->
-        console.log \converted output, code, p?
+    # XXX: correct this for different OS
+    python = process.env.UNOCONV_PYTHON ? match process.platform
+    | \darwin => "/Applications/'LibreOffice.app/Contents/MacOS/python"
+    | otherwise => "/opt/libreoffice4.0/program/python"
+    unless shelljs.which python
+        throw "python for unoconv not found: #python. specify UNOCONV_PYTHON to override"
+    cmd = "#python ../twlyparser/unoconv/unoconv -f html #file"
+    p = shelljs.exec cmd, {+silent, +async}, (code, output) ->
+        console.log \converted
+        console.log output, code, p? if code isnt 0
         clear-timeout rv
         success!
     rv = do
