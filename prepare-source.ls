@@ -52,4 +52,4 @@ funcs = for id, g of gazettes when !gazette? || id ~= gazette => let id, g
 res = funcs.reduce ((soFar, f) -> soFar.then f), Q.resolve!
 
 <- res.then
-fs.writeFileSync \data/index-files.json JSON.stringify index, null, 4
+fs.writeFileSync \data/index.json JSON.stringify index, null, 4
