@@ -121,8 +121,7 @@ sh ./list 4004 > source/meta/4004.html
 ./node_modules/.bin/lsc ./prepare-source.ls
 ```
 
-You should now have data/index-files.json.  Move to data/index.json if you are
-happy with it.
+data/index.json should now be populated.
 
 # CC0 1.0 Universal
 
