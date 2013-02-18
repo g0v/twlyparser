@@ -5,7 +5,7 @@ my ($from, $to) = @ARGV;
 die "usage: $0 <from> [to]\n" unless $from;
 $to ||= $from;
 for my $i ($from..$to) {
-    system("sh ./list $i > source/meta/$i.html");
+    -e "source/meta/$i.html" || system("sh ./list $i > source/meta/$i.html");
     system("./node_modules/.bin/lsc ./parse-list.ls source/meta/$i.html");
     system("./node_modules/.bin/lsc ./prepare-source.ls --gazette $i");
     system("./node_modules/.bin/lsc ./get-source.ls --gazette $i");
