@@ -653,16 +653,17 @@ class BillParser extends TextFormatter
                             #else
                             #    derived-names.push who unless who in names
                             splitted[who] = x.shift! - /\s*$/
-                        e[i to i] = if header[i] is \說明
+                        replaced-with = if header[i] is \說明
                             [splitted]
                         else
-                            [splitted[who] for who in names when splitted[who]]
+                            [splitted[who] ? '' for who in names]
+                        e.splice i, 1, ...replaced-with
                 [i] = [j for h, j in header when h is \審查會通過條文]
                 [comment] = [j for h, j in header when h is \說明]
                 if i?
-                    for e in content 
+                    for e in content
                         e[i] -= /^(（.*?）\n)/
-                        e[comment].審查會 .= replace /^/, RegExp.$1
+                        e[comment].審查會? .= replace /^/, RegExp.$1
 
 
                 @output-json { type, name, header, content }
