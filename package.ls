@@ -26,9 +26,10 @@ devDependencies:
   q: \0.8.7
   mkdirp: \0.3.x
   marked: \0.2.6
-  shelljs: \0.0.9
+  shelljs: \0.1.x
   'exec-sync': \0.1.x
   xregexp: \2.0.0
+  async: \0.1.x
   printf: \0.0.7
   'js-yaml': \1.0.3
 optionalDependencies: {}

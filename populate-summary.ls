@@ -1,7 +1,7 @@
 require! \./lib/ly
 require! <[optimist mkdirp fs async cheerio ./lib/util]>
 
-{gazette, ad, lodev, type, force} = optimist.argv
+{gazette, ad, type, force} = optimist.argv
 
 err <- mkdirp "source/summary"
 funcs = []

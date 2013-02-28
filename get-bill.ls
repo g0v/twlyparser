@@ -83,6 +83,9 @@ optimist.argv._.forEach (id) ->
         if uri is /http:\/\/10\./
             console.error id, uri
             return done!
+        file = "source/bill/#{id}/file.html"
+        _, {size}? <- fs.stat file
+        return done! if size?
         file = "source/bill/#{id}/file.doc"
         _, {size}? <- fs.stat file
         return done! if size?

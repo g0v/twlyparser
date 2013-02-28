@@ -39,9 +39,10 @@ getFileList = ({year, vol, book, seq}, id, type, cb) ->
 
 cnt = 0;
 funcs = for id, g of gazettes when !gazette? || id ~= gazette => let id, g
-    -> 
+    ->
         gdefers = []
         for i,_which in index when i.gazette ~= id and !i.files? => let i, d = Q.defer!
+            return if index[_which].files
             console.log id, i.book, i.seq
             gdefers.push d.promise
             index[_which].files <- getFileList {g.year, g.vol, i.book, i.seq}, id, \doc
@@ -52,4 +53,4 @@ funcs = for id, g of gazettes when !gazette? || id ~= gazette => let id, g
 res = funcs.reduce ((soFar, f) -> soFar.then f), Q.resolve!
 
 <- res.then
-fs.writeFileSync \data/index-files.json JSON.stringify index, null, 4
+fs.writeFileSync \data/index.json JSON.stringify index, null, 4

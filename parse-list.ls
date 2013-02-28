@@ -22,6 +22,9 @@ parseTWDate = ->
 
 files.forEach (file) ->
     [_, gazette] = file.match /(\d+)/
+    if gazettes[gazette]?
+        console.error "#gazette already exists.  skipping"
+        return
     data = util.readHtmlFileSync file, \utf8
     $ = cheerio.load data
     $ \table .find 'tr[id^=searchResult]' .each ->

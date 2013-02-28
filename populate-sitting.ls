@@ -4,7 +4,7 @@ require! <[request optimist path fs shelljs async]>
 {Parser, MemoParser} = require \./lib/parser
 {convertDoc} = require \./lib/util
 
-{gazette, dometa, ad, lodev, type, force} = optimist.argv
+{gazette, dometa, ad, type, force} = optimist.argv
 
 
 metaOnly = dometa
@@ -66,7 +66,7 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
         _, {size}? <- fs.stat html
         return extractMeta! if size
         console.log \doing file
-        convertDoc file, {lodev, error: done, success: -> extractMeta!}
+        convertDoc file, {error: done, success: -> extractMeta!}
 
 err, res <- async.waterfall funcs
 console.log \ok, res

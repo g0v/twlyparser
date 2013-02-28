@@ -55,9 +55,12 @@ To retrieve source word files of a specific gazette that is already listed in
 
 Convert to html with 'unoconv':
 
+You'll need to install LibreOffice.
+
 ```
 # make sure you do `git submodule init` and `git submodule update`
-/Applications/LibreOffice.app/Contents/MacOS/python unoconv/unoconv  -f html source/4004/*.doc
+
+twlyparser $ ./node_modules/.bin/lsc populate-sitting.ls --force --gazette 4004
 ```
 
 # To parse:
@@ -72,7 +75,7 @@ twlyparser $ tar xzvf twlyrawdata.tgz -C source/
 twlyparser $ mkdir output
 
 # convert doc files to html and update data/gazettes.json with metadata
-twlyparser $ ./node_modules/.bin/lsc populate-sitting.ls --dometa --lode
+twlyparser $ ./node_modules/.bin/lsc populate-sitting.ls --dometa
 
 # generate text file from source/
 twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --text --gazette 4004 --dir ./output
@@ -118,8 +121,7 @@ sh ./list 4004 > source/meta/4004.html
 ./node_modules/.bin/lsc ./prepare-source.ls
 ```
 
-You should now have data/index-files.json.  Move to data/index.json if you are
-happy with it.
+data/index.json should now be populated.
 
 # CC0 1.0 Universal
 

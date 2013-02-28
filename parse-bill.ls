@@ -7,7 +7,7 @@ id = optimist.argv._
 
 file = "source/bill/#{id}/file.html"
 
-parser = new BillParser
+parser = new BillParser {-chute}
 content = []
 bill = require "./source/bill/#{id}/index.json"
 parser.output-json = -> content.push it
