@@ -144,21 +144,18 @@ fix_up_map_primitive =
 
 fix_up_map = {} <<<< fix_up_map_primitive <<<< fix_up_map_You <<<< fix_up_map_0 <<<< fix_up_map_FF
 
-fixupHtml = (content) ->
-    result = content
+fixupHtml = ->
     for key, val of fix_up_map
-        result = result .replace (new RegExp key, 'mg'), val
-    result
+        it .= replace (new RegExp key, 'mg'), val
+    it
 
 readHtmlFileSync = (path) -> fixupHtml fs.readFileSync path, \utf8
 
 fixup = ->
-    it  .replace /\uE58E/g, '冲'
-        .replace /\uE8E2/g, '堃'
-        .replace /\uE8E4/g, '崐'
-        .replace /\uE457/g, '堦'
-        .replace /\uE5CF/g, '峯'
-        .replace /\uE1BD/g, '%'
+    for key, val of fix_up_map
+        key_unicode = String .fromCharCode parseInt (key .replace /\&\#/g, '' .replace /;/g, '')
+        it .= replace (new RegExp key_unicode, 'mg'), val
+    it
 
 readFileSync = (path) -> fixup fs.readFileSync path, \utf8
 
