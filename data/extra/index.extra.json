@@ -2,7 +2,7 @@
     {
         "gazette": "3988",
         "book": "01",
-        "seq": "2",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "立法院第8屆第1會期第15次會議紀錄",
         "files": [
@@ -12,7 +12,7 @@
     {
         "gazette": "3139",
         "book": "05",
-        "seq": "17",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "預算及決算委員會第四屆第四會期第五次聯席會議紀錄",
         "files": [
@@ -22,7 +22,7 @@
     {
         "gazette": "3164",
         "book": "04",
-        "seq": "3",
+        "seq": "999",
         "type": "議事錄",
         "summary": "立法院第四屆第五會期第十四次會議議事錄",
         "files": [
@@ -32,7 +32,7 @@
     {
         "gazette": "3178",
         "book": "06",
-        "seq": "4",
+        "seq": "999",
         "type": "專載",
         "summary": "專載",
         "files": [
@@ -42,7 +42,7 @@
     {
         "gazette": "3198",
         "book": "01",
-        "seq": "4",
+        "seq": "999",
         "type": "議事錄",
         "summary": "補刊",
         "files": [
@@ -52,7 +52,7 @@
     {
         "gazette": "3209",
         "book": "01",
-        "seq": "4",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "立法院第五屆院長副院長選舉會議議事錄",
         "files": [
@@ -62,7 +62,7 @@
     {
         "gazette": "3227",
         "book": "03",
-        "seq": "9",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "司法四委員會聯席會議）第三次審查會議紀錄",
         "files": [
@@ -72,7 +72,7 @@
     {
         "gazette": "3227",
         "book": "03",
-        "seq": "10",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "討論事項",
         "files": [
@@ -82,7 +82,7 @@
     {
         "gazette": "3233",
         "book": "02",
-        "seq": "10",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "預算及決算二委員會聯席）第五次審查會議紀錄",
         "files": [
@@ -92,7 +92,7 @@
     {
         "gazette": "3259",
         "book": "01",
-        "seq": "1",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "報告事項",
         "files": [
@@ -102,7 +102,7 @@
     {
         "gazette": "3259",
         "book": "01",
-        "seq": "2",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "重要社會經濟指標",
         "files": [
@@ -112,7 +112,7 @@
     {
         "gazette": "3259",
         "book": "01",
-        "seq": "5",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -122,7 +122,7 @@
     {
         "gazette": "3261",
         "book": "01",
-        "seq": "6",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -132,7 +132,7 @@
     {
         "gazette": "3263",
         "book": "01",
-        "seq": "6",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -142,7 +142,7 @@
     {
         "gazette": "3263",
         "book": "01",
-        "seq": "7",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -152,7 +152,7 @@
     {
         "gazette": "3264",
         "book": "01",
-        "seq": "3",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -162,7 +162,7 @@
     {
         "gazette": "3266",
         "book": "01",
-        "seq": "7",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -172,7 +172,7 @@
     {
         "gazette": "3273",
         "book": "01",
-        "seq": "3",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "院會紀錄",
         "files": [
@@ -182,7 +182,7 @@
     {
         "gazette": "3275",
         "book": "01",
-        "seq": "3",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "繼續開會（十七時一分）",
         "files": [
@@ -192,7 +192,7 @@
     {
         "gazette": "3277",
         "book": "01",
-        "seq": "5",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "繼續開會（十七時一分）",
         "files": [
@@ -202,7 +202,7 @@
     {
         "gazette": "3279",
         "book": "02",
-        "seq": "3",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -212,7 +212,7 @@
     {
         "gazette": "3282",
         "book": "01",
-        "seq": "1",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "報告事項",
         "files": [
@@ -222,7 +222,7 @@
     {
         "gazette": "3285",
         "book": "01",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "第九十二卷第六期勘誤表",
         "files": [
@@ -232,7 +232,7 @@
     {
         "gazette": "3287",
         "book": "01",
-        "seq": "5",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -242,7 +242,7 @@
     {
         "gazette": "3289",
         "book": "01",
-        "seq": "4",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -252,7 +252,7 @@
     {
         "gazette": "3289",
         "book": "03",
-        "seq": "9",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -262,7 +262,7 @@
     {
         "gazette": "3289",
         "book": "03",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -272,7 +272,7 @@
     {
         "gazette": "3289",
         "book": "03",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -282,7 +282,7 @@
     {
         "gazette": "3289",
         "book": "03",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -292,7 +292,7 @@
     {
         "gazette": "3289",
         "book": "03",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -302,7 +302,7 @@
     {
         "gazette": "3289",
         "book": "03",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -312,7 +312,7 @@
     {
         "gazette": "3289",
         "book": "03",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -322,7 +322,7 @@
     {
         "gazette": "3289",
         "book": "03",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -332,7 +332,7 @@
     {
         "gazette": "3289",
         "book": "04",
-        "seq": "10",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -342,7 +342,7 @@
     {
         "gazette": "3289",
         "book": "04",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -352,7 +352,7 @@
     {
         "gazette": "3289",
         "book": "04",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -362,7 +362,7 @@
     {
         "gazette": "3289",
         "book": "04",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -372,7 +372,7 @@
     {
         "gazette": "3289",
         "book": "04",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -382,7 +382,7 @@
     {
         "gazette": "3289",
         "book": "04",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -392,7 +392,7 @@
     {
         "gazette": "3289",
         "book": "04",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -402,7 +402,7 @@
     {
         "gazette": "3289",
         "book": "04",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -412,7 +412,7 @@
     {
         "gazette": "3289",
         "book": "04",
-        "seq": "18",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -422,7 +422,7 @@
     {
         "gazette": "3290",
         "book": "02",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "第九十二卷第十四期勘誤表",
         "files": [
@@ -432,7 +432,7 @@
     {
         "gazette": "3295",
         "book": "01",
-        "seq": "5",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -442,7 +442,7 @@
     {
         "gazette": "3297",
         "book": "02",
-        "seq": "4",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -452,7 +452,7 @@
     {
         "gazette": "3317",
         "book": "01",
-        "seq": "4",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -462,7 +462,7 @@
     {
         "gazette": "3317",
         "book": "01",
-        "seq": "8",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -472,7 +472,7 @@
     {
         "gazette": "3317",
         "book": "01",
-        "seq": "9",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -482,7 +482,7 @@
     {
         "gazette": "3317",
         "book": "01",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -492,7 +492,7 @@
     {
         "gazette": "3317",
         "book": "01",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -502,7 +502,7 @@
     {
         "gazette": "3317",
         "book": "01",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -512,7 +512,7 @@
     {
         "gazette": "3317",
         "book": "02",
-        "seq": "9",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -522,7 +522,7 @@
     {
         "gazette": "3317",
         "book": "02",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -532,7 +532,7 @@
     {
         "gazette": "3317",
         "book": "02",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -542,7 +542,7 @@
     {
         "gazette": "3317",
         "book": "02",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -552,7 +552,7 @@
     {
         "gazette": "3317",
         "book": "02",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -562,7 +562,7 @@
     {
         "gazette": "3318",
         "book": "02",
-        "seq": "8",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "立法院第五屆第四會期科技及資訊委員會第三次全體委員會議紀錄",
         "files": [
@@ -572,7 +572,7 @@
     {
         "gazette": "3318",
         "book": "02",
-        "seq": "9",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -582,7 +582,7 @@
     {
         "gazette": "3318",
         "book": "02",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -592,7 +592,7 @@
     {
         "gazette": "3318",
         "book": "02",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -602,7 +602,7 @@
     {
         "gazette": "3318",
         "book": "02",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -612,7 +612,7 @@
     {
         "gazette": "3318",
         "book": "02",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -622,7 +622,7 @@
     {
         "gazette": "3318",
         "book": "02",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -632,7 +632,7 @@
     {
         "gazette": "3318",
         "book": "02",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -642,7 +642,7 @@
     {
         "gazette": "3318",
         "book": "02",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -652,7 +652,7 @@
     {
         "gazette": "3319",
         "book": "01",
-        "seq": "5",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -662,7 +662,7 @@
     {
         "gazette": "3321",
         "book": "01",
-        "seq": "9",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -672,7 +672,7 @@
     {
         "gazette": "3321",
         "book": "01",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -682,7 +682,7 @@
     {
         "gazette": "3321",
         "book": "01",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -692,7 +692,7 @@
     {
         "gazette": "3321",
         "book": "01",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -702,7 +702,7 @@
     {
         "gazette": "3321",
         "book": "01",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -712,7 +712,7 @@
     {
         "gazette": "3322",
         "book": "02",
-        "seq": "11",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -722,7 +722,7 @@
     {
         "gazette": "3322",
         "book": "02",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -732,7 +732,7 @@
     {
         "gazette": "3322",
         "book": "02",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -742,7 +742,7 @@
     {
         "gazette": "3322",
         "book": "02",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -752,7 +752,7 @@
     {
         "gazette": "3322",
         "book": "02",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -762,7 +762,7 @@
     {
         "gazette": "3322",
         "book": "02",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -772,7 +772,7 @@
     {
         "gazette": "3322",
         "book": "02",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -782,7 +782,7 @@
     {
         "gazette": "3322",
         "book": "02",
-        "seq": "18",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -792,7 +792,7 @@
     {
         "gazette": "3322",
         "book": "02",
-        "seq": "19",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -802,7 +802,7 @@
     {
         "gazette": "3322",
         "book": "02",
-        "seq": "20",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -812,7 +812,7 @@
     {
         "gazette": "3323",
         "book": "01",
-        "seq": "5",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -822,7 +822,7 @@
     {
         "gazette": "3325",
         "book": "03",
-        "seq": "10",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -832,7 +832,7 @@
     {
         "gazette": "3325",
         "book": "03",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -842,7 +842,7 @@
     {
         "gazette": "3325",
         "book": "03",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -852,7 +852,7 @@
     {
         "gazette": "3325",
         "book": "03",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -862,7 +862,7 @@
     {
         "gazette": "3325",
         "book": "03",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -872,7 +872,7 @@
     {
         "gazette": "3325",
         "book": "03",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -882,7 +882,7 @@
     {
         "gazette": "3325",
         "book": "03",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -892,7 +892,7 @@
     {
         "gazette": "3325",
         "book": "03",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -902,7 +902,7 @@
     {
         "gazette": "3325",
         "book": "03",
-        "seq": "18",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -912,7 +912,7 @@
     {
         "gazette": "3327",
         "book": "01",
-        "seq": "5",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -922,7 +922,7 @@
     {
         "gazette": "3328",
         "book": "02",
-        "seq": "6",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -932,7 +932,7 @@
     {
         "gazette": "3328",
         "book": "02",
-        "seq": "7",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -942,7 +942,7 @@
     {
         "gazette": "3328",
         "book": "02",
-        "seq": "8",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -952,7 +952,7 @@
     {
         "gazette": "3328",
         "book": "02",
-        "seq": "9",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -962,7 +962,7 @@
     {
         "gazette": "3329",
         "book": "01",
-        "seq": "4",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -972,7 +972,7 @@
     {
         "gazette": "3329",
         "book": "03",
-        "seq": "9",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -982,7 +982,7 @@
     {
         "gazette": "3329",
         "book": "03",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -992,7 +992,17 @@
     {
         "gazette": "3329",
         "book": "03",
-        "seq": "12",
+        "seq": "999",
+        "type": "",
+        "summary": "",
+        "files": [
+            "http://lci.ly.gov.tw/LyLCEW/communique/work/92/55/LCIDC01_925503_00011.doc"
+        ]
+    },
+    {
+        "gazette": "3329",
+        "book": "03",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1002,7 +1012,7 @@
     {
         "gazette": "3329",
         "book": "03",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1012,7 +1022,7 @@
     {
         "gazette": "3329",
         "book": "03",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1022,7 +1032,7 @@
     {
         "gazette": "3329",
         "book": "03",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1032,7 +1042,7 @@
     {
         "gazette": "3330",
         "book": "02",
-        "seq": "11",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -1042,7 +1052,7 @@
     {
         "gazette": "3330",
         "book": "02",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1052,7 +1062,7 @@
     {
         "gazette": "3330",
         "book": "02",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1062,7 +1072,7 @@
     {
         "gazette": "3330",
         "book": "02",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1072,7 +1082,7 @@
     {
         "gazette": "3330",
         "book": "02",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1082,7 +1092,7 @@
     {
         "gazette": "3330",
         "book": "02",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1092,7 +1102,7 @@
     {
         "gazette": "3330",
         "book": "02",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1102,7 +1112,7 @@
     {
         "gazette": "3330",
         "book": "02",
-        "seq": "18",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1112,7 +1122,7 @@
     {
         "gazette": "3330",
         "book": "02",
-        "seq": "19",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1122,7 +1132,7 @@
     {
         "gazette": "3331",
         "book": "02",
-        "seq": "2",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -1132,7 +1142,7 @@
     {
         "gazette": "3331",
         "book": "03",
-        "seq": "8",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -1142,7 +1152,7 @@
     {
         "gazette": "3331",
         "book": "03",
-        "seq": "9",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1152,7 +1162,7 @@
     {
         "gazette": "3331",
         "book": "03",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1162,7 +1172,7 @@
     {
         "gazette": "3331",
         "book": "03",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1172,7 +1182,7 @@
     {
         "gazette": "3331",
         "book": "03",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1182,7 +1192,7 @@
     {
         "gazette": "3331",
         "book": "03",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1192,7 +1202,7 @@
     {
         "gazette": "3331",
         "book": "03",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1202,7 +1212,7 @@
     {
         "gazette": "3331",
         "book": "04",
-        "seq": "6",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -1212,7 +1222,7 @@
     {
         "gazette": "3331",
         "book": "04",
-        "seq": "7",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1222,7 +1232,7 @@
     {
         "gazette": "3331",
         "book": "04",
-        "seq": "8",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1232,7 +1242,7 @@
     {
         "gazette": "3331",
         "book": "04",
-        "seq": "9",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1242,7 +1252,7 @@
     {
         "gazette": "3331",
         "book": "04",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1252,7 +1262,7 @@
     {
         "gazette": "3332",
         "book": "01",
-        "seq": "8",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -1262,7 +1272,7 @@
     {
         "gazette": "3332",
         "book": "01",
-        "seq": "9",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1272,7 +1282,7 @@
     {
         "gazette": "3332",
         "book": "01",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1282,7 +1292,7 @@
     {
         "gazette": "3332",
         "book": "01",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1292,7 +1302,7 @@
     {
         "gazette": "3332",
         "book": "01",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1302,7 +1312,7 @@
     {
         "gazette": "3332",
         "book": "01",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1312,7 +1322,7 @@
     {
         "gazette": "3332",
         "book": "01",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1322,7 +1332,7 @@
     {
         "gazette": "3332",
         "book": "02",
-        "seq": "9",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -1332,7 +1342,7 @@
     {
         "gazette": "3332",
         "book": "02",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1342,7 +1352,7 @@
     {
         "gazette": "3332",
         "book": "02",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1352,7 +1362,7 @@
     {
         "gazette": "3332",
         "book": "02",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1362,7 +1372,7 @@
     {
         "gazette": "3332",
         "book": "02",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1372,7 +1382,7 @@
     {
         "gazette": "3332",
         "book": "02",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1382,7 +1392,7 @@
     {
         "gazette": "3332",
         "book": "02",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1392,7 +1402,7 @@
     {
         "gazette": "3332",
         "book": "02",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1402,7 +1412,7 @@
     {
         "gazette": "3332",
         "book": "03",
-        "seq": "11",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -1412,7 +1422,7 @@
     {
         "gazette": "3332",
         "book": "03",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1422,7 +1432,7 @@
     {
         "gazette": "3332",
         "book": "03",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1432,7 +1442,7 @@
     {
         "gazette": "3332",
         "book": "03",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1442,7 +1452,7 @@
     {
         "gazette": "3332",
         "book": "03",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1452,7 +1462,7 @@
     {
         "gazette": "3332",
         "book": "03",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1462,7 +1472,7 @@
     {
         "gazette": "3332",
         "book": "03",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1472,7 +1482,7 @@
     {
         "gazette": "3332",
         "book": "03",
-        "seq": "18",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1482,7 +1492,7 @@
     {
         "gazette": "3332",
         "book": "03",
-        "seq": "19",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1492,7 +1502,7 @@
     {
         "gazette": "3332",
         "book": "03",
-        "seq": "20",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1502,7 +1512,7 @@
     {
         "gazette": "3336",
         "book": "01",
-        "seq": "9",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -1512,7 +1522,7 @@
     {
         "gazette": "3336",
         "book": "01",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1522,7 +1532,7 @@
     {
         "gazette": "3336",
         "book": "01",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1532,7 +1542,7 @@
     {
         "gazette": "3336",
         "book": "01",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1542,7 +1552,7 @@
     {
         "gazette": "3336",
         "book": "02",
-        "seq": "13",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -1552,7 +1562,7 @@
     {
         "gazette": "3336",
         "book": "02",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1562,7 +1572,7 @@
     {
         "gazette": "3336",
         "book": "02",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1572,7 +1582,7 @@
     {
         "gazette": "3336",
         "book": "02",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1582,7 +1592,7 @@
     {
         "gazette": "3336",
         "book": "02",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1592,7 +1602,7 @@
     {
         "gazette": "3336",
         "book": "02",
-        "seq": "18",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1602,7 +1612,7 @@
     {
         "gazette": "3336",
         "book": "02",
-        "seq": "19",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1612,7 +1622,7 @@
     {
         "gazette": "3336",
         "book": "02",
-        "seq": "20",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1622,7 +1632,7 @@
     {
         "gazette": "3336",
         "book": "02",
-        "seq": "21",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1632,7 +1642,7 @@
     {
         "gazette": "3336",
         "book": "02",
-        "seq": "22",
+        "seq": "999",
         "type": "",
         "summary": "第九十二卷第六十九期勘誤表",
         "files": [
@@ -1642,7 +1652,7 @@
     {
         "gazette": "3340",
         "book": "04",
-        "seq": "14",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -1652,7 +1662,7 @@
     {
         "gazette": "3340",
         "book": "04",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1662,7 +1672,7 @@
     {
         "gazette": "3340",
         "book": "04",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1672,7 +1682,7 @@
     {
         "gazette": "3340",
         "book": "04",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1682,7 +1692,7 @@
     {
         "gazette": "3340",
         "book": "04",
-        "seq": "18",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1692,7 +1702,7 @@
     {
         "gazette": "3340",
         "book": "04",
-        "seq": "19",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1702,7 +1712,7 @@
     {
         "gazette": "3340",
         "book": "04",
-        "seq": "20",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1712,7 +1722,7 @@
     {
         "gazette": "3340",
         "book": "04",
-        "seq": "21",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1722,7 +1732,7 @@
     {
         "gazette": "3340",
         "book": "04",
-        "seq": "22",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1732,7 +1742,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "1",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "立法院第五屆第四會期科技及資訊委員會第十六次全體委員會議紀錄",
         "files": [
@@ -1742,7 +1752,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "2",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "立法院第五屆第四會期經濟及能源委員會第十五次全體委員會議紀錄",
         "files": [
@@ -1752,7 +1762,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "3",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "立法院第五屆第四會期財政委員會第十五次全體委員會議紀錄",
         "files": [
@@ -1762,7 +1772,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "4",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "立法院第五屆第四會期內政及民族委員會第十七次全體委員會議紀錄",
         "files": [
@@ -1772,7 +1782,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "5",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "法制兩委員會第二次聯席會議紀錄",
         "files": [
@@ -1782,7 +1792,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "6",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "立法院第五屆第四會期教育及文化委員會第十四次會議紀錄",
         "files": [
@@ -1792,7 +1802,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "7",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "司法二委員會第一次聯席會議紀錄",
         "files": [
@@ -1802,7 +1812,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "8",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "司法兩委員會第一次聯席會議紀錄",
         "files": [
@@ -1812,7 +1822,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "9",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "立法院第五屆第四會期司法委員會第十三次全體委員會議紀錄",
         "files": [
@@ -1822,7 +1832,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "10",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "立法院第五屆第四會期財政委員會第十六次全體委員會議紀錄",
         "files": [
@@ -1832,7 +1842,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "11",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "立法院第五屆第四會期內政及民族委員會第十八次全體委員會議紀錄",
         "files": [
@@ -1842,7 +1852,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "12",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "立法院第五屆第四會期經濟及能源委員會第十六次全體委員會議紀錄",
         "files": [
@@ -1852,7 +1862,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "13",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -1862,7 +1872,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1872,7 +1882,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1882,7 +1892,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1892,7 +1902,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1902,7 +1912,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "18",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1912,7 +1922,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "19",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1922,7 +1932,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "20",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1932,7 +1942,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "21",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1942,7 +1952,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "22",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1952,7 +1962,7 @@
     {
         "gazette": "3341",
         "book": "02",
-        "seq": "23",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1962,7 +1972,7 @@
     {
         "gazette": "3343",
         "book": "01",
-        "seq": "6",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -1972,7 +1982,7 @@
     {
         "gazette": "3343",
         "book": "01",
-        "seq": "13",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -1982,7 +1992,7 @@
     {
         "gazette": "3343",
         "book": "01",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -1992,7 +2002,7 @@
     {
         "gazette": "3343",
         "book": "01",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2002,7 +2012,7 @@
     {
         "gazette": "3343",
         "book": "01",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2012,7 +2022,7 @@
     {
         "gazette": "3343",
         "book": "01",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2022,7 +2032,7 @@
     {
         "gazette": "3344",
         "book": "01",
-        "seq": "4",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -2032,7 +2042,7 @@
     {
         "gazette": "3345",
         "book": "02",
-        "seq": "8",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -2042,7 +2052,7 @@
     {
         "gazette": "3345",
         "book": "02",
-        "seq": "9",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2052,7 +2062,7 @@
     {
         "gazette": "3346",
         "book": "02",
-        "seq": "9",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -2062,7 +2072,7 @@
     {
         "gazette": "3346",
         "book": "02",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2072,7 +2082,7 @@
     {
         "gazette": "3346",
         "book": "02",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2082,7 +2092,7 @@
     {
         "gazette": "3346",
         "book": "02",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2092,7 +2102,7 @@
     {
         "gazette": "3346",
         "book": "02",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2102,7 +2112,7 @@
     {
         "gazette": "3346",
         "book": "02",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2112,7 +2122,7 @@
     {
         "gazette": "3346",
         "book": "02",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2122,7 +2132,7 @@
     {
         "gazette": "3346",
         "book": "02",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2132,7 +2142,7 @@
     {
         "gazette": "3347",
         "book": "02",
-        "seq": "11",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -2142,7 +2152,7 @@
     {
         "gazette": "3347",
         "book": "02",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2152,7 +2162,7 @@
     {
         "gazette": "3347",
         "book": "02",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2162,7 +2172,7 @@
     {
         "gazette": "3347",
         "book": "02",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2172,7 +2182,7 @@
     {
         "gazette": "3347",
         "book": "02",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2182,7 +2192,7 @@
     {
         "gazette": "3347",
         "book": "02",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2192,7 +2202,7 @@
     {
         "gazette": "3347",
         "book": "02",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2202,7 +2212,7 @@
     {
         "gazette": "3347",
         "book": "02",
-        "seq": "18",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2212,7 +2222,7 @@
     {
         "gazette": "3347",
         "book": "02",
-        "seq": "19",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2222,7 +2232,7 @@
     {
         "gazette": "3347",
         "book": "02",
-        "seq": "20",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2232,7 +2242,7 @@
     {
         "gazette": "3349",
         "book": "02",
-        "seq": "16",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -2242,7 +2252,7 @@
     {
         "gazette": "3349",
         "book": "02",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2252,7 +2262,7 @@
     {
         "gazette": "3349",
         "book": "02",
-        "seq": "18",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2262,7 +2272,7 @@
     {
         "gazette": "3349",
         "book": "02",
-        "seq": "19",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2272,7 +2282,7 @@
     {
         "gazette": "3349",
         "book": "02",
-        "seq": "20",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2282,7 +2292,7 @@
     {
         "gazette": "3349",
         "book": "02",
-        "seq": "21",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2292,7 +2302,7 @@
     {
         "gazette": "3349",
         "book": "02",
-        "seq": "22",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2302,7 +2312,7 @@
     {
         "gazette": "3349",
         "book": "02",
-        "seq": "23",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2312,7 +2322,7 @@
     {
         "gazette": "3349",
         "book": "02",
-        "seq": "24",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2322,7 +2332,7 @@
     {
         "gazette": "3349",
         "book": "02",
-        "seq": "25",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2332,7 +2342,7 @@
     {
         "gazette": "3349",
         "book": "02",
-        "seq": "26",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2342,7 +2352,7 @@
     {
         "gazette": "3349",
         "book": "02",
-        "seq": "27",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2352,7 +2362,7 @@
     {
         "gazette": "3351",
         "book": "01",
-        "seq": "6",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -2362,7 +2372,7 @@
     {
         "gazette": "3352",
         "book": "02",
-        "seq": "10",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -2372,7 +2382,7 @@
     {
         "gazette": "3352",
         "book": "02",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2382,7 +2392,7 @@
     {
         "gazette": "3352",
         "book": "02",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2392,7 +2402,7 @@
     {
         "gazette": "3352",
         "book": "02",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2402,7 +2412,7 @@
     {
         "gazette": "3352",
         "book": "02",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2412,7 +2422,7 @@
     {
         "gazette": "3353",
         "book": "01",
-        "seq": "6",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -2422,7 +2432,7 @@
     {
         "gazette": "3354",
         "book": "01",
-        "seq": "10",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "報告事項",
         "files": [
@@ -2432,7 +2442,7 @@
     {
         "gazette": "3354",
         "book": "01",
-        "seq": "11",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -2442,7 +2452,7 @@
     {
         "gazette": "3354",
         "book": "01",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2452,7 +2462,7 @@
     {
         "gazette": "3354",
         "book": "01",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2462,7 +2472,7 @@
     {
         "gazette": "3354",
         "book": "01",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2472,7 +2482,7 @@
     {
         "gazette": "3354",
         "book": "02",
-        "seq": "14",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -2482,7 +2492,7 @@
     {
         "gazette": "3354",
         "book": "02",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2492,7 +2502,7 @@
     {
         "gazette": "3354",
         "book": "02",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2502,7 +2512,7 @@
     {
         "gazette": "3354",
         "book": "02",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2512,7 +2522,7 @@
     {
         "gazette": "3354",
         "book": "02",
-        "seq": "18",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2522,7 +2532,7 @@
     {
         "gazette": "3354",
         "book": "02",
-        "seq": "19",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2532,7 +2542,7 @@
     {
         "gazette": "3354",
         "book": "02",
-        "seq": "20",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2542,7 +2552,7 @@
     {
         "gazette": "3354",
         "book": "02",
-        "seq": "21",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2552,7 +2562,7 @@
     {
         "gazette": "3354",
         "book": "02",
-        "seq": "22",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2562,7 +2572,7 @@
     {
         "gazette": "3354",
         "book": "02",
-        "seq": "23",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2572,7 +2582,7 @@
     {
         "gazette": "3354",
         "book": "02",
-        "seq": "24",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2582,7 +2592,7 @@
     {
         "gazette": "3354",
         "book": "02",
-        "seq": "25",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2592,7 +2602,7 @@
     {
         "gazette": "3354",
         "book": "02",
-        "seq": "26",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2602,7 +2612,7 @@
     {
         "gazette": "3356",
         "book": "02",
-        "seq": "11",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -2612,7 +2622,7 @@
     {
         "gazette": "3356",
         "book": "02",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2622,7 +2632,7 @@
     {
         "gazette": "3356",
         "book": "02",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2632,7 +2642,7 @@
     {
         "gazette": "3356",
         "book": "02",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2642,7 +2652,7 @@
     {
         "gazette": "3356",
         "book": "02",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2652,7 +2662,7 @@
     {
         "gazette": "3356",
         "book": "02",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2662,7 +2672,7 @@
     {
         "gazette": "3356",
         "book": "02",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2672,7 +2682,7 @@
     {
         "gazette": "3356",
         "book": "02",
-        "seq": "18",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2682,7 +2692,7 @@
     {
         "gazette": "3356",
         "book": "02",
-        "seq": "19",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2692,7 +2702,7 @@
     {
         "gazette": "3356",
         "book": "02",
-        "seq": "20",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2702,7 +2712,7 @@
     {
         "gazette": "3359",
         "book": "01",
-        "seq": "8",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -2712,7 +2722,7 @@
     {
         "gazette": "3359",
         "book": "01",
-        "seq": "9",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2722,7 +2732,7 @@
     {
         "gazette": "3359",
         "book": "01",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2732,7 +2742,7 @@
     {
         "gazette": "3359",
         "book": "01",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2742,7 +2752,7 @@
     {
         "gazette": "3361",
         "book": "01",
-        "seq": "18",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -2752,7 +2762,7 @@
     {
         "gazette": "3361",
         "book": "01",
-        "seq": "19",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2762,7 +2772,7 @@
     {
         "gazette": "3361",
         "book": "01",
-        "seq": "20",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2772,7 +2782,7 @@
     {
         "gazette": "3361",
         "book": "01",
-        "seq": "21",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2782,7 +2792,7 @@
     {
         "gazette": "3361",
         "book": "01",
-        "seq": "22",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2792,7 +2802,7 @@
     {
         "gazette": "3361",
         "book": "01",
-        "seq": "23",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2802,7 +2812,7 @@
     {
         "gazette": "3361",
         "book": "01",
-        "seq": "24",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2812,7 +2822,7 @@
     {
         "gazette": "3361",
         "book": "01",
-        "seq": "25",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2822,7 +2832,7 @@
     {
         "gazette": "3361",
         "book": "01",
-        "seq": "26",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2832,7 +2842,7 @@
     {
         "gazette": "3361",
         "book": "01",
-        "seq": "27",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2842,7 +2852,7 @@
     {
         "gazette": "3361",
         "book": "01",
-        "seq": "28",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2852,7 +2862,7 @@
     {
         "gazette": "3361",
         "book": "01",
-        "seq": "29",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2862,7 +2872,7 @@
     {
         "gazette": "3361",
         "book": "01",
-        "seq": "30",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2872,7 +2882,7 @@
     {
         "gazette": "3366",
         "book": "01",
-        "seq": "9",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -2882,7 +2892,7 @@
     {
         "gazette": "3366",
         "book": "01",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2892,7 +2902,7 @@
     {
         "gazette": "3366",
         "book": "01",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2902,7 +2912,7 @@
     {
         "gazette": "3366",
         "book": "01",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2912,7 +2922,7 @@
     {
         "gazette": "3366",
         "book": "01",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2922,7 +2932,7 @@
     {
         "gazette": "3366",
         "book": "01",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2932,7 +2942,7 @@
     {
         "gazette": "3366",
         "book": "01",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2942,7 +2952,7 @@
     {
         "gazette": "3366",
         "book": "01",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2952,7 +2962,7 @@
     {
         "gazette": "3371",
         "book": "02",
-        "seq": "11",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -2962,7 +2972,7 @@
     {
         "gazette": "3371",
         "book": "02",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2972,7 +2982,7 @@
     {
         "gazette": "3371",
         "book": "02",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2982,7 +2992,7 @@
     {
         "gazette": "3371",
         "book": "02",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -2992,7 +3002,7 @@
     {
         "gazette": "3371",
         "book": "02",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3002,7 +3012,7 @@
     {
         "gazette": "3371",
         "book": "02",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3012,7 +3022,7 @@
     {
         "gazette": "3371",
         "book": "02",
-        "seq": "17",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3022,7 +3032,7 @@
     {
         "gazette": "3371",
         "book": "02",
-        "seq": "18",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3032,7 +3042,7 @@
     {
         "gazette": "3371",
         "book": "02",
-        "seq": "19",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3042,7 +3052,7 @@
     {
         "gazette": "3372",
         "book": "01",
-        "seq": "7",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -3052,7 +3062,7 @@
     {
         "gazette": "3372",
         "book": "01",
-        "seq": "8",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3062,7 +3072,7 @@
     {
         "gazette": "3375",
         "book": "01",
-        "seq": "5",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -3072,7 +3082,7 @@
     {
         "gazette": "3382",
         "book": "02",
-        "seq": "9",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -3082,7 +3092,7 @@
     {
         "gazette": "3382",
         "book": "02",
-        "seq": "10",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3092,7 +3102,7 @@
     {
         "gazette": "3382",
         "book": "02",
-        "seq": "11",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3102,7 +3112,7 @@
     {
         "gazette": "3382",
         "book": "02",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3112,7 +3122,7 @@
     {
         "gazette": "3389",
         "book": "03",
-        "seq": "11",
+        "seq": "999",
         "type": "索引",
         "summary": "本期委員發言紀錄索引",
         "files": [
@@ -3122,7 +3132,7 @@
     {
         "gazette": "3389",
         "book": "03",
-        "seq": "12",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3132,7 +3142,7 @@
     {
         "gazette": "3389",
         "book": "03",
-        "seq": "13",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3142,7 +3152,7 @@
     {
         "gazette": "3389",
         "book": "03",
-        "seq": "14",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3152,7 +3162,7 @@
     {
         "gazette": "3389",
         "book": "03",
-        "seq": "15",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3162,7 +3172,7 @@
     {
         "gazette": "3389",
         "book": "03",
-        "seq": "16",
+        "seq": "999",
         "type": "",
         "summary": "",
         "files": [
@@ -3172,7 +3182,7 @@
     {
         "gazette": "3412",
         "book": "01",
-        "seq": "5",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "繼續開會（17時20分）",
         "files": [
@@ -3182,7 +3192,7 @@
     {
         "gazette": "3428",
         "book": "01",
-        "seq": "7",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -3192,7 +3202,7 @@
     {
         "gazette": "3434",
         "book": "01",
-        "seq": "6",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -3202,7 +3212,7 @@
     {
         "gazette": "3455",
         "book": "01",
-        "seq": "6",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "補刊",
         "files": [
@@ -3212,7 +3222,7 @@
     {
         "gazette": "3459",
         "book": "03",
-        "seq": "5",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "各家電信業者寬頻上網服務收費方案比較94.11.21",
         "files": [
@@ -3222,7 +3232,7 @@
     {
         "gazette": "3465",
         "book": "01",
-        "seq": "11",
+        "seq": "999",
         "type": "院會紀錄",
         "summary": "繼續開會(17時)",
         "files": [
@@ -3230,139 +3240,9 @@
         ]
     },
     {
-        "gazette": 3710,
+        "gazette": "3828",
         "book": "01",
-        "seq": "2",
-        "type": "院會紀錄",
-        "summary": "報告事項",
-        "files": [
-            "http://lci.ly.gov.tw/LyLCEW/communique/work/98/24/LCIDC01_982401_00002.doc"
-        ]
-    },
-    {
-        "gazette": 3710,
-        "book": "01",
-        "seq": "3",
-        "type": "院會紀錄",
-        "summary": "繼續開會（17時2分）",
-        "files": [
-            "http://lci.ly.gov.tw/LyLCEW/communique/work/98/24/LCIDC01_982401_00003.doc"
-        ]
-    },
-    {
-        "gazette": 3710,
-        "book": "01",
-        "seq": "4",
-        "type": "院會紀錄",
-        "summary": "國是論壇",
-        "files": [
-            "http://lci.ly.gov.tw/LyLCEW/communique/work/98/24/LCIDC01_982401_00004.doc"
-        ]
-    },
-    {
-        "gazette": 3710,
-        "book": "01",
-        "seq": "5",
-        "type": "質詢事項",
-        "summary": "甲、行政院答復部分",
-        "files": [
-            "http://lci.ly.gov.tw/LyLCEW/communique/work/98/24/LCIDC01_982401_00005.doc"
-        ]
-    },
-    {
-        "gazette": 3710,
-        "book": "01",
-        "seq": "6",
-        "type": "質詢事項",
-        "summary": "本院委員質詢部分",
-        "files": [
-            "http://lci.ly.gov.tw/LyLCEW/communique/work/98/24/LCIDC01_982401_00006.doc"
-        ]
-    },
-    {
-        "gazette": 3710,
-        "book": "01",
-        "seq": "7",
-        "type": "院會紀錄",
-        "summary": "報告事項",
-        "files": [
-            "http://lci.ly.gov.tw/LyLCEW/communique/work/98/24/LCIDC01_982401_00007.doc"
-        ]
-    },
-    {
-        "gazette": 3710,
-        "book": "01",
-        "seq": "8",
-        "type": "委員會紀錄",
-        "summary": "立法院第7屆第3會期社會福利及衛生環境委員會第16次全體委員會議紀錄",
-        "files": [
-            "http://lci.ly.gov.tw/LyLCEW/communique/work/98/24/LCIDC01_982401_00008.doc"
-        ]
-    },
-    {
-        "gazette": 3710,
-        "book": "01",
-        "seq": "9",
-        "type": "委員會紀錄",
-        "summary": "立法院第7屆第3會期司法及法制委員會第14次全體委員會議紀錄",
-        "files": [
-            "http://lci.ly.gov.tw/LyLCEW/communique/work/98/24/LCIDC01_982401_00009.doc"
-        ]
-    },
-    {
-        "gazette": 3710,
-        "book": "01",
-        "seq": "10",
-        "type": "",
-        "summary": "",
-        "files": [
-            "http://lci.ly.gov.tw/LyLCEW/communique/work/98/24/LCIDC01_982401_00010.doc"
-        ]
-    },
-    {
-        "gazette": 3710,
-        "book": "01",
-        "seq": "11",
-        "type": "",
-        "summary": "",
-        "files": [
-            "http://lci.ly.gov.tw/LyLCEW/communique/work/98/24/LCIDC01_982401_00011.doc"
-        ]
-    },
-    {
-        "gazette": 3710,
-        "book": "01",
-        "seq": "12",
-        "type": "",
-        "summary": "",
-        "files": [
-            "http://lci.ly.gov.tw/LyLCEW/communique/work/98/24/LCIDC01_982401_00012.doc"
-        ]
-    },
-    {
-        "gazette": 3710,
-        "book": "01",
-        "seq": "13",
-        "type": "",
-        "summary": "",
-        "files": [
-            "http://lci.ly.gov.tw/LyLCEW/communique/work/98/24/LCIDC01_982401_00013.doc"
-        ]
-    },
-    {
-        "gazette": 3710,
-        "book": "01",
-        "seq": "14",
-        "type": "",
-        "summary": "",
-        "files": [
-            "http://lci.ly.gov.tw/LyLCEW/communique/work/98/24/LCIDC01_982401_00014.doc"
-        ]
-    },
-    {
-        "gazette": 3828,
-        "book": "01",
-        "seq": "2",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "立法院第7屆第6會期教育及文化委員會第5次全體委員會會議紀錄",
         "files": [
@@ -3370,9 +3250,9 @@
         ]
     },
     {
-        "gazette": 3828,
+        "gazette": "3828",
         "book": "01",
-        "seq": "2",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "審查100年度中央政府總預算案關於行政院原子能委員會及所屬單位預算。",
         "files": [
@@ -3380,9 +3260,9 @@
         ]
     },
     {
-        "gazette": 3828,
+        "gazette": "3828",
         "book": "01",
-        "seq": "3",
+        "seq": "999",
         "type": "委員會紀錄",
         "summary": "立法院第7屆第6會期教育及文化委員會第5次全體委員會會議紀錄",
         "files": [
