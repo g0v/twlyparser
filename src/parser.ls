@@ -12,8 +12,8 @@ md_header = (text, depth) ->
 # session (會期)
 # sitting (會次)
 class Meta
-    ({@output, @rules, @output-json} = {}) ->
-        @output md_header \院會紀錄 + "\n\n"
+    ({@output, @rules, @output-json, @type = \院會紀錄} = {}) ->
+        @output md_header @type + "\n\n" unless @type is \committee
         @meta = {}
     push-line: (speaker, text) ->
         if speaker
@@ -25,6 +25,7 @@ class Meta
 
         text .=replace /立 法院/, \立法院
         #@FIXME: @rules.regexp in match syntax can not be compiled to right JavaScript, but we can use        #        (@)rules to workround it.
+        header = false
         match text
         | (@)rules.regex \header.title_temporarily .exec =>
             that.4 ?= 1
@@ -33,6 +34,7 @@ class Meta
             @meta<[ad session]> = that[1 to 2].map -> util.intOfZHNumber it
             @meta.sitting = 0
         | (@)rules.regex \header.title_committee .exec =>
+            header = true
             @meta <<< do
                 ad: that.1
                 session: that.2
@@ -48,7 +50,7 @@ class Meta
             @meta.speaker = that.1
         | (@)rules.regex \header.datetime .exec =>
             @meta.datetime = util.datetimeOfLyDateTime that[1 to 3] [5 to 6]
-        @output "#text\n"
+        @output (if header => '# ' else ''), "#text\n"
         return @
     serialize: ->
         @output-json @meta if @output-json
@@ -495,10 +497,7 @@ HTMLParser = do
         @$ = cheerio.load data, { +lowerCaseTags }
         @$('body').children!each -> self.parse @
 
-class Parser implements HTMLParser
-    ({@output = console.log, @rules, @output-json, @metaOnly} = {}) ->
-        @lastSpeaker = null
-        @ctx = @newContext Meta, {rules: @rules}
+class LogParser
     store: ->
         @ctx.serialize! if @ctx
 
@@ -506,8 +505,7 @@ class Parser implements HTMLParser
         @store!
         @ctx := if ctxType? => new ctxType args <<< {@output, @output-json} else null
 
-    parseLine: (fulltext) ->
-        text = fulltext
+    prepareLine: (text) ->
         [full, speaker, content]? = @rules.match \speach.paragraph text
         if speaker
             if @rules.match \speach.ignore_speakers speaker
@@ -518,6 +516,20 @@ class Parser implements HTMLParser
                 # XXX emit speaker meta
             else
                 text = content
+        [speaker, text]
+
+    push-line: (speaker, text, fulltext) ->
+        if @ctx
+            @ctx .=push-line speaker, text, fulltext
+        else
+            @output "#fulltext\n\n"
+
+class YSLogParser extends LogParser
+    ({@output = console.log, @rules, @output-json, @metaOnly} = {}) ->
+        @lastSpeaker = null
+        @ctx = @newContext Meta, {rules: @rules}
+    parseLine: (fulltext) ->
+        [speaker, text] = @prepareLine fulltext
 
         if text is /報告院會/ and text is /現在散會/
             @store!
@@ -550,16 +562,13 @@ class Parser implements HTMLParser
         else if (speaker ? @lastSpeaker) is \主席 and @rules.match \exmotion.start text and not @rules.match \exmotion.ignore_start text and @ctx !instanceof Exmotion
             @newContext Exmotion, {origCtx: @ctx, rules: @rules}
             @ctx .=push-line speaker, text, fulltext
-        else if full is /.*表決結果名單.*/
+        else if fulltext is /.*表決結果名單.*/
             if !@ctx
                @newContext DummyContext
             @ctx .=push-line speaker, text, fulltext
             @newContext Vote, {origCtx: @ctx, rules: @rules}
         else
-            if @ctx
-                @ctx .=push-line speaker, text, fulltext
-            else
-                @output "#fulltext\n\n"
+            @push-line speaker, text, fulltext
         @lastSpeaker = speaker if speaker
 
     parseRich: (node) ->
@@ -569,8 +578,7 @@ class Parser implements HTMLParser
             @ctx.push-rich rich.html!
         else
             @output "    ", rich.html!, "\n"
-
-class TextParser extends Parser
+TextParser = do
     parseText: (data) ->
         for line in data / "\n"
             line = '* * *' if line is '<hr>'
@@ -581,6 +589,78 @@ class TextParser extends Parser
                     @output line, "\n"
             else
                 @parseLine line
+
+LogContext = do
+    output-meta: (meta, indent, prefix) ->
+        @output-json meta if @output-json
+        json = ["```json", JSON.stringify(meta, null, 4b), "```\n\n"].join "\n"
+        @output json.replace /^/mg, ' ' * indent + prefix
+
+class CommitteeAnnouncement implements LogContext
+    ({@output = console.log, @rules} = {}) ->
+        @output md_header \報告事項, 2
+        @output "\n"
+        @items = {}
+        @last-item = null
+        @i = 0
+    indent-level: -> 4
+    push-rich: (html) ->
+        @push-line null, html, html
+    push-line: (speaker, text, fulltext) ->
+        if fulltext is '* * *'
+            if @proceeding
+                @output-meta @meta, 4, '> '
+
+                for line in @proceeding
+                    @output "    > #line\n"
+                @proceeding = false
+            else
+                @proceeding = []
+            @output "    > #fulltext\n"
+            return @
+
+        if @proceeding
+            if @rules.regex \header.title_committee .exec fulltext
+                @meta = { type: \proceeding } <<< do
+                    ad: that.1
+                    session: that.2
+                    sitting: that.4
+                    committee: util.parseCommittee that.3
+                fulltext = "## " + fulltext
+            @proceeding.push fulltext
+            return @
+
+        if [_, item, content]? = text?match util.zhreghead
+            item = util.parseZHNumber item
+            text = content
+
+            # XXX might not work if nested item number goes beyond number of
+            # current level
+            if item > @i + 1
+                do
+                    @output "#{++@i}. 未宣讀\n"
+                while @i + 1 < item
+            if @i + 1 == item
+                @output "#{++@i}. #text\n"
+                @last-item = @items[item] = {subject: content, conversation: []}
+                return @
+        @output (if @last-item => "    " else ''), fulltext, "\n"
+        @last-item?.conversation.push [speaker, text]
+        return @
+    serialize: ->
+
+class CommitteeLogParser extends LogParser
+    ({@output = console.log, @rules, @output-json, @metaOnly} = {}) ->
+        @lastSpeaker = null
+        @ctx = @newContext Meta, {@rules, type: \committee}
+    parseLine: (fulltext) ->
+        [speaker, text] = @prepareLine fulltext
+        if !@ctx and @rules.match \announcement.title text
+            @newContext CommitteeAnnouncement, {@rules}
+            return
+        @push-line speaker, text, fulltext
+    parseRich: (node) ->
+
 
 class TextFormatter implements HTMLParser
     ({@output = console.log, @context-cb, @rules, @chute = true} = {}) ->
@@ -925,4 +1005,4 @@ class ResourceParser
     store: ->
         @output JSON.stringify @results, null, 4b
 
-module.exports = { Parser, TextParser, TextFormatter, MemoParser, StructureFormater, ResourceParser, BillParser }
+module.exports = { YSLogParser, TextParser, HTMLParser, TextFormatter, MemoParser, StructureFormater, ResourceParser, BillParser, CommitteeLogParser }

@@ -31,8 +31,7 @@ for primary, all of by-committee
                 "[#i](#full/#i.txt)"
             else
                 "#i"
-        console.log "\n"
-        console.log "會議記錄"
+        console.log "\n會議記錄"
         console.log links.join ' '
 
     console.log '* * *'
