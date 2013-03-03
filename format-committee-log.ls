@@ -4,7 +4,7 @@ require! \./lib/ly
 require! \./lib/rules
 {Parser, TextParser, TextFormatter} = require \./lib/parser
 
-{gazette, ad, dir = '.', text, fromtext} = optimist.argv
+{gazette, ad, dir = '.', text, fromtext, only-committee} = optimist.argv
 
 rules = new rules.Rules \patterns.yml
 
@@ -54,10 +54,14 @@ ly.forGazette {gazette, ad, type: \委員會紀錄} (id, g, type, entries, files
         unless [_, committee, multi, type]? = summary.match /^(.*?)(?:兩|三)?委員會(聯席)?(會議|公聽會)/
             console.error id, summary
             continue
+        if type is \公聽會
+            console.error \skipping summary
+            continue
         committee .= replace /與/g, \及
-        console.log id, util.parseCommittee committee
         klass = if text => TextFormatter else if fromtext => TextParser else Parser
         ext   = if text => \txt else \md
+        if only-committee and only-committee isnt (e.committee ? []).join \-
+            continue
 
         console.log \=== e.files
         try
