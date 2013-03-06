@@ -93,4 +93,87 @@ getSummary = ({ad, session, sitting, extra}, doctype, type, cb) ->
 
     cb body
 
-module.exports = { forGazette, index, gazettes, getSummary, getAgenda, getProceeding, getMeetings, getMeetingAgenda, getBillDetails }
+getCalendarEntry = (id, cb) ->
+    err, res, body <- request do
+        method: \GET
+        uri: "http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingView.action?id=#id"
+        headers: do
+            Origin: 'http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingView.action'
+            Referer: 'http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingView.action'
+            User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
+
+    $ = require \cheerio .load body
+    var prev
+    res = {}
+    header-map = do
+        屆別: \ad
+        會期: \session
+        日期時間: \datetime
+        召集委員: \chair
+        主審委員會: \committee
+        聯席委員會: \cocommittee
+        會議室: \room
+        會議名稱: \name
+        會議事由: \agenda
+        說明: \remark
+
+    $('td > div.page_content_date,div.page_content_body').each ->
+        if !@hasClass \page_content_body and [_, header, content]? = @text!match /^(.{2,9}?)：([\s\S]*)$/m
+            unless content
+                prev := header
+                return
+        else
+            header = prev ? \unknown
+            prev := null
+            content = if @hasClass \page_content_body
+                $ '<div/>' .html(@html!replace /<br>/g '\n').text!
+            else
+                @text!
+        if @hasClass \page_content_date
+            content .= replace /\s+/g ' '
+        res[header-map[header] ? header] = content - /^\s*|\s*$/g
+
+    cb res
+
+fetchCalendarPage = ({uri, params, page=1, last-page, seen}, done) ->
+    require! <[qs cheerio]>
+    console.log \fetch page, \last last-page
+    return done [] if last-page and page > last-page
+    thisuri = uri + '?' + qs.stringify params <<< {'d-49489-p': page}
+    err, res, body, cache <- request.get thisuri, {
+        headers: do
+            Origin: 'http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingView.action'
+            Referer: 'http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingView.action'
+            User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
+        }
+    $ = cheerio.load body
+
+    results = $ 'table.news_search tbody tr' .map ->
+        [date, time, committee, summary, room] = @find 'td' .map -> @text! - /^\s*|\s*$/g
+        [id] = @find 'a[href]' .map -> @attr \href .match /id=(\d+)/ .1
+        {id, date, time, committee, summary, room}
+
+
+    if seen and [id for {id} in results when id ~= seen].length
+        console.log \cut
+        return done results.filter -> +it.id > seen
+
+    if page is 1
+        [_, entries] = $ 'div.pagelinks' .text!match /共\s*(\d+)\s*筆資料/
+        last-page := Math.ceil entries/30
+    res <- fetchCalendarPage {uri, params, page: page+1, last-page, seen}
+    done results ++ res
+
+getCalendarByYear = (year, seen, cb) ->
+    entries <- fetchCalendarPage do
+        uri: 'http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingList.action'
+        seen: seen
+        params: do
+            order: \DESC
+            eDate: "#{year}12"
+            sDate: "#{year}01"
+
+
+    cb entries
+
+module.exports = { forGazette, index, gazettes, getSummary, getAgenda, getProceeding, getMeetings, getMeetingAgenda, getBillDetails, getCalendarEntry, getCalendarByYear }
