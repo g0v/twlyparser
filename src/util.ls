@@ -124,6 +124,18 @@ committees = do
     JUD: \司法及法制
     SWE: \社會福利及衛生環境
     WHL: \全院
+    PRO: \程序
+    # obsolete
+    IAP: \內政及民族
+    DEF: \國防
+    FOR: \外交及僑務
+    JUR: \司法
+    LAW: \法制
+    SCI: \科技及資訊
+    ECE: \經濟及能源
+    ESW: \衛生環境及社會福利
+    ELB: \衛生環境及勞工
+    BGT: \預算及決算
 
 parseCommittee = (name) ->
     name.split /、/ .map ->
