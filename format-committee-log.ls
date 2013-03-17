@@ -12,7 +12,8 @@ fname = ({ad, session, committee, sitting}) ->
     "#ad/#session/#{ committee.join \- }/#sitting"
 
 parseContent = (id, g, klass, ext, e) ->
-    var current-file, output, warned
+    var current-file, output
+    warned = 0
     parser = new klass do
         rules: rules
         context-cb: ->
@@ -30,7 +31,7 @@ parseContent = (id, g, klass, ext, e) ->
 
         output: (...args) ->
             unless output
-                console.error \grr args unless warned++
+                console.error \unhandled id, args unless warned++
                 return
             fs.writeSync output, (args ++ "\n")join ''
 
