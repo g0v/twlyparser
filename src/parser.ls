@@ -708,17 +708,22 @@ class TextFormatter implements HTMLParser
                 it
             rows = node.find 'tr,th' .map -> @
             rcontent = rows.map(-> it.find \td .map -> cleanup @text!)
-            csize = rcontent.map (.length)
-            ncol = Math.max null ...csize
+            ncol = Math.max null ...rcontent.map (.length)
+            # screen width hack
+            swidth = -> it.length * 2 - (it.match(/[\u0000-\u007f]/g)?length ? 0)
             colsize = for i in [0 til ncol]
-                Math.max.apply null rcontent.map -> it[i]?length ? 0
+                Math.max.apply null rcontent.map ->
+                    if it[i]
+                        swidth it[i]
+                    else
+                        0
             [rhead, ...rbody] = rcontent
             @output ''
             for row, r in [rhead, colsize.map -> '-' * it] ++ rbody
                 col = for c in [0 til ncol]
                     col = row[c]
-                    col = '\u3000' * colsize.0 if !col
-                    printf "%#{colsize[c]}s" col
+                    col = '\u3000' * (colsize[c] / 2) if !col
+                    ' ' * (colsize[c] - swidth col) + col
                 @output '| ' + col.join ' | '
 
             return
