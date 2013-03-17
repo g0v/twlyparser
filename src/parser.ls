@@ -522,7 +522,8 @@ class LogParser
         if @ctx
             @ctx .=push-line speaker, text, fulltext
         else
-            @output "#fulltext\n\n"
+            @output "#fulltext"
+            @output "\n" unless fulltext.0 is \|
 
 class YSLogParser extends LogParser
     ({@output = console.log, @rules, @output-json, @metaOnly} = {}) ->
@@ -645,7 +646,8 @@ class CommitteeAnnouncement implements LogContext
                 @output "#{++@i}. #text\n"
                 @last-item = @items[item] = {subject: content, conversation: []}
                 return @
-        @output (if @last-item => "    " else ''), fulltext, "\n"
+        @output (if @last-item => "    " else ''), fulltext
+        @output '' unless fulltext.0 is \|
         @last-item?.conversation.push [speaker, text]
         return @
     serialize: ->
@@ -700,16 +702,22 @@ class TextFormatter implements HTMLParser
                 @attr \SRC uri
 
         if node.0.name is \table and !node.find \table .length
+            cleanup = ->
+                it -= /^\s+|\s+$/g
+                it.=replace /\s*\n\s*/g '<br>'
+                it
             rows = node.find 'tr,th' .map -> @
-            rcontent = rows.map(-> it.find \td .map -> @text! - /^\s+|\s+$/g)
-            rsize = rcontent.map (.length)
-            colsize = for i in [0 til Math.max null ...rsize]
-                Math.max.apply null rcontent.map -> it[i].length
+            rcontent = rows.map(-> it.find \td .map -> cleanup @text!)
+            csize = rcontent.map (.length)
+            ncol = Math.max null ...csize
+            colsize = for i in [0 til ncol]
+                Math.max.apply null rcontent.map -> it[i]?length ? 0
             [rhead, ...rbody] = rcontent
             @output ''
             for row, r in [rhead, colsize.map -> '-' * it] ++ rbody
-                col = for col, c in row
-                    col = '\u3000' * colsize.0 if !col and r is 0
+                col = for c in [0 til ncol]
+                    col = row[c]
+                    col = '\u3000' * colsize.0 if !col
                     printf "%#{colsize[c]}s" col
                 @output '| ' + col.join ' | '
 
