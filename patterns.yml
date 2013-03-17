@@ -134,7 +134,7 @@ discussion:
 proposal:
   start:
     regex: |
-      處理.*黨團.*提案
+      處理.*黨團.*(提案|增列部分)
 consultation:
   start:
     regex: |

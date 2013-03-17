@@ -80,7 +80,8 @@ class Announcement
                 @output "#{++@i}. #text\n"
                 @last-item = @items[item] = {subject: content, conversation: []}
                 return @
-        @output "    #fulltext\n"
+        @output "    #fulltext"
+        @output "" unless fulltext.0 is \|
         @last-item?.conversation.push [speaker, text]
         return @
     serialize: ->
@@ -150,7 +151,7 @@ class Exmotion
         @state = current_state
 
         @output fulltext
-        @newline!
+        @newline! unless fulltext.0 is \|
         if (speaker ? @lastSpeaker) is \主席 and @rules.match \exmotion.end text
             @newline!
             @flush!
@@ -218,7 +219,9 @@ class Discussion
             need_output_orig = @handle_letter fulltext
         # @TODO:處理逐條討論
         if need_output_orig
-            @output "#fulltext\n"
+            @output fulltext
+            @output "" unless fulltext.0 is \|
+
         return @
 
     handle_letter: (fulltext) ->
@@ -315,7 +318,8 @@ class Proposal
         @lines = []
     indent-level: -> 0
     push-line: (speaker, text, fulltext) ->
-        @output "#fulltext\n"
+        @output fulltext
+        @output '' unless fulltext.0 is \|
         return @
     serialize: ->
 
@@ -344,7 +348,8 @@ class Interpellation
                         if speaker => '* ' else '    '
                     else
                         ''
-                    @output "    #itemprefix#fulltext\n"
+                    @output "    #itemprefix#fulltext"
+                    @output '' unless fulltext.0 is \|
                 @conversation.push [ type, @current-conversation ]
             else
                 for [speaker, fulltext] in @current-conversation => @output "* #fulltext\n"
@@ -712,7 +717,8 @@ class TextFormatter implements HTMLParser
             # screen width hack
             swidth = -> it.length * 2 - (it.match(/[\u0000-\u007f]/g)?length ? 0)
             colsize = for i in [0 til ncol]
-                Math.max.apply null rcontent.map ->
+                # gfm table cols need to be at least 3 bytes
+                Math.max.apply null [3] ++ rcontent.map ->
                     if it[i]
                         swidth it[i]
                     else
