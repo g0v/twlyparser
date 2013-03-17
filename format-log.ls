@@ -2,9 +2,9 @@ require! {optimist, fs, path}
 require! \./lib/util
 require! \./lib/ly
 require! \./lib/rules
-{YSLogParser, HtmlParser, TextParser, TextFormatter} = require \./lib/parser
+{YSLogParser, HTMLParser, TextParser, TextFormatter} = require \./lib/parser
 
-{gazette, ad, dir = '.', text, fromtext} = optimist.argv
+{gazette, ad, session, dir = '.', text, fromtext} = optimist.argv
 
 rules = new rules.Rules \patterns.yml
 
@@ -15,10 +15,12 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
     else
         return if ad and g.ad !~= ad
 
+    return if session and g.session !~= session
+
     klass = switch
     | text     => TextFormatter
     | fromtext => class extends YSLogParser implements TextParser
-    else       => class extends YSLogParser implements HtmlParser
+    else       => class extends YSLogParser implements HTMLParser
     ext   = if text => \txt else \md
     output = fs.openSync "#dir/#id.#ext" \w
     process.stdout.write id

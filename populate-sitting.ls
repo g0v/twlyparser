@@ -1,7 +1,7 @@
 require! \./lib/ly
 require! <[request optimist path fs shelljs async]>
 
-{Parser, MemoParser} = require \./lib/parser
+{YSLogParser, HTMLParser, MemoParser} = require \./lib/parser
 {convertDoc} = require \./lib/util
 
 {gazette, dometa, ad, type, force} = optimist.argv
@@ -43,7 +43,7 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
         extractMeta = ->
             return done! unless dometa
             meta = null
-            klass = if memo => MemoParser else Parser
+            klass = if memo => MemoParser else class extends YSLogParser implements HTMLParser
             parser = new klass do
                 rules: rules
                 output: ->
