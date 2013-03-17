@@ -136,11 +136,33 @@ E816 -> （一） ~ E879 （一○○）
 E87A -> 0 ~ E8DE 100
 */
 
+zhnumber = <[○ 一 二 三 四 五 六 七 八 九 十]>
+
+zhprecision2 = ['', \十]
+
+parseZhNumberUnit2 = (idx, value) ->
+  precision = zhprecision2[idx]
+  number = if value == '一' and idx !~= 0 or value == '○' and idx ~= 0 then '' else value
+
+  '' + number + precision
+
+parseZhNumber3 = ->
+  if it .length == 3 then return it .join ''
+  if it .length == 1 and it[0] == '○' then return it .join ''
+
+  [parseZhNumberUnit2 k, v for k, v of it .reverse!] .reverse! .join ''
+
+numToZhNumber = ->
+  parseZhNumber3 (it .toString! .split '' .map -> zhnumber[it])
+
 export umap = {[parseInt(k,16) , v] for k, v of charmap} <<< \
   {[0xE6EA + n - 1 , "#n."] for n in [1 to 100]} <<< \
   {[0xE74E + n - 1 , "(#{n})"] for n in [1 to 100]} <<< \
   {[0xE7B2 + n - 1 , "（#{n}）"] for n in [1 to 100]} <<< \
-  {[0xE87A + n , "#n"] for n in [0 to 100]}
+  {[0xE87A + n , "#n"] for n in [0 to 100]} <<< \
+  {[0xE622 + n - 1, (numToZhNumber n) + '、'] for n in [1 to 100]} <<<  \
+  {[0xE686 + n - 1, '(' + (numToZhNumber n) + ')'] for n in [1 to 100]} <<< \
+  {[0xE816 + n - 1, '（' + (numToZhNumber n) + '）'] for n in [1 to 100]}
 
 export function buildmap(cmap = umap)
   regex = [k for k of cmap].map(-> String.fromCharCode it).join \|
