@@ -1,4 +1,4 @@
-require! {cheerio, marked, path, crypto}
+require! {cheerio, marked, path, crypto, printf}
 require! \js-yaml
 require! "../lib/util"
 require! "../lib/rules"
@@ -612,7 +612,8 @@ class CommitteeAnnouncement implements LogContext
                 @output-meta @meta, 4, '> '
 
                 for line in @proceeding
-                    @output "    > #line\n"
+                    @output '' unless line.0 is \|
+                    @output "    > #line"
                 @proceeding = false
             else
                 @proceeding = []
@@ -697,6 +698,22 @@ class TextFormatter implements HTMLParser
                     uri = "//media.getchute.com/media/#shortcut"
                 uri ?= exec-sync "lsc ./img-filter.ls #file"
                 @attr \SRC uri
+
+        if node.0.name is \table and !node.find \table .length
+            rows = node.find 'tr,th' .map -> @
+            rcontent = rows.map(-> it.find \td .map -> @text! - /^\s+|\s+$/g)
+            rsize = rcontent.map (.length)
+            colsize = for i in [0 til Math.max null ...rsize]
+                Math.max.apply null rcontent.map -> it[i].length
+            [rhead, ...rbody] = rcontent
+            @output ''
+            for row, r in [rhead, colsize.map -> '-' * it] ++ rbody
+                col = for col, c in row
+                    col = '\u3000' * colsize.0 if !col and r is 0
+                    printf "%#{colsize[c]}s" col
+                @output '| ' + col.join ' | '
+
+            return
 
         @output rich.html! - /^\s+/mg - /\n/g - /position: absolute;/g
 
