@@ -38,7 +38,7 @@ parseContent = (id, g, klass, ext, e) ->
     if fromtext
         file = "#dir/#{fname e}.txt"
         output = fs.openSync (file.replace /.txt$/, '.md'), \w
-        parser.parseText util.readFileSync file
+        parser.parseText fs.readFileSync file
     else
         parser.base = "source/#{id}"
         for uri in e.files => let fname = path.basename uri

@@ -31,7 +31,7 @@ ly.forGazette gazette, (id, g, type, entries, files) ->
 
         if fromtext
             file = "#dir/#id.txt"
-            parser.parseText util.readFileSync file
+            parser.parseText fs.readFileSync file
         else
             parser.base = "source/#{id}"
             for uri in files => let fname = path.basename uri
