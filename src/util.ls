@@ -121,8 +121,13 @@ committees = do
     PRO: \程序
     # obsolete
     IAP: \內政及民族
+    IAF: \內政及邊政
+    FRO: \邊政
     DEF: \國防
     FOR: \外交及僑務
+    FOP: \外交及僑政
+    OVP: \僑政
+    DIP: \外交
     JUR: \司法
     LAW: \法制
     SCI: \科技及資訊
@@ -130,6 +135,8 @@ committees = do
     ESW: \衛生環境及社會福利
     ELB: \衛生環境及勞工
     BGT: \預算及決算
+    BUD: \預算
+    EDN: \教育
 
 parseCommittee = (name) ->
     name.split /、/ .map ->
