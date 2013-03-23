@@ -1,4 +1,4 @@
-require! {cheerio, marked, path, crypto, printf}
+require! {cheerio, crypto, marked, path, printf}
 require! \js-yaml
 require! "../lib/util"
 require! "../lib/rules"
