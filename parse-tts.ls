@@ -1,4 +1,8 @@
 #!/usr/bin/env lsc
+# use the chrome extension to download full html from tts-based ly site
+# https://chrome.google.com/webstore/detail/%E7%AB%8B%E6%B3%95%E9%99%A2%E6%93%B4%E5%85%85/ingofalhkimajgdgaplblnkhpenjhmpo?hl=en
+# iconv -f big5-2003 -t utf8
+# and parse with this
 require! <[fs cheerio optimist]>
 [file] = optimist.argv._
 
