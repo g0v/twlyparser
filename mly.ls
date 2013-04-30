@@ -1,4 +1,4 @@
-require! optimist
+require! <[crypto optimist]>
 require! \./lib/util
 {member} = optimist.argv
 
@@ -50,7 +50,7 @@ city = -> match it.replace /台/g, '臺' # ISO-3166-2:TW
 | \連江縣 => \LJF # no ISO3166, use GB/T 2260-2002
 else => console.error it
 
-constuiency = -> match it
+constituency = -> match it
 | /^.*(市|縣)$/ => [ city(it), 0 ]
 | /(.*(?:市|縣))(?:第(\S+))?選舉區/ =>
     area = that.2
@@ -62,12 +62,22 @@ else => console.error it
 
 console.error members.length
 
+contact = (phone, address) ->
+    phone .= map -> it.split \：
+    address .= map -> it.split \：
+    phones = {[k,v] for [k,v] in phone}
+    address = {[k,v] for [k,v] in address}
+    {[name, {phone: phones[name], address: address[name]}] for name of {[k,1] for name in Object.keys(phones) ++ Object.keys(address)}}
 
 res = members.map (m) ->
+    key = crypto.createHash('md5').update("MLY/#{m.姓名}", \utf8).digest('hex')
     do
         name: m.姓名
         party: party m.黨籍
         caucus: party m.黨團
-        constuiency: constuiency m.選區
+        constituency: constituency m.選區
+        contact: contact m.電話, m.通訊處
+        avatar: "http://avatars.io/50a65bb26e293122b0000073/#{key}"
+        assume: m.到職日期?replace /\//g \-
 
 console.log JSON.stringify res, null, 4

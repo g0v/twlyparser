@@ -3,1904 +3,2338 @@
         "name": "尤清",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c9ac9e9ae10ce8368849a837a7a56454"
     },
     {
         "name": "瓦歷斯．貝林",
         "party": "NSU",
         "caucus": "NSU",
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "highland"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/4639417a6b2284cc1f6c0dad28607311"
     },
     {
         "name": "王幸男",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TNN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b559fccdf921e0294e938ab2536406bf"
     },
     {
         "name": "王拓",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KEE",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/51768ec0077606129c4ee55b023218b9"
     },
     {
         "name": "王金平",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "KHQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/52e2f38674c4a60ef92b2e95ae5d8c4d"
     },
     {
         "name": "王政中",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "foreign"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c763a6bbb50f7e52305ef8aa3963cbf5"
     },
     {
         "name": "王昱婷",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TNN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c1870aa217ce66d93ad4dd378dd15405"
     },
     {
         "name": "王淑慧",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/31d3472d041b4c72de4677ea1210fc2b"
     },
     {
         "name": "王雪峯",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPE",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/5f540867dd06944ceb251097611b2352"
     },
     {
         "name": "王鍾渝",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/778fe369421170d89fe1f3292df39770"
     },
     {
         "name": "朱星羽",
         "party": "NSU",
         "caucus": "NSU",
-        "constuiency": [
+        "constituency": [
             "KHH",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/4d4b497c70253a6d54bf97d10217dc3c"
     },
     {
         "name": "朱鳳芝",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TAO",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/7c1db2fc2ebaff07c49c80074fcb42b5"
     },
     {
         "name": "江丙坤",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/235c37227b629df8ec52eea94ff528da"
     },
     {
         "name": "江昭儀",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "CHA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/7f95cdcda5c3e5ea43c88d8b0606d1d1"
     },
     {
         "name": "江綺雯",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "KHH",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/279e4a242678036a3d7eb1325edd3c45"
     },
     {
         "name": "何金松",
         "party": "NSU",
         "caucus": "NSU",
-        "constuiency": [
+        "constituency": [
             "CYQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b623fbe53e97e149dba3de511759ec69"
     },
     {
         "name": "何敏豪",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "TXG",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/3d2fcf033014dd0cbe364512e79c88a4"
     },
     {
         "name": "何智輝",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "MIA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/12f54a13be5ea9fb7755051e86cfb2ef"
     },
     {
         "name": "余政道",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a2ef49bcf80835e8558d236ea66794f6"
     },
     {
         "name": "吳成典",
         "party": "NP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "JME",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a297ded0e06801721ec2de1453c6ceec"
     },
     {
         "name": "吳東昇",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/2110fe296587066ce61673920519ea00"
     },
     {
         "name": "吳敦義",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "NAN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/176ccd3acf2a1be6000344ff76975951"
     },
     {
         "name": "呂新民",
         "party": "NSU",
         "caucus": "NSU",
-        "constuiency": [
+        "constituency": [
             "TAO",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/635b9d572b2838da76fc98b6248c5681"
     },
     {
         "name": "呂學樟",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "HSZ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c831d0aac8c897284faa3b165e2054c6"
     },
     {
         "name": "李文忠",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/61707bd4a922c2119bc5a046f1cdb48b"
     },
     {
         "name": "李永萍",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TPE",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/56f9baca63a0327d1f9440fe0cd5abbf"
     },
     {
         "name": "李全教",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TNQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/62c17ee91dcba82f6ef50e7b2ff365ac"
     },
     {
         "name": "李明憲",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TXG",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e42f427a5d3cf6016f0bc4ae66eee7e5"
     },
     {
         "name": "李俊毅",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TNQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/bf53034d5b848a9db9d74ea6c7723dab"
     },
     {
         "name": "李桐豪",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e77b9525869111b88de63a37977242f9"
     },
     {
         "name": "李雅景",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "CYQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b0a4f860276b3a194732c90624fab9b2"
     },
     {
         "name": "李嘉進",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/69ecf7b092d683a492eb12426ecdc264"
     },
     {
         "name": "李慶安",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TPE",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c5b19ed49f487042cb39fad67c2f1af0"
     },
     {
         "name": "李慶華",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             3
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/367b4613e5388044e4239912266fc9d5"
     },
     {
         "name": "李鴻鈞",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/805b50011ffe878a1d72d0d6cebe1a11"
     },
     {
         "name": "李鎮楠",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TAO",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/df0be9cca30a673c7e950c29a8ed661d"
     },
     {
         "name": "李顯榮",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/8599cc69bc45bbe459eb1deba1bb2f85"
     },
     {
         "name": "杜文卿",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "MIA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/bca4ec02367f0b2df326ad520f5e7fb2"
     },
     {
         "name": "沈富雄",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPE",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/267da9529ea52d8f0d87637fa69ea112"
     },
     {
         "name": "沈智慧",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TXG",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/2538751f8a02b24a759af384cfb42aa0"
     },
     {
         "name": "邱永仁",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/1d74817d6897d77e5a1fbf3d53059df4"
     },
     {
         "name": "邱垂貞",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TAO",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/98f69566adb58d961f2c23a4f27f1221"
     },
     {
         "name": "邱創良",
         "party": "NSU",
         "caucus": "NSU",
-        "constuiency": [
+        "constituency": [
             "TAO",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/cd6f82f2ffaa6ef6b601e77d34ee4865"
     },
     {
         "name": "邱創進",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "CHA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/592a6b8641df3732b6ff0a2eb88a8f71"
     },
     {
         "name": "邱毅",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "KHH",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/ea897fde3209d98efdac026423e32864"
     },
     {
         "name": "邱鏡淳",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "HSQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/7c4ad08ec7dac47cf1403ef9f9b5c363"
     },
     {
         "name": "邱議瑩",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "PIF",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/cb14b2ae9b01e89ce5ca1bc4b9d732e9"
     },
     {
         "name": "卓伯源",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "CHA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e052000cac4b14fd55d9d7a37b6602d3"
     },
     {
         "name": "周清玉",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "CHA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/03cb4914c2d51edb71c2037773b361f5"
     },
     {
         "name": "周雅淑",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             3
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b995f3a9d7cd336a564b74128c6e9d80"
     },
     {
         "name": "周慧瑛",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b2f3fd32edcf921271d6f77c3f29a385"
     },
     {
         "name": "周錫瑋",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/630bc12adb6df9f1ad0ff463f40555f9"
     },
     {
         "name": "林文郎",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/04cbd5d5b0f95b01b1dcb71b6ab5d2dd"
     },
     {
         "name": "林正二",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "lowland"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/110936e15d9a2f8f49ffabdc64dfbc55"
     },
     {
         "name": "林志隆",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "KHQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/0d9529cbb7788348f7cf3e768af3b325"
     },
     {
         "name": "林岱樺",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/bbd3383e6e68c860eab850173cc8c311"
     },
     {
         "name": "林忠正",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a63934bc30937f4bb7c2ae4729333a17"
     },
     {
         "name": "林育生",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "PIF",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/8d8a64354a9bf507d4ba2566ef3553cd"
     },
     {
         "name": "林郁方",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TPE",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/4d23d2a635e3dac01ec2201607ebf669"
     },
     {
         "name": "林南生",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TNN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/24a5923645282348a05e6f99d3b8f0bf"
     },
     {
         "name": "林政義",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "foreign"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/3b9cebc40d22a270cbf747f76f3a19fc"
     },
     {
         "name": "林春德",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "lowland"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c6948fc0a58886baf2350f047ae93f18"
     },
     {
         "name": "林炳坤",
         "party": "NSU",
         "caucus": "NSU",
-        "constuiency": [
+        "constituency": [
             "PEN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/d811769b17b29c0c479876c2caff04ad"
     },
     {
         "name": "林重謨",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPE",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a5ea5839a3b5fc652eb0aea73383c631"
     },
     {
         "name": "林益世",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "KHQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/21153599712a597e0b8858fece01e3c2"
     },
     {
         "name": "林國華",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "YUN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/bb83a26f55e343525cb95e7f2a60571f"
     },
     {
         "name": "林進春",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "CHA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e8f5e9745380f5a37b82579de2d70f9e"
     },
     {
         "name": "林進興",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHH",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/91439ff93535c126229cb5d87e546cfd"
     },
     {
         "name": "林惠官",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/cf498c09d82e89c33fb1c79522e84a3f"
     },
     {
         "name": "林德福",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             3
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/93d79eb59a34df142e83d922f2e96066"
     },
     {
         "name": "林濁水",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/f4a609de6d80c188c85c9236a12fb124"
     },
     {
         "name": "林豐喜",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TXQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/99e3f893869bdfddcddb617929683001"
     },
     {
         "name": "侯水盛",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TNQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/f32b4d39f188c57520a3bf3e9cc0e92c"
     },
     {
         "name": "侯彩鳳",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/2698383829b1fbdaf2c682d1b80403d8"
     },
     {
         "name": "柯建銘",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "HSZ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/f9fbf7c2903aaa5c697b2dff6fb5356d"
     },
     {
         "name": "柯淑敏",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/75f047cc014d07035e17e59b546dd5c7"
     },
     {
         "name": "段宜康",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPE",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/74c329f7eb932282141bcad4258cdf6f"
     },
     {
         "name": "洪秀柱",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             3
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/08280b7cb4310afdc73a737cdae0c0d5"
     },
     {
         "name": "洪奇昌",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e3399edc4f77a97d27f59f1dfd02d305"
     },
     {
         "name": "洪昭男",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TXG",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/4855ddc7c96e54a495bae1a9250ca866"
     },
     {
         "name": "紀國棟",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TXQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/237cd9d444bd884955d0ee3334a2235e"
     },
     {
         "name": "唐碧娥",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TNN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/1904b3811e16b9a831a126b5e975a7d3"
     },
     {
         "name": "孫大千",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TAO",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/6364fcd082a31fc799ea82e7186a2083"
     },
     {
         "name": "孫國華",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "foreign"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/7ca1568bdacc3dd6463059d584f801c9"
     },
     {
         "name": "徐中雄",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TXQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/6a7ee708e95d82c75c3cca94393c089b"
     },
     {
         "name": "徐少萍",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "KEE",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/960dd3db8084a8f6f653f21eea1a4424"
     },
     {
         "name": "徐志明",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/126ea528e78b5c854a3e9ebe0187656e"
     },
     {
         "name": "徐耀昌",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "MIA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/1229920460f7e6594489b747b908d0f2"
     },
     {
         "name": "殷乃平",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/db0292539799e0b37b5fe00809f39e83"
     },
     {
         "name": "秦慧珠",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TPE",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/bb62727a72e1c0cf80eab4c525a5484f"
     },
     {
         "name": "郭正亮",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPE",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/9df4654fc6737e9e5441734ed628b44e"
     },
     {
         "name": "郭玟成",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHH",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/dbdb3ce2147b7134e7731bfa24b92de9"
     },
     {
         "name": "郭俊銘",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TXQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/569a246d36596076400a71315f679ece"
     },
     {
         "name": "郭添財",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TNQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c34a383a2f85fb67bb9d160cb5dafb0a"
     },
     {
         "name": "郭榮宗",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TAO",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/0d89bedba5f268d42b8d7a7bc80cea50"
     },
     {
         "name": "陳文茜",
         "party": null,
         "caucus": null,
-        "constuiency": [
+        "constituency": [
             "TPE",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/5e85298517c78f3ef946f94093ea881d"
     },
     {
         "name": "陳宏昌",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/50882f828372035c29d62684c617daf4"
     },
     {
         "name": "陳志彬",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "NAN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b69bc87990e410ab32b72679de90e23b"
     },
     {
         "name": "陳宗義",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TAO",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/d97f6915645ab177650e8eb66a9aa2a0"
     },
     {
         "name": "陳建銘",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "TPE",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/dbcf05f0f98169c6ea327a235888b0be"
     },
     {
         "name": "陳杰",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "CHA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a41778a63ad3712adce25652f1ed44f8"
     },
     {
         "name": "陳茂男",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c1c9ff255479dd20325d8125a107ba11"
     },
     {
         "name": "陳金德",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "ILA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/832296a46336260fa7dd0cd43eaea48f"
     },
     {
         "name": "陳飛龍",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/3f38d1a40158155fc0ef7d025e801fcc"
     },
     {
         "name": "陳健民",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b38cfed899f55b76e7b9a1b9420a96ce"
     },
     {
         "name": "陳健治",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/d37dc9be2e291e66b0191b0b2d88e9c5"
     },
     {
         "name": "陳根德",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TAO",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/1d78ead1b3c74ebdb8dd9762beac40f1"
     },
     {
         "name": "陳進丁",
         "party": "NSU",
         "caucus": "NSU",
-        "constuiency": [
+        "constituency": [
             "CHA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b15e335a9630d615e9f3115fe053133c"
     },
     {
         "name": "陳進興",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "HSQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/76c4594fb2da0cbd6987fb32dc6f496d"
     },
     {
         "name": "陳景峻",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/8d0379e018c8cc2e272c77323b1175a2"
     },
     {
         "name": "陳勝宏",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/5ec606f05e24be3cfed4d873c8f025cd"
     },
     {
         "name": "陳朝龍",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             3
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b6b657e7afeb09039cad0c6eae113ebd"
     },
     {
         "name": "陳道明",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/6fbf7591aee1d1a7c6db96e3b1b80ab3"
     },
     {
         "name": "陳劍松",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "YUN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/879034f65b3b1cac749161150e38c88e"
     },
     {
         "name": "陳學聖",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPE",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/7fd6f5887720ef96a212354b449a5faf"
     },
     {
         "name": "陳麗惠",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "KHQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/87c44450abc1405201ec3acb28a5d68f"
     },
     {
         "name": "高仲源",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/9f2dd4a2b9bee6ed307dd448cbc81a77"
     },
     {
         "name": "高志鵬",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/9e559e4c06d5a5d85b784c2e8ce3a6a5"
     },
     {
         "name": "高孟定",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "YUN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/bfc40e7c6166b52c94c23258a552c184"
     },
     {
         "name": "高明見",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/60d7eecca96d664179386a97211eaf4c"
     },
     {
         "name": "高育仁",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/1fab218edce7b478181a05e6d4c018d2"
     },
     {
         "name": "高金素梅",
         "party": "NSU",
         "caucus": "NSU",
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "highland"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/d695a7b0a4df842713e57ce76437a667"
     },
     {
         "name": "張川田",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "ILA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c4939902b8c19726b6ac3359888917a0"
     },
     {
         "name": "張秀珍",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "foreign"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c611ca17dbe3d2a3be2fa584b3351742"
     },
     {
         "name": "張花冠",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "CYQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a9bb747b66fbefd6a7331578186d6f96"
     },
     {
         "name": "張昌財",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TAO",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/bce32fd5016e68814b899bbeae32c98d"
     },
     {
         "name": "張俊宏",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/622e855db117743fd6d08eae47eabbe5"
     },
     {
         "name": "張清芳",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/8d16a50abdc91687d78ee42e1d53873c"
     },
     {
         "name": "張蔡美",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "HSZ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/03eaf96c7579f4c0aa252421920d0b7f"
     },
     {
         "name": "張學舜",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "HSQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/ef5e8f99531f652110defb5380d4b3bb"
     },
     {
         "name": "曹原彰",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "LJF",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/cf013835a73a4138cacad98a899e909f"
     },
     {
         "name": "曹啟鴻",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "PIF",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/0881805361de3d111e499f1c97e257fb"
     },
     {
         "name": "梁牧養",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHH",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/eed1da14923fb1994945c4f1bb548178"
     },
     {
         "name": "章仁香",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "lowland"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/33e3176c7e08179ca6cb4984befadbf7"
     },
     {
         "name": "章孝嚴",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPE",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/caba9492ca7065e96081d3e700076212"
     },
     {
         "name": "許淵國",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TPE",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/fbd85492c619e227a172bd3cd9ebfc1a"
     },
     {
         "name": "許登宮",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/43c7fa65156e3dc4cd704bdcea47246a"
     },
     {
         "name": "許舒博",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "YUN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/ab9518e7058ef22ceca156d0e039783e"
     },
     {
         "name": "許榮淑",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/50ba559ba395e3ba0a2a908c301071af"
     },
     {
         "name": "傅崐萁",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "HUA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/4b935f62b86b4cb7ef26771af6376699"
     },
     {
         "name": "彭添富",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TAO",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/186327ebfeb7f51298434a59a67975a0"
     },
     {
         "name": "曾永權",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "PIF",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/5579d3f6d5d98951195627fcae989e2f"
     },
     {
         "name": "曾華德",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "highland"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/ec7f5d9efbe6e66133649dca2f5c8fa0"
     },
     {
         "name": "曾蔡美佐",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "YUN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/782820000df90a528808cf0bf6862e2b"
     },
     {
         "name": "游月霞",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "CHA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/1158ce7c0d266514d9feb30e03f48fd2"
     },
     {
         "name": "湯火聖",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "NAN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/f41a42dc25302eea223f7aa7ddc2f00d"
     },
     {
         "name": "湯金全",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHH",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/7c06f376047fc862b65b541ebff345b2"
     },
     {
         "name": "程振隆",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/cf656147c826012342b1e0f39e0f7dcf"
     },
     {
         "name": "葉宜津",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TNQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/11de665640227a9e5b7623d07adbf4df"
     },
     {
         "name": "馮定國",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TXQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/99b8ab2a2d6e210acd3bdcafd44d97dc"
     },
     {
         "name": "黃宗源",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/9a63207043fa510ed7215a2f313724b8"
     },
     {
         "name": "黃政哲",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/37e6f4f37713b93ecdaf6d75c03f3664"
     },
     {
         "name": "黃昭順",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/2d54e56bd133b06b32b5cb0be29a8306"
     },
     {
         "name": "黃健庭",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TTT",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/921f51d295e1f48759d11eb2e28d043c"
     },
     {
         "name": "黃逢時",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/3ae7c2b1f59e1df84a654ed39bf890e8"
     },
     {
         "name": "黃敏惠",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "CYI",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a1953301d0e299dbb984b4ab77050b71"
     },
     {
         "name": "黃義交",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TXG",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/bf23bec84c24a36b45dd6d9bc8d1b73e"
     },
     {
         "name": "黃德福",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/661c2af406277081f4ea8d4a1177bd61"
     },
     {
         "name": "楊仁福",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "lowland"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/6aec5d3da58e0137c2b3b5aede200670"
     },
     {
         "name": "楊文欣",
         "party": null,
         "caucus": null,
-        "constuiency": [
+        "constituency": [
             "TXQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e124fc2de117660b6230ef300e93615f"
     },
     {
         "name": "楊富美",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "foreign"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a4c63ae3d81355517d7827c1e228cb36"
     },
     {
         "name": "楊瓊瓔",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TXQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e7c2780646fc1f4a828e13acd5ea88a0"
     },
     {
         "name": "楊麗環",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TAO",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/63d2e503f5378776c28bcaaf2d8eb75d"
     },
     {
         "name": "廖本煙",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/2b07bd8358f6d214c0468d67d6667943"
     },
     {
         "name": "廖風德",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "ILA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/166506f1b78e88296fdc5a97c0ec3abd"
     },
     {
         "name": "廖國棟",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "lowland"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c2cc221264f91d7abdb90ddb3de9c307"
     },
     {
         "name": "廖婉汝",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "PIF",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c48456e3787a1eb89b6fbd0eab01a471"
     },
     {
         "name": "蔡中涵",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b9791adf5dcb060788ce337f484e7aae"
     },
     {
         "name": "蔡正元",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPE",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b263d77da3b1154c8716459b2050f054"
     },
     {
         "name": "蔡同榮",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "CYI",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/d792966c78cdca401aaf6ba04605eda3"
     },
     {
         "name": "蔡家福",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/0c5b8efa762ddb025cceb7aa92980cb5"
     },
     {
         "name": "蔡啟芳",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "CYQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e9235830da24f81b6699e2fe2e89080e"
     },
     {
         "name": "蔡煌瑯",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "NAN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a0bebdacc94e6fb766d85924b242b6f7"
     },
     {
         "name": "蔡鈴蘭",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/f22c336c793d0380e9032217470d51ec"
     },
     {
         "name": "蔡豪",
         "party": "NSU",
         "caucus": "NSU",
-        "constuiency": [
+        "constituency": [
             "PIF",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b9a47fe0b00821ef8a6bee93b0c91312"
     },
     {
         "name": "趙永清",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             3
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/da034707a32a0548c3711a48822be476"
     },
     {
         "name": "趙良燕",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "KHQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a98ea394482aa58a8315347a9bc87dab"
     },
     {
         "name": "鄭三元",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             3
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/2f2280d1c8bed07e644d70665a49e1d2"
     },
     {
         "name": "鄭余鎮",
         "party": "NSU",
         "caucus": "NSU",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/be178a36faf0ab2b78cd61cc151c3d54"
     },
     {
         "name": "鄭志龍",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/ed0c59a888c39f60bd30ac59c12b9afb"
     },
     {
         "name": "鄭金玲",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TAO",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/3f4436a9479ffdc1cac4746fe730fcd2"
     },
     {
         "name": "鄭美蘭",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "ILA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c07221550eaa45fe42106f13e8a4f617"
     },
     {
         "name": "鄭逢時",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/6e555c191b75348524e7808c17c5fd3d"
     },
     {
         "name": "鄭國忠",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TNQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/fd0f9e12fc1dcf6573eaf3966b23fb3b"
     },
     {
         "name": "鄭朝明",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "PIF",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/43be8d03d51158f8792586582730a5e3"
     },
     {
         "name": "鄭貴蓮",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/35a62eb14aa19baa2c7cae81001d610c"
     },
     {
         "name": "劉文雄",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "KEE",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/114b490c6e8b6e5ae251b10537e587f4"
     },
     {
         "name": "劉俊雄",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/158c7c5944bbe8a7aca11009578b6ebc"
     },
     {
         "name": "劉政鴻",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "MIA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a877c4b573a059bc81ac70d058938081"
     },
     {
         "name": "劉銓忠",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TXQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e27d073001bea3baa74c01985c914558"
     },
     {
         "name": "劉憶如",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/5ff6be7cb399f27db774cf404673ba29"
     },
     {
         "name": "盧秀燕",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TXG",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/72fb95798420ee845aec494373bd0ce3"
     },
     {
         "name": "盧博基",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "HUA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/56740609e9c66dc5451118826384c44d"
     },
     {
         "name": "穆閩珠",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPE",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/f29a25dfd5f76dbcff4e9bc409f9cfed"
     },
     {
         "name": "蕭美琴",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "foreign"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/98d28099bef2301530f6fd9ea291c323"
     },
     {
         "name": "賴清德",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TNN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/5f1dcf3ac115664829f9dffee822b75c"
     },
     {
         "name": "錢林慧君",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "TNN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/2e25ce0b9a92d2f1514b0fa05a65ba5f"
     },
     {
         "name": "藍美津",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPE",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/87261b485a6d272a47dea08a6845f1bc"
     },
     {
         "name": "謝明源",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TXG",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/d2703907968ee694c4bdc65203709016"
     },
     {
         "name": "謝章捷",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "CHA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/9b7c5500cccb5560844570a2c46e3ec1"
     },
     {
         "name": "鍾金江",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "foreign"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/2e1b7637286da28d24b2bc9be2cd8ef5"
     },
     {
         "name": "鍾紹和",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "KHQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/6991e07557de7ded6a466f327bdde308"
     },
     {
         "name": "鍾榮吉",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/27e8e20bf7b1d8dd7e91202ad87d9cc5"
     },
     {
         "name": "魏明谷",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "CHA",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/375ad04c5bc21060d65af4eb93c01b2f"
     },
     {
         "name": "簡肇棟",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TXQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/0fed6a2a7cc10f76bb9cb3823ca2a5c2"
     },
     {
         "name": "顏清標",
         "party": "NSU",
         "caucus": "NSU",
-        "constuiency": [
+        "constituency": [
             "TXQ",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c18da92471722aa144a602301bf1c482"
     },
     {
         "name": "顏錦福",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/1d000d60ca391e9e37a0ed4442120e03"
     },
     {
         "name": "羅世雄",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "KHH",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/0d8615fe8a4303b6ca487b86ec9a983d"
     },
     {
         "name": "羅志明",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "KHH",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/10c5b31ee53e12c938b9b20daf4b9456"
     },
     {
         "name": "羅明才",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             3
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/18297a623ca0515f258bb124492c26c3"
     },
     {
         "name": "蘇治芬",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "YUN",
             0
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/f1d493360840a45eaf17f211965971ef"
     },
     {
         "name": "蘇盈貴",
         "party": null,
         "caucus": null,
-        "constuiency": [
+        "constituency": [
             "KHH",
             1
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/ff4ad1bd8b7a37142af2682770e0d948"
     },
     {
         "name": "蘇嘉富",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/006b5ab5c6d32836b186d30c2c00ec58"
     },
     {
         "name": "關沃暖",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "foreign"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/4393d7b5cd6a28c7e0dfaf28657463b5"
     },
     {
         "name": "龐建國",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "TPE",
             2
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/0017536c57f625c3eaad65cc2181e19a"
     },
     {
         "name": "饒穎奇",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/80dad4fd0330ad75cffb95fe68db7bb1"
     },
     {
         "name": "顧崇廉",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {},
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/05964b8ffe223b7f84e0786a0bee1b09"
     }
 ]

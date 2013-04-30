@@ -3,983 +3,1884 @@
         "name": "丁守中",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPE",
             1
-        ]
+        ],
+        "contact": {
+            "北投服務處": {
+                "phone": "02-2828-7789",
+                "address": "11262臺北市北投區承德路七段188巷2號1樓"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/36f800ccfad1a8429e795874b135b969",
+        "assume": "2012-02-01"
     },
     {
         "name": "孔文吉",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "highland"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-8246",
+                "address": "10051臺北市中正區濟南路1段3-1號0203室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/dd2a35ce2e8bee86adbe23bc88cea003",
+        "assume": "2012-02-01"
     },
     {
         "name": "尤美女",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-8112",
+                "address": "10051臺北市中正區濟南路1段3-1號0402室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/7e6b58a7a6477c095778f904ac231332",
+        "assume": "2012-02-01"
     },
     {
         "name": "王廷升",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "HUA",
             0
-        ]
+        ],
+        "contact": {
+            "花蓮市服務處": {
+                "phone": "03-833-0729",
+                "address": "970花蓮市中原路462號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/aca793a386a8bc5100792331d26077db",
+        "assume": "2012-02-01"
     },
     {
         "name": "王育敏",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-8261",
+                "address": "10051臺北市中正區青島東路1-3號7103室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/307daea9662d48899b50ecb71404720d",
+        "assume": "2012-02-01"
     },
     {
         "name": "王金平",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "高雄服務處": {
+                "phone": "07-607-5509",
+                "address": "高雄市路竹區甲南村大仁路369巷7號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/52e2f38674c4a60ef92b2e95ae5d8c4d",
+        "assume": "2012-02-01"
     },
     {
         "name": "王進士",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "PIF",
             2
-        ]
+        ],
+        "contact": {
+            "萬丹服務處": {
+                "phone": "08-776-3989",
+                "address": "屏東縣萬丹鄉萬全村萬丹路一段412號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/5a5ad7b1683058ed63416e2d8031254e",
+        "assume": "2012-02-01"
     },
     {
         "name": "王惠美",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "CHA",
             1
-        ]
+        ],
+        "contact": {
+            "和美服務處": {
+                "phone": "04-757-8568",
+                "address": "彰化縣和美鎮德美路456號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/22dc4198eaecef571967e0fb397b037c",
+        "assume": "2012-02-01"
     },
     {
         "name": "田秋堇",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "立法委員田秋堇服務處": {
+                "phone": "03-960-1321",
+                "address": "羅東鎮中山路2段171號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/2a8d5d9c6be0d1d639d06bb12b9c5cdb",
+        "assume": "2012-02-01"
     },
     {
         "name": "江啟臣",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TXG",
             8
-        ]
+        ],
+        "contact": {
+            "東勢服務處": {
+                "phone": "04-2577-3099",
+                "address": "臺中市東勢區第五橫街32號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/34b23fe50834ca3cf461538f31aedc47",
+        "assume": "2012-02-01"
     },
     {
         "name": "江惠貞",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             7
-        ]
+        ],
+        "contact": {
+            "板橋服務處": {
+                "phone": "02-2961-0599",
+                "address": "新北市板橋區實踐路30號2樓"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e6d47bd2ec0d9f697fe74b0b09fd5e04",
+        "assume": "2012-02-01"
     },
     {
         "name": "何欣純",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TXG",
             7
-        ]
+        ],
+        "contact": {
+            "太平服務處": {
+                "phone": "04-2276-3111",
+                "address": "台中市太平區新平路二段142號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e49db3976fa931e9cf9de7f5cae527e4",
+        "assume": "2012-02-01"
     },
     {
         "name": "吳宜臻",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-8580",
+                "address": "10051臺北市中正區鎮江街2號5105室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e4d895034f5fc560c34a7bcdc6522827",
+        "assume": "2012-02-01"
     },
     {
         "name": "吳育仁",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "雲林服務處": {
+                "phone": "05-537-5331",
+                "address": "640雲林縣斗六市明德北路二段401號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/60b3c614dd73fdf61d44c928f566f873",
+        "assume": "2012-02-01"
     },
     {
         "name": "吳育昇",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             1
-        ]
+        ],
+        "contact": {
+            "林口服務處": {
+                "phone": "02-2601-8588",
+                "address": "新北市林口區中正路100號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/2ecd319b41d5da458985448e883bc81c",
+        "assume": "2012-02-01"
     },
     {
         "name": "吳秉叡",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "新北總聯絡處": {
+                "phone": "02-8522-5786",
+                "address": "新北市新莊區化成路路814巷1號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/6f7d4fb1cee178fb4b0b971ea8abbbec",
+        "assume": "2012-02-01"
     },
     {
         "name": "呂玉玲",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TAO",
             5
-        ]
+        ],
+        "contact": {
+            "龍潭服務處": {
+                "phone": "03-409-6688",
+                "address": "桃園縣龍潭鄉東龍路124號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/743aa821fb648fd202a7c22ab98e388b",
+        "assume": "2012-02-01"
     },
     {
         "name": "呂學樟",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "HSZ",
             0
-        ]
+        ],
+        "contact": {
+            "新竹服務處": {
+                "phone": "03-535-8181",
+                "address": "新竹市民族路272號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c831d0aac8c897284faa3b165e2054c6",
+        "assume": "2012-02-01"
     },
     {
         "name": "李昆澤",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHH",
             6
-        ]
+        ],
+        "contact": {
+            "高雄服務處": {
+                "phone": "07-386-8292",
+                "address": "高雄市三民區大昌二路63號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/7676dbd65e633f84b48d62a2d452609d",
+        "assume": "2012-02-01"
     },
     {
         "name": "李俊俋",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "CYI",
             0
-        ]
+        ],
+        "contact": {
+            "嘉義服務處": {
+                "phone": "05-271-9595",
+                "address": "600嘉義市共和路239號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/f6cacdb5567c09ac915c80ad0aa6a978",
+        "assume": "2012-02-01"
     },
     {
         "name": "李桐豪",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-8306",
+                "address": "10051臺北市中正區濟南路1段3-1號2116室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e77b9525869111b88de63a37977242f9",
+        "assume": "2012-02-01"
     },
     {
         "name": "李貴敏",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6246",
+                "address": "10051臺北市中正區鎮江街2號5302室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/9644374444da06ef67c1f0ae2a93548b",
+        "assume": "2012-02-01"
     },
     {
         "name": "李慶華",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             12
-        ]
+        ],
+        "contact": {
+            "瑞芳服務處": {
+                "phone": "02-2497-7809",
+                "address": "新北市瑞芳區瑞芳街45號2樓"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/367b4613e5388044e4239912266fc9d5",
+        "assume": "2012-02-01"
     },
     {
         "name": "李應元",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "新莊服務處": {
+                "phone": "02-2279-7241",
+                "address": "新北市新莊區中華路二段105號2樓"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/aaf420d94e71cafc9967ef51c8c8462f",
+        "assume": "2012-02-01"
     },
     {
         "name": "李鴻鈞",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             4
-        ]
+        ],
+        "contact": {
+            "新莊服務處": {
+                "phone": "02-2992-9199",
+                "address": "新北市新莊區公園路36號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/805b50011ffe878a1d72d0d6cebe1a11",
+        "assume": "2012-02-01"
     },
     {
         "name": "邱文彥",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-8106",
+                "address": "10051臺北市中正區鎮江街2號5108室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b5ab5bc4508914601c6a9d03dd2a4a1c",
+        "assume": "2012-02-01"
     },
     {
         "name": "邱志偉",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHH",
             2
-        ]
+        ],
+        "contact": {
+            "路竹區邱志偉立委與陳明澤議員聯合服務處": {
+                "phone": "07-607-1999",
+                "address": "高雄市路竹區國昌路73號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/7d2c5ca0e099d2261e18b7b61f39284a",
+        "assume": "2012-02-01"
     },
     {
         "name": "邱議瑩",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHH",
             1
-        ]
+        ],
+        "contact": {
+            "美濃服務處": {
+                "phone": "07-681-8755",
+                "address": "843高雄市美濃區泰中路866號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/cb14b2ae9b01e89ce5ca1bc4b9d732e9",
+        "assume": "2012-02-01"
     },
     {
         "name": "林世嘉",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6711",
+                "address": "10051臺北市中正區青島東路10號3506室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/ad412b72743d2b25d4c5429bbaf1f5fa",
+        "assume": "2012-02-01"
     },
     {
         "name": "林正二Komod",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "lowland"
-        ]
+        ],
+        "contact": {
+            "臺東服務碆": {
+                "address": "臺東市連航路132號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/8e5b2bd5e653c5af666b09ab4c0e352d",
+        "assume": "2012-02-01"
     },
     {
         "name": "林佳龍",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TXG",
             6
-        ]
+        ],
+        "contact": {
+            "台中服務處": {
+                "address": "臺中市南區復興路二段30-22號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/6494a55a5c4369d2f4648bcb51845e30",
+        "assume": "2012-02-01"
     },
     {
         "name": "林岱樺",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHH",
             4
-        ]
+        ],
+        "contact": {
+            "鳳山服務處": {
+                "phone": "07-748-1033",
+                "address": "高雄市鳳山區五權路160號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/bbd3383e6e68c860eab850173cc8c311",
+        "assume": "2012-02-01"
     },
     {
         "name": "林明溱",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "NAN",
             2
-        ]
+        ],
+        "contact": {
+            "南投服務處": {
+                "phone": "049-222-7688",
+                "address": "南投市復興路75號之1"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b5a1eef4313784dd9d1033838ce4d8c6",
+        "assume": "2012-02-01"
     },
     {
         "name": "林郁方",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPE",
             5
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6276",
+                "address": "10051臺北市中正區濟南路1段3-1號0601室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/4d23d2a635e3dac01ec2201607ebf669",
+        "assume": "2012-02-01"
     },
     {
         "name": "林國正",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "KHH",
             9
-        ]
+        ],
+        "contact": {
+            "高雄服務處": {
+                "phone": "07-721-1213",
+                "address": "高雄市前鎮區永豐路19之6號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/cc48e9778ff3a280d9449059ad05096d",
+        "assume": "2012-02-01"
     },
     {
         "name": "林淑芬",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             2
-        ]
+        ],
+        "contact": {
+            "五股服務處": {
+                "phone": "02-2291-2995",
+                "address": "臺北縣五股鄉民義路一段37號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/765504efbb8589668add075f280cc45b",
+        "assume": "2012-02-01"
     },
     {
         "name": "林滄敏",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "CHA",
             2
-        ]
+        ],
+        "contact": {
+            "彰化服務處": {
+                "phone": "04-728-2282",
+                "address": "彰化市成功里旭光西路90號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/bea9e3fca12ec7b819172e0754e81e00",
+        "assume": "2012-02-01"
     },
     {
         "name": "林德福",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             9
-        ]
+        ],
+        "contact": {
+            "永和服務處": {
+                "phone": "02-2232-9899",
+                "address": "新北市永和區永和路二段403號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/93d79eb59a34df142e83d922f2e96066",
+        "assume": "2012-02-01"
     },
     {
         "name": "林鴻池",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             6
-        ]
+        ],
+        "contact": {
+            "板橋服務處": {
+                "phone": "02-2253-6788",
+                "address": "新北市板橋區文化路一段120號6樓之1"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/86df407675ccce21e5d910555f60d9d4",
+        "assume": "2012-02-01"
     },
     {
         "name": "姚文智",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPE",
             2
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6758",
+                "address": "10051臺北市中正區濟南路1段3-1號1102室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/fad6fdf00e0f0a355dda5e06bf9f3d04",
+        "assume": "2012-02-01"
     },
     {
         "name": "柯建銘",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "新竹服務處": {
+                "phone": "03-526-9880",
+                "address": "新竹市四維路15號3樓"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/f9fbf7c2903aaa5c697b2dff6fb5356d",
+        "assume": "2012-02-01"
     },
     {
         "name": "段宜康",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6196",
+                "address": "10051臺北市中正區濟南路1段3-1號0308室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/74c329f7eb932282141bcad4258cdf6f",
+        "assume": "2012-02-01"
     },
     {
         "name": "洪秀柱",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "立法委員洪秀柱服務處": {
+                "phone": "02-8923-7667",
+                "address": "新北市永和區永和路一段65巷2號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/08280b7cb4310afdc73a737cdae0c0d5",
+        "assume": "2012-02-01"
     },
     {
         "name": "紀國棟",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "大肚服務處": {
+                "phone": "04-2691-2967",
+                "address": "臺中市大肚區自強里遊園路二段278號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/237cd9d444bd884955d0ee3334a2235e",
+        "assume": "2012-02-01"
     },
     {
         "name": "孫大千",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TAO",
             6
-        ]
+        ],
+        "contact": {
+            "桃園服務處": {
+                "phone": "03-375-5558",
+                "address": "桃園縣八德市廣福路299號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/6364fcd082a31fc799ea82e7186a2083",
+        "assume": "2012-02-01"
     },
     {
         "name": "徐少萍",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "基隆服務處": {
+                "phone": "02-2427-7799",
+                "address": "基隆市義一路87號9樓之2"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/960dd3db8084a8f6f653f21eea1a4424",
+        "assume": "2012-02-01"
     },
     {
         "name": "徐欣瑩",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "HSQ",
             0
-        ]
+        ],
+        "contact": {
+            "竹北服務處": {
+                "phone": "03-657-1621",
+                "address": "新竹縣竹北市光明六路235號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/2f16b3af80328b0fdfe33c10c635a43c",
+        "assume": "2012-02-01"
     },
     {
         "name": "徐耀昌",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "MIA",
             2
-        ]
+        ],
+        "contact": {
+            "公館服務處": {
+                "phone": "037-223-566",
+                "address": "苗栗縣公館鄉仁愛路二段168-1號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/1229920460f7e6594489b747b908d0f2",
+        "assume": "2012-02-01"
     },
     {
         "name": "翁重鈞",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "CYQ",
             1
-        ]
+        ],
+        "contact": {
+            "嘉義義竹服務處": {
+                "phone": "05-341-2029",
+                "address": "嘉義縣義竹鄉仁里村407-4號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/79e51453db4e406025d1c026a489c5ff",
+        "assume": "2012-02-01"
     },
     {
         "name": "陳其邁",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "高雄服務處": {
+                "phone": "07-382-5189",
+                "address": "高雄市三民區九如一路399號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a343c047b44293bc9f205000ddc8fddf",
+        "assume": "2012-02-01"
     },
     {
         "name": "陳明文",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "CYQ",
             2
-        ]
+        ],
+        "contact": {
+            "嘉義服務處": {
+                "phone": "05-225-5589",
+                "address": "600嘉義市力行街72號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a9dcb541386fa681bc3aeb8b3c937e39",
+        "assume": "2012-02-01"
     },
     {
         "name": "陳亭妃",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TNN",
             3
-        ]
+        ],
+        "contact": {
+            "安南區服務處": {
+                "phone": "06-256-8012",
+                "address": "709臺南市安南區安中路二段8號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/8fd9014add7cb89356b0e23f456dd6c4",
+        "assume": "2012-02-01"
     },
     {
         "name": "陳唐山",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TNN",
             5
-        ]
+        ],
+        "contact": {
+            "台南服務處": {
+                "phone": "06-201-8217",
+                "address": "臺南市永康區永忠路88號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/10286f2de63d2f3dbbfdf16624f12cf5",
+        "assume": "2012-02-01"
     },
     {
         "name": "陳根德",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TAO",
             1
-        ]
+        ],
+        "contact": {
+            "蘆竹服務處": {
+                "phone": "03-312-1988",
+                "address": "桃園縣蘆竹鄉新南路一段128號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/1d78ead1b3c74ebdb8dd9762beac40f1",
+        "assume": "2012-02-01"
     },
     {
         "name": "陳淑慧",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "台南服務處": {
+                "phone": "06-268-5889",
+                "address": "臺南市東區崇明14街53號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/4006f618c9a64f5227c53b530b263c75",
+        "assume": "2012-02-01"
     },
     {
         "name": "陳雪生",
         "party": null,
         "caucus": null,
-        "constuiency": [
+        "constituency": [
             "LJF",
             0
-        ]
+        ],
+        "contact": {
+            "馬祖服務處": {
+                "phone": "0836-25018",
+                "address": "連江縣南竿鄉介壽村237號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a6c0a1836b073c6146a57950f873c55e",
+        "assume": "2012-02-01"
     },
     {
         "name": "陳超明",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "MIA",
             1
-        ]
+        ],
+        "contact": {
+            "竹南服務處": {
+                "phone": "037-468-448",
+                "address": "350苗栗縣竹南鎮港墘里10鄰塭內46-1號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/6063622c28316636d3933c87f70a1595",
+        "assume": "2012-02-01"
     },
     {
         "name": "陳節如",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6046",
+                "address": "10051臺北市中正區濟南路1段3-1號2115室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/7c4d480e0b367263bafb284e066dc0e4",
+        "assume": "2012-02-01"
     },
     {
         "name": "陳碧涵",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-8181",
+                "address": "10051臺北市中正區濟南路1段3-1號0603室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/d7924cb1f2572142f95043a57c101984",
+        "assume": "2012-02-01"
     },
     {
         "name": "陳歐珀",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "ILA",
             0
-        ]
+        ],
+        "contact": {
+            "羅東服務處": {
+                "phone": "03-957-2099",
+                "address": "羅東鎮興東南路152號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/f5edfa6e68c03509f3e00e52ac926ce5",
+        "assume": "2012-02-01"
     },
     {
         "name": "陳學聖",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TAO",
             3
-        ]
+        ],
+        "contact": {
+            "中壢服務處": {
+                "address": "桃園縣中壢市中央西路二段281號4樓"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/7fd6f5887720ef96a212354b449a5faf",
+        "assume": "2012-02-01"
     },
     {
         "name": "陳鎮湘",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-8286",
+                "address": "10051臺北市中正區青島東路1-3號7302室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/334b5fc94d637aa2f35c976ef886627a",
+        "assume": "2012-02-01"
     },
     {
         "name": "馬文君",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "NAN",
             1
-        ]
+        ],
+        "contact": {
+            "草屯服務處": {
+                "phone": "049-235-5807",
+                "address": "南投縣草屯鎮博愛路411號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/7b599d7ba299c78d344b6dd1fe932d40",
+        "assume": "2012-02-01"
     },
     {
         "name": "高志鵬",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             3
-        ]
+        ],
+        "contact": {
+            "三重服務處": {
+                "phone": "02-8988-1368",
+                "address": "新北市三重區忠孝路一段153號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/9e559e4c06d5a5d85b784c2e8ce3a6a5",
+        "assume": "2012-02-01"
     },
     {
         "name": "高金素梅",
         "party": "NSU",
         "caucus": null,
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "highland"
-        ]
+        ],
+        "contact": {
+            "南區服務處": {
+                "phone": "08-799-5962",
+                "address": "屏東縣瑪家鄉北葉村9鄰風景巷1-3號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/d695a7b0a4df842713e57ce76437a667",
+        "assume": "2012-02-01"
     },
     {
         "name": "張嘉郡",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "YUN",
             1
-        ]
+        ],
+        "contact": {
+            "北港服務處": {
+                "phone": "05-782-2088",
+                "address": "雲林縣北港鎮公園路406號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b053a876cae94f104052fb213b78eed8",
+        "assume": "2012-02-01"
     },
     {
         "name": "張慶忠",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             8
-        ]
+        ],
+        "contact": {
+            "中和服務處": {
+                "phone": "02-8221-5879",
+                "address": "新北市中和區建康路107號1樓"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/9a3f0f929d78e0258f80f35b4cdc7b60",
+        "assume": "2012-02-01"
     },
     {
         "name": "張曉風",
         "party": "PFP",
         "caucus": "PFP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6556",
+                "address": "10051臺北市中正區濟南路1段3-1號0507室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/8adeac5a6130aeab9efbc24ae2ba3d19",
+        "assume": "2012-02-01"
     },
     {
         "name": "許忠信",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "新市服務處": {
+                "phone": "06-599-8727",
+                "address": "臺南市新市區光華街76號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/3a0cd6a4758bcc2cb471bbc3061bc992",
+        "assume": "2012-02-01"
     },
     {
         "name": "許添財",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TNN",
             4
-        ]
+        ],
+        "contact": {
+            "灣裡聯絡處": {
+                "phone": "06-296-3568",
+                "address": "台南市南區明興路1331號 (林良文理事長)"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e4e0421062dd35db4e47cc0106188024",
+        "assume": "2012-02-01"
     },
     {
         "name": "許智傑",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHH",
             8
-        ]
+        ],
+        "contact": {
+            "鳳山服務處": {
+                "phone": "07-768-2666;07-768-1899",
+                "address": "830高雄市鳳山區保泰路96號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/1916e0d20b04b0149265f7c5611f7157",
+        "assume": "2012-02-01"
     },
     {
         "name": "曾巨威",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6381",
+                "address": "10051臺北市中正區濟南路1段3-1號0705室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b87f6627e5273f85a53876da0cca1437",
+        "assume": "2012-02-01"
     },
     {
         "name": "葉宜津",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TNN",
             1
-        ]
+        ],
+        "contact": {
+            "安平服務處": {
+                "phone": "06-295-0826",
+                "address": "臺南市安平區健康路三段206號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/11de665640227a9e5b7623d07adbf4df",
+        "assume": "2012-02-01"
     },
     {
         "name": "費鴻泰",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPE",
             7
-        ]
+        ],
+        "contact": {
+            "服務處": {
+                "phone": "02-2729-1966",
+                "address": "11050臺北市信義區莊敬路311號5樓"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/391aa857a91549a292f92ba65ddf4cdb",
+        "assume": "2012-02-01"
     },
     {
         "name": "黃文玲",
         "party": "TSU",
         "caucus": "TSU",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6868",
+                "address": "10051臺北市中正區鎮江街2號5306室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/93edde32a0a7fc3cb49bbcb0b6d7cf98",
+        "assume": "2012-02-01"
     },
     {
         "name": "黃志雄",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             5
-        ]
+        ],
+        "contact": {
+            "新莊服務處": {
+                "phone": "02-2204-2269",
+                "address": "臺北縣新莊市龍安路485號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/53382f2b06edacab6b59748d6edfab39",
+        "assume": "2012-02-01"
     },
     {
         "name": "黃昭順",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "KHH",
             3
-        ]
+        ],
+        "contact": {
+            "高雄服務處": {
+                "phone": "07-341-3361",
+                "address": "813高雄市左營區新庄仔路425號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/2d54e56bd133b06b32b5cb0be29a8306",
+        "assume": "2012-02-01"
     },
     {
         "name": "黃偉哲",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TNN",
             2
-        ]
+        ],
+        "contact": {
+            "麻豆服務處": {
+                "phone": "06-571-7753",
+                "address": "臺南市麻豆區南勢里62-2號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/6771ca8552a517fada92aab0f049b991",
+        "assume": "2012-02-01"
     },
     {
         "name": "楊玉欣",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6666",
+                "address": "10051臺北市中正區濟南路1段3-1號0608室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/16bf88990386fb63b894732019c166bd",
+        "assume": "2012-02-01"
     },
     {
         "name": "楊應雄",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "JME",
             0
-        ]
+        ],
+        "contact": {
+            "金門服務處": {
+                "phone": "082-312-058",
+                "address": "金門縣金城鎮光前路97號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a0f7065437ef3fece4e7d33951343c7c",
+        "assume": "2012-02-01"
     },
     {
         "name": "楊曜",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "PEN",
             0
-        ]
+        ],
+        "contact": {
+            "澎湖服務處": {
+                "phone": "06-921-8678",
+                "address": "澎湖縣馬公市新店路473號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/0baf2d0df082dcf5a289e504195b2739",
+        "assume": "2012-02-01"
     },
     {
         "name": "楊瓊瓔",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TXG",
             3
-        ]
+        ],
+        "contact": {
+            "大雅服務處": {
+                "phone": "04-2568-5512",
+                "address": "428臺中市大雅區學府路405號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e7c2780646fc1f4a828e13acd5ea88a0",
+        "assume": "2012-02-01"
     },
     {
         "name": "楊麗環",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TAO",
             4
-        ]
+        ],
+        "contact": {
+            "桃園服務處": {
+                "phone": "03-346-5509",
+                "address": "桃園縣桃園市同安街171號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/63d2e503f5378776c28bcaaf2d8eb75d",
+        "assume": "2012-02-01"
     },
     {
         "name": "詹凱臣",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "foreign"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6536",
+                "address": "10051臺北市中正區濟南路1段3-1號0802室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/4f3a7cb7915de0136df8ba40938736c4",
+        "assume": "2012-02-01"
     },
     {
         "name": "廖正井",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TAO",
             2
-        ]
+        ],
+        "contact": {
+            "大園服務處": {
+                "phone": "03-385-1818",
+                "address": "桃園縣大園鄉田心村華興路157號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/1d480ff37a641155ce834bdb92da0c52",
+        "assume": "2012-02-01"
     },
     {
         "name": "廖國棟",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "lowland"
-        ]
+        ],
+        "contact": {
+            "台東服務處": {
+                "phone": "089-228-798",
+                "address": "臺東市四維路3段72號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c2cc221264f91d7abdb90ddb3de9c307",
+        "assume": "2012-02-01"
     },
     {
         "name": "管碧玲",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHH",
             5
-        ]
+        ],
+        "contact": {
+            "內惟服務處": {
+                "phone": "07-533-0227",
+                "address": "高雄市鼓山區九如四路1097號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a6af082eeb48ce839c39f4fdf83f111b",
+        "assume": "2012-02-01"
     },
     {
         "name": "蔡正元",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPE",
             4
-        ]
+        ],
+        "contact": {
+            "內湖服務處": {
+                "phone": "02-2790-5746",
+                "address": "114臺北市內湖區成功路三段82號2樓"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b263d77da3b1154c8716459b2050f054",
+        "assume": "2012-02-01"
     },
     {
         "name": "蔡其昌",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TXG",
             1
-        ]
+        ],
+        "contact": {
+            "大甲服務處": {
+                "phone": "04-2688-7555",
+                "address": "臺中市大甲區文武路274號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/3640d1b8ef093bdafac150aebba28b26",
+        "assume": "2012-02-01"
     },
     {
         "name": "蔡煌瑯",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-8256",
+                "address": "10051臺北市中正區濟南路1段3-1號2101室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a0bebdacc94e6fb766d85924b242b6f7",
+        "assume": "2012-02-01"
     },
     {
         "name": "蔡錦隆",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TXG",
             4
-        ]
+        ],
+        "contact": {
+            "台中服務處": {
+                "phone": "04-2708-2899",
+                "address": "臺中市西屯區黎明路三段58號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/95aec8f0fed75ff0b47e2cac51d77169",
+        "assume": "2012-02-01"
     },
     {
         "name": "蔣乃辛",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPE",
             6
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6901",
+                "address": "10051臺北市中正區濟南路1段3-1號2112室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/4b87b41bc50bbb08ea1a2c76c8159dfd",
+        "assume": "2012-02-01"
     },
     {
         "name": "趙天麟",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "KHH",
             7
-        ]
+        ],
+        "contact": {
+            "高雄服務處": {
+                "phone": "07-333-6868",
+                "address": "80251高雄市苓雅區民權一路53號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/394de34b93b06c4b7e18b615e64b6391",
+        "assume": "2012-02-01"
     },
     {
         "name": "鄭天財Sra．Kacaw",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "lowland"
-        ]
+        ],
+        "contact": {
+            "花蓮服務處": {
+                "phone": "03-851-2306",
+                "address": "973花蓮縣吉安鄉南昌村南昌北路59號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/16271f151736dd4325cec686fd8818b4",
+        "assume": "2012-02-01"
     },
     {
         "name": "鄭汝芬",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "CHA",
             3
-        ]
+        ],
+        "contact": {
+            "溪湖服務處": {
+                "phone": "04-882-2211",
+                "address": "彰化縣溪湖鎮東環路320號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/98839270056f7a532988a375c40ba267",
+        "assume": "2012-02-01"
     },
     {
         "name": "鄭麗君",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-8329",
+                "address": "10051臺北市中正區鎮江街2號5107室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b3daa80c2ed57d24d7d19af69b994897",
+        "assume": "2012-02-01"
     },
     {
         "name": "劉建國",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "YUN",
             2
-        ]
+        ],
+        "contact": {
+            "斗南服務處": {
+                "phone": "05-595-1270",
+                "address": "640雲林縣斗南鎮東光二街20號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/9a8b851e007eea8f0fd81eaaa2f77a4e",
+        "assume": "2012-02-01"
     },
     {
         "name": "劉櫂豪",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "TTT",
             0
-        ]
+        ],
+        "contact": {
+            "南迴服務處": {
+                "phone": "089-791-305",
+                "address": "台東縣大武鄉尚武村4鄰32號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/327a9ea1ce2ea9c142c7dfcada88be0f",
+        "assume": "2012-02-01"
     },
     {
         "name": "潘孟安",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "PIF",
             3
-        ]
+        ],
+        "contact": {
+            "恆春服務處": {
+                "phone": "08-888-0888",
+                "address": "屏東縣恆春鎮省北路85號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/6fd255a1c581e2ac25ba7918c46a3a37",
+        "assume": "2012-02-01"
     },
     {
         "name": "潘維剛",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6031",
+                "address": "10051臺北市中正區濟南路1段3-1號0201室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/1302eb8bbcb328eb0e06e48418e140bb",
+        "assume": "2012-02-01"
     },
     {
         "name": "盧秀燕",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TXG",
             5
-        ]
+        ],
+        "contact": {
+            "台中服務處": {
+                "phone": "04-2319-9770",
+                "address": "臺中市北區博館路92號4樓"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/72fb95798420ee845aec494373bd0ce3",
+        "assume": "2012-02-01"
     },
     {
         "name": "盧嘉辰",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             10
-        ]
+        ],
+        "contact": {
+            "三峽服務處": {
+                "phone": "02-2672-8399",
+                "address": "新北市三峽區中正路一段108巷7弄17號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/00121f448c138d2531a43879e666d5d1",
+        "assume": "2012-02-01"
     },
     {
         "name": "蕭美琴",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "國會研究室": {
+                "phone": "02-2358-6176",
+                "address": "10051臺北市中正區青島東路10號3503室"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/98d28099bef2301530f6fd9ea291c323",
+        "assume": "2012-02-01"
     },
     {
         "name": "薛凌",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "北投服務處": {
+                "phone": "02-2891-5265",
+                "address": "臺北市北投區大同街221號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/3b4154de24057f9b66311c0d428e9c52",
+        "assume": "2012-02-01"
     },
     {
         "name": "賴士葆",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPE",
             8
-        ]
+        ],
+        "contact": {
+            "文山服務處": {
+                "phone": "02-2935-5358",
+                "address": "臺北市文山區景興路254號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/a35b7f9b054f85ae1d199cf599c2711a",
+        "assume": "2012-02-01"
     },
     {
         "name": "謝國樑",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "KEE",
             0
-        ]
+        ],
+        "contact": {
+            "基隆服務處": {
+                "phone": "02-2427-8899",
+                "address": "基隆市中正區愛三路37號6樓"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/d2ea6e5ff9df7c43e4493b38ea52bc67",
+        "assume": "2012-02-01"
     },
     {
         "name": "魏明谷",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "CHA",
             4
-        ]
+        ],
+        "contact": {
+            "田中服務處": {
+                "phone": "04-875-2170",
+                "address": "彰化縣田中鎮西路里斗中路一段68巷4號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/375ad04c5bc21060d65af4eb93c01b2f",
+        "assume": "2012-02-01"
     },
     {
         "name": "簡東明",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "aborigine",
             "highland"
-        ]
+        ],
+        "contact": {
+            "屏東服務處": {
+                "phone": "08-732-2728",
+                "address": "90071屏東市廣東路1324號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/7c48873a001d40c867f325d0755cb2fb",
+        "assume": "2012-02-01"
     },
     {
         "name": "顏清標",
         "party": "NSU",
         "caucus": null,
-        "constuiency": [
+        "constituency": [
             "TXG",
             2
-        ]
+        ],
+        "contact": {
+            "霧峰服務處": {
+                "phone": "04-2330-2559",
+                "address": "臺中市霧峰區樹仁路178號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/c18da92471722aa144a602301bf1c482",
+        "assume": "2012-02-01"
     },
     {
         "name": "羅明才",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPQ",
             11
-        ]
+        ],
+        "contact": {
+            "新店服務處": {
+                "phone": "02-2915-7788",
+                "address": "新北市新店區中正路54巷8號1樓"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/18297a623ca0515f258bb124492c26c3",
+        "assume": "2012-02-01"
     },
     {
         "name": "羅淑蕾",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "TPE",
             3
-        ]
+        ],
+        "contact": {
+            "中山服務處": {
+                "phone": "02-2563-8251",
+                "address": "臺北市民權東路二段26號6樓之7"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/e2451bbad3d93da3ed12f997bfcaa2fa",
+        "assume": "2012-02-01"
     },
     {
         "name": "蘇清泉",
         "party": "KMT",
         "caucus": "KMT",
-        "constuiency": [
+        "constituency": [
             "proportional"
-        ]
+        ],
+        "contact": {
+            "東港服務處": {
+                "phone": "08-833-4517",
+                "address": "屏東縣東港鎮東隆里東隆街6-2號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/190d336dcb717eea1cccd84437caf458",
+        "assume": "2012-02-01"
     },
     {
         "name": "蘇震清",
         "party": "DPP",
         "caucus": "DPP",
-        "constuiency": [
+        "constituency": [
             "PIF",
             1
-        ]
+        ],
+        "contact": {
+            "屏東服務處": {
+                "phone": "08-766-6636",
+                "address": "屏東縣屏東市自由路586號"
+            }
+        },
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/bf17afe00cd1f073b697e3383f9e7daf",
+        "assume": "2012-02-01"
     }
 ]
