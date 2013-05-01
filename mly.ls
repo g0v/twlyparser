@@ -62,13 +62,15 @@ else => console.error it
 
 console.error members.length
 
-contact = (phone, address) ->
+contact = (phone, address, facsimile) ->
     phone .= map -> it.split \：
     address .= map -> it.split \：
+    facsimile .= map -> it.split \：
     phones = {[k,v] for [k,v] in phone}
+    fax = {[k,v] for [k,v] in facsimile}
     address = {[k,v] for [k,v] in address}
-    office = [name for name of {[k,1] for k in Object.keys(phones) ++ Object.keys(address)}]
-    {[name, {phone: phones[name], address: address[name]}] for name in office}
+    office = [name for name of {[k,1] for k in Object.keys(phones) ++ Object.keys(address) ++ Object.keys(fax)}]
+    {[name, {phone: phones[name], address: address[name], fax: fax[name]}] for name in office}
 
 res = members.map (m) ->
     key = crypto.createHash('md5').update("MLY/#{m.姓名}", \utf8).digest('hex')
@@ -77,7 +79,7 @@ res = members.map (m) ->
         party: party m.黨籍
         caucus: party m.黨團
         constituency: constituency m.選區
-        contact: contact m.電話, m.通訊處
+        contact: contact m.電話, m.通訊處, m.傳真
         avatar: "http://avatars.io/50a65bb26e293122b0000073/#{key}"
         assume: m.到職日期?replace /\//g \-
 
