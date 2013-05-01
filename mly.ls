@@ -67,7 +67,8 @@ contact = (phone, address) ->
     address .= map -> it.split \：
     phones = {[k,v] for [k,v] in phone}
     address = {[k,v] for [k,v] in address}
-    {[name, {phone: phones[name], address: address[name]}] for name of {[k,1] for name in Object.keys(phones) ++ Object.keys(address)}}
+    office = [name for name of {[k,1] for k in Object.keys(phones) ++ Object.keys(address)}]
+    {[name, {phone: phones[name], address: address[name]}] for name in office}
 
 res = members.map (m) ->
     key = crypto.createHash('md5').update("MLY/#{m.姓名}", \utf8).digest('hex')
