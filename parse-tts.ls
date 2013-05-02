@@ -6,7 +6,7 @@
 require! <[fs cheerio optimist]>
 [file] = optimist.argv._
 
-$ = cheerio.load fs.readFileSync file, \utf8
+$ = cheerio.load (fs.readFileSync file, \utf8).toLowerCase!
 
 allkeys = {}
 
@@ -19,23 +19,25 @@ tables = $ 'blockquote table[width="90%"]' .map ->
         a = v.find \a
         v = if a.length
             a.each ->
-                match @attr \href
-                | // http:\/\/lis.ly.gov.tw/ttscgi/ttsweb // => @replaceWith @text! # internal link
-                | // http:\/\/lis.ly.gov.tw/lgcgi/ttsweb //  => @replaceWith @text! # internal link
-                | // http:\/\/lis.ly.gov.tw/lgcgi/ttspage3\?\d+@\d+@\d+@(\d\d)(\d\d)(\d\d)(\d\d):([\d\-]+)@ // =>
-                    @replaceWith @text! + ' ' + JSON.stringify <[a]> ++ that[1 to 5]
-                | // http:\/\/lis.ly.gov.tw/lgcgi/lypdftxt\?(\d\d\d?)(\d\d\d)(\d\d);(\d+);(\d+) // =>
-                    @replaceWith @text! + ' ' + JSON.stringify <[g]> ++ that[1 to 5]
-                | // http:\/\/lis.ly.gov.tw/ttscgi/lgimg\?@(\d\d)(\d\d\d)(\d\d);(\d+);(\d+) // =>
-                    @replaceWith @text! + ' ' + JSON.stringify <[gi]> ++ that[1 to 5]
+                match @attr \href - // ^http:\/\/lis.ly.gov.tw //
+                | // /ttscgi/ttsweb // => @replaceWith @text! # internal link
+                | // /lgcgi/ttsweb //  => @replaceWith @text! # internal link
+                | // /lgcgi/ttspage3\?\d+@\d+@\d+@(\d\d)(\d\d)(\d\d)(\d\d):([\d\-]+)@ // =>
+                    @replaceWith @text! + ' ' + JSON.stringify <[a]> ++ +that[1 to 5]
+                | // /lgcgi/lypdftxt\?(\d\d\d?)(\d\d\d)(\d\d);(\d+);(\d+) // =>
+                    @replaceWith @text! + ' ' + JSON.stringify <[g]> ++ +that[1 to 5]
+                | // /ttscgi/lgimg\?@(\d\d)(\d\d\d)(\d\d);(\d+);(\d+) // =>
+                    @replaceWith @text! + ' ' + JSON.stringify <[gi]> ++ +that[1 to 5]
+                | // /lgcgi/lgmeetimage\?(.*) // =>
+                    @replaceWith @text! + ' ' + JSON.stringify <[gm]> ++ +that.1
 
             match k
-            | /發言委員|法名稱/ => v.html!split '<br>' .filter (.length) .map trim
+            | /發言委員|法名稱|答復公報/ => v.html!split '<br>' .filter (.length) .map trim
             else => v.html!
         else
-            match k
-            | /提案編號|委員會/ => v.text!split /;/ .map trim
-            else => v.text!
+            v.text!
+        if k is /提案編號|委員會|類別|主題|關鍵詞|質詢人|答復人|答復日期/
+            v = v.split /;/ .map trim
         v = trim v if typeof! v isnt \Array
         allkeys[k] ?= 0
         allkeys[k]++
