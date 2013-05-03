@@ -23,7 +23,7 @@ tables = $ 'blockquote table[width="90%"]' .map ->
                 | // /ttscgi/ttsweb // => @replaceWith @text! # internal link
                 | // /lgcgi/ttsweb //  => @replaceWith @text! # internal link
                 | // /lgcgi/ttspage3\?\d+@\d+@\d+@(\d\d)(\d\d)(\d\d)(\d\d):([\d\-]+)@ // =>
-                    @replaceWith @text! + ' ' + JSON.stringify <[a]> ++ +that[1 to 5]
+                    @replaceWith @text! + ' ' + JSON.stringify <[a]> ++ +that[1 to 4] ++ that.5
                 | // /lgcgi/lypdftxt\?(\d\d\d?)(\d\d\d)(\d\d);(\d+);(\d+) // =>
                     @replaceWith @text! + ' ' + JSON.stringify <[g]> ++ +that[1 to 5]
                 | // /ttscgi/lgimg\?@(\d\d)(\d\d\d)(\d\d);(\d+);(\d+) // =>
@@ -36,7 +36,7 @@ tables = $ 'blockquote table[width="90%"]' .map ->
             else => v.html!
         else
             v.text!
-        if k is /提案編號|委員會|類別|主題|關鍵詞|質詢人|答復人|答復日期/
+        if k is /^提案編號|委員會|類別|主題|關鍵詞|質詢人|答復人|答復日期|提案機關|機關|法編號|案別|附加詞|主席/
             v = v.split /;/ .map trim
         v = trim v if typeof! v isnt \Array
         allkeys[k] ?= 0
