@@ -672,8 +672,9 @@ class CommitteeLogParser extends LogParser
 
 class TextFormatter implements HTMLParser
     ({@output = console.log, @context-cb, @rules, @chute = true} = {}) ->
-        @chute-map = try require \../data/chute-map
-        @chute-map ?= {}
+        if @chute
+            @chute-map = try require \../data/chute-map
+            @chute-map ?= {}
 
     parseLine: ->
         if it.0 is \<
@@ -688,7 +689,7 @@ class TextFormatter implements HTMLParser
         @output it
 
     parseRich: (node) ->
-        require! {exec-sync: \exec-sync, fs}
+        require! <[execSync fs]>
         rich = @$ '<div/>' .append node
         self = @
         convert = []
@@ -696,14 +697,14 @@ class TextFormatter implements HTMLParser
             src = @attr \SRC
             file = self.base + '/' + src
             [_, ext] = src.match /\.(\w+)$/
-            output = exec-sync "imgsize #file"
+            output = exec-sync.stdout "imgsize #file"
             [_, width, height] = output.match /width="(\d+)" height="(\d+)"/
             if width / height > 60
                 @replaceWith('<hr />')
             else if self.chute
                 if [id, shortcut]? = self.chute-map[file]
                     uri = "//media.getchute.com/media/#shortcut"
-                uri ?= exec-sync "lsc ./img-filter.ls #file"
+                uri ?= exec-sync.stdout "lsc ./img-filter.ls #file"
                 @attr \SRC uri
 
         if node.0.name is \table and !node.find \table .length
