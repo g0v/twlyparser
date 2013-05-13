@@ -5,17 +5,31 @@ require! <[optimist path fs ./lib/util]>
 
 id = optimist.argv._
 
+
+cb = -> throw it
+
+doit = ->
+    parser = new BillParser {-chute}
+    content = []
+    bill = require "./source/bill/#{id}/index.json"
+    parser.output-json = -> content.push it
+    parser.output = (line) -> match line
+    | /^案由：(.*)$/ => bill.abstract = that.1
+    | /^提案編號：(.*)$/ => bill.reference = that.1
+    | /^議案編號：(.*)$/ => bill.id = that.1
+    | otherwise =>
+    parser.base = "source/bill/#{id}"
+
+    parser.parseHtml util.readFileSync file
+    console.log JSON.stringify bill <<< {content}, null 4
+
 file = "source/bill/#{id}/file.html"
 
-parser = new BillParser {-chute}
-content = []
-bill = require "./source/bill/#{id}/index.json"
-parser.output-json = -> content.push it
-parser.output = (line) -> match line
-| /^案由：(.*)$/ => bill.abstract = that.1
-| otherwise =>
-parser.base = "source/bill/#{id}"
+_, {size}? <- fs.stat file
+return doit! if size
 
-parser.parseHtml util.readFileSync file
+util.convertDoc file.replace(/html$/, \doc), do
+    lodev: true
+    error: -> cb null
+    success: doit
 
-console.log JSON.stringify bill <<< {content}, null 4

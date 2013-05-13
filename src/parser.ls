@@ -743,7 +743,7 @@ class BillParser extends TextFormatter
             [first, ...rest] = node.find \tr .map -> @
             match first.text! - /\s/g
             | /^院總第(\d+)號(.*)提案第(\d+)號$/ =>
-                @output that.0
+                @output "提案編號：#{that.1}#{that.2.0}#{that.3}"
                 return
             | /^(?:「?(.*草案?)」?)?(?:條文)?(對照表)?$/ =>
                 name = that.1
