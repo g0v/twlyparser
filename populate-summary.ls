@@ -1,6 +1,8 @@
 require! \./lib/ly
 require! <[optimist mkdirp fs async cheerio ./lib/util]>
 
+{ad=8, session=3, sittingRange="1:15"} = optimist.argv
+
 err <- mkdirp "source/summary"
 funcs = []
 
@@ -141,7 +143,8 @@ prepare_motions = (g, cb) ->
     if eod and !inAgenda.length # unaltered but unfinished
         inAgenda = []
         for {summary}:p in proceeding when p.item <= eod
-            [key] = summary.match /「(.*?)」/
+            [key]? = summary.match /「(.*?)」/
+            continue unless key
             [a] = [a for a in agenda when -1 isnt a.summary.indexOf key]
             continue unless a
             #console.log "for (#key) found: ",a.summary.indexOf key
@@ -242,9 +245,12 @@ parseProposer = (text) -> {text} <<< match text
 | otherwise => { government: text }
 #| /本院委員(.*)等/ => { mly_primary: [that.1] } # XXX split
 
+
 results = []
-for sitting in [1 to 15] when sitting >0 => let sitting
-    g = {ad: 8, session: 2, sitting}
+[start, end] = sittingRange.split \:
+
+for sitting in [+start to +end] when sitting >0 => let sitting
+    g = {ad, session, sitting}
     funcs.push (done) ->
         ann <- prepare_announcement g
         motions <- prepare_motions g
