@@ -1,8 +1,6 @@
 require! \./lib/ly
 require! <[optimist mkdirp fs async cheerio ./lib/util]>
 
-{gazette, ad, type, force} = optimist.argv
-
 err <- mkdirp "source/summary"
 funcs = []
 
@@ -22,11 +20,16 @@ processItems = (body, cb) ->
 parseAgenda = (g, body, doctype, type, cb) ->
     prevHead = null
     entries = []
+    var last-announcement
     mapItem = (id, entry) -> switch type
         | \Announcement =>
             [heading, proposer, summary, result] = entry.0 / "\n"
-            [_, zhitem]? = heading.match util.zhreghead
-            item = util.parseZHNumber zhitem
+            if heading is \null、
+                item = ++last-announcement
+            else
+                [_, zhitem]? = heading.match util.zhreghead
+                item = util.parseZHNumber zhitem
+                last-announcement := item
             {id, item, proposer, summary, result}
         | \Exmotion =>
             [heading, proposer, summary, result] = entry.0 / "\n"

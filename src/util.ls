@@ -4,7 +4,7 @@ require! {fs}
 zhnumber = <[○ 一 二 三 四 五 六 七 八 九 十]>
 
 zhmap = {[c, i] for c, i in zhnumber}
-zhreghead = new RegExp "^((?:#{ (<[百 零]> ++ zhnumber) * '|' })+)、(.*)$", \m
+zhreghead = new RegExp "^((?:#{ (<[千 百 零]> ++ zhnumber) * '|' })+)、(.*)$", \m
 zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)$"
 
 intOfZHNumber = ->
