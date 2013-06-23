@@ -1,7 +1,7 @@
 require! \./lib/ly
-require! <[optimist mkdirp fs async cheerio ./lib/util]>
+require! <[optimist mkdirp fs async cheerio printf ./lib/util]>
 
-{ad=8, session=3, sittingRange="1:15"} = optimist.argv
+{ad=8, session=3, extra=null, sittingRange="1:15"} = optimist.argv
 
 err <- mkdirp "source/summary"
 funcs = []
@@ -85,6 +85,17 @@ parseAgenda = (g, body, doctype, type, cb) ->
     processItems body, (id, entry) ->
         # XXX: extract resolution.  the other info can be found using
         # getDetails with id
+        if doctype is \agenda and type is \Announcement and entry.length > 1
+          _session = if g.extra
+            printf "%02d-%02d", g.session, g.extra
+          else
+            printf "%02d", g.session
+
+          _id = printf "%02d-%0s-%02d", g.ad, _session, g.sitting
+          _sitting = entry.1?replace /\n/g ''
+          unless _id is _sitting
+            console.error "ignoring #{_sitting} #{_id}"
+            return
         entries.push that if mapItem id, entry
 
     cb entries
@@ -215,7 +226,10 @@ prepare_announcement = (g, cb) ->
     by_id = {[id, a] for {id}:a in results}
 
     for {id,result} in proceeding
-        entry = by_id[id]
+        unless entry = by_id[id]
+          console.error "entry not found: #{id}"
+          continue
+
         entry <<< {resolution: result}
         entry.status = match result ? ''
         | ''              => \accepted
@@ -250,7 +264,7 @@ results = []
 [start, end] = sittingRange.split \:
 
 for sitting in [+start to +end] when sitting >0 => let sitting
-    g = {ad, session, sitting}
+    g = {ad, session, sitting, extra}
     funcs.push (done) ->
         ann <- prepare_announcement g
         motions <- prepare_motions g

@@ -81,7 +81,10 @@ getSummary = ({ad, session, sitting, extra}, doctype, type, cb) ->
     throw "invliad #type #doctype" if type is \Exmotion and doctype is \proceeding
 
     [term, sessionPeriod, sessionTimes] = [ad, session, sitting].map -> printf \%02d it
-    meetingTimes = printf \%02d extra if extra
+    if extra
+      # really, WTF
+      meetingTimes = sessionTimes
+      sessionTimes = printf \%02d extra
     err, res, body <- request do
         method: \POST
         uri: uri
