@@ -179,4 +179,6 @@ getCalendarByYear = (year, seen, cb) ->
 
     cb entries
 
-module.exports = { forGazette, index, gazettes, getSummary, getAgenda, getProceeding, getMeetings, getMeetingAgenda, getBillDetails, getCalendarEntry, getCalendarByYear }
+util = require \./util
+
+module.exports = { forGazette, index, gazettes, getSummary, getAgenda, getProceeding, getMeetings, getMeetingAgenda, getBillDetails, getCalendarEntry, getCalendarByYear, util }
