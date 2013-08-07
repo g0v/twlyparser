@@ -1,5 +1,5 @@
 require! \./lib/ly
-require! <[optimist mkdirp fs async cheerio printf ./lib/util]>
+require! <[optimist mkdirp fs async cheerio printf ./lib/util zhutil]>
 
 {ad=8, session=3, extra=null, sittingRange="1:15"} = optimist.argv
 
@@ -30,14 +30,14 @@ parseAgenda = (g, body, doctype, type, cb) ->
                 item = ++last-announcement
             else
                 [_, zhitem]? = heading.match util.zhreghead
-                item = util.parseZHNumber zhitem
+                item = zhutil.parseZHNumber zhitem
                 last-announcement := item
             {id, item, proposer, summary, result}
         | \Exmotion =>
             [heading, proposer, summary, result] = entry.0 / "\n"
             heading -= /^\(|\)$/g
             [_, zhitem]? = heading.match util.zhreg
-            item = util.parseZHNumber zhitem
+            item = zhutil.parseZHNumber zhitem
             {id, item, proposer, summary, result}
         | \Discussion =>
             if doctype is \proceeding
@@ -49,7 +49,7 @@ parseAgenda = (g, body, doctype, type, cb) ->
                     [...line, result, _] = lines
                     line .= join ''
                     [_, zhitem, summary]? = line.match util.zhreghead
-                    item = util.parseZHNumber zhitem
+                    item = zhutil.parseZHNumber zhitem
                 eod = no
                 if result is /(〈|＜)其餘議案因未處理，不予列載。(＞|〉)$/
                     result -= /(〈|＜)其餘議案因未處理，不予列載。(＞|〉)$/
@@ -64,7 +64,7 @@ parseAgenda = (g, body, doctype, type, cb) ->
                     'agenda'
                 | otherwise => 'default'
                 [_, origzhItem]? = summary?match /案原列討論事項第(.*?)案/
-                origItem = util.parseZHNumber origzhItem if origzhItem
+                origItem = zhutil.parseZHNumber origzhItem if origzhItem
                 {id, item, dtype, summary, remark, result, origItem, eod}
             else if doctype is \agenda
                 # kludge: source error - should be none
@@ -75,9 +75,9 @@ parseAgenda = (g, body, doctype, type, cb) ->
                 heading = prevHead unless heading.length
                 [subzhItem, proposer, summary] = content / "\n"
                 subzhItem -= /^\(|\)$/g
-                subItem = util.parseZHNumber subzhItem
+                subItem = zhutil.parseZHNumber subzhItem
                 [_, zhitem]? = heading.match util.zhreghead
-                item = util.parseZHNumber zhitem
+                item = zhutil.parseZHNumber zhitem
                 prevHead := heading if heading
                 {id, item, subItem, proposer, summary}
 

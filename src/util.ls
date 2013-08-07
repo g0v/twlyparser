@@ -1,4 +1,4 @@
-require! {fs}
+require! {fs, zhutil}
 /* helper of zh numbers, datetime */
 
 zhnumber = <[○ 一 二 三 四 五 六 七 八 九 十]>
@@ -9,7 +9,7 @@ zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)$"
 
 intOfZHNumber = ->
     if it?match? zhreg
-    then parseZHNumber it
+    then zhutil.parseZHNumber it
     else +it
 
 parseZHHour = ->
@@ -18,22 +18,6 @@ parseZHHour = ->
     if am_or_pm == '上午'
     then hour
     else hour + 12
-
-parseZHNumber = ->
-    it .= replace /零/g, '○'
-    it .= replace /百$/g, '○○'
-    it .= replace /百/, ''
-    if it.0 is \十
-        l = it.length
-        return 10 if l is 1
-        return 10 + parseZHNumber it.slice 1
-    if it[*-1] is \十
-        return 10 * parseZHNumber it.slice 0, it.length-1
-    res = 0
-    for c in it when c isnt \十
-        res *= 10
-        res += zhmap[c]
-    res
 
 /* 
 dateOfLyDateTime :: [String] -> [String] -> Date 
@@ -165,4 +149,4 @@ convertDoc = (file, {success, error}) ->
         p := null
         error!
 
-module.exports = {datetimeOfLyDateTime, intOfZHNumber, parseZHNumber, zhreg, zhreghead, zhnumber, readFileSync, build_people_interp_map, nameListFixup, committees, parseCommittee, convertDoc}
+module.exports = {datetimeOfLyDateTime, intOfZHNumber, zhreg, zhreghead, zhnumber, readFileSync, build_people_interp_map, nameListFixup, committees, parseCommittee, convertDoc}

@@ -1,4 +1,4 @@
-require! <[printf cheerio request fs ./lib/util]>
+require! <[printf cheerio request fs zhutil ./lib/util]>
 processItems = (body, entry) ->
     $ = cheerio.load body
     $('#queryListForm table tr').each ->
@@ -20,7 +20,7 @@ parseAgenda = (body, doctype, type, cb) ->
             console.log entry
             [heading, proposer, summary, result] = entry.0 / "\n"
             [_, zhitem]? = heading.match util.zhreghead
-            console.log util.parseZHNumber zhitem
+            console.log zhutil.parseZHNumber zhitem
             console.log proposer, summary
             console.log \===> result
         if type is \Discussion
@@ -30,7 +30,7 @@ parseAgenda = (body, doctype, type, cb) ->
             [sub, proposer, summary] = content / "\n"
             console.log heading
             [_, zhitem]? = heading.match util.zhreghead
-            console.log util.parseZHNumber zhitem
+            console.log zhutil.parseZHNumber zhitem
             console.log \==== sub, proposer
             console.log summary
 

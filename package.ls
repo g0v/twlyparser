@@ -37,4 +37,5 @@ devDependencies:
   printf: \0.0.7
   qs: \0.6.x
   'js-yaml': \1.0.3
+  zhutil: \0.5.x
 optionalDependencies: {}

@@ -1,25 +1,10 @@
-require! {cheerio, optimist, fs, request}
+require! {cheerio, optimist, fs, request, zhutil}
 
 {id, _} = optimist.argv
 
 
 zhnumber = <[○ 一 二 三 四 五 六 七 八 九 十]>
-
-zhmap = {[c, i] for c, i in zhnumber}
 zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)、(.*)$", \m
-
-parseZHNumber = ->
-    if it.0 is \十
-        l = it.length
-        return 10 if l is 1
-        return 10 + parseZHNumber it.slice 1
-    if it[*-1] is \十
-        return 10 * parseZHNumber it.slice 0, it.length-1
-    res = 0
-    for c in it when c isnt \十
-        res *= 10
-        res += zhmap[c]
-    res
 
 # ad (appointed dates) (屆別)
 # session (會期)
@@ -49,7 +34,7 @@ class Announcement
         @last-item = null
     push-line: (speaker, text) ->
         if [_, item, content]? = text.match zhreg
-            item = parseZHNumber item
+            item = zhutil.parseZHNumber item
             text = content
             @last-item = @items[item] = {subject: content, conversation: []}
         else
@@ -122,7 +107,7 @@ class Questioning
     push: (speaker, text) ->
         return @push-conversation speaker, text if @in-conversation
         if [_, item, content]? = text.match zhreg
-            item = parseZHNumber item
+            item = zhutil.parseZHNumber item
             if @ctx is \question
                 [_, speaker, content] = content.match /^(本院.*?)，(.*)$/
             text = content

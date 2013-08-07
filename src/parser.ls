@@ -1,4 +1,4 @@
-require! {cheerio, crypto, marked, path, printf}
+require! {cheerio, crypto, marked, path, printf, zhutil}
 require! \js-yaml
 require! "../lib/util"
 require! "../lib/rules"
@@ -67,7 +67,7 @@ class Announcement
     indent-level: -> 4
     push-line: (speaker, text, fulltext) ->
         if [_, item, content]? = text.match util.zhreghead
-            item = util.parseZHNumber item
+            item = zhutil.parseZHNumber item
             text = content
 
             # XXX might not work if nested item number goes beyond number of
@@ -125,7 +125,7 @@ class Exmotion
                 return @
             if zhitem.match util.zhreg
                 @flush!
-                item = util.parseZHNumber zhitem
+                item = zhutil.parseZHNumber zhitem
                 @output-header fulltext, item
                 return @
 
@@ -395,7 +395,7 @@ class Questioning
     indent-level: -> 0
     push: (speaker, text, fulltext) ->
         if [_, item, content]? = text.match util.zhreghead
-            item = util.parseZHNumber item
+            item = zhutil.parseZHNumber item
 
         if item
             @ctx ?= \question if content is /^本院/
@@ -638,7 +638,7 @@ class CommitteeAnnouncement implements LogContext
             return @
 
         if [_, item, content]? = text?match util.zhreghead
-            item = util.parseZHNumber item
+            item = zhutil.parseZHNumber item
             text = content
 
             # XXX might not work if nested item number goes beyond number of
