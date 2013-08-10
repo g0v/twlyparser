@@ -22,6 +22,10 @@ $ sudo apt-get update
 $ suod apt-get install nodejs npm
 ```
 
+and some dependency
+
+    $ sudo aptitude install libcups libimage-size-perl
+
 ## install required node.js packages
 
 ```
@@ -122,6 +126,35 @@ sh ./list 4004 > source/meta/4004.html
 ```
 
 data/index.json should now be populated.
+
+# Parse ly.gov.tw flow
+
+There are some pages of gov.tw that we can query data. such as
+
+1. http://misq.ly.gov.tw/
+1. lis.ly.gov.tw - but you cannot use this link directly for some technical reasons
+    1. go to http://npl.ly.gov.tw/do/www/homePage
+    1. choose '立法院議事系統'
+
+## misq
+
+There is a script to generate bill-diff. But we need the billId of a bill to bootstrap the script. The billId could be found in misq page. use *1010509070300300* as a billId for example
+
+    ./node_modules/.bin/lsc parse-bill.ls 1010509070300300
+
+could helps us to generate bill-diff.
+
+## tts
+
+We can parse motion data from lis.ly.gov.tw as well. First of all, install chrome extension  from g0v/ly-crx, then
+
+    1. open lis.ly.gov.tw (in correct way)
+    1. query motion
+    1. You will see 'download all' in the page of query result, click the button
+    1. The browser will open a new page, save the whole content of opened page to /tmp/foo.html
+
+    ./node_modules/.bin/lsc parse-tts.ls /tmp/foo.html > foo.json
+
 
 # CC0 1.0 Universal
 
