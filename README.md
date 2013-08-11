@@ -142,7 +142,7 @@ There is a script to generate bill-diff. But we need the billId of a bill to boo
 
     ./node_modules/.bin/lsc parse-bill.ls 1010509070300300
 
-could helps us to generate bill-diff.
+could helps us to generate bill-diff. It might fiailed in first run, just execute it twice.
 
 ## tts
 
@@ -155,6 +155,9 @@ We can parse motion data from lis.ly.gov.tw as well. First of all, install chrom
 
     ./node_modules/.bin/lsc parse-tts.ls /tmp/foo.html > foo.json
 
+## Summary
+
+    ./node_modules/.bin/lsc populate-summary.ls
 
 # CC0 1.0 Universal
 
