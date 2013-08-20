@@ -10,12 +10,12 @@ repository:
   url: 'git://github.com/g0v/twlyparser.git'
 scripts:
   prepublish: """
-    ./node_modules/.bin/lsc -cj package.ls &&
-    ./node_modules/.bin/lsc -cb -o lib src
+    lsc -cj package.ls &&
+    lsc -cb -o lib src
   """
   postinstall: """
-    ./node_modules/.bin/lsc -cj package.ls &&
-    ./node_modules/.bin/lsc -cb -o lib src
+    lsc -cj package.ls &&
+    lsc -cb -o lib src
   """
 main: 'lib/ly.js'
 engines:
