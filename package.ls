@@ -21,8 +21,7 @@ main: 'lib/ly.js'
 engines:
   node: '0.8.x'
   npm: '1.1.x'
-dependencies: {}
-devDependencies:
+dependencies:
   LiveScript: ">= 1.1.1"
   optimist: \0.3.x
   cheerio: \0.10.x
@@ -38,4 +37,5 @@ devDependencies:
   qs: \0.6.x
   'js-yaml': \1.0.3
   zhutil: \0.5.x
+devDependencies: {}
 optionalDependencies: {}
