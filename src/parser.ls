@@ -8,6 +8,31 @@ md_header = (text, depth) ->
     depth ?= 1
     \# * depth + " #text"
 
+function match-sitting-name(rules, text)
+  meta = {}
+  match text
+  | rules.regex \header.title_temporarily .exec =>
+      that.4 ?= 1
+      meta<[ad session extra sitting]> = that[1 to 4].map -> util.intOfZHNumber it
+  | rules.regex \header.title_election .exec =>
+      meta<[ad session]> = that[1 to 2].map -> util.intOfZHNumber it
+      meta.sitting = 0
+  | rules.regex \header.title_committee .exec =>
+      header = true
+      meta = do
+        ad: that.1
+        session: that.2
+        sitting: that.4
+        committee: util.parseCommittee that.3
+  | rules.regex \header.title_general .exec =>
+      meta<[ad session sitting]> = that[1 to 3].map -> util.intOfZHNumber it
+      meta.memo = true if that.4 is \議事錄
+  | rules.regex \header.title_secret .exec =>
+      meta<[ad session secret]> = that[1 to 3].map -> util.intOfZHNumber it
+  else
+    return null
+  return meta
+
 # ad (appointed dates) (屆別)
 # session (會期)
 # sitting (會次)
@@ -26,30 +51,15 @@ class Meta
         text .=replace /立 法院/, \立法院
         #@FIXME: @rules.regexp in match syntax can not be compiled to right JavaScript, but we can use        #        (@)rules to workround it.
         header = false
-        match text
-        | (@)rules.regex \header.title_temporarily .exec =>
-            that.4 ?= 1
-            @meta<[ad session extra sitting]> = that[1 to 4].map -> util.intOfZHNumber it
-        | (@)rules.regex \header.title_election .exec =>
-            @meta<[ad session]> = that[1 to 2].map -> util.intOfZHNumber it
-            @meta.sitting = 0
-        | (@)rules.regex \header.title_committee .exec =>
-            header = true
-            @meta <<< do
-                ad: that.1
-                session: that.2
-                sitting: that.4
-                committee: util.parseCommittee that.3
-        | (@)rules.regex \header.title_general .exec =>
-            @meta<[ad session sitting]> = that[1 to 3].map -> util.intOfZHNumber it
-            @meta.memo = true if that.4 is \議事錄
-        | (@)rules.regex \header.title_secret .exec =>
-            @meta<[ad session secret]> = that[1 to 3].map -> util.intOfZHNumber it
-        | (@)rules.regex \header.title_other .exec =>
-            @ctx = \speaker
-            @meta.speaker = that.1
-        | (@)rules.regex \header.datetime .exec =>
-            @meta.datetime = util.datetimeOfLyDateTime that[1 to 3] [5 to 6]
+        if meta = match-sitting-name @rules, text
+          @meta <<< meta
+        else
+          match text
+          | (@)rules.regex \header.title_other .exec =>
+              @ctx = \speaker
+              @meta.speaker = that.1
+          | (@)rules.regex \header.datetime .exec =>
+              @meta.datetime = util.datetimeOfLyDateTime that[1 to 3] [5 to 6]
         @output (if header => '# ' else ''), "#text\n"
         return @
     serialize: ->
@@ -248,12 +258,12 @@ class Discussion
             @json.priority = that.1
         | (@)rules.regex \discussion.letter_secure .exec =>
             @json.secure = that.1
-        | (@)rules.regex \discussion.letter_report_to_start .exec  =>        
+        | (@)rules.regex \discussion.letter_report_to_start .exec  =>
             @json.report_to = []
             # XXX: The parser does not handle report id in old gazettes
             unless that.1
                 console.log "warn: can not parse report id in discussion ctx because it is old format"
-                return 
+                return
             res = @rules.match \discussion.letter_report_to_id, that.1, \g
             unless res
                 console.log "warn: can not parse report id in discussion ctx because it is old format"
@@ -265,7 +275,7 @@ class Discussion
                 @json.report_to.push {id: matched.4, publish_date: util.datetimeOfLyDateTime matched[1 to 3]}
 
     handle_resolution: (fulltext) ->
-        match fulltext 
+        match fulltext
         | (@)rules.regex \exmotion.disputed .exec =>
             _type = if @ctx is \決議
                     then \resolution
@@ -433,7 +443,7 @@ class Vote
         @vote = {}
         @current_vote = null
     push-line: (speaker, text, fulltext) ->
-       
+
         match fulltext
         | (@)rules.regex \vote.vote_approval .exec =>
             @current_vote = \approval
@@ -677,16 +687,14 @@ class TextFormatter implements HTMLParser
             @chute-map ?= {}
 
     parseLine: ->
-        if it.0 is \<
-            it-= /^<|>/g
-        if @context-cb
-            if it is /紀錄$/ and @rules.regex \header.title_committee .exec it
-                @context-cb do
-                    ad: that.1
-                    session: that.2
-                    sitting: that.4
-                    committee: util.parseCommittee that.3
-        @output it
+      if it.0 is \<
+        it-= /^<|>/g
+      if @context-cb and it is /紀錄$/
+        if data = match-sitting-name @rules, it
+          @context-cb data
+        else
+          console.error "unknown sitting", it
+      @output it
 
     parseRich: (node) ->
         require! <[execSync fs]>
@@ -864,17 +872,17 @@ class BaseParser
 class headerContext extends BaseParser
 
 class announcementContext extends BaseParser
-    
+
 class questioningContext extends BaseParser
-    
+
 class discussionContext extends BaseParser
-     
+
 class proposalContext extends BaseParser
-    
+
 class consulationContext extends BaseParser
-    
+
 class interpellationContext extends BaseParser
-    
+
 class breaktimeContext extends BaseParser
 
     pushLine: (text, last-context, triggers) ->
@@ -893,7 +901,7 @@ class breaktimeContext extends BaseParser
                 @newContext newctxname
         else
             @
-     
+
 class endingContext extends BaseParser
 
 class StructureFormater extends BaseParser
@@ -973,8 +981,8 @@ class ItemList
             return
 
     parseConversation: (text) ->
-        match text 
-        | /^(\S+?)：\s*(.*)/ => 
+        match text
+        | /^(\S+?)：\s*(.*)/ =>
             [speaker, content] = that[1 to 2]
             @lastSpeaker = speaker
         else
@@ -1003,7 +1011,7 @@ class Text
 
         if token.type is \space
             @results.push "\n"
-        
+
         if token.type is \text
             @results.push token.text
 
@@ -1014,12 +1022,12 @@ class ResourceParser
 
     parseMarkdown: (data) ->
         require! marked
-        marked.setOptions \ 
+        marked.setOptions \
             {gfm: true, pedantic: false, sanitize: true}
         @tokens = marked.lexer data
         @parse @tokens
-   
-    parse: (tokens) -> 
+
+    parse: (tokens) ->
         @results = []
         for token in tokens
 
@@ -1038,7 +1046,7 @@ class ResourceParser
         @ctx = if ctxType
             then new ctxType
             else null
-           
+
     store: ->
         @output JSON.stringify @results, null, 4b
 
