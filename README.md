@@ -169,7 +169,9 @@ init_record(to_path)
 update_record(json_path, output_path)
 ```
 
-All path without specificate (e.g. to_path, output_path), don't put on file type init_record('../ly-record/record')
+All path without specificate (e.g. to_path, output_path), don't put on file type 
+
+  * init_record('../ly-record/record')
 
 All function will generate csv and json file
 
