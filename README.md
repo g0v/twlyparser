@@ -159,6 +159,21 @@ We can parse motion data from lis.ly.gov.tw as well. First of all, install chrom
 
     ./node_modules/.bin/lsc populate-summary.ls
 
+## parse.py
+
+to parse ly-law-record and ly-statistics
+
+```
+init_statistics(to_path)
+init_record(to_path)
+update_record(json_path, output_path)
+```
+
+All path without specificate (e.g. to_path, output_path), don't put on file type init_record('../ly-record/record')
+
+All function will generate csv and json file
+
+
 # CC0 1.0 Universal
 
 To the extent possible under law, Chia-liang Kao has waived all copyright
