@@ -31,28 +31,21 @@ def parse_statistics(cont):
                                              list(r.itertext()))))
             
             item = list(r.iter())
-            try:
-                if item[5].values()[0].startswith("http://"):
-                    html_url = item[5].values()[0]
-                else:
-                    html_url = ""
-            except:
+            item_len = len(item)
+            
+            if item_len > 4 and item[5].values()[0].startswith("http://"):
+                html_url = item[5].values()[0]
+            else:
                 html_url = ""
                 
-            try:
-                if item[9].values()[0].startswith("http://"):
-                    pdf_url = item[9].values()[0]
-                else:
-                    pdf_url = ""
-            except:
+            if item_len > 8 and item[9].values()[0].startswith("http://"):
+                pdf_url = item[9].values()[0]
+            else:
                 pdf_url = ""
-                
-            try:
-                if item[3].values()[0].startswith("http://"):
-                    extend_url = item[3].values()[0]
-                else:
-                   extend_url = ""
-            except:
+
+            if item_len > 2 and item[3].values()[0].startswith("http://"):
+                extend_url = item[3].values()[0]
+            else:
                 extend_url = ""
                 
             
