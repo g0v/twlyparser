@@ -173,6 +173,8 @@ All path without specificate (e.g. to_path, output_path), don't put on file type
 
   * init_record('../ly-record/record')
 
+  * update_record('../ly-record/record.json', '../ly-record/record')
+
 All function will generate csv and json file
 
 
