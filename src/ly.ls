@@ -140,7 +140,6 @@ getCalendarEntry = (id, cb) ->
 
 fetchCalendarPage = ({uri, params, page=1, last-page, seen}, done) ->
     require! <[qs cheerio]>
-    console.log \fetch page, \last last-page
     return done [] if last-page and page > last-page
     thisuri = uri + '?' + qs.stringify params <<< {'d-49489-p': page}
     err, res, body, cache <- request.get thisuri, {
