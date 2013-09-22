@@ -157,7 +157,6 @@ fetchCalendarPage = ({uri, params, page=1, last-page, seen}, done) ->
 
 
     if seen and [id for {id} in results when id ~= seen].length
-        console.log \cut
         return done results.filter -> +it.id > seen
 
     if page is 1
