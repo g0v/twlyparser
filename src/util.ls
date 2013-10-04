@@ -103,6 +103,9 @@ committees = do
     SWE: \社會福利及衛生環境
     WHL: \全院
     PRO: \程序
+    DIS: \紀律
+    CON: \修憲
+    EXP: \經費稽核
     # obsolete
     IAP: \內政及民族
     IAF: \內政及邊政
