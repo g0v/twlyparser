@@ -48,7 +48,7 @@ funcs = for id, g of gazettes when !gazette? || id ~= gazette => let id, g
             index[_which].files <- getFileList {g.year, g.vol, i.book, i.seq}, id, \doc
             console.log \got _which, id, i.book, i.seq
             d.resolve!
-        Q.allResolved gdefers
+        Q.allSettled gdefers
 
 res = funcs.reduce ((soFar, f) -> soFar.then f), Q.resolve!
 
