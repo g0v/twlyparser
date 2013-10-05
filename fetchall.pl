@@ -4,10 +4,10 @@ system('mkdir -p source/meta');
 my ($from, $to) = @ARGV;
 die "usage: $0 <from> [to]\n" unless $from;
 $to ||= $from;
+
+system("./node_modules/.bin/lsc ./update-data-json.ls --from $from --to $to");
+
 for my $i ($from..$to) {
-    -e "source/meta/$i.html" || system("sh ./list $i > source/meta/$i.html");
-    system("./node_modules/.bin/lsc ./parse-list.ls source/meta/$i.html");
-    system("./node_modules/.bin/lsc ./prepare-source.ls --gazette $i");
     system("./node_modules/.bin/lsc ./get-source.ls --gazette $i");
     system("./node_modules/.bin/lsc ./get-source.ls --gazette $i");
     system("./node_modules/.bin/lsc ./get-source.ls --gazette $i");
