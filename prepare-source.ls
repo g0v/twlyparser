@@ -1,6 +1,17 @@
+# Maintain the 'files' attribute of each entries of data/index.json.
+#
+# $ lsc prepare-source.ls
+#
+
 require! {fs, request, Q: \q, mkdirp, optimist, index: \./data/index, gazettes: \./data/gazettes}
 
 
+# Get array of static links that refer to communique files.
+# specify id, year, vol... to build a URL of a web page, then parse the content.
+# then we got links such as
+#
+#     http://lci.ly.gov.tw/LyLCEW/communique/work/89/50/LCIDC01_895001_00001.doc
+#
 getFileList = ({year, vol, book, seq}, id, type, cb) ->
     err, res, body <- request do
         method: 'POST'
@@ -37,7 +48,8 @@ getFileList = ({year, vol, book, seq}, id, type, cb) ->
 
 {gazette} = optimist.argv
 
-cnt = 0;
+# compare gazettes.json and index.json, if any entry of index.json has no attribute 'files',
+# get links of files by getFileList and update index.json
 funcs = for id, g of gazettes when !gazette? || id ~= gazette => let id, g
     ->
         gdefers = []
