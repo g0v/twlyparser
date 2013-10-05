@@ -3,7 +3,7 @@
 # $ lsc prepare-source.ls
 #
 
-require! {fs, request, Q: \q, mkdirp, optimist, index: \./data/index, gazettes: \./data/gazettes}
+require! {Async: \async, fs, request, mkdirp, optimist, index: \./data/index, gazettes: \./data/gazettes}
 
 
 # Get array of static links that refer to communique files.
@@ -48,21 +48,23 @@ getFileList = ({year, vol, book, seq}, id, type, cb) ->
 
 {gazette} = optimist.argv
 
+# make a function object that could be invoked by Async.parallel
+mkWrapper = (indexJson, which, dataObj, id, type) ->
+    return (cb) ->
+        # update index.json object if retrieved file link
+        indexJson[which].files <- getFileList dataObj, id, type
+        console.log \got which, id, indexJson[which].files
+        cb!
+
 # compare gazettes.json and index.json, if any entry of index.json has no attribute 'files',
 # get links of files by getFileList and update index.json
-funcs = for id, g of gazettes when !gazette? || id ~= gazette => let id, g
-    ->
-        gdefers = []
-        for i,_which in index when i.gazette ~= id and !i.files? => let i, d = Q.defer!
-            return if index[_which].files
-            console.log id, i.book, i.seq
-            gdefers.push d.promise
-            index[_which].files <- getFileList {g.year, g.vol, i.book, i.seq}, id, \doc
-            console.log \got _which, id, i.book, i.seq
-            d.resolve!
-        Q.allSettled gdefers
+processors = []
+for id, g of gazettes when !gazette? || id ~= gazette => let id, g
+    for i, _which in index when i.gazette ~= id and !i.files? => let i
+        return if index[_which].files # skip processed entry
+        console.log "To get file link for:" id, i.book, i.seq
+        processors.push (mkWrapper index, _which, {g.year, g.vol, i.book, i.seq}, id, \doc)
 
-res = funcs.reduce ((soFar, f) -> soFar.then f), Q.resolve!
-
-<- res.then
+console.log "How many entries of gazettes need file link: " processors.length
+(err, result) <- Async.parallel processors
 fs.writeFileSync \data/index.json JSON.stringify index, null, 4
