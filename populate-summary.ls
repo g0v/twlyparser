@@ -1,7 +1,7 @@
 require! \./lib/ly
 require! <[optimist mkdirp fs async cheerio printf ./lib/util zhutil]>
 
-{ad=8, session=3, extra=null, sittingRange="1:15"} = optimist.argv
+{ad=8, session=3, extra=null, sittingRange="1:15", agenda-only} = optimist.argv
 
 err <- mkdirp "source/summary"
 funcs = []
@@ -143,10 +143,10 @@ entryStatus = (res, def) -> match res
 | /暫不予處理/ => \unhandled
 | otherwise => def
 
-prepare_motions = (g, cb) ->
+prepare_discussion = (g, agenda-only, cb) ->
     agenda <- getItems g, \agenda \Discussion
-    exmotion <- getItems g, \agenda \Exmotion
-    proceeding <- getItems g, \proceeding \Discussion
+    exmotion <- (if agenda-only => (,,,cb) -> cb [] else getItems) g, \agenda \Exmotion
+    proceeding <- (if agenda-only => (,,,cb) -> cb [] else getItems) g, \proceeding \Discussion
     eod = no
     items = if agenda.length => Math.max ...agenda.map (.item) else 0
     [eod] = [p.origItem ? p.item for p in proceeding when p.eod]
@@ -163,7 +163,7 @@ prepare_motions = (g, cb) ->
             inAgenda.push p
     for p in proceeding
         if p.dtype is \exmotion
-            summary = p.summary - /^.*?，/ -  /((，|。)是否有當)?，請公決案。/ 
+            summary = p.summary - /^.*?，/ -  /((，|。)是否有當)?，請公決案。/
             summary .=replace /5噸以下/, '五噸以下'
             [ex] = [e for e in exmotion when summary is e.summary - /((，|。)是否有當)?，請公決案。/]
             unless ex
@@ -216,9 +216,9 @@ prepare_motions = (g, cb) ->
 #    populate g
 #
 
-prepare_announcement = (g, cb) ->
+prepare_announcement = (g, agenda-only, cb) ->
     agenda <- getItems g, \agenda \Announcement
-    proceeding <- getItems g, \proceeding \Announcement
+    proceeding <- (if agenda-only => (,,,cb) -> cb [] else getItems) g, \proceeding \Announcement
     results = for a in agenda
         entry = {} <<< a
         entry.agendaItem = delete entry.item
@@ -266,9 +266,9 @@ results = []
 for sitting in [+start to +end] when sitting >0 => let sitting
     g = {ad, session, sitting, extra}
     funcs.push (done) ->
-        ann <- prepare_announcement g
-        motions <- prepare_motions g
-        results.push {meeting: g, announcement: ann, discussion: motions}
+        announcement <- prepare_announcement g, agenda-only
+        discussion <- prepare_discussion g, agenda-only
+        results.push {meeting: g, announcement, discussion}
         done!
 err, res <- async.waterfall funcs
 console.error \ok, res
