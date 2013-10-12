@@ -14,7 +14,7 @@ cache_dir = process.cwd! + "/source/misq"
 export function get(s, {agenda-only, dir=cache_dir}, cb)
   err <- mkdirp dir
   throw err if err
-  cache_dir = dir
+  cache_dir := dir
   announcement <- prepare_announcement s, agenda-only
   discussion <- prepare_discussion s, agenda-only
   cb {announcement, discussion}
