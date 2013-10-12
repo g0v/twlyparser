@@ -1,6 +1,5 @@
 require! \./lib/ly
 require! <[optimist async]>
-require! <[./lib/misq]>
 
 {ad=8, session=3, extra=null, sittingRange="1:15", agenda-only} = optimist.argv
 
@@ -19,7 +18,7 @@ for sitting in [+start to +end] when sitting >0 => let sitting
     g = {ad, session, sitting, extra}
     funcs.push (done) ->
         results.push
-        {announcement, discussion} <- misq.get g, {agenda-only}
+        {announcement, discussion} <- ly.misq.get g, {agenda-only}
         results.push {sitting: g, announcement, discussion}
         done!
 err, res <- async.waterfall funcs

@@ -1,6 +1,8 @@
-require!  {index: \../data/index,gazettes: \../data/gazettes, printf, request}
+export index = require \../data/index
+export gazettes = require \../data/gazettes
+require! <[printf request]>
 
-function forGazette (opts, cb)
+export function forGazette (opts, cb)
     unless typeof opts is \object
         opts = { gazette: opts }
     for id, g of gazettes when !opts.gazette? || id ~= opts.gazette => let id, g
@@ -15,13 +17,13 @@ function forGazette (opts, cb)
                 for x in entries.map(-> it.files ? []).reduce (++)}]
             cb id, g, type, entries, allfiles
 
-getAgenda = (meta, type, cb) ->
+export getAgenda = (meta, type, cb) ->
     getSummary meta, \agenda, type, cb
 
-getProceeding = (meta, type, cb) ->
+export getProceeding = (meta, type, cb) ->
     getSummary meta, \proceeding, type, cb
 
-getBillDetails = (id, cb) ->
+export getBillDetails = (id, cb) ->
     uri = "http://misq.ly.gov.tw/MISQ/IQuery/misq5000QueryBillDetail.action"
 
     err, res, body <- request do
@@ -36,7 +38,7 @@ getBillDetails = (id, cb) ->
     cb body
 
 
-getMeetingAgenda = ({meetingNo, meetingTime, departmentCode}, cb) ->
+export getMeetingAgenda = ({meetingNo, meetingTime, departmentCode}, cb) ->
     uri = "http://misq.ly.gov.tw/MISQ/IQuery/misq5000QueryMeetingDetail.action"
 
     err, res, body <- request do
@@ -50,7 +52,7 @@ getMeetingAgenda = ({meetingNo, meetingTime, departmentCode}, cb) ->
 
     cb body
 
-getMeetings = (queryCondition, cb) ->
+export getMeetings = (queryCondition, cb) ->
     uri = 'http://misq.ly.gov.tw/MISQ/IQuery/misq5000QueryMeeting.action'
     # term = ad
     err, res, body <- request do
@@ -68,7 +70,7 @@ getMeetings = (queryCondition, cb) ->
             meetingDateE: ''
     cb body
 
-getSummary = ({ad, session, sitting, extra}, doctype, type, cb) ->
+export getSummary = ({ad, session, sitting, extra}, doctype, type, cb) ->
     uri = match doctype
     | \agenda     => 'http://misq.ly.gov.tw/MISQ/IQuery/queryMore5003vData.action'
     | \proceeding => 'http://misq.ly.gov.tw/MISQ/IQuery/queryMoreBillData.action'
@@ -96,7 +98,7 @@ getSummary = ({ad, session, sitting, extra}, doctype, type, cb) ->
 
     cb body
 
-getCalendarEntry = (id, cb) ->
+export getCalendarEntry = (id, cb) ->
     err, res, body <- request do
         method: \GET
         uri: "http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingView.action?id=#id"
@@ -138,7 +140,7 @@ getCalendarEntry = (id, cb) ->
 
     cb res
 
-fetchCalendarPage = ({uri, params, page=1, last-page, seen}, done) ->
+export fetchCalendarPage = ({uri, params, page=1, last-page, seen}, done) ->
     require! <[qs cheerio]>
     return done [] if last-page and page > last-page
     thisuri = uri + '?' + qs.stringify params <<< {'d-49489-p': page}
@@ -165,7 +167,7 @@ fetchCalendarPage = ({uri, params, page=1, last-page, seen}, done) ->
     res <- fetchCalendarPage {uri, params, page: page+1, last-page, seen}
     done results ++ res
 
-getCalendarByYear = (year, seen, cb) ->
+export getCalendarByYear = (year, seen, cb) ->
     entries <- fetchCalendarPage do
         uri: 'http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingList.action'
         seen: seen
@@ -177,6 +179,5 @@ getCalendarByYear = (year, seen, cb) ->
 
     cb entries
 
-util = require \./util
-
-module.exports = { forGazette, index, gazettes, getSummary, getAgenda, getProceeding, getMeetings, getMeetingAgenda, getBillDetails, getCalendarEntry, getCalendarByYear, util }
+export util = require \./util
+export misq = require \./misq
