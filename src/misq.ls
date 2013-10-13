@@ -126,6 +126,7 @@ getItems = (g, doctype, type, cb) ->
     json = file.replace /\.html$/, '.json'
 
     extract = (body) ->
+        body = util.fixup body.toString \utf-8
         parseAgenda g, body, doctype, type, (res) ->
             fs.writeFileSync json, JSON.stringify res, null 4
             cb res

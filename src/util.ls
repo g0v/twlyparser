@@ -152,4 +152,4 @@ convertDoc = (file, {success, error}) ->
         p := null
         error!
 
-module.exports = {datetimeOfLyDateTime, intOfZHNumber, zhreg, zhreghead, zhnumber, readFileSync, build_people_interp_map, nameListFixup, committees, parseCommittee, convertDoc}
+module.exports = {datetimeOfLyDateTime, intOfZHNumber, zhreg, zhreghead, zhnumber, readFileSync, build_people_interp_map, nameListFixup, committees, parseCommittee, convertDoc, fixup}
