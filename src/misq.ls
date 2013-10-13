@@ -45,6 +45,10 @@ parseAgenda = (g, body, doctype, type, cb) ->
                 [_, zhitem]? = heading.match util.zhreghead
                 item = zhutil.parseZHNumber zhitem
                 last-announcement := item
+            unless summary
+                [_, proposer, summary]? = proposer.match /^(.*?)(函送.*)$/
+                unless summary
+                  console.log \unknown proposer
             {id, item, proposer, summary, result}
         | \Exmotion =>
             [heading, proposer, summary, result] = entry.0 / "\n"
