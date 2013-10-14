@@ -760,7 +760,7 @@ class BillParser extends TextFormatter
                 result += '-' + res.6 if res.6
                 @output "提案編號：#result"
                 return
-            | /^(?:「?(.*草案?)」?)?(?:條文)?(對照表)?$/ =>
+            | /^(?:「?(.*草案?)」?)?案?(?:條文)?(對照表)?$/ =>
                 name = that.1
                 type = if that.1 => \lawproposal else \lawdiff
                 [h, ...content] = rest
