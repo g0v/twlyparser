@@ -6,4 +6,4 @@ id = optimist.argv._
 
 err, res <- ly.misq.parse-bill-doc id, {+lodev, dir}
 console.log err if err
-console.log res if res
+console.log JSON.stringify res, null, 4 if res
