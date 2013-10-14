@@ -761,7 +761,7 @@ class BillParser extends TextFormatter
                 return
             | /^(?:「?(.*草案?)」?)?(?:條文)?(對照表)?$/ =>
                 name = that.1
-                type = if that.2 => \lawdiff else \lawproposal
+                type = if that.1 => \lawproposal else \lawdiff
                 [h, ...content] = rest
                 header = h.find \td .map -> @text! - /^\s*|\s*$/gm
                 tosplit = [i for h, i in header when h is \說明 or h.match /\n/ or h.match /NOTYET委員等提案/]
@@ -775,6 +775,8 @@ class BillParser extends TextFormatter
                     for e,j in content
                         x = e[i]split /(委員.*提案|審查會)：\n/
                         first = x.shift!
+                        if header[i] is \說明 and x.length is 0
+                            continue
                         [which] = [h for h in header when h is /增訂條文|修正條文/]
                         splitted = {}
                         splitted[which] = first if which?
