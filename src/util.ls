@@ -1,13 +1,13 @@
 require! {fs, zhutil}
 /* helper of zh numbers, datetime */
 
-zhnumber = <[○ 一 二 三 四 五 六 七 八 九 十]>
+export zhnumber = <[○ 一 二 三 四 五 六 七 八 九 十]>
 
 zhmap = {[c, i] for c, i in zhnumber}
-zhreghead = new RegExp "^((?:#{ (<[千 百 零]> ++ zhnumber) * '|' })+)、(.*)$", \m
-zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)$"
+export zhreghead = new RegExp "^((?:#{ (<[千 百 零]> ++ zhnumber) * '|' })+)、(.*)$", \m
+export zhreg = new RegExp "^((?:#{ zhnumber * '|' })+)$"
 
-intOfZHNumber = ->
+export intOfZHNumber = ->
     if it?match? zhreg
     then zhutil.parseZHNumber it
     else +it
@@ -19,13 +19,13 @@ parseZHHour = ->
     then hour
     else hour + 12
 
-/* 
-dateOfLyDateTime :: [String] -> [String] -> Date 
+/*
+dateOfLyDateTime :: [String] -> [String] -> Date
 
 example:
 console.log dateOfLyDate ['11', '10', '13'] ["下午", "10"]
 */
-datetimeOfLyDateTime = (lydate, lyhour, lysec) -> 
+export datetimeOfLyDateTime = (lydate, lyhour, lysec) ->
     s = if lysec
       then lysec
       else 0
@@ -35,9 +35,9 @@ datetimeOfLyDateTime = (lydate, lyhour, lysec) ->
     [y, m, d] = lydate.map -> intOfZHNumber it
     new Date +y + 1911, +m-1, d, h, s
 
-fixup = require \./charmap .applymap
+export fixup = require \./charmap .applymap
 
-readFileSync = (path) -> fixup fs.readFileSync path, \utf8
+export readFileSync = (path) -> fixup fs.readFileSync path, \utf8
 
 update_one_to_many_map = (dct, k, v) ->
     if dct[k] is void
@@ -46,7 +46,7 @@ update_one_to_many_map = (dct, k, v) ->
         dct[k].push v
     dct
 
-build_people_interp_map = (ref_id, data, base_dct) ->
+export build_people_interp_map = (ref_id, data, base_dct) ->
     data.map ->
         meta = it.0
         if meta and meta.type is \interp
@@ -65,7 +65,7 @@ initNameCache =  ->
         json = try require "../data/mly-#i.json"
         _global_name_cache <<< {[fixup(person.name), 1] for person in json}
 
-nameListFixup = (names) ->
+export nameListFixup = (names) ->
     initNameCache! if _global_name_cache == null
     ret_names = []
     unknown = ''
@@ -92,7 +92,7 @@ nameListFixup = (names) ->
     ret_names
 
 
-committees = do
+export committees = do
     IAD: \內政
     FND: \外交及國防
     ECO: \經濟
@@ -125,13 +125,13 @@ committees = do
     BUD: \預算
     EDN: \教育
 
-parseCommittee = (name) ->
+export parseCommittee = (name) ->
     name.split /、/ .map ->
         [code]? = [code for code, name of committees when name is it]
         throw it+JSON.stringify(committees) unless code
         code
 
-convertDoc = (file, {success, error}) ->
+export convertDoc = (file, {success, error}) ->
     require! shelljs
     # XXX: correct this for different OS
     python = process.env.UNOCONV_PYTHON ? match process.platform
@@ -151,5 +151,3 @@ convertDoc = (file, {success, error}) ->
         p.kill \SIGTERM
         p := null
         error!
-
-module.exports = {datetimeOfLyDateTime, intOfZHNumber, zhreg, zhreghead, zhnumber, readFileSync, build_people_interp_map, nameListFixup, committees, parseCommittee, convertDoc, fixup}
