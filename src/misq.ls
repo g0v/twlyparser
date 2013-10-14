@@ -350,7 +350,10 @@ export function parseBillDoc(id, opts, cb)
     | otherwise =>
     parser.base = "#cache_dir/bills/#{id}"
 
-    parser.parseHtml util.readFileSync file
+    try
+      parser.parseHtml util.readFileSync file
+    catch
+      return cb e
     cb null bill <<< {content}
 
   file = "#cache_dir/bills/#{id}/file.html"
