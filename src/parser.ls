@@ -705,6 +705,7 @@ class TextFormatter implements HTMLParser
             src = @attr \SRC
             file = self.base + '/' + src
             [_, ext] = src.match /\.(\w+)$/
+            return unless fs.existsSync file
             output = exec-sync.stdout "imgsize #file"
             [_, width, height] = output.match /width="(\d+)" height="(\d+)"/
             if width / height > 60

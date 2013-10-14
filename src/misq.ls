@@ -342,6 +342,7 @@ export function parseBillDoc(id, opts, cb)
     content = []
     bill = require "#cache_dir/bills/#{id}/index.json"
     parser.output-json = -> content.push it
+    # XXX check duplicated
     parser.output = (line) -> match line
     | /^案由：(.*)$/ => bill.abstract = that.1
     | /^提案編號：(.*)$/ => bill.reference = that.1
