@@ -361,9 +361,6 @@ export function parseBillDoc(id, opts, cb)
   _, {size}? <- fs.stat file
   return doit! if size
 
-  try
-    util.convertDoc file.replace(/html$/, \doc), opts <<< do
-      error: -> throw it
-      success: doit
-  catch
-    cb e
+  util.convertDoc file.replace(/html$/, \doc), opts <<< do
+    error: -> cb new Error it ? 'convert'
+    success: doit
