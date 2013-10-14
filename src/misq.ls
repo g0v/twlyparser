@@ -351,13 +351,16 @@ export function parseBillDoc(id, opts, cb)
     parser.base = "#cache_dir/bills/#{id}"
 
     parser.parseHtml util.readFileSync file
-    cb bill <<< {content}
+    cb null bill <<< {content}
 
   file = "#cache_dir/bills/#{id}/file.html"
 
   _, {size}? <- fs.stat file
   return doit! if size
 
-  util.convertDoc file.replace(/html$/, \doc), opts <<< do
-    error: -> throw it
-    success: doit
+  try
+    util.convertDoc file.replace(/html$/, \doc), opts <<< do
+      error: -> throw it
+      success: doit
+  catch
+    cb e
