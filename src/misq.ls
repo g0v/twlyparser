@@ -1,5 +1,5 @@
 require! \./ly
-require! <[mkdirp fs cheerio printf ./util zhutil]>
+require! <[mkdirp fs cheerio printf ./util zhutil request]>
 
 entryStatus = (res, def) -> match res
 | /協商/    => \consultation
@@ -9,7 +9,7 @@ entryStatus = (res, def) -> match res
 | /暫不予處理/ => \unhandled
 | otherwise => def
 
-cache_dir = process.cwd! + "/source/misq"
+export cache_dir = process.cwd! + "/source/misq"
 
 export function get(s, {agenda-only, dir=cache_dir}, cb)
   err <- mkdirp dir
@@ -246,3 +246,90 @@ prepare_discussion = (g, agenda-only, cb) ->
     #console.log \==ERROR all.length, proceeding.length
 
     cb all
+
+extractNames = (content) ->
+    unless [_, role, names]? = content.match /getLawMakerName\('(\w+)', '(.*)'\)/
+        return []
+    names .= replace /\s(\S)\s(\S)(\s|$)/g (...args) -> " #{args.1}#{args.2} "
+    names .= replace /黨團/ '黨團 '
+    mly = names.split /\s+/ .filter (.length)
+    [role, mly]
+
+
+parseBill = (id, body, cb) ->
+    $ = cheerio.load body
+    info = {extracted: new Date!}
+
+    $ 'table[summary="院會審議消息資料表格"] tr' .each ->
+        key = @find \th .map -> @text!
+        if key.length is 1 and key isnt /國會圖書館/
+            key = key.0 - /：/
+            content = @find \td
+            text = -> content.map(-> @text!).0
+            [prop, value] = match key
+            | /提案單位/ => [\propser_text text!]
+            | \審查委員會 =>
+                text!match /^本院/
+                if text!match /^本院(.*?)(?:兩|三|四|五|六|七|八)?委員會$/
+                    [\committee util.parseCommittee that.1]
+                else
+                    [\propser_text text!]
+            | \議案名稱 => [\summary text!]
+            | \提案人 => extractNames content.html!
+            | \連署人 => extractNames content.html!
+            | \議案狀態 => [\status text! - /^\s*|\s*$/g]
+            | \關連議案 =>
+                related = content.find \a .map -> [
+                    * (@attr \onclick .match /queryBillDetail\('(\d+)',/).1
+                    * @text! - /^\s*|\s*$/g
+                ]
+                [\related, related]
+            | \相關附件 =>
+                doc = content.find \a .map ->
+                    href = @attr \href
+                    href .= replace /^http:\/\/10.12.8.14:28080\//, 'http://misq.ly.gov.tw/'
+                    [ href.match(/(pdf|doc)/i).1.toLowerCase!, href ]
+                [\doc, {[type, uri] for [type, uri] in doc}]
+            | otherwise => [key, text!]
+            info[prop] = value if prop
+    cb info
+
+export function getBill(id, {dir}, cb)
+    cache_dir := dir if dir
+    err <- mkdirp "#cache_dir/bills/#{id}"
+    file = "#cache_dir/bills/#{id}/index.html"
+    json = file.replace /\.html$/, '.json'
+
+    extract = (body) ->
+        parseBill id, body, (res) ->
+            fs.writeFileSync json, JSON.stringify res, null 4
+            cb res
+
+    _, {size}? <- fs.stat json
+    if size
+        return cb require json
+
+    _, {size}? <- fs.stat file
+    if size
+        extract fs.readFileSync file
+    else
+        body <- ly.getBillDetails id
+        fs.writeFileSync file, body
+        extract body
+
+export function ensureBillDoc(id, info, cb)
+    return cb! unless uri = info.doc.doc
+    if uri is /http:\/\/10\./
+        console.error id, uri
+        return cb!
+    file = "#cache_dir/bills/#{id}/file.html"
+    _, {size}? <- fs.stat file
+    return cb! if size?
+    file = "#cache_dir/bills/#{id}/file.doc"
+    _, {size}? <- fs.stat file
+    return cb! if size?
+    writer = with fs.createWriteStream file
+        ..on \error -> throw it
+        ..on \close -> console.info \done uri; cb!
+        ..
+    request {method: \GET, uri} .pipe writer
