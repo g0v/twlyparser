@@ -253,7 +253,7 @@ extractNames = (content) ->
     names .= replace /\s(\S)\s(\S)(\s|$)/g (...args) -> " #{args.1}#{args.2} "
     names .= replace /黨團/ '黨團 '
     mly = names.split /\s+/ .filter (.length)
-    [role, mly]
+    [{proposal: \sponsors, petition: \cosponsors}[role], mly]
 
 
 parseBill = (id, body, cb) ->
@@ -267,7 +267,7 @@ parseBill = (id, body, cb) ->
             content = @find \td
             text = -> content.map(-> @text!).0
             [prop, value] = match key
-            | /提案單位/ => [\propser_text text!]
+            | /提案單位/ => [\propsed_by text!]
             | \審查委員會 =>
                 text!match /^本院/
                 if text!match /^本院(.*?)(?:兩|三|四|五|六|七|八)?委員會$/
