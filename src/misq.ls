@@ -336,6 +336,7 @@ export function ensureBillDoc(id, info, cb)
 
 export function parseBillDoc(id, opts, cb)
   {BillParser} = require \./parser
+  cache_dir := opts.dir if opts.dir
   doit = ->
     parser = new BillParser {-chute}
     content = []
