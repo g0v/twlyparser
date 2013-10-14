@@ -750,8 +750,14 @@ class BillParser extends TextFormatter
         if node.0.name is \table
             [first, ...rest] = node.find \tr .map -> @
             match first.text! - /\s/g
-            | /^院總第(\d+)號(.*?)提案第(\d+)號$/ =>
-                @output "提案編號：#{that.1}#{that.2.0}#{that.3}"
+            | /^院總第([\d\s]+)號/
+                res = first.find \td .map -> @text! - /[ \t]|^\s+|\s+$/g
+                [source, id] = [res.1, res.3].map -> it.split /\n/ .join \;
+                source .=replace '政府' 'G'
+                source .=replace '委員' 'L'
+                result = "#{that.1}#source#id"
+                result += '-' + res.6 if res.6
+                @output "提案編號：#result"
                 return
             | /^(?:「?(.*草案?)」?)?(?:條文)?(對照表)?$/ =>
                 name = that.1
