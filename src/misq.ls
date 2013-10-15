@@ -343,10 +343,21 @@ export function parseBillDoc(id, opts, cb)
     bill = require "#cache_dir/bills/#{id}/index.json"
     parser.output-json = -> content.push it
     # XXX check duplicated
+    push-field = (field, val) ->
+      if bill[field]
+        console.warn "#id contains multiple doc"
+        bill.attachments = {}
+      if bill.attachments
+        bill.attachments[field] = val
+      else
+        bill[field] = val
+        if field is \id and id isnt val
+          console.warn "id mismatch: #id / #val"
+
     parser.output = (line) -> match line
-    | /^案由：(.*)$/ => bill.abstract = that.1
-    | /^提案編號：(.*)$/ => bill.reference = that.1
-    | /^議案編號：(.*)$/ => bill.id = that.1
+    | /^案由：(.*)$/ => push-field \abstract, that.1
+    | /^提案編號：(.*)$/ => push-field \bill_ref, that.1
+    | /^議案編號：(.*)$/ => push-field \id, that.1
     | otherwise =>
     parser.base = "#cache_dir/bills/#{id}"
 
