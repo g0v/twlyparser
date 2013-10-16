@@ -6,7 +6,8 @@ require! <[optimist async]>
 funcs = for id in optimist.argv._ => let id
   (done) ->
     info <- ly.misq.getBill id, {dir}
-    <- ly.misq.ensureBillDoc id, info
+    err <- ly.misq.ensureBillDoc id, info
+    console.log id, err if err
     done!
 
 <- async.waterfall funcs

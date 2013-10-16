@@ -328,11 +328,16 @@ export function ensureBillDoc(id, info, cb)
     file = "#cache_dir/bills/#{id}/file.doc"
     _, {size}? <- fs.stat file
     return cb! if size?
-    writer = with fs.createWriteStream file
-        ..on \error -> throw it
-        ..on \close -> console.info \done uri; cb!
-        ..
-    request {method: \GET, uri} .pipe writer
+    request {method: \GET, uri}
+      ..on \response ({statusCode}) ->
+        if statusCode is 200
+          writer = with fs.createWriteStream file
+              ..on \error -> cb it
+              ..on \close -> console.info \done uri; cb!
+              ..
+          ..pipe writer
+        else
+          cb statusCode
 
 export function parseBillDoc(id, opts, cb)
   {BillParser} = require \./parser
