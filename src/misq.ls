@@ -332,7 +332,6 @@ export function ensureBillDoc(id, info, cb)
     writer = with fs.createWriteStream file
         ..on \error -> cb it
         ..on \close ->
-          console.log \close statusCode
           if statusCode isnt 200
             fs.unlinkSync file
             return cb statusCode
