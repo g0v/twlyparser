@@ -328,11 +328,12 @@ export function ensureBillDoc(id, info, cb)
     file = "#cache_dir/bills/#{id}/file.doc"
     _, {size}? <- fs.stat file
     return cb! if size?
-    err, {statusCode}, body <- request {method: \GET, uri}
+    err, {statusCode}, body <- request {method: \GET, uri, encoding: null}
     return cb err if err
     if statusCode isnt 200
       return cb statusCode
-    fs.writeFileSync file, body
+    err <- fs.writeFile file, body
+    return cb err if err
     console.log \done uri
     cb!
 
