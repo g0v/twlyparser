@@ -774,7 +774,7 @@ class BillParser extends TextFormatter
                       []
                     else
                       res
-                content .= filter -> it.legnth isnt 0
+                content = [it for it in content when it.length]
                 # a column can contain multiple proposals.  splice them into individual diff
                 derived-names = []
                 parse-names = (header) ->
