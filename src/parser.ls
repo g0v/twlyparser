@@ -777,8 +777,17 @@ class BillParser extends TextFormatter
                 content .= filter -> it.legnth isnt 0
                 # a column can contain multiple proposals.  splice them into individual diff
                 derived-names = []
+                parse-names = (header) ->
+                  rows = header.split /\n/
+                  return rows if rows.length is 1
+                  rows.reduce (a, b) ->
+                    if b is /^等/
+                      [a + b]
+                    else
+                      [a, b]
+                  .0.split \,
                 for i in tosplit.reverse!
-                    names = derived-names ++ header[i].split /\n/
+                    names = derived-names ++ parse-names header[i]
                     header[i to i] = names
                     for e,j in content
                         x = e[i]split /(委員.*提案|審查會)：\n/
