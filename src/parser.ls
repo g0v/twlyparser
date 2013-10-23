@@ -766,8 +766,15 @@ class BillParser extends TextFormatter
                 [h, ...content] = rest
                 header = h.find \td .map -> @text! - /^\s*|\s*$/gm
                 tosplit = [i for h, i in header when h is \說明 or h.match /\n/ or h.match /NOTYET委員等提案/]
+                appendix = []
                 content .= map ->
-                    it.find \td .map -> @text! - /^\s*|\s*$/gm
+                    res = it.find \td .map -> @text! - /^\s*|\s*$/gm
+                    if res.length is 1 and res.0.match /^附表/
+                      appendix.push res
+                      []
+                    else
+                      res
+                content .= filter -> it.legnth isnt 0
                 # a column can contain multiple proposals.  splice them into individual diff
                 derived-names = []
                 for i in tosplit.reverse!
@@ -800,7 +807,9 @@ class BillParser extends TextFormatter
                         e[comment].審查會? .= replace /^/, RegExp.$1
 
 
-                @output-json { type, name, header, content }
+                result = { type, name, header, content }
+                result <<< { appendix } if appendix.length
+                @output-json result
                 return
 
         super ...
