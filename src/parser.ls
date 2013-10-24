@@ -772,6 +772,7 @@ class BillParser extends TextFormatter
                 appendix = []
                 content .= map ->
                     res = it.find \td .map -> @text! - /^\s*|\s*$/gm
+                    .map -> it.replace /(\w)\n(\w)/g, "$1 $2"
                     if res.length is 1 and res.0.match /^附表/
                       appendix.push res
                       []
