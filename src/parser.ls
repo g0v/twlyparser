@@ -765,6 +765,9 @@ class BillParser extends TextFormatter
                 type = if that.1 => \lawproposal else \lawdiff
                 [h, ...content] = rest
                 header = h.find \td .map -> @text! - /^\s*|\s*$/gm
+                for h, i in header when h is /^說明/
+                  header[i] = \說明
+
                 tosplit = [i for h, i in header when h is \說明 or h.match /\n/ or h.match /NOTYET委員等提案/]
                 appendix = []
                 content .= map ->
