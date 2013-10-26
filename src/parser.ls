@@ -824,8 +824,15 @@ class BillParser extends TextFormatter
                 header = h.find \td .map -> @text! - /^\s*|\s*$/gm
                 for h, i in header when h is /^說明/
                   header[i] = \說明
-
                 @parse-bill name, type, header, content
+                @header = header
+                @name = name
+                @type = type
+                return
+
+            else
+                if @header
+                    @parse-bill @name, @type, @header, rest
 
         super ...
 
