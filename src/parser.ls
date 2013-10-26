@@ -747,6 +747,63 @@ class TextFormatter implements HTMLParser
         @output rich.html! - /^\s+/mg - /\n/g - /position: absolute;/g
 
 class BillParser extends TextFormatter
+    parse-bill: (name, type, header, content) ->
+        tosplit = [i for h, i in header when h is \說明 or h.match /\n/ or h.match /NOTYET委員等提案/]
+        appendix = []
+        content .= map ->
+            res = it.find \td .map -> @text! - /^\s*|\s*$/gm
+            .map -> it.replace /(\w)\n(\w)/g, "$1 $2"
+            if res.length is 1 and res.0.match /^附表/
+              appendix.push res
+              []
+            else
+              res
+        content = [it for it in content when it.length]
+        # a column can contain multiple proposals.  splice them into individual diff
+        derived-names = []
+        parse-names = (header) ->
+          rows = header.split /\n/
+          return rows if rows.length is 1
+          rows.reduce (a, b) ->
+            if b is /^等/
+              [a + b]
+            else
+              [a, b]
+          .0.split \,
+        for i in tosplit.reverse!
+            names = derived-names ++ parse-names header[i]
+            header[i to i] = names
+            for e,j in content
+                x = e[i]split /(委員.*提案|審查會)：\n/
+                first = x.shift!
+                if header[i] is \說明 and x.length is 0
+                    continue
+                [which] = [h for h in header when h is /增訂條文|修正條文/]
+                splitted = {}
+                splitted[which] = first if which?
+                while who = x.shift!
+                    if header[i] isnt \說明
+                        throw "#who not in #names" unless who in names
+                    #else
+                    #    derived-names.push who unless who in names
+                    splitted[who] = x.shift! - /\s*$/
+                replaced-with = if header[i] is \說明
+                    [splitted]
+                else
+                    [splitted[who] ? '' for who in names]
+                e.splice i, 1, ...replaced-with
+        [i] = [j for h, j in header when h is \審查會通過條文]
+        [comment] = [j for h, j in header when h is \說明]
+        if i?
+            for e in content
+                e[i] -= /^(（.*?）\n)/
+                e[comment].審查會? .= replace /^/, RegExp.$1
+
+
+        result = { type, name, header, content }
+        result <<< { appendix } if appendix.length
+        @output-json result
+        return
     parseRich: (node) ->
         if node.0.name is \table
             [first, ...rest] = node.find \tr .map -> @
@@ -768,62 +825,7 @@ class BillParser extends TextFormatter
                 for h, i in header when h is /^說明/
                   header[i] = \說明
 
-                tosplit = [i for h, i in header when h is \說明 or h.match /\n/ or h.match /NOTYET委員等提案/]
-                appendix = []
-                content .= map ->
-                    res = it.find \td .map -> @text! - /^\s*|\s*$/gm
-                    .map -> it.replace /(\w)\n(\w)/g, "$1 $2"
-                    if res.length is 1 and res.0.match /^附表/
-                      appendix.push res
-                      []
-                    else
-                      res
-                content = [it for it in content when it.length]
-                # a column can contain multiple proposals.  splice them into individual diff
-                derived-names = []
-                parse-names = (header) ->
-                  rows = header.split /\n/
-                  return rows if rows.length is 1
-                  rows.reduce (a, b) ->
-                    if b is /^等/
-                      [a + b]
-                    else
-                      [a, b]
-                  .0.split \,
-                for i in tosplit.reverse!
-                    names = derived-names ++ parse-names header[i]
-                    header[i to i] = names
-                    for e,j in content
-                        x = e[i]split /(委員.*提案|審查會)：\n/
-                        first = x.shift!
-                        if header[i] is \說明 and x.length is 0
-                            continue
-                        [which] = [h for h in header when h is /增訂條文|修正條文/]
-                        splitted = {}
-                        splitted[which] = first if which?
-                        while who = x.shift!
-                            if header[i] isnt \說明
-                                throw "#who not in #names" unless who in names
-                            #else
-                            #    derived-names.push who unless who in names
-                            splitted[who] = x.shift! - /\s*$/
-                        replaced-with = if header[i] is \說明
-                            [splitted]
-                        else
-                            [splitted[who] ? '' for who in names]
-                        e.splice i, 1, ...replaced-with
-                [i] = [j for h, j in header when h is \審查會通過條文]
-                [comment] = [j for h, j in header when h is \說明]
-                if i?
-                    for e in content
-                        e[i] -= /^(（.*?）\n)/
-                        e[comment].審查會? .= replace /^/, RegExp.$1
-
-
-                result = { type, name, header, content }
-                result <<< { appendix } if appendix.length
-                @output-json result
-                return
+                @parse-bill name, type, header, content
 
         super ...
 
