@@ -5,6 +5,8 @@
 require! <[fs cheerio optimist printf]>
 files = optimist.argv._
 
+console.log <[date sitting speaker type summary link]>.join \,
+
 files.forEach (file) ->
   $ = cheerio.load (fs.readFileSync file, \utf8).toLowerCase!
 
