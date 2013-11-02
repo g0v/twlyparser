@@ -61,8 +61,8 @@ files.forEach (file) ->
       @find \td .map -> trim @text!
     [_, date]? = res.shift!0?split '. '
     return unless date
-    [y, m, d] =date.split \/
-    return unless y
+    [y, m, d] = date.split \/
+    date = [+y + 1911, m, d].join \-
     res = {[k,v] for [k,v] in res}
     a = @find \a
     if a.length
