@@ -250,7 +250,7 @@ prepare_discussion = (g, agenda-only, cb) ->
 extractNames = (content) ->
     unless [_, role, names]? = content.match /getLawMakerName\('(\w+)', '(.*)'\)/
         return []
-    names .= replace /\s(\S)\s(\S)(\s|$)/g (...args) -> " #{args.1}#{args.2} "
+    names .= replace /(?:^|\s)(\S)\s(\S)(?:\s|$)/g (...args) -> " #{args.1}#{args.2} "
     names .= replace /黨團/ '黨團 '
     mly = names.split /\s+/ .filter (.length)
     [{proposal: \sponsors, petition: \cosponsors}[role], mly]
