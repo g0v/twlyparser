@@ -154,12 +154,12 @@ prepare_announcement = (g, agenda-only, cb) ->
         entry
     by_id = {[id, a] for {id}:a in results}
 
-    for {id,result} in proceeding
+    for {id,result,item} in proceeding
         unless entry = by_id[id]
           console.error "entry not found: #{id}"
           continue
 
-        entry <<< {resolution: result}
+        entry <<< {resolution: result, item}
         entry.status = match result ? ''
         | ''              => \accepted
         | /照案通過/      => \accepted
