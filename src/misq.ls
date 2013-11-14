@@ -381,3 +381,32 @@ export function parseBillDoc(id, opts, cb)
   util.convertDoc file.replace(/html$/, \doc), opts <<< do
     error: -> cb new Error it ? 'convert'
     success: doit
+
+export function getMeetingAgenda({meetingNo, meetingTime, departmentCode}, cb)
+  uri = "http://misq.ly.gov.tw/MISQ/IQuery/misq5000QueryMeetingDetail.action"
+
+  err, res, body <- request do
+    method: \POST
+    uri: uri
+    headers: do
+      Origin: 'http://misq.ly.gov.tw'
+      Referer: uri
+      User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
+    form: { meetingNo, meetingTime, departmentCode }
+
+  $ = cheerio.load body
+
+  res = {}
+  $('#queryForm table tr').each ->
+    key = @find '> th' .map -> @text!
+    if key.length is 1 and key isnt /國會圖書館/
+      key = key.0 - /：/
+      content = @find '> td'
+      match key
+      | \議事錄
+        [pdf]? = content.find \a .map -> @attr \href
+        .filter -> it is /pdf$/
+        res[key] = pdf
+      else
+        res[key] = content.text! - /^\s*|\s*$/gm
+  cb res
