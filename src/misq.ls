@@ -154,14 +154,15 @@ prepare_announcement = (g, agenda-only, cb) ->
         entry
     by_id = {[id, a] for {id}:a in results}
 
-    for {id,result,item} in proceeding
+    for {id,result,item}:p in proceeding
         unless entry = by_id[id]
           console.error "entry not found: #{id}"
-          continue
+          entry = p{id, summary, proposer}
+          results.push entry
 
         entry <<< {resolution: result, item}
         entry.status = match result ? ''
-        | ''              => \accepted
+        | ''             => ''
         | /照案通過/      => \accepted
         | /提報院會/      => \accepted
         | /列席報告/      => \accepted
@@ -170,7 +171,9 @@ prepare_announcement = (g, agenda-only, cb) ->
         | /同意撤回/      => \retrected
         | /逕付(院會)?二讀/ => \prioritized
         | /黨團協商/      => \consultation
-        | /交(.*)委員會/  => \committee
+        | /交(.*?)[兩三四五六七八]?委員會/
+          entry.committee = util.parseCommittee that.1 - /及有關$/
+          \committee
         | /中央政府總預算案/ => \committee
         | /展延審查期限/  => \extended
         | /退回程序委員會/ => \rejected
