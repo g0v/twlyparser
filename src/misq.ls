@@ -171,7 +171,7 @@ prepare_announcement = (g, agenda-only, cb) ->
         | /同意撤回/      => \retrected
         | /逕付(院會)?二讀/ => \prioritized
         | /黨團協商/      => \consultation
-        | /交(.*?)[兩三四五六七八]?委員會/
+        | /交([^，]+?)[兩三四五六七八]?委員會/
           entry.committee = util.parseCommittee that.1 - /及有關$/
           \committee
         | /中央政府總預算案/ => \committee
