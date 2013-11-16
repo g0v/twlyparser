@@ -817,6 +817,7 @@ class BillParser extends TextFormatter
                 [source, id] = [res.1, res.3].map -> it.split /\n/ .join \;
                 source .=replace '政府' 'G'
                 source .=replace '委員' 'L'
+                source .=replace '人民' 'P'
                 result = "#{that.1}#source#id"
                 result += '-' + res.6 if res.6
                 @output "提案編號：#result"
