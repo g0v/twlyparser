@@ -748,7 +748,7 @@ class TextFormatter implements HTMLParser
 
 class BillParser extends TextFormatter
     parse-bill: (name, type, header, content) ->
-        header = [h - /\n（條次調整）/ for h in header]
+        header = [h - / /g - /\n（條次調整）/ for h in header]
         tosplit = [i for h, i in header when h is \說明 or h.match /\n/ or h.match /NOTYET委員等提案/]
         appendix = []
         content .= map ->
@@ -767,7 +767,7 @@ class BillParser extends TextFormatter
           return rows if rows.length is 1
           rows.reduce (a, b) ->
             a = [ a ] unless Array.isArray a
-            if b is /^等/
+            if b is /^等/ or b is '條文'
               a[*-1] += b
               a
             else
@@ -791,7 +791,10 @@ class BillParser extends TextFormatter
                 replaced-with = if header[i] is \說明
                     [splitted]
                 else
-                    [splitted[who] ? '' for who in names]
+                    if names.length is 1
+                      [e[i]]
+                    else
+                      [splitted[who] ? '' for who in names]
                 e.splice i, 1, ...replaced-with
         [i] = [j for h, j in header when h is \審查會通過條文]
         [comment] = [j for h, j in header when h is \說明]
