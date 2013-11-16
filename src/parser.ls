@@ -835,8 +835,11 @@ class BillParser extends TextFormatter
                 return
 
             else
-                if @header
-                    @parse-bill @name, @type, @header, rest
+              if @header
+                if @header.length is rest.0?length
+                  @parse-bill @name, @type, @header, rest
+                else
+                  console.error "unmatched column size, ignoring"
 
         super ...
 
