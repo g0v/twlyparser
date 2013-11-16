@@ -765,11 +765,12 @@ class BillParser extends TextFormatter
           rows = header.split /\n/
           return rows if rows.length is 1
           rows.reduce (a, b) ->
+            a = [ a ] unless Array.isArray a
             if b is /^等/
-              [a + b]
+              a[*-1] += b
+              a
             else
-              [a, b]
-          .0.split \,
+              a ++ b
         for i in tosplit.reverse!
             names = derived-names ++ parse-names header[i]
             header[i to i] = names
