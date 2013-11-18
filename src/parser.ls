@@ -811,6 +811,15 @@ class BillParser extends TextFormatter
     parseRich: (node) ->
         if node.0.name is \table
             [first, ...rest] = node.find \tr .map -> @
+            begin-amendment = (name, type) ~>
+                [h, ...content] = rest
+                header = h.find \td .map -> @text! - /^\s*|\s*$/gm
+                for h, i in header when h is /^說明/
+                  header[i] = \說明
+                @parse-bill name, type, header, content
+                @header = header
+                @name = name
+                @type = type
             match first.text! - /\s/g
             | /^院總第([\d\s]+)號/
                 res = first.find \td .map -> @text! - /[ \t]|^\s+|\s+$/g
@@ -822,17 +831,10 @@ class BillParser extends TextFormatter
                 result += '-' + res.6 if res.6
                 @output "提案編號：#result"
                 return
-            | /^(?:「?(.*草案?)」?)?案?(?:條文)?(對照表)?(?:\d+年\d+月\d+日編製)?$/ =>
-                name = that.1
-                type = if that.1 => \lawproposal else \lawdiff
-                [h, ...content] = rest
-                header = h.find \td .map -> @text! - /^\s*|\s*$/gm
-                for h, i in header when h is /^說明/
-                  header[i] = \說明
-                @parse-bill name, type, header, content
-                @header = header
-                @name = name
-                @type = type
+            | /(.*)條文對照表$/
+                begin-amendment that.1, if that.1 is /增訂|修正/ => \lawdiff else \lawproposal
+            | /^(?:「?(.*草案?)」?)?案?(?:條文)?(對照表)?(?:\d+年\d+月\d+日編製)?$/
+                begin-amendment that.1, if that.1 => \lawproposal else \lawdiff
                 return
 
             else
