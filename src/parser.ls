@@ -808,6 +808,8 @@ class BillParser extends TextFormatter
         result <<< { appendix } if appendix.length
         @output-json result
         return
+    parseLine: (text) ->
+        @last-text = text
     parseRich: (node) ->
         if node.0.name is \table
             [first, ...rest] = node.find \tr .map -> @
@@ -836,8 +838,11 @@ class BillParser extends TextFormatter
             | /^(?:「?(.*草案?)」?)?案?(?:條文)?(對照表)?(?:\d+年\d+月\d+日編製)?$/
                 begin-amendment that.1, if that.1 => \lawproposal else \lawdiff
                 return
-
             else
+              if @last-text is /草案$/
+                rest.unshift first
+                first = @last-text
+                return begin-amendment @last-text, \lawproposal
               if @header
                 if @header.length is rest.0?length
                   @parse-bill @name, @type, @header, rest
