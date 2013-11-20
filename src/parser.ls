@@ -844,10 +844,12 @@ class BillParser extends TextFormatter
                 first = @last-text
                 return begin-amendment @last-text, \lawproposal
               if @header
-                if @header.length is rest.0?length
+                rest-length = rest.0.find \td .length
+                if @header.length is rest-length
+                  rest.unshift first
                   @parse-bill @name, @type, @header, rest
                 else
-                  console.error "unmatched column size, ignoring"
+                  console.error "unmatched column size, ignoring: ", @header.length, rest-length
 
         super ...
 
