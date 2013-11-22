@@ -833,13 +833,13 @@ class BillParser extends TextFormatter
                 result += '-' + res.6 if res.6
                 @output "提案編號：#result"
                 return
-            | /(.*)條文對照表$/
+            | /(.*)條文(修正)?對照表$/
                 begin-amendment that.1, if that.1 is /增訂|修正/ => \lawdiff else \lawproposal
             | /^(?:「?(.*草案?)」?)?案?(?:條文)?(對照表)?(?:\d+年\d+月\d+日編製)?$/
                 begin-amendment that.1, if that.1 => \lawproposal else \lawdiff
                 return
             else
-              if @last-text is /草案$/
+              if @last-text is /(草案|對照表)$/
                 rest.unshift first
                 first = @last-text
                 return begin-amendment @last-text, \lawproposal
