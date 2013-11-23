@@ -53,7 +53,7 @@ files.forEach (file) ->
                       ..push who
                   return [k, sponsor]
 
-          if k is /^(委員會|類別|主題|關鍵詞|質詢人|答復人|答復日期|提案機關|機關|案別|附加詞|主席)$/ or (!bill and k is /^提案編號|法編號$/)
+          if k is /^(委員會|類別|主題|關鍵詞|質詢人|答復人|答復日期|提案機關|機關|案別|附加詞|主席|主提案|連署提案)$/ or (!bill and k is /^提案編號|法編號$/)
               v = v.split /;/ .map trim
           v = trim v if typeof! v isnt \Array
           allkeys[k] ?= 0
