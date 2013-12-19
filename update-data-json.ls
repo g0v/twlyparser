@@ -23,7 +23,7 @@ syncCurlHTML = (id) ->
     " -d queryIndexeListSource=0:lciv_commfile" +
     " -d fieldNameListSource=year,volume,book_id,book_id_chn,serial_number,subtitle,communique_type,meeting_date,publish_date,pdf_filename2,file_seqno,check_vod_flag" +
     " http://lci.ly.gov.tw/LyLCEW/lcivCommDetail.action"
-    ExecSync.run "#cmd > ./#srcDir/#id.html"
+    ExecSync.exec "#cmd > ./#srcDir/#id.html"
 
 # to skip downloaded HTML, return ids that we have not downloaded yet
 getDownloadList = (fromId, toId) ->
