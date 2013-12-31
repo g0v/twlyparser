@@ -810,6 +810,7 @@ class BillParser extends TextFormatter
         return
     parseLine: (text) ->
         @last-text = text
+        @output text
     parseRich: (node) ->
         if node.0.name is \table
             [first, ...rest] = node.find \tr .map -> @
