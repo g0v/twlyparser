@@ -147,7 +147,7 @@ export fetchCalendarPage = ({uri, params, page=1, last-page, seen}, done) ->
         return done results.filter -> +it.id > seen
 
     if page is 1
-        [_, entries] = $ 'div.pagelinks' .text!match /共\s*(\d+)\s*筆資料/
+        [_, entries] = $ 'div.pagelinks, div.total' .text!match /共\s*(\d+)\s*筆資料/
         last-page := Math.ceil entries/30
     res <- fetchCalendarPage {uri, params, page: page+1, last-page, seen}
     done results ++ res
