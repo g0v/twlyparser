@@ -9,6 +9,7 @@ repository:
   type: 'git'
   url: 'git://github.com/g0v/twlyparser.git'
 scripts:
+  test: "mocha"
   prepublish: """
     lsc -cj package.ls &&
     lsc -cb -o lib src
@@ -31,11 +32,14 @@ dependencies:
   marked: \0.2.6
   shelljs: \0.1.x
   execSync: \0.0.x
-  xregexp: \2.0.0
+  xregexp: \2.0.x
   async: \0.1.x
   printf: \0.0.7
   qs: \0.6.x
   'js-yaml': \1.0.3
   zhutil: \0.5.x
-devDependencies: {}
+devDependencies:
+  mocha: \1.14.x
+  chai: \1.8.x
+
 optionalDependencies: {}

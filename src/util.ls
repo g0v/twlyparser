@@ -151,3 +151,45 @@ export convertDoc = (file, {success, error}) ->
         p.kill \SIGTERM
         p := null
         error!
+
+{XRegExp} = require \xregexp
+
+sitting_name = XRegExp """
+    立法院(?:第(?<ad> \\d+)屆?第(?<session> \\d+)會期
+      (?:第(?<extra> \\d+)次臨時會)?)?
+    (?:
+      第(?<sitting> \\d+)次(?<talk> 全院委員談話會?)?(?<whole> 全院委員會(?:(?<hearing>.*?)公聽會)?)?會議?
+      |
+      (?<committee>\\D+?)[兩三四五六七八2-8]?委員會
+        (?:
+          第?(?<committee_sitting> \\d+)次(?:全體委員|聯席)會?會議?
+        |
+          (?:舉行)?(?<committee_hearing> .*?公聽會(?:（第(?<hearing_sitting> .*?)場）)?.*?)(?:會議)?
+        )
+      |
+      (?<talk_unspecified> 全院委員談話會(?:會議)?)
+      |
+      (?<election> 選舉院長、副院長會議)
+      |
+      (?<consultation>黨團協商會議)
+    )
+  """, \x
+
+export function get-sitting(name)
+  sitting = XRegExp.exec name, sitting_name
+  if sitting.committee
+    sitting.committee = parseCommittee sitting.committee
+    sitting.sitting = sitting.committee_sitting
+  if sitting.whole
+    sitting.committee = <[WHL]>
+  if sitting.talk_unspecified
+    sitting.talk = 1
+    sitting.sitting = 1
+  if sitting.talk
+    sitting.committee = <[TLK]>
+  if sitting.committee_hearing
+    [_, sitting.hearing]? = that.match /「(.*?)」/
+    sitting.sitting = zhutil.parseZHNumber sitting.hearing_sitting if sitting.hearing_sitting
+
+  for _ in <[ad session sitting extra]> => sitting[_] = +sitting[_] if sitting[_]
+  sitting
