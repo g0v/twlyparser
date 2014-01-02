@@ -164,7 +164,7 @@ sitting_name = XRegExp """
         (?:
           第?(?<committee_sitting> \\d+)次(?:全體委員|聯席)會?會議?
         |
-          (?:舉行)?(?<committee_hearing> .*?公聽會(?:（第(?<hearing_sitting> .*?)場）)?.*?)(?:會議)?
+          (?:舉行)?(?<committee_hearing> .*?公聽會(?:[（\\(]第(?<hearing_sitting> .*?)場[）\\)])?.*?)(?:會議)?
         )
       |
       (?<talk_unspecified> 全院委員談話會(?:會議)?)
@@ -187,7 +187,9 @@ export function get-sitting(name)
     sitting.sitting = 1
   if sitting.talk
     sitting.committee = <[TLK]>
-  if sitting.committee_hearing
+  if sitting.hearing
+    [_, sitting.hearing]? = that.match /「(.*?)」/
+  else if sitting.committee_hearing
     [_, sitting.hearing]? = that.match /「(.*?)」/
     sitting.sitting = zhutil.parseZHNumber sitting.hearing_sitting if sitting.hearing_sitting
 
