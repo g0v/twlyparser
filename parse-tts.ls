@@ -28,7 +28,7 @@ files.forEach (file) ->
                   | // /lgcgi/ttsweb //  => @replaceWith @text! # internal link
                   | // /lgcgi/ttspage3\?\d+@\d+@\d+@(\d\d)(\d\d)(\d\d)(\d\d):([\d\-]+)@ // =>
                       @replaceWith @text! + ' ' + JSON.stringify <[a]> ++ +that[1 to 4] ++ that.5
-                  | // /lgcgi/lypdftxt\?(\d\d\d?)(\d\d\d)(\d\d);(\d+);(\d+) // =>
+                  | // /lgcgi/lypdftxt\?(\d\d\d?)(\d\d\d)(\d\d);(\d+);-?(\d+) // =>
                       @replaceWith @text! + ' ' + JSON.stringify <[g]> ++ +that[1 to 5]
                   | // /ttscgi/lgimg\?@(\d\d)(\d\d\d)(\d\d);(\d+);(\d+) // =>
                       @replaceWith @text! + ' ' + JSON.stringify <[gi]> ++ +that[1 to 5]
