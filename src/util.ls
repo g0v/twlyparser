@@ -160,7 +160,7 @@ sitting_name = XRegExp """
     (?:
       第(?<sitting> \\d+)次(?<talk> 全院委員談話會?)?(?<whole> 全院委員會(?:(?<hearing>.*?)公聽會)?)?會議?
       |
-      (?<committee>\\D+?)[兩三四五六七八2-8]?委員會
+      (?<committee>\\D+?)[兩二三四五六七八2-8]?委員會
         (?:
           第?(?<committee_sitting> \\d+)次(?:全體委員|聯席)會?會議?
         |

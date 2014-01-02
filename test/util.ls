@@ -15,3 +15,8 @@ describe 'get-sitting' ->
       res.committee.should.deep.eq <[IAD FND ECO FIN EDU TRA JUD SWE]>
       res<[ad session sitting]>.should.deep.eq [8 4 10]
       done!
+    .. 'hearing' (done) ->
+      res = get-sitting "立法院第8屆第4會期內政、司法及法制二委員會第1次聯席會議"
+      res.committee.should.deep.eq <[IAD JUD]>
+      res<[ad session sitting]>.should.deep.eq [8 4 1]
+      done!
