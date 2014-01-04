@@ -177,6 +177,7 @@ sitting_name = XRegExp """
 
 export function get-sitting(name)
   sitting = XRegExp.exec name, sitting_name
+  return unless sitting
   if sitting.committee
     sitting.committee = parseCommittee sitting.committee
     sitting.sitting = sitting.committee_sitting
