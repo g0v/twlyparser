@@ -1,6 +1,6 @@
 require! <[crypto optimist]>
 require! \./lib/util
-{member} = optimist.argv
+{member,ad} = optimist.argv
 
 members = require "./data/twly/merged.json"
 
@@ -60,26 +60,21 @@ else => console.error it
 
 console.error members.length
 
-contact = (phone, address, facsimile) ->
-    phone .= map -> it.split \：
-    address .= map -> it.split \：
-    facsimile .= map -> it.split \：
-    phones = {[k,v] for [k,v] in phone}
-    fax = {[k,v] for [k,v] in facsimile}
-    address = {[k,v] for [k,v] in address}
-    office = [name for name of {[k,1] for k in Object.keys(phones) ++ Object.keys(address) ++ Object.keys(fax)}]
-    {[name, {phone: phones[name], address: address[name], fax: fax[name]}] for name in office}
-
 res = members.map (m) ->
-    id = m.uid
-    for m_et in m.each_term
-        key = crypto.createHash('md5').update("MLY/#{m_et.name}", \utf8).digest('hex')
-        m_et.party = party m_et.party
-        m_et.caucus = party m_et.caucus
-        m_et.constituency = constituency m_et.constituency
-        m_et.avatar = "http://avatars.io/50a65bb26e293122b0000073/#{key}"
-        m_et.id = id
-        do
-            m_et
+  id = m.uid
+  for m_et in m.each_term
+    key = crypto.createHash('md5').update("MLY/#{m_et.name}", \utf8).digest('hex')
+    m_et <<< do
+      party: party m_et.party
+      caucus: party m_et.caucus
+      constituency: constituency m_et.constituency
+      avatar: "http://avatars.io/50a65bb26e293122b0000073/#{key}"
+      id: id
+    m_et
+
+res .= reduce (++)
+
+if ad
+  res .= filter (.ad is ad)
 
 console.log JSON.stringify res, null, 4
