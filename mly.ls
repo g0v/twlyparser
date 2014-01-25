@@ -2,9 +2,7 @@ require! <[crypto optimist]>
 require! \./lib/util
 {member} = optimist.argv
 
-member ?= 8
-
-members = require "./data/mly/#member"
+members = require "./data/twly/merged.json"
 
 party = -> match it
 | \中國國民黨     => \KMT
@@ -73,14 +71,15 @@ contact = (phone, address, facsimile) ->
     {[name, {phone: phones[name], address: address[name], fax: fax[name]}] for name in office}
 
 res = members.map (m) ->
-    key = crypto.createHash('md5').update("MLY/#{m.姓名}", \utf8).digest('hex')
-    do
-        name: m.姓名
-        party: party m.黨籍
-        caucus: party m.黨團
-        constituency: constituency m.選區
-        contact: contact m.電話, m.通訊處, m.傳真
-        avatar: "http://avatars.io/50a65bb26e293122b0000073/#{key}"
-        assume: m.到職日期?replace /\//g \-
+    id = m.uid
+    for m_et in m.each_term
+        key = crypto.createHash('md5').update("MLY/#{m_et.name}", \utf8).digest('hex')
+        m_et.party = party m_et.party
+        m_et.caucus = party m_et.caucus
+        m_et.constituency = constituency m_et.constituency
+        m_et.avatar = "http://avatars.io/50a65bb26e293122b0000073/#{key}"
+        m_et.id = id
+        do
+            m_et
 
 console.log JSON.stringify res, null, 4
