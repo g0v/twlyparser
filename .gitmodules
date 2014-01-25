@@ -4,9 +4,6 @@
 [submodule "unoconv"]
 	path = unoconv
 	url = https://github.com/dagwieers/unoconv.git
-[submodule "data/twly_crawler"]
-	path = data/twly_crawler
-	url = https://github.com/g0v/twly_crawler.git
 [submodule "data/twly"]
 	path = data/twly
 	url = https://github.com/g0v/twly_crawler.git
