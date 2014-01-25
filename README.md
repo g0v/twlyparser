@@ -19,7 +19,7 @@ LiveScript. Please use the one in chris ppa.
 ```
 $ sudo add-apt-repository ppa:chris-lea/node.js
 $ sudo apt-get update
-$ suod apt-get install nodejs npm
+$ sudo apt-get install nodejs npm
 ```
 
 and some dependency
