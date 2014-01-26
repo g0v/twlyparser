@@ -38,9 +38,12 @@ $ npm run prepublish
 # Parsing from prepared text version of gazettes:
 
 ```
+# get ly-gazette in the same directory with twlyparser
+$ cd ..
 $ git clone git://github.com/g0v/ly-gazette.git
 
 # output/raw/4004.text -> output/raw/4004.md
+$ cd twlyparser
 $ ./node_modules/.bin/lsc ./format-log.ls --fromtext --gazette 4004 --dir ./output/raw
 
 # generate all gazettes for 8th AD
@@ -53,7 +56,7 @@ To retrieve source word files of a specific gazette that is already listed in
 'data/index.json':
 
 ```
-./node_modules/.bin/lsc get-source.ls --gazette 4004
+$ ./node_modules/.bin/lsc get-source.ls --gazette 4004
 
 ```
 
@@ -63,8 +66,7 @@ You'll need to install LibreOffice.
 
 ```
 # make sure you do `git submodule init` and `git submodule update`
-
-twlyparser $ ./node_modules/.bin/lsc populate-sitting.ls --force --gazette 4004
+$ ./node_modules/.bin/lsc populate-sitting.ls --force --gazette 4004
 ```
 
 # To parse:
@@ -74,33 +76,33 @@ you may use the sample data to skip `get-source` and unoconv conversion
 twlyrawdata.tgz : download from http://dl.dropbox.com/u/30657009/ly/4004.tgz
 
 ```
-twlyparser $ mkdir source/
-twlyparser $ tar xzvf twlyrawdata.tgz -C source/ 
-twlyparser $ mkdir output
+$ mkdir source/
+$ tar xzvf twlyrawdata.tgz -C source/ 
+$ mkdir output
 
 # convert doc files to html and update data/gazettes.json with metadata
-twlyparser $ ./node_modules/.bin/lsc populate-sitting.ls --dometa
+$ ./node_modules/.bin/lsc populate-sitting.ls --dometa
 
 # generate text file from source/
-twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --text --gazette 4004 --dir ./output
+$ ./node_modules/.bin/lsc ./format-log.ls --text --gazette 4004 --dir ./output
 
 # generate markdown file from text generated above
-twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --fromtext --gazette 4004 --dir ./output
+$ ./node_modules/.bin/lsc ./format-log.ls --fromtext --gazette 4004 --dir ./output
 
 # generate all gazettes for 8th AD
-twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --text --ad 8 --dir ./output
-twlyparser $ ./node_modules/.bin/lsc ./format-log.ls --fromtext --ad 8 --dir ./output
+$ ./node_modules/.bin/lsc ./format-log.ls --text --ad 8 --dir ./output
+$ ./node_modules/.bin/lsc ./format-log.ls --fromtext --ad 8 --dir ./output
 ```
 
 # To generate json files from md
 
 ```
 # generate specific gazette or AD
-twlyparser $ ./node_modules/.bin/lsc ./md2json.ls --gazette 4004 --dir ./output
-twlyparser $ ./node_modules/.bin/lsc ./md2json.ls --ad 8 --dir ./output
+$ ./node_modules/.bin/lsc ./md2json.ls --gazette 4004 --dir ./output
+$ ./node_modules/.bin/lsc ./md2json.ls --ad 8 --dir ./output
 
 # generate all gazettes
-twlyparser $ ./node_modules/.bin/lsc ./md2json.ls --dir ../data
+$ ./node_modules/.bin/lsc ./md2json.ls --dir ../data
 ```
 
 # To generate json files of gazettes (only supports interpellation for now)
@@ -111,9 +113,9 @@ twlyparser $ ./node_modules/.bin/lsc ./md2json.ls --dir ../data
 
 # generate CK csv from json
 ```
-lsc ck_json2csv_mly.ls > mly.csv                 # ./data/mly-8.json
-lsc ck_json2csv_gazette.ls > gazettes.csv        # ./data/gazettes.json
-lsc ck_json2csv_vote.ls --dir ../ly-gazette/raw  # 3110.json 3111.json ...
+./node_modules/.bin/lsc ck_json2csv_mly.ls > mly.csv                 # ./data/mly-8.json
+./node_modules/.bin/lsc ck_json2csv_gazette.ls > gazettes.csv        # ./data/gazettes.json
+./node_modules/.bin/lsc ck_json2csv_vote.ls --dir ../ly-gazette/raw  # 3110.json 3111.json ...
 ```
 
 # To bootstrap or maintain the index file cache in data/:
