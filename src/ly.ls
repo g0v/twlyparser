@@ -189,3 +189,4 @@ export function getLiveStatus(cb)
 
 export util = require \./util
 export misq = require \./misq
+export lci = require \./lci
