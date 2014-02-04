@@ -34,6 +34,7 @@ export getBillDetails = (id, cb) ->
             Referer: uri
             User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
         form: { billNo: id }
+    throw that if err
 
     cb body
 
@@ -53,6 +54,7 @@ export getMeetings = (queryCondition, cb) ->
             sessionPeriod: ''
             meetingDateS: ''
             meetingDateE: ''
+    throw that if err
     cb body
 
 export getSummary = ({ad, session, sitting, extra}, doctype, type, cb) ->
@@ -65,7 +67,7 @@ export getSummary = ({ad, session, sitting, extra}, doctype, type, cb) ->
     | \Discussion => 2
     | \Exmotion => 3
 
-    throw "invliad #type #doctype" if type is \Exmotion and doctype is \proceeding
+    throw "invalid #type #doctype" if type is \Exmotion and doctype is \proceeding
 
     [term, sessionPeriod, sessionTimes] = [ad, session, sitting].map -> printf \%02d it
     if extra
@@ -80,7 +82,7 @@ export getSummary = ({ad, session, sitting, extra}, doctype, type, cb) ->
             Referer: 'http://misq.ly.gov.tw/MISQ/IQuery/queryMore5003vData.action'
             User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
         form: {term, sessionPeriod, sessionTimes, meetingTimes, catalogType, specialTimesRadio: \on, fromQuery: \Y}
-
+    throw that if err
     cb body
 
 export getCalendarEntry = (id, cb) ->
@@ -91,6 +93,7 @@ export getCalendarEntry = (id, cb) ->
             Origin: 'http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingView.action'
             Referer: 'http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingView.action'
             User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
+    throw that if err
 
     $ = require \cheerio .load body
     var prev
@@ -135,6 +138,7 @@ export fetchCalendarPage = ({uri, params, page=1, last-page, seen}, done) ->
             Referer: 'http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingView.action'
             User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
         }
+    throw that if err
     $ = cheerio.load body
 
     results = $ 'table.news_search tbody tr' .map ->
