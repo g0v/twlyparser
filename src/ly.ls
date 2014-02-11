@@ -1,6 +1,6 @@
 export index = require \../data/index
 export gazettes = require \../data/gazettes
-require! <[printf request]>
+require! <[printf request querystring]>
 
 export function forGazette (opts, cb)
     unless typeof opts is \object
@@ -32,7 +32,7 @@ export getBillDetails = (id, cb) ->
         headers: do
             Origin: 'http://misq.ly.gov.tw'
             Referer: uri
-            User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
         form: { billNo: id }
     throw that if err
 
@@ -47,7 +47,7 @@ export getMeetings = (queryCondition, cb) ->
         headers: do
             Origin: 'http://misq.ly.gov.tw'
             Referer: uri
-            User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
         form: do
             queryCondition: <[ 0703 2100 2300 2400 4000 4100 4200 4300 4500 ]>
             term: ''
@@ -80,10 +80,42 @@ export getSummary = ({ad, session, sitting, extra}, doctype, type, cb) ->
         headers: do
             Origin: 'http://misq.ly.gov.tw'
             Referer: 'http://misq.ly.gov.tw/MISQ/IQuery/queryMore5003vData.action'
-            User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
         form: {term, sessionPeriod, sessionTimes, meetingTimes, catalogType, specialTimesRadio: \on, fromQuery: \Y}
     throw that if err
     cb body
+
+# Example: getCommitee {ad: 8, session: 4, sitting: 10, commitee: ['TRA', 'PRO'], special: true, meeting: 2}, cb
+export getCommittee = ({ad, session, sitting, extra, committee}, cb) ->
+  uri = 'http://misq.ly.gov.tw/MISQ/IQuery/queryMoreCommitteeData.action'
+  queryType = \09
+  agendaType = \%
+  [term, sessionPeriod, sessionTimes, meetingTimes] = [ad, session, sitting, extra].map -> printf \%02d it
+  committes =
+    IAD: \內政
+    FND: \外交及國防
+    ECO: \經濟
+    FIN: \財政
+    EDU: \教育及文化
+    TRA: \交通
+    JUD: \司法及法制
+    SWE: \社會福利及衛生環境
+    PRO: \程序
+    DIS: \紀律
+    CON: \修憲
+  queryCondition = committee.map -> committes[it] + \委員會
+  err, res, body <- request {
+    method: \POST
+    uri: uri
+    headers:
+        Origin: 'http://misq.ly.gov.tw'
+        Referer: uri
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
+        'Content-Type': \application/x-www-form-urlencoded
+    body: querystring.stringify {term, sessionPeriod, sessionTimes, meetingTimes, specialTimesRadio: \on, agendaType, queryCondition, queryType}
+  }
+  throw that if err
+  cb body
 
 export getCalendarEntry = (id, cb) ->
     err, res, body <- request do
@@ -92,7 +124,7 @@ export getCalendarEntry = (id, cb) ->
         headers: do
             Origin: 'http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingView.action'
             Referer: 'http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingView.action'
-            User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
     throw that if err
 
     $ = require \cheerio .load body
@@ -136,7 +168,7 @@ export fetchCalendarPage = ({uri, params, page=1, last-page, seen}, done) ->
         headers: do
             Origin: 'http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingView.action'
             Referer: 'http://www.ly.gov.tw/01_lyinfo/0109_meeting/meetingView.action'
-            User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.5 Safari/537.17'
         }
     throw that if err
     $ = cheerio.load body
