@@ -199,29 +199,17 @@ export getCalendarByYear = (year, seen, cb) ->
     cb entries
 
 export function getLiveStatus(cb)
-  ivod-banner-hash =
-    14: \YS #\院會
-    10: \IAD #\內政
-    11: \FND #\外交及國防
-    8 : \ECO #\經濟
-    1 : \FIN #\財政
-    13: \EDU #\教育及文化
-    9 : \TRA #\交通
-    12: \JUD #\司法與法制
-    6 : \SWE #\社會福利及衛生環境
-    7 : \PRO #\程序
-    2 : \DIS #\紀律
-    3 : \CON #\修憲
-
-  ivod-channel-from-banner = (ivod-banner-hash.)
-
-  p = /menu_([a1])_(\d+)\.jpg/g
+  err, res, body <- request do
+    method: \POST
+    uri: "http://ivod.ly.gov.tw/Live/FetchCommInfo"
+    headers: 'X-Requested-With': 'XMLHttpRequest'
+    form: {type: \all}
+  data = JSON.parse body
   s = {}
-  (e,r,b) <- request "http://ivod.ly.gov.tw/new_live.jsp"
-  while [_, _class, id]? = p.exec b
-    s[ivod-channel-from-banner id] = {live: _class is \a, chbid: id}
+  for {COMTST: cname, ISMEET: live, COMTID: imvodcid} in data.commMenu
+    committee = if cname is \院會 => 'YS' else util.parseCommittee cname
+    s[committee] = {live: live is \Y, imvodcid}
   cb s
-
 
 export util = require \./util
 export misq = require \./misq
