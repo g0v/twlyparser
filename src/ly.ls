@@ -204,7 +204,7 @@ export function getLiveStatus(cb)
     uri: "http://ivod.ly.gov.tw/Live/FetchCommInfo"
     headers: 'X-Requested-With': 'XMLHttpRequest'
     form: {type: \all}
-  data = JSON.parse body
+  data = JSON.parse body - /^\ufeff/
   s = {}
   for {COMTST: cname, ISMEET: live, COMTID: imvodcid} in data.commMenu
     committee = if cname is \院會 => 'YS' else util.parseCommittee cname
