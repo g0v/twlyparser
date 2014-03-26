@@ -763,6 +763,7 @@ class BillParser extends TextFormatter
         # a column can contain multiple proposals.  splice them into individual diff
         derived-names = []
         parse-names = (header) ->
+          header .= replace /條\n文/ '條文'
           rows = header.split /\n/
           return rows if rows.length is 1
           rows.reduce (a, b) ->

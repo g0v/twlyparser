@@ -343,14 +343,27 @@ export function ensureBillDoc(id, info, cb)
     request {method: \GET, uri}, (_, res) -> statusCode := res.statusCode
     .pipe writer
 
-export function parseBillDoc(id, opts, cb)
+export function parseBillHtml(body, opts, cb)
   {BillParser} = require \./parser
+  push-field = delete opts.push-field
+  parser = new BillParser {-chute} <<< opts
+  content = []
+  parser.output-json = -> content.push it
+  parser.output = (line) -> match line
+  | /^案由：(.*)$/ => push-field \abstract, that.1
+  | /^提案編號：(.*)$/ => push-field \bill_ref, that.1
+  | /^議案編號：(.*)$/ => push-field \id, that.1
+  | otherwise => console.log \meh line
+  try
+    parser.parseHtml body
+  catch
+    return cb e
+  cb null {content}
+
+export function parseBillDoc(id, opts, cb)
   cache_dir := opts.dir if opts.dir
   doit = ->
-    parser = new BillParser {-chute}
-    content = []
     bill = require "#cache_dir/bills/#{id}/index.json"
-    parser.output-json = -> content.push it
     # XXX check duplicated
     push-field = (field, val) ->
       if bill[field]
@@ -363,17 +376,8 @@ export function parseBillDoc(id, opts, cb)
         if field is \id and id isnt val
           console.warn "id mismatch: #id / #val"
 
-    parser.output = (line) -> match line
-    | /^案由：(.*)$/ => push-field \abstract, that.1
-    | /^提案編號：(.*)$/ => push-field \bill_ref, that.1
-    | /^議案編號：(.*)$/ => push-field \id, that.1
-    | otherwise =>
-    parser.base = "#cache_dir/bills/#{id}"
-
-    try
-      parser.parseHtml util.readFileSync file
-    catch
-      return cb e
+    error, {content}? <- parseBillHtml util.readFileSync(file), {push-field,base: "#cache_dir/bills/#{id}"}
+    return cb error if error
     cb null bill <<< {content}
 
   file = "#cache_dir/bills/#{id}/file.html"
