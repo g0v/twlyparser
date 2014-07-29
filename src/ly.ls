@@ -174,7 +174,8 @@ export fetchCalendarPage = ({uri, params, page=1, last-page, seen}, done) ->
     $ = cheerio.load body
 
     results = $ 'table.news_search tbody tr' .map ->
-        [date, time, committee, summary, room] = @find 'td' .map -> @text! - /^\s*|\s*$/g
+        [date_with_time, committee, summary, room] = @find 'td' .map -> @text! - /^\s*|\s*$/g
+        [date, time] = date_with_time.match /(\d{4}-\d{2}-\d{2})[\n\t\s]+(\d{2}:\d{2}~\d{2}:\d{2})/ .slice 1
         [id] = @find 'a[href]' .map -> @attr \href .match /id=(\d+)/ .1
         {id, date, time, committee, summary, room}
 
