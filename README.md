@@ -179,6 +179,69 @@ All path without specificate (e.g. to_path, output_path), don't put on file type
 
 All function will generate csv and json file
 
+# API
+
+*   get-calendar-by-year(*year*, *seen*) => entries
+
+    Crawl calendar from `ly.gov.tw`
+
+# Test
+
+## Arichtecture
+
+1.  Stub response and save to .yml
+
+    ![Test architecture stub](doc/images/test_architecture_stub.png)
+
+2.  Replay fake response and compare
+
+    ![Test architecture replay](doc/images/test_architecture_replay.png)
+
+## Workflow
+
+1.  Run **npm run shot:*something*.**
+
+    Shot both cassettes and snapshots by using network
+
+    ![Test workflow shot1](doc/images/test_workflow_shot1.png)
+
+    or shot only snapshots by using the cassettes
+
+    ![Test workflow shot2](doc/images/test_workflow_shot2.png)
+
+2.  Run **npm run test:*something*.**
+
+    ![Test workflow spec](doc/images/test_workflow_spec.png)
+
+## Shot fixtures for test
+
+*   Calendar
+
+        $ npm run shot:calendar
+
+If you don't has any cassettes under `test/fixtures/cassettes/something/*.yml`,
+it will shot both cassettes and snapshots by using network.
+
+![Crawl calendar by using network](doc/images/crawl_calendar_by_using_network.png)
+
+If you already had,
+it will shot only snapshots by using the cassettes: `test/fixtures/cassettes/something/*.yml`.
+
+![Crawl Calendar by using cassettes](doc/images/crawl_calendar_by_using_cassettes.png)
+
+## Run test
+
+*   Run all test
+
+        $ npm run test
+
+*   Run specific test
+
+    *   Calendar
+
+            $ npm run test:calendar
+
+        ![Test Calendar](doc/images/test_calendar.png)
 
 # CC0 1.0 Universal
 

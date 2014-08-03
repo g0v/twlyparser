@@ -1,6 +1,6 @@
 should = require \chai .should!
 
-{get-sitting} = require \../lib/util
+{get-sitting} = require \../../lib/util
 
 describe 'get-sitting' ->
   describe 'hearing is excepted to return sitting structure' -> ``it``
