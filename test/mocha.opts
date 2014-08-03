@@ -1,4 +1,5 @@
 --require LiveScript
 --colors
 --reporter spec
+--recursive
 --compilers ls:LiveScript

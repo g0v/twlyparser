@@ -13,7 +13,9 @@
     "url": "git://github.com/g0v/twlyparser.git"
   },
   "scripts": {
+    "shot:calendar": "gulp --require LiveScript shot:calendar",
     "test": "mocha",
+    "test:calendar": "mocha -g 'ly calendar'",
     "prepublish": "lsc -cj package.ls &&\nlsc -cb -o lib src",
     "postinstall": "lsc -cj package.ls &&\nlsc -cb -o lib src"
   },
@@ -41,7 +43,15 @@
   },
   "devDependencies": {
     "mocha": "1.14.x",
-    "chai": "1.8.x"
+    "chai": "1.8.x",
+    "yamljs": "0.1.5",
+    "gulp": "~3.5.0",
+    "gulp-util": "3.0.0",
+    "through": "2.3.4",
+    "buffer": "2.5.0",
+    "colors": "0.6.2",
+    "prelude-ls": "1.1.1",
+    "nock": "0.43.0"
   },
   "optionalDependencies": {}
 }
