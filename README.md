@@ -1,6 +1,8 @@
 twlyparser
 ============
 
+[![gemnasium](https://gemnasium.com/g0v/twlyparser.svg)](https://gemnasium.com/g0v/twlyparser)
+
 WARNING: this is work in progress and the file format is likely to change!
 
 # Prepare environment
