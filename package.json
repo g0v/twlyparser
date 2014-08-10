@@ -31,14 +31,14 @@
     "request": "2.12.x",
     "q": "0.8.7",
     "mkdirp": "0.3.x",
-    "marked": "0.2.6",
+    "marked": "0.3.2",
     "shelljs": "0.1.x",
     "execSync": "0.0.x",
     "xregexp": "2.0.x",
     "async": "0.1.x",
     "printf": "0.0.7",
-    "qs": "0.6.x",
-    "js-yaml": "1.0.3",
+    "qs": "1.2.x",
+    "js-yaml": "2.0.x",
     "zhutil": "0.5.x"
   },
   "devDependencies": {
