@@ -4503,12 +4503,17 @@
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/80109.jpg",
-        "in_office": true,
+        "in_office": false,
         "links": {
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00109&stage=8"
         },
         "name": "魏明谷",
         "party": "DPP",
+        "term_end": {
+            "date": "2014-11-25",
+            "reason": "辭職。",
+            "replacement": ""
+        },
         "term_start": "2012-02-01",
         "village": [],
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/375ad04c5bc21060d65af4eb93c01b2f",
@@ -9902,12 +9907,17 @@
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/80028.jpg",
-        "in_office": true,
+        "in_office": false,
         "links": {
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00028&stage=8"
         },
         "name": "林佳龍",
         "party": "DPP",
+        "term_end": {
+            "date": "2014-11-25",
+            "reason": "辭職。",
+            "replacement": ""
+        },
         "term_start": "2012-02-01",
         "village": [],
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/6494a55a5c4369d2f4648bcb51845e30",
