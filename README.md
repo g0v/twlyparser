@@ -38,6 +38,19 @@ $ npm i
 $ npm run prepublish
 ```
 
+# If You Want to parse legislator information to JSON
+```
+# update submodule
+$ git submodule init
+$ git submodule update
+$ cd data/twly/
+$ git pull origin master
+
+# generate JSON file, you can input which ad you want, below will use ad=8 for example
+$ cd twlyparser
+$ ./node_modules/.bin/lsc mly.ls ad 8 > data/mly-8.json
+```
+
 # Parsing from prepared text version of gazettes:
 
 ```
