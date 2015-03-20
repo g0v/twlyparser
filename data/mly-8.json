@@ -3687,13 +3687,18 @@
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/80048.jpg",
-        "in_office": true,
+        "in_office": false,
         "links": {
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00048&stage=8"
         },
         "name": "徐耀昌",
         "party": "KMT",
         "term_start": "2012-02-01",
+        "term_end": {
+            "date": "2014-12-25",
+            "reason": "辭職",
+            "replacement": "徐志榮"
+        },
         "village": [],
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/1229920460f7e6594489b747b908d0f2",
         "id": 921
@@ -4533,8 +4538,8 @@
         "party": "DPP",
         "term_end": {
             "date": "2014-11-25",
-            "reason": "辭職。",
-            "replacement": ""
+            "reason": "辭職",
+            "replacement": "陳素月"
         },
         "term_start": "2012-02-01",
         "village": [],
@@ -6433,13 +6438,18 @@
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/81091.jpg",
-        "in_office": true,
+        "in_office": false,
         "links": {
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00091&stage=8"
         },
         "name": "潘孟安",
         "party": "DPP",
         "term_start": "2012-02-01",
+        "term_end": {
+            "date": "2014-12-25",
+            "reason": "辭職",
+            "replacement": "莊瑞雄"
+        },
         "village": [],
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/6fd255a1c581e2ac25ba7918c46a3a37",
         "id": 1376
@@ -7168,13 +7178,18 @@
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/80030.jpg",
-        "in_office": true,
+        "in_office": false,
         "links": {
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00030&stage=8"
         },
         "name": "林明溱",
         "party": "KMT",
         "term_start": "2012-02-01",
+        "term_end": {
+            "date": "2014-12-25",
+            "reason": "辭職",
+            "replacement": "許淑華"
+        },
         "village": [],
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/b5a1eef4313784dd9d1033838ce4d8c6",
         "id": 1706
@@ -9944,8 +9959,8 @@
         "party": "DPP",
         "term_end": {
             "date": "2014-11-25",
-            "reason": "辭職。",
-            "replacement": ""
+            "reason": "辭職",
+            "replacement": "黃國書"
         },
         "term_start": "2012-02-01",
         "village": [],
@@ -10597,7 +10612,7 @@
         ],
         "term_end": {
             "date": "2013-03-17",
-            "reason": "辭職。",
+            "reason": "辭職",
             "replacement": "陳怡潔"
         },
         "term_start": "2012-02-01",
@@ -10677,7 +10692,7 @@
         ],
         "term_end": {
             "date": "2014-02-01",
-            "reason": "辭職。",
+            "reason": "辭職",
             "replacement": "賴振昌"
         },
         "term_start": "2012-02-01",
@@ -11309,7 +11324,7 @@
         ],
         "term_end": {
             "date": "2014-02-01",
-            "reason": "辭職。",
+            "reason": "辭職",
             "replacement": "周倪安"
         },
         "term_start": "2012-02-01",
