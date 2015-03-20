@@ -2,7 +2,7 @@ require! <[crypto optimist]>
 require! \./lib/util
 {member,ad} = optimist.argv
 
-members = require "./data/twly/merged.json"
+members = require "./data/twly/data/merged.json"
 
 party = -> match it
 | \中國國民黨     => \KMT
