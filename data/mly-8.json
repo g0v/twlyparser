@@ -1,14 +1,7 @@
 [
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -20,12 +13,6 @@
                 "chair": false,
                 "name": "外交及國防委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -99,14 +86,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -118,12 +98,6 @@
                 "chair": false,
                 "name": "經濟委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -216,14 +190,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -235,12 +202,6 @@
                 "chair": false,
                 "name": "司法及法制委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -307,23 +268,10 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "經濟委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "財政委員會",
                 "session": 6
             },
@@ -338,18 +286,6 @@
                 "chair": false,
                 "name": "財政委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經費稽核委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -440,14 +376,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -459,12 +388,6 @@
                 "chair": false,
                 "name": "經濟委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -545,14 +468,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -564,12 +480,6 @@
                 "chair": false,
                 "name": "司法及法制委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -633,14 +543,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -652,12 +555,6 @@
                 "chair": false,
                 "name": "財政委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -751,14 +648,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -775,12 +665,6 @@
                 "ad": 8,
                 "chair": false,
                 "name": "外交及國防委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
                 "session": 3
             },
             {
@@ -792,13 +676,13 @@
             {
                 "ad": 8,
                 "chair": true,
-                "name": "紀律委員會",
+                "name": "外交及國防委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "外交及國防委員會",
+                "name": "紀律委員會",
                 "session": 1
             }
         ],
@@ -862,37 +746,24 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
+                "name": "紀律委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "經濟委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "經濟委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -986,20 +857,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "財政委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -1009,20 +867,14 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "教育及文化委員會",
+                "name": "司法及法制委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "經費稽核委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -1051,13 +903,13 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
+                "name": "程序委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "經濟委員會",
                 "session": 1
             }
         ],
@@ -1097,49 +949,30 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
                 "chair": true,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "財政委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "財政委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": true,
                 "name": "紀律委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -1219,14 +1052,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -1238,12 +1064,6 @@
                 "chair": false,
                 "name": "外交及國防委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -1346,17 +1166,10 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "社會福利及衛生環境委員會",
                 "session": 6
             },
@@ -1364,25 +1177,19 @@
                 "ad": 8,
                 "chair": true,
                 "name": "紀律委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "社會福利及衛生環境委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -1465,66 +1272,47 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 5
-            },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "內政委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "紀律委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "程序委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "程序委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "程序委員會",
                 "session": 3
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
+                "chair": true,
+                "name": "程序委員會",
                 "session": 3
             },
             {
@@ -1597,20 +1385,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -1620,20 +1395,14 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "外交及國防委員會",
+                "name": "程序委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "外交及國防委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -1696,7 +1465,6 @@
     },
     {
         "ad": 8,
-        "caucus": "PFP",
         "committees": [
             {
                 "ad": 8,
@@ -1779,20 +1547,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "經濟委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -1801,21 +1556,15 @@
             },
             {
                 "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "經濟委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "經濟委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": true,
                 "name": "紀律委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -1894,14 +1643,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -1916,15 +1658,9 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
                 "chair": true,
                 "name": "紀律委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -2025,14 +1761,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -2048,14 +1777,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "內政委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "經費稽核委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -2094,7 +1817,7 @@
                 "phone": "02-2358-6611"
             },
             {
-                "address": "350苗栗縣竹南鎮港墘里10鄰塭內46-1號",
+                "address": "350苗栗縣竹南鎮環市路二段139號",
                 "fax": "037-478-508",
                 "name": "竹南服務處",
                 "phone": "037-468-448"
@@ -2140,20 +1863,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "教育及文化委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -2165,12 +1875,6 @@
                 "chair": false,
                 "name": "教育及文化委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -2319,43 +2023,24 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "經濟委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "經濟委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "紀律委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "經濟委員會",
                 "session": 5
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "經濟委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
                 "chair": false,
                 "name": "紀律委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -2439,37 +2124,18 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "交通委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經費稽核委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "交通委員會",
+                "name": "經費稽核委員會",
                 "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 5
             },
             {
                 "ad": 8,
@@ -2481,13 +2147,7 @@
                 "ad": 8,
                 "chair": false,
                 "name": "交通委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "經費稽核委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -2509,14 +2169,14 @@
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "交通委員會",
+                "chair": false,
+                "name": "紀律委員會",
                 "session": 1
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
+                "chair": true,
+                "name": "交通委員會",
                 "session": 1
             }
         ],
@@ -2591,49 +2251,30 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "財政委員會",
                 "session": 6
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "財政委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
                 "chair": false,
                 "name": "紀律委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "司法及法制委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -2737,17 +2378,10 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "經費稽核委員會",
                 "session": 6
             },
@@ -2756,30 +2390,18 @@
                 "chair": false,
                 "name": "財政委員會",
                 "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經費稽核委員會",
-                "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "紀律委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "財政委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -2801,12 +2423,6 @@
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "財政委員會",
-                "session": 1
-            },
-            {
-                "ad": 8,
                 "chair": false,
                 "name": "紀律委員會",
                 "session": 1
@@ -2815,6 +2431,12 @@
                 "ad": 8,
                 "chair": true,
                 "name": "經費稽核委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "財政委員會",
                 "session": 1
             }
         ],
@@ -2871,20 +2493,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "財政委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -2901,12 +2510,6 @@
                 "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
                 "session": 3
             },
             {
@@ -2918,13 +2521,13 @@
             {
                 "ad": 8,
                 "chair": true,
-                "name": "財政委員會",
+                "name": "紀律委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "紀律委員會",
+                "name": "財政委員會",
                 "session": 1
             }
         ],
@@ -2937,7 +2540,7 @@
                 "address": "10051臺北市中正區濟南路1段3-1號1106室",
                 "fax": "02-2358-6780",
                 "name": "國會研究室",
-                "phone": "02-2358-6546"
+                "phone": "02-2358-6776"
             },
             {
                 "address": "新北市新店區中正路54巷8號1樓",
@@ -2958,7 +2561,7 @@
         ],
         "education": [
             "美國華盛頓城市大學企業管理碩士",
-            "致理商專（現升格技術學院）企業管理系"
+            "致理商專（現升格科技大學）企業管理系"
         ],
         "experience": [
             "國民大會主席團主席",
@@ -2985,29 +2588,22 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
-                "chair": true,
-                "name": "司法及法制委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
                 "chair": false,
+                "name": "紀律委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": true,
                 "name": "司法及法制委員會",
                 "session": 6
             },
             {
                 "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "紀律委員會",
                 "session": 5
             },
@@ -3016,18 +2612,6 @@
                 "chair": true,
                 "name": "司法及法制委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "司法及法制委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -3050,13 +2634,13 @@
             {
                 "ad": 8,
                 "chair": true,
-                "name": "紀律委員會",
+                "name": "司法及法制委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "司法及法制委員會",
+                "name": "紀律委員會",
                 "session": 1
             }
         ],
@@ -3113,36 +2697,18 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "外交及國防委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "外交及國防委員會",
+                "name": "教育及文化委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "教育及文化委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "程序委員會",
                 "session": 3
             },
@@ -3167,13 +2733,13 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
+                "name": "程序委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "財政委員會",
                 "session": 1
             }
         ],
@@ -3216,14 +2782,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -3235,12 +2794,6 @@
                 "chair": false,
                 "name": "交通委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -3403,49 +2956,30 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
                 "name": "經費稽核委員會",
                 "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經費稽核委員會",
-                "session": 5
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "紀律委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "經濟委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "經濟委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -3523,49 +3057,24 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "財政委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 6
+                "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -3664,14 +3173,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -3680,21 +3182,15 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
                 "chair": true,
                 "name": "外交及國防委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "紀律委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -3776,13 +3272,12 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "內政委員會",
-                "session": 7
+                "name": "程序委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -3792,19 +3287,7 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "內政委員會",
                 "session": 5
             },
@@ -3812,13 +3295,7 @@
                 "ad": 8,
                 "chair": false,
                 "name": "紀律委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "內政委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -3828,14 +3305,14 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
+                "chair": true,
+                "name": "程序委員會",
                 "session": 2
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "程序委員會",
+                "chair": false,
+                "name": "內政委員會",
                 "session": 2
             },
             {
@@ -3884,14 +3361,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -3903,12 +3373,6 @@
                 "chair": false,
                 "name": "內政委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -3925,32 +3389,18 @@
             {
                 "ad": 8,
                 "chair": true,
-                "name": "紀律委員會",
+                "name": "內政委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "內政委員會",
+                "name": "紀律委員會",
                 "session": 1
             }
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0302室",
-                "fax": "02-2358-6940",
-                "name": "國會研究室",
-                "phone": "02-2358-6936"
-            },
-            {
-                "address": "臺中市大肚區自強里遊園路二段278號",
-                "fax": "04-2691-3967",
-                "name": "大肚服務處",
-                "phone": "04-2691-2967"
-            }
         ],
         "education": [
             "中興大學國際政治研究所碩士"
@@ -3963,26 +3413,27 @@
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/80044.jpg",
-        "in_office": true,
+        "in_office": false,
         "links": {
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00044&stage=8"
         },
         "name": "紀國棟",
         "party": "KMT",
+        "remark": [
+            "因喪失其所屬中國國民黨黨籍，本院於104年7月16日起註銷名籍。"
+        ],
+        "term_end": {
+            "date": "2015-07-16",
+            "reason": "因喪失其所屬中國國民黨黨籍，本院於104年7月16日起註銷名籍。",
+            "replacement": "詹滿容"
+        },
         "term_start": "2012-02-01",
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/237cd9d444bd884955d0ee3334a2235e",
         "id": 918
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -3994,12 +3445,6 @@
                 "chair": false,
                 "name": "財政委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -4084,7 +3529,6 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
@@ -4097,12 +3541,6 @@
                 "chair": false,
                 "name": "經濟委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -4178,14 +3616,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -4195,14 +3626,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "經濟委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -4219,13 +3644,13 @@
             {
                 "ad": 8,
                 "chair": true,
-                "name": "紀律委員會",
+                "name": "經濟委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "經濟委員會",
+                "name": "紀律委員會",
                 "session": 1
             }
         ],
@@ -4390,25 +3815,13 @@
                 "ad": 8,
                 "chair": false,
                 "name": "教育及文化委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "教育及文化委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "內政委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -4474,43 +3887,24 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "交通委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "紀律委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "交通委員會",
                 "session": 6
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
                 "chair": true,
                 "name": "交通委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "交通委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -4660,20 +4054,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -4683,20 +4064,14 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
+                "name": "經費稽核委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "經濟委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經費稽核委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -4718,14 +4093,14 @@
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "經濟委員會",
+                "chair": false,
+                "name": "紀律委員會",
                 "session": 1
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
+                "chair": true,
+                "name": "經濟委員會",
                 "session": 1
             }
         ],
@@ -4774,14 +4149,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -4793,12 +4161,6 @@
                 "chair": false,
                 "name": "財政委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -4876,7 +4238,6 @@
     },
     {
         "ad": 8,
-        "caucus": null,
         "committees": [
             {
                 "ad": 8,
@@ -4947,7 +4308,6 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
@@ -4960,12 +4320,6 @@
                 "chair": false,
                 "name": "交通委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -5043,23 +4397,10 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "外交及國防委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "外交及國防委員會",
                 "session": 6
             },
@@ -5074,18 +4415,6 @@
                 "chair": false,
                 "name": "外交及國防委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -5151,14 +4480,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -5170,12 +4492,6 @@
                 "chair": false,
                 "name": "教育及文化委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -5242,49 +4558,24 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "社會福利及衛生環境委員會",
-                "session": 6
+                "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -5307,13 +4598,13 @@
             {
                 "ad": 8,
                 "chair": true,
-                "name": "紀律委員會",
+                "name": "社會福利及衛生環境委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "社會福利及衛生環境委員會",
+                "name": "紀律委員會",
                 "session": 1
             }
         ],
@@ -5358,36 +4649,17 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "程序委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "內政委員會",
                 "session": 6
             },
             {
@@ -5404,18 +4676,6 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "程序委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
                 "chair": true,
                 "name": "程序委員會",
                 "session": 3
@@ -5429,13 +4689,13 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "內政委員會",
                 "session": 2
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "內政委員會",
+                "name": "程序委員會",
                 "session": 2
             },
             {
@@ -5543,13 +4803,12 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
@@ -5561,25 +4820,7 @@
                 "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "程序委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -5671,14 +4912,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -5687,15 +4921,9 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
                 "chair": true,
                 "name": "交通委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -5825,14 +5053,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -5844,12 +5065,6 @@
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -5961,14 +5176,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -5978,14 +5186,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "內政委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "經濟委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -5995,14 +5197,14 @@
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "經濟委員會",
+                "chair": false,
+                "name": "紀律委員會",
                 "session": 2
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
+                "chair": true,
+                "name": "經濟委員會",
                 "session": 2
             },
             {
@@ -6066,13 +5268,12 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 7
+                "name": "司法及法制委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -6083,8 +5284,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
-                "session": 6
+                "name": "程序委員會",
+                "session": 5
             },
             {
                 "ad": 8,
@@ -6095,20 +5296,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "司法及法制委員會",
-                "session": 4
+                "session": 3
             },
             {
                 "ad": 8,
@@ -6119,19 +5308,13 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
-                "session": 3
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
+                "name": "程序委員會",
                 "session": 2
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "外交及國防委員會",
                 "session": 2
             },
             {
@@ -6269,49 +5452,30 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
-                "chair": true,
-                "name": "內政委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
                 "chair": false,
-                "name": "內政委員會",
+                "name": "紀律委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "內政委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "紀律委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "內政委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -6475,13 +5639,12 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
@@ -6493,43 +5656,19 @@
                 "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
                 "session": 5
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "財政委員會",
-                "session": 4
+                "session": 3
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "紀律委員會",
                 "session": 3
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "財政委員會",
-                "session": 3
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "財政委員會",
-                "session": 2
             },
             {
                 "ad": 8,
@@ -6546,13 +5685,19 @@
             {
                 "ad": 8,
                 "chair": true,
-                "name": "程序委員會",
+                "name": "財政委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "財政委員會",
                 "session": 1
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
+                "chair": true,
+                "name": "程序委員會",
                 "session": 1
             }
         ],
@@ -6629,20 +5774,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -6654,12 +5786,6 @@
                 "chair": false,
                 "name": "教育及文化委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -6704,13 +5830,13 @@
                 "phone": "02-2680-0775"
             },
             {
-                "address": "新北市鶯歌區光明街52號",
+                "address": "23941新北市鶯歌區中正一路228號",
                 "fax": "02-8678-0707",
                 "name": "鶯歌服務處",
                 "phone": "02-8678-0909"
             },
             {
-                "address": "臺北縣新莊市龍安路485號",
+                "address": "24260新北市新莊區龍安路485號",
                 "fax": "02-2204-0486",
                 "name": "新莊服務處",
                 "phone": "02-2204-2269"
@@ -6772,17 +5898,10 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "外交及國防委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "經費稽核委員會",
                 "session": 6
             },
@@ -6803,24 +5922,6 @@
                 "chair": false,
                 "name": "經濟委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經費稽核委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "經濟委員會",
-                "session": 3
             },
             {
                 "ad": 8,
@@ -6832,6 +5933,12 @@
                 "ad": 8,
                 "chair": false,
                 "name": "紀律委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "經濟委員會",
                 "session": 3
             },
             {
@@ -6929,14 +6036,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -6946,20 +6046,14 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "交通委員會",
+                "name": "紀律委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "交通委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -7084,7 +6178,6 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
@@ -7095,14 +6188,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "司法及法制委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -7179,37 +6266,24 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
+                "chair": true,
+                "name": "紀律委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "紀律委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": true,
                 "name": "交通委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "交通委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -7297,14 +6371,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -7316,12 +6383,6 @@
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -7343,14 +6404,14 @@
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "社會福利及衛生環境委員會",
+                "chair": false,
+                "name": "紀律委員會",
                 "session": 1
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
+                "chair": true,
+                "name": "社會福利及衛生環境委員會",
                 "session": 1
             }
         ],
@@ -7414,55 +6475,30 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 7
+                "session": 5
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "財政委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "財政委員會",
                 "session": 5
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "財政委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
                 "chair": true,
                 "name": "紀律委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -7555,14 +6591,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -7574,12 +6603,6 @@
                 "chair": false,
                 "name": "司法及法制委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -7649,14 +6672,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -7668,12 +6684,6 @@
                 "chair": false,
                 "name": "交通委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -7774,37 +6784,18 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "交通委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
                 "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "交通委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "外交及國防委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -7886,7 +6877,6 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
@@ -7899,12 +6889,6 @@
                 "chair": false,
                 "name": "交通委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -7981,20 +6965,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "教育及文化委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -8006,12 +6977,6 @@
                 "chair": false,
                 "name": "教育及文化委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -8111,18 +7076,11 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
                 "session": 6
             },
             {
@@ -8134,20 +7092,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -8176,13 +7122,13 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "社會福利及衛生環境委員會",
+                "name": "程序委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "社會福利及衛生環境委員會",
                 "session": 1
             }
         ],
@@ -8233,13 +7179,18 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 7
+                "chair": true,
+                "name": "紀律委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "經費稽核委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -8249,31 +7200,7 @@
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "經費稽核委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "經費稽核委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": true,
+                "chair": false,
                 "name": "司法及法制委員會",
                 "session": 5
             },
@@ -8281,13 +7208,13 @@
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "司法及法制委員會",
-                "session": 4
+                "session": 3
             },
             {
                 "ad": 8,
@@ -8297,15 +7224,15 @@
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "司法及法制委員會",
+                "chair": false,
+                "name": "紀律委員會",
                 "session": 3
             },
             {
                 "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "紀律委員會",
-                "session": 3
+                "session": 2
             },
             {
                 "ad": 8,
@@ -8317,12 +7244,6 @@
                 "ad": 8,
                 "chair": true,
                 "name": "經費稽核委員會",
-                "session": 2
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
                 "session": 2
             },
             {
@@ -8333,14 +7254,14 @@
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "司法及法制委員會",
+                "chair": false,
+                "name": "紀律委員會",
                 "session": 1
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
+                "chair": true,
+                "name": "司法及法制委員會",
                 "session": 1
             }
         ],
@@ -8421,20 +7342,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "社會福利及衛生環境委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -8449,15 +7357,9 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
                 "chair": true,
                 "name": "經費稽核委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -8551,14 +7453,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -8568,14 +7463,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "內政委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "交通委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -8660,14 +7549,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -8677,14 +7559,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "外交及國防委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "經濟委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -8754,23 +7630,10 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
                 "name": "經濟委員會",
                 "session": 6
             },
@@ -8779,12 +7642,6 @@
                 "chair": false,
                 "name": "經濟委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -8874,14 +7731,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -8893,12 +7743,6 @@
                 "chair": false,
                 "name": "經濟委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -8993,55 +7837,30 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "教育及文化委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "程序委員會",
                 "session": 6
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
+                "chair": false,
                 "name": "教育及文化委員會",
                 "session": 6
             },
             {
                 "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "教育及文化委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "教育及文化委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "紀律委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -9051,12 +7870,6 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 2
-            },
-            {
-                "ad": 8,
                 "chair": true,
                 "name": "教育及文化委員會",
                 "session": 2
@@ -9071,12 +7884,18 @@
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 1
+                "session": 2
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "教育及文化委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
                 "session": 1
             }
         ],
@@ -9121,14 +7940,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -9140,12 +7952,6 @@
                 "chair": false,
                 "name": "教育及文化委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -9209,37 +8015,24 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
+                "name": "紀律委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "社會福利及衛生環境委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -9340,14 +8133,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -9359,12 +8145,6 @@
                 "chair": false,
                 "name": "外交及國防委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -9452,43 +8232,24 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "程序委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "司法及法制委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "交通委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -9499,13 +8260,13 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
+                "name": "程序委員會",
                 "session": 2
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "司法及法制委員會",
                 "session": 2
             },
             {
@@ -9571,36 +8332,17 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "社會福利及衛生環境委員會",
                 "session": 6
             },
             {
@@ -9614,18 +8356,6 @@
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -9695,13 +8425,12 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
-                "session": 7
+                "name": "經費稽核委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -9712,26 +8441,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經費稽核委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經費稽核委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "司法及法制委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -9830,36 +8541,17 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "司法及法制委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "紀律委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "司法及法制委員會",
+                "name": "程序委員會",
                 "session": 6
             },
             {
@@ -9873,18 +8565,6 @@
                 "chair": false,
                 "name": "司法及法制委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -9971,14 +8651,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -9988,25 +8661,19 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "外交及國防委員會",
+                "name": "內政委員會",
                 "session": 5
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
                 "chair": true,
-                "name": "紀律委員會",
+                "name": "內政委員會",
                 "session": 3
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "內政委員會",
+                "name": "紀律委員會",
                 "session": 3
             },
             {
@@ -10086,55 +8753,30 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "社會福利及衛生環境委員會",
-                "session": 4
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "紀律委員會",
-                "session": 4
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "社會福利及衛生環境委員會",
+                "session": 5
             },
             {
                 "ad": 8,
@@ -10280,37 +8922,24 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "教育及文化委員會",
-                "session": 7
+                "name": "紀律委員會",
+                "session": 6
             },
             {
                 "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "教育及文化委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "紀律委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": true,
                 "name": "教育及文化委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -10321,12 +8950,6 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "教育及文化委員會",
-                "session": 2
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "經費稽核委員會",
                 "session": 2
             },
@@ -10334,12 +8957,18 @@
                 "ad": 8,
                 "chair": false,
                 "name": "教育及文化委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "經費稽核委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經費稽核委員會",
+                "name": "教育及文化委員會",
                 "session": 1
             }
         ],
@@ -10426,14 +9055,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -10445,12 +9067,6 @@
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -10528,23 +9144,10 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "司法及法制委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "司法及法制委員會",
                 "session": 6
             },
@@ -10557,32 +9160,20 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "紀律委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
+                "name": "程序委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "司法及法制委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -10653,14 +9244,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -10672,12 +9256,6 @@
                 "chair": false,
                 "name": "教育及文化委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -10759,24 +9337,11 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "內政委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
                 "session": 6
             },
             {
@@ -10787,20 +9352,14 @@
             },
             {
                 "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "內政委員會",
-                "session": 4
+                "session": 3
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "紀律委員會",
-                "session": 3
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "內政委員會",
                 "session": 3
             },
             {
@@ -10859,20 +9418,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -10882,20 +9428,14 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
+                "name": "財政委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -10924,13 +9464,13 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "司法及法制委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
+                "name": "程序委員會",
                 "session": 1
             }
         ],
@@ -10980,7 +9520,6 @@
     },
     {
         "ad": 8,
-        "caucus": "TSU",
         "committees": [
             {
                 "ad": 8,
@@ -11053,7 +9592,6 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
@@ -11070,14 +9608,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "教育及文化委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "經費稽核委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -11155,14 +9687,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -11177,15 +9702,9 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
                 "chair": true,
                 "name": "經費稽核委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -11319,23 +9838,10 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "內政委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "程序委員會",
                 "session": 6
             },
@@ -11361,24 +9867,12 @@
                 "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
                 "session": 3
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "內政委員會",
+                "name": "程序委員會",
                 "session": 3
             },
             {
@@ -11435,43 +9929,24 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "外交及國防委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "外交及國防委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "紀律委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "紀律委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": true,
                 "name": "教育及文化委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -11599,20 +10074,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "內政委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -11629,24 +10091,18 @@
                 "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
                 "session": 3
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "紀律委員會",
+                "name": "內政委員會",
                 "session": 2
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "內政委員會",
+                "name": "紀律委員會",
                 "session": 2
             },
             {
@@ -11750,26 +10206,14 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "內政委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -11831,13 +10275,16 @@
         },
         "name": "徐欣瑩",
         "party": "KMT",
+        "remark": [
+            "104年2月9日退出中國國民黨。",
+            "104年3月18日加入民國黨。"
+        ],
         "term_start": "2012-02-01",
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/2f16b3af80328b0fdfe33c10c635a43c",
         "id": 1747
     },
     {
         "ad": 8,
-        "caucus": "PFP",
         "committees": [
             {
                 "ad": 8,
@@ -11891,19 +10338,18 @@
     },
     {
         "ad": 8,
-        "caucus": "TSU",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "經濟委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -11968,23 +10414,10 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "教育及文化委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
                 "name": "教育及文化委員會",
                 "session": 6
             },
@@ -11993,12 +10426,6 @@
                 "chair": false,
                 "name": "教育及文化委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -12077,14 +10504,7 @@
     },
     {
         "ad": 8,
-        "caucus": null,
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -12096,12 +10516,6 @@
                 "chair": false,
                 "name": "交通委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -12162,55 +10576,30 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 5
-            },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "紀律委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "教育及文化委員會",
-                "session": 5
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "外交及國防委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -12283,37 +10672,24 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "交通委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
+                "name": "紀律委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "外交及國防委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "外交及國防委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -12389,19 +10765,12 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 7
+                "chair": true,
+                "name": "紀律委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -12411,7 +10780,7 @@
             },
             {
                 "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "外交及國防委員會",
                 "session": 6
             },
@@ -12423,33 +10792,15 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
                 "chair": true,
                 "name": "紀律委員會",
                 "session": 5
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "外交及國防委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -12466,12 +10817,6 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "外交及國防委員會",
-                "session": 2
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "程序委員會",
                 "session": 2
             },
@@ -12479,12 +10824,18 @@
                 "ad": 8,
                 "chair": false,
                 "name": "外交及國防委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "外交及國防委員會",
                 "session": 1
             }
         ],
@@ -12526,14 +10877,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -12543,14 +10887,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "財政委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -12612,13 +10950,12 @@
     },
     {
         "ad": 8,
-        "caucus": "TSU",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -12690,14 +11027,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -12709,12 +11039,6 @@
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -12774,24 +11098,11 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
                 "name": "外交及國防委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "外交及國防委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "紀律委員會",
                 "session": 6
             },
             {
@@ -12799,12 +11110,6 @@
                 "chair": false,
                 "name": "外交及國防委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -12873,14 +11178,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -12892,12 +11190,6 @@
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -12961,23 +11253,10 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "外交及國防委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "外交及國防委員會",
                 "session": 6
             },
@@ -12986,12 +11265,6 @@
                 "chair": false,
                 "name": "經費稽核委員會",
                 "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經費稽核委員會",
-                "session": 5
             },
             {
                 "ad": 8,
@@ -13003,24 +11276,18 @@
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "外交及國防委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "外交及國防委員會",
+                "name": "程序委員會",
                 "session": 3
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "外交及國防委員會",
                 "session": 3
             },
             {
@@ -13071,20 +11338,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "社會福利及衛生環境委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -13094,20 +11348,14 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "社會福利及衛生環境委員會",
+                "name": "紀律委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "社會福利及衛生環境委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -13118,13 +11366,13 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "社會福利及衛生環境委員會",
+                "name": "程序委員會",
                 "session": 2
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "社會福利及衛生環境委員會",
                 "session": 2
             },
             {
@@ -13175,6 +11423,9 @@
         ],
         "experience": [
             "第6、7屆高雄市議員",
+            "2015年 日本慶應大學法學部訪問研究員",
+            "2014年 美國國務院IVLP訪問學人",
+            "2014年 高雄市長選舉陳菊競選總部總幹事",
             "2010年 陳菊市長競選總部發言人",
             "2009年 蔡英文主席中央黨部發言人",
             "2008年 謝長廷總統侯選人發言人",
@@ -13223,20 +11474,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "交通委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -13248,12 +11486,6 @@
                 "chair": false,
                 "name": "交通委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -13349,12 +11581,6 @@
                 "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
                 "session": 6
             },
             {
@@ -13362,24 +11588,12 @@
                 "chair": false,
                 "name": "程序委員會",
                 "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "教育及文化委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -13422,20 +11636,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -13450,20 +11651,14 @@
             },
             {
                 "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "教育及文化委員會",
-                "session": 4
+                "session": 3
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "紀律委員會",
-                "session": 3
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "教育及文化委員會",
                 "session": 3
             },
             {
@@ -13474,14 +11669,14 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
+                "chair": true,
+                "name": "教育及文化委員會",
                 "session": 2
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "教育及文化委員會",
+                "chair": false,
+                "name": "紀律委員會",
                 "session": 2
             },
             {
@@ -13511,7 +11706,7 @@
         "education": [
             "台灣大學哲學系學士",
             "法國巴黎第十大學政治、經濟、社會哲學碩士",
-            "法國巴黎第十大學哲學博士侯選人"
+            "法國巴黎第十大學哲學博士候選人"
         ],
         "experience": [
             "東吳大學政治系兼任講師",
@@ -13539,14 +11734,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -13558,12 +11746,6 @@
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -13631,14 +11813,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -13650,12 +11825,6 @@
                 "chair": false,
                 "name": "司法及法制委員會",
                 "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 4
             },
             {
                 "ad": 8,
@@ -13742,26 +11911,14 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "內政委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "經濟委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "內政委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -13807,14 +11964,7 @@
     },
     {
         "ad": 8,
-        "caucus": "TSU",
         "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
-                "session": 7
-            },
             {
                 "ad": 8,
                 "chair": false,
@@ -13824,20 +11974,14 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
+                "name": "社會福利及衛生環境委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "經費稽核委員會",
-                "session": 4
+                "session": 5
             },
             {
                 "ad": 8,
@@ -13890,37 +12034,18 @@
     },
     {
         "ad": 8,
-        "caucus": "TSU",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "教育及文化委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "程序委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "財政委員會",
-                "session": 5
+                "session": 6
             }
         ],
         "constituency": [
@@ -13972,23 +12097,10 @@
     },
     {
         "ad": 8,
-        "caucus": "TSU",
         "committees": [
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "內政委員會",
                 "session": 6
             },
@@ -13997,18 +12109,6 @@
                 "chair": true,
                 "name": "經費稽核委員會",
                 "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "經費稽核委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 5
             }
         ],
         "constituency": [
@@ -14016,10 +12116,16 @@
         ],
         "contacts": [
             {
-                "address": "10051台北市中正區青島東路1號3203室",
+                "address": "10051臺北市中正區青島東路1號3203室",
                 "fax": "02-2358-6870",
                 "name": "國會辦公室",
                 "phone": "02-2358-6868"
+            },
+            {
+                "address": "234新北市永和區福和路182號2樓",
+                "fax": "02-2927-5058",
+                "name": "永和服務處",
+                "phone": "02-2927-6568"
             }
         ],
         "education": [
@@ -14052,15 +12158,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
-        "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 7
-            }
-        ],
+        "committees": [],
         "constituency": [
             "TXG",
             6
@@ -14121,15 +12219,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
-        "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 7
-            }
-        ],
+        "committees": [],
         "constituency": [
             "CHA",
             4
@@ -14140,6 +12230,12 @@
                 "fax": "02-2358-6695",
                 "name": "國會辦公室",
                 "phone": "02-2358-6691"
+            },
+            {
+                "address": "彰化縣員林鎮惠來里惠明街219號",
+                "fax": "04-835-3414",
+                "name": "員林服務處",
+                "phone": "04-832-8552"
             }
         ],
         "county": [
@@ -14189,15 +12285,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
-        "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 7
-            }
-        ],
+        "committees": [],
         "constituency": [
             "MIA",
             2
@@ -14205,7 +12293,7 @@
         "contacts": [
             {
                 "address": "10051臺北市中正區濟南路1段3-1號0805室",
-                "fax": "02-2358-6175",
+                "fax": "02-2358-6270",
                 "name": "國會辦公室",
                 "phone": "02-2358-6266"
             }
@@ -14260,15 +12348,7 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
-        "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "交通委員會",
-                "session": 7
-            }
-        ],
+        "committees": [],
         "constituency": [
             "NAN",
             2
@@ -14326,15 +12406,7 @@
     },
     {
         "ad": 8,
-        "caucus": "DPP",
-        "committees": [
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 7
-            }
-        ],
+        "committees": [],
         "constituency": [
             "PIF",
             3
@@ -14407,5 +12479,50 @@
         "village": [],
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/ea1a1fcc9b202d96fea0b2c8a7e979d8",
         "id": 1812
+    },
+    {
+        "ad": 8,
+        "committees": [],
+        "constituency": [
+            "proportional"
+        ],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區鎮江街2號5101室",
+                "fax": "2358-6415",
+                "name": "國會研究室",
+                "phone": "2358-6411"
+            }
+        ],
+        "education": [
+            "美國麻省波斯頓大學政治經濟學博士"
+        ],
+        "experience": [
+            "中華民國國家安全會議諮詢委員(2008/05~2010/05 )",
+            "太平洋經濟合作理事會(PECC)國際秘書處秘書長(1999/07–2001/12;新加坡)",
+            "亞太經合會(APEC)國際秘書處研究室主任(1996/07–1999/06;新加坡)",
+            "太平洋經濟合作理事會(PECC)中華民國委員會董事",
+            "台灣經濟研究院顧問",
+            "遠景基金會董事暨全球經貿小組召集人",
+            "二十一世紀基金會顧問",
+            "新興市場研究協會常務理事",
+            "中美文化經濟協會理事",
+            "台灣環境資源戰略學會理事",
+            "政治大學亞洲研究國際博士學程(IDAS)、國際研究英語碩士學程(IMPIS)暨企管研究所(MBA)約聘兼任副教授"
+        ],
+        "gender": "女",
+        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/81124.jpg",
+        "in_office": true,
+        "links": {
+            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00124&stage=8"
+        },
+        "name": "詹滿容",
+        "party": "KMT",
+        "remark": [
+            "104年7月17日公告遞補"
+        ],
+        "term_start": "2015-07-20",
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/ade74106537b94e1425074eb06495521",
+        "id": 1813
     }
 ]
