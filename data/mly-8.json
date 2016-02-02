@@ -55,20 +55,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區中山南路1號",
-                "fax": "02-2395-5317",
-                "name": "國會研究室",
-                "phone": "02-2358-6011~15"
-            },
-            {
-                "address": "高雄市路竹區甲南村大仁路369巷7號",
-                "fax": "07-607-5669",
-                "name": "高雄服務處",
-                "phone": "07-607-5509"
-            }
-        ],
         "education": [
             "台灣省立師範大學數學系畢業"
         ],
@@ -112,6 +98,12 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
                 "session": 1
             },
@@ -124,7 +116,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 3
             },
             {
@@ -132,6 +136,18 @@
                 "chair": false,
                 "name": "經濟委員會",
                 "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
             },
             {
                 "ad": 8,
@@ -148,13 +164,19 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
-                "session": 7
+                "name": "修憲委員會",
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "經濟委員會",
                 "session": 7
             },
             {
@@ -173,20 +195,6 @@
         "constituency": [
             "TPE",
             1
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0707室",
-                "fax": "02-2358-6710",
-                "name": "國會研究室",
-                "phone": "02-2358-6706"
-            },
-            {
-                "address": "11262臺北市北投區承德路七段188巷2號1樓",
-                "fax": "02-2828-6877",
-                "name": "北投服務處",
-                "phone": "02-2828-7789"
-            }
         ],
         "education": [
             "美國佛萊契爾外交法律研究院（哈佛大學合作管理）外交法律碩士、國際政治學博士",
@@ -275,20 +283,6 @@
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號12樓",
-                "fax": "02-2358-6100",
-                "name": "國會研究室",
-                "phone": "02-2358-6099"
-            },
-            {
-                "address": "新北市永和區永和路一段65巷2號",
-                "fax": "02-8923-7668",
-                "name": "立法委員洪秀柱服務處",
-                "phone": "02-8923-7667"
-            }
         ],
         "education": [
             "美國密蘇里州立東北大學教育碩士"
@@ -400,20 +394,6 @@
             "CYQ",
             1
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0906室",
-                "fax": "02-2358-6785",
-                "name": "國會研究室",
-                "phone": "02-2358-6781"
-            },
-            {
-                "address": "嘉義縣義竹鄉仁里村407-4號",
-                "fax": "05-341-7251",
-                "name": "嘉義義竹服務處",
-                "phone": "05-341-2029"
-            }
-        ],
         "education": [
             "文化大學新聞系學士",
             "文化大學國際企業管理研究所碩士",
@@ -453,6 +433,12 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
                 "session": 1
             },
@@ -465,7 +451,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 3
             },
             {
@@ -473,6 +471,18 @@
                 "chair": false,
                 "name": "經濟委員會",
                 "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
             },
             {
                 "ad": 8,
@@ -489,13 +499,19 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
-                "session": 7
+                "name": "修憲委員會",
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "經濟委員會",
                 "session": 7
             },
             {
@@ -514,26 +530,6 @@
         "constituency": [
             "TPQ",
             12
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2111室",
-                "fax": "02-2358-6525",
-                "name": "國會研究室",
-                "phone": "02-2358-6521"
-            },
-            {
-                "address": "新北市汐止區中興路95號4樓之3",
-                "fax": "02-2694-1302",
-                "name": "汐止服務處",
-                "phone": "02-2694-1301"
-            },
-            {
-                "address": "新北市瑞芳區瑞芳街45號2樓",
-                "fax": "02-2497-1969",
-                "name": "瑞芳服務處",
-                "phone": "02-2497-7809"
-            }
         ],
         "education": [
             "美國紐約大學歷史學博士",
@@ -571,6 +567,18 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "司法及法制委員會",
                 "session": 2
             },
@@ -583,7 +591,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "司法及法制委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 4
             },
             {
@@ -595,19 +615,31 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "司法及法制委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "司法及法制委員會",
                 "session": 7
             },
             {
@@ -625,20 +657,6 @@
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路3號3樓",
-                "fax": "02-2358-6110",
-                "name": "國會研究室",
-                "phone": "02-2358-6106"
-            },
-            {
-                "address": "新竹市四維路15號3樓",
-                "fax": "03-523-2902",
-                "name": "新竹服務處",
-                "phone": "03-526-9880"
-            }
         ],
         "education": [
             "中山醫學院"
@@ -723,20 +741,6 @@
             "TNN",
             4
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0903室",
-                "fax": "02-2358-6920",
-                "name": "國會研究室",
-                "phone": "02-2358-6909"
-            },
-            {
-                "address": "臺南市安平區永華路二段822號",
-                "fax": "06-298-3163",
-                "name": "台南服務處",
-                "phone": "06-298-3701"
-            }
-        ],
         "education": [
             "中國文化大學經濟學系碩士、學士",
             "台北市立成功高中",
@@ -796,6 +800,18 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "外交及國防委員會",
                 "session": 2
             },
@@ -808,7 +824,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "外交及國防委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 4
             },
             {
@@ -816,6 +844,18 @@
                 "chair": false,
                 "name": "外交及國防委員會",
                 "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -838,33 +878,19 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "外交及國防委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "外交及國防委員會",
+                "name": "修憲委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "TNN",
             5
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3205室",
-                "fax": "02-2358-8215",
-                "name": "國會研究室",
-                "phone": "02-2358-8211"
-            },
-            {
-                "address": "臺南市永康區永大路一段259號",
-                "fax": "06-273-9817",
-                "name": "台南服務處",
-                "phone": "06-273-9217"
-            }
         ],
         "education": [
             "台灣大學畢業",
@@ -977,20 +1003,6 @@
         "constituency": [
             "KHH",
             3
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號1107室",
-                "fax": "02-2358-6790",
-                "name": "國會研究室",
-                "phone": "02-2358-6786"
-            },
-            {
-                "address": "813高雄市左營區新庄仔路425號",
-                "fax": "07-341-2672",
-                "name": "高雄服務處",
-                "phone": "07-341-3361"
-            }
         ],
         "education": [
             "國立中山大學高階經營碩士",
@@ -1113,14 +1125,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0201室",
-                "fax": "02-2358-6035",
-                "name": "國會研究室",
-                "phone": "02-2358-6031"
-            }
-        ],
         "education": [
             "國立台灣師範大學法學博士"
         ],
@@ -1153,8 +1157,20 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "財政委員會",
                 "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
             },
             {
                 "ad": 8,
@@ -1177,8 +1193,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
-                "session": 4
+                "name": "修憲委員會",
+                "session": 3
             },
             {
                 "ad": 8,
@@ -1188,8 +1204,26 @@
             },
             {
                 "ad": 8,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
                 "chair": true,
                 "name": "紀律委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 5
             },
             {
@@ -1207,6 +1241,18 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "程序委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "財政委員會",
                 "session": 7
             },
@@ -1214,12 +1260,6 @@
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "程序委員會",
                 "session": 7
             },
             {
@@ -1243,26 +1283,6 @@
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0701室",
-                "fax": "02-2358-8165",
-                "name": "國會研究室",
-                "phone": "02-2358-8156"
-            },
-            {
-                "address": "雲林縣虎尾鎮光復路505號",
-                "fax": "05-636-5396",
-                "name": "虎尾服務處",
-                "phone": "05-636-5296"
-            },
-            {
-                "address": "新北市新莊區中華路二段105號2樓",
-                "fax": "02-2995-5221",
-                "name": "新莊服務處",
-                "phone": "02-2279-7241"
-            }
         ],
         "education": [
             "崙背國小",
@@ -1351,14 +1371,6 @@
             "TPE",
             5
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0601室",
-                "fax": "02-2358-6280",
-                "name": "國會研究室",
-                "phone": "02-2358-6276"
-            }
-        ],
         "education": [
             "美國維吉尼亞大學國際政治學博士",
             "淡江大學美國研究所碩士",
@@ -1394,8 +1406,20 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
             },
             {
                 "ad": 8,
@@ -1412,6 +1436,12 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "程序委員會",
                 "session": 3
             },
@@ -1429,8 +1459,20 @@
             },
             {
                 "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
                 "chair": true,
                 "name": "社會福利及衛生環境委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 5
             },
             {
@@ -1449,6 +1491,12 @@
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 7
             },
             {
@@ -1456,36 +1504,22 @@
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
                 "session": 8
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 8
             }
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0607室",
-                "fax": "02-2358-6235",
-                "name": "國會研究室",
-                "phone": "02-2358-6231"
-            },
-            {
-                "address": "基隆市義一路87號9樓之2",
-                "fax": "02-2428-0097",
-                "name": "基隆服務處",
-                "phone": "02-2427-7799"
-            }
         ],
         "education": [
             "東吳大學法律系畢業"
@@ -1539,13 +1573,31 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "內政委員會",
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 2
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "內政委員會",
                 "session": 3
             },
             {
@@ -1553,6 +1605,12 @@
                 "chair": true,
                 "name": "程序委員會",
                 "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
             },
             {
                 "ad": 8,
@@ -1565,24 +1623,36 @@
                 "chair": true,
                 "name": "程序委員會",
                 "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": true,
-                "name": "內政委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 5
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "紀律委員會",
                 "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "內政委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -1593,7 +1663,7 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "內政委員會",
+                "name": "修憲委員會",
                 "session": 6
             },
             {
@@ -1623,20 +1693,6 @@
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號1105室",
-                "fax": "02-2358-8570",
-                "name": "國會研究室",
-                "phone": "02-2358-8566"
-            },
-            {
-                "address": "高雄市三民區九如一路399號",
-                "fax": "07-382-5177",
-                "name": "高雄服務處",
-                "phone": "07-382-5189"
-            }
         ],
         "education": [
             "高雄中學畢業",
@@ -1751,14 +1807,6 @@
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2101室",
-                "fax": "02-2358-8260",
-                "name": "國會研究室",
-                "phone": "02-2358-8256"
-            }
         ],
         "education": [
             "台灣大學商學碩士",
@@ -1934,20 +1982,6 @@
             "CYQ",
             2
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3101室",
-                "fax": "02-2358-8105",
-                "name": "國會研究室",
-                "phone": "02-2358-8101"
-            },
-            {
-                "address": "600嘉義市力行街72號",
-                "fax": "05-225-1641",
-                "name": "嘉義服務處",
-                "phone": "05-225-5589"
-            }
-        ],
         "education": [
             "私立東海大學哲學系畢業"
         ],
@@ -2034,32 +2068,6 @@
         "constituency": [
             "TAO",
             1
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3309室",
-                "fax": "02-2358-6225",
-                "name": "國會研究室",
-                "phone": "02-2358-6221"
-            },
-            {
-                "address": "桃園縣桃園市大有路80號",
-                "fax": "(03)338-6599",
-                "name": "桃園市服務處",
-                "phone": "(03)338-6656"
-            },
-            {
-                "address": "桃園縣龜山鄉三民路70號",
-                "fax": "03-329-9769",
-                "name": "龜山服務處",
-                "phone": "03-329-9255"
-            },
-            {
-                "address": "桃園縣蘆竹鄉新南路一段128號",
-                "fax": "03-312-1875",
-                "name": "蘆竹服務處",
-                "phone": "03-312-1988"
-            }
         ],
         "education": [
             "私立元智大學社會暨政策科學研究所畢業"
@@ -2159,20 +2167,6 @@
             "MIA",
             1
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號1003室",
-                "fax": "02-2358-6615",
-                "name": "國會研究室",
-                "phone": "02-2358-6611"
-            },
-            {
-                "address": "350苗栗縣竹南鎮環市路二段139號",
-                "fax": "037-478-508",
-                "name": "竹南服務處",
-                "phone": "037-468-448"
-            }
-        ],
         "education": [
             "國立政治大學公共行政系畢業"
         ],
@@ -2262,18 +2256,6 @@
             "TAO",
             3
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0908室",
-                "fax": "02-2358-6700",
-                "name": "國會研究室",
-                "phone": "02-2358-6699"
-            },
-            {
-                "address": "桃園縣中壢市中央西路二段281號4樓",
-                "name": "中壢服務處"
-            }
-        ],
         "education": [
             "淡江大學中國大陸研究所碩士",
             "台大政治系學士",
@@ -2312,8 +2294,20 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
                 "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
             },
             {
                 "ad": 8,
@@ -2324,19 +2318,31 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
                 "session": 3
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "經濟委員會",
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 4
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "紀律委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "經濟委員會",
                 "session": 4
             },
             {
@@ -2347,12 +2353,24 @@
             },
             {
                 "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
                 "chair": true,
                 "name": "紀律委員會",
                 "session": 6
             },
             {
                 "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
                 "chair": true,
                 "name": "經濟委員會",
                 "session": 6
@@ -2360,51 +2378,31 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "經濟委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "修憲委員會",
                 "session": 7
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
+                "name": "修憲委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "經濟委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "TXG",
             3
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0907室",
-                "fax": "02-2358-6210",
-                "name": "國會研究室",
-                "phone": "02-2358-6206"
-            },
-            {
-                "address": "臺中市潭子區潭興路二段397號",
-                "fax": "04-2536-2516",
-                "name": "潭子服務處",
-                "phone": "04-2536-2878"
-            },
-            {
-                "address": "428臺中市大雅區學府路405號",
-                "fax": "04-2568-2112",
-                "name": "大雅服務處",
-                "phone": "04-2568-5512"
-            }
         ],
         "education": [
             "東海大學公共事務碩士畢業",
@@ -2519,7 +2517,7 @@
             },
             {
                 "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "經費稽核委員會",
                 "session": 8
             },
@@ -2533,26 +2531,6 @@
         "constituency": [
             "TNN",
             1
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0403室",
-                "fax": "02-2358-6295",
-                "name": "國會研究室",
-                "phone": "02-2358-6291"
-            },
-            {
-                "address": "臺南市新營區民生路130號",
-                "fax": "06-657-2818",
-                "name": "新營服務處",
-                "phone": "06-657-2808"
-            },
-            {
-                "address": "臺南市安平區健康路三段206號",
-                "fax": "06-295-0829",
-                "name": "安平服務處",
-                "phone": "06-295-0826"
-            }
         ],
         "education": [
             "美國 Bridgeport 大學音樂碩士"
@@ -2590,14 +2568,26 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "程序委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "財政委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "修憲委員會",
                 "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
             },
             {
                 "ad": 8,
@@ -2614,14 +2604,32 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "程序委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "司法及法制委員會",
                 "session": 3
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "修憲委員會",
                 "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
             },
             {
                 "ad": 8,
@@ -2632,8 +2640,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
-                "session": 4
+                "name": "修憲委員會",
+                "session": 5
             },
             {
                 "ad": 8,
@@ -2656,6 +2664,18 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "財政委員會",
                 "session": 7
             },
@@ -2668,19 +2688,13 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
+                "name": "財政委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
+                "name": "程序委員會",
                 "session": 8
             },
             {
@@ -2693,20 +2707,6 @@
         "constituency": [
             "TPE",
             8
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3110室",
-                "fax": "02-2358-8170",
-                "name": "國會研究室",
-                "phone": "02-2358-8166"
-            },
-            {
-                "address": "臺北市文山區景興路254號",
-                "fax": "02-2930-0945",
-                "name": "文山服務處",
-                "phone": "02-2935-5358"
-            }
         ],
         "education": [
             "美國南加州大學工業與系統工程碩士、博士",
@@ -2742,6 +2742,12 @@
         "committees": [
             {
                 "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
                 "chair": true,
                 "name": "財政委員會",
                 "session": 1
@@ -2754,6 +2760,18 @@
             },
             {
                 "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
                 "chair": true,
                 "name": "經費稽核委員會",
                 "session": 2
@@ -2762,12 +2780,12 @@
                 "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
-                "session": 2
+                "session": 3
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
+                "name": "修憲委員會",
                 "session": 3
             },
             {
@@ -2785,7 +2803,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經費稽核委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 5
             },
             {
@@ -2793,6 +2823,12 @@
                 "chair": false,
                 "name": "財政委員會",
                 "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -2809,13 +2845,13 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
+                "name": "修憲委員會",
                 "session": 7
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "財政委員會",
                 "session": 7
             },
             {
@@ -2827,12 +2863,6 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經費稽核委員會",
-                "session": 8
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "財政委員會",
                 "session": 8
             },
@@ -2840,26 +2870,18 @@
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
+                "session": 8
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "經費稽核委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "TXG",
             5
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3106室",
-                "fax": "02-2358-8125",
-                "name": "國會研究室",
-                "phone": "02-2358-8121"
-            },
-            {
-                "address": "臺中市北區博館路92號4樓",
-                "fax": "04-2319-9760",
-                "name": "台中服務處",
-                "phone": "04-2319-9770"
-            }
         ],
         "education": [
             "政治大學地政系學士畢業",
@@ -2951,20 +2973,6 @@
             "TPQ",
             11
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號1106室",
-                "fax": "02-2358-6780",
-                "name": "國會研究室",
-                "phone": "02-2358-6776"
-            },
-            {
-                "address": "新北市新店區中正路54巷8號1樓",
-                "fax": "02-2911-1448",
-                "name": "新店服務處",
-                "phone": "02-2915-7788"
-            }
-        ],
         "education": [
             "美國華盛頓城市大學企業管理碩士",
             "致理商專（現升格科技大學）企業管理系"
@@ -3005,6 +3013,18 @@
             },
             {
                 "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
                 "chair": false,
                 "name": "司法及法制委員會",
                 "session": 2
@@ -3024,7 +3044,19 @@
             {
                 "ad": 8,
                 "chair": true,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": true,
                 "name": "司法及法制委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
                 "session": 4
             },
             {
@@ -3035,20 +3067,32 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
                 "chair": true,
                 "name": "司法及法制委員會",
                 "session": 5
             },
             {
                 "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "紀律委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
                 "chair": false,
                 "name": "司法及法制委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
                 "session": 6
             },
             {
@@ -3092,20 +3136,6 @@
             "HSZ",
             0
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0407室",
-                "fax": "02-2358-6260",
-                "name": "國會研究室",
-                "phone": "02-2358-6258"
-            },
-            {
-                "address": "新竹市民族路272號",
-                "fax": "03-542-9399",
-                "name": "新竹服務處",
-                "phone": "03-535-8181"
-            }
-        ],
         "education": [
             "英國國立格萊摩根大學人力資源管理科學碩士"
         ],
@@ -3143,13 +3173,19 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
+                "name": "程序委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "財政委員會",
                 "session": 1
             },
             {
@@ -3161,19 +3197,31 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "程序委員會",
                 "session": 2
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "教育及文化委員會",
+                "name": "修憲委員會",
                 "session": 3
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "教育及文化委員會",
                 "session": 3
             },
             {
@@ -3185,7 +3233,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "外交及國防委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 5
             },
             {
@@ -3197,19 +3257,25 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "程序委員會",
                 "session": 7
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "外交及國防委員會",
                 "session": 7
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "外交及國防委員會",
+                "name": "修憲委員會",
                 "session": 7
             },
             {
@@ -3233,14 +3299,6 @@
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2116室",
-                "fax": "02-2358-8310",
-                "name": "國會研究室",
-                "phone": "02-2358-8306"
-            }
         ],
         "education": [
             "國立台灣大學經濟系學士",
@@ -3272,7 +3330,6 @@
     },
     {
         "ad": 8,
-        "caucus": "KMT",
         "committees": [
             {
                 "ad": 8,
@@ -3327,20 +3384,6 @@
             "TPQ",
             4
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號1108室",
-                "fax": "02-2358-6240",
-                "name": "國會研究室",
-                "phone": "02-2358-6236"
-            },
-            {
-                "address": "新北市新莊區公園路36號",
-                "fax": "02-2992-9818",
-                "name": "新莊服務處",
-                "phone": "02-2992-9199"
-            }
-        ],
         "education": [
             "日本大學工學博士",
             "黎明工專畢"
@@ -3361,7 +3404,7 @@
             "臺北縣升格促進小組成員",
             "思源醫療基金會董事",
             "麗寶文教基金會執行長",
-            "日商大成建設副總緀理兼總工程師"
+            "日商大成建設副總經理兼總工程師"
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/80025.jpg",
@@ -3370,7 +3413,11 @@
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00025&stage=8"
         },
         "name": "李鴻鈞",
-        "party": "KMT",
+        "party": "PFP",
+        "remark": [
+            "104年11月17日退出中國國民黨",
+            "104年11月25日加入親民黨"
+        ],
         "term_start": "2012-02-01",
         "title": "立法委員",
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/805b50011ffe878a1d72d0d6cebe1a11",
@@ -3463,20 +3510,6 @@
             "KHH",
             4
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0706室",
-                "fax": "02-2358-8030",
-                "name": "國會研究室",
-                "phone": "02-2358-8021"
-            },
-            {
-                "address": "高雄市大竂區力行路61號",
-                "fax": "07-781-8167",
-                "name": "大竂服務處",
-                "phone": "07-781-8117"
-            }
-        ],
         "education": [
             "天主教輔仁大學德文系畢業",
             "美國威斯康辛大學大眾傳播碩士",
@@ -3513,8 +3546,20 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "財政委員會",
                 "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
             },
             {
                 "ad": 8,
@@ -3537,8 +3582,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
-                "session": 4
+                "name": "修憲委員會",
+                "session": 3
             },
             {
                 "ad": 8,
@@ -3550,12 +3595,36 @@
                 "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "財政委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "紀律委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 6
             },
             {
@@ -3573,13 +3642,13 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "程序委員會",
                 "session": 7
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "修憲委員會",
                 "session": 7
             },
             {
@@ -3604,20 +3673,6 @@
         "constituency": [
             "TPQ",
             9
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3201室",
-                "fax": "02-2358-6999",
-                "name": "國會研究室",
-                "phone": "02-2358-6995"
-            },
-            {
-                "address": "新北市永和區永和路二段403號",
-                "fax": "02-3233-4625",
-                "name": "永和服務處",
-                "phone": "02-2232-9899"
-            }
         ],
         "education": [
             "台北縣立頂溪國小畢業",
@@ -3715,20 +3770,6 @@
         "constituency": [
             "KHH",
             1
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0801室",
-                "fax": "02-2358-6520",
-                "name": "國會研究室",
-                "phone": "02-2358-6516"
-            },
-            {
-                "address": "843高雄市美濃區泰安路228號",
-                "fax": "07-681-8677",
-                "name": "美濃服務處",
-                "phone": "07-681-8755"
-            }
         ],
         "education": [
             "美國舊金山多明尼肯大學企管研究所碩士"
@@ -3844,14 +3885,6 @@
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0308室",
-                "fax": "02-2358-6200",
-                "name": "國會研究室",
-                "phone": "02-2358-6196"
-            }
         ],
         "education": [
             "台灣大學政治學系"
@@ -4008,20 +4041,6 @@
             "TAO",
             6
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2118室",
-                "fax": "02-2358-6885",
-                "name": "國會研究室",
-                "phone": "02-2358-6881"
-            },
-            {
-                "address": "桃園縣八德市廣福路299號",
-                "fax": "03-375-2000",
-                "name": "桃園服務處",
-                "phone": "03-375-5558"
-            }
-        ],
         "education": [
             "美國俄亥俄州立大學工業材料科學與工程博士",
             "美國俄亥俄州立大學國際關係碩士",
@@ -4133,6 +4152,18 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
                 "session": 2
             },
@@ -4145,8 +4176,26 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
                 "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
             },
             {
                 "ad": 8,
@@ -4163,8 +4212,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
-                "session": 7
+                "name": "修憲委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -4176,32 +4225,24 @@
                 "ad": 8,
                 "chair": false,
                 "name": "經濟委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "經濟委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "TPQ",
             3
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0503室",
-                "fax": "02-2358-6245",
-                "name": "國會研究室",
-                "phone": "02-2358-6241"
-            },
-            {
-                "address": "新北市三重區忠孝路一段153號",
-                "fax": "02-8988-3076",
-                "name": "三重服務處",
-                "phone": "02-8988-1368"
-            }
         ],
         "education": [
             "台灣大學EMBA商學研究所碩士",
@@ -4285,20 +4326,6 @@
         "constituency": [
             "aborigine",
             "highland"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路10號3507室",
-                "fax": "02-2358-6055",
-                "name": "國會研究室",
-                "phone": "02-2358-6051"
-            },
-            {
-                "address": "屏東縣瑪家鄉北葉村9鄰風景巷1-3號",
-                "fax": "08-799-5963",
-                "name": "南區服務處",
-                "phone": "08-799-5962"
-            }
         ],
         "education": [
             "青年高中",
@@ -4402,20 +4429,6 @@
             "TAO",
             4
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0208室",
-                "fax": "02-2358-6070",
-                "name": "國會研究室",
-                "phone": "02-2358-6066"
-            },
-            {
-                "address": "桃園縣桃園市同安街171號",
-                "fax": "03-357-7640",
-                "name": "桃園服務處",
-                "phone": "03-346-5509"
-            }
-        ],
         "education": [
             "法國史湯達爾大學預科博士",
             "法國史湯達爾大學碩士",
@@ -4461,6 +4474,18 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
                 "session": 2
             },
@@ -4479,8 +4504,8 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
-                "session": 4
+                "name": "修憲委員會",
+                "session": 3
             },
             {
                 "ad": 8,
@@ -4492,6 +4517,24 @@
                 "ad": 8,
                 "chair": false,
                 "name": "經濟委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 5
             },
             {
@@ -4503,7 +4546,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 7
             },
             {
@@ -4516,12 +4571,6 @@
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "經濟委員會",
                 "session": 8
             },
             {
@@ -4533,27 +4582,13 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "經濟委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "aborigine",
             "lowland"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0807室",
-                "fax": "02-2358-8180",
-                "name": "國會研究室",
-                "phone": "02-2358-8176"
-            },
-            {
-                "address": "臺東市四維路3段72號",
-                "fax": "089-228-600",
-                "name": "台東服務處",
-                "phone": "089-228-798"
-            }
         ],
         "education": [
             "台東縣都蘭國小",
@@ -4638,20 +4673,6 @@
         "constituency": [
             "TPE",
             4
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3403室",
-                "fax": "02-2358-8280",
-                "name": "國會研究室",
-                "phone": "02-2358-8276"
-            },
-            {
-                "address": "114臺北市內湖區成功路三段82號2樓",
-                "fax": "02-2795-6289",
-                "name": "內湖服務處",
-                "phone": "02-2790-5746"
-            }
         ],
         "education": [
             "美國哥倫比亞大學經濟學哲學博士研究",
@@ -4903,14 +4924,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路10號3503室",
-                "fax": "02-2358-6180",
-                "name": "國會研究室",
-                "phone": "02-2358-6176"
-            }
-        ],
         "education": [
             "美國哥倫比亞大學政治學碩士",
             "美國歐柏林大學東亞研究學士"
@@ -5001,14 +5014,6 @@
         "constituency": [
             "aborigine",
             "highland"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0203室",
-                "fax": "02-2358-8250",
-                "name": "國會研究室",
-                "phone": "02-2358-8246"
-            }
         ],
         "education": [
             "台灣大學外文系",
@@ -5124,20 +5129,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0806室",
-                "fax": "02-2358-8320",
-                "name": "國會研究室",
-                "phone": "02-2358-8316"
-            },
-            {
-                "address": "265宜蘭縣羅東鎮公正路565號",
-                "fax": "039-610-211",
-                "name": "羅東服務處",
-                "phone": "039-610-311"
-            }
-        ],
         "education": [
             "台灣大學哲學系"
         ],
@@ -5174,6 +5165,12 @@
             },
             {
                 "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
                 "session": 1
@@ -5181,20 +5178,20 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "內政委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "程序委員會",
                 "session": 2
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
+                "chair": true,
+                "name": "修憲委員會",
                 "session": 2
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
-                "session": 3
             },
             {
                 "ad": 8,
@@ -5206,13 +5203,43 @@
                 "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
-                "session": 4
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 3
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "程序委員會",
                 "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "程序委員會",
+                "session": 5
             },
             {
                 "ad": 8,
@@ -5224,12 +5251,12 @@
                 "ad": 8,
                 "chair": true,
                 "name": "程序委員會",
-                "session": 5
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
-                "name": "程序委員會",
+                "name": "修憲委員會",
                 "session": 6
             },
             {
@@ -5264,14 +5291,14 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "內政委員會",
+                "chair": true,
+                "name": "程序委員會",
                 "session": 8
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "程序委員會",
+                "chair": false,
+                "name": "內政委員會",
                 "session": 8
             },
             {
@@ -5284,50 +5311,6 @@
         "constituency": [
             "TPQ",
             1
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路10號3502室",
-                "fax": "02-2358-8015",
-                "name": "國會研究室",
-                "phone": "02-2358-8011"
-            },
-            {
-                "address": "新北市泰山區明志路一段478號2樓",
-                "fax": "02-2296-1607",
-                "name": "泰山服務處",
-                "phone": "02-2296-0360"
-            },
-            {
-                "address": "新北市淡水區中正東路55號2樓(淡水捷運站對面)",
-                "fax": "02-2625-5159",
-                "name": "淡水服務處",
-                "phone": "02-2625-5158"
-            },
-            {
-                "address": "新北市林口區中正路100號",
-                "fax": "02-2601-8589",
-                "name": "林口服務處",
-                "phone": "02-2601-8588"
-            },
-            {
-                "address": "新北市八里區中山路二段361號",
-                "fax": "02-2625-5158",
-                "name": "八里服務處",
-                "phone": "02-8630-5521"
-            },
-            {
-                "address": "新北市三芝區公正街三段1號1樓",
-                "fax": "02-2636-1565",
-                "name": "三芝服務處",
-                "phone": "02-2636-3110"
-            },
-            {
-                "address": "新北市石門區尖鹿村中山路70號",
-                "fax": "02-2638-1067",
-                "name": "石門服務處",
-                "phone": "02-2638-0249"
-            }
         ],
         "education": [
             "政治大學政治系學士、公共行政碩士",
@@ -5368,14 +5351,26 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "程序委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "財政委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "修憲委員會",
                 "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
             },
             {
                 "ad": 8,
@@ -5398,7 +5393,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "財政委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 4
             },
             {
@@ -5409,15 +5416,15 @@
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "程序委員會",
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 5
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "財政委員會",
-                "session": 6
+                "chair": true,
+                "name": "程序委員會",
+                "session": 5
             },
             {
                 "ad": 8,
@@ -5429,12 +5436,24 @@
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 7
             },
             {
@@ -5452,32 +5471,6 @@
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0902室",
-                "fax": "02-2358-6859",
-                "name": "國會研究室",
-                "phone": "02-2358-6858"
-            },
-            {
-                "address": "新北市新莊區後港一路130巷48號1樓",
-                "fax": "02-2208-3853",
-                "name": "福營服務處",
-                "phone": "02-2208-3852"
-            },
-            {
-                "address": "新北市新莊區中原路327號1樓",
-                "fax": "02-2277-5657",
-                "name": "大新莊服務處",
-                "phone": "02-2276-8287"
-            },
-            {
-                "address": "新北市新莊區化成路路814巷1號",
-                "fax": "02-8522-5726",
-                "name": "新北總聯絡處",
-                "phone": "02-8522-5786"
-            }
         ],
         "education": [
             "士林國中",
@@ -5522,6 +5515,18 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "交通委員會",
                 "session": 2
             },
@@ -5540,8 +5545,26 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "交通委員會",
                 "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
             },
             {
                 "ad": 8,
@@ -5553,6 +5576,12 @@
                 "ad": 8,
                 "chair": false,
                 "name": "交通委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 6
             },
             {
@@ -5570,33 +5599,19 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "交通委員會",
+                "name": "修憲委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "交通委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "KHH",
             6
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2106室",
-                "fax": "02-2358-6090",
-                "name": "國會研究室",
-                "phone": "02-2358-6086"
-            },
-            {
-                "address": "高雄市三民區大昌二路63號",
-                "fax": "07-386-3277",
-                "name": "高雄服務處",
-                "phone": "07-386-8292"
-            }
         ],
         "education": [
             "輔大歷史系畢",
@@ -5699,26 +5714,6 @@
             "TPQ",
             2
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3202室",
-                "fax": "02-2358-8190",
-                "name": "國會研究室",
-                "phone": "02-2358-8186"
-            },
-            {
-                "address": "新北市蘆洲區長興路25號",
-                "fax": "02-2281-7980",
-                "name": "蘆洲服務處",
-                "phone": "02-8285-6412"
-            },
-            {
-                "address": "臺北縣五股鄉民義路一段37號",
-                "fax": "02-2291-2355",
-                "name": "五股服務處",
-                "phone": "02-2291-2995"
-            }
-        ],
         "education": [],
         "elected_party": "民主進步黨",
         "experience": [
@@ -5754,6 +5749,18 @@
             },
             {
                 "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
                 "chair": true,
                 "name": "經濟委員會",
                 "session": 2
@@ -5767,8 +5774,26 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
                 "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
             },
             {
                 "ad": 8,
@@ -5780,6 +5805,12 @@
                 "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 6
             },
             {
@@ -5797,33 +5828,19 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
+                "name": "修憲委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "司法及法制委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "CHA",
             2
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3402室",
-                "fax": "02-2358-8285",
-                "name": "國會研究室",
-                "phone": "02-2358-8281"
-            },
-            {
-                "address": "彰化市成功里旭光西路90號",
-                "fax": "04-723-9961",
-                "name": "彰化服務處",
-                "phone": "04-728-2282"
-            }
         ],
         "education": [
             "東海大學公共事務 碩士"
@@ -5859,6 +5876,12 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "外交及國防委員會",
                 "session": 1
             },
@@ -5879,60 +5902,84 @@
                 "chair": false,
                 "name": "外交及國防委員會",
                 "session": 2
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 3
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 3
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 4
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "司法及法制委員會",
-                "session": 6
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
-                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
-                "session": 7
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -5944,32 +5991,24 @@
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "社會福利及衛生環境委員會",
+                "name": "修憲委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "TPQ",
             6
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0506室",
-                "fax": "02-2358-6875",
-                "name": "國會研究室",
-                "phone": "02-2358-6871"
-            },
-            {
-                "address": "新北市板橋區文化路一段120號6樓之1",
-                "fax": "02-2253-7688",
-                "name": "板橋服務處",
-                "phone": "02-2253-6788"
-            }
         ],
         "education": [
             "政治大學政治研究所",
@@ -6077,20 +6116,6 @@
             "TPQ",
             8
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號1002室",
-                "fax": "02-2358-6900",
-                "name": "國會研究室",
-                "phone": "02-2358-6896"
-            },
-            {
-                "address": "新北市中和區建康路107號1樓",
-                "fax": "02-8221-3690",
-                "name": "中和服務處",
-                "phone": "02-8221-5879"
-            }
-        ],
         "education": [
             "中華大學工學碩士",
             "台北工專土木科",
@@ -6133,13 +6158,19 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
+                "name": "修憲委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "程序委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "財政委員會",
                 "session": 1
             },
             {
@@ -6156,8 +6187,14 @@
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "財政委員會",
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 3
             },
             {
@@ -6168,6 +6205,18 @@
             },
             {
                 "ad": 8,
+                "chair": true,
+                "name": "財政委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
                 "session": 4
@@ -6175,6 +6224,12 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "程序委員會",
                 "session": 5
             },
@@ -6200,7 +6255,7 @@
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
@@ -6212,32 +6267,24 @@
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "財政委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
+                "name": "修憲委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "TPE",
             7
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0502室",
-                "fax": "02-2358-6994",
-                "name": "國會研究室",
-                "phone": "02-2358-6990"
-            },
-            {
-                "address": "11050臺北市信義區莊敬路311號5樓",
-                "fax": "02-2720-9492",
-                "name": "服務處",
-                "phone": "02-2729-1966"
-            }
         ],
         "education": [
             "美國肯塔基大學統計學博士",
@@ -6341,32 +6388,6 @@
             "TPQ",
             5
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0606室",
-                "fax": "02-2358-6395",
-                "name": "國會研究室",
-                "phone": "02-2358-6391"
-            },
-            {
-                "address": "23852新北市樹林區中山路三段137號",
-                "fax": "02-2680-5365",
-                "name": "樹林服務處",
-                "phone": "02-2680-0775"
-            },
-            {
-                "address": "23941新北市鶯歌區中正一路228號",
-                "fax": "02-8678-0707",
-                "name": "鶯歌服務處",
-                "phone": "02-8678-0909"
-            },
-            {
-                "address": "24260新北市新莊區龍安路485號",
-                "fax": "02-2204-0486",
-                "name": "新莊服務處",
-                "phone": "02-2204-2269"
-            }
-        ],
         "education": [
             "國立體育大學博士班",
             "文化大學運動教練研究所碩士",
@@ -6385,7 +6406,7 @@
             "立法院教育文化委員會召委",
             "文化大學華岡青年",
             "新北市體育會理事長",
-            "2005年中國青年救國青年將章",
+            "2005年中國青年救國青年獎章",
             "2004年雅典奧運跆拳道銀牌",
             "2003年德國世界錦標賽金牌",
             "2002年釜山亞運會跆拳道金牌",
@@ -6500,7 +6521,7 @@
             },
             {
                 "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "經費稽核委員會",
                 "session": 8
             }
@@ -6508,38 +6529,6 @@
         "constituency": [
             "TNN",
             2
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3303室",
-                "fax": "02-2358-8315",
-                "name": "國會研究室",
-                "phone": "02-2358-8311"
-            },
-            {
-                "address": "臺南市佳里區進學路130號",
-                "fax": "06-723-0023",
-                "name": "佳里服務處",
-                "phone": "06-723-0100"
-            },
-            {
-                "address": "臺南市麻豆區南勢里62-2號",
-                "fax": "06-571-0225",
-                "name": "麻豆服務處",
-                "phone": "06-571-7753"
-            },
-            {
-                "address": "臺南市北區公園南路360號之1",
-                "fax": "06-221-0378",
-                "name": "都會服務處",
-                "phone": "06-221-0377"
-            },
-            {
-                "address": "台南市善化區中山路564號",
-                "fax": "06-581-9168",
-                "name": "南科服務處",
-                "phone": "06-581-2798"
-            }
         ],
         "education": [
             "美國哈佛大學碩士",
@@ -6580,8 +6569,26 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "交通委員會",
                 "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 3
             },
             {
                 "ad": 8,
@@ -6604,13 +6611,31 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "交通委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "交通委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 6
             },
             {
@@ -6628,39 +6653,19 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "交通委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "交通委員會",
+                "name": "修憲委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "KHH",
             5
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0901室",
-                "fax": "02-2358-8150",
-                "name": "國會研究室",
-                "phone": "02-2358-8146"
-            },
-            {
-                "address": "高雄市三民區博愛一路183號",
-                "fax": "07-313-5797",
-                "name": "高雄服務處",
-                "phone": "07-313-7816"
-            },
-            {
-                "address": "高雄市鼓山區九如四路1097號",
-                "fax": "07-521-5237",
-                "name": "內惟服務處",
-                "phone": "07-533-0227"
-            }
         ],
         "education": [
             "國立台灣大學政治學博士"
@@ -6822,26 +6827,6 @@
             "TXG",
             1
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3103室",
-                "fax": "02-2358-6155",
-                "name": "國會研究室",
-                "phone": "02-2358-6151"
-            },
-            {
-                "address": "臺中市清水區中華路448號",
-                "fax": "04-2623-8583",
-                "name": "清水服務處",
-                "phone": "04-2623-8581"
-            },
-            {
-                "address": "臺中市大甲區文武路274號",
-                "fax": "04-2688-9123",
-                "name": "大甲服務處",
-                "phone": "04-2688-7555"
-            }
-        ],
         "education": [
             "清水國民小學",
             "沙鹿國民中學",
@@ -6886,6 +6871,18 @@
             },
             {
                 "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
                 "chair": true,
                 "name": "社會福利及衛生環境委員會",
                 "session": 2
@@ -6899,7 +6896,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "社會福利及衛生環境委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 4
             },
             {
@@ -6907,6 +6916,18 @@
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -6929,33 +6950,19 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "外交及國防委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "外交及國防委員會",
+                "name": "修憲委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "TXG",
             4
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0803室",
-                "fax": "02-2358-6125",
-                "name": "國會研究室",
-                "phone": "02-2358-6121"
-            },
-            {
-                "address": "臺中市西屯區黎明路三段58號",
-                "fax": "04-2708-2896",
-                "name": "台中服務處",
-                "phone": "04-2708-2899"
-            }
         ],
         "education": [
             "中華大學科技管理研究所碩士",
@@ -7089,32 +7096,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0207室",
-                "fax": "02-2358-6060",
-                "name": "國會研究室",
-                "phone": "02-2358-6056"
-            },
-            {
-                "address": "臺北市重慶北路4段186號",
-                "fax": "02-2813-3582",
-                "name": "重慶服務處",
-                "phone": "02-2811-4556"
-            },
-            {
-                "address": "臺北市士林區華齡街88之2號",
-                "fax": "02-2883-0263",
-                "name": "後港服務處",
-                "phone": "02-2883-9006"
-            },
-            {
-                "address": "臺北市北投區大同街221號",
-                "fax": "02-2891-3096",
-                "name": "北投服務處",
-                "phone": "02-2891-5265"
-            }
-        ],
         "education": [
             "開南大學企管系"
         ],
@@ -7202,20 +7183,6 @@
         "constituency": [
             "KEE",
             0
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3305室",
-                "fax": "02-2358-8070",
-                "name": "國會研究室",
-                "phone": "02-2358-8066"
-            },
-            {
-                "address": "200基隆市仁愛區愛二路78號8樓",
-                "fax": "02-2421-3639",
-                "name": "基隆服務處",
-                "phone": "02-2427-8899"
-            }
         ],
         "education": [
             "聖心國小",
@@ -7311,26 +7278,6 @@
             "TPE",
             3
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0406室",
-                "fax": "02-2358-6160",
-                "name": "國會研究室",
-                "phone": "02-2358-6156"
-            },
-            {
-                "address": "臺北市松山區光復北路240號",
-                "fax": "02-2718-6878",
-                "name": "松山服務處",
-                "phone": "02-2719-5580"
-            },
-            {
-                "address": "臺北市民權東路二段26號6樓之7",
-                "fax": "02-2561-1035",
-                "name": "中山服務處",
-                "phone": "02-2563-8251"
-            }
-        ],
         "education": [
             "東吳大學會計系畢業"
         ],
@@ -7420,26 +7367,6 @@
         "constituency": [
             "PIF",
             2
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0401室",
-                "fax": "02-2358-6630",
-                "name": "國會研究室",
-                "phone": "02-2358-6626"
-            },
-            {
-                "address": "屏東市公園東路115號",
-                "fax": "08-721-5191",
-                "name": "屏東服務處",
-                "phone": "08-723-2505"
-            },
-            {
-                "address": "屏東縣萬丹鄉萬全村萬丹路一段412號",
-                "fax": "08-776-3989",
-                "name": "萬丹服務處",
-                "phone": "08-776-3989"
-            }
         ],
         "education": [
             "國立中山大學管理學院公共事務管理研究所碩士",
@@ -7560,8 +7487,20 @@
             },
             {
                 "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
                 "chair": true,
                 "name": "外交及國防委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 2
             },
             {
@@ -7573,8 +7512,26 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "教育及文化委員會",
                 "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
             },
             {
                 "ad": 8,
@@ -7592,13 +7549,7 @@
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "紀律委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
@@ -7610,38 +7561,30 @@
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
-                "session": 8
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "紀律委員會",
+                "session": 7
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "教育及文化委員會",
                 "session": 8
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 8
             }
         ],
         "constituency": [
             "TNN",
             3
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號1101室",
-                "fax": "02-2358-6755",
-                "name": "國會研究室",
-                "phone": "02-2358-6761"
-            },
-            {
-                "address": "704臺南市北區海安路三段963號",
-                "fax": "06-358-6489",
-                "name": "北區服務處",
-                "phone": "06-280-3906"
-            },
-            {
-                "address": "709臺南市安南區安中路二段8號",
-                "fax": "06-256-0701",
-                "name": "安南區服務處",
-                "phone": "06-256-8012"
-            }
         ],
         "education": [
             "協進國小",
@@ -7774,14 +7717,6 @@
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2115室",
-                "fax": "02-2358-6050",
-                "name": "國會研究室",
-                "phone": "02-2358-6046"
-            }
         ],
         "education": [
             "師大英語系",
@@ -7930,32 +7865,6 @@
             "TAO",
             2
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0605室",
-                "fax": "02-2358-6320",
-                "name": "國會研究室",
-                "phone": "02-2358-6316"
-            },
-            {
-                "address": "桃園縣大園鄉田心村華興路157號",
-                "fax": "03-386-9656",
-                "name": "大園服務處",
-                "phone": "03-385-1818"
-            },
-            {
-                "address": "桃園縣楊梅市大模街10號3樓之2",
-                "fax": "03-488-2758",
-                "name": "楊梅服務處",
-                "phone": "03-488-2728"
-            },
-            {
-                "address": "桃園縣新屋鄉中山路112號",
-                "fax": "03-477-3536",
-                "name": "新屋服務處",
-                "phone": "03-477-3556"
-            }
-        ],
         "education": [
             "高原國小",
             "楊梅初中",
@@ -8006,8 +7915,26 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 3
             },
             {
                 "ad": 8,
@@ -8030,8 +7957,26 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -8048,69 +7993,43 @@
             {
                 "ad": 8,
                 "chair": true,
-                "name": "社會福利及衛生環境委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": true,
                 "name": "紀律委員會",
                 "session": 7
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "修憲委員會",
+                "chair": true,
+                "name": "社會福利及衛生環境委員會",
                 "session": 7
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
-                "session": 8
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 8
+                "session": 7
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "經費稽核委員會",
                 "session": 8
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 8
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 8
             }
         ],
         "constituency": [
             "CHA",
             3
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號1007室",
-                "fax": "02-2358-6195",
-                "name": "國會研究室",
-                "phone": "02-2358-6191"
-            },
-            {
-                "address": "彰化縣溪洲鄉中山路三段270巷5號",
-                "fax": "04-889-8399",
-                "name": "溪州服務處",
-                "phone": "04-889-4123"
-            },
-            {
-                "address": "彰化縣二林鎮後厝里太平路一段88巷86號",
-                "fax": "04-895-5012",
-                "name": "二林服務處",
-                "phone": "04-895-5011"
-            },
-            {
-                "address": "彰化縣溪湖鎮東環路320號",
-                "fax": "04-861-3552",
-                "name": "溪湖服務處",
-                "phone": "04-882-2211"
-            }
         ],
         "education": [
             "明道大學畢業"
@@ -8195,26 +8114,6 @@
         "constituency": [
             "TPQ",
             10
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0202室",
-                "fax": "02-2358-6915",
-                "name": "國會研究室",
-                "phone": "02-2358-6911"
-            },
-            {
-                "address": "新北市土城區中央路3段85-1號",
-                "fax": "02-2268-9269",
-                "name": "土城服務處",
-                "phone": "02-2268-9268"
-            },
-            {
-                "address": "新北市三峽區中正路一段108巷7弄17號",
-                "fax": "02-2672-8599",
-                "name": "三峽服務處",
-                "phone": "02-2672-8399"
-            }
         ],
         "education": [
             "中華大學科技管理研究所碩士",
@@ -8304,20 +8203,6 @@
         "constituency": [
             "aborigine",
             "highland"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號1005室",
-                "fax": "02-2358-6685",
-                "name": "國會研究室",
-                "phone": "02-2358-6681"
-            },
-            {
-                "address": "90071屏東市廣東路1324號",
-                "fax": "08-732-6442",
-                "name": "屏東服務處",
-                "phone": "08-732-2728"
-            }
         ],
         "education": [
             "草埔國小畢業",
@@ -8413,20 +8298,6 @@
             "PIF",
             1
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0708室",
-                "fax": "02-2358-6640",
-                "name": "國會研究室",
-                "phone": "02-2358-6636"
-            },
-            {
-                "address": "屏東縣屏東市自由路586號",
-                "fax": "08-766-6262",
-                "name": "屏東服務處",
-                "phone": "08-766-6636"
-            }
-        ],
         "education": [
             "國立屏東科技大學農企業管理系碩士"
         ],
@@ -8466,7 +8337,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "外交及國防委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 2
             },
             {
@@ -8478,7 +8361,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 4
             },
             {
@@ -8490,14 +8385,20 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "經濟委員會",
-                "session": 7
+                "name": "修憲委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -8509,38 +8410,24 @@
                 "ad": 8,
                 "chair": false,
                 "name": "經濟委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "經濟委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "YUN",
             1
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0206室",
-                "fax": "02-2358-6974",
-                "name": "國會研究室",
-                "phone": "02-2358-6970"
-            },
-            {
-                "address": "雲林縣虎尾鎮平和里青埔2-23號",
-                "fax": "05-633-3318",
-                "name": "虎尾服務處",
-                "phone": "05-632-0629"
-            },
-            {
-                "address": "雲林縣北港鎮公園路406號",
-                "fax": "05-782-2848",
-                "name": "北港服務處",
-                "phone": "05-782-2088"
-            }
         ],
         "education": [
             "英國南漢普頓大學國際關係碩士",
@@ -8667,20 +8554,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號1006室",
-                "fax": "02-2358-6935",
-                "name": "國會研究室",
-                "phone": "02-2358-6931"
-            },
-            {
-                "address": "臺南市東區崇明14街53號",
-                "fax": "06-269-2889",
-                "name": "台南服務處",
-                "phone": "06-268-5889"
-            }
-        ],
         "education": [
             "東吳大學電子計算機應用科學系",
             "美國佛羅里達州理工學院電腦碩士",
@@ -8761,14 +8634,6 @@
         "constituency": [
             "TPE",
             6
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2112室",
-                "fax": "02-2358-6905",
-                "name": "國會研究室",
-                "phone": "02-2358-6901"
-            }
         ],
         "education": [
             "大同大學事業經營研究所碩士畢業"
@@ -8856,30 +8721,6 @@
         "constituency": [
             "YUN",
             2
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0602室",
-                "fax": "02-2358-8089",
-                "name": "國會研究室",
-                "phone": "02-2358-8088"
-            },
-            {
-                "address": "640雲林縣斗六市公明路3號",
-                "fax": "05-532-2270",
-                "name": "斗六服務處",
-                "phone": "05-534-2586"
-            },
-            {
-                "address": "640雲林縣西螺鎮建興路365號之1",
-                "name": "西螺服務處",
-                "phone": "05-587-3586"
-            },
-            {
-                "address": "640雲林縣斗南鎮東光二街20號",
-                "name": "斗南服務處",
-                "phone": "05-595-1270"
-            }
         ],
         "education": [
             "國立空中大學公共行政系",
@@ -8974,26 +8815,6 @@
         "constituency": [
             "NAN",
             1
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3113室",
-                "fax": "02-2358-6820",
-                "name": "國會研究室",
-                "phone": "02-2358-6816"
-            },
-            {
-                "address": "南投縣埔里鎮西寧路36號",
-                "fax": "049-290-1626",
-                "name": "埔里服務處",
-                "phone": "049-242-3248"
-            },
-            {
-                "address": "南投縣草屯鎮新生路209號",
-                "fax": "049-235-5023",
-                "name": "草屯服務處",
-                "phone": "049-235-5807"
-            }
         ],
         "education": [
             "嘉南藥專（嘉南藥理科技大學）藥理科畢業",
@@ -9100,20 +8921,6 @@
         "constituency": [
             "HUA",
             0
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號1103室",
-                "fax": "02-2358-6690",
-                "name": "國會研究室",
-                "phone": "02-2358-6688"
-            },
-            {
-                "address": "970花蓮市中原路462號",
-                "fax": "03-836-2156",
-                "name": "花蓮市服務處",
-                "phone": "03-833-0729"
-            }
         ],
         "education": [
             "美國喬治華盛頓大學國際企業博士",
@@ -9245,14 +9052,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3401室",
-                "fax": "02-2358-8265",
-                "name": "國會研究室",
-                "phone": "02-2358-8261"
-            }
-        ],
         "education": [
             "東海大學社會工作學系碩士",
             "東海大學社會工作學系學士"
@@ -9366,26 +9165,6 @@
             "CHA",
             1
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0501室",
-                "fax": "02-2358-6185",
-                "name": "國會研究室",
-                "phone": "02-2358-6181"
-            },
-            {
-                "address": "彰化縣鹿港鎮永安里鹿東路55號",
-                "fax": "04-777-9150",
-                "name": "鹿港服務處",
-                "phone": "04-775-4168"
-            },
-            {
-                "address": "彰化縣和美鎮德美路456號",
-                "fax": "04-757-4822",
-                "name": "和美服務處",
-                "phone": "04-757-8568"
-            }
-        ],
         "education": [
             "東海大學政治系學士",
             "東海大學政治學碩士"
@@ -9423,8 +9202,20 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "司法及法制委員會",
                 "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
             },
             {
                 "ad": 8,
@@ -9447,19 +9238,37 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "司法及法制委員會",
                 "session": 4
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "修憲委員會",
                 "session": 4
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 5
             },
             {
@@ -9476,6 +9285,12 @@
             },
             {
                 "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
                 "chair": true,
                 "name": "司法及法制委員會",
                 "session": 6
@@ -9483,12 +9298,18 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "修憲委員會",
                 "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
+                "name": "程序委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "司法及法制委員會",
                 "session": 7
             },
@@ -9501,50 +9322,24 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
                 "name": "司法及法制委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "程序委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "修憲委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0402室",
-                "fax": "02-2358-8113",
-                "name": "國會研究室",
-                "phone": "02-2358-8112"
-            },
-            {
-                "address": "桃園縣大溪鎮文化路168號",
-                "fax": "03-388-8227",
-                "name": "桃園服務處",
-                "phone": "03-388-7767"
-            },
-            {
-                "address": "彰化市成功路252號1樓",
-                "fax": "04-728-5676",
-                "name": "彰化服務處",
-                "phone": "04-728-5720"
-            }
         ],
         "education": [
             "國立台灣大學法律學系學士",
@@ -9589,6 +9384,18 @@
             },
             {
                 "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
                 "session": 2
@@ -9607,9 +9414,27 @@
             },
             {
                 "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
                 "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 5
             },
             {
                 "ad": 8,
@@ -9627,12 +9452,18 @@
                 "ad": 8,
                 "chair": true,
                 "name": "修憲委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "外交及國防委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
                 "session": 7
             },
             {
@@ -9651,26 +9482,6 @@
         "constituency": [
             "TXG",
             8
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2102室",
-                "fax": "02-2358-6730",
-                "name": "國會研究室",
-                "phone": "02-2358-6726"
-            },
-            {
-                "address": "臺中市豐原區南村路20號",
-                "fax": "04-2515-6798",
-                "name": "豐原服務處",
-                "phone": "04-2515-9998"
-            },
-            {
-                "address": "臺中市東勢區公園路36號",
-                "fax": "04-2577-3167",
-                "name": "東勢服務處",
-                "phone": "04-2577-3099"
-            }
         ],
         "education": [
             "美國南卡羅萊納大學國際關係博士",
@@ -9708,8 +9519,20 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
             },
             {
                 "ad": 8,
@@ -9725,8 +9548,20 @@
             },
             {
                 "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
                 "chair": true,
                 "name": "社會福利及衛生環境委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 4
             },
             {
@@ -9738,19 +9573,25 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "程序委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 5
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
+                "name": "修憲委員會",
                 "session": 6
             },
             {
@@ -9762,13 +9603,19 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
-                "session": 7
+                "name": "社會福利及衛生環境委員會",
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 7
             },
             {
@@ -9780,6 +9627,12 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 8
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "程序委員會",
                 "session": 8
             },
@@ -9787,32 +9640,12 @@
                 "ad": 8,
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
-                "session": 8
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "修憲委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "TPQ",
             7
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0808室",
-                "fax": "02-2358-6585",
-                "name": "國會研究室",
-                "phone": "02-2358-6532"
-            },
-            {
-                "address": "新北市板橋區實踐路30號2樓",
-                "fax": "02-2961-9899",
-                "name": "板橋服務處",
-                "phone": "02-2961-0599"
-            }
         ],
         "education": [
             "輔仁大學EMBA100年班錄取",
@@ -9927,26 +9760,6 @@
             "TXG",
             7
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0301室",
-                "fax": "02-2358-8390",
-                "name": "國會研究室",
-                "phone": "02-2358-8388"
-            },
-            {
-                "address": "臺中市大里區大里路63號",
-                "fax": "04-2482-8743",
-                "name": "大里服務處",
-                "phone": "04-2483-6527"
-            },
-            {
-                "address": "台中市太平區新平路二段142號",
-                "fax": "04-2276-3555",
-                "name": "太平服務處",
-                "phone": "04-2276-3111"
-            }
-        ],
         "education": [
             "塗城國小",
             "成功國中",
@@ -9985,6 +9798,12 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 1
             },
@@ -9992,6 +9811,12 @@
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 2
             },
             {
@@ -10009,14 +9834,38 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "社會福利及衛生環境委員會",
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 4
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -10052,34 +9901,18 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0305室",
-                "fax": "02-2358-6660",
-                "name": "國會研究室",
-                "phone": "02-2358-6656"
-            },
-            {
-                "address": "640雲林縣斗六市明德北路二段401號",
-                "fax": "05-537-5351",
-                "name": "雲林服務處",
-                "phone": "05-537-5331"
-            }
-        ],
         "education": [
             "英國華威大學工業關係博士"
         ],
         "elected_party": "中國國民黨",
         "experience": [
+            "第八屆全國不分區",
             "國立中正大學勞工關係學系教授",
             "考試院典試委員",
             "臺灣勞動與社會保障協會理事長",
             "臺灣總工會策略委員會委員",
             "臺灣高等教育產業工會發起人",
-            "縣市勞資爭議仲裁委員",
-            "雲林縣兒童福利發展協會創會理事長",
-            "雲林縣國際工商經管研究社創社社長",
-            "雲林縣越南同鄉權益協進會常務監事"
+            "縣市勞資爭議仲裁委員"
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/80013.jpg",
@@ -10192,14 +10025,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3108室",
-                "fax": "02-2358-8135",
-                "name": "國會研究室",
-                "phone": "02-2358-8580"
-            }
-        ],
         "education": [
             "國立台灣大學法律系法學士",
             "國立交通大學法學碩士"
@@ -10284,26 +10109,6 @@
             "TAO",
             5
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0905室",
-                "fax": "02-2358-6840",
-                "name": "國會研究室",
-                "phone": "02-2358-6836"
-            },
-            {
-                "address": "桃園縣平鎮市復興街68號2樓之2",
-                "fax": "03-401-0616",
-                "name": "平鎮服務處",
-                "phone": "03-401-5616"
-            },
-            {
-                "address": "桃園縣龍潭鄉東龍路124號",
-                "fax": "03-480-6549",
-                "name": "龍潭服務處",
-                "phone": "03-409-6688"
-            }
-        ],
         "education": [
             "南亞技術學院企業管理科",
             "育達高級中學畢業",
@@ -10345,6 +10150,18 @@
             },
             {
                 "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
                 "session": 2
@@ -10363,8 +10180,20 @@
             },
             {
                 "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
                 "chair": false,
                 "name": "內政委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
                 "session": 4
             },
             {
@@ -10376,7 +10205,19 @@
             {
                 "ad": 8,
                 "chair": true,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": true,
                 "name": "內政委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
                 "session": 6
             },
             {
@@ -10414,20 +10255,6 @@
             "CYI",
             0
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號1001室",
-                "fax": "02-2358-6545",
-                "name": "國會研究室",
-                "phone": "02-2358-6541"
-            },
-            {
-                "address": "600嘉義市共和路239號",
-                "fax": "05-277-9775",
-                "name": "嘉義服務處",
-                "phone": "05-271-9595"
-            }
-        ],
         "education": [
             "美國喬治華盛頓大學政治研究所博士班結業",
             "美國波士頓學院政治研究所碩士",
@@ -10460,13 +10287,19 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "司法及法制委員會",
+                "name": "修憲委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "司法及法制委員會",
                 "session": 1
             },
             {
@@ -10484,13 +10317,25 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
-                "session": 3
+                "name": "修憲委員會",
+                "session": 2
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "財政委員會",
                 "session": 3
             },
             {
@@ -10504,12 +10349,30 @@
                 "chair": false,
                 "name": "財政委員會",
                 "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "司法及法制委員會",
                 "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -10526,19 +10389,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "經濟委員會",
                 "session": 7
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "修憲委員會",
+                "name": "程序委員會",
                 "session": 8
             },
             {
@@ -10549,27 +10412,19 @@
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "經濟委員會",
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 8
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
+                "chair": true,
+                "name": "經濟委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3306室",
-                "fax": "02-2358-6380",
-                "name": "國會研究室",
-                "phone": "02-2358-6246"
-            }
         ],
         "education": [
             "美國太平洋大學法學博士、碩士",
@@ -10846,20 +10701,6 @@
             "KHH",
             9
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2119室",
-                "fax": "02-2358-6925",
-                "name": "國會研究室",
-                "phone": "02-2358-6923"
-            },
-            {
-                "address": "高雄市前鎮區永豐路19之6號",
-                "fax": "07-721-3055",
-                "name": "高雄服務處",
-                "phone": "07-721-1213"
-            }
-        ],
         "education": [
             "臺灣大學農業經濟系學士",
             "中央大學財務管理研究所碩士",
@@ -10987,14 +10828,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3111室",
-                "fax": "02-2358-8110",
-                "name": "國會研究室",
-                "phone": "02-2358-8106"
-            }
-        ],
         "education": [
             "美國賓夕法尼亞大學(U.PENN)都市與區域規則博士、碩士",
             "國立中興大學都市計劃研究所碩士",
@@ -11094,50 +10927,6 @@
             "KHH",
             2
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3406室",
-                "fax": "02-2358-6565",
-                "name": "國會研究室",
-                "phone": "02-2358-6561"
-            },
-            {
-                "address": "高雄市岡山區華園路99號",
-                "fax": "07-623-0671",
-                "name": "岡山服務處",
-                "phone": "07-623-0655"
-            },
-            {
-                "address": "高雄市茄萣區信義路三段138號",
-                "fax": "07-690-2598",
-                "name": "茄萣服務處",
-                "phone": "07-690-1234"
-            },
-            {
-                "address": "高雄市橋頭區成功路237號",
-                "fax": "07-611-4926",
-                "name": "橋頭區邱志偉立委與陳政聞議員聯合服務處",
-                "phone": "07-612-3058"
-            },
-            {
-                "address": "高雄市路竹區國昌路73號",
-                "fax": "07-607-6869",
-                "name": "路竹區邱志偉立委與陳明澤議員聯合服務處",
-                "phone": "07-607-1999"
-            },
-            {
-                "address": "高雄市路竹區國昌路82號",
-                "fax": "07-697-8588",
-                "name": "路竹區邱志偉立委與張文瑞議員聯合服務處",
-                "phone": "07-696-0525"
-            },
-            {
-                "address": "高雄縣梓官區梓官路361號",
-                "fax": "07-610-3338",
-                "name": "梓官服務處",
-                "phone": "07-610-3338"
-            }
-        ],
         "education": [
             "淡江大學俄羅斯研究所法學碩士",
             "國立台灣大學國家發展研究所法學碩士",
@@ -11195,6 +10984,18 @@
             },
             {
                 "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
                 "chair": true,
                 "name": "內政委員會",
                 "session": 2
@@ -11208,13 +11009,31 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "內政委員會",
                 "session": 4
             },
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "內政委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 5
             },
             {
@@ -11227,12 +11046,18 @@
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "內政委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 7
             },
             {
@@ -11257,14 +11082,6 @@
         "constituency": [
             "TPE",
             2
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號1102室",
-                "fax": "02-2358-6040",
-                "name": "國會研究室",
-                "phone": "02-2358-6758"
-            }
         ],
         "education": [
             "輔大大傳系畢業",
@@ -11365,20 +11182,6 @@
             "HSQ",
             0
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0306室",
-                "fax": "02-2358-6355",
-                "name": "國會研究室",
-                "phone": "02-2358-6351"
-            },
-            {
-                "address": "新竹縣竹北市光明六路235號",
-                "fax": "03-657-2133",
-                "name": "竹北服務處",
-                "phone": "03-657-1621"
-            }
-        ],
         "education": [
             "山崎國小",
             "新豐國中",
@@ -11403,8 +11206,8 @@
         },
         "name": "徐欣瑩",
         "remark": [
-            "104年2月9日退出中國國民黨。",
-            "104年3月18日加入民國黨。"
+            "104年2月9日退出中國國民黨",
+            "104年3月18日加入民國黨"
         ],
         "term_start": "2012-02-01",
         "title": "立法委員",
@@ -11605,20 +11408,6 @@
             "KHH",
             8
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0703室",
-                "fax": "02-2358-6625",
-                "name": "國會研究室",
-                "phone": "02-2358-8151"
-            },
-            {
-                "address": "830高雄市鳳山區保泰路96號",
-                "fax": "07-768-9900",
-                "name": "鳳山服務處",
-                "phone": "07-768-2666;07-768-1899"
-            }
-        ],
         "education": [
             "高師大教育學系碩士",
             "台灣大學機械工程系畢",
@@ -11665,7 +11454,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "交通委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 2
             },
             {
@@ -11677,7 +11478,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "交通委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 4
             },
             {
@@ -11685,6 +11498,18 @@
                 "chair": false,
                 "name": "交通委員會",
                 "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -11721,19 +11546,6 @@
             "LJF",
             0
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2117室",
-                "fax": "02-2358-6635",
-                "name": "國會研究室",
-                "phone": "02-2358-6631"
-            },
-            {
-                "address": "連江縣南竿鄉介壽村237號",
-                "name": "馬祖服務處",
-                "phone": "0836-25018"
-            }
-        ],
         "education": [
             "省立豐原商職畢業"
         ],
@@ -11752,6 +11564,9 @@
         },
         "name": "陳雪生",
         "party": "KMT",
+        "remark": [
+            "104年7月8日加入中國國民黨"
+        ],
         "term_start": "2012-02-01",
         "title": "立法委員",
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/a6c0a1836b073c6146a57950f873c55e",
@@ -11861,14 +11676,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0603室",
-                "fax": "02-2358-8185",
-                "name": "國會研究室",
-                "phone": "02-2358-8181"
-            }
-        ],
         "education": [
             "美國南加州大學博士",
             "日本國立筑波大學舞蹈方法學碩士",
@@ -11960,26 +11767,6 @@
         "constituency": [
             "ILA",
             0
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0408室",
-                "fax": "02-2358-6170",
-                "name": "國會研究室",
-                "phone": "02-2358-6220"
-            },
-            {
-                "address": "宜蘭市民族路593號",
-                "fax": "03-936-6189",
-                "name": "宜蘭服務處",
-                "phone": "03-936-6299"
-            },
-            {
-                "address": "羅東鎮興東南路152號",
-                "fax": "03-957-2788",
-                "name": "羅東服務處",
-                "phone": "03-957-2099"
-            }
         ],
         "education": [
             "員山大湖國小",
@@ -12134,14 +11921,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3405室",
-                "fax": "02-2358-8290",
-                "name": "國會研究室",
-                "phone": "02-2358-8286"
-            }
-        ],
         "education": [
             "陸軍官校34期",
             "陸軍指參學院63年班",
@@ -12182,6 +11961,18 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "財政委員會",
                 "session": 2
             },
@@ -12194,7 +11985,19 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "財政委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 4
             },
             {
@@ -12202,6 +12005,18 @@
                 "chair": false,
                 "name": "司法及法制委員會",
                 "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -12224,26 +12039,18 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
+                "name": "修憲委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "財政委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0705室",
-                "fax": "02-2358-6390",
-                "name": "國會研究室",
-                "phone": "02-2358-6381"
-            }
         ],
         "education": [
             "國立中興大學會計學學士",
@@ -12418,14 +12225,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0608室",
-                "fax": "02-2358-6670",
-                "name": "國會研究室",
-                "phone": "02-2358-6666"
-            }
-        ],
         "education": [
             "國立台灣藝術專科學校畢業(1995年)",
             "輔仁大學哲學研究所肄業(2006年)"
@@ -12517,20 +12316,6 @@
             "JME",
             0
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3206室",
-                "fax": "02-2358-8270",
-                "name": "國會研究室",
-                "phone": "02-2358-8268"
-            },
-            {
-                "address": "金門縣金城鎮光前路97號",
-                "fax": "082-326-175",
-                "name": "金門服務處",
-                "phone": "082-312-058"
-            }
-        ],
         "education": [
             "金沙國小",
             "金沙國中",
@@ -12617,20 +12402,6 @@
         "constituency": [
             "PEN",
             0
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0205室",
-                "fax": "02-2358-6740",
-                "name": "國會研究室",
-                "phone": "02-2358-6736"
-            },
-            {
-                "address": "澎湖縣馬公市新店路473號",
-                "fax": "06-921-1317",
-                "name": "澎湖服務處",
-                "phone": "06-921-8678"
-            }
         ],
         "education": [
             "東海大學法律系畢業",
@@ -12741,7 +12512,7 @@
             },
             {
                 "ad": 8,
-                "chair": false,
+                "chair": true,
                 "name": "經費稽核委員會",
                 "session": 8
             },
@@ -12754,14 +12525,6 @@
         ],
         "constituency": [
             "foreign"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0802室",
-                "fax": "02-2358-6540",
-                "name": "國會研究室",
-                "phone": "02-2358-6536"
-            }
         ],
         "education": [
             "淡江大學畢業",
@@ -12794,13 +12557,19 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "程序委員會",
+                "name": "社會福利及衛生環境委員會",
                 "session": 1
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "社會福利及衛生環境委員會",
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
                 "session": 1
             },
             {
@@ -12813,6 +12582,12 @@
                 "ad": 8,
                 "chair": false,
                 "name": "社會福利及衛生環境委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 2
             },
             {
@@ -12823,14 +12598,26 @@
             },
             {
                 "ad": 8,
-                "chair": true,
-                "name": "社會福利及衛生環境委員會",
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 4
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "紀律委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "社會福利及衛生環境委員會",
                 "session": 4
             },
             {
@@ -12842,8 +12629,26 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "社會福利及衛生環境委員會",
                 "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "社會福利及衛生環境委員會",
+                "session": 7
             },
             {
                 "ad": 8,
@@ -12859,40 +12664,20 @@
             },
             {
                 "ad": 8,
-                "chair": true,
+                "chair": false,
                 "name": "社會福利及衛生環境委員會",
-                "session": 7
+                "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
                 "session": 8
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "社會福利及衛生環境委員會",
-                "session": 8
             }
         ],
         "constituency": [
             "KHH",
             7
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0505室",
-                "fax": "02-2358-6580",
-                "name": "國會研究室",
-                "phone": "02-2358-6576"
-            },
-            {
-                "address": "80251高雄市苓雅區民權一路53號",
-                "fax": "07-333-6860",
-                "name": "高雄服務處",
-                "phone": "07-333-6868"
-            }
         ],
         "education": [
             "國立高雄應用科技大學機械與精密工程博士班(工管組)",
@@ -13018,32 +12803,6 @@
             "TTT",
             0
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2108室",
-                "fax": "02-2358-6290",
-                "name": "國會研究室",
-                "phone": "02-2358-6286"
-            },
-            {
-                "address": "臺東市傳廣路18號",
-                "fax": "089-310-879",
-                "name": "臺東服務處",
-                "phone": "089-310-979"
-            },
-            {
-                "address": "臺東縣成功鎮民權路30號",
-                "fax": "089-851-018",
-                "name": "東海岸服務處",
-                "phone": "089-851-018"
-            },
-            {
-                "address": "台東縣大武鄉尚武村4鄰32號",
-                "fax": "089-790-398",
-                "name": "南迴服務處",
-                "phone": "089-791-305"
-            }
-        ],
         "education": [
             "臺東仁愛國小",
             "臺東新生國中",
@@ -13153,20 +12912,6 @@
             "aborigine",
             "lowland"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0307室",
-                "fax": "02-2358-6835",
-                "name": "國會研究室",
-                "phone": "02-2358-6831"
-            },
-            {
-                "address": "973花蓮縣吉安鄉南昌村南昌路90號",
-                "fax": "03-851-3306",
-                "name": "花蓮服務處",
-                "phone": "03-851-2306"
-            }
-        ],
         "education": [
             "國立台灣大學法律系畢"
         ],
@@ -13198,6 +12943,12 @@
         "committees": [
             {
                 "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
                 "chair": false,
                 "name": "程序委員會",
                 "session": 1
@@ -13207,6 +12958,18 @@
                 "chair": false,
                 "name": "教育及文化委員會",
                 "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "教育及文化委員會",
+                "session": 2
             },
             {
                 "ad": 8,
@@ -13217,8 +12980,8 @@
             {
                 "ad": 8,
                 "chair": true,
-                "name": "教育及文化委員會",
-                "session": 2
+                "name": "修憲委員會",
+                "session": 3
             },
             {
                 "ad": 8,
@@ -13240,9 +13003,27 @@
             },
             {
                 "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
                 "chair": false,
                 "name": "教育及文化委員會",
                 "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": true,
+                "name": "修憲委員會",
+                "session": 6
             },
             {
                 "ad": 8,
@@ -13253,6 +13034,12 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "教育及文化委員會",
+                "session": 7
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "程序委員會",
                 "session": 7
             },
@@ -13264,26 +13051,20 @@
             },
             {
                 "ad": 8,
-                "chair": false,
-                "name": "教育及文化委員會",
-                "session": 7
-            },
-            {
-                "ad": 8,
                 "chair": true,
                 "name": "教育及文化委員會",
-                "session": 8
-            },
-            {
-                "ad": 8,
-                "chair": false,
-                "name": "程序委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": true,
                 "name": "修憲委員會",
+                "session": 8
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "程序委員會",
                 "session": 8
             },
             {
@@ -13295,14 +13076,6 @@
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3301室",
-                "fax": "02-2358-8330",
-                "name": "國會研究室",
-                "phone": "02-2358-8329"
-            }
         ],
         "education": [
             "台灣大學哲學系學士",
@@ -13397,20 +13170,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路10號3505室",
-                "fax": "02-2358-6575",
-                "name": "國會研究室",
-                "phone": "02-2358-6571"
-            },
-            {
-                "address": "屏東縣東港鎮東隆里東隆街6-2號",
-                "fax": "08-832-9977",
-                "name": "東港服務處",
-                "phone": "08-833-4517"
-            }
-        ],
         "education": [
             "中山醫學大學醫學博士、碩士、醫學士"
         ],
@@ -13442,7 +13201,25 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "司法及法制委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 3
             },
             {
@@ -13450,6 +13227,18 @@
                 "chair": false,
                 "name": "司法及法制委員會",
                 "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 5
             },
             {
                 "ad": 8,
@@ -13467,7 +13256,7 @@
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
-                "session": 7
+                "session": 6
             },
             {
                 "ad": 8,
@@ -13479,44 +13268,24 @@
                 "ad": 8,
                 "chair": false,
                 "name": "修憲委員會",
-                "session": 8
+                "session": 7
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "司法及法制委員會",
                 "session": 8
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 8
             }
         ],
         "constituency": [
             "TXG",
             2
-        ],
-        "contacts": [
-            {
-                "address": "10051台北市中正區青島東路10號3501室",
-                "fax": "02-2358-8010",
-                "name": "國會研究室",
-                "phone": "02-2358-8006"
-            },
-            {
-                "address": "台中市沙鹿區埔子里正義路1號",
-                "fax": "04-2632-6155",
-                "name": "沙鹿服務處",
-                "phone": "04-2632-6151"
-            },
-            {
-                "address": "台中市烏日區光日路48號",
-                "fax": "04-2338-0155",
-                "name": "烏日服務處",
-                "phone": "04-2337-3351"
-            },
-            {
-                "address": "台中市霧峰區樹仁路178號",
-                "fax": "04-2330-2551",
-                "name": "霧峰服務處",
-                "phone": "04-2330-2559"
-            }
         ],
         "education": [
             "建國工專機械工程科畢業",
@@ -13589,14 +13358,6 @@
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路一段3-1號507室",
-                "fax": "02-2358-6800",
-                "name": "國會研究室",
-                "phone": "02-2358-6798"
-            }
         ],
         "education": [
             "銘傳大學管理學院管理研究所博士"
@@ -13686,20 +13447,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051台北市中正區濟南路一段3-1號405室",
-                "fax": "02-2358-6880",
-                "name": "國會研究室",
-                "phone": "02-2358-6876"
-            },
-            {
-                "address": "高雄市前鎮區滇池街193號",
-                "fax": "07-338-8957",
-                "name": "高雄服務處",
-                "phone": "07-333-2333"
-            }
-        ],
         "education": [
             "嘉義高工",
             "國立高雄師範學院數學系肄業"
@@ -13734,19 +13481,55 @@
             {
                 "ad": 8,
                 "chair": false,
+                "name": "修憲委員會",
+                "session": 1
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 2
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 3
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
+                "session": 4
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 5
+            },
+            {
+                "ad": 8,
+                "chair": false,
                 "name": "程序委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "財政委員會",
+                "name": "修憲委員會",
                 "session": 5
             },
             {
                 "ad": 8,
                 "chair": false,
                 "name": "財政委員會",
+                "session": 6
+            },
+            {
+                "ad": 8,
+                "chair": false,
+                "name": "修憲委員會",
                 "session": 6
             },
             {
@@ -13770,26 +13553,18 @@
             {
                 "ad": 8,
                 "chair": false,
-                "name": "修憲委員會",
+                "name": "教育及文化委員會",
                 "session": 8
             },
             {
                 "ad": 8,
                 "chair": false,
-                "name": "教育及文化委員會",
+                "name": "修憲委員會",
                 "session": 8
             }
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路一段3-1號1008室",
-                "fax": "02-2358-8560",
-                "name": "國會辦公室",
-                "phone": "02-2358-8558"
-            }
         ],
         "education": [
             "國立台灣大學商學博士"
@@ -13879,20 +13654,6 @@
         "constituency": [
             "proportional"
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3203室",
-                "fax": "02-2358-6870",
-                "name": "國會辦公室",
-                "phone": "02-2358-6868"
-            },
-            {
-                "address": "234新北市永和區福和路182號2樓",
-                "fax": "02-2927-5058",
-                "name": "永和服務處",
-                "phone": "02-2927-6568"
-            }
-        ],
         "education": [
             "元智大學管理研究所碩士",
             "國立台灣大學農學士",
@@ -13943,20 +13704,6 @@
         "constituency": [
             "TXG",
             6
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2117室",
-                "fax": "02-2358-6850",
-                "name": "國會辦公室",
-                "phone": "02-2358-6849"
-            },
-            {
-                "address": "403台中市西區美村路一段632號B1",
-                "fax": "04-2376-8702",
-                "name": "台中服務處",
-                "phone": "04-2376-8701"
-            }
         ],
         "education": [
             "國立台中一中",
@@ -14010,20 +13757,6 @@
         "constituency": [
             "CHA",
             4
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2109室",
-                "fax": "02-2358-6695",
-                "name": "國會辦公室",
-                "phone": "02-2358-6691"
-            },
-            {
-                "address": "彰化縣員林鎮惠來里惠明街219號",
-                "fax": "04-835-3414",
-                "name": "員林服務處",
-                "phone": "04-832-8552"
-            }
         ],
         "education": [
             "文化大學史學研究所碩士",
@@ -14080,14 +13813,6 @@
             "MIA",
             2
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0805室",
-                "fax": "02-2358-6270",
-                "name": "國會辦公室",
-                "phone": "02-2358-6266"
-            }
-        ],
         "education": [
             "縣立苗中畢業",
             "省立苗栗高中畢業",
@@ -14143,20 +13868,6 @@
             "NAN",
             2
         ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0303室",
-                "fax": "02-2358-8050",
-                "name": "國會辦公室",
-                "phone": "02-2358-8356"
-            },
-            {
-                "address": "南投縣南投市玉井街51號",
-                "fax": "049-2226-117",
-                "name": "南投服務處",
-                "phone": "049-2226-116"
-            }
-        ],
         "education": [
             "逢甲大學經營管理碩士"
         ],
@@ -14203,20 +13914,6 @@
         "constituency": [
             "PIF",
             3
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號0702室",
-                "fax": "02-2358-6369",
-                "name": "國會辦公室",
-                "phone": "02-2358-6368"
-            },
-            {
-                "address": "900屏東縣東港鎮光復路一段379號",
-                "fax": "08-833-9316",
-                "name": "東港服務處",
-                "phone": "08-833-7893"
-            }
         ],
         "education": [
             "國立臺灣大學農業經濟學系碩士",
@@ -14277,14 +13974,6 @@
         ],
         "constituency": [
             "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路一段3-1號302室",
-                "fax": "2358-6415",
-                "name": "國會研究室",
-                "phone": "2358-6411"
-            }
         ],
         "education": [
             "美國麻省波斯頓大學政治經濟學博士"
