@@ -3900,6 +3900,7 @@
     },
     {
         "ad": 9,
+        "caucus": "NPP",
         "committees": [],
         "constituency": [
             "proportional"
@@ -3923,6 +3924,7 @@
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00051&stage=9"
         },
         "name": "高潞‧以用‧巴魕剌Kawlo‧Iyun‧Pacidal",
+        "party": "NPP",
         "term_start": "2016-02-01",
         "title": "立法委員",
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/c37e4e0206674dab3edfeb03fb1948e7",
@@ -3930,6 +3932,7 @@
     },
     {
         "ad": 9,
+        "caucus": "NPP",
         "committees": [],
         "constituency": [
             "proportional"
@@ -3958,6 +3961,7 @@
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00044&stage=9"
         },
         "name": "徐永明",
+        "party": "NPP",
         "term_start": "2016-02-01",
         "title": "立法委員",
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/635bd2d119177fcb90b62d9a0b06b910",
@@ -4072,6 +4076,7 @@
     },
     {
         "ad": 9,
+        "caucus": "NPP",
         "committees": [],
         "constituency": [
             "TPE",
@@ -4100,6 +4105,7 @@
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00030&stage=9"
         },
         "name": "林昶佐",
+        "party": "NPP",
         "term_start": "2016-02-01",
         "title": "立法委員",
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/c7781443a7ac8f14326dc0c25fc50e4d",
@@ -4338,6 +4344,7 @@
     },
     {
         "ad": 9,
+        "caucus": "NPP",
         "committees": [],
         "constituency": [
             "TPQ",
@@ -4364,6 +4371,7 @@
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00077&stage=9"
         },
         "name": "黃國昌",
+        "party": "NPP",
         "term_start": "2016-02-01",
         "title": "立法委員",
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/e1b01e5770aa94a00edb9dbc3e3c1fdf",
@@ -4452,6 +4460,7 @@
     },
     {
         "ad": 9,
+        "caucus": "NPP",
         "committees": [],
         "constituency": [
             "TXG",
@@ -4479,6 +4488,7 @@
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00043&stage=9"
         },
         "name": "洪慈庸",
+        "party": "NPP",
         "term_start": "2016-02-01",
         "title": "立法委員",
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/3f756c83928d8da7446b9c62b6ec7462",

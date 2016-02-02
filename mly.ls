@@ -15,6 +15,7 @@ party = -> match it
 | \超黨派問政聯盟 => \CPU
 | \民主聯盟       => \DU
 | \新國家陣線     => \NNA
+| \時代力量       => \NPP
 | /無(黨籍)?/     => null
 | \其他           => null
 else => console.error it
