@@ -274,7 +274,7 @@
         "caucus": "DPP",
         "committees": [],
         "constituency": [
-            null,
+            "TAO",
             4
         ],
         "contacts": [],
@@ -405,7 +405,7 @@
         "caucus": "KMT",
         "committees": [],
         "constituency": [
-            null,
+            "TAO",
             3
         ],
         "contacts": [
@@ -607,7 +607,7 @@
         "caucus": "KMT",
         "committees": [],
         "constituency": [
-            "TPQ",
+            "NWT",
             11
         ],
         "contacts": [
@@ -758,7 +758,7 @@
         "caucus": "KMT",
         "committees": [],
         "constituency": [
-            "TPQ",
+            "NWT",
             9
         ],
         "contacts": [
@@ -892,7 +892,7 @@
         "caucus": "DPP",
         "committees": [],
         "constituency": [
-            "TPQ",
+            "NWT",
             3
         ],
         "contacts": [
@@ -1268,7 +1268,7 @@
         "caucus": "DPP",
         "committees": [],
         "constituency": [
-            "TPQ",
+            "NWT",
             4
         ],
         "contacts": [
@@ -1419,7 +1419,7 @@
         "caucus": "DPP",
         "committees": [],
         "constituency": [
-            "TPQ",
+            "NWT",
             2
         ],
         "contacts": [
@@ -1784,7 +1784,7 @@
         "caucus": "DPP",
         "committees": [],
         "constituency": [
-            null,
+            "TAO",
             1
         ],
         "contacts": [],
@@ -2385,7 +2385,7 @@
         "caucus": "KMT",
         "committees": [],
         "constituency": [
-            null,
+            "TAO",
             5
         ],
         "contacts": [
@@ -4116,7 +4116,7 @@
         "caucus": "DPP",
         "committees": [],
         "constituency": [
-            "TPQ",
+            "NWT",
             1
         ],
         "contacts": [],
@@ -4152,7 +4152,7 @@
         "caucus": "DPP",
         "committees": [],
         "constituency": [
-            "TPQ",
+            "NWT",
             5
         ],
         "contacts": [],
@@ -4189,7 +4189,7 @@
         "caucus": "DPP",
         "committees": [],
         "constituency": [
-            "TPQ",
+            "NWT",
             6
         ],
         "contacts": [],
@@ -4227,7 +4227,7 @@
         "caucus": "DPP",
         "committees": [],
         "constituency": [
-            "TPQ",
+            "NWT",
             7
         ],
         "contacts": [],
@@ -4265,7 +4265,7 @@
         "caucus": "DPP",
         "committees": [],
         "constituency": [
-            "TPQ",
+            "NWT",
             8
         ],
         "contacts": [],
@@ -4308,7 +4308,7 @@
         "caucus": "DPP",
         "committees": [],
         "constituency": [
-            "TPQ",
+            "NWT",
             10
         ],
         "contacts": [],
@@ -4347,7 +4347,7 @@
         "caucus": "NPP",
         "committees": [],
         "constituency": [
-            "TPQ",
+            "NWT",
             12
         ],
         "contacts": [],
@@ -4382,7 +4382,7 @@
         "caucus": "DPP",
         "committees": [],
         "constituency": [
-            null,
+            "TAO",
             2
         ],
         "contacts": [],
@@ -4420,7 +4420,7 @@
         "caucus": "DPP",
         "committees": [],
         "constituency": [
-            null,
+            "TAO",
             6
         ],
         "contacts": [

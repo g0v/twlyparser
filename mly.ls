@@ -21,7 +21,7 @@ party = -> match it
 else => console.error it
 
 city = -> match it.replace /台/g, '臺' # ISO-3166-2:TW
-| \新北市 => \TPQ
+| \新北市 => \NWT
 | \臺北市 => \TPE
 | \臺中市 => \TXG
 | \臺南市 => \TNN
@@ -30,6 +30,7 @@ city = -> match it.replace /台/g, '臺' # ISO-3166-2:TW
 | \新竹市 => \HSZ
 | \嘉義市 => \CYI
 | \桃園縣 => \TAO
+| \桃園市 => \TAO
 | \新竹縣 => \HSQ
 | \苗栗縣 => \MIA
 | \彰化縣 => \CHA
@@ -45,8 +46,8 @@ city = -> match it.replace /台/g, '臺' # ISO-3166-2:TW
 | \臺南縣 => \TNQ
 | \臺北縣 => \TPQ
 | \臺中縣 => \TXQ
-| \金門縣 => \JME # no ISO3166, use GB/T 2260-2002
-| \連江縣 => \LJF # no ISO3166, use GB/T 2260-2002
+| \金門縣 => \KIN # ISO-3166-2:TW
+| \連江縣 => \LIE # ISO-3166-2:TW
 else => console.error it
 
 constituency = -> match it
