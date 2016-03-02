@@ -2,16 +2,23 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "外交及國防委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區中山南路1號",
-                "fax": "02-2395-5317",
+                "address": "10051臺北市中正區鎮江街2號1樓",
+                "fax": "02-2358-8685",
                 "name": "國會研究室",
-                "phone": "02-2358-6011~15"
+                "phone": "02-2358-8681"
             },
             {
                 "address": "高雄市路竹區甲南村大仁路369巷7號",
@@ -45,14 +52,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "HSZ",
             0
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區青島東路3號3樓",
+                "address": "10051臺北市中正區濟南路1段3-1號2118室",
                 "fax": "02-2358-6110",
                 "name": "國會研究室",
                 "phone": "02-2358-6106"
@@ -95,13 +109,20 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號1107室",
+                "address": "10051臺北市中正區濟南路1段3-1號1107室",
                 "fax": "02-2358-6790",
                 "name": "國會研究室",
                 "phone": "02-2358-6786"
@@ -141,11 +162,25 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "外交及國防委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區中山南路1號",
+                "fax": "02-2395-5317",
+                "name": "國會辦公室",
+                "phone": "02-2358-6011"
+            }
+        ],
         "education": [
             "國立中山大學公共事務管理碩士",
             "國立海洋大學食品科學系學士"
@@ -175,14 +210,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0701室",
-                "fax": "02-2358-8165",
+                "address": "10051臺北市中正區濟南路1段3-1號0701室",
+                "fax": "02-2358-8160",
                 "name": "國會研究室",
                 "phone": "02-2358-8156"
             },
@@ -199,7 +241,7 @@
         ],
         "elected_party": "民主進步黨",
         "experience": [
-            "第2、3、8屆立法委員",
+            "第3、4、8屆立法委員",
             "行政院秘書長",
             "駐美副代表 ",
             "勞工委員會主任委員"
@@ -220,13 +262,20 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號1105室",
+                "address": "10051臺北市中正區濟南路1段3-1號1105室",
                 "fax": "02-2358-8570",
                 "name": "國會研究室",
                 "phone": "02-2358-8566"
@@ -272,12 +321,32 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TAO",
             4
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0707室",
+                "fax": "02-2358-6710",
+                "name": "國會研究室",
+                "phone": "02-2358-6707"
+            },
+            {
+                "address": "桃園市桃園區三民路二段197號",
+                "fax": "03-333-1823",
+                "name": "桃園服務處",
+                "phone": "03-333-2203"
+            }
+        ],
         "education": [
             "國立中央大學管理學博士",
             "國立中興大學法學碩士",
@@ -310,7 +379,14 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "CYQ",
             2
@@ -356,14 +432,21 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "MIA",
             1
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號1003室",
+                "address": "10051臺北市中正區濟南路1段3-1號1003室",
                 "fax": "02-2358-6615",
                 "name": "國會研究室",
                 "phone": "02-2358-6611"
@@ -403,14 +486,21 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TAO",
             3
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0908室",
+                "address": "10051臺北市中正區濟南路1段3-1號0908室",
                 "fax": "02-2358-6700",
                 "name": "國會研究室",
                 "phone": "02-2358-6699"
@@ -451,14 +541,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TNN",
             1
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0403室",
+                "address": "10051臺北市中正區濟南路1段3-1號0403室",
                 "fax": "02-2358-6295",
                 "name": "國會研究室",
                 "phone": "02-2358-6291"
@@ -506,7 +603,14 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TPE",
             8
@@ -556,7 +660,14 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "財政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TXG",
             5
@@ -581,13 +692,12 @@
         ],
         "elected_party": "中國國民黨",
         "experience": [
-            "第4～8屆立法委員",
-            "第10屆省議員",
+            "華梘記者",
             "華視中部採訪中心主任暨省政特派員",
             "79年電視金鐘獎最佳採訪獎得主",
-            "102年國家磐石關懷獎章得主",
-            "臺中市愛心媽媽副大隊長",
-            "臺中市飛盤委員會主委"
+            "第10屆臺灣省議員",
+            "第4～9屆立法委員",
+            "102年國家磐石關懷獎章得主"
         ],
         "gender": "女",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90099.jpg",
@@ -605,14 +715,21 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NWT",
             11
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號1106室",
+                "address": "10051臺北市中正區濟南路1段3-1號1106室",
                 "fax": "02-2358-6780",
                 "name": "國會研究室",
                 "phone": "02-2358-6776"
@@ -655,13 +772,20 @@
     {
         "ad": 9,
         "caucus": "PFP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號1108室",
+                "address": "10051臺北市中正區濟南路1段3-1號1108室",
                 "fax": "02-2358-6240",
                 "name": "國會研究室",
                 "phone": "02-2358-6236"
@@ -706,14 +830,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "KHH",
             4
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0706室",
+                "address": "10051臺北市中正區濟南路1段3-1號0706室",
                 "fax": "02-2358-8030",
                 "name": "國會研究室",
                 "phone": "02-2358-8021"
@@ -756,7 +887,14 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NWT",
             9
@@ -807,14 +945,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "KHH",
             1
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0801室",
+                "address": "10051臺北市中正區濟南路1段3-1號0801室",
                 "fax": "02-2358-6520",
                 "name": "國會研究室",
                 "phone": "02-2358-6516"
@@ -853,13 +998,20 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "司法及法制委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0308室",
+                "address": "10051臺北市中正區濟南路1段3-1號0308室",
                 "fax": "02-2358-6200",
                 "name": "國會研究室",
                 "phone": "02-2358-6196"
@@ -890,14 +1042,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NWT",
             3
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0503室",
+                "address": "10051臺北市中正區濟南路1段3-1號0503室",
                 "fax": "02-2358-6245",
                 "name": "國會研究室",
                 "phone": "02-2358-6241"
@@ -943,7 +1102,14 @@
     {
         "ad": 9,
         "caucus": "PFP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "aborigine",
             "highland"
@@ -990,14 +1156,21 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "aborigine",
             "lowland"
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0807室",
+                "address": "10051臺北市中正區濟南路1段3-1號0807室",
                 "fax": "02-2358-8180",
                 "name": "國會研究室",
                 "phone": "02-2358-8176"
@@ -1014,12 +1187,18 @@
         ],
         "elected_party": "中國國民黨",
         "experience": [
-            "台東縣延平、海端、蘭嶼、長濱、成功等鄉鎮衛生所主任兼醫師",
-            "台東衛生局醫政課長",
-            "台東基督教醫院主治醫師",
-            "第3屆國大代表",
             "第5、6、7、8屆立法委員",
-            "立法院國民黨團書記長"
+            "第3屆國大代表",
+            "台東基督教醫院主治醫師",
+            "台東衛生局課長",
+            "台東縣延平、海端、蘭嶼、長濱、成功等鄉鎮衛生所主任兼醫師",
+            "中華兩岸少數民族知識經濟交流協會理事長",
+            "立法院厚生會會長",
+            "東甯診所院長",
+            "中華海峽兩岸醫療暨健康產業發展協會理事長",
+            "臺灣原住民企業人協會理事長",
+            "立法院國民黨團書記長",
+            "國民黨中常委"
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90082.jpg",
@@ -1037,12 +1216,32 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "外交及國防委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "KHH",
             3
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0208室",
+                "fax": "02-2358-6070",
+                "name": "國會研究室",
+                "phone": "02-2358-6066"
+            },
+            {
+                "address": "高雄市左營區新社仔路85號",
+                "fax": "07-343-9961",
+                "name": "高雄服務處",
+                "phone": "07-343-9960"
+            }
+        ],
         "education": [
             "美國奧克拉荷馬州州立大學環境工程碩士",
             "淡江大學化學工程系學士"
@@ -1054,11 +1253,10 @@
             "國家安全會議副秘書長",
             "總統府副秘書長",
             "行政院秘書長",
-            "立法院（第5屆）委員",
+            "立法院(第5屆)委員",
             "台中縣副縣長",
             "臺北市環保局長",
-            "澎湖縣政府機要秘書",
-            "工研院副工程師"
+            "澎湖縣政府機要秘書"
         ],
         "gender": "女",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90086.jpg",
@@ -1076,17 +1274,30 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "HUA",
             0
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區青島東路10號3503室",
+                "address": "10051臺北市中正區濟南路1段3-1號0305室",
                 "fax": "02-2358-6180",
                 "name": "國會研究室",
                 "phone": "02-2358-6176"
+            },
+            {
+                "address": "花蓮縣花蓮市中山路123號",
+                "fax": "03-832-5008",
+                "name": "花蓮服務處",
+                "phone": "03-834-5353"
             }
         ],
         "education": [
@@ -1121,24 +1332,43 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "YUN",
             1
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0405室",
+                "fax": "02-2358-6880",
+                "name": "國會研究室",
+                "phone": "02-2358-6876"
+            },
+            {
+                "address": "632雲林縣虎尾鎮公安里水源路9巷11號",
+                "fax": "05-632-5505",
+                "name": "虎尾服務處",
+                "phone": "05-633-0021"
+            }
+        ],
         "education": [
-            "北港南陽國小",
-            "北港初級中學",
+            "雲林縣北港鎮南陽國小",
+            "雲林縣北港鎮北港初中",
             "臺北市立士林商業職業學校畢業"
         ],
         "elected_party": "民主進步黨",
         "experience": [
-            "第3屆國民大會代表",
-            "行政院顧問",
-            "第5屆立法委員",
-            "立法院第5屆第4會期預算及決算委員會召集委員",
-            "雲林縣第15、16屆縣長"
+            "國民大會代表(1996-2000)",
+            "立法委員(2002-2005)",
+            "雲林縣長(2005-2014)",
+            "立法委員(2016-)"
         ],
         "gender": "女",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90110.jpg",
@@ -1156,14 +1386,21 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "aborigine",
             "highland"
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0203室",
+                "address": "10051臺北市中正區濟南路1段3-1號0203室",
                 "fax": "02-2358-8250",
                 "name": "國會研究室",
                 "phone": "02-2358-8246"
@@ -1200,11 +1437,25 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號2101室",
+                "fax": "02-2358-8260",
+                "name": "國會研究室",
+                "phone": "02-2358-8258"
+            }
+        ],
         "education": [
             "國立岡山高中畢業"
         ],
@@ -1213,7 +1464,10 @@
             "中華民國身心障礙聯盟秘書長",
             "台灣社會心理復健協會理事長",
             "台灣社會福利總盟常務理事",
+            "伊甸社會福利基金會顧問",
+            "蘋果日報慈善基金會常務董事",
             "新境界文教基金會董事",
+            "臺灣少年權益及福利促進聯盟顧問",
             "第6屆立法委員"
         ],
         "gender": "男",
@@ -1232,11 +1486,25 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號2117室",
+                "fax": "02-2358-6415",
+                "name": "國會研究室",
+                "phone": "02-2358-6411"
+            }
+        ],
         "education": [
             "哈佛大學法學碩士",
             "臺灣大學法律研究所碩士",
@@ -1266,14 +1534,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NWT",
             4
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0902室",
+                "address": "10051臺北市中正區濟南路1段3-1號0902室",
                 "fax": "02-2358-6859",
                 "name": "國會研究室",
                 "phone": "02-2358-6858"
@@ -1332,14 +1607,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "KHH",
             6
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號2106室",
+                "address": "10051臺北市中正區濟南路1段3-1號0306室",
                 "fax": "02-2358-6090",
                 "name": "國會研究室",
                 "phone": "02-2358-6086"
@@ -1357,7 +1639,8 @@
         ],
         "elected_party": "民主進步黨",
         "experience": [
-            "蔡英文主席特別助理第6、7屆立法委員（交通委員會召委）",
+            "蔡英文主席特別助理",
+            "第6、8屆立法委員（交通委員會召委）",
             "第6屆高雄市議員（民進黨團總召）",
             "第3屆國大代表（修憲審查小組召集人）",
             "高雄縣政府新聞室主任",
@@ -1385,12 +1668,32 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "司法及法制委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "HSQ",
             0
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0202室",
+                "fax": "02-2358-6915",
+                "name": "國會研究室",
+                "phone": "02-2358-6911"
+            },
+            {
+                "address": "新竹縣竹北市縣政二路101號",
+                "fax": "03-6573082",
+                "name": "新竹縣服務處",
+                "phone": "03-657-3081"
+            }
+        ],
         "education": [
             "國立中央大學中文系畢業"
         ],
@@ -1417,7 +1720,14 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NWT",
             2
@@ -1431,8 +1741,15 @@
             },
             {
                 "address": "新北市蘆洲區長興路25號",
+                "fax": "02-2281-7980",
                 "name": "蘆洲服務處",
-                "phone": "02-8285-6412;02-2281-7980"
+                "phone": "02-8285-6412"
+            },
+            {
+                "address": "臺北縣五股鄉民義路一段37號",
+                "fax": "02-2291-2355",
+                "name": "五服服務處",
+                "phone": "02-2291-2995"
             }
         ],
         "education": [],
@@ -1456,11 +1773,25 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "財政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號2106室",
+                "fax": "02-2358-6120",
+                "name": "國會研究室",
+                "phone": "02-2358-6118"
+            }
+        ],
         "education": [
             "省立台北師專啟智教育組畢業",
             "國立中興大學法律系法學士",
@@ -1491,19 +1822,44 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號2103室",
+                "fax": "02-2358-6974",
+                "name": "國會研究室",
+                "phone": "02-2358-6970"
+            },
+            {
+                "fax": "05-633-3318",
+                "name": "青埔服務處",
+                "phone": "05-632-0629"
+            }
+        ],
         "education": [
-            "國立臺灣師範大學運動休閒管理研究所畢",
-            "國立虎尾科技大學畢"
+            "雲林縣馬光國小",
+            "雲林縣土庫國中",
+            "臺中曉明女中",
+            "國立虎尾科技大學工業管理系",
+            "國立臺灣師範大學運動休閒管理研究所"
         ],
         "elected_party": "中國國民黨",
         "experience": [
-            "第6屆立法委員",
-            "行政院雲嘉南辦公室執行長"
+            "行政院雲嘉南區聯合服務中心執行長",
+            "雲林縣救國團主任委員",
+            "雲林縣青埔教育基金會董事長",
+            "中華民國第6屆立法委員",
+            "雲林縣日頭花姐妹協會理事長"
         ],
         "gender": "女",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90054.jpg",
@@ -1521,22 +1877,54 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "aborigine",
             "lowland"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路1號3403室",
+                "fax": "02-2358-8280",
+                "name": "國會研究室",
+                "phone": "02-2358-8276"
+            },
+            {
+                "address": "臺東縣臺東市傳廣路263號",
+                "fax": "089--360-181",
+                "name": "臺東服務處",
+                "phone": "089-360-612"
+            },
+            {
+                "address": "桃園市大溪區介壽路756號",
+                "fax": "03-380-141",
+                "name": "桃園服務處",
+                "phone": "03-380-5541"
+            }
+        ],
         "education": [
-            "美國伊利諾大學香檳校園音樂系碩士班畢業"
+            "美國伊利諾大學香檳校園音樂系博士班畢業",
+            "美國伊利諾大學香檳校園音樂系碩士班畢業",
+            "美國舊金山音樂學院學士畢業",
+            "美國夏威夷楊百翰大學學士肄業",
+            "高雄文藻外大學畢業"
         ],
         "elected_party": "民主進步黨",
         "experience": [
-            "第6屆立法委員",
-            "第7屆立法委員",
-            "外交及國防委員會召委",
-            "社會福利暨衛生環境委員會召委",
-            "民進黨立法院黨團書記長"
+            "第6屆平地原住民立法委員",
+            "第7屆不分區立法委員",
+            "第7屆第4會期社會福利及衛生福利環境委員會召集委員",
+            "第7屆第6會期外交國防委員會召委",
+            "立法院民主進步黨團團書記長",
+            "民主進步黨中央常務委員",
+            "美國伊俐諾大學香檳校園教學助理"
         ],
         "gender": "女",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90069.jpg",
@@ -1554,14 +1942,21 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TPE",
             7
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0502室",
+                "address": "10051臺北市中正區濟南路1段3-1號0502室",
                 "fax": "02-2358-6994",
                 "name": "國會研究室",
                 "phone": "02-2358-6990"
@@ -1609,7 +2004,14 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TNN",
             2
@@ -1668,14 +2070,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "KHH",
             5
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0901室",
+                "address": "10051臺北市中正區濟南路1段3-1號0901室",
                 "fax": "02-2358-8150",
                 "name": "國會研究室",
                 "phone": "02-2358-8146"
@@ -1683,13 +2092,14 @@
             {
                 "address": "高雄市三民區博愛一路183號",
                 "fax": "07-313-5797",
-                "name": "高雄服務處",
+                "name": "三民服務處",
                 "phone": "07-313-7816"
             },
             {
                 "address": "高雄市鼓山區九如四路1097號",
+                "fax": "07-521-5237",
                 "name": "內惟服務處",
-                "phone": "07-533-0227;07-521-5237"
+                "phone": "07-533-0227"
             }
         ],
         "education": [
@@ -1723,14 +2133,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TXG",
             1
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區青島東路1號3103室",
+                "address": "10051臺北市中正區濟南路1段3-1號12樓",
                 "fax": "02-2358-6155",
                 "name": "國會研究室",
                 "phone": "02-2358-6151"
@@ -1743,8 +2160,9 @@
             },
             {
                 "address": "臺中市大甲區文武路274號",
+                "fax": "04-2688-9123",
                 "name": "大甲服務處",
-                "phone": "04-2688-7555;04-2688-9123"
+                "phone": "04-2688-7555"
             }
         ],
         "education": [
@@ -1782,25 +2200,58 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TAO",
             1
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0608室",
+                "fax": "02-2358-6670",
+                "name": "國會研究室",
+                "phone": "02-2358-6666"
+            },
+            {
+                "address": "桃園市桃園區自強路224號",
+                "fax": "03-3352-611",
+                "name": "桃園區服務處",
+                "phone": "03-3357-255"
+            },
+            {
+                "address": "桃園市蘆竹區南竹路四段37號",
+                "fax": "03-3232-370",
+                "name": "蘆竹區服務處",
+                "phone": "03-3231-830"
+            },
+            {
+                "address": "桃園市龜山區萬壽路二段1050號",
+                "fax": "03-3909-015",
+                "name": "龜山服務處",
+                "phone": "03-3509-005"
+            }
+        ],
         "education": [
-            "國立臺灣大學土木工程學系畢業",
-            "私立延平中學高中部",
-            "私立延平中學國中部",
-            "臺北市福星國民小學"
+            "臺北市立福星國民小學",
+            "私立延平中學直升部",
+            "國立臺灣大學土木工程學系畢業"
         ],
         "elected_party": "民主進步黨",
         "experience": [
+            "高雄市政府工務局機要秘書",
+            "謝長廷高雄市長競選總部發言人兼政務部主任",
+            "民主進步黨文宣部主任",
             "第6屆立法委員",
-            "民主進步黨發言人",
-            "民主進步黨文化宣傳部主任",
-            "組織推廣部主任",
-            "高雄市政府工務局機要秘書"
+            "民主進步黨網路部主任",
+            "民主進步黨組織部主任",
+            "民主進步黨發言人"
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90096.jpg",
@@ -1818,14 +2269,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "外交及國防委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TNN",
             3
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號1101室",
+                "address": "10051臺北市中正區濟南路1段3-1號1101室",
                 "fax": "02-2358-6755",
                 "name": "國會研究室",
                 "phone": "02-2358-6761"
@@ -1876,14 +2334,21 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "aborigine",
             "highland"
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號1005室",
+                "address": "10051臺北市中正區濟南路1段3-1號1005室",
                 "fax": "02-2358-6685",
                 "name": "國會研究室",
                 "phone": "02-2358-6681"
@@ -1929,14 +2394,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "PIF",
             1
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0708室",
+                "address": "10051臺北市中正區濟南路1段3-1號0708室",
                 "fax": "02-2358-6640",
                 "name": "國會研究室",
                 "phone": "02-2358-6636"
@@ -1977,14 +2449,21 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TPE",
             6
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號2112室",
+                "address": "10051臺北市中正區濟南路1段3-1號2112室",
                 "fax": "02-2358-6905",
                 "name": "國會研究室",
                 "phone": "02-2358-6901"
@@ -2017,14 +2496,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "YUN",
             2
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0602室",
+                "address": "10051臺北市中正區濟南路1段3-1號0602室",
                 "fax": "02-2358-8089",
                 "name": "國會研究室",
                 "phone": "02-2358-8088"
@@ -2071,7 +2557,14 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "外交及國防委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NAN",
             1
@@ -2128,7 +2621,14 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
@@ -2167,14 +2667,21 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "CHA",
             1
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0501室",
+                "address": "10051臺北市中正區濟南路1段3-1號0501室",
                 "fax": "02-2358-6185",
                 "name": "國會研究室",
                 "phone": "02-2358-6181"
@@ -2228,13 +2735,20 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0402室",
+                "address": "10051臺北市中正區濟南路1段3-1號0402室",
                 "fax": "02-2358-8113",
                 "name": "國會研究室",
                 "phone": "02-2358-8112"
@@ -2267,14 +2781,21 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "外交及國防委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TXG",
             8
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號2102室",
+                "address": "10051臺北市中正區濟南路1段3-1號2102室",
                 "fax": "02-2358-6730",
                 "name": "國會研究室",
                 "phone": "02-2358-6726"
@@ -2295,7 +2816,7 @@
         "education": [
             "美國南卡羅萊納大學國際關係博士",
             "美國匹茲堡大學國際事務碩士",
-            "國立政治大學外交學系學士",
+            "國立政治大學外交學系",
             "台中一中",
             "豐南國中",
             "瑞穗國小"
@@ -2304,11 +2825,11 @@
         "experience": [
             "中華民國第8屆立法委員",
             "行政院新聞局局長",
-            "公民監督國會聯盟、財經立法促進院評選為立法院績優委員",
-            "立法院與新加坡國會議員友好協會會長",
             "東吳大學政治系專任副教授",
+            "立法院中華民國與新加坡國會議員友好協會會長",
             "台灣經濟研究院國際處代處長",
-            "台灣新世代關懷協會理事長"
+            "台灣新世代關懷協會理事長",
+            "公民監督國會聯盟、財經立法促進院評選為立法院績優委員"
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90009.jpg",
@@ -2326,14 +2847,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TXG",
             7
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0301室",
+                "address": "10051臺北市中正區濟南路1段3-1號0301室",
                 "fax": "02-2358-8390",
                 "name": "國會研究室",
                 "phone": "02-2358-8388"
@@ -2352,11 +2880,11 @@
             }
         ],
         "education": [
-            "立法院第1、2、3、4、5、6屆立法委員",
-            "臺中市佛教會理事",
-            "臺中市世界聯合保護動物協會創會理事長",
-            "臺中市青年同心會總會長",
-            "中國時報、台灣時報、民眾日報記者"
+            "塗城國小",
+            "成功國中",
+            "臺中女中",
+            "國立成功大學",
+            "英國約克大學婦女研究碩士"
         ],
         "elected_party": "民主進步黨",
         "experience": [
@@ -2383,14 +2911,21 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "外交及國防委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TAO",
             5
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0905室",
+                "address": "10051臺北市中正區濟南路1段3-1號0903室",
                 "fax": "02-2358-6840",
                 "name": "國會研究室",
                 "phone": "02-2358-6836"
@@ -2444,20 +2979,27 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "CYI",
             0
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號1001室",
+                "address": "10051臺北市中正區濟南路1段3-1號1001室",
                 "fax": "02-2358-6545",
                 "name": "國會研究室",
                 "phone": "02-2358-6541"
             },
             {
-                "address": "600嘉義市共和路239號",
+                "address": "600嘉義市西區博愛路二段166號",
                 "fax": "05-277-9775",
                 "name": "嘉義服務處",
                 "phone": "05-271-9595"
@@ -2490,14 +3032,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "KHH",
             2
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區青島東路1號3406室",
+                "address": "10051臺北市中正區濟南路1段3-1號0607室",
                 "fax": "02-2358-6565",
                 "name": "國會研究室",
                 "phone": "02-2358-6561"
@@ -2510,8 +3059,14 @@
             },
             {
                 "address": "高雄市茄萣區信義路三段138號",
+                "fax": "07-690-2598",
                 "name": "茄萣服務處",
-                "phone": "07-690-1234;07-690-2598"
+                "phone": "07-690-1234"
+            },
+            {
+                "address": "高雄市彌陀區鹽埕大路75號",
+                "name": "彌陀聯絡處",
+                "phone": "07-623-0655"
             },
             {
                 "address": "高雄市路竹區國昌路73號",
@@ -2520,8 +3075,15 @@
                 "phone": "07-607-1999"
             },
             {
+                "address": "高雄市路竹區國昌路82號",
+                "fax": "07-697-8588",
                 "name": "路竹區邱志偉立委與張文瑞議員聯合服務處",
-                "phone": "07-696-0525;高雄市路竹區國昌路82號"
+                "phone": "07-696-0525"
+            },
+            {
+                "fax": "07-610-3338",
+                "name": "梓官服務處",
+                "phone": "07-610-3338"
             }
         ],
         "education": [
@@ -2557,14 +3119,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TPE",
             2
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號1102室",
+                "address": "10051臺北市中正區濟南路1段3-1號1102室",
                 "fax": "02-2358-6040",
                 "name": "國會研究室",
                 "phone": "02-2358-6758"
@@ -2602,14 +3171,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "KHH",
             8
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0703室",
+                "address": "10051臺北市中正區濟南路1段3-1號0703室",
                 "fax": "02-2358-6625",
                 "name": "國會研究室",
                 "phone": "02-2358-8151"
@@ -2658,22 +3234,30 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
-            "LJF",
+            "LIE",
             0
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號2117室",
+                "address": "10051臺北市中正區濟南路1段3-1號2107室",
                 "fax": "02-2358-6635",
                 "name": "國會研究室",
                 "phone": "02-2358-6631"
             },
             {
-                "address": "連江縣南竿鄉介壽村237號",
-                "name": "馬祖服務處",
-                "phone": "0836-25018"
+                "address": "209連江縣南竿鄉介壽村237號",
+                "fax": "0836-25018",
+                "name": "南竿服務處",
+                "phone": "0836-25016"
             }
         ],
         "education": [
@@ -2705,14 +3289,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "ILA",
             0
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0408室",
+                "address": "10051臺北市中正區濟南路1段3-1號0408室",
                 "fax": "02-2358-6170",
                 "name": "國會研究室",
                 "phone": "02-2358-6220"
@@ -2763,14 +3354,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "PEN",
             0
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0205室",
+                "address": "10051臺北市中正區濟南路1段3-1號0205室",
                 "fax": "02-2358-6740",
                 "name": "國會研究室",
                 "phone": "02-2358-6736"
@@ -2807,14 +3405,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "KHH",
             7
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0505室",
+                "address": "10051臺北市中正區濟南路1段3-1號1103室",
                 "fax": "02-2358-6580",
                 "name": "國會研究室",
                 "phone": "02-2358-6576"
@@ -2858,14 +3463,21 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TTT",
             0
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號2108室",
+                "address": "10051臺北市中正區濟南路1段3-1號0303",
                 "fax": "02-2358-6290",
                 "name": "國會研究室",
                 "phone": "02-2358-6286"
@@ -2875,11 +3487,6 @@
                 "fax": "089-310-879",
                 "name": "臺東服務處",
                 "phone": "089-310-979"
-            },
-            {
-                "address": "臺東縣成功鎮民權路30號",
-                "name": "東海岸服務處",
-                "phone": "089-851-018;089-851-018"
             }
         ],
         "education": [
@@ -2912,14 +3519,21 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "aborigine",
             "lowland"
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0307室",
+                "address": "10051臺北市中正區濟南路1段3-1號0307室",
                 "fax": "02-2358-6835",
                 "name": "國會研究室",
                 "phone": "02-2358-6831"
@@ -2960,7 +3574,14 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
@@ -3001,7 +3622,14 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TXG",
             2
@@ -3033,17 +3661,19 @@
             }
         ],
         "education": [
-            "建國工專機械工程科畢業",
+            "建國工專機械工程科",
             "美國舊金山多明尼肯大學企管碩士",
             "中華大學行政管理研究所碩士"
         ],
         "elected_party": "中國國民黨",
         "experience": [
-            "第8屆立法委員",
-            "臺中縣議會第14屆議長特別助理",
-            "任務型國大代表",
+            "臺中縣議會議長特別助理",
             "立法委員顏清標國會助理",
-            "鎮瀾兒童家園義工"
+            "任務型國大代表",
+            "大甲鎮瀾宮董事長顏清標特助",
+            "鎮瀾兒童家園義工",
+            "財團法人祥和文教基金會董事",
+            "廣亮慈善會永久會員"
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90106.jpg",
@@ -3061,13 +3691,20 @@
     {
         "ad": 9,
         "caucus": "PFP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號507室",
+                "address": "10051臺北市中正區濟南路1段3-1號0507室",
                 "fax": "02-2358-6800",
                 "name": "國會研究室",
                 "phone": "02-2358-6798"
@@ -3101,17 +3738,24 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": true,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TXG",
             6
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號2117室",
+                "address": "10051臺北市中正區濟南路1段3-1號0302室",
                 "fax": "02-2358-6850",
-                "name": "國會辦公室",
-                "phone": "02-2358-6849"
+                "name": "國會研究室",
+                "phone": "02-2358-6846"
             },
             {
                 "address": "403臺中市西區美村路一段632號B1",
@@ -3153,16 +3797,23 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "CHA",
             4
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號2109室",
+                "address": "10051臺北市中正區濟南路1段3-1號2109室",
                 "fax": "02-2358-6695",
-                "name": "國會辦公室",
+                "name": "國會研究室",
                 "phone": "02-2358-6691"
             },
             {
@@ -3170,6 +3821,12 @@
                 "fax": "04-835-3414",
                 "name": "員林服務處",
                 "phone": "04-832-8552"
+            },
+            {
+                "address": "彰化縣社頭鄉員集路二段247號18號",
+                "fax": "04-872-0411",
+                "name": "社頭服務處",
+                "phone": "04-872-5011"
             }
         ],
         "education": [
@@ -3206,17 +3863,42 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "外交及國防委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "MIA",
             2
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0805室",
+                "address": "10051臺北市中正區濟南路1段3-1號0802室",
                 "fax": "02-2358-6270",
-                "name": "國會辦公室",
+                "name": "國會研究室",
                 "phone": "02-2358-6266"
+            },
+            {
+                "address": "苗栗縣公館鄉玉泉村367號2樓",
+                "fax": "037-239-233",
+                "name": "公館服務處",
+                "phone": "037-223-566"
+            },
+            {
+                "address": "苗栗縣苗栗市縣府路70號",
+                "fax": "037-368-877",
+                "name": "苗栗服務處",
+                "phone": "037-368-811"
+            },
+            {
+                "address": "苗栗縣頭份鎮中山路292號",
+                "fax": "037-686-611",
+                "name": "頭份服務處",
+                "phone": "037-686-688"
             }
         ],
         "education": [
@@ -3249,16 +3931,23 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NAN",
             2
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0303室",
-                "fax": "02-2358-8050",
-                "name": "國會辦公室",
+                "address": "10051臺北市中正區濟南路1段3-1號0206室",
+                "fax": "02-2358-3572",
+                "name": "國會研究室",
                 "phone": "02-2358-8356"
             },
             {
@@ -3294,16 +3983,23 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "PIF",
             3
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號0702室",
-                "fax": "02-2358-6369",
-                "name": "國會辦公室",
+                "address": "10051臺北市中正區濟南路1段3-1號0702室",
+                "fax": "02-2358-6366",
+                "name": "國會研究室",
                 "phone": "02-2358-6368"
             },
             {
@@ -3311,6 +4007,17 @@
                 "fax": "08-833-9316",
                 "name": "東港服務處",
                 "phone": "08-833-7893"
+            },
+            {
+                "address": "946屏東縣恆春鎮北門路9號",
+                "fax": "08-889-9316",
+                "name": "恆春服務處",
+                "phone": "08-888-3893"
+            },
+            {
+                "address": "929屏東縣琉球鄉中正路331號",
+                "name": "琉球服務處",
+                "phone": "08-861-2347"
             }
         ],
         "education": [
@@ -3348,11 +4055,25 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路1號3309室",
+                "fax": "02-2358-6225",
+                "name": "國會研究室",
+                "phone": "02-2358-6222"
+            }
+        ],
         "education": [
             "美國北卡蘿萊納大學教堂山分校環境工程科博士(毒理)",
             "美國北卡蘿萊納大學教堂山分校碩士(環境工程科學)",
@@ -3388,11 +4109,25 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號2115室",
+                "fax": "02-2358-6050",
+                "name": "國會研究室",
+                "phone": "02-2358-6046"
+            }
+        ],
         "education": [
             "東海大學社會工作碩士",
             "政治大學社會學系學士",
@@ -3422,11 +4157,25 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0606室",
+                "fax": "02-2358-6330",
+                "name": "國會研究室",
+                "phone": "02-2358-6391"
+            }
+        ],
         "education": [
             "美國聖地牙哥國家大學公共行政管理碩士"
         ],
@@ -3453,13 +4202,20 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區青島東路1號203室",
+                "address": "10051臺北市中正區青島東路1號3203室",
                 "fax": "02-2358-6870",
                 "name": "國會研究室",
                 "phone": "02-2358-6866"
@@ -3494,11 +4250,25 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號2111室",
+                "fax": "02-2358-6525",
+                "name": "國會研究室",
+                "phone": "02-2358-6812"
+            }
+        ],
         "education": [
             "臺灣大學生物產業傳播暨發展學系博士"
         ],
@@ -3524,18 +4294,40 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0201室",
+                "fax": "02-2358-6035",
+                "name": "國會研究室",
+                "phone": "02-2358-6031"
+            },
+            {
+                "address": "89147花蓮縣玉里鎮樂合里12鄰39號",
+                "fax": "03-888-6446",
+                "name": "樂合服務處",
+                "phone": "03-888-6527"
+            }
+        ],
         "education": [
-            "東海大學社會學研究所碩士"
+            "臺中女中",
+            "東海大學外國語文學系",
+            "東海大學社會學系研究所碩士"
         ],
         "elected_party": "民主進步黨",
         "experience": [
             "桃園市政府原住民族行政局長",
-            "原住民族電視台新聞部製作人、副理、主播",
+            "原住民族電視台新聞部副理兼採訪中心組長、主播",
             "biz互動英語執行主編",
             "民視新聞部記者",
             "公共電視執行製作"
@@ -3556,20 +4348,35 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路10號3503室",
+                "fax": "02-2358-8015",
+                "name": "國會研究室",
+                "phone": "02-2358-8011"
+            }
+        ],
         "education": [
+            "倫敦大學亞非學院飲食人類學碩士",
             "臺灣大學經濟系學士"
         ],
         "elected_party": "民主進步黨",
         "experience": [
-            "倫敦大學亞非學院飲食人類學碩士班",
-            "生態綠股份有限公司董事長",
+            "生態綠(股)公司創辦人、董事長",
+            "Fairtrade Taiwan臺灣公平貿易推廣協會理事長",
             "社會企業發展聯盟理事",
-            "台灣公平貿易推廣協會理事長"
+            "綠色電商聯盟副理事長"
         ],
         "gender": "女",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90011.jpg",
@@ -3587,18 +4394,33 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路1號3111室",
+                "fax": "02-2358-8110",
+                "name": "國會研究室",
+                "phone": "02-2358-8106"
+            }
+        ],
         "education": [
+            "屏東縣內埔國民小學",
+            "屏東縣內埔國民中學",
             "私立美和高級中學"
         ],
         "elected_party": "民主進步黨",
         "experience": [
-            "台灣石油工會代表、常務監事",
-            "台灣勞工陣線執委",
+            "台灣勞工陣線執委、理事",
             "高雄市產業總工會理事長",
             "全國產業總工會理事長",
             "高雄市政府客家事務委員會主委",
@@ -3620,11 +4442,25 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0906室",
+                "fax": "02-2358-6785",
+                "name": "國會研究室",
+                "phone": "02-2358-6781"
+            }
+        ],
         "education": [
             "台大分子醫學研究所碩士",
             "中山醫學大學醫學研究所碩士"
@@ -3652,11 +4488,25 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0603室",
+                "fax": "02-2358-8185",
+                "name": "國會研究室",
+                "phone": "02-2358-8181"
+            }
+        ],
         "education": [
             "國立臺灣大學法律學系畢業"
         ],
@@ -3682,11 +4532,25 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路10號3506室",
+                "fax": "02-2358-6715",
+                "name": "國會研究室",
+                "phone": "02-2358-6711"
+            }
+        ],
         "education": [
             "美國南加大教育心理學博士"
         ],
@@ -3712,11 +4576,25 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路1號3306室",
+                "fax": "02-2358-6380",
+                "name": "國會研究室",
+                "phone": "02-2358-6240"
+            }
+        ],
         "education": [
             "陽明大學醫學士",
             "微免所碩士",
@@ -3747,11 +4625,25 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0907室",
+                "fax": "02-2358-6650",
+                "name": "國會研究室",
+                "phone": "02-2358-6646"
+            }
+        ],
         "education": [
             "國立暨南國際大學非營利組織經營管理碩士",
             "建國科技大學美容系"
@@ -3779,19 +4671,41 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0406室",
+                "fax": "02-2358-6160",
+                "name": "國會研究室",
+                "phone": "02-2358-6161"
+            }
+        ],
         "education": [
+            "THNK 阿姆斯特丹創意領袖學院獎學金",
             "國立政治大學英語系"
         ],
         "elected_party": "中國國民黨",
         "experience": [
+            "Singularity University,奇點大學高階經理人計劃獎學金",
+            "行政院青年顧問團",
+            "教育廣播電台諮詢委員",
+            "教育部國教署諮詢委員",
+            "英國創意城市顧問Charles L:andry諮詢委員",
+            "PAN Asia Conference 2014 共同策展人",
+            "經濟部技術處 DOIT 青年創意平台顧問",
             "TEDxTaipei共同創辦人、策展人",
-            "大哉問公司董事長",
-            "行政院青年顧問團成員"
+            "TEDx 亞洲大使",
+            "大哉問股份有限公司創意人"
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90058.jpg",
@@ -3809,11 +4723,25 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路1號3405室",
+                "fax": "02-2358-8290",
+                "name": "國會研究室",
+                "phone": "02-2358-8286"
+            }
+        ],
         "education": [
             "臺北大學企業管理研究所博士"
         ],
@@ -3839,11 +4767,31 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路10號3505室",
+                "fax": "02-2358-6300",
+                "name": "國會研究室",
+                "phone": "02-2358-6299"
+            },
+            {
+                "address": "花蓮縣吉安鄉中山路三段121號",
+                "fax": "03-853-1365",
+                "name": "花蓮服務處",
+                "phone": "03-853-2215"
+            }
+        ],
         "education": [
             "中國文化大學"
         ],
@@ -3870,19 +4818,44 @@
     {
         "ad": 9,
         "caucus": "PFP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0207室",
+                "fax": "02-2358-6060",
+                "name": "國會研究室",
+                "phone": "02-2358-6056"
+            },
+            {
+                "name": "楠西服務處",
+                "phone": "06-575-1398"
+            },
+            {
+                "address": "臺南市永康區大灣東路23號",
+                "fax": "06-272-6256",
+                "name": "永康服務處",
+                "phone": "06-272-6156"
+            }
+        ],
         "education": [
-            "台南縣立官田國民中學畢業"
+            "臺南縣立官田國民中學畢業"
         ],
         "elected_party": "親民黨",
         "experience": [
-            "臺南市議長李全教服務處主任",
-            "臺南市南化關懷據點主任",
-            "臺南市方圓文教發展協會名譽理事長",
+            "中華民國婦女聯合會主任委員13年",
+            "臺南市議會議長李全教辦公室主任",
+            "臺南縣議會議長周五六服務處主任",
+            "立法委員周五六服務處主任",
             "農民權益保障代表人"
         ],
         "gender": "女",
@@ -3901,11 +4874,25 @@
     {
         "ad": 9,
         "caucus": "NPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號1008室",
+                "fax": "02-2358-8555",
+                "name": "國會研究室",
+                "phone": "02-2358-8551"
+            }
+        ],
         "education": [
             "臺北商專國貿科",
             "世新大學新聞系"
@@ -3933,11 +4920,25 @@
     {
         "ad": 9,
         "caucus": "NPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "經濟委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "proportional"
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路1號3406室",
+                "fax": "02-2358-6235",
+                "name": "國會研究室",
+                "phone": "02-2358-6233"
+            }
+        ],
         "education": [
             "建國中學",
             "國立臺灣大學政治學系",
@@ -3970,24 +4971,41 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TPE",
             1
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路1號3108室",
+                "fax": "02-2358-8135",
+                "name": "國會研究室",
+                "phone": "02-2358-8131"
+            },
+            {
+                "address": "臺北市北投區承德路七段196號",
+                "fax": "02-2820-3500",
+                "name": "北投服務處",
+                "phone": "02-2820-5800"
+            }
+        ],
         "education": [
             "臺灣大學政治學研究所碩士",
             "輔仁大學西語系、日語系文學雙學士"
         ],
         "elected_party": "民主進步黨",
         "experience": [
-            "第10、11、12屆臺北市議員",
+            "臺北市議員(第10、11、12屆)",
             "臺北市議會民進黨團總召集人",
-            "臺北市議會教育文化、財政建設、工務委員會召集人",
-            "民進黨中常委、中執委、中評委",
-            "美國國務院政治菁英領袖計畫台灣政界代表",
-            "媒體評鑑臺北市議員問政表現民進黨第一名、士林北投第一名"
+            "民進黨中常委、中執委、中評委"
         ],
         "gender": "女",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90015.jpg",
@@ -4005,18 +5023,34 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TPE",
             3
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路1號3206室",
+                "fax": "02-2358-8270",
+                "name": "國會研究室",
+                "phone": "02-2358-8268"
+            },
+            {
+                "address": "臺北市肿山區新生北路二段127巷8號",
+                "fax": "02-2500-6519",
+                "name": "中山服務處"
+            }
+        ],
         "education": [
             "美國賓夕法尼亞大學法學院法律博士",
-            "美國賓夕法尼亞大學法學院法學碩士",
-            "國立政治大學法律系、外交系雙學士",
-            "臺北市立建國高級中學",
-            "國立師大附中國中部"
+            "國立政治大學法律系、外交系雙學士"
         ],
         "elected_party": "中國國民黨",
         "experience": [
@@ -4039,27 +5073,46 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TPE",
             4
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號2119室",
+                "fax": "02-2358-6925",
+                "name": "國會研究室",
+                "phone": "02-2358-6281"
+            },
+            {
+                "address": "臺北市南港區研究院路二段70巷10弄8號",
+                "fax": "02-2651-1941",
+                "name": "南港服務處",
+                "phone": "02-2783-4987"
+            },
+            {
+                "address": "臺北市內湖區內湖路一段737巷27號2樓",
+                "fax": "02-2798-6766",
+                "name": "內湖服務處",
+                "phone": "02-2798-9288"
+            }
+        ],
         "education": [
-            "南港國小",
-            "誠正國中",
-            "靜修女中",
             "美國加州爾灣大學經濟系畢業"
         ],
         "elected_party": "中國國民黨",
         "experience": [
-            "美國斐柏坦大學企業管理研究所碩士班研究",
-            "南港區體育會理事長",
-            "臺北市環保義工大隊顧問",
-            "婦女政策基金會董事長",
-            "中華民國新住民女性關懷協會理事長",
-            "中國國民黨組織發展委員會婦女部主任",
-            "臺北市議會第8、9、10、11、12屆市議員"
+            "臺北市議會第8、9、10、11、12屆市議員",
+            "青溪婦聯會南港支分會主任委員",
+            "南港區體育會理事長"
         ],
         "gender": "女",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90022.jpg",
@@ -4077,12 +5130,26 @@
     {
         "ad": 9,
         "caucus": "NPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "外交及國防委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TPE",
             5
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0803室",
+                "fax": "02-2358-6125",
+                "name": "國會研究室",
+                "phone": "02-2358-6121"
+            }
+        ],
         "education": [
             "國立台北大學企業管理學系學士"
         ],
@@ -4094,9 +5161,7 @@
             "國際特赦組織台灣分會理事長",
             "行政院二二八基金會董事",
             "獨立音樂協會理事長",
-            "曾獲金曲獎、總統文化獎",
-            "第16、18屆金曲獎評審",
-            "三立「超級紅人榜」評審"
+            "曾獲金曲獎、總統文化獎"
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90030.jpg",
@@ -4114,12 +5179,26 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "外交及國防委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NWT",
             1
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0805室",
+                "fax": "02-2358-6530",
+                "name": "國會研究室",
+                "phone": "02-2358-6526"
+            }
+        ],
         "education": [
             "淡水國小",
             "聖心女中",
@@ -4150,13 +5229,40 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NWT",
             5
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號1007室",
+                "fax": "02-2358-6195",
+                "name": "國會研究室",
+                "phone": "02-2358-6191"
+            },
+            {
+                "address": "238新北市樹林區大安路499號",
+                "fax": "02-2684-2533",
+                "name": "樹林服務處",
+                "phone": "02-2684-2522"
+            },
+            {
+                "address": "239新北市鶯歌區文化路175號",
+                "fax": "02-2678-2268",
+                "name": "鶯歌服務處",
+                "phone": "02-2678-3368"
+            }
+        ],
         "education": [
+            "美國賓州大學法律博士（SJD）候選人",
             "美國賓州大學法律碩士(LLM)",
             "美國波士頓大學法律碩士(LLM)",
             "台大法律系司法組畢業",
@@ -4165,7 +5271,6 @@
         "elected_party": "民主進步黨",
         "experience": [
             "超越基金會執行長",
-            "美國賓州大學法律博士（SJD）候選人",
             "2004年總統大選律師後援會總聯絡人、驗票律師團律師",
             "臺北縣偏鄉法律咨詢服務義務律師",
             "萬國法律事務所律師",
@@ -4187,12 +5292,26 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NWT",
             6
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路1號3305室",
+                "fax": "02-2358-8070",
+                "name": "國會研究室",
+                "phone": "02-2358-8066"
+            }
+        ],
         "education": [
             "東吳大學政治系學士",
             "國立臺北教育大學教育碩士"
@@ -4225,12 +5344,31 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "外交及國防委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NWT",
             7
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0506室",
+                "fax": "02-2358-6875",
+                "name": "國會研究室",
+                "phone": "02-2358-6871"
+            },
+            {
+                "address": "220新北市板橋市民安街32號",
+                "fax": "02-2962-9390",
+                "name": "板橋服務處"
+            }
+        ],
         "education": [
             "美國加州大學洛杉磯分校(UCLA)政治學博士",
             "國立政治大學外交學系學士"
@@ -4263,12 +5401,32 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NWT",
             8
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號2123室",
+                "fax": "02-2358-8200",
+                "name": "國會研究室",
+                "phone": "02-2358-8199"
+            },
+            {
+                "address": "新北市中和區中和路44號2樓",
+                "fax": "02-2249-7999",
+                "name": "中和服務處",
+                "phone": "02-2249-7899"
+            }
+        ],
         "education": [
             "中和國小",
             "海山國中",
@@ -4306,12 +5464,38 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NWT",
             10
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0605室",
+                "fax": "02-2358-6320",
+                "name": "國會研究室",
+                "phone": "02-2358-6316"
+            },
+            {
+                "address": "新店市土城區金城路二段172號",
+                "fax": "02-2270-0802",
+                "name": "土城服務處",
+                "phone": "02-2270-1580"
+            },
+            {
+                "address": "新北市三峽區中正路一段218號",
+                "fax": "02-8671-6968",
+                "name": "三峽服務處",
+                "phone": "02-2673-2636"
+            }
+        ],
         "education": [
             "德霖技術學院畢"
         ],
@@ -4345,12 +5529,32 @@
     {
         "ad": 9,
         "caucus": "NPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "NWT",
             12
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0905室",
+                "fax": "02-2358-6910",
+                "name": "國會研究室",
+                "phone": "02-2358-6916"
+            },
+            {
+                "address": "221新北市汐止區大同路二段387號",
+                "fax": "02-2643-1266",
+                "name": "汐止服務處",
+                "phone": "02-2643-1123"
+            }
+        ],
         "education": [
             "臺灣大學法律系學士",
             "美國康乃爾大學法學博士"
@@ -4380,12 +5584,26 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "財政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TAO",
             2
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0601室",
+                "fax": "02-2358-6140",
+                "name": "國會研究室",
+                "phone": "02-2358-6136"
+            }
+        ],
         "education": [
             "萬能科技大學學士畢業",
             "國立新竹高商"
@@ -4395,7 +5613,7 @@
             "中央大學EMBA企管碩士班",
             "國家地政士特考及格",
             "桃園市議會第1屆市議員",
-            "現任民主進步黨桃園市黨部主任委員",
+            "民主進步黨桃園市黨部主任委員",
             "桃園縣議會第16、17屆議員",
             "桃園市陳姓宗親會副會長",
             "桃園市賴姓宗親會副會長",
@@ -4418,21 +5636,30 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TAO",
             6
         ],
         "contacts": [
             {
+                "address": "10051臺北市中正區濟南路1段3-1號1002室",
+                "fax": "02-2358-6900",
+                "name": "國會研究室",
+                "phone": "02-2358-6896"
+            },
+            {
                 "address": "334桃園市八德區永福西街38號",
                 "fax": "03-3617-569",
                 "name": "八德服務處",
                 "phone": "03-3661-613"
-            },
-            {
-                "address": "10051臺北市中正區濟南路一段3-1號1002室",
-                "name": "國會研究室"
             }
         ],
         "education": [
@@ -4461,12 +5688,26 @@
     {
         "ad": 9,
         "caucus": "NPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TXG",
             3
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0808室",
+                "fax": "02-2358-6585",
+                "name": "國會研究室",
+                "phone": "02-2358-6581"
+            }
+        ],
         "education": [
             "后里區內埔國小",
             "臺中市后里國中",
@@ -4497,12 +5738,25 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TXG",
             4
         ],
         "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路1號3402室",
+                "fax": "02-2358-8285",
+                "name": "國會研究室",
+                "phone": "02-2358-8282"
+            },
             {
                 "fax": "04-2708-9803",
                 "name": "台中服務處",
@@ -4540,20 +5794,27 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "交通委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TNN",
             4
         ],
         "contacts": [
             {
-                "address": "10051臺北市中正區濟南路一段3-1號1006室",
+                "address": "10051臺北市中正區濟南路1段3-1號1006室",
                 "fax": "02-2358-6935",
                 "name": "國會研究室",
                 "phone": "02-2358-6931"
             },
             {
-                "address": "701臺南市東區凱施路225號",
+                "address": "701臺南市東區凱琁路225號",
                 "fax": "06-2091-150",
                 "name": "東區服務處",
                 "phone": "06-2091-120"
@@ -4595,25 +5856,53 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "外交及國防委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "TNN",
             5
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路1號3205室",
+                "fax": "02-2358-8215",
+                "name": "國會研究室",
+                "phone": "02-2358-8211"
+            },
+            {
+                "address": "710臺南市永康區永大路一段259號(永大路及大灣東路口)",
+                "fax": "06-2739-817",
+                "name": "永康服務處",
+                "phone": "06-2739-217"
+            },
+            {
+                "address": "711臺南市歸仁區中山路三段129號",
+                "fax": "06-338-7412",
+                "name": "南關線服務處",
+                "phone": "06-330-2318~9"
+            }
+        ],
         "education": [
-            "國立成功大學管理學院高階管理碩士97級"
+            "成功大學外文系80級",
+            "成功大學管理學院高階管理碩士97級",
+            "長榮大學經營管理所博士班"
         ],
         "elected_party": "民主進步黨",
         "experience": [
-            "國立成功大學外文系80級",
-            "長榮大學經營管理所博士班",
             "臺南市議會第15、16屆議員",
             "台南直轄市第1屆市議員",
             "臺南市議會教育委員會召集人",
-            "民主進步黨第15、16屆中央執行委員",
             "長老教會松年學講師",
-            "臺南市教師會顧問"
+            "臺南市教師會顧問",
+            "臺南市教育產業工會顧問",
+            "關中虎慢速球聯盟理事長",
+            "電視台資深政論評論員"
         ],
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90003.jpg",
@@ -4631,12 +5920,38 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "KHH",
             9
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號2108室",
+                "fax": "02-2358-6280",
+                "name": "國會研究室",
+                "phone": "02-2358-6888"
+            },
+            {
+                "address": "高雄市小港區宏平路577號",
+                "fax": "07-806-0737",
+                "name": "小港服務處",
+                "phone": "07-806-1685"
+            },
+            {
+                "address": "高雄市前鎮區永豐路106號",
+                "fax": "07-721-3391",
+                "name": "前鎮服務處",
+                "phone": "07-751-0005"
+            }
+        ],
         "education": [
             "臺灣大學國家發展研究所碩士"
         ],
@@ -4669,12 +5984,32 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "社會福利及衛生環境委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "CHA",
             2
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0407室",
+                "fax": "02-2358-6260",
+                "name": "國會研究室",
+                "phone": "02-2358-6256"
+            },
+            {
+                "address": "彰化縣彰化市中正路一段477號",
+                "fax": "04-728-1498",
+                "name": "彰化服務處",
+                "phone": "04-728-0980"
+            }
+        ],
         "education": [
             "靜宜大學外文系畢業"
         ],
@@ -4683,8 +6018,7 @@
             "彰化縣第16、17、18屆縣議員",
             "台灣關懷婦女協會理事長",
             "關懷文教基金會執行長",
-            "關懷廣播電台台長",
-            "民主進步黨全國黨代表"
+            "立法委員周清玉國會辦公室主任"
         ],
         "gender": "女",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90074.jpg",
@@ -4702,12 +6036,25 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "CHA",
             3
         ],
         "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0806室",
+                "fax": "02-2358-8320",
+                "name": "國會研究室",
+                "phone": "02-2358-8316"
+            },
             {
                 "address": "500彰化縣二林鎮豐田里二溪路一段207號",
                 "name": "二林服務處"
@@ -4737,12 +6084,41 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "司法及法制委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "CYQ",
             1
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0705室",
+                "fax": "02-2358-6385",
+                "name": "國會研究室",
+                "phone": "02-2358-6388"
+            },
+            {
+                "address": "嘉義縣朴子市安福里文明路1-11號",
+                "fax": "05-370-8519",
+                "name": "朴子服務處",
+                "phone": "05-370-8518"
+            },
+            {
+                "address": "嘉義縣布袋鎮上海路331-1號",
+                "name": "布袋服務處",
+                "phone": "05-347-6822"
+            },
+            {
+                "address": "嘉義縣水上鄉中正路192號",
+                "name": "水上服務處"
+            }
+        ],
         "education": [
             "嘉義市崇文國小",
             "水上鄉忠和國中",
@@ -4775,12 +6151,32 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "教育及文化委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "PIF",
             2
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0401室",
+                "fax": "02-2358-6630",
+                "name": "國會研究室",
+                "phone": "02-2358-6626"
+            },
+            {
+                "address": "90071屏東縣屏東市博愛路358號",
+                "fax": "08-733-6988",
+                "name": "屏東服務處",
+                "phone": "08-733-6599"
+            }
+        ],
         "education": [
             "國立屏東科技大學研究所",
             "國立臺灣大學歷史系",
@@ -4816,12 +6212,26 @@
     {
         "ad": 9,
         "caucus": "DPP",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "外交及國防委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
             "KEE",
             0
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號0505室",
+                "fax": "02-2358-6690",
+                "name": "國會研究室",
+                "phone": "02-2358-6686"
+            }
+        ],
         "education": [
             "淡江大學國際事務與戰略研究所碩士",
             "東海大學政治系學士"
@@ -4854,12 +6264,37 @@
     {
         "ad": 9,
         "caucus": "KMT",
-        "committees": [],
+        "committees": [
+            {
+                "ad": 9,
+                "chair": false,
+                "name": "內政委員會",
+                "session": 1
+            }
+        ],
         "constituency": [
-            "JME",
+            "KIN",
             0
         ],
-        "contacts": [],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路1號3103室",
+                "fax": "02-2358-6100",
+                "name": "國會研究室",
+                "phone": "02-2358-6099"
+            },
+            {
+                "address": "金門縣金城鎮民生路69號",
+                "fax": "082-375-155",
+                "name": "金門服務處",
+                "phone": "082-375-230"
+            },
+            {
+                "address": "臺南市永康區復國一路500號",
+                "name": "臺南服務處",
+                "phone": "06-233-5927"
+            }
+        ],
         "education": [
             "金門高中",
             "文化大學經濟系",
