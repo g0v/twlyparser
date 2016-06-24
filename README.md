@@ -43,12 +43,13 @@ $ npm run prepublish
 # update submodule
 $ git submodule init
 $ git submodule update
-$ cd data/twly/
-$ git pull origin master
+data/twly$ git pull origin master
 
 # generate JSON file, you can input which ad you want, below will use ad=8 for example
-$ cd twlyparser
 $ ./node_modules/.bin/lsc mly.ls ad 8 > data/mly-8.json
+
+# In begining of ad=9, source didn't provide uid of legislator, we maintain it ourself for temporary usage.
+$ ./node_modules/.bin/lsc mly_uid_by_ourself.ls > data/mly-9.json
 ```
 
 # Parsing from prepared text version of gazettes:
