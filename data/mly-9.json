@@ -43,6 +43,10 @@
         "in_office": true,
         "uid": 913,
         "party": "DPP",
+        "constituency": [
+            "KHH",
+            1
+        ],
         "education": "高雄市道明高中\n美國舊金山多明尼肯大學企管研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -130,6 +134,10 @@
         "in_office": true,
         "uid": 1744,
         "party": "DPP",
+        "constituency": [
+            "KHH",
+            2
+        ],
         "education": "淡江大學俄羅斯研究所法學碩士\n國立臺灣大學國家發展研究所法學碩士\n國立中山大學大陸研究所社會科學博士",
         "caucus": "DPP",
         "ads": [
@@ -190,6 +198,9 @@
         "in_office": true,
         "uid": 1819,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "臺中女中\n東海大學社會學系\n東海大學社會學系研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -235,6 +246,9 @@
         "in_office": true,
         "uid": 1859,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "東海大學社會學系",
         "caucus": "DPP",
         "ads": [
@@ -291,6 +305,9 @@
         "in_office": true,
         "uid": 898,
         "party": "PFP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "日本大學結構工程學博士\n黎明工專畢業",
         "caucus": "PFP",
         "ads": [
@@ -328,6 +345,9 @@
         "in_office": false,
         "uid": 708,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "崙背國小\n虎尾初中\n台中一中\n台大公共衛生學系學士、碩士\n哈佛大學醫管碩士\n美國北卡醫療經濟學博士",
         "caucus": "DPP",
         "ads": [
@@ -394,6 +414,10 @@
         "in_office": true,
         "uid": 1835,
         "party": "KMT",
+        "constituency": [
+            "TPE",
+            4
+        ],
         "education": "美國加州爾灣大學經濟系畢業",
         "caucus": "KMT",
         "ads": [
@@ -445,6 +469,10 @@
         "in_office": true,
         "uid": 1738,
         "party": "DPP",
+        "constituency": [
+            "CYI",
+            0
+        ],
         "education": "美國波士頓學院政治研究所碩士\n文化大學政治系學士\n嘉義市民族國小",
         "caucus": "DPP",
         "ads": [
@@ -497,6 +525,10 @@
         "in_office": true,
         "uid": 1327,
         "party": "DPP",
+        "constituency": [
+            "KHH",
+            6
+        ],
         "education": "輔大歷史系畢\n中山大學政治學碩士",
         "caucus": "DPP",
         "ads": [
@@ -556,6 +588,10 @@
         "in_office": true,
         "uid": 1837,
         "party": "DPP",
+        "constituency": [
+            "NWT",
+            1
+        ],
         "education": "淡水國小\n聖心女中\n文化大學政治學系\n文化大學政治研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -612,6 +648,10 @@
         "in_office": true,
         "uid": 1736,
         "party": "KMT",
+        "constituency": [
+            "TAO",
+            5
+        ],
         "education": "桃園創新技術學院企業管理科\n桃園市育達高中\n桃園市中壢國中\n桃園市中壢國小",
         "caucus": "KMT",
         "ads": [
@@ -670,6 +710,10 @@
         "in_office": true,
         "uid": 1842,
         "party": "DPP",
+        "constituency": [
+            "NWT",
+            10
+        ],
         "education": "德霖技術學院畢",
         "caucus": "DPP",
         "ads": [
@@ -721,6 +765,9 @@
         "in_office": true,
         "uid": 1814,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "美國北卡蘿萊納大學教堂山分校環境工程科博士(毒理)\n美國北卡蘿萊納大學教堂山分校碩士(環境工程科學)\n國立陽明大學醫學工程碩士\n國立清華大學化學工程系學士\n嘉義高中\n嘉義市民生國中\n嘉義市志航國小",
         "caucus": "DPP",
         "ads": [
@@ -772,6 +819,10 @@
         "in_office": true,
         "uid": 1833,
         "party": "DPP",
+        "constituency": [
+            "TPE",
+            1
+        ],
         "education": "臺灣大學政治學研究所碩士\n輔仁大學西語系、日語系文學雙學士",
         "caucus": "DPP",
         "ads": [
@@ -835,6 +886,10 @@
         "in_office": true,
         "uid": 1324,
         "party": "DPP",
+        "constituency": [
+            "NWT",
+            4
+        ],
         "education": "士林國小\n成功高中\n國立政治大學法律系法學組學士\n國立政治大學法律研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -888,6 +943,9 @@
         "in_office": true,
         "uid": 1321,
         "party": "KMT",
+        "constituency": [
+            "proportional"
+        ],
         "education": "哈佛大學法學碩士\n臺灣大學法律研究所碩士\n臺灣大學法律系畢業",
         "caucus": "KMT",
         "ads": [
@@ -941,6 +999,9 @@
         "in_office": true,
         "uid": 1817,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "國立臺灣大學法學士\n美國紐約大學(NYU)法學碩士",
         "caucus": "DPP",
         "ads": [
@@ -998,6 +1059,10 @@
         "in_office": true,
         "uid": 1718,
         "party": "DPP",
+        "constituency": [
+            "PIF",
+            1
+        ],
         "education": "屏東科技大學農業企業管理碩士專班畢",
         "caucus": "DPP",
         "ads": [
@@ -1045,6 +1110,9 @@
         "in_office": true,
         "uid": 695,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "國立中山大學公共事務管理碩士\n國立海洋大學食品科學系學士",
         "caucus": "DPP",
         "ads": [
@@ -1098,6 +1166,10 @@
         "in_office": true,
         "uid": 985,
         "party": "DPP",
+        "constituency": [
+            "YUN",
+            1
+        ],
         "education": "雲林縣北港鎮南陽國小\n雲林縣北港鎮北港初中\n臺北市立士林商業職業學校畢業",
         "caucus": "DPP",
         "ads": [
@@ -1162,6 +1234,10 @@
         "in_office": true,
         "uid": 1838,
         "party": "DPP",
+        "constituency": [
+            "NWT",
+            5
+        ],
         "education": "美國賓州大學法律博士（SJD）候選人\n美國賓州大學法律碩士(LLM)\n美國波士頓大學法律碩士(LLM)\n台大法律系司法組畢業\n北一女中",
         "caucus": "DPP",
         "ads": [
@@ -1213,6 +1289,10 @@
         "in_office": true,
         "uid": 1840,
         "party": "DPP",
+        "constituency": [
+            "NWT",
+            7
+        ],
         "education": "美國加州大學洛杉磯分校(UCLA)政治學博士\n國立政治大學外交學系學士",
         "caucus": "DPP",
         "ads": [
@@ -1264,6 +1344,10 @@
         "in_office": true,
         "uid": 879,
         "party": "KMT",
+        "constituency": [
+            "NWT",
+            11
+        ],
         "education": "美國華盛頓城市大學企業管理碩士\n致理商專(現升格科技大學)企業管理系畢",
         "caucus": "KMT",
         "ads": [
@@ -1332,6 +1416,10 @@
         "in_office": true,
         "uid": 1803,
         "party": "KMT",
+        "constituency": [
+            "TXG",
+            2
+        ],
         "education": "建國工專機械工程科\n美國舊金山多明尼肯大學企管碩士\n中華大學行政管理研究所碩士",
         "caucus": "KMT",
         "ads": [
@@ -1386,6 +1474,10 @@
         "in_office": true,
         "uid": 1717,
         "party": "KMT",
+        "constituency": [
+            "aborigine",
+            "highland"
+        ],
         "education": "草埔國小畢業\n枋寮初中畢業\n省立屏東師專畢業",
         "caucus": "KMT",
         "ads": [
@@ -1439,6 +1531,10 @@
         "in_office": true,
         "uid": 1854,
         "party": "DPP",
+        "constituency": [
+            "PIF",
+            2
+        ],
         "education": "國立屏東科技大學研究所\n國立臺灣大學歷史系\n屏東高中\n明正國中\n仁愛國小",
         "caucus": "DPP",
         "ads": [
@@ -1490,6 +1586,9 @@
         "in_office": true,
         "uid": 1821,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "屏東縣內埔國民小學\n屏東縣內埔國民中學\n私立美和高級中學",
         "caucus": "DPP",
         "ads": [
@@ -1547,6 +1646,10 @@
         "in_office": true,
         "uid": 1850,
         "party": "DPP",
+        "constituency": [
+            "KHH",
+            9
+        ],
         "education": "臺灣大學國家發展研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -1604,6 +1707,10 @@
         "in_office": true,
         "uid": 866,
         "party": "KMT",
+        "constituency": [
+            "TPE",
+            8
+        ],
         "education": "美國南加州大學工業與系統工程碩士、博士\n國立政治大學企管所碩士\n國立成功大學機械系學士",
         "caucus": "KMT",
         "ads": [
@@ -1659,6 +1766,10 @@
         "in_office": true,
         "uid": 981,
         "party": "DPP",
+        "constituency": [
+            "HUA",
+            0
+        ],
         "education": "美國哥倫比亞大學政治學碩士",
         "caucus": "DPP",
         "ads": [
@@ -1725,6 +1836,10 @@
         "in_office": true,
         "uid": 869,
         "party": "KMT",
+        "constituency": [
+            "TXG",
+            5
+        ],
         "education": "國立政治大學地政系學士\n私立淡江大學國際事務與戰略研究所碩士",
         "caucus": "KMT",
         "ads": [
@@ -1781,6 +1896,10 @@
         "in_office": true,
         "uid": 1834,
         "party": "KMT",
+        "constituency": [
+            "TPE",
+            3
+        ],
         "education": "美國賓夕法尼亞大學法學院法律博士\n國立政治大學法律系、外交系雙學士",
         "caucus": "KMT",
         "ads": [
@@ -1826,6 +1945,10 @@
         "in_office": true,
         "uid": 1722,
         "party": "KMT",
+        "constituency": [
+            "TPE",
+            6
+        ],
         "education": "大同大學事業經營研究所碩士畢業",
         "caucus": "KMT",
         "ads": [
@@ -1879,6 +2002,10 @@
         "in_office": true,
         "uid": 1855,
         "party": "DPP",
+        "constituency": [
+            "KEE",
+            0
+        ],
         "education": "淡江大學國際事務與戰略研究所碩士\n東海大學政治系學士",
         "caucus": "DPP",
         "ads": [
@@ -1930,6 +2057,9 @@
         "in_office": true,
         "uid": 1818,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "臺灣大學生物產業傳播暨發展學系博士",
         "caucus": "DPP",
         "ads": [
@@ -1990,6 +2120,10 @@
         "in_office": true,
         "uid": 1853,
         "party": "DPP",
+        "constituency": [
+            "CYQ",
+            1
+        ],
         "education": "嘉義市崇文國小\n水上鄉忠和國中\n嘉義高中\n臺灣大學財經法律系",
         "caucus": "DPP",
         "ads": [
@@ -2047,6 +2181,10 @@
         "in_office": true,
         "uid": 1377,
         "party": "DPP",
+        "constituency": [
+            "TXG",
+            1
+        ],
         "education": "中興大學財金所EMBA碩士 \n東海大學歷史研究所碩士 \n東海大學歷史學系畢業 \n清水高中 \n沙鹿國中 \n清水國小",
         "caucus": "DPP",
         "ads": [
@@ -2124,6 +2262,10 @@
         "in_office": true,
         "uid": 1762,
         "party": "DPP",
+        "constituency": [
+            "TTT",
+            0
+        ],
         "education": "臺東仁愛國小\n臺東新生國中\n臺東高中\n國立政治大學法律學系",
         "caucus": "DPP",
         "ads": [
@@ -2181,6 +2323,10 @@
         "in_office": true,
         "uid": 1723,
         "party": "DPP",
+        "constituency": [
+            "YUN",
+            2
+        ],
         "education": "稻江科技暨管理學院老人福祉與社會工作學系",
         "caucus": "DPP",
         "ads": [
@@ -2240,6 +2386,10 @@
         "in_office": true,
         "uid": 964,
         "party": "DPP",
+        "constituency": [
+            "KHH",
+            3
+        ],
         "education": "美國奧克拉荷馬州州立大學環境工程碩士\n淡江大學化學工程系學士",
         "caucus": "DPP",
         "ads": [
@@ -2292,6 +2442,10 @@
         "in_office": true,
         "uid": 749,
         "party": "DPP",
+        "constituency": [
+            "TAO",
+            4
+        ],
         "education": "國立中央大學管理學博士\n國立中興大學法學碩士\n國立中興大學行政系學士",
         "caucus": "DPP",
         "ads": [
@@ -2327,6 +2481,9 @@
         "in_office": false,
         "uid": 1764,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "台大哲學系學士\n法國巴黎第十大學政治、經濟、社會哲學碩士",
         "caucus": "DPP",
         "ads": [
@@ -2391,6 +2548,10 @@
         "in_office": true,
         "uid": 1381,
         "party": "DPP",
+        "constituency": [
+            "TAO",
+            1
+        ],
         "education": "臺北市立福星國民小學\n私立延平中學直升部\n國立臺灣大學土木工程學系畢業",
         "caucus": "DPP",
         "ads": [
@@ -2451,6 +2612,10 @@
         "in_office": true,
         "uid": 1763,
         "party": "KMT",
+        "constituency": [
+            "aborigine",
+            "lowland"
+        ],
         "education": "國立臺灣大學法律系畢業",
         "caucus": "KMT",
         "ads": [
@@ -2503,6 +2668,10 @@
         "in_office": true,
         "uid": 1845,
         "party": null,
+        "constituency": [
+            "TAO",
+            6
+        ],
         "education": "銘傳大學公共事務學系研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -2554,6 +2723,10 @@
         "in_office": true,
         "uid": 1761,
         "party": "DPP",
+        "constituency": [
+            "KHH",
+            7
+        ],
         "education": "國立中山大學公共政策碩士",
         "caucus": "DPP",
         "ads": [
@@ -2612,6 +2785,10 @@
         "in_office": true,
         "uid": 1374,
         "party": "DPP",
+        "constituency": [
+            "KHH",
+            5
+        ],
         "education": "臺灣大學政治學博士",
         "caucus": "DPP",
         "ads": [
@@ -2668,6 +2845,10 @@
         "in_office": true,
         "uid": 962,
         "party": "KMT",
+        "constituency": [
+            "aborigine",
+            "lowland"
+        ],
         "education": "高雄醫學大學醫學系",
         "caucus": "KMT",
         "ads": [
@@ -2735,6 +2916,10 @@
         "in_office": true,
         "uid": 855,
         "party": "DPP",
+        "constituency": [
+            "TNN",
+            1
+        ],
         "education": "美國Bridgeport大學音樂碩士",
         "caucus": "DPP",
         "ads": [
@@ -2796,6 +2981,10 @@
         "in_office": true,
         "uid": 1856,
         "party": "KMT",
+        "constituency": [
+            "KIN",
+            0
+        ],
         "education": "金門高中\n文化大學經濟系\n英國西敏大學企管碩士",
         "caucus": "KMT",
         "ads": [
@@ -2847,6 +3036,10 @@
         "in_office": true,
         "uid": 1759,
         "party": "DPP",
+        "constituency": [
+            "PEN",
+            0
+        ],
         "education": "東海大學法律系",
         "caucus": "DPP",
         "ads": [
@@ -2905,6 +3098,10 @@
         "in_office": true,
         "uid": 1808,
         "party": "DPP",
+        "constituency": [
+            "TXG",
+            6
+        ],
         "education": "國立中興大學國際政治研究所碩士\n國立臺北藝術大學\n國立臺中一中",
         "caucus": "DPP",
         "ads": [
@@ -2957,6 +3154,10 @@
         "in_office": true,
         "uid": 1843,
         "party": "NPP",
+        "constituency": [
+            "NWT",
+            12
+        ],
         "education": "臺灣大學法律系學士\n美國康乃爾大學法學博士",
         "caucus": "NPP",
         "ads": [
@@ -3026,6 +3227,10 @@
         "in_office": true,
         "uid": 1367,
         "party": "DPP",
+        "constituency": [
+            "TNN",
+            2
+        ],
         "education": "國立臺灣大學學士\n美國耶魯大學碩士\n美國哈佛大學碩士",
         "caucus": "DPP",
         "ads": [
@@ -3086,6 +3291,9 @@
         "in_office": true,
         "uid": 665,
         "party": "KMT",
+        "constituency": [
+            "proportional"
+        ],
         "education": "國立中山大學高階經營碩士\n高雄醫學大學藥學系\n省立臺南女中",
         "caucus": "KMT",
         "ads": [
@@ -3144,6 +3352,10 @@
         "in_office": true,
         "uid": 1851,
         "party": "DPP",
+        "constituency": [
+            "CHA",
+            2
+        ],
         "education": "靜宜大學外文系畢業",
         "caucus": "DPP",
         "ads": [
@@ -3195,6 +3407,10 @@
         "in_office": true,
         "uid": 1365,
         "party": "KMT",
+        "constituency": [
+            "TPE",
+            7
+        ],
         "education": "美國肯塔基大學統計學博士\n美國北伊利諾大學統計學碩士\n國立中興大學統計學學士\n成功高中\n大安國中\n三興國小\n信義國小",
         "caucus": "KMT",
         "ads": [
@@ -3249,6 +3465,9 @@
         "in_office": true,
         "uid": 1828,
         "party": "KMT",
+        "constituency": [
+            "proportional"
+        ],
         "education": "臺北大學企業管理研究所博士",
         "caucus": "KMT",
         "ads": [
@@ -3294,6 +3513,9 @@
         "in_office": true,
         "uid": 1827,
         "party": "KMT",
+        "constituency": [
+            "proportional"
+        ],
         "education": "THNK 阿姆斯特丹創意領袖學院獎學金\n國立政治大學英語系",
         "caucus": "KMT",
         "ads": [
@@ -3345,6 +3567,10 @@
         "in_office": true,
         "uid": 1750,
         "party": "DPP",
+        "constituency": [
+            "KHH",
+            8
+        ],
         "education": "國立高雄師範大學科學教育研究所博士班\n國立高雄師範大學教育碩士(1996)\n國立臺灣大學機械系學士(1988)\n高雄中學(1984)\n五甲國中(1981)\n五甲國小(1978)",
         "caucus": "DPP",
         "ads": [
@@ -3397,6 +3623,10 @@
         "in_office": true,
         "uid": 1811,
         "party": "KMT",
+        "constituency": [
+            "NAN",
+            2
+        ],
         "education": "逢甲大學經營管理碩士畢",
         "caucus": "KMT",
         "ads": [
@@ -3466,6 +3696,10 @@
         "in_office": true,
         "uid": 1812,
         "party": "DPP",
+        "constituency": [
+            "PIF",
+            3
+        ],
         "education": "國立臺灣大學農業經濟學系碩士 \n國立臺北大學企業管理學系碩士 \n國立臺灣大學法律學系學士",
         "caucus": "DPP",
         "ads": [
@@ -3517,6 +3751,9 @@
         "in_office": true,
         "uid": 1349,
         "party": "KMT",
+        "constituency": [
+            "proportional"
+        ],
         "education": "雲林縣馬光國小\n雲林縣土庫國中\n臺中曉明女中\n國立虎尾科技大學工業管理系\n國立臺灣師範大學運動休閒管理研究所",
         "caucus": "KMT",
         "ads": [
@@ -3569,6 +3806,10 @@
         "in_office": true,
         "uid": 1847,
         "party": "DPP",
+        "constituency": [
+            "TXG",
+            4
+        ],
         "education": "東海大學EMBA高階管理學院碩士\n東吳大學政治學研究所碩士班\n輔仁大學大眾傳播系\n國立台中一中",
         "caucus": "DPP",
         "ads": [
@@ -3626,6 +3867,10 @@
         "in_office": true,
         "uid": 1839,
         "party": "DPP",
+        "constituency": [
+            "NWT",
+            6
+        ],
         "education": "東吳大學政治系學士\n國立臺北教育大學教育碩士",
         "caucus": "DPP",
         "ads": [
@@ -3679,6 +3924,9 @@
         "in_office": true,
         "uid": 1831,
         "party": "NPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "臺北商專國貿科\n世新大學新聞系",
         "caucus": "NPP",
         "ads": [
@@ -3736,6 +3984,10 @@
         "in_office": true,
         "uid": 926,
         "party": "NSU",
+        "constituency": [
+            "aborigine",
+            "highland"
+        ],
         "education": "青年高中畢業\n中央民族大學-民族學",
         "caucus": "PFP",
         "ads": [
@@ -3791,6 +4043,10 @@
         "in_office": true,
         "uid": 923,
         "party": "DPP",
+        "constituency": [
+            "NWT",
+            3
+        ],
         "education": "建國中學\n輔仁大學法律系財經法律組\n臺灣大學EMBA",
         "caucus": "DPP",
         "ads": [
@@ -3851,6 +4107,10 @@
         "in_office": true,
         "uid": 1724,
         "party": "KMT",
+        "constituency": [
+            "NAN",
+            1
+        ],
         "education": "逢甲大學經營管理碩士 \n嘉南藥專(嘉南藥理科技大學)藥理科畢業 \n大成國中\n育英國小",
         "caucus": "KMT",
         "ads": [
@@ -3898,6 +4158,10 @@
         "in_office": true,
         "uid": 1844,
         "party": "DPP",
+        "constituency": [
+            "TAO",
+            2
+        ],
         "education": "萬能科技大學學士畢業\n國立新竹高商",
         "caucus": "DPP",
         "ads": [
@@ -3955,6 +4219,10 @@
         "in_office": true,
         "uid": 840,
         "party": "KMT",
+        "constituency": [
+            "TAO",
+            3
+        ],
         "education": "建國中學\n國立臺灣大學政治學系學士\n淡江大學中國大陸研究所碩士",
         "caucus": "KMT",
         "ads": [
@@ -4015,6 +4283,10 @@
         "in_office": true,
         "uid": 1362,
         "party": "DPP",
+        "constituency": [
+            "aborigine",
+            "lowland"
+        ],
         "education": "美國伊利諾大學香檳校園音樂系博士班畢業\n美國伊利諾大學香檳校園音樂系碩士班畢業\n美國舊金山音樂學院學士畢業\n美國夏威夷楊百翰大學學士肄業\n高雄文藻外大學畢業",
         "caucus": "DPP",
         "ads": [
@@ -4073,6 +4345,10 @@
         "in_office": true,
         "uid": 1753,
         "party": "DPP",
+        "constituency": [
+            "ILA",
+            0
+        ],
         "education": "國立中興大學森林研究所碩士\n國立中興大學森林所學士\n省立宜蘭高級中學",
         "caucus": "DPP",
         "ads": [
@@ -4125,6 +4401,10 @@
         "in_office": true,
         "uid": 836,
         "party": "KMT",
+        "constituency": [
+            "MIA",
+            1
+        ],
         "education": "新竹縣竹東高中 \n國立政治大學公共行政學系",
         "caucus": "KMT",
         "ads": [
@@ -4184,6 +4464,10 @@
         "in_office": true,
         "uid": 1751,
         "party": "KMT",
+        "constituency": [
+            "LIE",
+            0
+        ],
         "education": "省立豐原商職畢業",
         "caucus": "KMT",
         "ads": [
@@ -4236,6 +4520,9 @@
         "in_office": true,
         "uid": 1816,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "美國聖地牙哥國家大學公共行政管理碩士",
         "caucus": "DPP",
         "ads": [
@@ -4293,6 +4580,10 @@
         "in_office": true,
         "uid": 1809,
         "party": "DPP",
+        "constituency": [
+            "CHA",
+            4
+        ],
         "education": "文化大學史學研究所碩士\n文化大學史學系\n台中女中\n南投縣名間國中、僑興國小",
         "caucus": "DPP",
         "ads": [
@@ -4351,6 +4642,10 @@
         "in_office": true,
         "uid": 1708,
         "party": "DPP",
+        "constituency": [
+            "TNN",
+            3
+        ],
         "education": "長榮大學經營管理學研究所碩士\n文化大學\n家齊女中\n中山國中\n協進國小",
         "caucus": "DPP",
         "ads": [
@@ -4410,6 +4705,10 @@
         "in_office": true,
         "uid": 828,
         "party": "DPP",
+        "constituency": [
+            "CYQ",
+            2
+        ],
         "education": "私立東海大學哲學系畢業",
         "caucus": "DPP",
         "ads": [
@@ -4464,6 +4763,9 @@
         "in_office": true,
         "uid": 1804,
         "party": "PFP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "銘傳大學管理學院研究所博士",
         "caucus": "PFP",
         "ads": [
@@ -4522,6 +4824,9 @@
         "in_office": true,
         "uid": 1825,
         "party": "KMT",
+        "constituency": [
+            "proportional"
+        ],
         "education": "國立陽明大學醫學士(第一屆)\n陽明大學微生物暨免疫學研究所第一屆碩士\n美國哈佛大學公共衛生學院科學博士\n美國國家衛生院癌症醫學中心分子腫瘤實險室博士後研究員\n美國國家衛生院癌症醫學中心HIV抗藥研究計畫訪問科學家",
         "caucus": "KMT",
         "ads": [
@@ -4579,6 +4884,9 @@
         "in_office": true,
         "uid": 734,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "高雄中學畢業\n中山醫學院醫學系畢業\n國立臺灣大學公共衛生研究所預防醫學碩士\n醫師檢覈考試及格\n醫師高等考試及格",
         "caucus": "DPP",
         "ads": [
@@ -4634,6 +4942,9 @@
         "in_office": true,
         "uid": 1829,
         "party": "KMT",
+        "constituency": [
+            "proportional"
+        ],
         "education": "中國文化大學",
         "caucus": "KMT",
         "ads": [
@@ -4691,6 +5002,9 @@
         "in_office": true,
         "uid": 1343,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "省立台北師專啟智教育組畢業\n國立中興大學法律系法學士\n國立台灣海洋大學海洋法律研究所法學碩士、法學博士",
         "caucus": "DPP",
         "ads": [
@@ -4755,6 +5069,10 @@
         "in_office": true,
         "uid": 1810,
         "party": "KMT",
+        "constituency": [
+            "MIA",
+            2
+        ],
         "education": "省立苗栗高中畢業 \n日本國立石川高等職業學校畢業",
         "caucus": "KMT",
         "ads": [
@@ -4807,6 +5125,9 @@
         "in_office": true,
         "uid": 1832,
         "party": "NPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "建國中學\n國立臺灣大學政治學系\n美國密西根大學政治學博士",
         "caucus": "NPP",
         "ads": [
@@ -4864,6 +5185,10 @@
         "in_office": true,
         "uid": 1846,
         "party": "NPP",
+        "constituency": [
+            "TXG",
+            3
+        ],
         "education": "后里區內埔國小\n臺中市后里國中\n國立台中商專\n國立高雄第一科技大學行銷與流通管理學系",
         "caucus": "NPP",
         "ads": [
@@ -4913,6 +5238,10 @@
         "in_office": true,
         "uid": 1852,
         "party": "DPP",
+        "constituency": [
+            "CHA",
+            3
+        ],
         "education": "國立彰化師範大學行政管理碩士\n國立中興大學公共行政系法學士",
         "caucus": "DPP",
         "ads": [
@@ -4970,6 +5299,9 @@
         "in_office": true,
         "uid": 917,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "國立臺灣大學政治學系學士",
         "caucus": "DPP",
         "ads": [
@@ -5023,6 +5355,10 @@
         "in_office": true,
         "uid": 629,
         "party": "DPP",
+        "constituency": [
+            "HSZ",
+            0
+        ],
         "education": "新竹國小\n新竹一中(建華國中)\n新竹中學\n中山醫學大學牙醫科",
         "caucus": "DPP",
         "ads": [
@@ -5075,6 +5411,9 @@
         "in_office": true,
         "uid": 1824,
         "party": "KMT",
+        "constituency": [
+            "proportional"
+        ],
         "education": "美國南加大教育心理學博士",
         "caucus": "KMT",
         "ads": [
@@ -5120,6 +5459,9 @@
         "in_office": true,
         "uid": 1857,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "中央大學土木工程學系碩士\n臺灣科技大學營建工程技術系學士",
         "caucus": "DPP",
         "ads": [
@@ -5177,6 +5519,10 @@
         "in_office": true,
         "uid": 1745,
         "party": "DPP",
+        "constituency": [
+            "TPE",
+            2
+        ],
         "education": "輔仁大學大眾傳播系學士\n政治大學政治研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -5223,6 +5569,9 @@
         "in_office": true,
         "uid": 1826,
         "party": "KMT",
+        "constituency": [
+            "proportional"
+        ],
         "education": "國立暨南國際大學非營利組織經營管理碩士\n建國科技大學美容系",
         "caucus": "KMT",
         "ads": [
@@ -5274,6 +5623,9 @@
         "in_office": true,
         "uid": 1822,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "台大分子醫學研究所碩士\n中山醫學大學醫學研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -5331,6 +5683,10 @@
         "in_office": true,
         "uid": 908,
         "party": "KMT",
+        "constituency": [
+            "NWT",
+            9
+        ],
         "education": "臺北縣立頂溪國小畢業\n臺灣省立板橋中學畢業\n私立開南高級商工職業學校畢業",
         "caucus": "KMT",
         "ads": [
@@ -5398,6 +5754,10 @@
         "in_office": true,
         "uid": 1337,
         "party": "DPP",
+        "constituency": [
+            "NWT",
+            2
+        ],
         "education": "",
         "caucus": "DPP",
         "ads": [
@@ -5458,6 +5818,10 @@
         "in_office": true,
         "uid": 1334,
         "party": "KMT",
+        "constituency": [
+            "HSQ",
+            0
+        ],
         "education": "國立中央大學中文系畢業",
         "caucus": "KMT",
         "ads": [
@@ -5504,6 +5868,10 @@
         "in_office": true,
         "uid": 1836,
         "party": "NPP",
+        "constituency": [
+            "TPE",
+            5
+        ],
         "education": "國立台北大學企業管理學系學士",
         "caucus": "NPP",
         "ads": [
@@ -5561,6 +5929,10 @@
         "in_office": true,
         "uid": 1848,
         "party": "DPP",
+        "constituency": [
+            "TNN",
+            4
+        ],
         "education": "臺南一中畢業\n國立成功大學企管系畢業\n美國密蘇里大學企管碩士(u. of Missouri,MBA)\n臺大國家發展研究所博士班",
         "caucus": "DPP",
         "ads": [
@@ -5618,6 +5990,10 @@
         "in_office": true,
         "uid": 904,
         "party": "DPP",
+        "constituency": [
+            "KHH",
+            4
+        ],
         "education": "天主教輔仁大學德文系畢業\n美國威斯康辛大學大眾傳播碩士",
         "caucus": "DPP",
         "ads": [
@@ -5677,6 +6053,9 @@
         "in_office": true,
         "uid": 1830,
         "party": "PFP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "臺南縣立官田國民中學畢業",
         "caucus": "PFP",
         "ads": [
@@ -5728,6 +6107,9 @@
         "in_office": true,
         "uid": 1823,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "國立臺灣大學法律學系畢業",
         "caucus": "DPP",
         "ads": [
@@ -5779,6 +6161,9 @@
         "in_office": true,
         "uid": 1815,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "東海大學社會工作碩士\n政治大學社會學系學士\n嘉義女中",
         "caucus": "DPP",
         "ads": [
@@ -5830,6 +6215,9 @@
         "in_office": true,
         "uid": 1820,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "倫敦大學亞非學院飲食人類學碩士\n臺灣大學經濟系學士",
         "caucus": "DPP",
         "ads": [
@@ -5887,6 +6275,10 @@
         "in_office": true,
         "uid": 1733,
         "party": "DPP",
+        "constituency": [
+            "TXG",
+            7
+        ],
         "education": "塗城國小\n成功國中\n臺中女中\n國立成功大學\n英國約克大學婦女研究碩士",
         "caucus": "DPP",
         "ads": [
@@ -5957,6 +6349,10 @@
         "in_office": true,
         "uid": 1731,
         "party": "KMT",
+        "constituency": [
+            "TXG",
+            8
+        ],
         "education": "美國南卡羅萊納大學國際關係博士\n美國匹茲堡大學國際事務碩士\n國立政治大學外交學系\n台中一中\n豐南國中\n瑞穗國小",
         "caucus": "KMT",
         "ads": [
@@ -6009,6 +6405,10 @@
         "in_office": true,
         "uid": 1841,
         "party": "DPP",
+        "constituency": [
+            "NWT",
+            8
+        ],
         "education": "中和國小\n海山國中\n建國高中\n中興大學物理學士\n臺灣師範大學政治學研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -6060,6 +6460,9 @@
         "in_office": true,
         "uid": 1315,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "國立岡山高中畢業",
         "caucus": "DPP",
         "ads": [
@@ -6118,6 +6521,10 @@
         "in_office": true,
         "uid": 1729,
         "party": "KMT",
+        "constituency": [
+            "CHA",
+            1
+        ],
         "education": "彰化縣洛津國小 \n彰化縣鹿港國中 \n國立臺中第二高級中學\n私立東海大學政治系學士學位、碩士學位\n國立彰化師範大學財務金融學系博士班(就讀中)",
         "caucus": "KMT",
         "ads": [
@@ -6170,6 +6577,9 @@
         "in_office": true,
         "uid": 22,
         "party": "KMT",
+        "constituency": [
+            "proportional"
+        ],
         "education": "臺灣省立師範大學數學系畢業",
         "caucus": "KMT",
         "ads": [
@@ -6235,6 +6645,10 @@
         "in_office": true,
         "uid": 1849,
         "party": "DPP",
+        "constituency": [
+            "TNN",
+            5
+        ],
         "education": "成功大學外文系80級\n成功大學管理學院高階管理碩士97級\n長榮大學經營管理所博士班",
         "caucus": "DPP",
         "ads": [
@@ -6292,6 +6706,9 @@
         "in_office": true,
         "uid": 1728,
         "party": "KMT",
+        "constituency": [
+            "proportional"
+        ],
         "education": "東海大學社會工作學系碩士\n東海大學社會工作學系學士",
         "caucus": "KMT",
         "ads": [
@@ -6344,6 +6761,9 @@
         "in_office": true,
         "uid": 1730,
         "party": "DPP",
+        "constituency": [
+            "proportional"
+        ],
         "education": "國立臺灣大學法律學研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -6390,6 +6810,10 @@
         "in_office": true,
         "uid": 1312,
         "party": "KMT",
+        "constituency": [
+            "aborigine",
+            "highland"
+        ],
         "education": "臺灣大學外文系畢業\n美國奧勒岡大學(University of Oregon)新聞碩士\n英國羅芙堡大學(Loughborough University)社會學系媒體研究組博士",
         "caucus": "KMT",
         "ads": [
