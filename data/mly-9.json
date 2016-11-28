@@ -1069,6 +1069,9 @@
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00116&stage=9"
         }, 
         "name": "郭正亮", 
+        "identifiers": [
+            "郭正亮"
+        ],
         "party": "DPP", 
         "term_start": "2016-09-02",
         "uid": 1859, 
@@ -5131,6 +5134,9 @@
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00117&stage=9"
         }, 
         "name": "邱泰源",
+        "identifiers": [
+            "邱泰源"
+        ],
         "uid": 1860,
         "term_end": {
             "date": "2020-01-31"
