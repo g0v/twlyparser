@@ -244,7 +244,7 @@
         "former_names": "",
         "term_start": "2016-05-26",
         "in_office": true,
-        "uid": 1859,
+        "uid": 1857,
         "party": "DPP",
         "constituency": [
             "proportional"
@@ -988,8 +988,14 @@
         "title": "立法委員",
         "experience": "萬國法律事務所資深合夥律師(1983年-2016年)\n臺北律師公會理事長(2003年-2005年)\n中華民國律師公會全國聯合會理事長(2008年-2009年)\n臺灣法學會理事長(2009年-2010年)\n民間司法改革基金會董事長(2010年)\n臺灣人權促進會會長(2013年)",
         "name": "顧立雄",
+        "remark": [
+            "自民國105年8月31日起辭去立法委員職務", 
+            "遞補委員：郭正亮"
+        ], 
         "term_end": {
-            "date": "2020-01-31"
+            "date": "2016-08-31", 
+            "reason": "辭職。", 
+            "replacement": "郭正亮"
         },
         "identifiers": [
             "顧立雄"
@@ -1008,6 +1014,68 @@
             9
         ],
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/96266b2fa130186664ade76083f89fc5"
+    },
+    {
+        "ad": 9, 
+        "ads": [
+            9, 
+            6, 
+            5
+        ], 
+        "caucus": "DPP", 
+        "committees": [
+            {
+                "ad": 9, 
+                "chair": false, 
+                "name": "程序委員會", 
+                "session": 2
+            }, 
+            {
+                "ad": 9, 
+                "chair": false, 
+                "name": "司法及法制委員會", 
+                "session": 2
+            }
+        ], 
+        "constituency": [
+            "proportional"
+        ],
+        "contacts": [
+            {
+                "address": "10051臺北市中正區青島東路1號3203室", 
+                "fax": "02-2358-6870", 
+                "name": "國會研究室", 
+                "phone": "02-2358-6868"
+            }
+        ], 
+        "education": [
+            "美國耶魯大學政治學博士", 
+            "台大社會學碩士", 
+            "台大心理學學士"
+        ], 
+        "elected_party": "民主進步黨", 
+        "experience": [
+            "文化國際企管研究所副教授", 
+            "美麗島文化事業有限公司副董事長", 
+            "第5、6 屆立法委員", 
+            "陸委會、外交部諮委", 
+            "東吳政治系副教授"
+        ], 
+        "former_names": [], 
+        "gender": "男", 
+        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90116.jpg", 
+        "in_office": true, 
+        "links": {
+            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00116&stage=9"
+        }, 
+        "name": "郭正亮", 
+        "party": "DPP", 
+        "term_start": "2016-09-02",
+        "uid": 1859, 
+        "term_end": {
+            "date": "2020-01-31"
+        },
+        "title": "立法委員"
     },
     {
         "elected_party": "DPP",
@@ -4991,8 +5059,14 @@
         "title": "立法委員",
         "experience": "教師\n律師\n臺北市議員\n立法委員\n電視、電台節目主持人\n國際獅子會300A2區總監(2005-2006)",
         "name": "徐國勇",
+        "remark": [
+            "自民國105年10月1日起辭去立法委員職務", 
+            "遞補委員：邱泰源"
+        ], 
         "term_end": {
-            "date": "2020-01-31"
+            "date": "2016-10-01", 
+            "reason": "辭職。", 
+            "replacement": "邱泰源"
         },
         "identifiers": [
             "徐國勇"
@@ -5012,6 +5086,58 @@
             6
         ],
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/e493f130023dbf5b37abc063a851d390"
+    },
+    {
+        "ad": 9, 
+        "ads": [
+            9
+        ], 
+        "caucus": "DPP", 
+        "committees": [
+            {
+                "ad": 9, 
+                "chair": false, 
+                "name": "財政委員會", 
+                "session": 2
+            }
+        ], 
+        "constituency": [
+            "proportional"
+        ], 
+        "contacts": [
+            {
+                "address": "10051臺北市中正區濟南路1段3-1號2106室", 
+                "fax": "02-2358-6120", 
+                "name": "國會研究室", 
+                "phone": "02-2358-6116"
+            }
+        ], 
+        "education": [
+            "日本東京大學醫學系研究科碩士"
+        ], 
+        "elected_party": "DPP", 
+        "experience": [
+            "台大醫學院教授暨社區醫學研究群主持人", 
+            "台大醫院主治醫師兼門診部主任", 
+            "曾任台灣家庭醫學醫學會理事長", 
+            "曾任台灣安寧緩和醫學學會理事長", 
+            "中華民國醫師公會全國聯合會理事長"
+        ], 
+        "former_names": [], 
+        "gender": "男", 
+        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90117.jpg", 
+        "in_office": true, 
+        "links": {
+            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00117&stage=9"
+        }, 
+        "name": "邱泰源",
+        "uid": 1860,
+        "term_end": {
+            "date": "2020-01-31"
+        },
+        "party": "DPP", 
+        "term_start": "2016-10-04", 
+        "title": "立法委員"
     },
     {
         "elected_party": "KMT",
@@ -5457,7 +5583,7 @@
         "former_names": "",
         "term_start": "2016-05-26",
         "in_office": true,
-        "uid": 1857,
+        "uid": 1858,
         "party": "DPP",
         "constituency": [
             "proportional"
