@@ -4,50 +4,40 @@
         "committees": [
             {
                 "chair": false,
-                "session": 1,
+                "session": 2,
                 "ad": 9,
-                "name": "經濟委員會"
+                "name": "財政委員會"
             }
         ],
         "ad": 9,
         "links": {
-            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00037&stage=9"
+            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00117&stage=9"
         },
         "contacts": [
             {
-                "phone": "02-2358-6516",
-                "fax": "02-2358-6520",
+                "phone": "02-2358-6116",
+                "fax": "02-2358-6120",
                 "name": "國會研究室",
-                "address": "10051臺北市中正區濟南路1段3-1號0801室"
-            },
-            {
-                "phone": "07-681-8755",
-                "fax": "07-681-8677",
-                "name": "美濃服務處",
-                "address": "843高雄市美濃區泰安路228號"
+                "address": "10051臺北市中正區濟南路1段3-1號2106室"
             }
         ],
-        "gender": "女",
-        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90037.jpg",
+        "gender": "男",
+        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90117.jpg",
         "title": "立法委員",
-        "experience": "第3屆國民大會代表\n第8、9屆民進黨中央常務委員\n行政院客家委員會副主委\n第5、7、8屆立法委員",
-        "name": "邱議瑩",
+        "experience": "台大醫學院教授暨社區醫學研究群主持人\n台大醫院主治醫師兼門診部主任\n曾任台灣家庭醫學醫學會理事長\n曾任台灣安寧緩和醫學學會理事長\n中華民國醫師公會全國聯合會理事長",
+        "name": "邱泰源",
         "term_end": {
             "date": "2020-01-31"
         },
         "identifiers": [
-            "邱議瑩"
+            "邱泰源"
         ],
         "former_names": "",
-        "term_start": "2016-02-01",
+        "term_start": "2016-10-04",
         "in_office": true,
-        "uid": 913,
+        "uid": 1859,
         "party": "DPP",
-        "constituency": [
-            "KHH",
-            1
-        ],
-        "education": "高雄市道明高中\n美國舊金山多明尼肯大學企管研究所碩士",
+        "education": "日本東京大學醫學系研究科碩士",
         "caucus": "DPP",
         "ads": [
             9,
@@ -55,7 +45,126 @@
             7,
             5
         ],
-        "avatar": "http://avatars.io/50a65bb26e293122b0000073/cb14b2ae9b01e89ce5ca1bc4b9d732e9"
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/096eaeffa3a49bad5e19b806b131c057"
+    },
+    {
+        "elected_party": "DPP",
+        "committees": [
+            {
+                "chair": false,
+                "session": 1,
+                "ad": 9,
+                "name": "內政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "內政委員會"
+            }
+        ],
+        "ad": 9,
+        "links": {
+            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00025&stage=9"
+        },
+        "contacts": [
+            {
+                "phone": "02-2358-6031",
+                "fax": "02-2358-6035",
+                "name": "國會研究室",
+                "address": "10051臺北市中正區濟南路1段3-1號0201室"
+            },
+            {
+                "phone": "03-888-6527",
+                "fax": "03-888-6446",
+                "name": "樂合服務處",
+                "address": "89147花蓮縣玉里鎮樂合里12鄰39號"
+            },
+            {
+                "phone": "03-888-0219",
+                "fax": "03-888-5070",
+                "name": "玉里服務處",
+                "address": "花蓮縣玉里鎮民國路二段158-1號"
+            }
+        ],
+        "gender": "女",
+        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90025.jpg",
+        "title": "立法委員",
+        "experience": "桃園市政府原住民族行政局長\n原住民族電視台新聞部副理兼採訪中心組長、主播\nbiz互動英語執行主編\n民視新聞部記者\n公共電視執行製作",
+        "name": "谷辣斯‧尤達卡Kolasyotaka",
+        "term_end": {
+            "date": "2020-01-31"
+        },
+        "identifiers": [
+            "kolasyotaka",
+            "谷辣斯尤達卡",
+            "谷辣斯‧尤達卡Kolasyotaka"
+        ],
+        "former_names": "",
+        "term_start": "2016-02-01",
+        "in_office": true,
+        "uid": 1819,
+        "party": "DPP",
+        "education": "臺中女中\n東海大學社會學系\n東海大學社會學系研究所碩士",
+        "caucus": "DPP",
+        "ads": [
+            9,
+            8,
+            7,
+            5
+        ],
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b274e6981ff4bcc5c48b1a8b48019cbb"
+    },
+    {
+        "elected_party": "DPP",
+        "committees": [
+            {
+                "chair": false,
+                "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            }
+        ],
+        "ad": 9,
+        "links": {
+            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00115&stage=9"
+        },
+        "contacts": [
+            {
+                "phone": "02-2358-8328",
+                "fax": "02-2358-8245",
+                "name": "國會研究室",
+                "address": "100臺北市中正區青島東路1號3111室"
+            }
+        ],
+        "gender": "女",
+        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90115.jpg",
+        "title": "立法委員",
+        "experience": "台灣展翅協會秘書長\n國際終止兒少性剝削組織東亞執委\n台灣女人連線理事\n行政院防制人口販運協調會委員\n行政院兒童及少年福利與權益推動小組委員",
+        "name": "李麗芬",
+        "term_end": {
+            "date": "2020-01-31"
+        },
+        "identifiers": [
+            "李麗芬"
+        ],
+        "former_names": "",
+        "term_start": "2016-05-26",
+        "in_office": true,
+        "uid": 1857,
+        "party": "DPP",
+        "education": "東海大學社會學系",
+        "caucus": "DPP",
+        "ads": [
+            9
+        ],
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/f06274e2fb7d5be18218286194d1d7f4"
     },
     {
         "elected_party": "DPP",
@@ -69,6 +178,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "經濟委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "經費稽核委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "經濟委員會"
             }
@@ -134,15 +255,13 @@
         "in_office": true,
         "uid": 1744,
         "party": "DPP",
-        "constituency": [
-            "KHH",
-            2
-        ],
         "education": "淡江大學俄羅斯研究所法學碩士\n國立臺灣大學國家發展研究所法學碩士\n國立中山大學大陸研究所社會科學博士",
         "caucus": "DPP",
         "ads": [
             9,
-            8
+            8,
+            7,
+            5
         ],
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/7d2c5ca0e099d2261e18b7b61f39284a"
     },
@@ -153,108 +272,58 @@
                 "chair": false,
                 "session": 1,
                 "ad": 9,
-                "name": "內政委員會"
+                "name": "經濟委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "經濟委員會"
             }
         ],
         "ad": 9,
         "links": {
-            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00025&stage=9"
+            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00037&stage=9"
         },
         "contacts": [
             {
-                "phone": "02-2358-6031",
-                "fax": "02-2358-6035",
+                "phone": "02-2358-6516",
+                "fax": "02-2358-6520",
                 "name": "國會研究室",
-                "address": "10051臺北市中正區濟南路1段3-1號0201室"
+                "address": "10051臺北市中正區濟南路1段3-1號0801室"
             },
             {
-                "phone": "03-888-6527",
-                "fax": "03-888-6446",
-                "name": "樂合服務處",
-                "address": "89147花蓮縣玉里鎮樂合里12鄰39號"
-            },
-            {
-                "phone": "03-888-0219",
-                "fax": "03-888-5070",
-                "name": "玉里服務處",
-                "address": "花蓮縣玉里鎮民國路二段158-1號"
+                "phone": "07-681-8755",
+                "fax": "07-681-8677",
+                "name": "美濃服務處",
+                "address": "843高雄市美濃區泰安路228號"
             }
         ],
         "gender": "女",
-        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90025.jpg",
+        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90037.jpg",
         "title": "立法委員",
-        "experience": "桃園市政府原住民族行政局長\n原住民族電視台新聞部副理兼採訪中心組長、主播\nbiz互動英語執行主編\n民視新聞部記者\n公共電視執行製作",
-        "name": "谷辣斯‧尤達卡Kolasyotaka",
+        "experience": "第3屆國民大會代表\n第8、9屆民進黨中央常務委員\n行政院客家委員會副主委\n第5、7、8屆立法委員",
+        "name": "邱議瑩",
         "term_end": {
             "date": "2020-01-31"
         },
         "identifiers": [
-            "kolasyotaka",
-            "谷辣斯尤達卡",
-            "谷辣斯‧尤達卡Kolasyotaka"
+            "邱議瑩"
         ],
         "former_names": "",
         "term_start": "2016-02-01",
         "in_office": true,
-        "uid": 1819,
+        "uid": 913,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
-        "education": "臺中女中\n東海大學社會學系\n東海大學社會學系研究所碩士",
+        "education": "高雄市道明高中\n美國舊金山多明尼肯大學企管研究所碩士",
         "caucus": "DPP",
         "ads": [
-            9
+            9,
+            8,
+            7,
+            5
         ],
-        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b274e6981ff4bcc5c48b1a8b48019cbb"
-    },
-    {
-        "elected_party": "DPP",
-        "committees": [
-            {
-                "chair": false,
-                "session": 1,
-                "ad": 9,
-                "name": "教育及文化委員會"
-            }
-        ],
-        "ad": 9,
-        "links": {
-            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00115&stage=9"
-        },
-        "contacts": [
-            {
-                "phone": "02-2358-8328",
-                "fax": "02-2358-8245",
-                "name": "國會研究室",
-                "address": "100臺北市中正區青島東路一段3111室"
-            }
-        ],
-        "gender": "女",
-        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90115.jpg",
-        "title": "立法委員",
-        "experience": "台灣展翅協會秘書長\n國際終止兒少性剝削組織東亞執委\n台灣女人連線理事\n行政院防制人口販運協調會委員\n行政院兒童及少年福利與權益推動小組委員",
-        "name": "李麗芬",
-        "term_end": {
-            "date": "2020-01-31"
-        },
-        "identifiers": [
-            "李麗芬"
-        ],
-        "former_names": "",
-        "term_start": "2016-05-26",
-        "in_office": true,
-        "uid": 1857,
-        "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
-        "education": "東海大學社會學系",
-        "caucus": "DPP",
-        "ads": [
-            9
-        ],
-        "avatar": "http://avatars.io/50a65bb26e293122b0000073/f06274e2fb7d5be18218286194d1d7f4"
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/cb14b2ae9b01e89ce5ca1bc4b9d732e9"
     },
     {
         "elected_party": "PFP",
@@ -262,6 +331,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "交通委員會"
             }
@@ -305,9 +380,6 @@
         "in_office": true,
         "uid": 898,
         "party": "PFP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "日本大學結構工程學博士\n黎明工專畢業",
         "caucus": "PFP",
         "ads": [
@@ -337,17 +409,14 @@
         "name": "李應元",
         "term_end": {
             "date": "2016-05-20",
-            "reason": "依台立人字第1050003490號函自105年05月20日辭去立法委員職務。",
-            "replacement": []
+            "reason": "辭職。",
+            "replacement": "施義芳"
         },
         "former_names": "",
         "term_start": "2016-02-01",
         "in_office": false,
         "uid": 708,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "崙背國小\n虎尾初中\n台中一中\n台大公共衛生學系學士、碩士\n哈佛大學醫管碩士\n美國北卡醫療經濟學博士",
         "caucus": "DPP",
         "ads": [
@@ -370,6 +439,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
             }
@@ -414,10 +495,6 @@
         "in_office": true,
         "uid": 1835,
         "party": "KMT",
-        "constituency": [
-            "TPE",
-            4
-        ],
         "education": "美國加州爾灣大學經濟系畢業",
         "caucus": "KMT",
         "ads": [
@@ -431,6 +508,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "內政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "內政委員會"
             }
@@ -450,7 +533,7 @@
                 "phone": "05-271-9595",
                 "fax": "05-277-9775",
                 "name": "嘉義服務處",
-                "address": "600嘉義市西區博愛路二段166號"
+                "address": "600嘉義市西區興達路280號"
             }
         ],
         "gender": "男",
@@ -469,10 +552,6 @@
         "in_office": true,
         "uid": 1738,
         "party": "DPP",
-        "constituency": [
-            "CYI",
-            0
-        ],
         "education": "美國波士頓學院政治研究所碩士\n文化大學政治系學士\n嘉義市民族國小",
         "caucus": "DPP",
         "ads": [
@@ -489,6 +568,18 @@
                 "session": 1,
                 "ad": 9,
                 "name": "交通委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
             }
         ],
         "ad": 9,
@@ -525,10 +616,6 @@
         "in_office": true,
         "uid": 1327,
         "party": "DPP",
-        "constituency": [
-            "KHH",
-            6
-        ],
         "education": "輔大歷史系畢\n中山大學政治學碩士",
         "caucus": "DPP",
         "ads": [
@@ -544,6 +631,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "外交及國防委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "外交及國防委員會"
             }
@@ -562,13 +655,25 @@
             {
                 "phone": "02-8626-9666",
                 "fax": "02-8626-0128",
-                "name": "淡水服務處",
+                "name": "淡水區服務處",
                 "address": "新北市淡水區淡金路24號"
+            },
+            {
+                "phone": "02-8601-9199",
+                "fax": "02-8601-9299",
+                "name": "林口區服務處",
+                "address": "新北市林口區文化三路二段326號"
+            },
+            {
+                "phone": "02-2906-2727",
+                "fax": "02-2908-4355",
+                "name": "泰山區：立法委員呂孫綾／副議長陳文治／里長陳文貴聯合務處",
+                "address": "新北市泰山區新明里中央路5巷32-3號"
             },
             {
                 "phone": "02-2296-6994",
                 "fax": "02-2909-5641",
-                "name": "泰山服務處",
+                "name": "泰山區：立法委員呂孫綾／議員賴秋煝聯合服務處",
                 "address": "新北市泰山區文程路18巷12號"
             }
         ],
@@ -588,10 +693,6 @@
         "in_office": true,
         "uid": 1837,
         "party": "DPP",
-        "constituency": [
-            "NWT",
-            1
-        ],
         "education": "淡水國小\n聖心女中\n文化大學政治學系\n文化大學政治研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -605,6 +706,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "外交及國防委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
                 "ad": 9,
                 "name": "外交及國防委員會"
             }
@@ -648,10 +761,6 @@
         "in_office": true,
         "uid": 1736,
         "party": "KMT",
-        "constituency": [
-            "TAO",
-            5
-        ],
         "education": "桃園創新技術學院企業管理科\n桃園市育達高中\n桃園市中壢國中\n桃園市中壢國小",
         "caucus": "KMT",
         "ads": [
@@ -666,6 +775,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "內政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "內政委員會"
             }
@@ -710,10 +825,6 @@
         "in_office": true,
         "uid": 1842,
         "party": "DPP",
-        "constituency": [
-            "NWT",
-            10
-        ],
         "education": "德霖技術學院畢",
         "caucus": "DPP",
         "ads": [
@@ -733,6 +844,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
             }
@@ -765,9 +888,6 @@
         "in_office": true,
         "uid": 1814,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "美國北卡蘿萊納大學教堂山分校環境工程科博士(毒理)\n美國北卡蘿萊納大學教堂山分校碩士(環境工程科學)\n國立陽明大學醫學工程碩士\n國立清華大學化學工程系學士\n嘉義高中\n嘉義市民生國中\n嘉義市志航國小",
         "caucus": "DPP",
         "ads": [
@@ -781,6 +901,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "教育及文化委員會"
             }
@@ -819,10 +945,6 @@
         "in_office": true,
         "uid": 1833,
         "party": "DPP",
-        "constituency": [
-            "TPE",
-            1
-        ],
         "education": "臺灣大學政治學研究所碩士\n輔仁大學西語系、日語系文學雙學士",
         "caucus": "DPP",
         "ads": [
@@ -836,6 +958,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "財政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "財政委員會"
             }
@@ -867,7 +995,7 @@
                 "phone": "02-2208-3852",
                 "fax": "02-2208-3853",
                 "name": "福營服務處",
-                "address": "新北市新莊區後港一路130巷48號1樓"
+                "address": "新北市新莊區後港一路130巷17號1樓"
             }
         ],
         "gender": "男",
@@ -886,10 +1014,6 @@
         "in_office": true,
         "uid": 1324,
         "party": "DPP",
-        "constituency": [
-            "NWT",
-            4
-        ],
         "education": "士林國小\n成功高中\n國立政治大學法律系法學組學士\n國立政治大學法律研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -900,62 +1024,7 @@
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/6f7d4fb1cee178fb4b0b971ea8abbbec"
     },
     {
-        "elected_party": "KMT",
-        "committees": [
-            {
-                "chair": false,
-                "session": 1,
-                "ad": 9,
-                "name": "教育及文化委員會"
-            }
-        ],
-        "ad": 9,
-        "links": {
-            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00013&stage=9"
-        },
-        "contacts": [
-            {
-                "phone": "02-2358-6411",
-                "fax": "02-2358-6415",
-                "name": "國會研究室",
-                "address": "10051臺北市中正區濟南路1段3-1號2117室"
-            },
-            {
-                "phone": "03-280-5398",
-                "fax": "03-280-5399",
-                "name": "中壢服務處",
-                "address": "桃園市中壢區中正路131號"
-            }
-        ],
-        "gender": "男",
-        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90013.jpg",
-        "title": "立法委員",
-        "experience": "中華職業棒球大聯盟會長\n桃園縣長\n第6、7屆立法委員\n中原大學、台灣警專榮譽教授\n執業律師",
-        "name": "吳志揚",
-        "term_end": {
-            "date": "2020-01-31"
-        },
-        "identifiers": [
-            "吳志揚"
-        ],
-        "former_names": "",
-        "term_start": "2016-02-01",
-        "in_office": true,
-        "uid": 1321,
-        "party": "KMT",
-        "constituency": [
-            "proportional"
-        ],
-        "education": "哈佛大學法學碩士\n臺灣大學法律研究所碩士\n臺灣大學法律系畢業",
-        "caucus": "KMT",
-        "ads": [
-            9,
-            7,
-            6
-        ],
-        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b1abe0f01245e313a9d24480825825b6"
-    },
-    {
+        "remark": "自民國105年8月31日起辭去立法委員職務\n遞補委員：郭正亮",
         "elected_party": "DPP",
         "committees": [
             {
@@ -975,39 +1044,24 @@
         "links": {
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00113&stage=9"
         },
-        "contacts": [
-            {
-                "phone": "02-2358-6866",
-                "fax": "02-2358-6870",
-                "name": "國會研究室",
-                "address": "10051臺北市中正區青島東路1號3203室"
-            }
-        ],
+        "title": "立法委員",
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90113.jpg",
-        "title": "立法委員",
-        "experience": "萬國法律事務所資深合夥律師(1983年-2016年)\n臺北律師公會理事長(2003年-2005年)\n中華民國律師公會全國聯合會理事長(2008年-2009年)\n臺灣法學會理事長(2009年-2010年)\n民間司法改革基金會董事長(2010年)\n臺灣人權促進會會長(2013年)",
-        "name": "顧立雄",
-        "remark": [
-            "自民國105年8月31日起辭去立法委員職務", 
-            "遞補委員：郭正亮"
-        ], 
-        "term_end": {
-            "date": "2016-08-31", 
-            "reason": "辭職。", 
-            "replacement": "郭正亮"
-        },
         "identifiers": [
             "顧立雄"
         ],
+        "experience": "萬國法律事務所資深合夥律師(1983年-2016年)\n臺北律師公會理事長(2003年-2005年)\n中華民國律師公會全國聯合會理事長(2008年-2009年)\n臺灣法學會理事長(2009年-2010年)\n民間司法改革基金會董事長(2010年)\n臺灣人權促進會會長(2013年)",
+        "name": "顧立雄",
+        "term_end": {
+            "date": "2016-08-31",
+            "reason": "辭職。",
+            "replacement": "郭正亮"
+        },
         "former_names": "",
         "term_start": "2016-02-01",
-        "in_office": true,
+        "in_office": false,
         "uid": 1817,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "國立臺灣大學法學士\n美國紐約大學(NYU)法學碩士",
         "caucus": "DPP",
         "ads": [
@@ -1016,73 +1070,14 @@
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/96266b2fa130186664ade76083f89fc5"
     },
     {
-        "ad": 9, 
-        "ads": [
-            9, 
-            6, 
-            5
-        ], 
-        "caucus": "DPP", 
-        "committees": [
-            {
-                "ad": 9, 
-                "chair": false, 
-                "name": "程序委員會", 
-                "session": 2
-            }, 
-            {
-                "ad": 9, 
-                "chair": false, 
-                "name": "司法及法制委員會", 
-                "session": 2
-            }
-        ], 
-        "constituency": [
-            "proportional"
-        ],
-        "contacts": [
-            {
-                "address": "10051臺北市中正區青島東路1號3203室", 
-                "fax": "02-2358-6870", 
-                "name": "國會研究室", 
-                "phone": "02-2358-6868"
-            }
-        ], 
-        "education": [
-            "美國耶魯大學政治學博士", 
-            "台大社會學碩士", 
-            "台大心理學學士"
-        ], 
-        "elected_party": "DPP", 
-        "experience": [
-            "文化國際企管研究所副教授", 
-            "美麗島文化事業有限公司副董事長", 
-            "第5、6 屆立法委員", 
-            "陸委會、外交部諮委", 
-            "東吳政治系副教授"
-        ], 
-        "former_names": [], 
-        "gender": "男", 
-        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90116.jpg", 
-        "in_office": true, 
-        "links": {
-            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00116&stage=9"
-        }, 
-        "name": "郭正亮", 
-        "identifiers": [
-            "郭正亮"
-        ],
-        "party": "DPP", 
-        "term_start": "2016-09-02",
-        "uid": 1859, 
-        "term_end": {
-            "date": "2020-01-31"
-        },
-        "title": "立法委員"
-    },
-    {
         "elected_party": "DPP",
         "committees": [
+            {
+                "chair": true,
+                "session": 1,
+                "ad": 9,
+                "name": "經濟委員會"
+            },
             {
                 "chair": true,
                 "session": 1,
@@ -1090,8 +1085,8 @@
                 "name": "紀律委員會"
             },
             {
-                "chair": true,
-                "session": 1,
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "經濟委員會"
             }
@@ -1130,10 +1125,6 @@
         "in_office": true,
         "uid": 1718,
         "party": "DPP",
-        "constituency": [
-            "PIF",
-            1
-        ],
         "education": "屏東科技大學農業企業管理碩士專班畢",
         "caucus": "DPP",
         "ads": [
@@ -1149,6 +1140,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "外交及國防委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "外交及國防委員會"
             }
@@ -1181,9 +1178,6 @@
         "in_office": true,
         "uid": 695,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "國立中山大學公共事務管理碩士\n國立海洋大學食品科學系學士",
         "caucus": "DPP",
         "ads": [
@@ -1199,6 +1193,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "經濟委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "經濟委員會"
             }
@@ -1237,10 +1237,6 @@
         "in_office": true,
         "uid": 985,
         "party": "DPP",
-        "constituency": [
-            "YUN",
-            1
-        ],
         "education": "雲林縣北港鎮南陽國小\n雲林縣北港鎮北港初中\n臺北市立士林商業職業學校畢業",
         "caucus": "DPP",
         "ads": [
@@ -1255,6 +1251,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "教育及文化委員會"
             }
@@ -1305,10 +1307,6 @@
         "in_office": true,
         "uid": 1838,
         "party": "DPP",
-        "constituency": [
-            "NWT",
-            5
-        ],
         "education": "美國賓州大學法律博士（SJD）候選人\n美國賓州大學法律碩士(LLM)\n美國波士頓大學法律碩士(LLM)\n台大法律系司法組畢業\n北一女中",
         "caucus": "DPP",
         "ads": [
@@ -1322,6 +1320,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "外交及國防委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
                 "ad": 9,
                 "name": "外交及國防委員會"
             }
@@ -1341,7 +1351,7 @@
                 "phone": "02-2962-2366",
                 "fax": "02-2962-9390",
                 "name": "板橋服務處",
-                "address": "220新北市板橋市民安街32號"
+                "address": "220新北市板橋區民安街32號"
             }
         ],
         "gender": "男",
@@ -1360,10 +1370,6 @@
         "in_office": true,
         "uid": 1840,
         "party": "DPP",
-        "constituency": [
-            "NWT",
-            7
-        ],
         "education": "美國加州大學洛杉磯分校(UCLA)政治學博士\n國立政治大學外交學系學士",
         "caucus": "DPP",
         "ads": [
@@ -1377,6 +1383,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "財政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "財政委員會"
             }
@@ -1415,10 +1427,6 @@
         "in_office": true,
         "uid": 879,
         "party": "KMT",
-        "constituency": [
-            "NWT",
-            11
-        ],
         "education": "美國華盛頓城市大學企業管理碩士\n致理商專(現升格科技大學)企業管理系畢",
         "caucus": "KMT",
         "ads": [
@@ -1437,6 +1445,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "交通委員會"
             }
@@ -1487,10 +1501,6 @@
         "in_office": true,
         "uid": 1803,
         "party": "KMT",
-        "constituency": [
-            "TXG",
-            2
-        ],
         "education": "建國工專機械工程科\n美國舊金山多明尼肯大學企管碩士\n中華大學行政管理研究所碩士",
         "caucus": "KMT",
         "ads": [
@@ -1505,6 +1515,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "交通委員會"
             }
@@ -1545,10 +1561,6 @@
         "in_office": true,
         "uid": 1717,
         "party": "KMT",
-        "constituency": [
-            "aborigine",
-            "highland"
-        ],
         "education": "草埔國小畢業\n枋寮初中畢業\n省立屏東師專畢業",
         "caucus": "KMT",
         "ads": [
@@ -1564,6 +1576,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "教育及文化委員會"
             }
@@ -1602,10 +1620,6 @@
         "in_office": true,
         "uid": 1854,
         "party": "DPP",
-        "constituency": [
-            "PIF",
-            2
-        ],
         "education": "國立屏東科技大學研究所\n國立臺灣大學歷史系\n屏東高中\n明正國中\n仁愛國小",
         "caucus": "DPP",
         "ads": [
@@ -1627,6 +1641,18 @@
                 "session": 1,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
             }
         ],
         "ad": 9,
@@ -1638,7 +1664,12 @@
                 "phone": "02-2358-8106",
                 "fax": "02-2358-8110",
                 "name": "國會研究室",
-                "address": "10051臺北市中正區青島東路1號3111室"
+                "address": "10051臺北市中正區青島東路1號3301室"
+            },
+            {
+                "phone": "037-260-318",
+                "name": "苗栗服務處",
+                "address": "360苗栗縣苗栗市中正路159號"
             }
         ],
         "gender": "男",
@@ -1657,9 +1688,6 @@
         "in_office": true,
         "uid": 1821,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "屏東縣內埔國民小學\n屏東縣內埔國民中學\n私立美和高級中學",
         "caucus": "DPP",
         "ads": [
@@ -1673,6 +1701,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "內政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "內政委員會"
             }
@@ -1717,10 +1751,6 @@
         "in_office": true,
         "uid": 1850,
         "party": "DPP",
-        "constituency": [
-            "KHH",
-            9
-        ],
         "education": "臺灣大學國家發展研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -1735,11 +1765,29 @@
                 "chair": false,
                 "session": 1,
                 "ad": 9,
-                "name": "程序委員會"
+                "name": "財政委員會"
             },
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
                 "ad": 9,
                 "name": "財政委員會"
             }
@@ -1778,10 +1826,6 @@
         "in_office": true,
         "uid": 866,
         "party": "KMT",
-        "constituency": [
-            "TPE",
-            8
-        ],
         "education": "美國南加州大學工業與系統工程碩士、博士\n國立政治大學企管所碩士\n國立成功大學機械系學士",
         "caucus": "KMT",
         "ads": [
@@ -1799,6 +1843,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "交通委員會"
             }
@@ -1837,10 +1887,6 @@
         "in_office": true,
         "uid": 981,
         "party": "DPP",
-        "constituency": [
-            "HUA",
-            0
-        ],
         "education": "美國哥倫比亞大學政治學碩士",
         "caucus": "DPP",
         "ads": [
@@ -1871,6 +1917,18 @@
                 "session": 1,
                 "ad": 9,
                 "name": "經費稽核委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "經費稽核委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "財政委員會"
             }
         ],
         "ad": 9,
@@ -1907,10 +1965,6 @@
         "in_office": true,
         "uid": 869,
         "party": "KMT",
-        "constituency": [
-            "TXG",
-            5
-        ],
         "education": "國立政治大學地政系學士\n私立淡江大學國際事務與戰略研究所碩士",
         "caucus": "KMT",
         "ads": [
@@ -1929,6 +1983,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
             }
@@ -1967,10 +2027,6 @@
         "in_office": true,
         "uid": 1834,
         "party": "KMT",
-        "constituency": [
-            "TPE",
-            3
-        ],
         "education": "美國賓夕法尼亞大學法學院法律博士\n國立政治大學法律系、外交系雙學士",
         "caucus": "KMT",
         "ads": [
@@ -1984,6 +2040,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "教育及文化委員會"
             }
@@ -2016,10 +2078,6 @@
         "in_office": true,
         "uid": 1722,
         "party": "KMT",
-        "constituency": [
-            "TPE",
-            6
-        ],
         "education": "大同大學事業經營研究所碩士畢業",
         "caucus": "KMT",
         "ads": [
@@ -2035,6 +2093,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "外交及國防委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "外交及國防委員會"
             }
@@ -2055,6 +2119,12 @@
                 "fax": "02-2431-0071",
                 "name": "安樂服務處",
                 "address": "基隆市基金一路135巷21弄2-1號"
+            },
+            {
+                "phone": "02-2426-0182",
+                "fax": "02-2426-0183",
+                "name": "基隆服務處",
+                "address": "基隆市中正區義一路114號2樓"
             }
         ],
         "gender": "男",
@@ -2073,10 +2143,6 @@
         "in_office": true,
         "uid": 1855,
         "party": "DPP",
-        "constituency": [
-            "KEE",
-            0
-        ],
         "education": "淡江大學國際事務與戰略研究所碩士\n東海大學政治系學士",
         "caucus": "DPP",
         "ads": [
@@ -2096,6 +2162,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "經濟委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "經濟委員會"
             }
@@ -2128,9 +2206,6 @@
         "in_office": true,
         "uid": 1818,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "臺灣大學生物產業傳播暨發展學系博士",
         "caucus": "DPP",
         "ads": [
@@ -2144,6 +2219,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "司法及法制委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "司法及法制委員會"
             }
@@ -2166,13 +2247,21 @@
                 "address": "嘉義縣朴子市安福里文明路1-11號"
             },
             {
-                "phone": "05-347-6822",
+                "phone": "05-2686-860",
+                "fax": "05-2686-863",
+                "name": "水上服務處",
+                "address": "嘉義縣水上鄉水頭村中興路183號"
+            },
+            {
+                "phone": "05-3477-222",
                 "name": "布袋服務處",
                 "address": "嘉義縣布袋鎮上海路331-1號"
             },
             {
-                "name": "水上服務處",
-                "address": "嘉義縣水上鄉中正路192號"
+                "phone": "05-3416-058",
+                "fax": "05-3416-068",
+                "name": "義竹服務處",
+                "address": "嘉義縣義竹鄉竹村117號"
             }
         ],
         "gender": "男",
@@ -2191,10 +2280,6 @@
         "in_office": true,
         "uid": 1853,
         "party": "DPP",
-        "constituency": [
-            "CYQ",
-            1
-        ],
         "education": "嘉義市崇文國小\n水上鄉忠和國中\n嘉義高中\n臺灣大學財經法律系",
         "caucus": "DPP",
         "ads": [
@@ -2208,6 +2293,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "司法及法制委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "司法及法制委員會"
             }
@@ -2252,10 +2343,6 @@
         "in_office": true,
         "uid": 1377,
         "party": "DPP",
-        "constituency": [
-            "TXG",
-            1
-        ],
         "education": "中興大學財金所EMBA碩士 \n東海大學歷史研究所碩士 \n東海大學歷史學系畢業 \n清水高中 \n沙鹿國中 \n清水國小",
         "caucus": "DPP",
         "ads": [
@@ -2271,6 +2358,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "交通委員會"
             }
@@ -2333,10 +2426,6 @@
         "in_office": true,
         "uid": 1762,
         "party": "DPP",
-        "constituency": [
-            "TTT",
-            0
-        ],
         "education": "臺東仁愛國小\n臺東新生國中\n臺東高中\n國立政治大學法律學系",
         "caucus": "DPP",
         "ads": [
@@ -2351,6 +2440,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
             }
@@ -2394,10 +2489,6 @@
         "in_office": true,
         "uid": 1723,
         "party": "DPP",
-        "constituency": [
-            "YUN",
-            2
-        ],
         "education": "稻江科技暨管理學院老人福祉與社會工作學系",
         "caucus": "DPP",
         "ads": [
@@ -2411,14 +2502,20 @@
         "elected_party": "DPP",
         "committees": [
             {
+                "chair": true,
+                "session": 1,
+                "ad": 9,
+                "name": "外交及國防委員會"
+            },
+            {
                 "chair": false,
                 "session": 1,
                 "ad": 9,
                 "name": "紀律委員會"
             },
             {
-                "chair": true,
-                "session": 1,
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "外交及國防委員會"
             }
@@ -2457,10 +2554,6 @@
         "in_office": true,
         "uid": 964,
         "party": "DPP",
-        "constituency": [
-            "KHH",
-            3
-        ],
         "education": "美國奧克拉荷馬州州立大學環境工程碩士\n淡江大學化學工程系學士",
         "caucus": "DPP",
         "ads": [
@@ -2475,6 +2568,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "交通委員會"
             }
@@ -2513,10 +2612,6 @@
         "in_office": true,
         "uid": 749,
         "party": "DPP",
-        "constituency": [
-            "TAO",
-            4
-        ],
         "education": "國立中央大學管理學博士\n國立中興大學法學碩士\n國立中興大學行政系學士",
         "caucus": "DPP",
         "ads": [
@@ -2544,17 +2639,14 @@
         "name": "鄭麗君",
         "term_end": {
             "date": "2016-05-20",
-            "reason": "依台立人字第1050003490號函自105年05月20日辭去立法委員職務。",
-            "replacement": []
+            "reason": "辭職。",
+            "replacement": "李麗芬"
         },
         "former_names": "",
         "term_start": "2016-02-01",
         "in_office": false,
         "uid": 1764,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "台大哲學系學士\n法國巴黎第十大學政治、經濟、社會哲學碩士",
         "caucus": "DPP",
         "ads": [
@@ -2569,6 +2661,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "交通委員會"
             }
@@ -2619,10 +2717,6 @@
         "in_office": true,
         "uid": 1381,
         "party": "DPP",
-        "constituency": [
-            "TAO",
-            1
-        ],
         "education": "臺北市立福星國民小學\n私立延平中學直升部\n國立臺灣大學土木工程學系畢業",
         "caucus": "DPP",
         "ads": [
@@ -2643,6 +2737,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "經費稽核委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "交通委員會"
             }
@@ -2683,10 +2789,6 @@
         "in_office": true,
         "uid": 1763,
         "party": "KMT",
-        "constituency": [
-            "aborigine",
-            "lowland"
-        ],
         "education": "國立臺灣大學法律系畢業",
         "caucus": "KMT",
         "ads": [
@@ -2701,6 +2803,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "交通委員會"
             }
@@ -2739,10 +2847,6 @@
         "in_office": true,
         "uid": 1845,
         "party": null,
-        "constituency": [
-            "TAO",
-            6
-        ],
         "education": "銘傳大學公共事務學系研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -2756,6 +2860,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "內政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
                 "ad": 9,
                 "name": "內政委員會"
             }
@@ -2794,10 +2910,6 @@
         "in_office": true,
         "uid": 1761,
         "party": "DPP",
-        "constituency": [
-            "KHH",
-            7
-        ],
         "education": "國立中山大學公共政策碩士",
         "caucus": "DPP",
         "ads": [
@@ -2814,6 +2926,18 @@
                 "session": 1,
                 "ad": 9,
                 "name": "經濟委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "經濟委員會"
             }
         ],
         "ad": 9,
@@ -2828,10 +2952,10 @@
                 "address": "10051臺北市中正區濟南路1段3-1號0901室"
             },
             {
-                "phone": "07-313-7816",
-                "fax": "07-313-5797",
-                "name": "三民服務處",
-                "address": "高雄市三民區博愛一路183號"
+                "phone": "07-559-7689",
+                "fax": "07-550-0266",
+                "name": "大順服務處",
+                "address": "高雄市鼓山區大順一路929號"
             },
             {
                 "phone": "07-533-0227",
@@ -2856,10 +2980,6 @@
         "in_office": true,
         "uid": 1374,
         "party": "DPP",
-        "constituency": [
-            "KHH",
-            5
-        ],
         "education": "臺灣大學政治學博士",
         "caucus": "DPP",
         "ads": [
@@ -2876,6 +2996,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "經濟委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "經濟委員會"
             }
@@ -2916,10 +3042,6 @@
         "in_office": true,
         "uid": 962,
         "party": "KMT",
-        "constituency": [
-            "aborigine",
-            "lowland"
-        ],
         "education": "高雄醫學大學醫學系",
         "caucus": "KMT",
         "ads": [
@@ -2935,6 +3057,12 @@
         "elected_party": "DPP",
         "committees": [
             {
+                "chair": false,
+                "session": 1,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
                 "chair": true,
                 "session": 1,
                 "ad": 9,
@@ -2942,9 +3070,9 @@
             },
             {
                 "chair": false,
-                "session": 1,
+                "session": 2,
                 "ad": 9,
-                "name": "紀律委員會"
+                "name": "交通委員會"
             }
         ],
         "ad": 9,
@@ -2987,10 +3115,6 @@
         "in_office": true,
         "uid": 855,
         "party": "DPP",
-        "constituency": [
-            "TNN",
-            1
-        ],
         "education": "美國Bridgeport大學音樂碩士",
         "caucus": "DPP",
         "ads": [
@@ -3011,6 +3135,12 @@
                 "session": 1,
                 "ad": 9,
                 "name": "內政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "內政委員會"
             }
         ],
         "ad": 9,
@@ -3028,7 +3158,7 @@
                 "phone": "082-375-230",
                 "fax": "082-375-155",
                 "name": "金門服務處",
-                "address": "金門縣金城鎮民生路69號"
+                "address": "金門縣金城鎮民權路154號"
             },
             {
                 "phone": "06-233-5927",
@@ -3052,10 +3182,6 @@
         "in_office": true,
         "uid": 1856,
         "party": "KMT",
-        "constituency": [
-            "KIN",
-            0
-        ],
         "education": "金門高中\n文化大學經濟系\n英國西敏大學企管碩士",
         "caucus": "KMT",
         "ads": [
@@ -3069,6 +3195,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
             }
@@ -3107,10 +3239,6 @@
         "in_office": true,
         "uid": 1759,
         "party": "DPP",
-        "constituency": [
-            "PEN",
-            0
-        ],
         "education": "東海大學法律系",
         "caucus": "DPP",
         "ads": [
@@ -3123,14 +3251,20 @@
         "elected_party": "DPP",
         "committees": [
             {
+                "chair": true,
+                "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
                 "chair": false,
                 "session": 1,
                 "ad": 9,
                 "name": "紀律委員會"
             },
             {
-                "chair": true,
-                "session": 1,
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "教育及文化委員會"
             }
@@ -3169,10 +3303,6 @@
         "in_office": true,
         "uid": 1808,
         "party": "DPP",
-        "constituency": [
-            "TXG",
-            6
-        ],
         "education": "國立中興大學國際政治研究所碩士\n國立臺北藝術大學\n國立臺中一中",
         "caucus": "DPP",
         "ads": [
@@ -3187,6 +3317,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "財政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "財政委員會"
             }
@@ -3225,10 +3361,6 @@
         "in_office": true,
         "uid": 1843,
         "party": "NPP",
-        "constituency": [
-            "NWT",
-            12
-        ],
         "education": "臺灣大學法律系學士\n美國康乃爾大學法學博士",
         "caucus": "NPP",
         "ads": [
@@ -3250,6 +3382,24 @@
                 "session": 1,
                 "ad": 9,
                 "name": "經濟委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "經費稽核委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "經濟委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
             }
         ],
         "ad": 9,
@@ -3298,10 +3448,6 @@
         "in_office": true,
         "uid": 1367,
         "party": "DPP",
-        "constituency": [
-            "TNN",
-            2
-        ],
         "education": "國立臺灣大學學士\n美國耶魯大學碩士\n美國哈佛大學碩士",
         "caucus": "DPP",
         "ads": [
@@ -3316,14 +3462,20 @@
         "elected_party": "KMT",
         "committees": [
             {
+                "chair": true,
+                "session": 1,
+                "ad": 9,
+                "name": "內政委員會"
+            },
+            {
                 "chair": false,
                 "session": 1,
                 "ad": 9,
                 "name": "紀律委員會"
             },
             {
-                "chair": true,
-                "session": 1,
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "內政委員會"
             }
@@ -3362,9 +3514,6 @@
         "in_office": true,
         "uid": 665,
         "party": "KMT",
-        "constituency": [
-            "proportional"
-        ],
         "education": "國立中山大學高階經營碩士\n高雄醫學大學藥學系\n省立臺南女中",
         "caucus": "KMT",
         "ads": [
@@ -3385,6 +3534,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
             }
@@ -3423,10 +3578,6 @@
         "in_office": true,
         "uid": 1851,
         "party": "DPP",
-        "constituency": [
-            "CHA",
-            2
-        ],
         "education": "靜宜大學外文系畢業",
         "caucus": "DPP",
         "ads": [
@@ -3440,6 +3591,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "財政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "財政委員會"
             }
@@ -3478,10 +3635,6 @@
         "in_office": true,
         "uid": 1365,
         "party": "KMT",
-        "constituency": [
-            "TPE",
-            7
-        ],
         "education": "美國肯塔基大學統計學博士\n美國北伊利諾大學統計學碩士\n國立中興大學統計學學士\n成功高中\n大安國中\n三興國小\n信義國小",
         "caucus": "KMT",
         "ads": [
@@ -3499,11 +3652,23 @@
                 "chair": false,
                 "session": 1,
                 "ad": 9,
-                "name": "程序委員會"
+                "name": "財政委員會"
             },
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "財政委員會"
             }
@@ -3523,7 +3688,7 @@
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90072.jpg",
         "title": "立法委員",
-        "experience": "金融監督管理委員會主任委員\n財政部政務次長兼臺灣金控董事長\n財政部常務次長兼國安基金執行秘書\n行政院金融監督管理委員會檢查局局長\n合作金庫銀行總經理\n其他事項：金管會主委任內，政績卓著，榮獲總統府及行政院頒發「景星勳章」及「一等功績獎章」",
+        "experience": "金融監督管理委員會主任委員\n財政部政務次長兼臺灣金控董事長\n財政部常務次長兼國安基金執行秘書\n行政院金融監督管理委員會檢查局局長\n合作金庫銀行總經理\n其他事項：\n一、金管會主委任內，政績卓著，榮獲總統府及行政院頒發「景星勳章」及「一等功績獎章」\n二、2014年獲頒「李國鼎管理獎章」\n三、「公民監督國會聯盟」評鑑為：「9-1會期優秀立委」",
         "name": "曾銘宗",
         "term_end": {
             "date": "2020-01-31"
@@ -3536,9 +3701,6 @@
         "in_office": true,
         "uid": 1828,
         "party": "KMT",
-        "constituency": [
-            "proportional"
-        ],
         "education": "臺北大學企業管理研究所博士",
         "caucus": "KMT",
         "ads": [
@@ -3552,6 +3714,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "司法及法制委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "司法及法制委員會"
             }
@@ -3584,9 +3752,6 @@
         "in_office": true,
         "uid": 1827,
         "party": "KMT",
-        "constituency": [
-            "proportional"
-        ],
         "education": "THNK 阿姆斯特丹創意領袖學院獎學金\n國立政治大學英語系",
         "caucus": "KMT",
         "ads": [
@@ -3600,6 +3765,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "教育及文化委員會"
             }
@@ -3638,10 +3809,6 @@
         "in_office": true,
         "uid": 1750,
         "party": "DPP",
-        "constituency": [
-            "KHH",
-            8
-        ],
         "education": "國立高雄師範大學科學教育研究所博士班\n國立高雄師範大學教育碩士(1996)\n國立臺灣大學機械系學士(1988)\n高雄中學(1984)\n五甲國中(1981)\n五甲國小(1978)",
         "caucus": "DPP",
         "ads": [
@@ -3656,6 +3823,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "司法及法制委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
                 "ad": 9,
                 "name": "司法及法制委員會"
             }
@@ -3694,10 +3873,6 @@
         "in_office": true,
         "uid": 1811,
         "party": "KMT",
-        "constituency": [
-            "NAN",
-            2
-        ],
         "education": "逢甲大學經營管理碩士畢",
         "caucus": "KMT",
         "ads": [
@@ -3718,6 +3893,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "內政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "經費稽核委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "內政委員會"
             }
@@ -3767,10 +3954,6 @@
         "in_office": true,
         "uid": 1812,
         "party": "DPP",
-        "constituency": [
-            "PIF",
-            3
-        ],
         "education": "國立臺灣大學農業經濟學系碩士 \n國立臺北大學企業管理學系碩士 \n國立臺灣大學法律學系學士",
         "caucus": "DPP",
         "ads": [
@@ -3785,6 +3968,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "經濟委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "經濟委員會"
             }
@@ -3822,9 +4011,6 @@
         "in_office": true,
         "uid": 1349,
         "party": "KMT",
-        "constituency": [
-            "proportional"
-        ],
         "education": "雲林縣馬光國小\n雲林縣土庫國中\n臺中曉明女中\n國立虎尾科技大學工業管理系\n國立臺灣師範大學運動休閒管理研究所",
         "caucus": "KMT",
         "ads": [
@@ -3839,6 +4025,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "教育及文化委員會"
             }
@@ -3877,10 +4069,6 @@
         "in_office": true,
         "uid": 1847,
         "party": "DPP",
-        "constituency": [
-            "TXG",
-            4
-        ],
         "education": "東海大學EMBA高階管理學院碩士\n東吳大學政治學研究所碩士班\n輔仁大學大眾傳播系\n國立台中一中",
         "caucus": "DPP",
         "ads": [
@@ -3894,6 +4082,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "司法及法制委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "司法及法制委員會"
             }
@@ -3938,10 +4132,6 @@
         "in_office": true,
         "uid": 1839,
         "party": "DPP",
-        "constituency": [
-            "NWT",
-            6
-        ],
         "education": "東吳大學政治系學士\n國立臺北教育大學教育碩士",
         "caucus": "DPP",
         "ads": [
@@ -3961,6 +4151,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "經費稽核委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "教育及文化委員會"
             }
@@ -3995,9 +4197,6 @@
         "in_office": true,
         "uid": 1831,
         "party": "NPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "臺北商專國貿科\n世新大學新聞系",
         "caucus": "NPP",
         "ads": [
@@ -4017,6 +4216,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "經費稽核委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "教育及文化委員會"
             }
@@ -4055,10 +4266,6 @@
         "in_office": true,
         "uid": 926,
         "party": "NSU",
-        "constituency": [
-            "aborigine",
-            "highland"
-        ],
         "education": "青年高中畢業\n中央民族大學-民族學",
         "caucus": "PFP",
         "ads": [
@@ -4076,6 +4283,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "經濟委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "經濟委員會"
             }
@@ -4114,10 +4327,6 @@
         "in_office": true,
         "uid": 923,
         "party": "DPP",
-        "constituency": [
-            "NWT",
-            3
-        ],
         "education": "建國中學\n輔仁大學法律系財經法律組\n臺灣大學EMBA",
         "caucus": "DPP",
         "ads": [
@@ -4135,6 +4344,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "外交及國防委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "外交及國防委員會"
             }
@@ -4178,10 +4393,6 @@
         "in_office": true,
         "uid": 1724,
         "party": "KMT",
-        "constituency": [
-            "NAN",
-            1
-        ],
         "education": "逢甲大學經營管理碩士 \n嘉南藥專(嘉南藥理科技大學)藥理科畢業 \n大成國中\n育英國小",
         "caucus": "KMT",
         "ads": [
@@ -4199,6 +4410,12 @@
                 "session": 1,
                 "ad": 9,
                 "name": "財政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "財政委員會"
             }
         ],
         "ad": 9,
@@ -4211,6 +4428,30 @@
                 "fax": "02-2358-6140",
                 "name": "國會研究室",
                 "address": "10051臺北市中正區濟南路1段3-1號0601室"
+            },
+            {
+                "phone": "03-482-1333",
+                "fax": "03-482-2266",
+                "name": "楊梅區服務處",
+                "address": "326桃園市楊梅區梅獅路二段65號"
+            },
+            {
+                "phone": "03-473-2535",
+                "fax": "03-473-7855",
+                "name": "觀音區服務處",
+                "address": "328桃園市觀音區中正路156號"
+            },
+            {
+                "phone": "03-385-0188",
+                "fax": "03-385-0185",
+                "name": "大園區服務處",
+                "address": "337桃園市大園區中山南路109號"
+            },
+            {
+                "phone": "03-477-0123",
+                "fax": "03-477-2238",
+                "name": "新屋區服務處",
+                "address": "327桃園市新屋區電信街13號"
             }
         ],
         "gender": "女",
@@ -4229,10 +4470,6 @@
         "in_office": true,
         "uid": 1844,
         "party": "DPP",
-        "constituency": [
-            "TAO",
-            2
-        ],
         "education": "萬能科技大學學士畢業\n國立新竹高商",
         "caucus": "DPP",
         "ads": [
@@ -4252,6 +4489,18 @@
             {
                 "chair": true,
                 "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
                 "ad": 9,
                 "name": "教育及文化委員會"
             }
@@ -4290,10 +4539,6 @@
         "in_office": true,
         "uid": 840,
         "party": "KMT",
-        "constituency": [
-            "TAO",
-            3
-        ],
         "education": "建國中學\n國立臺灣大學政治學系學士\n淡江大學中國大陸研究所碩士",
         "caucus": "KMT",
         "ads": [
@@ -4310,6 +4555,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
             }
@@ -4354,10 +4611,6 @@
         "in_office": true,
         "uid": 1362,
         "party": "DPP",
-        "constituency": [
-            "aborigine",
-            "lowland"
-        ],
         "education": "美國伊利諾大學香檳校園音樂系博士班畢業\n美國伊利諾大學香檳校園音樂系碩士班畢業\n美國舊金山音樂學院學士畢業\n美國夏威夷楊百翰大學學士肄業\n高雄文藻外大學畢業",
         "caucus": "DPP",
         "ads": [
@@ -4373,6 +4626,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "交通委員會"
             }
@@ -4416,10 +4675,6 @@
         "in_office": true,
         "uid": 1753,
         "party": "DPP",
-        "constituency": [
-            "ILA",
-            0
-        ],
         "education": "國立中興大學森林研究所碩士\n國立中興大學森林所學士\n省立宜蘭高級中學",
         "caucus": "DPP",
         "ads": [
@@ -4434,6 +4689,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "內政委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
                 "ad": 9,
                 "name": "內政委員會"
             }
@@ -4472,10 +4739,6 @@
         "in_office": true,
         "uid": 836,
         "party": "KMT",
-        "constituency": [
-            "MIA",
-            1
-        ],
         "education": "新竹縣竹東高中 \n國立政治大學公共行政學系",
         "caucus": "KMT",
         "ads": [
@@ -4497,6 +4760,18 @@
             {
                 "chair": true,
                 "session": 1,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "紀律委員會"
             }
@@ -4535,10 +4810,6 @@
         "in_office": true,
         "uid": 1751,
         "party": "KMT",
-        "constituency": [
-            "LIE",
-            0
-        ],
         "education": "省立豐原商職畢業",
         "caucus": "KMT",
         "ads": [
@@ -4559,6 +4830,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
             }
@@ -4591,9 +4874,6 @@
         "in_office": true,
         "uid": 1816,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "美國聖地牙哥國家大學公共行政管理碩士",
         "caucus": "DPP",
         "ads": [
@@ -4607,6 +4887,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "交通委員會"
             }
@@ -4651,10 +4937,6 @@
         "in_office": true,
         "uid": 1809,
         "party": "DPP",
-        "constituency": [
-            "CHA",
-            4
-        ],
         "education": "文化大學史學研究所碩士\n文化大學史學系\n台中女中\n南投縣名間國中、僑興國小",
         "caucus": "DPP",
         "ads": [
@@ -4669,6 +4951,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "外交及國防委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "外交及國防委員會"
             }
@@ -4713,10 +5001,6 @@
         "in_office": true,
         "uid": 1708,
         "party": "DPP",
-        "constituency": [
-            "TNN",
-            3
-        ],
         "education": "長榮大學經營管理學研究所碩士\n文化大學\n家齊女中\n中山國中\n協進國小",
         "caucus": "DPP",
         "ads": [
@@ -4732,6 +5016,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "經濟委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "經濟委員會"
             }
@@ -4776,10 +5066,6 @@
         "in_office": true,
         "uid": 828,
         "party": "DPP",
-        "constituency": [
-            "CYQ",
-            2
-        ],
         "education": "私立東海大學哲學系畢業",
         "caucus": "DPP",
         "ads": [
@@ -4802,6 +5088,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "內政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "程序委員會"
             }
@@ -4834,9 +5132,6 @@
         "in_office": true,
         "uid": 1804,
         "party": "PFP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "銘傳大學管理學院研究所博士",
         "caucus": "PFP",
         "ads": [
@@ -4859,6 +5154,18 @@
                 "session": 1,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "經費稽核委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
             }
         ],
         "ad": 9,
@@ -4873,10 +5180,10 @@
                 "address": "10051臺北市中正區青島東路1號3306室"
             },
             {
-                "phone": "07-740-8970",
-                "fax": "07-740-8670",
+                "phone": "07-269-6010",
+                "fax": "07-269-5330",
                 "name": "高雄服務處",
-                "address": "83064高雄市鳳山區曹公路21號"
+                "address": "80247高雄市苓雅區華新街10號"
             }
         ],
         "gender": "男",
@@ -4895,9 +5202,6 @@
         "in_office": true,
         "uid": 1825,
         "party": "KMT",
-        "constituency": [
-            "proportional"
-        ],
         "education": "國立陽明大學醫學士(第一屆)\n陽明大學微生物暨免疫學研究所第一屆碩士\n美國哈佛大學公共衛生學院科學博士\n美國國家衛生院癌症醫學中心分子腫瘤實險室博士後研究員\n美國國家衛生院癌症醫學中心HIV抗藥研究計畫訪問科學家",
         "caucus": "KMT",
         "ads": [
@@ -4912,11 +5216,17 @@
                 "chair": true,
                 "session": 1,
                 "ad": 9,
-                "name": "紀律委員會"
+                "name": "內政委員會"
             },
             {
                 "chair": true,
                 "session": 1,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "內政委員會"
             }
@@ -4955,9 +5265,6 @@
         "in_office": true,
         "uid": 734,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "高雄中學畢業\n中山醫學院醫學系畢業\n國立臺灣大學公共衛生研究所預防醫學碩士\n醫師檢覈考試及格\n醫師高等考試及格",
         "caucus": "DPP",
         "ads": [
@@ -4970,11 +5277,70 @@
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/a343c047b44293bc9f205000ddc8fddf"
     },
     {
+        "elected_party": "DPP",
+        "committees": [
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "司法及法制委員會"
+            }
+        ],
+        "ad": 9,
+        "links": {
+            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00116&stage=9"
+        },
+        "contacts": [
+            {
+                "phone": "02-2358-6868",
+                "fax": "02-2358-6870",
+                "name": "國會研究室",
+                "address": "10051臺北市中正區青島東路1號3203室"
+            }
+        ],
+        "gender": "男",
+        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90116.jpg",
+        "title": "立法委員",
+        "experience": "文化國際企管研究所副教授\n美麗島文化事業有限公司副董事長\n第5、6 屆立法委員\n陸委會、外交部諮委\n東吳政治系副教授",
+        "name": "郭正亮",
+        "term_end": {
+            "date": "2020-01-31"
+        },
+        "identifiers": [
+            "郭正亮"
+        ],
+        "former_names": "",
+        "term_start": "2016-09-02",
+        "in_office": true,
+        "uid": 1860,
+        "party": "DPP",
+        "education": "美國耶魯大學政治學博士\n台大社會學碩士\n台大心理學學士",
+        "caucus": "DPP",
+        "ads": [
+            9,
+            6,
+            5
+        ],
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/9df4654fc6737e9e5441734ed628b44e"
+    },
+    {
         "elected_party": "KMT",
         "committees": [
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "內政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "內政委員會"
             }
@@ -5013,9 +5379,6 @@
         "in_office": true,
         "uid": 1829,
         "party": "KMT",
-        "constituency": [
-            "proportional"
-        ],
         "education": "中國文化大學",
         "caucus": "KMT",
         "ads": [
@@ -5024,6 +5387,7 @@
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/ccd94af981a27ddc8079bf649eafba2a"
     },
     {
+        "remark": "自民國105年10月1日起辭去立法委員職務\n遞補委員：邱泰源",
         "elected_party": "DPP",
         "committees": [
             {
@@ -5033,55 +5397,40 @@
                 "name": "財政委員會"
             },
             {
-                "chair": false,
-                "session": 1,
-                "ad": 9,
-                "name": "紀律委員會"
-            },
-            {
                 "chair": true,
                 "session": 1,
                 "ad": 9,
                 "name": "經費稽核委員會"
+            },
+            {
+                "chair": false,
+                "session": 1,
+                "ad": 9,
+                "name": "紀律委員會"
             }
         ],
         "ad": 9,
         "links": {
             "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00046&stage=9"
         },
-        "contacts": [
-            {
-                "phone": "02-2358-6118",
-                "fax": "02-2358-6120",
-                "name": "國會研究室",
-                "address": "10051臺北市中正區濟南路1段3-1號2106室"
-            }
-        ],
+        "title": "立法委員",
         "gender": "男",
         "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90046.jpg",
-        "title": "立法委員",
-        "experience": "教師\n律師\n臺北市議員\n立法委員\n電視、電台節目主持人\n國際獅子會300A2區總監(2005-2006)",
-        "name": "徐國勇",
-        "remark": [
-            "自民國105年10月1日起辭去立法委員職務", 
-            "遞補委員：邱泰源"
-        ], 
-        "term_end": {
-            "date": "2016-10-01", 
-            "reason": "辭職。", 
-            "replacement": "邱泰源"
-        },
         "identifiers": [
             "徐國勇"
         ],
+        "experience": "教師\n律師\n臺北市議員\n立法委員\n電視、電台節目主持人\n國際獅子會300A2區總監(2005-2006)",
+        "name": "徐國勇",
+        "term_end": {
+            "date": "2016-10-01",
+            "reason": "辭職。",
+            "replacement": "邱泰源"
+        },
         "former_names": "",
         "term_start": "2016-02-01",
-        "in_office": true,
+        "in_office": false,
         "uid": 1343,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "省立台北師專啟智教育組畢業\n國立中興大學法律系法學士\n國立台灣海洋大學海洋法律研究所法學碩士、法學博士",
         "caucus": "DPP",
         "ads": [
@@ -5091,66 +5440,17 @@
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/e493f130023dbf5b37abc063a851d390"
     },
     {
-        "ad": 9, 
-        "ads": [
-            9
-        ], 
-        "caucus": "DPP", 
-        "committees": [
-            {
-                "ad": 9, 
-                "chair": false, 
-                "name": "財政委員會", 
-                "session": 2
-            }
-        ], 
-        "constituency": [
-            "proportional"
-        ], 
-        "contacts": [
-            {
-                "address": "10051臺北市中正區濟南路1段3-1號2106室", 
-                "fax": "02-2358-6120", 
-                "name": "國會研究室", 
-                "phone": "02-2358-6116"
-            }
-        ], 
-        "education": [
-            "日本東京大學醫學系研究科碩士"
-        ], 
-        "elected_party": "DPP", 
-        "experience": [
-            "台大醫學院教授暨社區醫學研究群主持人", 
-            "台大醫院主治醫師兼門診部主任", 
-            "曾任台灣家庭醫學醫學會理事長", 
-            "曾任台灣安寧緩和醫學學會理事長", 
-            "中華民國醫師公會全國聯合會理事長"
-        ], 
-        "former_names": [], 
-        "gender": "男", 
-        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90117.jpg", 
-        "in_office": true, 
-        "links": {
-            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00117&stage=9"
-        }, 
-        "name": "邱泰源",
-        "identifiers": [
-            "邱泰源"
-        ],
-        "uid": 1860,
-        "term_end": {
-            "date": "2020-01-31"
-        },
-        "party": "DPP", 
-        "term_start": "2016-10-04", 
-        "title": "立法委員"
-    },
-    {
         "elected_party": "KMT",
         "committees": [
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "外交及國防委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "外交及國防委員會"
             }
@@ -5201,10 +5501,6 @@
         "in_office": true,
         "uid": 1810,
         "party": "KMT",
-        "constituency": [
-            "MIA",
-            2
-        ],
         "education": "省立苗栗高中畢業 \n日本國立石川高等職業學校畢業",
         "caucus": "KMT",
         "ads": [
@@ -5225,6 +5521,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "經濟委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "經濟委員會"
             }
@@ -5257,9 +5565,6 @@
         "in_office": true,
         "uid": 1832,
         "party": "NPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "建國中學\n國立臺灣大學政治學系\n美國密西根大學政治學博士",
         "caucus": "NPP",
         "ads": [
@@ -5273,6 +5578,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
             }
@@ -5317,10 +5628,6 @@
         "in_office": true,
         "uid": 1846,
         "party": "NPP",
-        "constituency": [
-            "TXG",
-            3
-        ],
         "education": "后里區內埔國小\n臺中市后里國中\n國立台中商專\n國立高雄第一科技大學行銷與流通管理學系",
         "caucus": "NPP",
         "ads": [
@@ -5336,6 +5643,12 @@
                 "session": 1,
                 "ad": 9,
                 "name": "內政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "內政委員會"
             }
         ],
         "ad": 9,
@@ -5348,6 +5661,18 @@
                 "fax": "02-2358-8320",
                 "name": "國會研究室",
                 "address": "10051臺北市中正區濟南路1段3-1號0806室"
+            },
+            {
+                "phone": "04-881-6551",
+                "fax": "04-822-1620",
+                "name": "溪湖服務處",
+                "address": "500彰化縣溪湖鎮東寮里員鹿路三段493號"
+            },
+            {
+                "phone": "04-887-6769",
+                "fax": "04-887-6424",
+                "name": "北斗服務處",
+                "address": "500彰化縣北斗鎮居仁里復興路28號"
             },
             {
                 "name": "二林服務處",
@@ -5370,10 +5695,6 @@
         "in_office": true,
         "uid": 1852,
         "party": "DPP",
-        "constituency": [
-            "CHA",
-            3
-        ],
         "education": "國立彰化師範大學行政管理碩士\n國立中興大學公共行政系法學士",
         "caucus": "DPP",
         "ads": [
@@ -5401,6 +5722,18 @@
                 "session": 1,
                 "ad": 9,
                 "name": "紀律委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "司法及法制委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
             }
         ],
         "ad": 9,
@@ -5431,9 +5764,6 @@
         "in_office": true,
         "uid": 917,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "國立臺灣大學政治學系學士",
         "caucus": "DPP",
         "ads": [
@@ -5449,6 +5779,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "司法及法制委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "司法及法制委員會"
             }
@@ -5487,10 +5823,6 @@
         "in_office": true,
         "uid": 629,
         "party": "DPP",
-        "constituency": [
-            "HSZ",
-            0
-        ],
         "education": "新竹國小\n新竹一中(建華國中)\n新竹中學\n中山醫學大學牙醫科",
         "caucus": "DPP",
         "ads": [
@@ -5511,6 +5843,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "教育及文化委員會"
             }
@@ -5543,9 +5881,6 @@
         "in_office": true,
         "uid": 1824,
         "party": "KMT",
-        "constituency": [
-            "proportional"
-        ],
         "education": "美國南加大教育心理學博士",
         "caucus": "KMT",
         "ads": [
@@ -5559,6 +5894,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "財政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "財政委員會"
             }
@@ -5591,9 +5932,6 @@
         "in_office": true,
         "uid": 1858,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "中央大學土木工程學系碩士\n臺灣科技大學營建工程技術系學士",
         "caucus": "DPP",
         "ads": [
@@ -5607,6 +5945,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "內政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "內政委員會"
             }
@@ -5629,7 +5973,6 @@
                 "address": "臺北市士林區承德路四段235號"
             },
             {
-                "phone": "02-2559-7736",
                 "fax": "02-2559-7737",
                 "name": "大同服務處",
                 "address": "臺北市大同區承德路一段52號"
@@ -5651,10 +5994,6 @@
         "in_office": true,
         "uid": 1745,
         "party": "DPP",
-        "constituency": [
-            "TPE",
-            2
-        ],
         "education": "輔仁大學大眾傳播系學士\n政治大學政治研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -5669,6 +6008,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "內政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "內政委員會"
             }
@@ -5701,9 +6046,6 @@
         "in_office": true,
         "uid": 1826,
         "party": "KMT",
-        "constituency": [
-            "proportional"
-        ],
         "education": "國立暨南國際大學非營利組織經營管理碩士\n建國科技大學美容系",
         "caucus": "KMT",
         "ads": [
@@ -5723,6 +6065,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
             }
@@ -5755,9 +6109,6 @@
         "in_office": true,
         "uid": 1822,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "台大分子醫學研究所碩士\n中山醫學大學醫學研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -5777,6 +6128,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "司法及法制委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "程序委員會"
             }
@@ -5815,10 +6178,6 @@
         "in_office": true,
         "uid": 908,
         "party": "KMT",
-        "constituency": [
-            "NWT",
-            9
-        ],
         "education": "臺北縣立頂溪國小畢業\n臺灣省立板橋中學畢業\n私立開南高級商工職業學校畢業",
         "caucus": "KMT",
         "ads": [
@@ -5837,11 +6196,17 @@
                 "chair": true,
                 "session": 1,
                 "ad": 9,
-                "name": "紀律委員會"
+                "name": "社會福利及衛生環境委員會"
             },
             {
                 "chair": true,
                 "session": 1,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
             }
@@ -5886,10 +6251,6 @@
         "in_office": true,
         "uid": 1337,
         "party": "DPP",
-        "constituency": [
-            "NWT",
-            2
-        ],
         "education": "",
         "caucus": "DPP",
         "ads": [
@@ -5907,11 +6268,17 @@
                 "chair": true,
                 "session": 1,
                 "ad": 9,
-                "name": "紀律委員會"
+                "name": "司法及法制委員會"
             },
             {
                 "chair": true,
                 "session": 1,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "司法及法制委員會"
             }
@@ -5950,10 +6317,6 @@
         "in_office": true,
         "uid": 1334,
         "party": "KMT",
-        "constituency": [
-            "HSQ",
-            0
-        ],
         "education": "國立中央大學中文系畢業",
         "caucus": "KMT",
         "ads": [
@@ -5970,6 +6333,12 @@
                 "session": 1,
                 "ad": 9,
                 "name": "外交及國防委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "外交及國防委員會"
             }
         ],
         "ad": 9,
@@ -5982,6 +6351,12 @@
                 "fax": "02-2358-6125",
                 "name": "國會研究室",
                 "address": "10051臺北市中正區濟南路1段3-1號0803室"
+            },
+            {
+                "phone": "02-2302-8910",
+                "fax": "02-2302-8950",
+                "name": "中正萬華服務處",
+                "address": "100臺北市中正區莒光路88號"
             }
         ],
         "gender": "男",
@@ -6000,10 +6375,6 @@
         "in_office": true,
         "uid": 1836,
         "party": "NPP",
-        "constituency": [
-            "TPE",
-            5
-        ],
         "education": "國立台北大學企業管理學系學士",
         "caucus": "NPP",
         "ads": [
@@ -6017,6 +6388,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "交通委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "交通委員會"
             }
@@ -6061,10 +6438,6 @@
         "in_office": true,
         "uid": 1848,
         "party": "DPP",
-        "constituency": [
-            "TNN",
-            4
-        ],
         "education": "臺南一中畢業\n國立成功大學企管系畢業\n美國密蘇里大學企管碩士(u. of Missouri,MBA)\n臺大國家發展研究所博士班",
         "caucus": "DPP",
         "ads": [
@@ -6076,14 +6449,20 @@
         "elected_party": "DPP",
         "committees": [
             {
+                "chair": true,
+                "session": 1,
+                "ad": 9,
+                "name": "經濟委員會"
+            },
+            {
                 "chair": false,
                 "session": 1,
                 "ad": 9,
                 "name": "紀律委員會"
             },
             {
-                "chair": true,
-                "session": 1,
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "經濟委員會"
             }
@@ -6122,10 +6501,6 @@
         "in_office": true,
         "uid": 904,
         "party": "DPP",
-        "constituency": [
-            "KHH",
-            4
-        ],
         "education": "天主教輔仁大學德文系畢業\n美國威斯康辛大學大眾傳播碩士",
         "caucus": "DPP",
         "ads": [
@@ -6143,6 +6518,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "司法及法制委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "司法及法制委員會"
             }
@@ -6185,9 +6566,6 @@
         "in_office": true,
         "uid": 1830,
         "party": "PFP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "臺南縣立官田國民中學畢業",
         "caucus": "PFP",
         "ads": [
@@ -6201,6 +6579,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "司法及法制委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "司法及法制委員會"
             }
@@ -6239,9 +6623,6 @@
         "in_office": true,
         "uid": 1823,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "國立臺灣大學法律學系畢業",
         "caucus": "DPP",
         "ads": [
@@ -6250,8 +6631,73 @@
         "avatar": "http://avatars.io/50a65bb26e293122b0000073/a65359053b93d60326f2523f1fe18fa6"
     },
     {
+        "elected_party": "KMT",
+        "committees": [
+            {
+                "chair": false,
+                "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            }
+        ],
+        "ad": 9,
+        "links": {
+            "ly": "http://www.ly.gov.tw/03_leg/0301_main/legIntro.action?lgno=00013&stage=9"
+        },
+        "contacts": [
+            {
+                "phone": "02-2358-6411",
+                "fax": "02-2358-6415",
+                "name": "國會研究室",
+                "address": "10051臺北市中正區濟南路1段3-1號2117室"
+            },
+            {
+                "phone": "03-280-5398",
+                "fax": "03-280-5399",
+                "name": "中壢服務處",
+                "address": "桃園市中壢區中正路131號"
+            }
+        ],
+        "gender": "男",
+        "image": "http://www.ly.gov.tw/upload/01_introduce/0103_leg/LGpicture/90013.jpg",
+        "title": "立法委員",
+        "experience": "中華職業棒球大聯盟會長\n桃園縣長\n第6、7屆立法委員\n中原大學、台灣警專榮譽教授\n執業律師",
+        "name": "吳志揚",
+        "term_end": {
+            "date": "2020-01-31"
+        },
+        "identifiers": [
+            "吳志揚"
+        ],
+        "former_names": "",
+        "term_start": "2016-02-01",
+        "in_office": true,
+        "uid": 1321,
+        "party": "KMT",
+        "education": "哈佛大學法學碩士\n臺灣大學法律研究所碩士\n臺灣大學法律系畢業",
+        "caucus": "KMT",
+        "ads": [
+            9,
+            7,
+            6
+        ],
+        "avatar": "http://avatars.io/50a65bb26e293122b0000073/b1abe0f01245e313a9d24480825825b6"
+    },
+    {
         "elected_party": "DPP",
         "committees": [
+            {
+                "chair": false,
+                "session": 1,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
+            },
             {
                 "chair": false,
                 "session": 1,
@@ -6260,7 +6706,19 @@
             },
             {
                 "chair": false,
-                "session": 1,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
                 "ad": 9,
                 "name": "社會福利及衛生環境委員會"
             }
@@ -6293,9 +6751,6 @@
         "in_office": true,
         "uid": 1815,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "東海大學社會工作碩士\n政治大學社會學系學士\n嘉義女中",
         "caucus": "DPP",
         "ads": [
@@ -6315,6 +6770,18 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "財政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "財政委員會"
             }
@@ -6347,9 +6814,6 @@
         "in_office": true,
         "uid": 1820,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "倫敦大學亞非學院飲食人類學碩士\n臺灣大學經濟系學士",
         "caucus": "DPP",
         "ads": [
@@ -6363,6 +6827,24 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "教育及文化委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "經費稽核委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
                 "ad": 9,
                 "name": "教育及文化委員會"
             }
@@ -6407,10 +6889,6 @@
         "in_office": true,
         "uid": 1733,
         "party": "DPP",
-        "constituency": [
-            "TXG",
-            7
-        ],
         "education": "塗城國小\n成功國中\n臺中女中\n國立成功大學\n英國約克大學婦女研究碩士",
         "caucus": "DPP",
         "ads": [
@@ -6439,6 +6917,18 @@
                 "session": 1,
                 "ad": 9,
                 "name": "紀律委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "外交及國防委員會"
             }
         ],
         "ad": 9,
@@ -6481,10 +6971,6 @@
         "in_office": true,
         "uid": 1731,
         "party": "KMT",
-        "constituency": [
-            "TXG",
-            8
-        ],
         "education": "美國南卡羅萊納大學國際關係博士\n美國匹茲堡大學國際事務碩士\n國立政治大學外交學系\n台中一中\n豐南國中\n瑞穗國小",
         "caucus": "KMT",
         "ads": [
@@ -6499,6 +6985,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "財政委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "財政委員會"
             }
@@ -6537,10 +7029,6 @@
         "in_office": true,
         "uid": 1841,
         "party": "DPP",
-        "constituency": [
-            "NWT",
-            8
-        ],
         "education": "中和國小\n海山國中\n建國高中\n中興大學物理學士\n臺灣師範大學政治學研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -6555,11 +7043,29 @@
                 "chair": false,
                 "session": 1,
                 "ad": 9,
-                "name": "程序委員會"
+                "name": "財政委員會"
             },
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
                 "ad": 9,
                 "name": "財政委員會"
             }
@@ -6592,9 +7098,6 @@
         "in_office": true,
         "uid": 1315,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "國立岡山高中畢業",
         "caucus": "DPP",
         "ads": [
@@ -6609,6 +7112,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "經濟委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "經濟委員會"
             }
@@ -6628,7 +7137,7 @@
                 "phone": "04-775-4168",
                 "fax": "04-777-9150",
                 "name": "鹿港服務處",
-                "address": "彰化縣鹿港鎮永安里鹿東路55號"
+                "address": "彰化縣鹿港鎮頂厝里樂群路43號"
             },
             {
                 "phone": "04-757-8568",
@@ -6653,10 +7162,6 @@
         "in_office": true,
         "uid": 1729,
         "party": "KMT",
-        "constituency": [
-            "CHA",
-            1
-        ],
         "education": "彰化縣洛津國小 \n彰化縣鹿港國中 \n國立臺中第二高級中學\n私立東海大學政治系學士學位、碩士學位\n國立彰化師範大學財務金融學系博士班(就讀中)",
         "caucus": "KMT",
         "ads": [
@@ -6671,6 +7176,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "外交及國防委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "外交及國防委員會"
             }
@@ -6709,9 +7220,6 @@
         "in_office": true,
         "uid": 22,
         "party": "KMT",
-        "constituency": [
-            "proportional"
-        ],
         "education": "臺灣省立師範大學數學系畢業",
         "caucus": "KMT",
         "ads": [
@@ -6733,6 +7241,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "外交及國防委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "外交及國防委員會"
             }
@@ -6777,10 +7291,6 @@
         "in_office": true,
         "uid": 1849,
         "party": "DPP",
-        "constituency": [
-            "TNN",
-            5
-        ],
         "education": "成功大學外文系80級\n成功大學管理學院高階管理碩士97級\n長榮大學經營管理所博士班",
         "caucus": "DPP",
         "ads": [
@@ -6808,6 +7318,18 @@
                 "session": 1,
                 "ad": 9,
                 "name": "紀律委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "程序委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "社會福利及衛生環境委員會"
             }
         ],
         "ad": 9,
@@ -6838,9 +7360,6 @@
         "in_office": true,
         "uid": 1728,
         "party": "KMT",
-        "constituency": [
-            "proportional"
-        ],
         "education": "東海大學社會工作學系碩士\n東海大學社會工作學系學士",
         "caucus": "KMT",
         "ads": [
@@ -6856,11 +7375,29 @@
                 "chair": false,
                 "session": 1,
                 "ad": 9,
-                "name": "司法及法制委員會"
+                "name": "程序委員會"
             },
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "司法及法制委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
+                "ad": 9,
+                "name": "紀律委員會"
+            },
+            {
+                "chair": true,
+                "session": 2,
+                "ad": 9,
+                "name": "司法及法制委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "程序委員會"
             }
@@ -6893,9 +7430,6 @@
         "in_office": true,
         "uid": 1730,
         "party": "DPP",
-        "constituency": [
-            "proportional"
-        ],
         "education": "國立臺灣大學法律學研究所碩士",
         "caucus": "DPP",
         "ads": [
@@ -6910,6 +7444,12 @@
             {
                 "chair": false,
                 "session": 1,
+                "ad": 9,
+                "name": "經濟委員會"
+            },
+            {
+                "chair": false,
+                "session": 2,
                 "ad": 9,
                 "name": "經濟委員會"
             }
@@ -6942,10 +7482,6 @@
         "in_office": true,
         "uid": 1312,
         "party": "KMT",
-        "constituency": [
-            "aborigine",
-            "highland"
-        ],
         "education": "臺灣大學外文系畢業\n美國奧勒岡大學(University of Oregon)新聞碩士\n英國羅芙堡大學(Loughborough University)社會學系媒體研究組博士",
         "caucus": "KMT",
         "ads": [
